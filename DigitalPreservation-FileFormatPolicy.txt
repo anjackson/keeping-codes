@@ -1,0 +1,11 @@
+## What do you need to consider when choosing a file format? ##
+
+This list can be used as a checklist for file format choice.
+ 1. Is the format proprietary, or is it controlled by a public standards organisation? 2. Is the format specification publicly available, or does the owner keep it secret? 3. Is format obsolescence a risk?   1. Is it possible that the supporting software could be upgraded and the new version won't be able to open old files?   2. Is it possible that the supporting software could be bought by a competitor and withdrawn?   3. Is it possible that the format could fall into disuse and lack software support? 4. Is the format convenient for extracting the data for further use and indexing for search/discovery, or is it only suitable for viewing the data? 5. Does the format store the data at the required level of fidelity? Will the data be degraded every time it is saved in this format? (In other words, is this a lossy format?) 6. Does the format compress the data? (Generally compression makes a file less robust to errors in data transmission or damage or degradation of storage media, but of course it also uses less disk space.) 7. Is the chosen format an accepted standard? (This could be either a formal standard managed by a standards organisation, or a de-facto standard in your field of research.) 
+[http://ands.org.au/guides/file-formats-awareness.html][1] 
+[][2] 
+
+
+
+  [1]: http://ands.org.au/guides/file-formats-awareness.html
+  [2]: http://ands.org.au/guides/file-formats-awareness.html

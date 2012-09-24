@@ -1,0 +1,11 @@
+HTML Parser is a Java library used to parse HTML in either a linear or nested fashion.
+    Primarily used for transformation or extraction, it features filters, visitors,
+    custom tags and easy to use JavaBeans. It is a fast, robust and well tested package.
+    
+    
+    Welcome to the homepage of HTMLParser - a super-fast real-time 
+    parser for real-world HTML. What has attracted most developers to HTMLParser has 
+    been its simplicity in design, speed and ability to handle streaming real-world 
+    html. 
+    
+

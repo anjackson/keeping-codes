@@ -1,0 +1,61 @@
+rmation
+
+
+# RFC 2046 - Multipurpose Internet Mail Extensions (MIME) Part Two: Media Types #
+
+SourceURL:[http://tools.ietf.org/html/rfc2046][1] 
+Author:anjackson@gmail.com
+In general, the top-level media type is used to declare the general type of data, while the subtype specifies a specific format for that type of data. # GDFR - Global Digital Format Registry #
+
+SourceURL:[https://collaborate.oclc.org/wiki/gdfr/about.html][2] 
+Author:anjackson@gmail.com
+The Global Digital Format Registry (GDFR) will provide sustainable distributed services to store, discover, and deliver representation information about digital formats. # File Signatures - Filesig - Forensic Computing Resource... #
+
+SourceURL:[http://www.filesig.co.uk/][3] 
+Author:anjackson@gmail.com
+Established 2001, [Filesig.co.uk][4] aims to improve techniques in researching, identifying and recovering file data with the forensic computer examiner, data recovery or eDiscovery techician in mind.
+# Format Description Categories #
+
+SourceURL:[http://www.digitalpreservation.gov/formats/fdd/descriptions.shtml][5] 
+Author:anjackson@gmail.com
+The digital content format descriptions accessible here provide specific information about individual formats and their characteristics. Each description provides moderately detailed information and citations. Planned for inclusion are a wide variety of formats: file formats, file-format classes, bitstream structures and encodings, and the mechanisms used to compress files or bitstreams. Inclusion of a description for a format does not imply that the format is preferred or acceptable for Library of Congress collections. # File format - Wikipedia, the free encyclopedia #
+
+SourceURL:[http://en.wikipedia.org/wiki/File_format][6] 
+Author:anjackson@gmail.com
+From Wikipedia, the free encyclopediaJump to: [navigation][7] , [search][8] A file formatis a particular way to encode information for storage in a [computer file][9] .
+# Wotsit.org #
+
+SourceURL:[http://www.wotsit.org/][10] 
+Author:anjackson@gmail.com
+Welcome to Wotsit.org, the programmer's file and data format resource. This site contains information on hundreds of different file types, data types, hardware interface details and all sorts of other useful programming information; algorithms, source code, specifications, etc. # Uniform Type Identifiers Overview: What Is a Uniform Type Identifier? #
+
+SourceURL:[http://developer.apple.com/documentation/Carbon/Conceptual/understanding_utis/understand_utis_conc/chapter_2_section_2.html#//apple_ref/doc/uid/TP40001319-CH202-SW1][11] 
+Author:anjackson@gmail.com
+A uniform type identifier is a string that uniquely identifies a class of entities considered to have a “type.” For example, for a file or other stream of bytes, “type” refers to the format of the data. For entities such as packages and bundles, “type” refers to the internal structure of the directory hierarchy. Most commonly, a UTI provides a consistent identifier for data that all applications and services can recognize and rely upon, eliminating the need to keep track of all the existing methods of tagging data. Currently, for example, a JPEG file might be identified by any of the following methods: # Uniform Type Identifier - Wikipedia, the free encyclopedia #
+
+SourceURL:[http://en.wikipedia.org/wiki/Uniform_Type_Identifier][12] 
+Author:anjackson@gmail.com
+A Uniform Type Identifier(UTI) is a string defined by [Apple Inc.][13] that uniquely identifies the type of a class of items. Added in Apple's [Mac OS X][14] [10.4][15] operating system, UTIs are used to identify the type of files and folders, clipboard data, bundles, aliases and symlinks, and streaming data. [Mac OS X][16] 's desktop search technology, [Spotlight][17] , uses UTIs to categorize documents.[[1]][18] One of the primary design goals of UTIs was to eliminate the ambiguities and problems associated with inferring a file's content from its MIME type, [filename extension][19] , or [type][20] or [creator code][21] .[[1]][22] [[2]][23] 
+  [1]: http://tools.ietf.org/html/rfc2046
+  [2]: https://collaborate.oclc.org/wiki/gdfr/about.html
+  [3]: http://www.filesig.co.uk/
+  [4]: http://filesig.co.uk/
+  [5]: http://www.digitalpreservation.gov/formats/fdd/descriptions.shtml
+  [6]: http://en.wikipedia.org/wiki/File_format
+  [7]: http://en.wikipedia.org/wiki/File_format#column-one
+  [8]: http://en.wikipedia.org/wiki/File_format#searchInput
+  [9]: http://en.wikipedia.org/wiki/Computer_file
+  [10]: http://www.wotsit.org/
+  [11]: http://developer.apple.com/documentation/Carbon/Conceptual/understanding_utis/understand_utis_conc/chapter_2_section_2.html#//apple_ref/doc/uid/TP40001319-CH202-SW1
+  [12]: http://en.wikipedia.org/wiki/Uniform_Type_Identifier
+  [13]: http://en.wikipedia.org/wiki/Apple_Inc.
+  [14]: http://en.wikipedia.org/wiki/Mac_OS_X
+  [15]: http://en.wikipedia.org/wiki/Mac_OS_X_v10.4
+  [16]: http://en.wikipedia.org/wiki/Mac_OS_X
+  [17]: http://en.wikipedia.org/wiki/Spotlight_%28software%29
+  [18]: http://www.google.com/notebook/onpage?client=gnotesff&amp;v=1.0.0.19&amp;zx=1210070431913#cite_note-ars-0
+  [19]: http://en.wikipedia.org/wiki/Filename_extension
+  [20]: http://en.wikipedia.org/wiki/Type_code
+  [21]: http://en.wikipedia.org/wiki/Creator_code
+  [22]: http://www.google.com/notebook/onpage?client=gnotesff&amp;v=1.0.0.19&amp;zx=1210070431913#cite_note-ars-0
+  [23]: http://www.google.com/notebook/onpage?client=gnotesff&amp;v=1.0.0.19&amp;zx=1210070431913#cite_note-adc-1

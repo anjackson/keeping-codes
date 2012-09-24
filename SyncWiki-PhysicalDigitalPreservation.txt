@@ -1,0 +1,201 @@
+The idea of physical digital preservation is to fully explore
+the issues surrounding digital preservation, starting with the
+actual physical basis of it. From spins and pits up to the
+projection....
+
+# Physical Digital Preservation #
+
+
+The use of computers, as a physical process. A laptop, sleeping.
+The CPU is still. No gates are switching. The last instant of use
+lies frozen on the disk, awaiting awakening. There is no 'code'. No
+instructions are being executed. There is only 'data'.
+
+Pits and spins, stuck. Stable, for the time being, and so
+remembering. Remembering a very, very long number. A long stream of
+zeros and ones, discrete and distinct, and carved out of analogue
+reality via the means of precision engineering.
+
+Alone, these numbers are meaningless. The bits, the bytes, the
+nibbles and words, the kilo, the giga, the tera and peta. Just
+imperceptible noise, without the machine. The electronic stack,
+layer after layer of technology, bringing the microscopic noise up
+to our senses.
+
+The lid is lifted, and a switch fires. The user's demand is
+translated into an electrical pulse, and the switching cascades
+though all of the circuits of the machine. All of the clocks start
+to tick. All of the peripherals are warmed up, linked by the power
+supply and by the clocks. These sub-systems perform a few
+self-checks, and then listen to the ticking signals that that
+interconnect them, awaiting the instructions that will be passed
+down those buses.
+
+{How things as utterly necessary as keyboard, mouse, disk, and
+monitor could be referred to as peripheral.}
+
+Except one. The CPU does not wait. It knows where to go.
+
+The entire machine, every device and every sub-system is
+accessible from the CPU. Each is pinned together in a long, long
+line of pigeonholes. Each bit and byte of RAM is expressed as a
+location on this line, a particular pigeonhole with a particular
+address. This address space is dynamic and flexible, but one
+location does not change. The location of one piece of software
+never changes, the location of the BIOS. The CPU always knows how
+to start, because it knows where the BIOS is.
+
+On a reflex, an act embedded in the very design of the machine,
+the CPU lights up the memory bus and fetches that first
+instruction, and the BIOS begins to run. One after another, the
+instructions are pulled out of memory, and the computer begins the
+long process of bringing all of the cold-stored pits and spins off
+the disk into life. The hard disk is warmed up, and the remembered
+bytes are cloned, turned into space-time signals. Peaks and troughs
+of electrical current that coarse through the memory bus and begin
+to fill up the RAM.
+
+{Kinda skipped the boot sector here...}
+
+The state, the data, begins to come alive, redistributed
+throughout the hardware and ready to begin the dance. The full
+operating system sits in the memory space. The BIOS finishes it's
+preparations, and hands over control. Now, at last, the remembered
+state comes alive. The data that represents code is finally
+interpreted as such, and finds it's meaning. Instruction after
+instruction, loading data in, storing it again, moving data from
+place to place. The data that is code mostly knows which data is
+code, and which is data, and layers of code start to to accrete.
+The CPU can also interpret the numbers as actual whole numbers,
+adding and subtracting them. The numbers that fill the CPU need not
+only represent the addresses of more data to be executed.
+
+The operating system reaches out to the peripherals, each of
+which project different meanings onto the numbers.
+
+The monitor, the sound system, etc... Reaching out to the user.
+And the user reaches back in, with the mouse and keyboard. and the
+dance begins in earnest.
+
+Files are saved, spins are manipulated and persisted on the
+disk, and the user shuts down the machine. The stack is unwound.
+That which must be remembered is carved onto the disk, and that
+which can be reconstructed is forgotten, fading slowly from the RAM
+as the power ebbs away, the machine forgets, and becomes still.
+
+Although the core remains the same, this pattern of use has not
+always existed. The first computers... hardcoded... no ram, no
+disk... numbers... The way in which we use computers is defined by
+the peripherals they have, by the ways we can perceive it, the ways
+we can instruct it, and by the memories it can store.
+
+# It's not about the code, it's about the data #
+
+
+A long shift, from code, to data. We are rapidly learning more
+about algorithms, and new algorithms are being developed. There's
+also even more languages being developed, to cover new ideas on how
+to develop code and concurrent computing.
+
+Functional programming is wonderful, but it hides the fact that
+fundamentally, using computers is all about managing global
+state.
+
+# DOMD.info #
+
+
+The idea of this is to facilitate adoption of existing standards
+and encourage interoperability between them. To facilitate digital
+preservation work, this project holds technical and reference
+information for managing digital object metadata.
+
+# Digital Preservation Notebook #
+
+
+This notebook documents my understanding of the digital
+preservation field, and of the players and standards involved. The
+[Wikipedia page
+on Digital Preservation][1]  provides quite a good overview of the
+field, but the intention of this notebook is to dig somewhat deeper
+into the problem.
+
+This notebook does not really deal with some of the wider
+issues, like digital preservation in the sense of preserving
+physical objects in a digital form, or preserving digital hardware
+itself. More importantly, it does not explore preservation planning
+issues like working out how preservation policies and strategies
+should be determined. Here, we are focussed more on specific
+information and technical issues related to digital object
+preservation that would facilitate the formulation and execution of
+such strategies.
+
+# Overview #
+
+
+I've not really had a chance to blog about what I do now, and
+how it's different from what I did before. In a nutshell, I help
+create software for [Digital
+Preservation][2] . This is an interesting field, as it is full of
+problems that sound like they should have been solved, but
+haven't...
+
+As an example of a digital preservation project that faces these
+problems, check out [Digital Lives][3] . The
+preservation community has a lot of experience in preserving the
+physical artefacts created during someone's life, but digital
+artefacts are becoming increasingly important. How can we preserve
+all of the sounds, pictures, videos, emails, documents and other
+electronic files created during an entire lifetime?
+
+There are two main problems, one which sounds hard but is
+relatively easy, and another which might appear straightforward,
+but isn't. The first problem is how to store the files themselves -
+how to maintain the stream of zeros and ones while ensuring that
+they don't get lost or corrupted over time. Although this is a
+challenging problem, it is in the process of being successfully
+solved by data replication methods (like [
+RAID][4] ) combined with media replacement strategies (called
+[Refreshing][5] ).
+Of course, the storage of large collections of data can be
+expensive, but the cost of storing a gigabyte of data continues to
+drop and the robustness of the storage media keeps improving.
+
+(I take that back, it's harder than I thought)
+
+That's the good news. The other, altogether subtler, problem is
+how to make sure that you can still make any sense of those bits
+and bytes in the future. Without the specifications or software
+required to interpret those bits, the encoded information is
+impossible to extract. A number of digital file formats have
+already become obsolete, and it is difficult to predict which
+current formats will go the same way. Furthermore, the increasing
+number of operating systems, programming languages, software
+projects and file formats is not working in our favour. The
+challenge is to manage this deluge of digital media so that the
+computer users of the future will be able to access the digital
+objects of today.
+
+The project I'm working on, [Planets][6] , attempts to tackle
+these issues. Amongst other things, we are trying to establish a
+scientific basis for the evaluation of strategies for digital
+preservation. The details of this aspect of the project have just
+been published in a paper called [The Planets Testbed:
+Science for Digital Preservation][7] . The central idea is that by
+adopting a scientific approach focused on experimentation and
+reproducibility, we can generate a body of knowledge about digital
+preservation approaches that will help the digital preservation
+community to find ways of preventing our zeros and ones from
+becoming little more than white noise.
+
+See [<code>http://anjackson.net/2008/06/27/science_digital_preservation</code>][8] .
+
+
+
+  [1]: http://en.wikipedia.org/wiki/Digital_preservation
+  [2]: http://en.wikipedia.org/wiki/Digital_preservation
+  [3]: http://www.bl.uk/digital-lives/about.html
+  [4]: http://en.wikipedia.org/wiki/Redundant_array_of_independent_disks
+  [5]: http://en.wikipedia.org/wiki/Digital_preservation#Refreshing
+  [6]: http://www.planets-project.eu/
+  [7]: http://journal.code4lib.org/articles/83
+  [8]: http://anjackson.net/2008/06/27/science_digital_preservation

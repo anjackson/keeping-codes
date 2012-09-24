@@ -1,0 +1,45 @@
+Defining open formats
+=====================
+Defining what we mean by a good open format is difficult.
+
+* Implementable: OOXML is not open, ODF is open. OOXML specs refer to other closed specs.
+* Independent: ODF is controlled by ISO, OOXML is controlled by msft, and msft *now* claims that msft will never give ISO control. Rather msft wants to give control to the ECMA - a group controlled by msft. This directly contradicts what msft first promised.
+ * Longevity of the standards body?
+* Adoption: ODF is used by several different organizations. Anybody is welcome to freely use ODF. OOXML is used by msft, and novell - due to a very sneaky and secretive document.
+* Open Development Process.
+* Open Reference Implementation.
+* No Forks.  Promises from implementers to follow the standard body process and maintain interoperability. c.f. [a captive standard](http://www.digistan.org/open-standard).
+* No patents: Does OOXML legalese mean that they can warp the standard and then sue?
+* Extra Marks: Open Source Reference Implementation.
+* Extra Marks: Steps to ensure that the RI is not brittle and that bugs are caught and rarely damage user data.
+
+Evaluating Open Digital Formats
+===============================
+An article on these issues.
+
+Include suggestion of an Open Format Certification, which is not unlike the [Open Source Initiative](http://opensource.org/). They have a 'Open Standards Requirement' but this is not quite the same thing.
+
+References
+==========
+* [Study Touting OOXML Over ODF Is Debunked](http://slashdot.org/article.pl?sid=08/01/15/2248243&amp;from=rss)
+* [Saving in OOXML Format Now Probably A Bad Idea ](http://it.slashdot.org/article.pl?sid=08/01/23/1942241&amp;from=rss)
+* [Developers Warned over OOXML Patent Risk](http://developers.slashdot.org/article.pl?sid=08/02/17/1911249&amp;from=rss)
+*[British Library Act 1972 and as amended](http://www.bl.uk/aboutus/governance/blact/index.html)
+* Microsoft open formats
+ * [binary file formats](http://www.microsoft.com/interop/docs/OfficeBinaryFormats.mspx)
+ * [supporting technologies](http://www.microsoft.com/interop/docs/supportingtechnologies.mspx)
+ * [Office Binary (doc, xls, ppt) Translator to Open XML project ](http://b2xtranslator.sourceforge.net/) (BSD)
+ * [Open Specification Promise](http://www.microsoft.com/interop/osp/default.mspx)
+ * [Some info on the OSP](http://www.consortiuminfo.org/standardsblog/article.php?story=20060912140103877)
+ * [Why are the Microsoft Office file formats so complicated? (And some workarounds)](http://www.joelonsoftware.com/items/2008/02/19.html)
+ * [Groklaw - 
+Microsoft Says It Will Release Binary Office Formats - Which? -- Updated](http://www.groklaw.net/article.php?story=20080117131256697)
+ * [Slashdot | Microsoft Releases Office Binary Formats](http://developers.slashdot.org/article.pl?sid=08/02/20/0420258&amp;from=rss)
+ * [Red Hat Statement on Microsoft Announcement](http://www.press.redhat.com/2008/02/21/red-hat-statement-on-microsoft-announcement/)
+
+The problem is that it comes down to intent and trust.  MS has broken our trust before, and so they are difficult to trust now.
+
+
+
+
+

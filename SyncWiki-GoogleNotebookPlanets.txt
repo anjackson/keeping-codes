@@ -1,0 +1,1110 @@
+[Notebook%20-%20Planets_files/en_notebook_150x55.gif][1] 
+Planets Last edited May 22, 2008
+
+[More by
+anj &Acirc;&raquo;][2]  Sections: - [Inbox
+
+](#SDQaSQgoQqMmxwZwj) - [Meeting Notes
+
+](#SDShxQwoQ77Do5ZQj) - [Data Types
+
+](#SDQ2NQgoQ9fzo5ZQj) - [Data Pipes
+
+](#SDSIKQgoQx6_05ZQj) - [Data Sources
+
+](#SDSHDQwoQvO7y5ZQj) - [Render Pipes
+
+](#SDQcKQgoQ9brf6ZQj) - [Ensuring Data Integrity
+
+](#SDQxVQwoQjqzw5ZQj) - [The Testbed
+
+](#SDQGMQgoQuZG525cj)
+
+Inbox Ideas -
+
+Use a XML gui language to map a rich gui to a command-line argument
+system. - Retrieve and assign roles in the User Manager? - IF
+Localization Support?&Acirc;  User.getPreferredLocale? -
+Dioscuri Emulation system. - Directory as a container type? - Find
+data sources? - Mound drives RO? - Find out about job scheduler
+code - anything we can use? - Execute a PPlan against a TB corpus,
+FileSet to FileSet. - Lucene Service? -
+
+*TYPES*: Functional types (image, movie, editable?) and physical
+types (jpeg, jpeg/2000?).&Acirc;  'conforms-to' == any of A is
+also an instance of B. -
+
+Utility that just sends the first few bytes over the wire for
+analysis? -
+
+The BL has trust.&Acirc;  It's copies can be considered
+authoritative.
+
+Meeting Notes Testbed Meeting Notes
+
+&Acirc; 
+
+Open Topics: - Feedback - BM Goals integration - Project Wide - How
+to use TB for emulation. - Use it as a pro-forma? - Manual
+Service?&Acirc;  Any service can be marked as 'Manual'. - Need
+manual metadata and exec information. - Define BMG by service or by
+DO - Look up pronom IDs in the TB.
+
+Features Required - Export? Data loss otherwise. - Defaults to
+manual/auto by BMG. - PC Reg tools and formats, we need properties.
+- Search - Lucene integration? - Services + data . outputs! -
+Webdav will be available. - CORPUS: Test suites? - DELOS data? -
+Mount RO?
+
+Service Registry - Allows non-Planets Services?&Acirc; 
+[What does that mean?]
+
+POST an invocation request, get ticket back?
+
+Intermediate data?
+
+IF Message System
+
+Sig Properties became evaluation criteria based on experiment
+
+Measurable properties based on Experiment type.
+
+Basic props: # pages, Character ests pages, Measure checks pages
+kept.
+
+TCC: Proposal for Service Types. See document in dev.&Acirc; 
+*ACTION?*
+
+Terms should be neutral.
+
+Layering, DM and parameters.
+
+25th for Proposal.
+
+Lucene? *ACTION?*
+
+ID experiments, compare three tools.
+
+Char Exp, compare properties.
+
+Migration, build on property comparison.
+
+Experiment types needed to define 'things'. Science!
+
+Plato have PP template.
+
+Execute a pplan on a copora/other files.
+
+Execute a PPlan workflow on filesets, get out filesets? *???*
+
+Execute assessment of plan.
+
+Test a tool?
+
+Test a plan?
+
+Execute a plan against a corpus?&Acirc;  *PLAN
+ASSESSMENT?*
+
+Semantic checking, validation.
+
+Test plan on a hard FileSet.
+
+Preservation Pla n evaluation is not clear.&Acirc; 
+Interpretations. Refining and evaluating.
+
+Data?
+
+User pages - Provocative but ok. ???
+
+Scribd
+
+Roadmap
+
+-Experiments TBA.
+
+-Comparison Services?
+
+-Testing Service Implementation.
+
+-Internal Users In BC?
+
+-Users and the Horse issue.
+
+Implementation Plan
+
+-Exp type dropdown
+
+-Search by goals
+
+-Data Registry lazy and search.
+
+-Better selection UI.
+
+VMWare by AL
+
+Hook for 'large' exps.
+
+Hook for message-to-user.
+
+Hook for user locale?
+
+Server remote status for infrastructure?
+
+Edit Stages.
+
+Provide hostinfo over EJB?
+
+IF Service Invocation Data.&Acirc;  Wallclock,
+invocation.
+
+- + No images.
+
+- Read timeline.
+
+- Test running without a net connection? *???*
+
+- 2xNetWork get BL to provide NetWork access. Cable + WiFi. Sig
+Prop Conference Notes
+
+*JISC Intro
+
+*How do we determine the most important properties of digital
+objects that we want to keep.&Acirc;  Representation
+information. Discover, access, understand, ?
+
+*Andrew Wilson, NAA
+
+*[ Can we expect continued media fragility? ]
+
+[ Seems that folks do use the phrase Digital Object, and generally
+keen on OAIS]
+
+[ Do nothing is dangerous?&Acirc;  Emulation is
+improving.]
+
+[ Authenticity is Important!&Acirc;  And perhaps inpossible
+under migration.
+
+&Acirc; Bible has been preserved through refreshes and
+migrations.]
+
+Approaches
+
+&Acirc; - techno-centric
+
+&Acirc; &Acirc;  - maintain the hw/sw
+
+&Acirc; - data-centric
+
+&Acirc; &Acirc;  - maintain using current data formats,
+changing the object
+
+&Acirc; - process-centric
+
+&Acirc; &Acirc;  - new render streams
+
+&Acirc; - post-hoc
+
+&Acirc; &Acirc;  - digital archeology, forensic, cf
+Seamus Ross.
+
+Authenticity important?
+
+Migration
+
+&Acirc; - At obscelecence.
+
+&Acirc; - Normalization.
+
+&Acirc; - Migration on request.
+
+[Is obscelete well-defined.]
+
+NAA has supported formats.
+
+[This is always true, as set of formats is not strictly finite. The
+question of 'which formats' still looms large.]
+
+Authenticity
+
+&Acirc; - integrity/accuracy - no unauthorised changes.
+
+&Acirc; - reliability - it is what is says it is.
+
+&Acirc; - useability - retrieve, render.
+
+[Are 'signed diffs' possible?]
+
+Authentic, meaning
+
+&Acirc; - appearance
+
+&Acirc; - content
+
+&Acirc; - context
+
+&Acirc; - structure
+
+&Acirc; - behaviour
+
+[Authenticity?]
+
+[Idea of Essence.&Acirc;  But if Essense is enough to define
+the DO, then no DO is needed anymore!]
+
+Lyneh, canonicalisation.
+
+[Underlying assumption that we can estimate SP ahead of
+time?]
+
+[SP are needed for delivery, may depend].
+
+[No way to check without the original.]
+
+Useable as evidence.
+
+Are SP absolutely definable.&Acirc;  Can we meaningfully
+define them by 'type' or 'use'. c.f. INSPEC paper?
+
+*Stephen Grace - Centre for eResearch
+
+*INSPECT project.
+
+SP as weighted measurable identifiers.
+
+Weights are with repsect to a performance.
+
+[May want to work with Planets]
+
+[www.significantproperties.co.uk][3] 
+
+
+Works with JHOVE.
+
+[Lack of finite forimates rends sig prop pointless. ???]
+
+[ Characterising loss of info, can we introduce a useful entropy
+measure.]
+
+[SP depend on corpus too?]
+
+*Vectors - SSL
+
+*- Restrict scope, static images on finite boards with closed
+bounds.
+
+[General theme of only being able to SP by limiting scope?]
+
+- Compare CGM (CGRM), SVG, PDF/A.
+
+- You can generate a set of properties for 'vectors'
+
+- concepts like 'differentiable'?&Acirc;  That this can curves
+be told apart?
+
+- but depends on how you clip your examination.
+
+- mapping SVG to a subset vial XSLT ==? Sig Prop?
+
+[ Take art, reduce it to 'contains waterlillies', where'd that
+doggy come from!]
+
+[ Artist preferred their new version, some liked the old plotter
+one, surely this is effectively a new work.!?!?!]
+
+[Sig Prop model useful for comparing formats that 'do the same
+thing?']
+
+- Importance of Test Suites!
+
+- Importance of w3c metadata now included in PDF/A.
+
+*Moving Images - Mike Stapelton
+
+*&Acirc; - All 'boxes' are somewhat arbitrary.
+
+&Acirc; - Source, process, preformance.
+
+[Coulour may be a good example, as it remains slippery even when
+defined.]
+
+&Acirc; - Pixels not always square, but should all video meta
+data say pixel=square?
+
+&Acirc; - Sig Prop of encoding useful for delivery.
+
+[SW to beat a human expr differ]
+
+&Acirc; - interlacing means a 50th/second gap.
+
+&Acirc; - MXF is a useful wrapper format.
+
+&Acirc; - Migration, transcoding, format shift.
+
+&Acirc; - BCC using JPEG2000 frames in an MXF wrapper.
+
+&Acirc; - even if SP can be defined, what are the SP of future
+use?
+
+[Q: Can we builk ans in any way? can re really id all use cases.
+Video diffs automate tolerable?]
+
+Most significant to least is the important thing.&Acirc;  Text
+is critical?&Acirc;  Image pixels critical?
+
+[ Vector stills can be pinned down by domain
+knowledge.&Acirc;  i.e. get uses to tell you what is
+important. ]
+
+*e-Science - Sig Prop SW
+
+*- Large, diverse ussues in software preservation. 'need to limit
+scope'.
+
+- Code that is 'known right' - authenticity.
+
+- Boot-strapping issue if all sw considered 'at risk'?
+
+- sw preferred for reproducibility, algorithm
+
+- preserve the data by preserving the sw.
+
+- Spec only has no test.
+
+- Spec + SC is a test suite basis.
+
+- Exec creation + running on data -&amp;gt; test suite.
+
+&Acirc;  - ok whilever the 'exe' paradigm persists.'
+
+- 'Good SW Preservation === Good SW Engineering'
+
+*Richard Davis - eLearning Objects
+
+*[ Unholy confusion of data and purpose, noun and verb ]
+
+'Objects used for learning'
+
+Please, differentiate between generic objects, being used in a
+learning context, and objects designed to be used in a learning
+context. The latter are digital object types related to
+learning.
+
+SCORM standard?&Acirc;  for ELO?
+
+Classes by size, content type, purpose.
+
+What are these categories for?
+
+JORUM?
+
+Assessment object are important, raise questions of
+authenticity/integrity.&Acirc;  e.g. exam papers.
+
+*Adrian Brown - Characterization in Planets*
+
+Identification, Validation and Property Extraction (good
+good)
+
+Representation Properties - how to interpret the bitstream to get
+to human form.
+
+Significant Properties
+
+They are in Plato team. No TB in diagram.
+
+Planets Char Reg = PRONOM + Tool Info + Char of Sig Prop
+&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;
+
+
+XCDL is on the way.&Acirc;  Is this enough for sig prop.
+
+JHOVE, DROID, NZ one.
+
+Q: Important notion of Intent. e.g. for a numerical recipe this
+includes the Algorithm.
+
+Q: Does Planets offer a platform for holders to discover what they
+have?&Acirc;  Yein. Strong characterization.
+
+Q: What about things like one work 'Gettysburg address' and all
+it's forms, or references?&Acirc;  More like a tag?
+
+*Roger Lloyd - Barclays Wealth*
+
+As user /'skipper'. ick.
+
+Comparison to migration to new tech.&Acirc;  Monitoring.
+
+*Colin Neilson - DCC, SCARP*
+
+Universe is analogue shocker.
+
+Tacit knowledge, experience etc.
+&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;???
+
+
+Necessary v sufficient???
+
+Context-driven approach
+
+Finite scope of defined types reflect lack of context.
+
+MACE is a potential client.&Acirc;  Needs plugins for
+accessing files.
+
+Computs of 10 or less, but short lived, so personal data is.
+
+BMI info pack transferred to drive?!
+
+DB approach users get different slices/views.
+
+DP purposes+roles.
+
+*Stephen Rankin DCC*
+
+SP, is it self-describing.
+
+Check OAIS, IO, DO and RI.
+
+Emulation may not cover &amp;gt;&amp;gt;&amp;gt;&amp;gt; network
+&amp;lt;&amp;lt;&amp;lt;&amp;lt; or performance issues.
+
+RI is infiinite?
+
+Semantics tend to be ignored.
+
+Context is not finite.
+
+Raw data and interpretations.
+
+States ' Transform does not alter sematics' - we hope.
+
+'Semantics is the hard part'&Acirc;  but Structure is needed
+first!
+
+*Callec UNL*
+
+Email
+
+SIGPROPS project
+
+Supported, Observed, Measured (auto),
+
+Intended effect.
+
+"No Computation Without Representation!"
+
+Large variation.&Acirc;  Long tails.
+
+71% Word docs!&Acirc;  Next one was 4%.
+
+Original Bitstream might have problems.&Acirc;  Viriuses,
+wierd filenames, embedded hidden info/issues.&Acirc; 
+QA.
+
+Interested in probing SigProp - e.g. Does this Word document use
+Macros?
+
+Designated Community Evolves, i.e. Users Change.
+
+&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;
+
+Rederated Repositories as a scalable model.&Acirc;  Get
+businesses to host storage and services, and BL archives
+them.
+
+&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;
+
+*Andrew Wilson*
+
+Clear that Complexity is high, concerning SP.
+
+Clear that minimising human effort is important.
+
+AIP important, flexible, kept forever.
+
+DIP flexible, SP are AP.
+
+Research required into the relationship between SP and
+RI.&Acirc;  RI produces the performance, and are
+SP.&Acirc;  SP may include abstractions of the
+performance.
+
+Analysing needs of users is v important.
+
+Q1: Do the users needs influence our decisions on Sig Prop (AIP I
+think he means).
+
+Q2: What level of granularity do we make decisions about
+SP?&Acirc;  Object, File?&Acirc;  - Use &amp;amp;
+Context?
+
+How much to preserve?&Acirc;  Which document to
+preserve?&Acirc;  We can't keep everything, apparently.
+
+So, justify why we discard it. Should not be a decision based
+primarily on format.
+
+Publishing is about selecting significant properties, someone
+says.&Acirc;  Interpreting the Scientist work for the
+Audience.
+
+There will always be changes.&Acirc;  Loss too.
+
+Different definitions in the talks.
+
+Sig Props are Sig no matter what the migration.
+
+AIP maximises options, maxes information.&Acirc;  Preserve as
+much as you can afford to.
+
+What about the preservation of objects that are under
+change?&Acirc;  This is called versioning?
+
+What about preserving relations.
+
+DB migration/ change control
+
+&Acirc; &Acirc;  - Store everything, listen to users,
+have good techs or tech.
+
+Meta data that cannot be mechanically inferred from the bits is
+actually data.&Acirc;  Some metadata may be too expensive to
+generate mechanically, so should be considered data too.
+
+Automate general science curation in collaboration with
+scientists.&Acirc;  Niether is the best at doing
+it!&Acirc;  e.g. automatically generated metadata.
+
+'Performance Properties'&Acirc;  - I like that.
+
+Technical Metadata - Portico - Only collect the MD we need to make
+Tech&Acirc;  Decision.&Acirc;  Assumed that all could be
+generated from the data.
+
+More studies by object type?
+
+Automatic tools.
+
+Analysis of DO preservation schmemes
+
+QA on ingest? Repair automatically? Let us not assume that received
+files are ok.
+
+Primary v. secondary/manufactured.
+
+Trusted Repo, Trusted Obj.
+
+Is there a central website? [www.dponline.org][4] .
+
+Presentations up soon... Data Types Planetary Notions
+
+The full conceptual data model addresses a number of complex,
+high-level issues concerning the preservation issues that an
+archive or repository must deal with. However, the level of detail
+within this metadata will depend on the priorities and needs of the
+individual institutions, at least in the near term.&Acirc;  To
+enable different repositories with different data to interact, we
+must build up lower-level data standards capable of embodying the
+data and metadata required for communication between
+institutions.&Acirc;  This should focus on simple operations
+at first, but be built in an 'atomic' fashion to make it as easy as
+possible to build more advanced services later on.&Acirc;  At
+each stage, the set of different data types we are able to define
+will reflect the data concepts that the institutions involved are
+able to agree on.
+
+Files and Digital Objects
+
+Relationships as meta data, not embodied in the structure. PREMIS:
+Preservation Metadata Maintenance Activity (Library of
+Congress)
+
+[www.loc.gov/standards/premis/][5] 
+The PREMIS maintenance activity is responsible for maintaining,
+supporting, and coordinating future revisions to the PREMIS data
+dictionary. The Fine Free File Command
+
+[www.darwinsys.com/file/][6]  The
+file command is "a file type guesser", that is, a command-line tool
+that tells you _in words_ what kind of data a file contains. Unlike
+most GUI systems, command-line UNIX systems - with this program
+leading the charge - don't rely on filename extentions to tell you
+the type of a file, but look at the file's actual contents. This
+is, of course, more reliable, but requires a bit of I/O. file
+
+[
+www.opengroup.org/onlinepubs/009695399/utilities/f...][7]  The Open
+Group Base Specifications Issue 6
+
+IEEE Std 1003.1, 2004 Edition
+
+Copyright &Acirc;&copy; 2001-2004 The IEEE and The Open Group, All
+Rights reserved.
+
+----------
+
+
+[http://www.opengroup.org/onlinepubs/009695399/utilities/][8] NAME
+
+
+
+  file - determine file type
+
+
+
+
+Uniform Type Identifier - Wikipedia, the free encyclopedia
+
+[en.wikipedia.org/wiki/Uniform_Type_Identifier][9] 
+A *Uniform Type Identifier* (*UTI*) is a string defined by [Apple Inc.][10]  that
+uniquely identifies the type of a class of items. Added in Apple's
+[Mac OS X][11] 
+[10.4][12] 
+operating system, UTIs are used to identify the type of files and
+folders, clipboard data, bundles, aliases and symlinks, and
+streaming data. [Mac
+OS X][13] 's desktop search technology, [Spotlight][14] ,
+uses UTIs to categorize
+documents.[&lt;sup&gt;1&lt;/sup&gt;|#fn1]([http://www.google.com/notebook/onpage?client=gnotesff&amp;v=1.0.0.19&amp;zx=1210070431913#cite_note-ars-0][15] )^
+One of the primary design goals of UTIs was to eliminate the
+ambiguities and problems associated with inferring a file's content
+from its MIME type, [filename
+extension][16] , or [type][17]  or [creator
+code][18] .[&lt;sup&gt;2&lt;/sup&gt;|#fn2]([http://www.google.com/notebook/onpage?client=gnotesff&amp;v=1.0.0.19&amp;zx=1210070431913#cite_note-ars-0][19] )&lt;sup&gt;[&lt;sup&gt;3&lt;/sup&gt;|#fn3]([http://www.google.com/notebook/onpage?client=gnotesff&amp;v=1.0.0.19&amp;zx=1210070431913#cite_note-adc-1][20] )&lt;/sup&gt;
+ffident &acirc;&euro;&rdquo; Java metadata extraction / file format
+identification library
+
+[schmidt.devlib.org/ffident/index.html][21] 
+This is the first version of a Java library to extract information
+from files and identify their formats. Most operating systems
+encode the format of a file in the file name extension. However,
+there are problems with this approach: Uniform Type Identifiers
+Overview: What Is a Uniform Type Identifier?
+
+[
+developer.apple.com/documentation/Carbon/Conceptua...][22]  A uniform
+type identifier is a string that uniquely identifies a class of
+entities considered to have a
+&acirc;&euro;&oelig;type.&acirc;&euro; For example, for a file or
+other stream of bytes, &acirc;&euro;&oelig;type&acirc;&euro; refers
+to the format of the data. For entities such as packages and
+bundles, &acirc;&euro;&oelig;type&acirc;&euro; refers to the
+internal structure of the directory hierarchy. Most commonly, a UTI
+provides a consistent identifier for data that all applications and
+services can recognize and rely upon, eliminating the need to keep
+track of all the existing methods of tagging data. Currently, for
+example, a JPEG file might be identified by any of the following
+methods: Wotsit.org
+
+[www.wotsit.org/][23]  Welcome to
+Wotsit.org, the programmer's file and data format resource. This
+site contains information on hundreds of different file types, data
+types, hardware interface details and all sorts of other useful
+programming information; algorithms, source code, specifications,
+etc. File format - Wikipedia, the free encyclopedia
+
+[en.wikipedia.org/wiki/File_format][24] 
+### From Wikipedia, the free encyclopedia
+
+Jump to: [navigation][25] ,
+[search][26]  A
+*file format* is a particular way to encode information for storage
+in a [computer
+file][27] .
+
+TZX File Extension - Open .TZX files
+
+[www.fileinfo.net/extension/tzx][28] 
+Exact copy of a cassette for the Sinclair ZX Spectrum, a home
+computer released in the UK in 1982; used primarily for basic word
+processing, graphics programs, and video games; can be run on a PC
+using a Spectrum emulation program. Format Description
+Categories
+
+[
+www.digitalpreservation.gov/formats/fdd/descriptio...][29]  The
+digital content format descriptions accessible here provide
+specific information about individual formats and their
+characteristics. Each description provides moderately detailed
+information and citations. Planned for inclusion are a wide variety
+of formats: file formats, file-format classes, bitstream structures
+and encodings, and the mechanisms used to compress files or
+bitstreams. Inclusion of a description for a format does not imply
+that the format is preferred or acceptable for Library of Congress
+collections. File Signatures - Filesig - Forensic Computing
+Resource...
+
+[www.filesig.co.uk/][30] 
+
+Established 2001, [Filesig.co.uk][31]  aims to improve
+techniques in researching, identifying and recovering file data
+with the forensic computer examiner, data recovery or eDiscovery
+techician in mind.
+
+GDFR - Global Digital Format Registry
+
+[collaborate.oclc.org/wiki/gdfr/about.html][32] 
+The Global Digital Format Registry (GDFR) will provide sustainable
+distributed services to store, discover, and deliver representation
+information about digital formats. RFC 2046 - Multipurpose Internet
+Mail Extensions (MIME) Part Two: Media Types
+
+[tools.ietf.org/html/rfc2046][33] 
+In general, the top-level media type is used to declare the general
+type of data, while the subtype specifies a specific format for
+that type of data. Data Pipes AccessPDF - Pdftk
+
+[www.accesspdf.com/pdftk/][34]  If
+PDF is electronic paper, then pdftk is an electronic
+staple-remover, hole-punch, binder, secret-decoder-ring, and
+X-Ray-glasses. Pdftk is a command-line tool for doing everyday
+things with PDF documents. Keep one in the top drawer of your
+desktop and use it to:
+
+
+ - Merge PDF Documents
+ - Split PDF Pages into a New Document
+ - Decrypt Input as Necessary (Password Required)
+ - Encrypt Output as Desired
+ - Fill PDF Forms with FDF Data and/or Flatten Forms
+ - Apply a Background Watermark
+
+
+Report on PDF Metrics such as Metadata, Bookmarks, and Page
+Labels - Update PDF Metadata - Attach Files to PDF Pages or the PDF
+Document - Unpack PDF Attachments - Burst a PDF Document into
+Single Pages - Uncompress and Re-Compress Page Streams - Repair
+Corrupted PDF (Where Possible) HTML Parser - HTML Parser [htmlparser.sourceforge.net/][35] 
+Labels: web, datapipes HTML Parser - HTML Parser [htmlparser.sourceforge.net/][36] 
+HTML Parser is a Java library used to parse HTML in either a linear
+or nested fashion. Primarily used for transformation or extraction,
+it features filters, visitors, custom tags and easy to use
+JavaBeans. It is a fast, robust and well tested package. Welcome to
+the homepage of HTMLParser - a super-fast real-time parser for
+real-world HTML. What has attracted most developers to HTMLParser
+has been its simplicity in design, speed and ability to handle
+streaming real-world html. Labels: web, datapipes Apache POI - Java
+API To Access Microsoft Format Files [poi.apache.org/][37]  Labels: msoffice,
+datapipes Office Formats - &Acirc;  Untitled Document [www.textmining.org/][38]  The
+tm-extractors library is a pure java library for extracting text
+from Word documents. Notable improvements in this release: -
+Support for fast-saved Word documents - Many misc bug fixes -
+Removal of dependencies on legacy HWPF code Support for older
+versions of Word for Windows (1.0, 2.0, and 4.0) - Unit tests added
+- Build file added - Source moved to public subversion repository
+Labels: msoffice Comparitors - Differencing - [http://imagediff.tigris.org/][39]  -
+[Perceptual Image Diff][40]  -
+Text diffs and object diffs? Comparitors - Infomational Content
+&lt;pre&gt;&lt;code&gt;[Shannon Entropy]([http://www.bearcave.com/misl/misl_tech/wavelets/compression/shannon.html][41] )
+&lt;/code&gt;&lt;/pre&gt;
+
+rapidxml.sourceforge.net/
+
+[rapidxml.sourceforge.net/][42] 
+RapidXml is an attempt to create the fastest XML parser possible,
+while retaining useability, portability and reasonable W3C
+compatibility. It is an _in-situ_ parser written in modern C++,
+with parsing speed approaching that of
+&lt;code&gt;strlen&lt;/code&gt; function executed on the same data.
+The Scripting Of Services
+
+Services should simply be mapped onto classes, as I've done
+already.&Acirc;  If the Service Registry is used to create a
+set of classes backed by WS, then any scripting language can be
+used to invoke them.&Acirc;  On it's own, this does not allow
+much in the way of concurrency.&Acirc;  The 80% of the need,
+batch processing of sets of items, can be dealt with by a single
+Batch.invoke service or special command, that takes the list and
+the service class and runs each in it's own thread.&Acirc; 
+Again, this is all pretty easy and would still allow any scripting
+language to be used.&Acirc;  This batcher would probably need
+to be created from a factory to allow the approach to work, via
+Generics to give the output array the right type.
+
+NB. Given a dedicated workflow language, concurrency can be
+inferred!&Acirc;  All potentially sequential pipes can be
+determined by looking for dependencies in the variables (state, as
+all pipes are stateless).&Acirc;  The only exception is the
+'Session Variables' required to maintain state, and these can be
+tracked as local variables that cannot be *read* concurrently -
+maps to BPEL Correlation Sets.
+
+Therefore, in this model, the service description must note any
+variables that are used as session identifiers.&Acirc;  This
+might be a good idea anyway.
+
+*Interface Idea*
+
+Given one can programmatically build Java classes from WSDL*, one
+could create a simple service registry based on it and provide an
+environment where these services are mapped onto instances of
+classes.&Acirc;  A simple web interface could be used to edit
+scripts that use these services and run on a server, which posts
+back the feed-back and Console info.
+
+*Programmatically creating classes is not so easy.&Acirc;  You
+need to invoke 'org.apache.axis.wsdl.toJava.Emitter' to output a
+set of Java class files into a directory.&Acirc;  Then,
+inspect them to work out the class name, probably.&Acirc; 
+Next, wrap as a JAR and then add to the classpath.&Acirc; 
+After this point, it should be possible to inspect the classes via
+reflection, use them from the JVM, and export them to a
+script.
+
+*Special Objects* - Console could be a special object to allow
+logging output. - Batch/Process could be used to fork or 'flow'.
+-
+
+Perhaps we can create Async versions and callbacks
+automatically?
+
+Labels: dop pdftk - the pdf toolkit
+
+[www.pdfhacks.com/pdftk/][43]  If PDF
+is electronic paper, then pdftk is an electronic staple-remover,
+hole-punch, binder, secret-decoder-ring, and X-Ray-glasses. Pdftk
+is a simple tool for doing everyday things with PDF documents. Keep
+one in the top drawer of your desktop and use it to:
+
+
+ - Merge PDF Documents
+ - Split PDF Pages into a New Document
+ - Rotate PDF Pages or Documents
+ - Decrypt Input as Necessary (Password Required)
+ - Encrypt Output as Desired
+ - Fill PDF Forms with FDF Data or XFDF Data and/or Flatten
+Forms
+ - Apply a Background Watermark or a Foreground Stamp
+
+
+-
+
+Report on PDF Metrics such as Metadata, Bookmarks, and Page
+Labels
+
+
+ - Update PDF Metadata
+ - Attach Files to PDF Pages or the PDF Document
+ - Unpack PDF Attachments
+ - Burst a PDF Document into Single Pages
+ - Uncompress and Re-Compress Page Streams
+ - Repair Corrupted PDF (Where Possible)
+
+
+Pdftk allows you to manipulate PDF easily and freely. It does
+not require Acrobat, and it runs on Windows, Linux, Mac
+OS&Acirc; X, FreeBSD and Solaris.
+
+Data Sources Where to Find Open Data on the Web -
+ReadWriteWeb
+
+[
+www.readwriteweb.com/archives/where_to_find_open_d...][44]  So what
+did everyone come up with? A lot of data sources are already freely
+available on the net, as it turns out, if you just know where to
+look. Here's a summary, do you have anything to add? Pages tagged
+with "publicdata" on del.icio.us
+
+[del.icio.us/tag/publicdata][45] 
+Render Pipes World of Spectrum - Emulators
+
+[www.worldofspectrum.org/emulators.html#java][46] 
+&Acirc;  &amp;gt; &Acirc; There are a range of Spectrum
+emulators we could plug in. &amp;gt; Might avoid issue with
+Dioscuri.
+
+Dioscuri - the modular emulator for digital preservation
+
+[dioscuri.sourceforge.net/][47] 
+Dioscuri is an x86 computer hardware emulator written in Java. It
+is designed by the digital preservation community to ensure
+documents and programs from the past can still be accessed in the
+future.
+
+The Dioscuri emulator has two key features: it is durable and
+flexible. Because it is implemented in Java, it can be ported to
+any computer platform which supports the Java Virtual Machine
+(JVM), without any extra effort. This reduces the risk that
+emulation will fail to work on a single architecture in the future,
+as it will continue to work on another architecture.
+
+Dioscuri is flexible because it is completely component-based. Each
+hardware component is emulated by a software surrogate called a
+module. Combining several modules allows the user to configure any
+computer system, as long as these modules are compatible. New or
+upgraded modules can be added to the software library, giving the
+emulator the capability to run these. Dioscuri is the best choice
+to retain access to your old documents, games and other
+applications!
+
+JPC - Computer Virtualization in Java
+
+[www-jpc.physics.ox.ac.uk/][48]  #
+What is JPC?
+
+JPC is an x86 PC [emulator][49] 
+written entirely in [Java][50] .
+
+alphaWorks : Digital Asset Preservation Tool : Overview
+
+[www.alphaworks.ibm.com/tech/uvc][51] 
+Digital Asset Preservation Tool is a "proof-of-concept"
+demonstration of the Universal Virtual Computer (UVC) solution,
+which was developed at IBM Almaden Research by Raymond Lorie to
+provide long-term access to JPEG and GIF87a files. The concept,
+which entails several components, has been developed at IBM Almaden
+Research to ensure future use of digital objects. The UVC for
+images
+
+[www.kb.nl/hrd/dd/dd_onderzoek/uvc_voor_images-en.h...][52] 
+The KB&acirc;&euro;&trade;s e-Depot guarantees secure long-term
+storage of digital material.&Acirc; However, long-term
+accessibility is another matter. Research has shown that the
+storage format in particular &acirc;&euro;&ldquo; the structure in
+which the data of a digital&Acirc; object is stored on the
+carrier &acirc;&euro;&ldquo; is a point of concern. Formats are
+complex and not based on open standards or specifications. As the
+KB aims to preserve the original object, only a limited number of
+strategies can be applied.
+
+Together with IBM Netherlands, the KB has developed a new
+preservation strategy, based on the Universal Virtual Computer
+(UVC). With the UVC it is possible to read files without adapting
+them and without the original hardware or software. JPEG images can
+now be viewed independent of&Acirc; changes in technology.
+Afterwards, the method was extended for GIF images as well. The UVC
+project took place between September 2003 and April 2004. Ensuring
+Data Integrity In Storing 1&acirc;&euro;&trade;s and
+0&acirc;&euro;&trade;s, the Question Is $ - New York Times
+
+[
+www.nytimes.com/2008/04/09/technology/techspecial/...][53]  LISTEN.
+Do you hear it? The bits are dying. Failing the fixity check - Adam
+Farquhar - BL Wiki
+
+[
+intranet.bl.uk:8080/confluence/display/~adam+farqu...][54]  We can
+learn some important lessons from this: (1) best data-centre
+practice calls for independent backups and uninterruptible power
+supplies (UPS); (2) modern storage systems are complex and may
+violate some assumptions; (3) because of the caching that takes
+place in the storage architecture, computing a digest and doing an
+integrity check directly after writing may be misleading
+&acirc;&euro;&ldquo; it can report what is in the cache, not what
+is on the disk; (4) routine integrity checking is essential; (5) it
+is important to perform integrity checks on recent content
+&acirc;&euro;&ldquo; but not too promptly. 14.1.3 File Descriptor
+Operations
+
+[docs.python.org/lib/os-fd-ops.html][55] 
+Force write of file with filedescriptor fd to disk. On Unix, this
+calls the native fsync() function; on Windows, the MS _commit()
+function. If you're starting with a Python file object f, first do
+&lt;code&gt;&amp;lt;var&amp;gt;f&amp;lt;/var&amp;gt;.flush()&lt;/code&gt;,
+and then do
+&lt;code&gt;os.fsync(&amp;lt;var&amp;gt;f&amp;lt;/var&amp;gt;.fileno())&lt;/code&gt;,
+to ensure that all internal buffers associated with f are written
+to disk. Availability: Macintosh, Unix, and Windows starting in
+[2.2.3.][56] 
+
+----------
+
+
+[#WWJ-113] WWIO needs to flush data to disk - NASA World Wind
+Issues
+
+[issues.worldwind.arc.nasa.gov/browse/WWJ-113][57] 
+fileChannel.force(true); sata raid &amp;amp; write cache
+state
+
+[
+lists.freebsd.org/pipermail/freebsd-hardware/2004-...][58]  Write
+ahead logging - Wikipedia, the free encyclopedia
+
+[en.wikipedia.org/wiki/Write_ahead_logging][59] 
+tdbm - a simple, high-performance database with nested atomic
+transactions
+
+[tdbm.dss.ca/][60]  The Testbed Testbed
+Architecture - Google Docs
+
+[docs.google.com/Doc?docid=dwngn8z_16gx6swcch&amp;hl=en...][61] 
+The content on this page is provided by a [Google Notebook][62]  user, and
+Google assumes no responsibility for this content.
+
+----------
+
+
+
+ 1. [1] [&acirc;&dagger;&copy;|#fnref1]
+ 2. [1] [&acirc;&dagger;&copy;|#fnref2]
+ 3. [2] [&acirc;&dagger;&copy;|#fnref3]
+
+
+
+
+  [1]: http://www.google.com/notebook/
+  [2]: http://www.google.com/notebook/user/01548586005453060515
+  [3]: http://www.significantproperties.co.uk/
+  [4]: http://www.dponline.org/
+  [5]: http://www.loc.gov/standards/premis/
+  [6]: http://www.darwinsys.com/file/
+  [7]: http://www.opengroup.org/onlinepubs/009695399/utilities/file.html
+  [8]: http://www.opengroup.org/onlinepubs/009695399/utilities/
+  [9]: http://en.wikipedia.org/wiki/Uniform_Type_Identifier
+  [10]: http://en.wikipedia.org/wiki/Apple_Inc.
+  [11]: http://en.wikipedia.org/wiki/Mac_OS_X
+  [12]: http://en.wikipedia.org/wiki/Mac_OS_X_v10.4
+  [13]: http://en.wikipedia.org/wiki/Mac_OS_X
+  [14]: http://en.wikipedia.org/wiki/Spotlight_%28software%29
+  [15]: http://www.google.com/notebook/onpage?client=gnotesff&amp;v=1.0.0.19&amp;zx=1210070431913#cite_note-ars-0
+  [16]: http://en.wikipedia.org/wiki/Filename_extension
+  [17]: http://en.wikipedia.org/wiki/Type_code
+  [18]: http://en.wikipedia.org/wiki/Creator_code
+  [19]: http://www.google.com/notebook/onpage?client=gnotesff&amp;v=1.0.0.19&amp;zx=1210070431913#cite_note-ars-0
+  [20]: http://www.google.com/notebook/onpage?client=gnotesff&amp;v=1.0.0.19&amp;zx=1210070431913#cite_note-adc-1
+  [21]: http://schmidt.devlib.org/ffident/index.html
+  [22]: http://developer.apple.com/documentation/Carbon/Conceptual/understanding_utis/understand_utis_conc/chapter_2_section_2.html#//apple_ref/doc/uid/TP40001319-CH202-SW1
+  [23]: http://www.wotsit.org/
+  [24]: http://en.wikipedia.org/wiki/File_format
+  [25]: http://en.wikipedia.org/wiki/File_format#column-one
+  [26]: http://en.wikipedia.org/wiki/File_format#searchInput
+  [27]: http://en.wikipedia.org/wiki/Computer_file
+  [28]: http://www.fileinfo.net/extension/tzx
+  [29]: http://www.digitalpreservation.gov/formats/fdd/descriptions.shtml
+  [30]: http://www.filesig.co.uk/
+  [31]: http://filesig.co.uk/
+  [32]: https://collaborate.oclc.org/wiki/gdfr/about.html
+  [33]: http://tools.ietf.org/html/rfc2046
+  [34]: http://www.accesspdf.com/pdftk/
+  [35]: http://htmlparser.sourceforge.net/
+  [36]: http://htmlparser.sourceforge.net/
+  [37]: http://poi.apache.org/
+  [38]: http://www.textmining.org/
+  [39]: http://imagediff.tigris.org/
+  [40]: http://pdiff.sourceforge.net/
+  [41]: http://www.bearcave.com/misl/misl_tech/wavelets/compression/shannon.html
+  [42]: http://rapidxml.sourceforge.net/
+  [43]: http://www.pdfhacks.com/pdftk/
+  [44]: http://www.readwriteweb.com/archives/where_to_find_open_data_on_the.php
+  [45]: http://del.icio.us/tag/publicdata
+  [46]: http://www.worldofspectrum.org/emulators.html#java
+  [47]: http://dioscuri.sourceforge.net/
+  [48]: http://www-jpc.physics.ox.ac.uk/
+  [49]: http://www-jpc.physics.ox.ac.uk/Emulation.html
+  [50]: http://java.sun.com/
+  [51]: http://www.alphaworks.ibm.com/tech/uvc
+  [52]: http://www.kb.nl/hrd/dd/dd_onderzoek/uvc_voor_images-en.html
+  [53]: http://www.nytimes.com/2008/04/09/technology/techspecial/09store.html?em&amp;ex=1208059200&amp;en=b00d6fe51d934cb3&amp;ei=5087%0A
+  [54]: http://intranet.bl.uk:8080/confluence/display/%7Eadam+farquhar/2008/04/10/Failing+the+fixity+check
+  [55]: http://docs.python.org/lib/os-fd-ops.html
+  [56]: http://2.2.3./
+  [57]: http://issues.worldwind.arc.nasa.gov/browse/WWJ-113
+  [58]: http://lists.freebsd.org/pipermail/freebsd-hardware/2004-October/001991.html
+  [59]: http://en.wikipedia.org/wiki/Write_ahead_logging
+  [60]: http://tdbm.dss.ca/
+  [61]: http://docs.google.com/Doc?docid=dwngn8z_16gx6swcch&amp;hl=en_GB
+  [62]: http://www.google.com/notebook/

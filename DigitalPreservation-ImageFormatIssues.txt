@@ -1,0 +1,20 @@
+[Wikipedia: Raw image format][1] 
+
+
+
+Java, image conversion issue (CMYK confusion)
+
+
+[http://forums.sun.com/thread.jspa?threadID=5197061][2] 
+
+BufferedImage tImage = new BufferedImage(theHouse.getWidth() / 2,
+                        theHouse.getHeight() / 2, BufferedImage.TYPE_INT_RGB);
+
+[http://rsbweb.nih.gov/ij/][3] 
+
+
+
+
+  [1]: http://en.wikipedia.org/wiki/Raw_image_format
+  [2]: http://forums.sun.com/thread.jspa?threadID=5197061
+  [3]: http://rsbweb.nih.gov/ij/

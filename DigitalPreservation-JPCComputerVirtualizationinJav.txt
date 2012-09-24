@@ -1,0 +1,11 @@
+a
+
+# What is JPC? #
+
+
+
+    
+          JPC is an x86 PC [emulator][1]  written entirely in [Java][2] .
+
+  [1]: http://www-jpc.physics.ox.ac.uk/Emulation.html
+  [2]: http://java.sun.com/

@@ -1,0 +1,75 @@
+SourceURL: [http://tdbm.dss.ca/][1] 
+
+Author: anjackson@gmail.com
+
+[tdbm - a simple, high-performance database with nested atomic transactions][2] 
+
+http://tdbm.dss.ca/
+
+SourceURL: [http://lists.freebsd.org/pipermail/freebsd-hardware/2004-October/001991.html][3] 
+
+Author: anjackson@gmail.com
+
+[sata raid & write cache state][4] 
+
+http://lists.freebsd.org/pipermail/freebsd-hardware/2004-October/001991.html
+
+# In Storing 1’s and 0’s, the Question Is $ - New York Times #
+
+
+SourceURL: [http://www.nytimes.com/2008/04/09/technology/techspecial/09store.html?em&ex=1208059200&en=b00d6fe51d934cb3&ei=5087%0A][5] 
+
+Author: anjackson@gmail.com
+
+
+LISTEN. Do you hear it? The bits are dying.
+
+SourceURL: [http://en.wikipedia.org/wiki/Write_ahead_logging][6] 
+
+Author: anjackson@gmail.com
+
+[Write ahead logging - Wikipedia, the free encyclopedia][7] 
+
+http://en.wikipedia.org/wiki/Write_ahead_logging
+
+# [#WWJ-113] WWIO needs to flush data to disk - NASA World Wind Issues #
+
+
+SourceURL: [http://issues.worldwind.arc.nasa.gov/browse/WWJ-113][8] 
+
+Author: anjackson@gmail.com
+
+
+fileChannel.force(true);
+
+# 14.1.3 File Descriptor Operations #
+
+
+SourceURL: [http://docs.python.org/lib/os-fd-ops.html][9] 
+
+Author: anjackson@gmail.com
+
+Force write of file with filedescriptor fd to disk. On Unix, this calls the native fsync() function; on Windows, the MS _commit() function.
+If you're starting with a Python file object f, first do `f.flush()`, and then do `os.fsync(f.fileno())`, to ensure that all internal buffers associated with f are written to disk. Availability: Macintosh, Unix, and Windows starting in [2.2.3.][10] 
+
+# Failing the fixity check - Adam Farquhar - BL Wiki #
+
+
+SourceURL: [http://intranet.bl.uk:8080/confluence/display/~adam+farquhar/2008/04/10/Failing+the+fixity+check][11] 
+
+Author: anjackson@gmail.com
+
+
+We can learn some important lessons from this: (1) best data-centre practice calls for independent backups and uninterruptible power supplies (UPS); (2) modern storage systems are complex and may violate some assumptions; (3) because of the caching that takes place in the storage architecture, computing a digest and doing an integrity check directly after writing may be misleading – it can report what is in the cache, not what is on the disk; (4) routine integrity checking is essential; (5) it is important to perform integrity checks on recent content – but not too promptly.
+
+  [1]: http://tdbm.dss.ca/
+  [2]: http://tdbm.dss.ca/
+  [3]: http://lists.freebsd.org/pipermail/freebsd-hardware/2004-October/001991.html
+  [4]: http://lists.freebsd.org/pipermail/freebsd-hardware/2004-October/001991.html
+  [5]: http://www.nytimes.com/2008/04/09/technology/techspecial/09store.html?em&amp;ex=1208059200&amp;en=b00d6fe51d934cb3&amp;ei=5087%0A
+  [6]: http://en.wikipedia.org/wiki/Write_ahead_logging
+  [7]: http://en.wikipedia.org/wiki/Write_ahead_logging
+  [8]: http://issues.worldwind.arc.nasa.gov/browse/WWJ-113
+  [9]: http://docs.python.org/lib/os-fd-ops.html
+  [10]: http://2.2.3./
+  [11]: http://intranet.bl.uk:8080/confluence/display/~adam+farquhar/2008/04/10/Failing+the+fixity+check

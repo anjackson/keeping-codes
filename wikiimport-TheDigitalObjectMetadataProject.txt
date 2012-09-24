@@ -1,0 +1,22 @@
+The Digital Object Metadata Project
+===================================
+
+See [domd.info](http://domd.info) or the [beta](http://beta.domd.info).
+
+Code to be stored at &lt;http://code.google.com/p/domd/&gt;.
+
+Interoperability, and sources of information.
+
+ * [PADI - Preserving Access to Digital Information](http://www.nla.gov.au/padi/) lots of useful, deep information.
+   * [PADI - Digital preservation strategies](http://www.nla.gov.au/padi/topics/18.html)
+ * [PANIC - Preservation webservices Architecture for Newmedia and Interactive Collections](http://metadata.net/panic/)
+ * [Planets](http://www.planets-project.eu/)
+ * [Data Portability](http://dataportability.org/), [Data Portability, for Developers](http://wiki.dataportability.org/display/dpmain/For+Developers)
+
+
+Interface
+---------
+ * Build on [Drupal](http://drupal.org/), with the [Exhibit](http://drupal.org/project/exhibit) module for browsing?
+
+
+

@@ -1,0 +1,63 @@
+# File Formats #
+
+
+See also this related effort: [Wikibook:
+Choosing The Right File Format][1] .
+
+# File Format Registries #
+
+
+
+ - Format registries to include:
+ - A file extension registry?
+ - [File Free File
+Command][2] 
+
+   - [JMimeMagic][3]  can
+help here.
+
+
+ - [MIME
+Types][4] 
+ - [PRONOM][5] 
+ - [Global Digital Format
+Registry][6] 
+ - [
+Apple Uniform Type Identifiers][7] 
+
+
+# Documents #
+
+
+
+ - Open Office v. Office Open XML
+ - [Compound Document
+Format][8] 
+ - HTML
+
+
+# Databases #
+
+
+Preservation-Format Approach.
+
+
+ - [DANS
+M-XML][9] 
+ - SIARD, [Providing
+Authentic Long-term Archival Access to Complex Relational
+Data][10] 
+
+
+
+
+  [1]: http://en.wikibooks.org/wiki/Choosing_The_Right_File_Format
+  [2]: http://www.darwinsys.com/file/
+  [3]: http://sourceforge.net/projects/jmimemagic/
+  [4]: http://www.iana.org/assignments/media-types/
+  [5]: http://www.nationalarchives.gov.uk/pronom/
+  [6]: http://hul.harvard.edu/gdfr/
+  [7]: http://developer.apple.com/documentation/Carbon/Conceptual/understanding_utis/utilist/chapter_4_section_1.html#//apple_ref/doc/uid/TP40001319-CH205-CHDIJFGJ
+  [8]: http://www.w3.org/TR/WICD/
+  [9]: http://mixed.dans.knaw.nl/node/114
+  [10]: http://arxiv.org/abs/cs/0408054

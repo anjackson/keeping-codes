@@ -1,0 +1,55 @@
+[DPC][1] , etc etc...
+
+Steering Factors, EU, Digital Britain,
+
+# Conferences #
+
+
+
+ - [Joint Conference on Digital
+Libraries][2] 
+ - [International
+Conference on Digital Preservation][3] 
+
+   - [iPres 2009][4] 
+
+
+ - [European Conference on
+Digital Libraries][5] 
+
+
+# Journals #
+
+
+
+ - [International Journal of Digital
+Curation][6] 
+ - [Code4Lib][7] 
+ - [International Journal on
+Digital Libraries][8] 
+ - [
+Announcing "Digital Preservation Management and Technology", a new
+section in The Electronic Library journal][9] . Section Co-editors
+are Dr Gillian Oliver and Professor G E Gorman Victoria University
+of Wellington, New Zealand.
+
+
+# People #
+
+
+
+ - (Herbert Van de Sompel - Papers)[[http://public.lanl.gov/herbertv/papers/][10] )
+
+
+
+
+  [1]: http://www.dpconline.org/
+  [2]: http://www.jcdl.org/
+  [3]: http://rdd.sub.uni-goettingen.de/conferences/ipres/ipres-en.html
+  [4]: http://www.cdlib.org/iPres/
+  [5]: http://www.ecdlconference.eu/
+  [6]: http://www.ijdc.net
+  [7]: http://journal.code4lib.org/
+  [8]: http://www.dljournal.org/
+  [9]: http://hurstassociates.blogspot.com/2009/12/new-outlet-for-publishing-in-digital.html
+  [10]: http://public.lanl.gov/herbertv/papers/

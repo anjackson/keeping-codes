@@ -1,0 +1,194 @@
+orageofdigitalresourcesusingmechanismthatwillensureaccessinperpetuity
+
+
+
+Digital Preservation is concerned with the storage of digital resources using mechanism that will ensure access in perpetuity.
+
+* &lt;http://en.wikipedia.org/wiki/Digital_preservation&gt;
+* Courses available through &lt;http://www.ulcc.ac.uk/dptp/&gt;.
+* [[Planets]]
+* &lt;http://archive-access.sourceforge.net/&gt; ARC format and WARC soon.
+* [Flickr: Photos from The Library of Congress](http://www.flickr.com/photos/library_of_congress/)
+* [slashdot:  What is Fair Use in the Digital Age?](http://slashdot.org/article.pl?sid=08/01/16/195246&amp;from=rss)
+* [The Spanish Digital Library](http://www.bne.es/BDH/index.htm)
+* [Office Online File Converters and Viewers](http://office.microsoft.com/en-us/downloads/HA010449811033.aspx)
+* Reports
+ * [â€˜Google Generationâ€™ is a myth, says new research](http://www.jisc.ac.uk/news/stories/2008/01/googlegen.aspx)
+* [[OpenFormats]]
+* [[BabelFish]]
+
+Digital Preservation Notebook
+=============================
+
+ * [[FileFormats]]
+ * [[Metadata]]
+ * [[DigitalObjectStorage]]
+ * [[PreservationActions]]
+ * [[DOMD]]
+
+
+The Role Of The British Library
+===============================
+Given the unreliability of [storage](http://blogs.sun.com/jonathan/entry/not_a_flash_in_the) and bandwidth, and the instability of companies and funding streams, the BL could play an important role by agreeing to maintain various databases in perpetuity, in partnership with the author communities.  Database mirrors, effectively.
+
+ * Genetics DBs that will always be citable.
+ * DigitalPreservation info, like PRONOM, if more is required.
+
+Scalable Preservation Plans
+===========================
+
+I want to write a document that looks at the scalability of different preservation approaches, and attempts to deal with the migration v. emulation issue.  Is it really scalable to migrate? Or can we really cope with the every increasing range of formats?
+But are the number of valid migration plans so small that it's not worth worrying about, because almost everything else will require emulation.
+
+
+## Upgrading Planets ##
+The Planets code builds on a large number of software projects, brought together via the [[JBoss]] application server.  In the future, we will need to keep these things up to date, and this bring sup a number of issues.
+
+*Should we clean up deployment procedure?
+**See [[Planets Application Server]] for details of the current system.
+**Automatically build the appserver from the JBoss/Apache/etc distribution files.
+*Upgrade Jackrabbit to 1.3.3. indicated as 1.3 but actually 1.3.1 at present.
+*Upgrade Derby version. 10.2.? should go up to 10.3.1.4
+*Upgrade JCR Explorer?
+*Document JCR deployment details.  (For upgrades).
+
+## Web Services ##
+*The key to achieving the end goals is to define communication standards for the DP community. This can outlast any particular implementation, interface or tool set.
+*Self-describing services - http://www.w3.org/TR/wsdl#_documentation
+**"''WSDL uses the optional wsdl:document element as a container for human readable documentation. The content of the element is arbitrary text and elements ("mixed" in XSD). The documentation element is allowed inside any WSDL language element.''"
+*Human tasks, with self-estimates, leads to 'Real' Gantt Charts - new management model.
+*[http://www.digitalpreservation.gov/formats/fdd/fdd000236.shtml WARC, Web ARChive file format].
+
+### Standards for Document Repositories ###
+
+*[http://www.ukoln.ac.uk/repositories/digirep/index/Deposit_API The JISC Digital Repository Programme as part of its work is exploring the interaction between repositories and other systems.]
+*[http://www.dlib.org/dlib/january03/smith/01smith.html DSpace API Outline]
+*Mulitple, so need a repository definition layer that defines:
+**Read method (HTTP hopefully).
+**Write method (HTTP too, on WebDAV etc, but we may need property definitions for different services).
+**Authentication system.  Write, and probably reads need authentication with the repo.
+*WebDAV plus standard metadata partner file ('''name'''.metadata.xml) would be fine for uploads.
+*IDEA: Local wrapper allowing WebDAV access to selected local files/directories would be a nice way of allowing Planets access to arbitrary file resources.  Even if just read-only access.
+
+### Software ###
+*[http://www.dspace.org/ DSpace]
+*[http://www.manageability.org/blog/stuff/open-source-document-repository/view Open Source Document Management Solutions Written in Java]
+*[http://pkp.sfu.ca/?q=ojs Open Journal Systems]
+*[http://pkp.sfu.ca/?q=harvester Open Archives Harvester]
+*[http://alcme.oclc.org/OAIHarvester.html OAIHarvester is a Java application framework that harvests metadata from OAI-compliant servers.]
+*[http://zmarco.sourceforge.net/ ZMARCO is an Open Archive Initiative Protocol for Metadata Harvesting (OAI-PMH) 2.0 compliant data provider.]
+
+
+
+## Miscellaneous ##
+*Define Rights, not Roles, and let the Administrators build Roles from Rights.
+*JVM per work-flow, if work-flows are 'heavy'?  Provides resource usage restrictions.
+*UNDO etc
+*DOI-like handle/name-space for Library versions of DOIs?
+*LIFE cost assessment system is essentially like physics, looking for the cleanest parameterisation.
+*Clarify what is being evaluated! The Experiment includes The Data???
+*Filer interface via RO WebDAV code?
+*Formats - are the variants of plain text documented somewhere?
+
+*Standard Open Access Format - A standard for which the documentation is freely available (at zero or marginal cost, no licencing?) and which, perhaps in combination with other SOStandards, is sufficient to allow the implementation of a (OAIS Term) viewer/editor[???] from scratch, without reference to any futher third party code or other IP.
+
+*What are the controls needed to perform experiments, the uniform environment of Planets???
+
+*We can use XSD to define our 'data types'.  Generate Java from that.
+*We can proscribe Web Service structure, based on our data types.
+*Note that adding a JCR/WebDAV frontend to Hadoop HDFS would be sweet.
+*Use WebDAV instead of JCR?  Just wrap it in SSL and use BASIC auth
+*[http://developers.sun.com/global/technology/standards/reference/faqs/determining-file-encoding.html How Can I Determine the Encoding of a File?]
+*[http://www.coreservlets.com/JSF-Tutorial/ Java Server Faces tutorial].
+
+Services
+
+*Pipes. Transforms. Processes. Steps. Functions. Mappers. Tubes.
+*Inputs: - File (also contains metadata - unique URI is needed I think)
+*Outputs: - Metadata, or File (e.g. file in new format) -
+*FileSet (e.g. separate pages) - Session (emulators (SoftwareSession), viewers (BrowserSession), etc)
+
+So, we have 
+
+*Characterisers, which generate [[XCDL]],[[XCEL]] (characteristics in an XML language).
+*Managers, which e.g. attach new metadata to files in the store, and resolves any conflicts.
+*Migrators, which take a File and return a File or FileSet in a new format, according to a set of Parameters
+*Viewers, which result in a Session instead of a File, perhaps a Browser or Emulator session
+
+## Developer Notes Awaiting Their True Wiki Location ##
+*Serious failure: ERROR 42Y07: Schema 'PLANETSDBADMIN' does not exist
+*Need to use deploy-all, not deploy-framework, to get started. 
+*Need to do a one-time 'ant db-create' in components/admin - then login works. 
+*Two different versions of MyFaces:Tomahawk causing problems on init. 
+*Multiple different JAXB versions. OpenXML version required for compilation 
+*Mix of Java versions. 
+**Some objects lacking type-safe &lt;qualifiers&gt; ggesting Java 1.4 or earlier. 
+**Some parts use annotations, therefore requiring Java 1.5+.
+**Note that JAVA_OPTS=-Xmx512m is needed to run all this.
+*A GUI for browsing the contents of a Data Store is required - where will it be done?
+*Extractors as a separate type of Migration?
+*Comparator Service?  Provided by Testbed?
+*Save Workflow needed?
+*Register-this-service Service?
+*Exceptions and Reporting (Carl?)
+*Note that if we allow pipes to be passed as arguments, we start to enable full functional programming.
+*[http://static.springframework.org/spring-ws/site/reference/html/tutorial.html Spring Framework - Chapter 3. Writing Contract-First Web Services]
+*[http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html Maven to control dependencies?]
+*[http://en.wikipedia.org/wiki/DITA Darwin Information Typing Architecture] as a useful document type.
+
+*The 'Register This Service' Service - Catch-22?
+*Comparator Service?  Compares two lists of SigProps and returns the 'differences'?
+*SaveWorkflow as a service offered by some component.
+*Exceptions/Reporting - Carl to handle these.  
+**Are there standard WebService ways?
+*Document DataRegistry/RepAPI/localJCR roles. (Not here, yet).
+*http://news.zdnet.com/2100-1009_22-5345253.html Security ideas???
+
+*Search for User example in code. None?
+*Mail Thomas about example of User lookup?
+*Write a Planets Architecture Specification?
+*Write a Planets Component Developer Guide?  To include examples of using the shared code, e.g. user lookup.  How to secure that WS?!
+*Exec PPlan requires args: PPlan and FileSet.
+*NOTE: Ideally this will allow pass-by-value or pass-by-ref for passing DigitalFiles between services.
+* Go through all of these: http://gforge.planets-project.eu/gf/project/if_sp/docman/
+*[[Planets Software License]] should be a standard non-commercial licence?
+*[[Java Coding Good Practice Guide]] should be linked in.
+*[[IF Overview]] is a starting point for devdocs.
+*[[IF Integration]] is a starting point for the integration guide.
+*[[IF/Security]] should be linked in, but is Acegi-based.
+
+*TEST: 'ant all' does everything? including db-create?
+*ACTION: Offer a Solaris build for CruiseControl?
+*NOTE: Ant stuff has to be changed to enable CruiseControl to exe unit tests.
+*NOTE: There is a planets installer.
+*Security Layers - Code???, Web, Services, Proxying down to Databases etc.
+*Roles of components, e.g. Testbed could test PreservationPlans from Plato against difficult Corpora, e.g. nasty edge cases.
+*Types, subTypes and properties could be useful?  Is PRONOM enough?  Only one XML type. Java Types with SerializedForms instead?
+*Idea: XSLT service, takes XML and XML(XSLT ns form), returns XML.
+*TechArch/*: Data Integrity.
+**Overwriting or Deleting should be HARD.
+**Adding be easier.
+**Encourages pipe-and-filter form.
+*Intellectual Entities managed at the DR level, everything else lower level?
+*TechReg Service, pro-forma email to PRONOM to request a new format id?
+
+*PLATO creates a Preservation Plan, including an Executable Preservation Plan (BPEL), based on a subset of a Collection.
+*The [[Testbed]] should be capable of executing a EPP against some other Collection Subset.
+
+*Scaling issues - how will estimation of scaling work?
+
+*The Admin component appears to be based on [http://appfuse.org/ AppFuse]
+*[http://ode.apache.org/ Apache ODE] provides a flexible [[BPEL]] engine.
+
+&lt;pre&gt;
+13:21:46,615 ERROR [ConnectionRecoveryManager] could not execute statement, reason: Table/View 'VERSION_NAMES' does not exist., state/code: 42X05/20000
+13:21:46,630 ERROR [BundleDbPersistenceManager] failed to write bundle: deadbeef-face-babe-cafe-babecafebabe
+java.lang.IllegalStateException: Unable to read index: java.sql.SQLException: Table/View 'VERSION_NAMES' does not exist.
+        at org.apache.jackrabbit.core.persistence.bundle.util.DbNameIndex.getIndex(DbNameIndex.java:173)
+&lt;/pre&gt;
+
+*[[Testbed]]: What does it mean to compare preservation plans? How would it be done?
+
+
+
+

@@ -1,0 +1,86 @@
+# Preservation Actions #
+
+
+# Migration #
+
+
+
+ - Migrations with Image Magick:
+ - Use [-list][1] 
+and -version etc to auto-build service info and pathways.
+ - Migrating wiki pages, via HTML, or HTML to Wiki.
+ - [<code>http://diberri.dyndns.org/wikipedia/html2wiki/</code>][2] 
+ - [<code>http://www.aaronsw.com/2002/html2text/</code>][3] 
+ - [<code>http://deplate.sourceforge.net/</code>][4] 
+ - [<code>http://wiki.docbook.org/topic/Html2DocBook</code>][5] 
+ - [<code>http://wiki.docbook.org/topic/ConvertOtherFormatsToDocBook</code>][6] 
+ - Convert fonts between formats:
+ - [<code>http://www.ics.uci.edu/~chenli/pdf-font-types/index.html</code>][7] 
+ - [<code>http://fondu.sourceforge.net/</code>][8] 
+ - Fun With Encodings Awaits.
+ - Migrating wiki pages, via HTML, or HTML to Wiki.
+ - [http://diberri.dyndns.org/wikipedia/html2wiki/][9] 
+ - [http://www.aaronsw.com/2002/html2text/][10] 
+ - Migrating to XML, [MIXED][11] 
+ - Mostly databases, like SIARD.
+ - See also [
+this news article][12] 
+
+
+Could also merge in the [CRiB service][13] .
+
+## Crosswalking ##
+
+
+Migrations that convert between metadata formats, mapping
+elements of one into the other.
+
+
+ - [bibtex2rdf][14] .
+
+
+# Extracting Properties #
+
+
+
+ - Use pdffonts and other code from pdf-utils ([xpdf][15]  or [Poppler][16] ) to extract
+information, like font dependencies.
+
+
+# Quality Control #
+
+
+
+ - Create a .NET service to [strip macros from
+OpenXML][17] .
+ - Use a [HTML Tidy
+profile][18]  and implements as a [JTidy][19]  service.
+
+
+# Quality Assessment #
+
+
+e.g the comparator that compares two sets of measured properties
+and evaluates the difference.
+
+
+
+  [1]: http://www.imagemagick.org/script/command-line-options.php#list
+  [2]: http://diberri.dyndns.org/wikipedia/html2wiki/
+  [3]: http://www.aaronsw.com/2002/html2text/
+  [4]: http://deplate.sourceforge.net/
+  [5]: http://wiki.docbook.org/topic/Html2DocBook
+  [6]: http://wiki.docbook.org/topic/ConvertOtherFormatsToDocBook
+  [7]: http://www.ics.uci.edu/~chenli/pdf-font-types/index.html
+  [8]: http://fondu.sourceforge.net/
+  [9]: http://diberri.dyndns.org/wikipedia/html2wiki/
+  [10]: http://www.aaronsw.com/2002/html2text/
+  [11]: http://mixed.dans.knaw.nl/
+  [12]: http://lonewolflibrarian.wordpress.com/2009/06/17/digital-preservation-by-immediate-conversion-to-xml-06-17-09/
+  [13]: http://crib.dsi.uminho.pt/
+  [14]: http://www.l3s.de/~siberski/bibtex2rdf/
+  [15]: http://www.foolabs.com/xpdf/
+  [16]: http://poppler.freedesktop.org/
+  [17]: http://openxmldeveloper.org/articles/1868.aspx
+  [18]: http://tidy.sourceforge.net/docs/quickref.html
+  [19]: http://jtidy.sourceforge.net/

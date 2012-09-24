@@ -1,0 +1,17 @@
+Notes
+this
+ - [Disk partitioning][1]  - [Block (data storage)][2]  - [CD-ROM][3] , [Red_Book_(audio_CD_standard)][4] . - 
+
+
+
+File Systems For Preservation
+[ZFS][5]  see [Getting Started][6] , and [Lustre][7]  which is a properly distributed (parallel-access) FS based on ZFS.
+
+
+  [1]: http://en.wikipedia.org/wiki/Disk_partitioning
+  [2]: http://en.wikipedia.org/wiki/Block_%28data_storage%29
+  [3]: http://en.wikipedia.org/wiki/CD-ROM
+  [4]: http://en.wikipedia.org/wiki/Red_Book_%28audio_CD_standard%29
+  [5]: http://en.wikipedia.org/wiki/ZFS
+  [6]: http://www.opensolaris.org/os/community/zfs/intro/
+  [7]: http://en.wikipedia.org/wiki/Lustre_%28file_system%29

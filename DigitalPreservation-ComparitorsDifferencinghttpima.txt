@@ -1,0 +1,13 @@
+gedifftigrisorgPerceptualImage
+
+Comparitors - Differencing
+
+ - [http://imagediff.tigris.org/][1]  - [Perceptual Image Diff][2]  -  Text diffs and object diffs?
+Comparitors - Infomational Content
+ - [Shannon Entropy][3] 
+
+
+
+  [1]: http://imagediff.tigris.org/
+  [2]: http://pdiff.sourceforge.net/
+  [3]: http://www.bearcave.com/misl/misl_tech/wavelets/compression/shannon.html

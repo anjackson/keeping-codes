@@ -1,0 +1,100 @@
+See also this related effort: [Wikibook:
+Choosing The Right File Format][1] .
+
+# File Format Registries #
+
+
+
+ - Format registries to include:
+ - A file extension registry?
+ - [File Free File
+Command][2] 
+ - [JMimeMagic][3]  can
+help here.
+ - [MIME
+Types][4] 
+ - [PRONOM][5] 
+ - [Global Digital Format
+Registry][6] 
+ - [
+Apple Uniform Type Identifiers][7] 
+ - [CRiB format
+knowledgebase][8]  and other [CRiB][9]  data.
+
+
+# Documents #
+
+
+
+ - Open Office v. Office Open XML
+ - [Compound Document
+Format][10] 
+ - HTML
+
+
+# Databases #
+
+
+Preservation-Format Approach.
+
+
+ - [DANS
+M-XML][11] 
+ - SIARD, [Providing
+Authentic Long-term Archival Access to Complex Relational
+Data][12] 
+
+
+# File Identification #
+
+
+Re-write Fine Free File in Java, leveraging existing
+knowledge
+
+
+ - Actually the LGPL [JMimeMagic][13]  is
+very close!
+ - [
+Java sprintf][14] 
+ - [
+Java regex][15] 
+ - [c.f.
+Python Magic][16] 
+ - Modify it to work from a new DB with new unique IDs.
+ - Build the DB using FFFile magic + DROID signature file +
+others.
+ - Make it updateable, from DROID/FFFile and from users? Sync
+issue.
+
+
+Then, map into a human-readable format ID space, similar to the
+[OS
+X UTI system][17] , but more open, and more freely mappable. Expose
+osx-uti mappings too. Add version identification system. Link to
+PRONOM too.
+
+The main idea is really to extend the FFF system so that it is
+backed-up by a community-edited database. This would build standard
+identifiers ([<code>http://purl.org/</code>][18] s?),
+and mappings, and test cases/example files.
+
+
+
+  [1]: http://en.wikibooks.org/wiki/Choosing_The_Right_File_Format
+  [2]: http://www.darwinsys.com/file/
+  [3]: http://sourceforge.net/projects/jmimemagic/
+  [4]: http://www.iana.org/assignments/media-types/
+  [5]: http://www.nationalarchives.gov.uk/pronom/
+  [6]: http://hul.harvard.edu/gdfr/
+  [7]: http://developer.apple.com/documentation/Carbon/Conceptual/understanding_utis/utilist/chapter_4_section_1.html#//apple_ref/doc/uid/TP40001319-CH205-CHDIJFGJ
+  [8]: http://crib.dsi.uminho.pt/format-knowledgebase.xml
+  [9]: http://crib.dsi.uminho.pt/
+  [10]: http://www.w3.org/TR/WICD/
+  [11]: http://mixed.dans.knaw.nl/node/114
+  [12]: http://arxiv.org/abs/cs/0408054
+  [13]: http://sourceforge.net/projects/jmimemagic/
+  [14]: http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html#format(java.util.Locale,%20java.lang.String,%20java.lang.Object...)
+  [15]: http://java.sun.com/docs/books/tutorial/essential/regex/test_harness.html
+  [16]: http://gavinjnet.blogspot.com/2007/05/python-file-magic.html
+  [17]: http://developer.apple.com/macosx/uniformtypeidentifiers.html
+  [18]: http://purl.org/

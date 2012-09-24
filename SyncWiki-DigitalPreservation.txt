@@ -1,0 +1,371 @@
+Digital Preservation is concerned with the storage of digital
+resources using mechanism that will ensure access in
+perpetuity.
+
+
+ - [<code>http://en.wikipedia.org/wiki/Digital_preservation</code>][1] 
+ - Courses available through [<code>http://www.ulcc.ac.uk/dptp/</code>][2] .
+ - Planets
+ - ARC format and WARC soon: [<code>http://archive-access.sourceforge.net/</code>][3] 
+ - [Flickr: Photos
+from The Library of Congress][4] 
+ - [slashdot:
+What is Fair Use in the Digital Age?][5] 
+ - [The Spanish Digital
+Library][6] 
+ - [Office
+Online File Converters and Viewers][7] 
+ - Reports
+ - [&acirc;&euro;&tilde;Google
+Generation&acirc;&euro;&trade; is a myth, says new
+research][8] 
+ - OpenFormats
+ - BabelFish
+
+
+_why - if you program and want any longevity to your work, make
+a game. all else recycles, but people rewrite architectures to keep
+games alive.
+
+# Digital Preservation Notebook #
+
+
+
+ - [FileFormats]
+ - [Metadata]
+ - [DigitalObjectStorage]
+ - [PreservationActions]
+ - [DOMD]
+ - [DPInstitutions]
+ - [DPC][9] , etc etc...
+ - Steering Factors, EU, Digital Britain,
+ - Conferences
+ - [Joint Conference on Digital
+Libraries][10] 
+ - [International
+Conference on Digital Preservation][11] 
+
+   - [iPres 2009][12] 
+
+
+ - [European Conference on
+Digital Libraries][13] 
+ - Journals
+ - [International Journal of Digital
+Curation][14] 
+ - [Code4Lib][15] 
+ - [International Journal on
+Digital Libraries][16] 
+ - People:
+ - (Herbert Van de Sompel - Papers)[[http://public.lanl.gov/herbertv/papers/][17] )
+ - Software
+ - [Netscape 4.7 -
+9.0][18] 
+ - [Netscape 3.0
+- 3.04][19] 
+
+
+# Related Projects #
+
+
+Code to be stored at [http://code.google.com/p/domd/][20] .
+
+Interoperability, and sources of information.
+
+
+ - [PADI - Preserving Access
+to Digital Information][21]  lots of useful, deep information.
+ - [PADI -
+Digital preservation strategies][22] 
+ - [PANIC - Preservation
+webservices Architecture for Newmedia and Interactive
+Collections][23] 
+ - [Planets][24] 
+ - [Data Portability][25] ,
+[Data
+Portability, for Developers][26] 
+
+
+# Building Scalable Infrastructures #
+
+
+# Examples #
+
+
+
+ - [Preserv: Inspiration and
+Provision of Preservation Services for Digital
+Repositories][27] 
+ - [
+Gordon Mohr Takes Us Inside the Internet Archives][28] 
+ - [
+./ - How Facebook Stores Billions of Photos][29] 
+ - [
+Handling Flash Crowds from your Garage][30] 
+ - [
+Yahoo: Apache Hadoop Wins Terabyte Sort Benchmark][31]  (209s on 910
+cores)
+ - [Running
+Hadoop on Amazon EC2][32] 
+ - [EC2 Console for
+Drupal][33] 
+ - [ZFS
+Under Linux: A User Report][34] .
+
+
+# Scalable Preservation Plans #
+
+
+I want to write a document that looks at the scalability of
+different preservation approaches, and attempts to deal with the
+migration v. emulation issue. Is it really scalable to migrate? Or
+can we really cope with the every increasing range of formats? But
+are the number of valid migration plans so small that it's not
+worth worrying about, because almost everything else will require
+emulation.
+
+# Upgrading Planets #
+
+
+The Planets code builds on a large number of software projects,
+brought together via the JBoss application server. In the future,
+we will need to keep these things up to date, and this bring sup a
+number of issues.
+
+_Should we clean up deployment procedure? *See Planets
+Application Server for details of the current system.*Automatically
+build the appserver from the JBoss/Apache/etc distribution
+files._Upgrade Jackrabbit to 1.3.3. indicated as 1.3 but actually
+1.3.1 at present. _Upgrade Derby version. 10.2.? should go up to
+10.3.1.4_Upgrade JCR Explorer? *Document JCR deployment details.
+(For upgrades).
+
+# Web Services #
+
+
+_The key to achieving the end goals is to define communication
+standards for the DP community. This can outlast any particular
+implementation, interface or tool set._Self-describing services -
+[http://www.w3.org/TR/wsdl#_documentation][35] 
+__"*WSDL uses the optional wsdl:document element as a container
+for human readable documentation. The content of the element is
+arbitrary text and elements ("mixed" in XSD). The documentation
+element is allowed inside any WSDL language element.*"_Human
+tasks, with self-estimates, leads to 'Real' Gantt Charts - new
+management model._[http://www.digitalpreservation.gov/formats/fdd/fdd000236.shtml
+WARC, Web ARChive file format][36] .
+
+## Software ##
+
+
+_[http://www.dspace.org/
+DSpace][37] _[http://www.manageability.org/blog/stuff/open-source-document-repository/view
+Open Source Document Management Solutions Written in Java][38] 
+_[http://pkp.sfu.ca/?q=ojs
+Open Journal Systems][39] _[http://pkp.sfu.ca/?q=harvester
+Open Archives Harvester][40]  _[http://alcme.oclc.org/OAIHarvester.html
+OAIHarvester is a Java application framework that harvests metadata
+from OAI-compliant servers.][41] _[http://zmarco.sourceforge.net/
+ZMARCO is an Open Archive Initiative Protocol for Metadata
+Harvesting (OAI-PMH) 2.0 compliant data provider.][42] 
+
+# Miscellaneous #
+
+
+_Define Rights, not Roles, and let the Administrators build
+Roles from Rights._JVM per work-flow, if work-flows are 'heavy'?
+Provides resource usage restrictions. _UNDO etc_DOI-like
+handle/name-space for Library versions of DOIs? _LIFE cost
+assessment system is essentially like physics, looking for the
+cleanest parameterisation._Clarify what is being evaluated! The
+Experiment includes The Data??? _Filer interface via RO WebDAV
+code?_Formats - are the variants of plain text documented
+somewhere?
+
+
+ - Standard Open Access Format - A standard for which the
+documentation is freely available (at zero or marginal cost, no
+licencing?) and which, perhaps in combination with other
+SOStandards, is sufficient to allow the implementation of a (OAIS
+Term) viewer/editor[???] from scratch, without reference to any
+futher third party code or other IP.
+
+
+
+ - What are the controls needed to perform experiments, the
+uniform environment of Planets???
+
+
+_We can use XSD to define our 'data types'. Generate Java from
+that._We can proscribe Web Service structure, based on our data
+types. _Note that adding a JCR/WebDAV frontend to Hadoop HDFS would
+be sweet._Use WebDAV instead of JCR? Just wrap it in SSL and use
+BASIC auth _[http://developers.sun.com/global/technology/standards/reference/faqs/determining-file-encoding.html
+How Can I Determine the Encoding of a File?][43] _[http://www.coreservlets.com/JSF-Tutorial/
+Java Server Faces tutorial][44] .
+
+Services
+
+_Pipes. Transforms. Processes. Steps. Functions. Mappers.
+Tubes._Inputs: - File (also contains metadata - unique URI is
+needed I think) _Outputs: - Metadata, or File (e.g. file in new
+format) -_FileSet (e.g. separate pages) - Session (emulators
+(SoftwareSession), viewers (BrowserSession), etc)
+
+So, we have
+
+_Characterisers, which generate XCDL,XCEL (characteristics in an
+XML language)._Managers, which e.g. attach new metadata to files in
+the store, and resolves any conflicts. _Migrators, which take a
+File and return a File or FileSet in a new format, according to a
+set of Parameters_Viewers, which result in a Session instead of a
+File, perhaps a Browser or Emulator session
+
+# Developer Notes Awaiting Their True Wiki Location #
+
+
+_Serious failure: ERROR 42Y07: Schema 'PLANETSDBADMIN' does not
+exist_Need to use deploy-all, not deploy-framework, to get started.
+_Need to do a one-time 'ant db-create' in components/admin - then
+login works._Two different versions of MyFaces:Tomahawk causing
+problems on init. _Multiple different JAXB versions. OpenXML
+version required for compilation_Mix of Java versions. *Some
+objects lacking type-safe ggesting Java 1.4 or earlier.*Some parts
+use annotations, therefore requiring Java 1.5+. __Note that
+JAVA_OPTS=-Xmx512m is needed to run all this._A GUI for browsing
+the contents of a Data Store is required - where will it be
+done?_Extractors as a separate type of Migration? _Comparator
+Service? Provided by Testbed?_Save Workflow needed?
+_Register-this-service Service?_Exceptions and Reporting (Carl?)
+_Note that if we allow pipes to be passed as arguments, we start to
+enable full functional programming._[http://static.springframework.org/spring-ws/site/reference/html/tutorial.html
+Spring Framework - Chapter 3. Writing Contract-First Web
+Services][45]  _[http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html
+Maven to control dependencies?][46] _[http://en.wikipedia.org/wiki/DITA
+Darwin Information Typing Architecture][47]  as a useful document
+type.
+
+_The 'Register This Service' Service - Catch-22?_Comparator
+Service? Compares two lists of SigProps and returns the
+'differences'? _SaveWorkflow as a service offered by some
+component._Exceptions/Reporting - Carl to handle these.
+
+__Are there standard WebService ways?_Document
+DataRegistry/RepAPI/localJCR roles. (Not here,
+yet)._http://news.zdnet.com/2100-1009_22-5345253.html Security
+ideas???
+
+_Search for User example in code. None?_Mail Thomas about
+example of User lookup? _Write a Planets Architecture
+Specification?_Write a Planets Component Developer Guide? To
+include examples of using the shared code, e.g. user lookup. How to
+secure that WS?! _Exec PPlan requires args: PPlan and
+FileSet._NOTE: Ideally this will allow pass-by-value or pass-by-ref
+for passing DigitalFiles between services. * Go through all of
+these: [http://gforge.planets-project.eu/gf/project/if_sp/docman/][48] 
+_Planets Software License should be a standard non-commercial
+licence?_Java Coding Good Practice Guide should be linked in. _IF
+Overview is a starting point for devdocs._IF Integration is a
+starting point for the integration guide. *IF/Security should be
+linked in, but is Acegi-based.
+
+_TEST: 'ant all' does everything? including db-create?_ACTION:
+Offer a Solaris build for CruiseControl? _NOTE: Ant stuff has to be
+changed to enable CruiseControl to exe unit tests._NOTE: There is a
+planets installer. _Security Layers - Code???, Web, Services,
+Proxying down to Databases etc._Roles of components, e.g. Testbed
+could test PreservationPlans from Plato against difficult Corpora,
+e.g. nasty edge cases. _Types, subTypes and properties could be
+useful? Is PRONOM enough? Only one XML type. Java Types with
+SerializedForms instead?_Idea: XSLT service, takes XML and XML(XSLT
+ns form), returns XML. _TechArch/_: Data Integrity. *Overwriting or
+Deleting should be HARD.*Adding be easier. __Encourages
+pipe-and-filter form._Intellectual Entities managed at the DR
+level, everything else lower level?_TechReg Service, pro-forma
+email to PRONOM to request a new format id?
+
+_PLATO creates a Preservation Plan, including an Executable
+Preservation Plan (BPEL), based on a subset of a Collection._The
+Testbed should be capable of executing a EPP against some other
+Collection Subset.
+
+
+ - Scaling issues - how will estimation of scaling work?
+
+
+_The Admin component appears to be based on [http://appfuse.org/
+AppFuse][49] _[http://ode.apache.org/
+Apache ODE][50]  provides a flexible BPEL engine.
+
+<pre> 13:21:46,615 ERROR [ConnectionRecoveryManager] could
+not execute statement, reason: Table/View 'VERSION_NAMES' does not
+exist., state/code: 42X05/20000 13:21:46,630 ERROR
+[BundleDbPersistenceManager] failed to write bundle:
+deadbeef-face-babe-cafe-babecafebabe
+java.lang.IllegalStateException: Unable to read index:
+java.sql.SQLException: Table/View 'VERSION_NAMES' does not
+exist.
+
+
+    at org.apache.jackrabbit.core.persistence.bundle.util.DbNameIndex.getIndex(DbNameIndex.java:173)
+
+
+</pre>
+
+
+ - Testbed: What does it mean to compare preservation plans? How
+would it be done?
+
+
+
+
+  [1]: http://en.wikipedia.org/wiki/Digital_preservation
+  [2]: http://www.ulcc.ac.uk/dptp/
+  [3]: http://archive-access.sourceforge.net/
+  [4]: http://www.flickr.com/photos/library_of_congress/
+  [5]: http://slashdot.org/article.pl?sid=08/01/16/195246&amp;from=rss
+  [6]: http://www.bne.es/BDH/index.htm
+  [7]: http://office.microsoft.com/en-us/downloads/HA010449811033.aspx
+  [8]: http://www.jisc.ac.uk/news/stories/2008/01/googlegen.aspx
+  [9]: http://www.dpconline.org/
+  [10]: http://www.jcdl.org/
+  [11]: http://rdd.sub.uni-goettingen.de/conferences/ipres/ipres-en.html
+  [12]: http://www.cdlib.org/iPres/
+  [13]: http://www.ecdlconference.eu/
+  [14]: http://www.ijdc.net
+  [15]: http://journal.code4lib.org/
+  [16]: http://www.dljournal.org/
+  [17]: http://public.lanl.gov/herbertv/papers/
+  [18]: http://browser.netscape.com/releases
+  [19]: http://sillydog.org/narchive/full123.php
+  [20]: http://code.google.com/p/domd/
+  [21]: http://www.nla.gov.au/padi/
+  [22]: http://www.nla.gov.au/padi/topics/18.html
+  [23]: http://metadata.net/panic/
+  [24]: http://www.planets-project.eu/
+  [25]: http://dataportability.org/
+  [26]: http://wiki.dataportability.org/display/dpmain/For+Developers
+  [27]: http://preserv.eprints.org/
+  [28]: http://news.oreilly.com/2008/06/gordon-mohr-takes-us-inside-th.html
+  [29]: http://developers.slashdot.org/article.pl?sid=08/06/25/148203&amp;from=rss
+  [30]: http://www.usenix.org/events/usenix08/tech/full_papers/elson/elson_html/index.html
+  [31]: http://developer.yahoo.com/blogs/hadoop/2008/07/apache_hadoop_wins_terabyte_sort_benchmark.html
+  [32]: http://wiki.apache.org/hadoop/AmazonEC2
+  [33]: http://drupal.org/project/ec2
+  [34]: http://www.tummy.com/journals/entries/jafo_20080705_130814
+  [35]: http://www.w3.org/TR/wsdl#_documentation
+  [36]: http://www.digitalpreservation.gov/formats/fdd/fdd000236.shtml%20WARC,%20Web%20ARChive%20file%20format
+  [37]: http://www.dspace.org/%20DSpace
+  [38]: http://www.manageability.org/blog/stuff/open-source-document-repository/view%20Open%20Source%20Document%20Management%20Solutions%20Written%20in%20Java
+  [39]: http://pkp.sfu.ca/?q=ojs%20Open%20Journal%20Systems
+  [40]: http://pkp.sfu.ca/?q=harvester%20Open%20Archives%20Harvester
+  [41]: http://alcme.oclc.org/OAIHarvester.html%20OAIHarvester%20is%20a%20Java%20application%20framework%20that%20harvests%20metadata%20from%20OAI-compliant%20servers.
+  [42]: http://zmarco.sourceforge.net/%20ZMARCO%20is%20an%20Open%20Archive%20Initiative%20Protocol%20for%20Metadata%20Harvesting%20(OAI-PMH)%202.0%20compliant%20data%20provider.
+  [43]: http://developers.sun.com/global/technology/standards/reference/faqs/determining-file-encoding.html%20How%20Can%20I%20Determine%20the%20Encoding%20of%20a%20File?
+  [44]: http://www.coreservlets.com/JSF-Tutorial/%20Java%20Server%20Faces%20tutorial
+  [45]: http://static.springframework.org/spring-ws/site/reference/html/tutorial.html%20Spring%20Framework%20-%20Chapter%203.%20Writing%20Contract-First%20Web%20Services
+  [46]: http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html%20Maven%20to%20control%20dependencies?
+  [47]: http://en.wikipedia.org/wiki/DITA%20Darwin%20Information%20Typing%20Architecture
+  [48]: http://gforge.planets-project.eu/gf/project/if_sp/docman/
+  [49]: http://appfuse.org/%20AppFuse
+  [50]: http://ode.apache.org/%20Apache%20ODE

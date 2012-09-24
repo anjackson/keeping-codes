@@ -1,0 +1,20 @@
+Honeycomb?
+
+Iomega [StorCenter Pro ix4-200r][1] , from this [story about a Canadian digitisation project][2] .
+
+Data Management Systems
+
+[SDSC][3]  [Storage Resource Broker][4]  
+
+Services
+
+[UBC Storage Grid][5] 
+
+...
+[][6] 
+  [1]: http://go.iomega.com/en/products/network-attached-storage-nas/ix4-200r/ix4-200r/?partner=4735
+  [2]: http://www.mediacastermagazine.com/issues/ISArticle.asp?aid=1000339420
+  [3]: http://en.wikipedia.org/wiki/San_Diego_Supercomputer_Center
+  [4]: http://en.wikipedia.org/wiki/Storage_Resource_Broker
+  [5]: http://www.it.ubc.ca/storagesolutions/storage.html
+  [6]: http://www.it.ubc.ca/storagesolutions/storage.html

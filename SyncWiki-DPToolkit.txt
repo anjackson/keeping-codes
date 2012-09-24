@@ -1,0 +1,397 @@
+# Potential Tools #
+
+
+# Optical Character Recognition #
+
+
+
+ - [http://en.wikipedia.org/wiki/Optical_character_recognition][1] 
+ - [http://code.google.com/p/ocropus/][2] 
+- OS pluggable document analysis, using
+ - [http://code.google.com/p/tesseract-ocr/][3] 
+- OS OCR, single columns of text. Really easy to get working, and
+works!
+ - [http://code.google.com/p/tesseract-ocr/wiki/TrainingTesseract][4] 
+- Can be extended to other languages, and indeed has been. c.f.
+IMPACT.
+
+
+# Image Manipulation #
+
+
+
+ - [http://www.recognition-software.com/image/deskew/][5] 
+- OS, Hough transform used to automatically deskew.
+
+
+Separating 'copies' from 'reward'? i.e. how copyright has
+broken...
+
+# ISO/UDF Tools #
+
+
+Format info, [http://homepage.mac.com/wenguangwang/myhome/udf.html][6] 
+
+## UDF Verifier ##
+
+
+Login required (through [https://www.ip.philips.com/partners/][7] ),
+but: [
+https://www.ip.philips.com/partners/registered/par_udf_index.html][8] 
+$ udf_test -inspect_image ubuntu-9.10-desktop-amd64.iso
+
+Looks like a deep test, but cannot guess the ECC length, and
+consequences of this are not well understood:
+
+=&gt; Warning: Undefined (ECC) blocking factor, set to 16. -
+Please specify "-ecclength " to enable the verifier to do - a
+better job. Media that do not have ECC or fixed size packets - must
+specify: -ecclength 1
+
+" -blocksize # Logical block size, default: 2048 -ecclength #
+ECC blocking factor, e.g 32 for CD-RW. "
+
+Is it 16 for DVD? Does the blocksize ever really change?
+
+The image analysis also has a file size limit:
+
+" chunk will be a multiple of the block size and at most
+1.9999999991 Gbyte. "
+
+i.e. DVD image files need to be split, booo...
+
+$ split -b 1900m fedora-11-x86_64-dvd.iso $ udf_test
+-inspect_image xaa xab xac
+
+Note that the included binary works okay on my desktop, but not
+on the 2003 server. It should be able to somehow use this to access
+the scsi device directly...
+
+On my laptop, this works, although it is not always clear what
+the errors mean.
+
+$ udf_test -drive d: ...
+
+## Linux UDF ##
+
+
+Includes UDF support for the kernel, and a set of programs
+called 'UDF Tools'.
+
+[https://sourceforge.net/projects/linux-udf/][9] 
+
+## MD5 ##
+
+
+Note that from here [http://www.ganjalinux.org/wiki/index.php?title=Cygwin][10] 
+is appears that md5sum can point to a block device (/dev/cda) and
+generate an MD5 sum that should match the image. Of course, the
+problem is that these block devices are not properly mapped under
+Cygwin, so this won't really work. Perhaps SFU allows this?
+
+## Unarchiving ##
+
+
+$ /cygdrive/c/Program&Acirc; Files/7-Zip/7z.exe l
+vt.iso
+
+7-Zip 4.57 Copyright (c) 1999-2007 Igor Pavlov 2007-12-06
+
+Listing archive: vt.iso
+
+Date Time Attr Size Compressed Name ------------------- -----
+------------ ------------ ------------------------ 2007-04-27
+07:40:27 boot 2007-04-27 07:40:27 boot 2007-04-27 07:40:27 94 94
+boot.lst 2007-04-27 07:40:27 97812 97812 boot2_eltorito 2007-04-27
+07:40:27 2048 2048 boot.catalog 2007-04-27 07:40:27 82392 82392
+frobos.gz 2009-07-06 11:12:52 2048 2048 [BOOT]_NoEmulation.img
+------------------- ----- ------------ ------------
+------------------------ 184394 184394 5 files, 2 folders -
+
+This also has a test mode:
+/cygdrive/c/Program&Acirc; Files/7-Zip/7z.exe t vt.iso
+
+7-Zip 4.57 Copyright (c) 1999-2007 Igor Pavlov 2007-12-06
+
+Processing archive: vt.iso
+
+Testing boot Testing boot Testing boot.lst Testing
+boot2_eltorito Testing boot.catalog Testing frobos.gz Testing
+[BOOT]_NoEmulation.img
+
+Everything is Ok
+
+Folders: 2 Files: 5 Size: 184394 Compressed: 550912 -
+
+Works on DVD images too, it seems.
+
+## ISO Master ##
+
+
+ISO Master may also be an option: [http://en.wikipedia.org/wiki/ISO_Master][11] 
+
+# Other Tools #
+
+
+
+ - cdda2wav
+ - cdrecord
+ - cdrkit, cdrtools?! readcd etc.
+ - ddrescue
+ - genisoimage
+ - gnu ddrescue???
+ - mt (tape), mtd (flash).
+ - wodim - cli cd/dvd tool!
+ - dares [http://packages.debian.org/lenny/dares][12] 
+ - xorriso [http://scdbackup.webframe.org/xorriso_eng.html][13] 
+ - shared-mime-info
+ - webcheck - link checker.
+ - QHull general convex hull... Find the shape that covers all the
+points.
+ - speex Open source speech codec. A audio render diff for
+text?!
+ - o3read - OOF convertor!
+ - odf2txt, oodiff (text-based diff).
+ - rpx Simple validating XML parser.
+ - unrtf, untex, ...?
+ - xmlto
+ - libarchive - [http://code.google.com/p/libarchive/wiki/LibarchiveFormats][14] 
+ - JMimeMagic - Ask them to be a dev, or if they mind a fork.
+
+
+[
+http://www.nationalarchives.gov.uk/PRONOM/Format/proFormatSearch.aspx?status=detailReport&amp;id=822&amp;strPageToDisplay=signatures#][15] 
+
+Save As XML
+
+[
+http://www.nationalarchives.gov.uk/PRONOM/Format/proFormatDetailListAction.aspx?strFileFormatID=822&amp;SaveAs=Save+As+XML][16] 
+
+BUT it does not work, perhaps because it is not being POSTed.
+I'm sure we can get a copy of the data though.
+
+"Automatic Format Identification Using PRONOM and DROID"
+
+Signatures which are unique to one format record in PRONOM are
+termed &acirc;&euro;&tilde;specific&acirc;&euro;&trade; signatures,
+whereas those which are common to multiple format records are
+termed &acirc;&euro;&tilde;generic&acirc;&euro;&trade;
+signatures.
+
+The starting position can be one of two basic types:
+
+&acirc;&euro;&cent; Absolute: the byte sequence starts at a
+fixed position within the bitstream. This position is described as
+an offset from either the beginning or the end of the bitstream.
+The byte sequence can therefore be located by moving to the
+specified offset, counting from either the Beginning of File (BOF)
+or End of File (EOF) position. If counting from the EOF position,
+the offset is to the final byte in the sequence.
+
+&acirc;&euro;&cent; Variable: the byte sequence can start at any
+offset within the bitstream. The byte sequence can be located by
+examining the entire bitstream.
+
+The value of the byte sequence is defined as a sequence of
+hexadecimal values, optionally incorporating any of the following
+regular expressions:
+
+&acirc;&euro;&cent; ??: wildcard matching any pair of
+hexadecimal values (i.e. a single byte).
+
+e.g.: 0x0A FF ?? FE would match 0x0A FF 6C FE or 0x0A FF 11
+FE.
+
+&acirc;&euro;&cent; *: wildcard matching any number of bytes (0
+or more).
+
+e.g.: 0x0A FF * FE would match 0x0A FF 6C FE or 0x0A FF 6C 11
+FE.
+
+&acirc;&euro;&cent; {n}: wildcard matching n bytes, where n is
+an integer.
+
+e.g.: 0x1C 20 {2} 4E 12 would match 0x1C 20 FF 15 4E 12.
+
+&acirc;&euro;&cent; {m-n}: wildcard matching between m-n bytes
+inclusive, where m and n are integers or
+&acirc;&euro;&tilde;*&acirc;&euro;&trade;.
+
+e.g.: 0x03 {1-2} 4D would match 0x03 3C 4D or 0x03 3C 88 4D.
+
+e.g.: 0x03 {2-*} 4D would match 0x03 3C 88 4D or 0x03 3C 88 3F
+4D.
+
+&acirc;&euro;&cent; (a|b): wildcard matching one from a list of
+values (e.g. a or b), where each value is a hexadecimal byte
+sequence of arbitrary length containing no wildcards.
+
+e.g.: 0x0E (FF|FE) 17 would match 0x0E FF 17 or 0x0E FE 17.
+
+&acirc;&euro;&cent; [a:b]: wildcard matching any sequence of
+bytes which lies lexicographically between a and b, inclusive
+(where both a and b are byte sequences of the same length,
+containing no wildcards, and where a is less than b). The
+endian-ness of a and b are the same as the endian-ness of the
+signature as a whole.
+
+e.g. 0xFF [09:0B] FF would match 0xFF 09 FF, 0xFF 0A FF or 0xFF
+0B FF.
+
+&acirc;&euro;&cent; [!a]: wildcard matching any sequence of
+bytes other than a itself (where a is a byte sequence containing no
+wildcards).
+
+e.g. 0xFF [!09] FF would match 0xFF 0A FF, but not 0xFF 09
+FF.
+
+&acirc;&euro;&cent; [!a:b]: wildcard matching any sequence of
+bytes which does not lie lexicographically between a and b,
+inclusive (where a and b are both byte sequences of the same
+length, containing no wildcards, and where a is less than b).
+
+e.g. 0xFF [!01:02] FF would match 0xFF 00 FF and 0xFF 03 FF, but
+not 0xFF 01 FF or 0xFF 02 FF.
+
+Example hexadecimal regex:
+
+
+A1A2A3[A4:A5]??B1B2B3(B4|B5)*{5}01??C1C2C3{4-7}D1????F1(F2|F3)F4F5
+
+Can this be mapped into real regex?... 12, but convert to UTF
+where possible. public boolean isPrintableChar( char c ) {
+Character.UnicodeBlock block = Character.UnicodeBlock.of( c );
+return (!Character.isISOControl(c)) &amp;&amp; c !=
+KeyEvent.CHAR_UNDEFINED &amp;&amp; block != null
+&amp;&amp; block != Character.UnicodeBlock.SPECIALS; }
+
+The internal signatures contained in the signature file have
+been pre-processed in accordance with the method described in
+Appendix B.
+
+# Semantic Wiki #
+
+
+
+ - [http://beta.domd.info/][17] 
+Drupal for RDF.
+ - JEE - KiWi - [https://svn.salzburgresearch.at/svn/kiwi/KiWi/trunk/][18] 
+ - See [http://delicious.com/beardedstoat/semanticwiki][19] 
+for more options.
+
+
+-&amp;gt;Other --&amp;gt;AccessSoftware --&amp;gt;Algorithms
+--&amp;gt;CommonFileTypes CF [http://en.wikipedia.org/wiki/Unix_file_types][20] 
+Pipes etc --&amp;gt;ComputerHardware ----&amp;gt;BIOS
+----&amp;gt;CPU ----&amp;gt;Graphics ----&amp;gt;HardDiskController
+----&amp;gt;Interfaces ----&amp;gt;Network --&amp;gt;Media
+--&amp;gt;Physical --&amp;gt;ProcessingSoftware
+--&amp;gt;RepresentationRenderingSoftware --&amp;gt;Software
+------&amp;gt;Binary ------&amp;gt;Data ------&amp;gt;Documentation
+------&amp;gt;SourceCode -&amp;gt;Packaged -&amp;gt;Semantic
+--------&amp;gt;Data ----------&amp;gt;DictionarySpecification
+------------&amp;gt;Dictionary --------&amp;gt;Document
+--------------&amp;gt;XMLDocument --------&amp;gt;Language
+----------------&amp;gt;ComputerProgramming
+------------------&amp;gt;VendorExtensions
+----------------&amp;gt;HumanWritten --------&amp;gt;Models
+--------&amp;gt;Standards
+--------------------&amp;gt;DevelopingOrganisation
+----------------------&amp;gt;Standard -&amp;gt;Structure
+------------------------&amp;gt;Formats
+--------------------------&amp;gt;DescriptionLanguageSpecification
+----------------------------&amp;gt;FileDescription
+--------------------------&amp;gt;DigitalFileType
+--------------------------&amp;gt;Specification
+
+# Software Projects #
+
+
+
+ - [http://dioscuri.sourceforge.net/][21] 
+ - [http://droid.sourceforge.net/][22] 
+ - [http://digitalpreserve.sourceforge.net/][23] 
+ - ...
+ - [https://sourceforge.net/softwaremap/trove_list.php?form_cat=789][24] 
+ - [
+https://sourceforge.net/search/?type_of_search=soft&amp;words=%22digital+preservation%22&amp;search=Search][25] 
+ - [
+http://fileformats.wordpress.com/2009/11/24/libtiff-and-search-engines/][26] 
+
+
+# Hidden files #
+
+
+[
+http://stackoverflow.com/questions/1294989/make-a-file-folder-hidden-on-windows-with-java][27] 
+
+void hide(File src) throws InterruptedException, IOException {
+// win32 command line variant Process p =
+Runtime.getRuntime().exec("attrib +h " + src.getPath());
+p.waitFor(); }
+
+# Maven #
+
+
+Get [http://ant.apache.org/manual/CoreTasks/get.html][28] 
+Maven antrun [
+http://maven.apache.org/plugins/maven-antrun-plugin/examples/classpaths.html][29] 
+
+# Service Provider Interface #
+
+
+[
+http://commons.apache.org/discovery/apidocs/org/apache/commons/discovery/tools/Service.html#providers%28java.lang.Class%29][30] 
+
+[
+http://java.sun.com/j2se/1.3/docs/guide/jar/jar.html#Service%20Provider][31] 
+
+# Browser Format Support &amp; Plugins #
+
+
+
+ - [http://delicious.com/beardedstoat/dataviewers+browser][32] 
+ - [http://docs.sun.com/source/816-6408-10/mimetype.htm][33] 
+ - [
+http://www.howtocreate.co.uk/wrongWithIE/?chapter=navigator.plugins][34] 
+ - [
+http://www.oreillynet.com/pub/a/javascript/2001/07/20/plugin_detection.html][35] 
+
+
+
+
+  [1]: http://en.wikipedia.org/wiki/Optical_character_recognition
+  [2]: http://code.google.com/p/ocropus/
+  [3]: http://code.google.com/p/tesseract-ocr/
+  [4]: http://code.google.com/p/tesseract-ocr/wiki/TrainingTesseract
+  [5]: http://www.recognition-software.com/image/deskew/
+  [6]: http://homepage.mac.com/wenguangwang/myhome/udf.html
+  [7]: https://www.ip.philips.com/partners/
+  [8]: https://www.ip.philips.com/partners/registered/par_udf_index.html
+  [9]: https://sourceforge.net/projects/linux-udf/
+  [10]: http://www.ganjalinux.org/wiki/index.php?title=Cygwin
+  [11]: http://en.wikipedia.org/wiki/ISO_Master
+  [12]: http://packages.debian.org/lenny/dares
+  [13]: http://scdbackup.webframe.org/xorriso_eng.html
+  [14]: http://code.google.com/p/libarchive/wiki/LibarchiveFormats
+  [15]: http://www.nationalarchives.gov.uk/PRONOM/Format/proFormatSearch.aspx?status=detailReport&amp;id=822&amp;strPageToDisplay=signatures#
+  [16]: http://www.nationalarchives.gov.uk/PRONOM/Format/proFormatDetailListAction.aspx?strFileFormatID=822&amp;SaveAs=Save+As+XML
+  [17]: http://beta.domd.info/
+  [18]: https://svn.salzburgresearch.at/svn/kiwi/KiWi/trunk/
+  [19]: http://delicious.com/beardedstoat/semanticwiki
+  [20]: http://en.wikipedia.org/wiki/Unix_file_types
+  [21]: http://dioscuri.sourceforge.net/
+  [22]: http://droid.sourceforge.net/
+  [23]: http://digitalpreserve.sourceforge.net/
+  [24]: https://sourceforge.net/softwaremap/trove_list.php?form_cat=789
+  [25]: https://sourceforge.net/search/?type_of_search=soft&amp;words=%22digital+preservation%22&amp;search=Search
+  [26]: http://fileformats.wordpress.com/2009/11/24/libtiff-and-search-engines/
+  [27]: http://stackoverflow.com/questions/1294989/make-a-file-folder-hidden-on-windows-with-java
+  [28]: http://ant.apache.org/manual/CoreTasks/get.html
+  [29]: http://maven.apache.org/plugins/maven-antrun-plugin/examples/classpaths.html
+  [30]: http://commons.apache.org/discovery/apidocs/org/apache/commons/discovery/tools/Service.html#providers%28java.lang.Class%29
+  [31]: http://java.sun.com/j2se/1.3/docs/guide/jar/jar.html#Service%20Provider
+  [32]: http://delicious.com/beardedstoat/dataviewers+browser
+  [33]: http://docs.sun.com/source/816-6408-10/mimetype.htm
+  [34]: http://www.howtocreate.co.uk/wrongWithIE/?chapter=navigator.plugins
+  [35]: http://www.oreillynet.com/pub/a/javascript/2001/07/20/plugin_detection.html

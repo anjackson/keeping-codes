@@ -1,0 +1,51 @@
+# Testbed 4 Kick-off (3rd-4th December) #
+
+
+
+ - Plato and TheTestbed
+ - The problem seems to arise because there is no language by
+which the Plato tool can ask the Testbed what tools may preserve
+it's Goals. Common language of significant properties
+required?
+ - Because Plato cannot formulate questions to the Testbed, it
+subsumes the Testbed and asks its questions directly.
+ - In turn, this restricts the questions Plato can ask, and they
+end up being like those that the Testbed asks.
+ - And Plato ends up Running Experiments to achieve this.
+ - Plato should ask: 'This is my big collection. These are my
+concerns (values of SP or more general?). Which Tools should I
+use?'
+ - Testbed should ask: 'This is my test collection. These are the
+SP of interest. What are their values for when I use this
+tool?'
+ - What does Service Interfaces mean to *you*?
+ - What does PLATO want the IF to support?
+ - How do the Testbed team see the Conceptual Data Model?
+Feedback?
+ - *Andrewl:* Ask about requirements for a file selector to
+integrate with his services.
+ - What URIs can it take? file: only? http would be great.
+
+
+# Interoperability Framework Quarterly Meeting (5th
+December) #
+
+
+
+ - Present current service interfaces ideas.
+ - Outline interdependence between Service Interfaces, The
+Registries and the Conceptual Data Model.
+ - Security Requirements
+ - TheTestbed needs simple Servlet Auth API. Could employ SSO or
+DB, but need to integrate more roles.
+ - TheTestbed requires three particular Roles, but these are not
+supported by the Admin core. Where do they go?
+ - *Markus:* Clarify the build environment, especially the
+api and impl directories and implied classpaths.
+ - Mention TheShepherd idea?
+
+
+Tags:Planets
+
+
+

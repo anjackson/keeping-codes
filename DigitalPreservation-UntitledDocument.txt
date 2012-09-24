@@ -1,0 +1,4 @@
+The tm-extractors library is a pure java library for extracting text from Word documents. Notable improvements in this release: 
+
+ - Support for fast-saved Word documents - Many misc bug fixes - Removal of dependencies on legacy HWPF code - Support for older versions of Word for Windows (1.0, 2.0, and 4.0)  - Unit tests added - Build file added - Source moved to public subversion repository
+

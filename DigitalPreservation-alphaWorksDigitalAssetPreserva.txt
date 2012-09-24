@@ -1,0 +1,3 @@
+tionToolOverview
+
+Digital Asset Preservation Tool is a "proof-of-concept" demonstration of the Universal Virtual Computer (UVC) solution, which was developed at IBM Almaden Research by Raymond Lorie to provide long-term access to JPEG and GIF87a files.  The concept, which entails several components, has been developed at IBM Almaden Research to ensure future use of digital objects.

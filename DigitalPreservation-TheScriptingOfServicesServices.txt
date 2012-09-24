@@ -1,0 +1,21 @@
+shouldsimplybemappedontoclassesas
+
+The Scripting Of Services
+
+Services should simply be mapped onto classes, as I've done already.  If the Service Registry is used to create a set of classes backed by WS, then any scripting language can be used to invoke them.  On it's own, this does not allow much in the way of concurrency.  The 80% of the need, batch processing of sets of items, can be dealt with by a single Batch.invoke service or special command, that takes the list and the service class and runs each in it's own thread.  Again, this is all pretty easy and would still allow any scripting language to be used.  This batcher would probably need to be created from a factory to allow the approach to work, via Generics to give the output array the right type.
+
+NB. Given a dedicated workflow language, concurrency can be inferred!  All potentially sequential pipes can be determined by looking for dependencies in the variables (state, as all pipes are stateless).  The only exception is the 'Session Variables' required to maintain state, and these can be tracked as local variables that cannot be read concurrently - maps to BPEL Correlation Sets.
+
+Therefore, in this model, the service description must note any variables that are used as session identifiers.  This might be a good idea anyway.
+
+Interface Idea
+Given one can programmatically build Java classes from WSDL*, one could create a simple service registry based on it and provide an environment where these services are mapped onto instances of classes.  A simple web interface could be used to edit scripts that use these services and run on a server, which posts back the feed-back and Console info.
+
+*Programmatically creating classes is not so easy.  You need to invoke 'org.apache.axis.wsdl.toJava.Emitter' to output a set of Java class files into a directory.  Then, inspect them to work out the class name, probably.  Next, wrap as a JAR and then add to the classpath.  After this point, it should be possible to inspect the classes via reflection, use them from the JVM, and export them to a script.
+
+Special Objects
+ - Console could be a special object to allow logging output. - Batch/Process could be used to fork or 'flow'. 
+ - Perhaps we can create Async versions and callbacks automatically?
+
+
+

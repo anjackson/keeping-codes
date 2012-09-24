@@ -1,0 +1,292 @@
+# Digital Object Storage #
+
+
+# Digital Object Sources #
+
+
+
+ - The file system.
+ - Content Management Systems
+ - [
+Fedora][1] 
+ - [DSpace][2] 
+ - [Alfresco][3]  (embedded by
+Adobe)
+ - Anything with an OAI-PMH interface (see below).
+
+
+# Content Access Prototols #
+
+
+The pipes that make the sources work.
+
+
+ - [OAI-PMH][4] ,
+see [this
+overview][5] .
+ - [
+Attaching DC, RFC 1807 or MARC metadata][6] 
+ - AtomPub
+ - [AtomServer][7] ,
+[AtomServer
+article][8] , APL
+ - [Apache Abdera][9] 
+APL
+ - [Atomojo server
+&amp; client][10]  NBSD
+ - [atom-multipart][11] 
+ - [Fedora][12] 
+ - Supports a range of APIs, some Fedora-specific, and OAI-PMH
+too.
+ - Plus, DB access, Amazon S3, DSpace, WebDav, CalDav, JCR, Atom,
+etc.
+
+
+List, from [http://discerning.com/topics/standards/resource_management.txt][13] 
+
+
+ - list(resource_path, query_expr, accept_mime_type) these kinds
+of formats
+ - HXDLG [http://hdlg.sourceforge.net/][14] 
+xmlns=[http://www.hdlg.info/XML/filesystem][15] 
+ - manifest.xml xmlns=[http://openoffice.org/2001/manifest][16] 
+ - atom:feed "application/rss+xml revision=[http://purl.org/rss/1.0/][17] "
+ - RMP (builtin)
+ - Web Collections [http://www.w3.org/TR/NOTE-XMLsubmit][18] 
+ - OAI-PMH xmlns="[http://www.openarchives.org/OAI/2.0/static-repository][19] "
+ - TODO: RDDL [http://www.rddl.org/rddl2][20]  (explain
+what namespaces mean) and [http://www.w3.org/2001/tag/doc/nsDocuments/&iuml;&iquest;&frac12;][21] 
+ - simply lists all metadata objects for all immediate children,
+in a XML response wrapper
+
+
+<pre>
+
+
+    &amp;lt;collection xmlns="[http://gupe.org/rmp][22] " path="some/resource_path"&amp;gt;
+
+     &amp;lt;collection name="fred" ...&amp;gt;
+
+
+&iuml;&iquest;&frac12; &iuml;&iquest;&frac12;
+&lt;atom:entry&gt;...&lt;/atom:entry&gt;
+&iuml;&iquest;&frac12;&iuml;&iquest;&frac12;
+&lt;/collection&gt;
+&iuml;&iquest;&frac12;&iuml;&iquest;&frac12; &lt;data
+name="fred/xml"&gt;
+&iuml;&iquest;&frac12;&iuml;&iquest;&frac12; &lt;/data&gt;
+&iuml;&iquest;&frac12; &lt;/collection&gt; </pre>
+
+## Standards for Document Repositories ##
+
+
+_[http://www.ukoln.ac.uk/repositories/digirep/index/Deposit_API
+The JISC Digital Repository Programme as part of its work is
+exploring the interaction between repositories and other
+systems.][23] _[http://www.dlib.org/dlib/january03/smith/01smith.html
+DSpace API Outline][24]  _Mulitple, so need a repository definition
+layer that defines: *Read method (HTTP hopefully).*Write method
+(HTTP too, on WebDAV etc, but we may need property definitions for
+different services).__Authentication system. Write, and probably
+reads need authentication with the repo._WebDAV plus standard
+metadata partner file (**name**.metadata.xml) would be
+fine for uploads. *IDEA: Local wrapper allowing WebDAV access to
+selected local files/directories would be a nice way of allowing
+Planets access to arbitrary file resources. Even if just read-only
+access.
+
+----------
+
+
+Ideally, we want repositories of digital objects, with features
+like:
+
+
+ - Versioning.
+ - Change-logs/audit trails.
+ - Metadata attachments
+ - Relationships.
+ - Trusted Repository ([TRAC][25] )
+conformance.
+
+
+# Keeping Bits Safe #
+
+
+
+ - [MAID][26] 
+ - etc.
+ - [Long-term
+performance analysis of Intel Mainstream SSDs][27] 
+
+
+# Digital Object Sources #
+
+
+
+ - The file system.
+ - Content Management Systems
+
+   - [
+Fedora][28] 
+   - [DSpace][29] 
+   - [Alfresco][30]  (embedded by
+Adobe)
+   - Anything with an OAI-PMH interface (see below).
+
+
+ - Similar to [Open
+Service Interface Definitions][31]  ?
+
+
+# Content Access Prototols #
+
+
+The pipes that make the sources work.
+
+
+ - [OAI-PMH][32] ,
+see [this
+overview][33] .
+
+   - [
+Attaching DC, RFC 1807 or MARC metadata][34] 
+   - [A Java
+Harvester][35] .
+   - [A big list of
+repositories][36] .
+   - [<code>http://arxiv.org/help/oa/index</code>][37] 
+   - [Summary
+of ResearchArchive at Victoria University of Wellington][38] 
+
+
+ - AtomPub
+
+   - [AtomServer][39] ,
+[AtomServer
+article][40] , APL
+   - [Apache Abdera][41] 
+APL
+   - [Atomojo server
+&amp; client][42]  NBSD
+   - [atom-multipart][43] 
+   - [Offical Atom
+link relationships][44] .
+
+
+ - [Fedora][45] 
+
+   - Supports a range of APIs, some Fedora-specific, and OAI-PMH
+too.
+   - Stores and moves in [
+FOXML][46] 
+
+
+ - Plus, DB access, Amazon S3, DSpace, WebDav, CalDav, JCR, Atom,
+etc.
+ - [Google Data APIs
+(like Atom)][47] 
+ - [Windows Live Data
+API][48] 
+
+
+List, from [http://discerning.com/topics/standards/resource_management.txt][49] 
+
+&lt;code&gt; list(resource_path, query_expr, accept_mime_type)
+these kinds of formats HXDLG [http://hdlg.sourceforge.net/][50] 
+xmlns=[http://www.hdlg.info/XML/filesystem][51] 
+manifest.xml xmlns=[http://openoffice.org/2001/manifest][52] 
+atom:feed "application/rss+xml revision=[http://purl.org/rss/1.0/][53] " RMP
+(builtin) Web Collections [http://www.w3.org/TR/NOTE-XMLsubmit][54] 
+OAI-PMH xmlns="[http://www.openarchives.org/OAI/2.0/static-repository][55] "
+TODO: RDDL [http://www.rddl.org/rddl2][56]  (explain
+what namespaces mean) and [http://www.w3.org/2001/tag/doc/nsDocuments/][57] 
+simply lists all metadata objects for all immediate children, in a
+XML response wrapper&lt;/code&gt;
+
+&lt;pre&gt;&lt;code&gt; &amp;lt;collection xmlns="[http://gupe.org/rmp][58] "
+path="some/resource_path"&amp;gt;
+
+
+       &lt;collection name="fred" ...&gt;
+
+         &lt;atom:entry&gt;...&lt;/atom:entry&gt;
+
+       &lt;/collection&gt;
+
+       &lt;data name="fred/xml"&gt;
+
+       &lt;/data&gt;
+
+     &lt;/collection&gt;
+
+
+</code></pre>
+
+# Sub Sections #
+
+
+
+ - BuildingScalableInfrastructures
+
+
+
+
+  [1]: http://www.fedora-commons.org/documentation/3.0b1/userdocs/digitalobjects/objectModel.html
+  [2]: http://www.dspace.org/
+  [3]: http://www.alfresco.com/
+  [4]: http://www.openarchives.org/OAI/openarchivesprotocol.html
+  [5]: http://xml.coverpages.org/oams.html
+  [6]: http://www.openarchives.org/OAI/1.0/openarchivesprotocol.htm#appendix%201
+  [7]: http://atomserver.codehaus.org/index.html
+  [8]: http://www.infoq.com/articles/atomserver
+  [9]: http://incubator.apache.org/abdera/
+  [10]: http://code.google.com/p/atomojo/
+  [11]: http://www.tbray.org/ongoing/When/200x/2008/07/07/Atom
+  [12]: http://www.fedora.info/documentation/
+  [13]: http://discerning.com/topics/standards/resource_management.txt
+  [14]: http://hdlg.sourceforge.net/
+  [15]: http://www.hdlg.info/XML/filesystem
+  [16]: http://openoffice.org/2001/manifest
+  [17]: http://purl.org/rss/1.0/
+  [18]: http://www.w3.org/TR/NOTE-XMLsubmit
+  [19]: http://www.openarchives.org/OAI/2.0/static-repository
+  [20]: http://www.rddl.org/rddl2
+  [21]: http://www.w3.org/2001/tag/doc/nsDocuments/%C3%AF%C2%BF%C2%BD
+  [22]: http://gupe.org/rmp
+  [23]: http://www.ukoln.ac.uk/repositories/digirep/index/Deposit_API%20The%20JISC%20Digital%20Repository%20Programme%20as%20part%20of%20its%20work%20is%20exploring%20the%20interaction%20between%20repositories%20and%20other%20systems.
+  [24]: http://www.dlib.org/dlib/january03/smith/01smith.html%20DSpace%20API%20Outline
+  [25]: http://www.crl.edu/content.asp?l1=13&amp;l2=58&amp;l3=162&amp;l4=91
+  [26]: http://en.wikipedia.org/wiki/Massive_array_of_idle_disks
+  [27]: http://www.pcper.com/article.php?aid=669
+  [28]: http://www.fedora-commons.org/documentation/3.0b1/userdocs/digitalobjects/objectModel.html
+  [29]: http://www.dspace.org/
+  [30]: http://www.alfresco.com/
+  [31]: http://en.wikipedia.org/wiki/Open_Service_Interface_Definitions
+  [32]: http://www.openarchives.org/OAI/openarchivesprotocol.html
+  [33]: http://xml.coverpages.org/oams.html
+  [34]: http://www.openarchives.org/OAI/1.0/openarchivesprotocol.htm#appendix%201
+  [35]: http://www.oclc.org/research/software/oai/harvester2.htm
+  [36]: http://gita.grainger.uiuc.edu/registry/
+  [37]: http://arxiv.org/help/oa/index
+  [38]: http://gita.grainger.uiuc.edu/registry/details.asp?id=2208
+  [39]: http://atomserver.codehaus.org/index.html
+  [40]: http://www.infoq.com/articles/atomserver
+  [41]: http://incubator.apache.org/abdera/
+  [42]: http://code.google.com/p/atomojo/
+  [43]: http://www.tbray.org/ongoing/When/200x/2008/07/07/Atom
+  [44]: http://www.iana.org/assignments/link-relations.html
+  [45]: http://www.fedora.info/documentation/
+  [46]: http://www.fedora.info/download/2.2.1/userdocs/digitalobjects/introFOXML.html
+  [47]: http://code.google.com/apis/gdata/
+  [48]: https://dev.live.com/livedata/sdk/Default.aspx
+  [49]: http://discerning.com/topics/standards/resource_management.txt
+  [50]: http://hdlg.sourceforge.net/
+  [51]: http://www.hdlg.info/XML/filesystem
+  [52]: http://openoffice.org/2001/manifest
+  [53]: http://purl.org/rss/1.0/
+  [54]: http://www.w3.org/TR/NOTE-XMLsubmit
+  [55]: http://www.openarchives.org/OAI/2.0/static-repository
+  [56]: http://www.rddl.org/rddl2
+  [57]: http://www.w3.org/2001/tag/doc/nsDocuments/
+  [58]: http://gupe.org/rmp

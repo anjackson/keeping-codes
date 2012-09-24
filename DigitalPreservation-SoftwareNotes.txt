@@ -1,0 +1,4 @@
+MS Word Mac 2004 only opened xhtml file properly when the &lt;?xml header line was taken out. Name was test.xhtml.
+Software: OpenOffice Releases:[http://www.prweb.com/rss2g/15812.xml][1] http://www.prweb.com/releases/2010/02/prweb3584404.htm
+
+  [1]: http://www.prweb.com/rss2g/15812.xml

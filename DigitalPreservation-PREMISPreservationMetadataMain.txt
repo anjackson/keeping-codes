@@ -1,0 +1,4 @@
+tenanceActivityLibraryofCongress
+
+The PREMIS maintenance activity is responsible for maintaining,
+  supporting, and coordinating future revisions to the PREMIS data dictionary.

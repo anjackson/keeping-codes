@@ -1,0 +1,224 @@
+Ddeposittoolcreator
+
+ - [Home][1] 
+[][2] # [Stuart Lewis' Blog][3]  #
+
+ 
+# EasyDeposit – SWORD deposit tool creator
+ #
+
+The development of the [SWORD][4]  (Simple Web-service Offering Repository Deposit) protocol has enabled repositories to start accepting deposits from remote systems and interfaces. If you’re unsure of the basics of SWORD, read one of the following:
+
+ - [SWORD: Simple Web-service Offering Repository Deposit][5]  Ariadne, 2008 - [If SWORD is the answer, what is the question?][6]  Program, 2009
+However, to date there has not been a great deal of use of SWORD. One of the reasons is a lack of SWORD clients that can deposit items into repositories. Demonstration clients were created by the SWORD project, and a [PHP SWORD library][7]  was created by the SWORD2 project, but no client that can easily be set up by web developers or repository administrators to be used by depositors has been created.
+
+**A bit of background:**
+Last year as part of my job at the [University of Auckland Library][8] , I had to create a SWORD deposit client to allow PhD candidates to submit an electronic copy of their thesis. We wanted to use SWORD to do this as it means the PhD students do not have to create a repository account, and learn how to submit in the repository. The SWORD client was written in PHP and made use of the SWORD PHP library. The client was made up of a very small number of pages: login, enter title of thesis, upload file, select embargo and licencing options, verify, submit.
+
+I then had to create a second similar deposit interface to allow a department to archive a technical report series. This deposit interface was similar, but didn’t have the embargo option, asked for more metadata, and returned the URL of the deposited item in a format that could be inserted into their own web publishing system.
+
+Developing and maintaining two similar but not identical systems seemed to be wasteful, therefore I decided to create a generic SWORD deposit interface toolkit that allowed new deposit systems to be easily created. EasyDeposit was born!
+
+**What is EasyDeposit?**
+[EasyDeposit][9]  is a toolkit for easily creating SWORD deposit web interfaces using PHP. To start using EasyDeposit, follow the [installation instructions][10] .
+
+**How does EasyDeposit work?**
+EasyDeposit allows you to create customised SWORD deposit interfaces by configuring a set of ’steps’. A typical flow of steps may be: login, select a repository, enter some metadata, upload a file, verify the information is correct, perform the deposit, send a confirmation email. Alternatively a deposit flow may just require a file to be uploaded and a title entered. A configuration file is used to list the steps you require.
+
+EasyDeposit makes use of the [CodeIgniter][11]  MVC PHP framework. This means each ’step’ is made up of two files: a ‘controller’ which looks after the validation and processing of any data entered, and a ‘view’ which controls the web page that a user sees. This separation of concerns makes it easy for web programmers to edit the controllers, and web designers to tinker with the look and feel of the interface in the views.
+
+**What ’steps’ come with EasyDeposit?**
+EasyDeposit comes with 14 different steps, including:
+
+ - ldaplogin: Allows login to take place against an LDAP directory - nologin: Allows preset login inforamtino to be provided if you don’t wish users to have to login, then forwards the user on to the next step - depositcredentials: Sets credentials to be used for the deposit if you wish to use a generic set of credentials, then forwards the user on to the next step - selectrepository: Allows a user to select between multiple repositories - servidedocument: Displays a service document to the user to allow them to decide which collection to deposit into - title: Requires the user to enter a title for the item they are depositing - metadata: Requires the user to enter metadata for the item they are depositing - uploadfile: Allows the user to upload files to deposit - verify: Allow the user to verify their submission before the deposit - deposit: Performs the deposit, then forwards the user on to the next step - email: Sends an email confirmation of the deposit, then forwards the user on to the next step - thankyou: Displays a confirmation of the deposit to the user
+Extra steps can be easily added just by adding a controller and a view for each new step.
+
+**Is EasyDeposit open source?**
+Yes! It is published with a [modified BSD licence][12] .
+
+**How do I use EasyDeposit?**
+Follow the [installation instructions][13] ! If you have any questions, please leave comments on this blog entry, to get in touch with me directly.
+
+[][14] Posted on February 3, 2010 at 7:14 am by [Stuart][15]  · [Permalink][16] 
+In: [Uncategorized][17]  · Tagged with: [dspace][18] , [interoperability][19] , [repositories][20] , [sword][21] 
+## One Response
+ ##
+
+[Subscribe to comments via RSS][22]  1.  Written by [Nick Sheppard][23] 
+on February 5, 2010 at 11:51 pm
+[Permalink][24] 
+Hi Stuart
+
+This sounds like a brilliant idea and I would really like to have a go at installing it myself – I’ve had a look at your installation instructions and found them a little beyond me which is a reflection of my limited technical knowledge rather than any lack of clarity on your part. I can just about manage FTP and use Dreamweaver to access an institutionally managed test-server but from what I can glean from your instructions you are referring to installation on a local machine using the command line (as a child of Microsoft I’m a little afraid of the command line!)
+
+As I mentioned on Twitter, I do have a colleague who can probably help me out but he’s very busy (mostly doing web-dev stuff for me!) and I do enjoy tinkering myself and wondered if there might be a way of installing EasyDeposit on my institutionally managed server using FTP?
+
+Apologies for my installation-naivety; as you identify, one of the reasons that SWORD has not been more widely adopted is due to technical barriers for repository administrators.
+
+Any help or advice greatly appreciated!
+
+Cheers
+
+Nick
+
+
+[Subscribe to comments via RSS][25] ## Leave a Reply
+ ##
+
+ Name, required  Email (will not be published), required  Website, if present [Cancel reply][26]   
+
+
+[« Previous post][27] [Next post »][28]  - ## About
+ ##
+
+
+
+This is the blog of Stuart Lewis, a [DSpace][29]  [committer][30] , repository developer, [repository66 mashup][31]  creator, and [SWORD project][32]  member. Currently working as the IT Innovations Analyst and Developer at [the University of Auckland Library][33] , formerly working at [Aberystwyth University][34] .
+
+ - [][35] 
+This work by [Stuart Lewis][36]  is licensed under a [Creative Commons Attribution-ShareAlike 3.0 New Zealand][37] .
+ - ----------
+
+Disclaimer
+Opinions expressed here are my own, and not those of employers or funders, past or present.
+
+----------
+
+ - ## Tags
+ ##
+
+[analytics][38]  [blackboard][39]  [blogs][40]  [citations][41]  [depositplait][42]  [dspace][43]  [eprints][44]  [fedora][45]  [google][46]  [google scholar][47]  [gsoc][48]  [interoperability][49]  [jisc][50]  [jisc-crig][51]  [ldap][52]  [life][53]  [mashups][54]  [open access][55]  [open data][56]  [preservation][57]  [repositories][58]  [repository66][59]  [repository mashup map][60]  [roadproject][61]  [rsp][62]  [rspsummerschool2008][63]  [search][64]  [servers][65]  [sharepoint][66]  [shibboleth][67]  [sword][68]  [training][69]  [twitter][70]  [voip][71]  [web][72]  [windows][73]  [youtube][74] 
+ - ##  
+ ##
+
+February 2010MTWTFSS[« Oct][75]     1 2 [3][76] 4 5 6 7 8 9 [10][77] 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28  - ## Archives
+ ##
+
+   - [February 2010][78]    - [October 2009][79]    - [September 2009][80]    - [August 2009][81]    - [July 2009][82]    - [June 2009][83]    - [May 2009][84]    - [April 2009][85]    - [March 2009][86]    - [February 2009][87]    - [January 2009][88]    - [December 2008][89]    - [November 2008][90]    - [October 2008][91]    - [September 2008][92]    - [August 2008][93]    - [July 2008][94]    - [June 2008][95]    - [May 2008][96]  - ## Recent Comments
+ ##
+
+   - [Stuart Lewis' Blog » DSpace 1.6 – What will be in it for me?][97]  on [DSpace 1.5.2 – What’s in it for me?][98]    - [Michael Guthrie][99]  on [Surfacing Google Analytics stats in DSpace][100]    - [sikiş izle , bedava izle][101]  on [Update your Google Analytics Tracking Code][102]    - [Stuart][103]  on [Surfacing Google Analytics stats in DSpace][104]    - [Paulo Jobim][105]  on [Surfacing Google Analytics stats in DSpace][106]    - [Nick Sheppard][107]  on [EasyDeposit – SWORD deposit tool creator][108]    - [SWORD PHP Library Version 0.7 « pintiniblog][109]  on [SWORD PHP Library version 0.7 released][110]    - [Dépôts institutionnels (19/08/08) « pintiniblog][111]  on [Repository mashup map software update][112] 
+© [Stuart Lewis' Blog][113] .
+Powered by [WordPress][114]   and [Grey Matter][115] .
+[][116] 
+This work by [Stuart Lewis][117]  is licensed under a [Creative Commons Attribution-ShareAlike 3.0 New Zealand][118] .
+ 
+
+  [1]: http://blog.stuartlewis.com
+  [2]: http://blog.stuartlewis.com/feed/rss/
+  [3]: http://blog.stuartlewis.com
+  [4]: http://swordapp.org/
+  [5]: http://www.ariadne.ac.uk/issue54/allinson-et-al/
+  [6]: http://blog.stuartlewis.com/2009/10/13/if-sword-is-the-answer-what-is-the-question/
+  [7]: http://wiki.github.com/stuartlewis/swordapp-php-library/
+  [8]: http://library.auckland.ac.nz/
+  [9]: http://wiki.github.com/stuartlewis/EasyDeposit/
+  [10]: http://wiki.github.com/stuartlewis/EasyDeposit/installation-instructions
+  [11]: http://codeigniter.com/
+  [12]: http://github.com/stuartlewis/EasyDeposit/blob/master/LICENCE
+  [13]: http://wiki.github.com/stuartlewis/EasyDeposit/installation-instructions
+  [14]: http://www.addthis.com/bookmark.php?v=250&amp;username=wp-4b69d1226b933bbf
+  [15]: http://blog.stuartlewis.com/
+  [16]: http://blog.stuartlewis.com/2010/02/03/easydeposit-sword-deposit-tool-creator/
+  [17]: http://blog.stuartlewis.com/category/uncategorized/
+  [18]: http://blog.stuartlewis.com/tag/dspace/
+  [19]: http://blog.stuartlewis.com/tag/interoperability/
+  [20]: http://blog.stuartlewis.com/tag/repositories/
+  [21]: http://blog.stuartlewis.com/tag/sword/
+  [22]: http://blog.stuartlewis.com/2010/02/03/easydeposit-sword-deposit-tool-creator/feed/
+  [23]: http://repositorynews.wordpress.com/
+  [24]: http://blog.stuartlewis.com/2010/02/03/easydeposit-sword-deposit-tool-creator/#comment-3311
+  [25]: http://blog.stuartlewis.com/2010/02/03/easydeposit-sword-deposit-tool-creator/feed/
+  [26]: http://blog.stuartlewis.com/2010/02/03/easydeposit-sword-deposit-tool-creator/#respond
+  [27]: http://blog.stuartlewis.com/2009/10/30/displaying-citation-counts-in-dspace/
+  [28]: http://blog.stuartlewis.com/2010/02/10/dspace-1-6-what-will-be-in-it-for-me/
+  [29]: http://dspace.org/
+  [30]: http://wiki.dspace.org/index.php/DSpaceContributors
+  [31]: http://maps.repository66.org/
+  [32]: http://swordapp.org/
+  [33]: http://library.auckland.ac.nz
+  [34]: http://www.aber.ac.uk/
+  [35]: http://creativecommons.org/licenses/by-sa/3.0/nz/
+  [36]: http://blog.stuartlewis.com/
+  [37]: http://creativecommons.org/licenses/by-sa/3.0/nz/
+  [38]: http://blog.stuartlewis.com/tag/analytics/
+  [39]: http://blog.stuartlewis.com/tag/blackboard/
+  [40]: http://blog.stuartlewis.com/tag/blogs/
+  [41]: http://blog.stuartlewis.com/tag/citations/
+  [42]: http://blog.stuartlewis.com/tag/depositplait/
+  [43]: http://blog.stuartlewis.com/tag/dspace/
+  [44]: http://blog.stuartlewis.com/tag/eprints/
+  [45]: http://blog.stuartlewis.com/tag/fedora/
+  [46]: http://blog.stuartlewis.com/tag/google/
+  [47]: http://blog.stuartlewis.com/tag/google-scholar/
+  [48]: http://blog.stuartlewis.com/tag/gsoc/
+  [49]: http://blog.stuartlewis.com/tag/interoperability/
+  [50]: http://blog.stuartlewis.com/tag/jisc/
+  [51]: http://blog.stuartlewis.com/tag/jisc-crig/
+  [52]: http://blog.stuartlewis.com/tag/ldap/
+  [53]: http://blog.stuartlewis.com/tag/life/
+  [54]: http://blog.stuartlewis.com/tag/mashups/
+  [55]: http://blog.stuartlewis.com/tag/open-access/
+  [56]: http://blog.stuartlewis.com/tag/open-data/
+  [57]: http://blog.stuartlewis.com/tag/preservation/
+  [58]: http://blog.stuartlewis.com/tag/repositories/
+  [59]: http://blog.stuartlewis.com/tag/repository66/
+  [60]: http://blog.stuartlewis.com/tag/repository-mashup-map/
+  [61]: http://blog.stuartlewis.com/tag/roadproject/
+  [62]: http://blog.stuartlewis.com/tag/rsp/
+  [63]: http://blog.stuartlewis.com/tag/rspsummerschool2008/
+  [64]: http://blog.stuartlewis.com/tag/search/
+  [65]: http://blog.stuartlewis.com/tag/servers/
+  [66]: http://blog.stuartlewis.com/tag/sharepoint/
+  [67]: http://blog.stuartlewis.com/tag/shibboleth/
+  [68]: http://blog.stuartlewis.com/tag/sword/
+  [69]: http://blog.stuartlewis.com/tag/training/
+  [70]: http://blog.stuartlewis.com/tag/twitter/
+  [71]: http://blog.stuartlewis.com/tag/voip/
+  [72]: http://blog.stuartlewis.com/tag/web/
+  [73]: http://blog.stuartlewis.com/tag/windows/
+  [74]: http://blog.stuartlewis.com/tag/youtube/
+  [75]: http://blog.stuartlewis.com/2009/10/
+  [76]: http://blog.stuartlewis.com/2010/02/03/
+  [77]: http://blog.stuartlewis.com/2010/02/10/
+  [78]: http://blog.stuartlewis.com/2010/02/
+  [79]: http://blog.stuartlewis.com/2009/10/
+  [80]: http://blog.stuartlewis.com/2009/09/
+  [81]: http://blog.stuartlewis.com/2009/08/
+  [82]: http://blog.stuartlewis.com/2009/07/
+  [83]: http://blog.stuartlewis.com/2009/06/
+  [84]: http://blog.stuartlewis.com/2009/05/
+  [85]: http://blog.stuartlewis.com/2009/04/
+  [86]: http://blog.stuartlewis.com/2009/03/
+  [87]: http://blog.stuartlewis.com/2009/02/
+  [88]: http://blog.stuartlewis.com/2009/01/
+  [89]: http://blog.stuartlewis.com/2008/12/
+  [90]: http://blog.stuartlewis.com/2008/11/
+  [91]: http://blog.stuartlewis.com/2008/10/
+  [92]: http://blog.stuartlewis.com/2008/09/
+  [93]: http://blog.stuartlewis.com/2008/08/
+  [94]: http://blog.stuartlewis.com/2008/07/
+  [95]: http://blog.stuartlewis.com/2008/06/
+  [96]: http://blog.stuartlewis.com/2008/05/
+  [97]: http://blog.stuartlewis.com/2010/02/10/dspace-1-6-what-will-be-in-it-for-me/
+  [98]: http://blog.stuartlewis.com/2009/04/15/dspace-152-whats-in-it-for-me/comment-page-1/#comment-3329
+  [99]: http://www.openrepository.com
+  [100]: http://blog.stuartlewis.com/2009/05/29/surfacing-google-analytics-stats-in-dspace/comment-page-1/#comment-3328
+  [101]: http://www.trporn.org
+  [102]: http://blog.stuartlewis.com/2009/01/17/update-your-google-analytics-tracking-code/comment-page-1/#comment-3324
+  [103]: http://blog.stuartlewis.com/
+  [104]: http://blog.stuartlewis.com/2009/05/29/surfacing-google-analytics-stats-in-dspace/comment-page-1/#comment-3315
+  [105]: http://www.jobim.org
+  [106]: http://blog.stuartlewis.com/2009/05/29/surfacing-google-analytics-stats-in-dspace/comment-page-1/#comment-3314
+  [107]: http://repositorynews.wordpress.com/
+  [108]: http://blog.stuartlewis.com/2010/02/03/easydeposit-sword-deposit-tool-creator/comment-page-1/#comment-3311
+  [109]: http://pintiniblog.wordpress.com/2009/06/27/sword-php-library-version-0-7/
+  [110]: http://blog.stuartlewis.com/2009/06/23/sword-php-library-version-0-7-released/comment-page-1/#comment-3290
+  [111]: http://pintiniblog.wordpress.com/2008/08/19/depots-institutionnels-190808/
+  [112]: http://blog.stuartlewis.com/2008/08/12/repository-mashup-map-software-update/comment-page-1/#comment-3289
+  [113]: http://blog.stuartlewis.com
+  [114]: http://wordpress.org
+  [115]: http://masnikov.com/grey_matter
+  [116]: http://creativecommons.org/licenses/by-sa/3.0/nz/
+  [117]: http://blog.stuartlewis.com/
+  [118]: http://creativecommons.org/licenses/by-sa/3.0/nz/

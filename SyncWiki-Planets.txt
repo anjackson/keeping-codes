@@ -1,0 +1,694 @@
+The Planets project is a DigitalPreservation project, and is the
+main thing I'm working on at the BritishLibrary.
+
+
+ - [Public pages][1] 
+ - [Project
+wiki][2] 
+ - [
+Planets Deliverables 1st June 2007 - 31st November 2008][3] .
+ - [Planets
+Technical Overview][4] 
+ - See [TCC
+on the Wiki][5] .
+ - See TheTestbed.
+ - ViennaMeetingsDecember2007
+
+
+My main documentation and notes for that project are kept on the
+project wiki, so that they can be shared with others. See [
+my user page][6]  for a starting point.
+
+# For The Testbed #
+
+
+
+ - Make ExpEmul clearer about what has been done, and is yet to
+do.
+ - Merge my TB to do items into the big list.
+ - Testbed confusion, are we 'dry-run' or 'public', roughly
+ - ACTION: 19th Oct - copy old structure to folder, and then
+templatise the wizzard.
+ - ACTION: 20th Oct - Results page.
+ - ACTION: DR Bugs - items as folders, plus: Caused by:
+java.lang.NullPointerException at
+eu.planets_project.tb.gui.backing.data.DigitalObjectTreeNode.getDownloadUri(DigitalObjectTreeNode.java:111)
+at sun.reflect.GeneratedMethodAccessor1929.invoke(Unknown
+Source)
+ - ACT: Silly save-as mis-feature/bug... AND Persist it straight
+away. java.lang.NullPointerException
+.tb.gui.backing.exp.NewExpWizardController.commandSaveExperimentAs(NewExpWizardController.java:812)...
+
+
+# For the Service Developer's Meeting #
+
+
+
+ - WEE: Add PREMIS Event metadata, and other standard
+metadata?
+ - PSERV: Characterise and Compare interfaces? Follow-up Fabian's
+email.
+ - ACTION: Add to agenda of SDM, passing back basic performance
+statistics, passing back a failure code, expose URL,
+ - ACTION: Proposal with AL about how to embed optional
+performance data into the ServiceReport.
+ - Allow generic HTML report to be returned in the ServiceReport?
+Type = 'text/html' etc.
+ - ACTION: Propose full switch to SF over Christmas? Lose the
+history? What structure to use?
+ - ACTION: Switch from LGPL to Apache 2 in the code-base.
+
+
+# For the Interoperability Framework #
+
+
+
+ - Sustainability, wiki page? NOW?
+ - What is the IF final release date?
+ - Who is keeping Wolfgang (and others) up to date?
+ - Minimal UDFR proposal based on TechReg?
+ - Extended format URIs, via query and/or fragment? [http://java.sun.com/j2se/1.5.0/docs/api/java/net/URI.html][7] 
+ - Format registry should store sig file in jar and download to
+tmp.
+ - IF Admin: Institution entity needed by PLATO and TB.
+ - IF Admin: Ability to add roles would be useful.
+ - Services: Metadata - Flag for 'private', meaning only Planets
+Partners can access? i.e. use a new Group?
+ - Services: Metadata - Flag for implementation type?
+'inline-java', 'cli', 'jni', 'native-service', 'emulation'...
+ - Services: Add a planets-partner security role - This lays the
+ground-work for 'private' services and features, if necessary.
+ - Services: ServiceDescription.compare is rather slow as it
+transforms to XML.
+ - Services: Compare service interface - Compare(DO,DO) - What
+does it do/return? - Support image diffs?
+ - Data Registry: Talk to IF about DR plan for final release -
+solve user auth issue? Search interface? Layout?
+ - Data Registry: Digital Object Caching - Write to/from ZIP:
+[
+http://java.sun.com/developer/technicalArticles/Programming/compression/][8] 
+ - Data Registry: Data Registry should have user spaces, not just
+be one big scratch space.
+ - Data Registry: Need a shared UI?
+ - PServ Build: Amend pserv ant build to provide option to build
+only signed off services - AJ
+ - PServ Build: Add targets to list the pure-java and non-pure
+java projects, indicating which should be deployable. i.e. 'status'
+needed.
+ - PServ Build: Sub-project build 'clean' also cleans the
+build?Migrate dom = ServiceCreator.createTestService(Migrate.QNAME,
+Mdb2SiardMigrate.class, sWSDL_LOC); BindingProvider bp =
+(BindingProvider) dom; SOAPBinding binding = (SOAPBinding)
+bp.getBinding(); System.out.println("Is MTOM on?
+"+binding.isMTOMEnabled()); // binding.setMTOMEnabled(true);
+
+
+== To Do Later ==
+
+
+Technical Architecture
+:GAP: Environment Spec: [http://sigsoft.dcc.rl.ac.uk/twiki/bin/view/Main/BaseFramework][9] 
+:Check large attachments are being done properly... [https://jax-ws.dev.java.net/guide/Large_Attachments.html][10] 
+:Integrating Emulation Roadmap :That new PDF-to-Word service. What
+to do?
+
+
+Documentation
+Note that there seem to be problems running tests under Java 6
+(see pserv/build.common.xml). : Note that there seem to be problems
+running behind a SQUID proxy, where the 'Transfer-Encoding:
+chunked' mode is not working. It is not clear where the blame lies.
+I think SQUID pre-3.1 does not support chunked transfer, which is a
+HTTP/1.1 feature. The server and client are supposed to realise
+this is happening and fall-back to HTTP/1.0, but this is not
+happening it seems. Is SQUID refusing badly? Or is the JBoss JAX-WS
+stack at fault?
+
+Modify operation types: Damage, Repair, Virus Scan/Clean,
+Clear-hidden-data, Enhance.... See this parser for JHOVE output:
+[http://wiki.dlib.indiana.edu/confluence/display/INF/Jhove][11] 
+Spectrum Emulator with appropriate licence: [http://www.sonic.net/~surdules/projects/jzx/][12] ,
+Spectrum Games okay for distribution: [http://www.twinbee.org/hob/download.php#Games][13] 
+Wrap [http://dioscuri.sourceforge.net/][14] 
+as a CreateView service?
+
+# Other interesting items #
+
+
+
+ - BL Case study - risk of loss from bitrot due to compression not
+included.
+ - BL Plan: 1, Risks, basic DLS integration/probe. 2: Planning and
+Write-Back/Ingest added. 3: Scale up.
+ - BL: What is Digital Manuscript Content?
+ - Conferences appear to be JCDL, ECDL, iPres, [ICADL][15] ,
+ - JHOVE 2 wants to know ALL the properties, and we want to KEEP
+them all.
+ - Emerging that no-one thinks we can predict what the future
+users will consider 'significant'.
+ - Lookup ISO digitisation standard.
+ - George Mason 9/11 files analysis, v long tail of formats.
+ - What are context-aware objects?
+ - What is binary code translation? WINE?
+ - No standard for sheet music. No sharing means no standards?
+Sharing freq, #implementations to build format metrics?
+ - TOOLDEV: People want to store/access WARC, EMAIL, FS, Scanning
+S/W, EDMS, 'Media Digitisation Projects'.
+ - GRATE would work well in the cloud.
+ - There is an academic commuinity to reach out to, along with
+content holders and tool/service providers.
+ - Concerned to reach out to management, but I prefer the
+underground.
+ - Content holders have a varying degree of control over
+submissions, including 'none'. Characterisation tools may provide
+useful evidence here.
+ - Tool required to meet policy req, and for policy building.
+ - PLATO assumes you have identified a collection, and would work
+better with a pre-planning collection profiling/splitting
+stage.
+ - Adobe, offering some server access.
+
+
+# My To Do List #
+
+
+
+ - Upgrade to [DROID
+4.0][16] 
+ - Planets Digital Object Types _* Resource References, e.g. jdbc
+URI._* 'A folder of files'. _* 'A sequence of images'._* 'An
+archived website'.
+ - NOTE: Metro+Jetty, possibly JWS-based.
+ - Review Format Registry, and make it work in memory?
+ - Try to debug the Dialogika test? Still have the same issue
+under Metro.
+ - Add sensible deploy/test modes to PServ. Default, Full, Test,
+None.
+ - XCL
+ - Ask HATII for an account for Peter/Manfred?
+ - Marbella
+ - Prepare DEMOs.
+ - Continue 'Architecture' conversations.
+ - Prepare TB-PA talk.
+ - Document high-level 'operations'.
+ - Get feedback on SD, DO, 'operations'.
+ - Get feedback on the 'top bar' and propose the 'welcome/about'
+problem.
+ - Service Properties. Stability and Speed, for now.
+ - Emulation? How to automate measurment?!
+ - Actual measurements have units....
+ - BG List - at the 'Type' level.
+ - Revision control of machine interpretable ontologies...
+ - The Identify Corpus - a large set of files of all different
+types....
+ - XCL Team: Proposed_Alternative_Tree in OWL. Written in
+Protege.
+ - Inspect: Machine Interpretable? Integratable? Sample Formats?
+Significance is a key thing for them. Raster, HTMLs, Email, Audio.
+JHOVE underneath... Extra properties? Probably, but requires
+investigation. They have their own higher-level mapping.
+Lynne.Montague@nationalarchives.gov.uk Do we have names properties
+for 'Validity'. Natasha from Microsoft Research should have
+corpora.
+
+
+LOCAL services in TB. Comparator if COMPARATOR_HOME?
+
+
+ - Testbed
+ - Note that you must clean EVERYTHING.
+ - FIX Page buttons so 'move to next stage' works. Three-page
+save/validate step that drops you back the the errounous page, used
+in links too.
+ - FIX User bit to blank out the password.
+ - FIX Sidebar so the switching between pages goes back to as
+before.
+ - Page 1 'Save and continue' button does more than the Save
+button: updateBasicPropsAction in commandSaveExperiment
+ - Make Search work again.
+ - DEBUG Loading of BMGs from old experiments.
+ - Paged experiment list, with search, and for My
+Experiments.
+ - List experiment types.
+ - Service Registry, integration, service history in TB.
+ - Perform BMG split, and measure v. evaluate split. etc etc.
+ - Check XML format for Experiments.
+ - Outline central instance documentation and send.
+ - Build a Corpora based on the PDFa test suite: [http://pdfa.org/doku.php?id=pdfa:en:isartor_test_suite][17] 
+ - TESTBED: [http://www.dpconline.org/graphics/whatsnew/issue18.html#planets][18] 
+ - TESTBED: [http://www.dcc.ac.uk/resource/technology-watch/planets-testbed/][19] 
+ - Add page to test service invocation from within the server JVM
+(TB).
+ - Add wrappers for the other Basic services, and test them
+all.
+ - Wrap extraction service using key-values planets:pc/xcel
+planets:pc/xcdl ?
+ - IF:
+ - Sort out Admin: oro, xbean jars need to be deployed
+centrally?
+ - CONFIG: /admin/ connects to the 'other' Realm? Not
+PlanetsRealm?
+ - Brand the JOSSO war.
+ - Check SR plan with Fabian.
+
+   - IDEA: Auto-register services via query methods.
+
+
+ - FIX localhosts
+
+   - src/main/web/WEB-INF/classes/registry.properties
+   - src/main/web/WEB-INF/security.xml.template
+
+
+ - Simple createSocket() method required but causes compile errors
+sometimes.
+ - Document SSO framework.
+ - Admin: Found two references to absolute paths in the Admin
+component, created by build.xml:
+
+   - The derby DB, in applicationContext-resources.xml via DB
+_URL.
+   - The cache directory, in classes/ehcache.xml.
+
+
+ - Institutions as a data type in the Admin component.
+ - PServ
+ - AL: 'did you see Peter is now offering different interfaces for
+the extractor services... I however noted that he did duplicate the
+code for this?'
+ - DOC: Revert to command-line. Needs generic wrapper.
+ - Check and do DO changes.
+ - Document Test Harness.
+ - Add an Extract interface?
+Assay/Analyse/Measure/Gauge/Mensuration/Mete
+ - Common: Generate Javadoc.
+ - Generate test reports.
+ - Generate service descriptions from code in an ant task.
+
+   - Custom ant task: [<code>http://www.developer.com/java/article.php/10922_3630721_2</code>][20] 
+
+
+ - Add ODFValidator service
+ - Add PDFRenderer viewer: [https://pdf-renderer.dev.java.net/examples.html][21] 
+ - TCC
+ - Planets Architecture
+ - Service Interfaces?
+ - Licencing and Distribution.
+ - Properties, names etc. Use NISO MIX for images?
+ - Org
+ - Reply to Dirk, ask about running EMU services on TB.
+ - Mail Grid-UK about usage? UKGrid TB back-end would be
+great!
+ - Email Amir about integration and format spotting.
+
+
+# Significant Properties - Cologne - Feb 2009 #
+
+
+
+ - Control of Enviroment
+ - Missing vocab
+ - No isolated hardware
+ - Need metrics that cover loss/change, but do not rely on
+context.
+ - XCL
+ - Attempting to be an information superclass, but no access
+mech.
+ - Implicit properties are missed. i.e. The Render Stack ==
+Assumption set.
+
+   - Default alpha channel? Default colourspace. Encoding.
+
+
+ - Appears to assume there is a hard line between Technical and
+Conceptual info.
+ - Needs
+ - XCL, but where be Implicit Properties :)
+ - Service Properties
+ - Environment Properties
+ - Render Stack/Experience
+ - Digital Object Format Properties
+ - Digital Object Instance Properties
+ - "Moments"
+ - Filesystem Properties? Basic properties like bytesize?
+ - Finite list of sensible contexts?
+ - 'Preservation Maximus', 'Access' ?
+
+
+----------
+
+
+From [
+http://www.jboss.org/file-access/default/members/jbossrichfaces/freezone/docs/devguide/en/faq/faq.html][22] 
+
+1.78. How to handle ViewExpiredException? As RichFaces 3.1 is
+targeted at JSF 1.1, you won't get ViewExpiredExceptions generated
+when using it with JSF 1.2. This exception appears after session
+timeout. Fortunately there is an easy workaround. Add to your
+web.xml:
+
+&lt;context-param&gt;
+&lt;param-name&gt;com.sun.faces.enableRestoreView11Compatibility&lt;/param-name&gt;
+&lt;param-value&gt;true&lt;/param-value&gt;
+&lt;/context-param&gt;
+
+# Testbed #
+
+
+
+ - Corpora and the Medical science analogy.
+ - The [
+Testbed To Do list is held here][23] .
+ - Feedback on the Corpora Report. IF/7 Repository Integration is
+relevant here. Clarified and reflected my Qs? TB can help with
+corpora building.
+ - Look in DELOS report. Some competition. Look up original
+paper.
+ - CI: Make URL neater, or at least poke the user on to /testbed/
+from the base /.
+ - Experiment Types?
+ - Preservation Plan Execution, e.g. on Test Corpora?
+ - Check Preservation Plan is well-formed?
+ - Compare Plan generation services?
+ - Test Preservation Planning Service? e.g. Do they all agree that
+PDF 1.0 is out of date? 'Compare Format Risk Services?'
+ - Migrate: Via Format X? Two-stage Workflow?
+ - Database experiment? Provide a session and probe it? More than
+just a char-mig-char?
+ - 'Emulation Experiment':
+ - Workflows should measure all? Does this make sense for property
+measurement?
+ - Measure speed? Add more?
+ - Speed-only experiments? i.e. no manual properties? no other
+info needed either?
+ - Experiment Completeness Measure? Peer review even?
+ - TB: To visualise the results etc. What about comparing similar
+experiments? Another level of vis?
+
+
+Can we do meaningful experiments on ill-defined types? Like
+documents?
+
+
+ - Methodological Framework?
+ - Results Database?
+ - Discovery Framework?
+ - Testing Framework?
+ - Incentives?
+ - Resource Requirement Estimate?
+ - Document, loss of info?
+ - Timings always recorded.
+ - 'Run this experiment on my data.'
+ - Input to Tool Registry.
+ - CERT: Implements a service interface? Runs basic tests.
+Well-Formed Service. Actually a test.
+
+
+REZA: Third party tool certification. * Certifying a Tool, goes
+to PRONOM. * Certifying a Service, status goes to Serv Reg.
+Automatically done? Distinguish! * Who are the Test Administrators?
+Where does the effort come from? * Should this not be pulled from
+the TB DB? Not a seperate workflow? * 'Planets Compatible Web
+Service' etc. LFP Likely Fitness for Purpose.
+
+# Interoperability Framework #
+
+
+
+ - [
+IF 3 Requirements][24] 
+ - [
+IF 3 Bugs][25] 
+ - Fix log4j issues. Passing false? Jars? Web-logger interface can
+diagnose.
+ - Build on [DOAP][26] ?
+See [this
+article][27]  and see this [
+exploration of the schema][28] .
+ - DR: IDEA: Time-boxed files. 'You can delete this after
+22-12-08.'
+
+
+## Testing ##
+
+
+
+ - Installation health-checks would be fantastic.
+ - A button to test the email set-up would be great.
+ - Use [http://easymock.org/][29]  to
+make better tests.
+ - TEST: Are we running Java 6? Well it won't work then!
+ - TEST: Are all the required components deployed? Are the
+optional components present?
+ - TEST: Test by invoking the web-service tester, currently under
+/sample/, on a service that should exist?
+ - **In-Browser Integration Testing**
+ - [http://selenium.openqa.org/
+Selenium][30]  could be used to do proper user testing
+automation.
+
+
+# TCC &amp; Integration Issues #
+
+
+
+ - MAJOR: [Adam] CDM+GForge. Coherence of other XML schema.
+Document a process for managing XML Schema across project.
+ - MAJOR: Service Interfaces
+ - Process to define new services? Needed?
+ - See IF stuff on Service Architecture and Basic Services.
+ - Agree here?
+
+
+## Distribution ##
+
+
+
+ - MAJOR: Central starting-point on the website for the software,
+when public.
+ - MAJOR: Licencing, at least for the if_sp project:
+ - BSD for code, CC for documentation?
+ - Consider [EUPL][31] 
+ - Documentation:
+ - From dev to arch, the product needs fully docs.
+ - Product docs, licencing, white papers, permanence etc.
+ - DOC: No spaces in names in WebAnnotations!
+ - DOC: Go get version 2.0 of the IF from GForge.
+ - DOC: Public docs in SVN for Arch and Guidelines, need
+Licence.
+ - DOC: Workflow dev guidelines, different from Service.
+ - Consistency:
+ - Check in front page and theme pages. Use them too.
+ - Consistent user types and access rights accross the product.
+ANON access?
+
+
+## Interoperable Planets Properties ##
+
+
+How do we use the ontologies we have created? What concrete
+forms will they take?
+
+The problem is that the current JAXB approach requires a
+recompile when new properties are added. This was the reason for
+the L1 split in services. Properties have the same issue, and need
+to be defined in an extensible form that can be brought into line
+with the various Planets concept models.
+
+
+ - Define an extensible name-space to cover formats and XC*L now,
+and agreed charactersitics etc in the future.
+ - pn.do.format = URI
+ - pn.do.type = image
+ - XCEL needs some namespacing for the extractor/comparitor.
+ - Without it, we can only compare XCL v XCL, not the same
+properties recovered in different ways.
+ - Long-term issues
+ - No business can really do this.
+ - Helper codes
+ - Need helper to match DROID PUIDs to extensions, mime-types
+etc.
+
+
+NOTE that the PC/PRONOM design suggests that * [<code>http://www.significantproperties.org.uk/</code>][32] 
+will define the properties. * This WS can be used to get the
+signature file: [<code>http://nationalarchives.gov.uk/pronom/service.asmx</code>][33] 
+* This WS can be used to access tools etc: [<code>http://nationalarchives.gov.uk/pronom/characterisation.asmx</code>][34] 
+* See [http://wiki.preserv.org.uk/index.php/PronomStubCode][35] 
+
+## Potential Agenda Items for the TCC ##
+
+
+
+ - Remit/purpose of the TCC.
+ - How to find new items for this committee.
+ - Effort allocation for the TCC. 1 day per month each?
+ - Downward dissemination - where is the list of developers?
+ - Coding standards and server code QA tools. _* Do we all need
+them?_* Who should install and maintain them?
+ - Contribute to the Glossary?
+ - Data Model _* Who owns it, who changes it, how should it be
+managed._* How should we test it, and how to get feedback.
+ - Overall architecture documentation, by component?
+ - Methods to ensure interoperability.
+ - IDEA: Wiki staff list to use 'developer' instead of
+'participant'.
+ - IDEA: Inclusive dissemination plan? Beyond the Planets
+Consortium?
+
+
+# Preservation Services #
+
+
+
+ - Deployment docs for individual services. Exp Magick.
+ - Installed Java 5 (sdk) and set JAVA_HOME. Installed ImageMagick
+from testing (lenny). and installed libmagick9-dev to provide the
+headers. Check out JMagick. Configure and install. Add
+/usr/local/lib to JAVA_OPTS.
+ - Make it easier to deploy on any App Server? (spec planets jar
+location?). [http://openejb.apache.org/][36]  on
+Tomcat? Geronimo?
+
+
+# Preservation Characterization #
+
+
+
+ - MAJOR: Understand XC*L. Get it from Manfred and get it in core.
+Cross-compile via NestedVM?
+ - Look into building 'Collection Profiles'.
+ - Sources:
+ - MIME - IANA, Droid, JHOVE, NLNZ M.E. ...
+ - XC*L - hamming distance and other metrics? make more sensitive
+to fault types
+ - How best to perform multi-file comparison? Pair-wise +
+sort?
+ - Make DB types understood by PC tools, and esp SIARD (a ZIP), to
+enable workflows that use them.
+ - Wrap W3C Validator.
+
+
+# Preservation Action #
+
+
+
+ - Migration discovery must be facilitated.
+ - Note suggestions that cannot be fulfilled, yet.
+ - XENA:
+ - Also support normalized forms? Potentially lossy, and this
+should be measured.
+ - Attempt auto-discovery of OOF locations? /usr/lib/openoffice,
+/opt/OpenOffice _._, /Applications/OpenOffice _._
+ - Support PDF/A.
+ - Sort out jar problem with the image.jar asplode.
+ - CLWRAP?
+ - Instead of all these tools wrapping simple programs, can we
+create a more generic interface and use configuration files to
+specify how to get from X to Y using command-line tool Z? This
+system should automatically investigate if the command-line tool
+exists.
+ - ImageMagick would be a seperate Migrator service in the same
+code base, as this can do a lot of automatic cleverness. 'convert
+-list format'.
+ - Tools:
+ - Imagemagick, convert etc. See above.
+ - SIARD or EMU, could result in migration or in a 'session'.
+ - QC: Embed fonts via PDF driver, possibly in EMU.
+
+
+## Action Types ##
+
+
+
+ - Migration
+ - Takes in a Digital Object and makes a new one, according to
+some parameters.
+ - Characterization
+ - Identify: Determine Format, based on the Bytestream (extension
+hinting is okay, but only hinting).
+ - Validate: Test whether a Bytestream is consistent with a
+specified Format. QA?
+ - Assay/Analyse/Measure/Gauge/Mensuration/Mete: Measure some of
+the properties of file.
+ - Quality Control
+ - Improves the Characteristics of a Digital Object without
+changing it's Format.
+ - Basically a Migration, aimed at removing problem
+Characteristics, preservation risks etc.
+ - Quality Assurance?
+ - Service which Evaluates/Judges/Compares one or more Digital
+Objects base on their Characteristics.
+ - i.e. Value is used to Judge here, whereas other stuff is
+Objective.
+ - e.g. A comparator that compares the Characteristics of two
+Digital Objects, in order to determine the degree of data
+loss.
+ - Validate should be listed here too.
+
+
+# Preservation Planning #
+
+
+
+ - Policy reaches down through the objective tree of Requirements,
+and meets measurements are the leaves.
+ - Determining sample content and getting it in is not trivial.
+Working with next version of DROID on content profiling.
+ - Turn Plato into an Experiment summary, if you want?
+ - PP requires a lot of care, as easy to misunderstand the impact
+of the choices made.
+ - The missing choices might be the most important ones.
+ - Registries to be neutral, but best practice will also be
+required.
+
+
+# Random #
+
+
+gardener.arts.gla.ac.uk 10762 f3kam4
+
+[
+http://www.google.co.uk/search?hl=en&amp;client=firefox-a&amp;rls=org.mozilla%3Aen-GB%3Aofficial&amp;hs=Q2w&amp;q=603798+kiwibank&amp;btnG=Search&amp;meta=][37] 
+
+Tags:Projects
+
+
+
+  [1]: http://www.planets-project.eu/
+  [2]: http://www.planets-project.eu/private/pages/wiki/
+  [3]: http://www.planets-project.eu/private/pages/wiki/index.php/Planets_Deliverables_1st_June_2007_-_31st_November_2008
+  [4]: http://www.planets-project.eu/private/pages/wiki/index.php/Tech
+  [5]: http://www.planets-project.eu/private/pages/wiki/index.php/TCC
+  [6]: http://www.planets-project.eu/private/pages/wiki/index.php/User:Andrewj
+  [7]: http://java.sun.com/j2se/1.5.0/docs/api/java/net/URI.html
+  [8]: http://java.sun.com/developer/technicalArticles/Programming/compression/
+  [9]: http://sigsoft.dcc.rl.ac.uk/twiki/bin/view/Main/BaseFramework
+  [10]: https://jax-ws.dev.java.net/guide/Large_Attachments.html
+  [11]: http://wiki.dlib.indiana.edu/confluence/display/INF/Jhove
+  [12]: http://www.sonic.net/~surdules/projects/jzx/
+  [13]: http://www.twinbee.org/hob/download.php#Games
+  [14]: http://dioscuri.sourceforge.net/
+  [15]: http://www.icadl.org/
+  [16]: https://sourceforge.net/forum/forum.php?forum_id=963409
+  [17]: http://pdfa.org/doku.php?id=pdfa:en:isartor_test_suite
+  [18]: http://www.dpconline.org/graphics/whatsnew/issue18.html#planets
+  [19]: http://www.dcc.ac.uk/resource/technology-watch/planets-testbed/
+  [20]: http://www.developer.com/java/article.php/10922_3630721_2
+  [21]: https://pdf-renderer.dev.java.net/examples.html
+  [22]: http://www.jboss.org/file-access/default/members/jbossrichfaces/freezone/docs/devguide/en/faq/faq.html
+  [23]: http://www.planets-project.eu/private/pages/wiki/index.php/TB/2/Rolling_To_Do_List
+  [24]: http://www.planets-project.eu/private/pages/wiki/index.php/Interoperability_Framework/Release_3_Requirements
+  [25]: http://www.planets-project.eu/private/pages/wiki/index.php/Interoperability_Framework/Release_3_Bug_List
+  [26]: https://trac.usefulinc.com/doap
+  [27]: http://www.ibm.com/developerworks/xml/library/x-osproj3/
+  [28]: http://xml.mfd-consult.dk/ws/2003/01/rdfs/?rdfs=http%3A%2F%2Fusefulinc.com%2Fns%2Fdoap%23
+  [29]: http://easymock.org/
+  [30]: http://selenium.openqa.org/%20Selenium
+  [31]: http://en.wikipedia.org/wiki/European_Union_Public_Licence
+  [32]: http://www.significantproperties.org.uk/
+  [33]: http://nationalarchives.gov.uk/pronom/service.asmx
+  [34]: http://nationalarchives.gov.uk/pronom/characterisation.asmx
+  [35]: http://wiki.preserv.org.uk/index.php/PronomStubCode
+  [36]: http://openejb.apache.org/
+  [37]: http://www.google.co.uk/search?hl=en&amp;client=firefox-a&amp;rls=org.mozilla%3Aen-GB%3Aofficial&amp;hs=Q2w&amp;q=603798+kiwibank&amp;btnG=Search&amp;meta=

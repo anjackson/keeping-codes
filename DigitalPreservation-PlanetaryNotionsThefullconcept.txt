@@ -1,0 +1,9 @@
+ualdatamodeladdressesanumberofcompl
+
+Planetary Notions
+
+The full conceptual data model addresses a number of complex, high-level issues concerning the preservation issues that an archive or repository must deal with. However, the level of detail within this metadata will depend on the priorities and needs of the individual institutions, at least in the near term.  To enable different repositories with different data to interact, we must build up lower-level data standards capable of embodying the data and metadata required for communication between institutions.  This should focus on simple operations at first, but be built in an 'atomic' fashion to make it as easy as possible to build more advanced services later on.  At each stage, the set of different data types we are able to define will reflect the data concepts that the institutions involved are able to agree on.
+
+Files and Digital Objects
+Relationships as meta data, not embodied in the structure.
+

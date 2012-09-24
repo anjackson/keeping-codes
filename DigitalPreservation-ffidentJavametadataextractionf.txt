@@ -1,0 +1,6 @@
+ileformatidentificationlibrary
+
+This is the first version of a Java library to extract information from files and identify
+their formats.
+Most operating systems encode the format of a file in the file name extension.
+However, there are problems with this approach:

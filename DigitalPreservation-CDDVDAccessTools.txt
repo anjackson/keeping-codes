@@ -1,0 +1,27 @@
+[CDex][1]  - [Open Source Digital Audio CD Extractor][2] 
+
+[Cdparanoia][3]  extracts audio
+from compact discs directly as data, with no
+analog step between, and writes the data to a file or pipe in WAV,
+AIFC, AIFC or raw 16 bit linear PC. Paranoia is a library that provides a unified, robust
+interface for Linux applications that want to use CDROM devices. In addition to
+Linux device interface unification, the library provides tools for
+automatically identifying devices, and intelligent handling/correction of
+errors at all levels of the interface. On top of a generic low-level packet
+command layer, Paranoia implements high-level error-correcting interfaces for
+tasks such as CDDA where broken or vastly non-standard devices are the rule,
+rather than the exception.[][4]  
+
+
+[MagicISO][5]  - A good Windows ISO tool box.
+
+
+
+
+
+
+  [1]: http://cdexos.sourceforge.net/
+  [2]: 
+  [3]: http://www.xiph.org/paranoia/
+  [4]: 
+  [5]: http://www.magiciso.com/tutorials/miso-features.htm

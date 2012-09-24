@@ -1,0 +1,81 @@
+Migration
+
+---------
+
+
+
+ * Migrations with Image Magick:
+
+   * Use [-list](http://www.imagemagick.org/script/command-line-options.php#list) and -version etc to auto-build service info and pathways.
+
+ * Migrating wiki pages, via HTML, or HTML to Wiki.
+
+   * &lt;http://diberri.dyndns.org/wikipedia/html2wiki/&gt;
+
+   * &lt;http://www.aaronsw.com/2002/html2text/&gt;
+
+   * &lt;http://deplate.sourceforge.net/&gt;
+
+   * &lt;http://wiki.docbook.org/topic/Html2DocBook&gt;
+
+   * &lt;http://wiki.docbook.org/topic/ConvertOtherFormatsToDocBook&gt;
+
+ * Convert fonts between formats:
+
+   * &lt;http://www.ics.uci.edu/~chenli/pdf-font-types/index.html&gt;
+
+   * &lt;http://fondu.sourceforge.net/&gt;
+
+   * Fun With Encodings Awaits.
+
+
+
+
+Could also merge in the [CRiB service](http://crib.dsi.uminho.pt/).
+
+ 
+
+### Crosswalking ###
+
+
+
+Migrations that convert between metadata formats, mapping elements of one into the other.
+
+
+
+ * [bibtex2rdf](http://www.l3s.de/~siberski/bibtex2rdf/).
+
+
+
+Extracting Properties
+
+---------------------
+
+
+
+ * Use pdffonts and other code from pdf-utils ([xpdf](http://www.foolabs.com/xpdf/) or [Poppler](http://poppler.freedesktop.org/)) to extract information, like font dependencies.
+
+
+
+
+Quality Control
+
+---------------
+
+
+
+ * Create a .NET service to [strip macros from OpenXML](http://openxmldeveloper.org/articles/1868.aspx).
+
+ * Use a [HTML Tidy profile](http://tidy.sourceforge.net/docs/quickref.html) and implements as a [JTidy](http://jtidy.sourceforge.net/) service.
+
+ 
+
+
+
+Quality Assessment
+
+------------------
+
+e.g the comparator that compares two sets of measured properties and evaluates the difference.
+
+

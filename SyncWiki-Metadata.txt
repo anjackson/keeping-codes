@@ -1,0 +1,353 @@
+# Metadata #
+
+
+This book is quite good: [
+Metadata for Digital Resources: Implementation, Systems Design and
+Interoperability][1] 
+
+# Metadata Standards #
+
+
+
+ - Dublin Core
+ - Note finding that [
+dc.identifier is not an unambiguous identifier for that which
+should be preserved, as it may point to a derived
+representation][2] .
+ - [MARC][3]  - Bibliographic,
+authority and related metadata.
+ - [METS][4]  - a
+container/wrapper?
+ - [PREMIS][5]  -
+Preservation metadata.
+ - [MODS][6]  -
+Metadata Object Description Schema (relations?)
+ - [RFC 1807][7]  -
+Bibliographic metadata.
+ - [
+ONIX][8] #
+ - [MIT
+Selected Metadata Standards][9]  and notes therein contain lots of
+information. There are clearly metadata standards for different
+classes of data and metadata.
+ - [Z39.87 Data
+dictionary - Technical Metadata for Digital Still Images
+(MIX)][10] 
+
+
+[
+A Standards Primer - Understanding Technology Standardization
+Efforts][11] .
+
+# Metadata #
+
+
+
+ - [Dublin Core][12] 
+ - [EXIF - Images][13] 
+ - [IPTC/XMP -
+Images][14] 
+ - [METS -
+Structural][15] 
+ - [MIX
+- Images][16] 
+ - [MODS -
+Descriptive][17] 
+ - [Open Archives
+Initiative][18] 
+ - [PBCore -
+Video/Audio][19] 
+ - [SMPTE -
+Video/Audio][20] 
+
+
+# Metadata Extraction #
+
+
+
+ - [PRONOM
+links][21] 
+ - [JHOVE][22] 
+ - [
+NLNZ Metadata Extraction Tool][23] , [http://meta-extractor.sourceforge.net/][24] .
+ - [FITS][25] 
+ - [DROID
+5][26] 
+
+
+# Significant Properties #
+
+
+See [
+JISC: The Significant Properties of Digital Objects][27] 
+
+This book is quite good: [
+Metadata for Digital Resources: Implementation, Systems Design and
+Interoperability][28] [http://www.assoc-amazon.co.uk/e/ir?t=anjacksonnet-21&l=as2&o=2&a=1843343010][29] 
+
+# Metadata Standards #
+
+
+
+ - Dublin Core
+
+   - Note finding that [
+dc.identifier is not an unambiguous identifier for that which
+should be preserved, as it may point to a derived
+representation][30] .
+
+
+ - [MARC][31]  - Bibliographic,
+authority and related metadata.
+ - [METS][32]  - a
+container/wrapper?
+ - [PREMIS][33]  -
+Preservation metadata.
+ - [MODS][34]  -
+Metadata Object Description Schema (relations?)
+ - [RFC 1807][35]  -
+Bibliographic metadata.
+ - [
+ONIX][36] #
+ - [MIT
+Selected Metadata Standards][37]  and notes therein contain lots of
+information. There are clearly metadata standards for different
+classes of data and metadata.
+
+   - [Z39.87 Data
+dictionary - Technical Metadata for Digital Still Images
+(MIX)][38] 
+
+
+
+
+[
+A Standards Primer - Understanding Technology Standardization
+Efforts][39] .
+
+# Metadata #
+
+
+
+ - [Dublin Core][40] 
+ - [EXIF - Images][41] 
+ - [IPTC/XMP -
+Images][42] 
+ - [METS -
+Structural][43] 
+ - [MIX
+- Images][44] 
+ - [MODS -
+Descriptive][45] 
+ - [Open Archives
+Initiative][46] 
+ - [PBCore -
+Video/Audio][47] 
+ - [SMPTE -
+Video/Audio][48] 
+
+
+## PREMISE ##
+
+
+
+ - [PREMIS][49] 
+ - [Using PREMIS
+with METS][50] 
+ - [PREMIS
+Tools][51] 
+
+
+# Metadata Extraction #
+
+
+
+ - [PRONOM
+links][52] 
+ - [JHOVE][53] 
+ - [
+NLNZ Metadata Extraction Tool][54] , [http://meta-extractor.sourceforge.net/][55] .
+
+
+This page includes my notes on software related to Planets, but
+not directly part of it. These should probably each have their own
+page. See also Existing tools for information extraction
+transformation and management.
+
+# [http://droid.sourceforge.net
+DROID][56]  #
+
+
+_Refers to [http://www.nationalarchives.gov.uk/pronom/
+PRONOM][57] , e.g. *info:pronom/fmt/100* is HTML
+4.01._Required manual proxy configuration via text-file-hacking.
+*Use ProxySelector and other magic?
+
+# [http://hul.harvard.edu/jhove/
+JHOVE][58]  #
+
+
+_Apparently tends to fail awkwardly when the network latency is
+high._Also uses it's own system of type identifiers. _Adds
+attributes/metadata?_Validates?
+
+# Existing tools #
+
+
+## Magic numbers ##
+
+
+Magic numbers is the name for the standard UNIX mechanism used
+to identify file types. This approach is not limited to UNIX, but
+is usually considered a UNIX related practice that has since spread
+to many other platforms. The mechanism is based on a database that
+maps byte strings and positions to file types. Common examples are
+GIF, JPEG and TIFF, that all contain reliable markers, at least for
+identifying the general file format. Minor version identification
+(i.e., format characterization rather than format identification)
+often requires a more sophisticated approach, e.g. parsing of
+header structures. On a UNIX system, the magic number mechanism can
+be accessed using the file command, e.g.:
+
+<code> kb005264:~/Code/Graphics andersjohansen$ file
+logo.png</code>
+
+<code>logo.png: PNG image data, 64 x 64, 8-bit/color RGBA,
+non-interlaced </code>
+
+Advantages are fast performance and reliable identification for
+many file formats. Limitations include that often minor version
+variations can&acirc;&euro;&trade;t be determined (i.e., less than
+reliable characterization), that the method does not allow for
+formats that lack reliable identification strings (such as text
+files), and that it uncritically accepts the evidence (e.g., if a
+text file contains the magic number for a GIF file, the file
+command will identify it as a GIF file, regardless of other
+evidence).
+
+## DROID ##
+
+
+DROID essentially uses an extended version of the magic numbers
+approach, coupled with a web interface that provides access to a
+database of reliable identification strings mapped to file types.
+The DROID approach allows for some regular expressions in the
+identification strings, as well as relative position of the
+strings, rather than absolute (e.g., &acirc;&euro;&oelig;look for
+0xB?DF00D 20 bytes before the end of the file&acirc;&euro;.
+
+DROID is developed as part of the UK National Archives PRONOM
+project, and can be obtained from [http://www.nationalarchives.gov.uk/aboutapps/pronom/droid.htm][59] 
+
+## JHOVE ##
+
+
+JHOVE is an extensible, Java-based tool developed for the
+JSTOR/Harvard Object Validation Environment ([http://www.jstor.org/][60] ) for the purpose
+of reliably identifying and characterizing large sets of files,
+primarily graphics files. Hence, the scope exceeds the traditional
+magic number approach. The inner workings of the currently
+available JHOVE modules is not described in the available
+documentation, but presumably any approach can be used as long as
+the interface for JHOVE modules is implemented. Based on the
+available functionality for the available formats (primarily
+graphics formats such as TIFF, GIF and JPEG) I conclude that a
+combination of header parsing, hand crafted rules and magic numbers
+are currently employed. JHOVE and companion documentation is
+available at [http://hul.harvard.edu/jhove/][61] 
+
+## Inferno ##
+
+
+Inferno is a Java-based tool for rule inference and application
+of such sets of rules. It is currently heavily biased towards
+charcterization. It was developed at the Danish Royal Library by
+Anders S. Johansen as a proof-of-concept for using rule inference
+as an unifying approach to characterization, both directly to
+perform characterization tasks, and indirectly to integrate results
+from various existing characterization tools in an optimal way.
+
+Inferno has been successfully applied to file and text string
+characterization by text file encoding (Latin 1, UTF-8, UTF-16LE
+and UTF-16BE), file type (text file encoding, JPEG and PNG) and
+language used in text file (Danish, Swedish, English and
+Norwegian).
+
+A paper describing Inferno, rule inference and results of the
+initial experiments is available [http://www.planets-project.eu/private/planets-ftp/Inferno.pdf][62] 
+via the Planets FTP area. The abstracts is available at the
+Preliminary Publications for PA/4 page.
+
+# Storage #
+
+
+
+ - [XML
+Schemas and Support for Multiple Record Formats in OAI-PMH][63] 
+
+
+
+
+  [1]: http://www.amazon.co.uk/gp/product/1843343010?ie=UTF8&amp;tag=anjacksonnet-21&amp;linkCode=as2&amp;camp=1634&amp;creative=6738&amp;creativeASIN=1843343010
+  [2]: http://libtechissues.blogspot.com/2006/12/digital-preservation-using-oai-pmh-as.html
+  [3]: http://www.loc.gov/marc/
+  [4]: http://www.loc.gov/standards/mets/
+  [5]: http://www.loc.gov/standards/premis/
+  [6]: http://www.loc.gov/standards/mods/
+  [7]: http://rfc.net/rfc1807.html
+  [8]: http://libraries.mit.edu/guides/subjects/metadata/standards/onix.html
+  [9]: http://libraries.mit.edu/guides/subjects/metadata/standards.html
+  [10]: http://www.loc.gov/standards/mix/
+  [11]: http://stephesblog.blogs.com/my_weblog/2008/04/a-standards-pri.html
+  [12]: http://dublincore.org/
+  [13]: http://www.jeita.or.jp/
+  [14]: http://www.iptc.org/IPTC4XMP/
+  [15]: http://www.loc.gov/standards/mets/METSOverview.v2.html
+  [16]: http://www.niso.org/standards/resources/Z39_87_trial_use.pdf
+  [17]: http://www.loc.gov/standards/mods/
+  [18]: http://www.openarchives.org/
+  [19]: http://www.utah.edu/cpbmetadata/
+  [20]: http://www.smpte-ra.org/mdd
+  [21]: http://www.nationalarchives.gov.uk/aboutapps/PRONOM/tools.htm
+  [22]: http://hul.harvard.edu/jhove/
+  [23]: http://www.natlib.govt.nz/about-us/current-initiatives/past-initiatives/metadata-extraction-tool
+  [24]: http://meta-extractor.sourceforge.net/
+  [25]: http://code.google.com/p/fits/
+  [26]: http://droid5.yourwiki.net/wiki/DROID_5.0
+  [27]: http://www.jisc.ac.uk/whatwedo/programmes/preservation/2008sigprops
+  [28]: http://www.amazon.co.uk/gp/product/1843343010?ie=UTF8&amp;tag=anjacksonnet-21&amp;linkCode=as2&amp;camp=1634&amp;creative=6738&amp;creativeASIN=1843343010
+  [29]: http://www.assoc-amazon.co.uk/e/ir?t=anjacksonnet-21&amp;l=as2&amp;o=2&amp;a=1843343010
+  [30]: http://libtechissues.blogspot.com/2006/12/digital-preservation-using-oai-pmh-as.html
+  [31]: http://www.loc.gov/marc/
+  [32]: http://www.loc.gov/standards/mets/
+  [33]: http://www.loc.gov/standards/premis/
+  [34]: http://www.loc.gov/standards/mods/
+  [35]: http://rfc.net/rfc1807.html
+  [36]: http://libraries.mit.edu/guides/subjects/metadata/standards/onix.html
+  [37]: http://libraries.mit.edu/guides/subjects/metadata/standards.html
+  [38]: http://www.loc.gov/standards/mix/
+  [39]: http://stephesblog.blogs.com/my_weblog/2008/04/a-standards-pri.html
+  [40]: http://dublincore.org/
+  [41]: http://www.jeita.or.jp/
+  [42]: http://www.iptc.org/IPTC4XMP/
+  [43]: http://www.loc.gov/standards/mets/METSOverview.v2.html
+  [44]: http://www.niso.org/standards/resources/Z39_87_trial_use.pdf
+  [45]: http://www.loc.gov/standards/mods/
+  [46]: http://www.openarchives.org/
+  [47]: http://www.utah.edu/cpbmetadata/
+  [48]: http://www.smpte-ra.org/mdd
+  [49]: http://www.loc.gov/standards/premis/
+  [50]: http://www.loc.gov/standards/premis/premis-mets.html
+  [51]: http://www.loc.gov/standards/premis/tools.html
+  [52]: http://www.nationalarchives.gov.uk/aboutapps/PRONOM/tools.htm
+  [53]: http://hul.harvard.edu/jhove/
+  [54]: http://www.natlib.govt.nz/about-us/current-initiatives/past-initiatives/metadata-extraction-tool
+  [55]: http://meta-extractor.sourceforge.net/
+  [56]: http://droid.sourceforge.net%20DROID
+  [57]: http://www.nationalarchives.gov.uk/pronom/%20PRONOM
+  [58]: http://hul.harvard.edu/jhove/%20JHOVE
+  [59]: http://www.nationalarchives.gov.uk/aboutapps/pronom/droid.htm
+  [60]: http://www.jstor.org/
+  [61]: http://hul.harvard.edu/jhove/
+  [62]: http://www.planets-project.eu/private/planets-ftp/Inferno.pdf
+  [63]: http://www.oaforum.org/tutorial/english/page5.htm

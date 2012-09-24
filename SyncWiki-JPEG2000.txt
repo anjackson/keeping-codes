@@ -1,0 +1,125 @@
+Notes from Newspaper Digitised Masters TAB
+==========================================
+
+OCR ---
+
+
+ - Use Hough-style algorithm plus typeface?
+ - Printers used multiple letter widths to aid justification.
+ - Use couplet analysis to determine language?
+ - Are candidate letters kept anywhere?
+ - Seems strange to loose the contiguity of letters - sets of
+simple shapes, not blocks.
+
+
+Layout Analysis
+
+----------
+
+
+
+ - This 'semantic' segmentation is perhaps harder than the OCR
+bit.
+
+
+QA Of Digitsed Masters
+
+----------
+
+
+
+ - Use linear Hough over segments to assess warp?
+ - Take scan at high res, fix problems, and down-sample? e.g.
+fixing page roll.
+ - DPI - 'as small as the smallest stroke' - can this be
+estimated?
+ - Test readability using 'Humans', e.g. Amazon Turk.
+ - We can look at everything, if we let our users do it, and tell
+us if there are problems.
+ - SSIM and MS-SSIM - we need implementations.
+ - PSNR - does the value shift with image size, due to the
+limitations on the smallest possible amount of change being a
+larger percentage for smaller images?
+ - Noise Reduction:
+
+   - Is the noise model scale-invariant? It was a Gaussian,
+essentially, with a threshold.
+   - Does NR+INCOMP beat COMP?
+   - NR can be tuned locally, i.e. dense regions can be left
+untouched.
+   - Preferable compared with potential complexity of
+Multi-resolution files? Fat pixels? ** Acceptable noise: how to
+compare image noise with capture noise. How to QA? MP3 problem?
+Noise reduction will always remove the data that happens to look
+like noise. ok?
+
+
+
+
+Semi-Vector? Multi-bit-depth files?
+
+
+
+
+ - Use compression-decompression cycles to analyse stability of
+noise?
+
+
+
+
+
+ - JPEG 2000
+
+   - Is conversion to Lum/Chrominance/etc lossy? Surely not.
+   - JPEG 2000 uses scale-invariant (wavelet) transform, but
+Newspapers have a characteristic length scale?
+   - Minimally lossy means accepting floating-point math. Minimal 1
+or 2 points of Greyscale changes on 30% of the pixels. Is
+float/double/quad well defined?
+   - As you push up the resolution of a file, how does the LLCOMP
+size come out? Stable?
+   - Is JPEG-LS better? Is it better enough?
+   - Is Adobe support for JPEG2000 poor? Their code is poor?
+   - TIFF has weak ICC support?
+   - JP2 only allows ICC profiles, no ProPhotoRGB, AdobeRGB?
+   - NO JPEG SUPPORT IN PDF/A-2?!?!? Surely just added
+JPEG2000.
+
+
+ - NPDP - Can we have the full list of parameters please?
+
+
+Capture
+
+----------
+
+
+
+ - Important to estimate the noise in the capture process, e.g.
+ISO noise and (0.2mm) shift was rather high for our camera
+setup.
+ - Take multiple shots and average them? Link to the space
+IR-imaging process.
+ - Can camera or scanner noise be modelled more precisely?
+
+
+Digitisation Process
+
+----------
+
+
+
+ - BL: Some confusion over the overall process. e.g. borders
+chopped, saving 20% in space, which seems rather high, and may be
+w.r.t uncomp TIFF.
+ - BL: Need the people doing capture and QA to believe in this
+stuff, and be able to sort it out. Process is a littel conflicted
+at present.
+ - At a fixed MB size, I'd rather pump up the resolution than keep
+the capture noise.
+ - Push vendors to reduce the noise floor in their capture
+hardware?
+
+
+
+

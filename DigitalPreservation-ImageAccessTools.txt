@@ -1,0 +1,14 @@
+[djatoka][1]  is a Java-based open source image server with an attractive
+basic feature set and extensibility under control of the community of
+implementers. Off-the-shelf, djatoka provides compression and region
+extraction of JPEG 2000 images, URI-addressability of regions, and
+support for a rich set of input/output image formats (e.g., BMP, GIF,
+JPG, PNG, PNM, TIF, JPEG 2000). djatoka also comes with a plug-in
+framework that allows transformations to be applied to regions and
+resolutions (e.g., watermarking).
+
+[IIPImage][2]  is an [Open Source][3]  light-weight streaming client-server system for the web-based viewing and zooming of ultra high-resolution images.
+
+  [1]: http://sourceforge.net/apps/mediawiki/djatoka/
+  [2]: http://iipimage.sourceforge.net/
+  [3]: http://www.opensource.org/
