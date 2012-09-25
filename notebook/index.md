@@ -118,20 +118,22 @@ evidence).
 Property Extraction Tools
 =========================
 
-[DROID](http://droid.sourceforge.net/)  DROID identifies files using the
-magic numbers approach. - Refers to
-[PRONOM](http://www.nationalarchives.gov.uk/pronom/)  , e.g.
-''info:pronom/fmt/100'' is HTML 4.01. - Required manual proxy
-configuration via text-file-hacking. - Use ProxySelector and other
-magic? - [DROID 5](http://droid5.yourwiki.net/wiki/DROID_5.0)   -
-[JHOVE](http://hul.harvard.edu/jhove/)  JHOVE is an extensible,
+ - [DROID](http://droid.sourceforge.net/)  DROID identifies files using the magic numbers approach. 
+ - Refers to [PRONOM](http://www.nationalarchives.gov.uk/pronom/)  , e.g. ''info:pronom/fmt/100'' is HTML 4.01. - Required manual proxy configuration via text-file-hacking. 
+ - Use ProxySelector and other magic? 
+ - [DROID 5](http://droid5.yourwiki.net/wiki/DROID_5.0)   
+ - [JHOVE](http://hul.harvard.edu/jhove/)  
+
+JHOVE is an extensible,
 Java-based tool developed for the JSTOR/Harvard Object Validation
 Environment ([http://www.jstor.org/](http://www.jstor.org/)  ) aimed at
 validating digital objects. It builds on a magic number approach and
 adds much richer parsing functionality in order to extract more
-information and more thoroughly assess validity. - Apparently tends to
-fail awkwardly when the network latency is high. - Also uses it's own
-system of type identifiers.- Adds attributes/metadata? - Validates?
+information and more thoroughly assess validity. 
+ - Apparently tends to fail awkwardly when the network latency is high. 
+ - Also uses it's own system of type identifiers.
+ - Adds attributes/metadata? 
+ - Validates?
 
 InfernoInferno is a Java-based tool for rule inference and application
 of such sets of rules. It is currently heavily biased towards
