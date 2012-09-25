@@ -67,10 +67,10 @@ Documents
 Databases
 ---------
 
-Preservation-Format Approach. - [DANS
-M-XML](http://mixed.dans.knaw.nl/node/114)   - SIARD, [Providing
-Authentic Long-term Archival Access to Complex Relational
-Data](http://arxiv.org/abs/cs/0408054)  
+Preservation-Format Approach. 
+
+- [DANS M-XML](http://mixed.dans.knaw.nl/node/114)   
+- SIARD, [Providing Authentic Long-term Archival Access to Complex Relational Data](http://arxiv.org/abs/cs/0408054)  
 
 Images
 ------
