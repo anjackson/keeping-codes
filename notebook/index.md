@@ -84,9 +84,9 @@ Digital Object Properties
 Significant Properties
 ----------------------
 
-See [JISC: The Significant Properties of Digital
-Objects](http://www.jisc.ac.uk/whatwedo/programmes/preservation/2008sigprops)
-  Issues with this concept are legion.
+See [JISC: The Significant Properties of Digital Objects](http://www.jisc.ac.uk/whatwedo/programmes/preservation/2008sigprops)
+
+Issues with this concept are legion.
 
 Property Extraction Methods
 ===========================
