@@ -307,7 +307,7 @@ Software for pulling the bits off a disk. Note that [forensicswiki.org][118]   
  - [dskdump][121]   
  - [ddrescue@forensicswiki.org][122]   
  - [dcfldd@forensicswiki.org][123]   
- - [rdd][124]  , 'robust with respect to read errors'. 
+ - [rdd][124], 'robust with respect to read errors'. 
  - [AcetoneISO][125]   
  - [Snorkel][126], which is Java, and interesting, but closed-source and by-arrangement. 
  - [PyFlag][127] includes disk forensics
