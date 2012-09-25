@@ -39,9 +39,9 @@ Keeping Bits Safe
 Digital Object Formats
 ======================
 
-See also this related effort: [Wikibook: Choosing The Right File
-Format](http://en.wikibooks.org/wiki/Choosing_The_Right_File_Format)
-. [http://www.dptp.org/course/](http://www.dptp.org/course/)
+See also this related effort: 
+ - [Wikibook: Choosing The Right File Format](http://en.wikibooks.org/wiki/Choosing_The_Right_File_Format)
+ - [http://www.dptp.org/course/](http://www.dptp.org/course/)
 
 File Format Registries
 ----------------------
@@ -54,8 +54,7 @@ File Format Registries
 -   [MIME Types](http://www.iana.org/assignments/media-types/)
 -   [PRONOM](http://www.nationalarchives.gov.uk/pronom/)
 -   [Global Digital Format Registry](http://hul.harvard.edu/gdfr/)
--   [Apple Uniform Type
-    Identifiers](http://developer.apple.com/documentation/Carbon/Conceptual/understanding_utis/utilist/chapter_4_section_1.html#//apple_ref/doc/uid/TP40001319-CH205-CHDIJFGJ)
+-   [Apple Uniform Type Identifiers](http://developer.apple.com/documentation/Carbon/Conceptual/understanding_utis/utilist/chapter_4_section_1.html#//apple_ref/doc/uid/TP40001319-CH205-CHDIJFGJ)
 -   [http://www.digitalpreservation.gov/formats/intro/format\_eval\_rel.shtml](http://www.digitalpreservation.gov/formats/intro/format_eval_rel.shtml)
 
 Documents
