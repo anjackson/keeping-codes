@@ -157,15 +157,9 @@ Other Tools
 
 -   See [PRONOM links](http://www.nationalarchives.gov.uk/aboutapps/PRONOM/tools.htm)
      
--   [NLNZ Metadata Extraction Tool](http://www.natlib.govt.nz/about-us/current-initiatives/past-initiatives/metadata-extraction-tool)
-     ,
-    [http://meta-extractor.sourceforge.net/](http://meta-extractor.sourceforge.net/)
-     .
+-   [NLNZ Metadata Extraction Tool](http://www.natlib.govt.nz/about-us/current-initiatives/past-initiatives/metadata-extraction-tool), [http://meta-extractor.sourceforge.net/](http://meta-extractor.sourceforge.net/).
 -   [FITS](http://code.google.com/p/fits/)   and links therein...
--   Use pdffonts and other code from pdf-utils
-    ([xpdf](http://www.foolabs.com/xpdf/)   or
-    [Poppler](http://poppler.freedesktop.org/)  ) to extract
-    information, like font dependencies.
+-   Use pdffonts and other code from pdf-utils ([xpdf](http://www.foolabs.com/xpdf/) or [Poppler](http://poppler.freedesktop.org/)  ) to extract information, like font dependencies.
 
 Preservation Strategies
 =======================
