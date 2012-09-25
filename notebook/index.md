@@ -248,7 +248,8 @@ List, from [http://discerning.com/topics/standards/resource_management.txt][77] 
  - [Open Archives Initiative][92]  
  - [PBCore - Video/Audio][93]  
  - [SMPTE - Video/Audio][94]  
-PREMISE
+
+PREMIS
  - [PREMIS][95]  
  - [Using PREMIS with METS][96]  
  - [PREMIS Tools][97]  
@@ -300,7 +301,7 @@ Notes on different physical media for storing digital data.
 All disks are block devices... blah... Volumes, partitions, file systems, ???
 # Imaging Tools #
 
-Software for pulling the bits off a disk. Note that [forensicswiki.org][118]   has some useful info on this.
+Software for pulling the bits off a disk. Note that [forensicswiki.org][118] has some useful info on this.
 
  - [Disk Imaging@forensicswiki.org][119]  
  - [AIR - Automated Image and Restore][120]   
