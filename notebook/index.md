@@ -155,11 +155,9 @@ used in text file (Danish, Swedish, English and Norwegian).
 Other Tools
 -----------
 
--   See [PRONOM
-    links](http://www.nationalarchives.gov.uk/aboutapps/PRONOM/tools.htm)
+-   See [PRONOM links](http://www.nationalarchives.gov.uk/aboutapps/PRONOM/tools.htm)
      
--   [NLNZ Metadata Extraction
-    Tool](http://www.natlib.govt.nz/about-us/current-initiatives/past-initiatives/metadata-extraction-tool)
+-   [NLNZ Metadata Extraction Tool](http://www.natlib.govt.nz/about-us/current-initiatives/past-initiatives/metadata-extraction-tool)
      ,
     [http://meta-extractor.sourceforge.net/](http://meta-extractor.sourceforge.net/)
      .
