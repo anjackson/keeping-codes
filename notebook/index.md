@@ -301,6 +301,7 @@ All disks are block devices... blah... Volumes, partitions, file systems, ???
 # Imaging Tools #
 
 Software for pulling the bits off a disk. Note that [forensicswiki.org][118]   has some useful info on this.
+
  - [Disk Imaging@forensicswiki.org][119]  
  - [AIR - Automated Image and Restore][120]   
  - [dskdump][121]   
@@ -308,8 +309,8 @@ Software for pulling the bits off a disk. Note that [forensicswiki.org][118]   
  - [dcfldd@forensicswiki.org][123]   
  - [rdd][124]  , 'robust with respect to read errors'. 
  - [AcetoneISO][125]   
- - [Snorkel][126]  , which is Java, and interesting, but closed-source and by-arrangement. 
- - [PyFlag][127]   includes disk forensics
+ - [Snorkel][126], which is Java, and interesting, but closed-source and by-arrangement. 
+ - [PyFlag][127] includes disk forensics
 
 ## Drive Emulation ##
 
