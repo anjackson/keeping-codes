@@ -184,8 +184,7 @@ e.g. The Web. Limited coverage.
 Normalised Archive
 ------------------
 
-Limited coverage and controlled input. See [Quality Control
-Methods](http://anjackson.net/digital_preservation_notebook/preservation_strategies/quality_control_methods)
+Limited coverage and controlled input. See [Quality Control Methods](http://anjackson.net/digital_preservation_notebook/preservation_strategies/quality_control_methods)
  .
 
 Migration Tools & Pathways
