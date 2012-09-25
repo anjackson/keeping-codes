@@ -321,20 +321,20 @@ Software for pulling the bits off a disk. Note that [forensicswiki.org][118]   
 
 ## Converting between image formats ##
 
- - [A list of tools for linux][131]  
- - [CloneCD image to ISO image file converter][132]  
+ - [A list of tools for linux][131]
+ - [CloneCD image to ISO image file converter][132]
 
 # File System Support #
 
 How to interpret the bits of a disk image and turn it into a set of files. e.g. NTFS, FAT, ADFS, ISO, etc.
 
- - [Comparison of file systems][133]   
- - [File Systems@forensicswiki.org][134]   
- - [LIBDSK][135]   is a library for accessing discs and disc image files. 
- - [ADFS][136]      
- - [Reading DFS and ADFS floppy disks under Linux][137]     
- - [FUSE ADFS][138]   
- - [Linux kernel file system support][139]  
+ - [Comparison of file systems][133]
+ - [File Systems@forensicswiki.org][134]
+ - [LIBDSK][135] is a library for accessing discs and disc image files.
+ - [ADFS][136]
+ - [Reading DFS and ADFS floppy disks under Linux][137]
+ - [FUSE ADFS][138]
+ - [Linux kernel file system support][139]
 
   [1]: http://en.wikipedia.org/wiki/Digital_preservation
   [2]: http://anjackson.net/digital_preservation_notebook/bit_preservation
