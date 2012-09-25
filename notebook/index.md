@@ -49,8 +49,7 @@ File Format Registries
 -   Format registries to include:
 -   A file extension registry?
 -   [File Free File Command](http://www.darwinsys.com/file/)
--   [JMimeMagic](http://sourceforge.net/projects/jmimemagic/)   can help
-    here.
+-   [JMimeMagic](http://sourceforge.net/projects/jmimemagic/) can help here.
 -   [MIME Types](http://www.iana.org/assignments/media-types/)
 -   [PRONOM](http://www.nationalarchives.gov.uk/pronom/)
 -   [Global Digital Format Registry](http://hul.harvard.edu/gdfr/)
