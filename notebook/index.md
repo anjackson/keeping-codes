@@ -6,14 +6,19 @@ digital preservation. The [Wikipedia page on Digital
 Preservation](http://en.wikipedia.org/wiki/Digital_preservation)  
 provides quite a good overview of the field, but this notebook intends
 to dig a little deeper. Roughly speaking, the technical side of digital
-preservation can be broken down into two parts: - Preserving the bytes.
-- Preserving access to the digital objects those bytes describe. Most of
-this notebook deals with the latter issue, i.e. with how to preserve the
+preservation can be broken down into two parts:
+
+ - Preserving the bytes.
+ - Preserving access to the digital objects those bytes describe. 
+
+Most of this notebook deals with the latter issue, i.e. with how to preserve the
 meaning of digital objects so that they remain accessible over time. Of
 course, all of that work is based on the assumption that we can keep the
 actual binary data safe from bit-rot, and so the [first
 section](http://anjackson.net/digital_preservation_notebook/bit_preservation)
-  will look at that issue. \# Bit Preservation \#
+  will look at that issue. 
+
+# Bit Preservation #
 
 The other sections of this notebook generally assume that there will be
 some digital objects storage system that can be relied upon to hold the
@@ -22,7 +27,7 @@ the bit-storage and access problems separately, in the sense that any
 access solutions should be designed to work independently of the chosen
 bit-store solution. I used to think that the bit-storage problem was
 [essentially
-solved](http://anjackson.net/2008/06/27/science_digital_preservation)  ,
+solved](http://anjackson.net/2008/06/27/science_digital_preservation),
 but I have since realised that fighting bit-rot is not as easy as I
 originally thought. ...tbc...
 
