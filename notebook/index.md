@@ -206,7 +206,14 @@ AtomPub
 
  - DB access, Amazon S3, DSpace, WebDav, CalDav, JCR, Atom, etc. - [Content Management Interoperability Services][74]   - [Google Data APIs (like Atom)][75]   - [Windows Live Data API][76]  
 List, from [http://discerning.com/topics/standards/resource_management.txt][77]  
- - list(resource_path, query_expr, accept_mime_type) these kinds of formats - HXDLG http://hdlg.sourceforge.net/ xmlns=http://www.hdlg.info/XML/filesystem - manifest.xml xmlns=http://openoffice.org/2001/manifest - atom:feed "application/rss+xml revision=http://purl.org/rss/1.0/" - RMP (builtin) - Web Collections http://www.w3.org/TR/NOTE-XMLsubmit - OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/static-repository" - TODO: RDDL http://www.rddl.org/rddl2 (explain what namespaces mean) and http://www.w3.org/2001/tag/doc/nsDocuments/ - simply lists all metadata objects for all immediate children, in a XML response wrapper
+ - list(resource_path, query_expr, accept_mime_type) these kinds of formats 
+ - HXDLG http://hdlg.sourceforge.net/ xmlns=http://www.hdlg.info/XML/filesystem 
+ - manifest.xml xmlns=http://openoffice.org/2001/manifest 
+ - atom:feed "application/rss+xml revision=http://purl.org/rss/1.0/" 
+ - RMP (builtin) - Web Collections http://www.w3.org/TR/NOTE-XMLsubmit 
+ - OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/static-repository" 
+ - TODO: RDDL http://www.rddl.org/rddl2 (explain what namespaces mean) and http://www.w3.org/2001/tag/doc/nsDocuments/ 
+ - simply lists all metadata objects for all immediate children, in a XML response wrapper
     
       <collection xmlns="http://gupe.org/rmp" path="some/resource_path">
         <collection name="fred" ...>
@@ -219,10 +226,35 @@ List, from [http://discerning.com/topics/standards/resource_management.txt][77] 
 
 # Metadata Standards #
 
- - [Dublin Core][78]      - Note finding that [dc.identifier is not an unambiguous identifier for that which should be preserved, as it may point to a derived representation][79]  . - [MARC][80]   - Bibliographic, authority and related metadata. - [METS][81]   - a container/wrapper?    - [METS - Structural][82]   - [MODS][83]   - Metadata Object Description Schema (relations?)    - [MODS - Descriptive][84]   - [RFC 1807][85]   - Bibliographic metadata. - [ONIX][86]   - ONline Information eXchange - [MIT Selected Metadata Standards][87]   and notes therein contain lots of information. There are clearly metadata standards for different classes of data and metadata. - [Z39.87 Data dictionary - Technical Metadata for Digital Still Images (MIX)][88]   - [EXIF - Images][89]   - [IPTC/XMP - Images][90]   - [MIX - Images][91]   - [Open Archives Initiative][92]   - [PBCore - Video/Audio][93]   - [SMPTE - Video/Audio][94]  
-PREMISE - [PREMIS][95]   - [Using PREMIS with METS][96]   - [PREMIS Tools][97]  
+ - [Dublin Core][78]      
+ - Note finding that [dc.identifier is not an unambiguous identifier for that which should be preserved, as it may point to a derived representation][79]  . 
+ - [MARC][80]   
+ - Bibliographic, authority and related metadata. 
+ - [METS][81]   
+ - a container/wrapper?    
+ - [METS - Structural][82]   
+ - [MODS][83]   
+ - Metadata Object Description Schema (relations?)    
+ - [MODS - Descriptive][84]  
+ - [RFC 1807][85]  
+ - Bibliographic metadata.
+ - [ONIX][86]  
+ - ONline Information eXchange
+ - [MIT Selected Metadata Standards][87]   and notes therein contain lots of information. There are clearly metadata standards for different classes of data and metadata.
+ - [Z39.87 Data dictionary - Technical Metadata for Digital Still Images (MIX)][88]  
+ - [EXIF - Images][89]  
+ - [IPTC/XMP - Images][90]  
+ - [MIX - Images][91]  
+ - [Open Archives Initiative][92]  
+ - [PBCore - Video/Audio][93]  
+ - [SMPTE - Video/Audio][94]  
+PREMISE
+ - [PREMIS][95]  
+ - [Using PREMIS with METS][96]  
+ - [PREMIS Tools][97]  
 CrosswalkingMigrations that convert between metadata formats, mapping elements of one into the other.
  - [bibtex2rdf][98]  .
+
 ## References ##
 
  - This book is quite good: [Metadata for Digital Resources: Implementation, Systems Design and Interoperability][99]  
@@ -232,13 +264,34 @@ CrosswalkingMigrations that convert between metadata formats, mapping elements o
 
 ## Digital Preservation ##
 
- - [Planets][101]   - [PADI - Preserving Access to Digital Information][102]   lots of useful, deep information. - [PADI - Digital preservation strategies][103]   - [PANIC - Preservation webservices Architecture for Newmedia and Interactive Collections][104]   - [Data Portability][105]  , [Data Portability, for Developers][106]  
+ - [Planets][101]  
+ - [PADI - Preserving Access to Digital Information][102]   lots of useful, deep information.
+ - [PADI - Digital preservation strategies][103]  
+ - [PANIC - Preservation webservices Architecture for Newmedia and Interactive Collections][104]  
+ - [Data Portability][105]  , [Data Portability, for Developers][106]  
 ## Software Archives ##
 
- - Web Browsers    - [Netscape 4.7 - 9.0][107]     - [Netscape 3.0 - 3.04][108]  
+ - Web Browsers   
+ - [Netscape 4.7 - 9.0][107]    
+ - [Netscape 3.0 - 3.04][108]  
+
 # The Digital Preservation Community #
 
- - Organisations    - [DPC][109]  , etc etc...   - Steering Factors, EU, Digital Britain, - Conferences    - [Joint Conference on Digital Libraries][110]     - [International Conference on Digital Preservation][111]        - [iPres 2009][112]     - [European Conference on Digital Libraries][113]   - Journals    - [International Journal of Digital Curation][114]     - [Code4Lib][115]     - [International Journal on Digital Libraries][116]   - People:    - [Herbert Van de Sompel - Papers][117]  
+ - Organisations   
+ - [DPC][109]  , etc etc...  
+ - Steering Factors, EU, Digital Britain,
+ - Conferences   
+ - [Joint Conference on Digital Libraries][110]    
+ - [International Conference on Digital Preservation][111]       
+ - [iPres 2009][112]    
+ - [European Conference on Digital Libraries][113]  
+ - Journals   
+ - [International Journal of Digital Curation][114]    
+ - [Code4Lib][115]    
+ - [International Journal on Digital Libraries][116]  
+ - People:   
+ - [Herbert Van de Sompel - Papers][117]  
+
 # Physical Media #
 
 Notes on different physical media for storing digital data.
@@ -248,17 +301,37 @@ All disks are block devices... blah... Volumes, partitions, file systems, ???
 # Imaging Tools #
 
 Software for pulling the bits off a disk. Note that [forensicswiki.org][118]   has some useful info on this.
- - [Disk Imaging@forensicswiki.org][119]   - [AIR - Automated Image and Restore][120]   - [dskdump][121]   - [ddrescue@forensicswiki.org][122]   - [dcfldd@forensicswiki.org][123]   - [rdd][124]  , 'robust with respect to read errors'. - [AcetoneISO][125]   - [Snorkel][126]  , which is Java, and interesting, but closed-source and by-arrangement. - [PyFlag][127]   includes disk forensics
+ - [Disk Imaging@forensicswiki.org][119]  
+ - [AIR - Automated Image and Restore][120]   
+ - [dskdump][121]   
+ - [ddrescue@forensicswiki.org][122]   
+ - [dcfldd@forensicswiki.org][123]   
+ - [rdd][124]  , 'robust with respect to read errors'. 
+ - [AcetoneISO][125]   
+ - [Snorkel][126]  , which is Java, and interesting, but closed-source and by-arrangement. 
+ - [PyFlag][127]   includes disk forensics
+
 ## Drive Emulation ##
 
- - [CDemu, a CD/DVD drive emulator for Linux][128]   - [Mount raw CD-ROM image][129]   - this has some good info. - [DAEMON Tools for Windows][130]  
+ - [CDemu, a CD/DVD drive emulator for Linux][128]   
+ - [Mount raw CD-ROM image][129]   
+ - this has some good info. 
+ - [DAEMON Tools for Windows][130]  
+
 ## Converting between image formats ##
 
- - [A list of tools for linux][131]   - [CloneCD image to ISO image file converter][132]  
+ - [A list of tools for linux][131]  
+ - [CloneCD image to ISO image file converter][132]  
 # File System Support #
 
 How to interpret the bits of a disk image and turn it into a set of files. e.g. NTFS, FAT, ADFS, ISO, etc.
- - [Comparison of file systems][133]   - [File Systems@forensicswiki.org][134]   - [LIBDSK][135]   is a library for accessing discs and disc image files. - [ADFS][136]      - [Reading DFS and ADFS floppy disks under Linux][137]     - [FUSE ADFS][138]   - [Linux kernel file system support][139]  
+ - [Comparison of file systems][133]   
+ - [File Systems@forensicswiki.org][134]   
+ - [LIBDSK][135]   is a library for accessing discs and disc image files. 
+ - [ADFS][136]      
+ - [Reading DFS and ADFS floppy disks under Linux][137]     
+ - [FUSE ADFS][138]   
+ - [Linux kernel file system support][139]  
 
   [1]: http://en.wikipedia.org/wiki/Digital_preservation
   [2]: http://anjackson.net/digital_preservation_notebook/bit_preservation
