@@ -34,7 +34,7 @@ Keeping Bits Safe
 -   Replication
 -   [MAID](http://en.wikipedia.org/wiki/Massive_array_of_idle_disks)  
 -   etc...
-- [Long-term performance analysis of Intel Mainstream SSDs](http://www.pcper.com/article.php?aid=669)
+-   [Long-term performance analysis of Intel Mainstream SSDs](http://www.pcper.com/article.php?aid=669)
 
 Digital Object Formats
 ======================
