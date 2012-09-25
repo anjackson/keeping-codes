@@ -2,8 +2,7 @@ Digital Preservation Notebook
 =============================
 
 This notebook is a place to record useful tidbits of information about
-digital preservation. The [Wikipedia page on Digital
-Preservation](http://en.wikipedia.org/wiki/Digital_preservation)  
+digital preservation. The [Wikipedia page on Digital Preservation](http://en.wikipedia.org/wiki/Digital_preservation)  
 provides quite a good overview of the field, but this notebook intends
 to dig a little deeper. Roughly speaking, the technical side of digital
 preservation can be broken down into two parts:
@@ -14,9 +13,7 @@ preservation can be broken down into two parts:
 Most of this notebook deals with the latter issue, i.e. with how to preserve the
 meaning of digital objects so that they remain accessible over time. Of
 course, all of that work is based on the assumption that we can keep the
-actual binary data safe from bit-rot, and so the [first
-section](http://anjackson.net/digital_preservation_notebook/bit_preservation)
-  will look at that issue. 
+actual binary data safe from bit-rot, and so the [first section](http://anjackson.net/digital_preservation_notebook/bit_preservation) will look at that issue. 
 
 # Bit Preservation #
 
@@ -26,8 +23,7 @@ bytes safely over time. Indeed, I believe it is sensible to deal with
 the bit-storage and access problems separately, in the sense that any
 access solutions should be designed to work independently of the chosen
 bit-store solution. I used to think that the bit-storage problem was
-[essentially
-solved](http://anjackson.net/2008/06/27/science_digital_preservation),
+[essentially solved](http://anjackson.net/2008/06/27/science_digital_preservation),
 but I have since realised that fighting bit-rot is not as easy as I
 originally thought. ...tbc...
 
@@ -37,8 +33,8 @@ Keeping Bits Safe
 -   Refreshing
 -   Replication
 -   [MAID](http://en.wikipedia.org/wiki/Massive_array_of_idle_disks)  
--   etc... - [Long-term performance analysis of Intel Mainstream
-    SSDs](http://www.pcper.com/article.php?aid=669)
+-   etc...
+- [Long-term performance analysis of Intel Mainstream SSDs](http://www.pcper.com/article.php?aid=669)
 
 Digital Object Formats
 ======================
