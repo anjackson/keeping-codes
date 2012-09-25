@@ -139,32 +139,69 @@ See [Quality Control Methods][33]  .
 
 # Quality Control Methods #
 
- - Create a .NET service to [strip macros from OpenXML][47]  . - Use a [HTML Tidy profile][48]   and implements as a [JTidy][49]   service.
+ - Create a .NET service to [strip macros from OpenXML][47]  . 
+- Use a [HTML Tidy profile][48]   and implements as a [JTidy][49]   service.
+
 # Quality Assurance #
 
 This is the hard part.
 e.g the comparator that compares two sets of measured properties and evaluates the difference.
+
 # Digital Object Storage #
 
 Here, we will not worry about the system that [keeps the bits safe][50]  , but start with the assumption that we have some reliable digital object repository that supports one or more protocols, allowing items to be read and written.
  - [BuildingScalableInfrastructures]
+
 # Repository Systems #
 
 Ideally, we want repositories of digital objects, with features like:
- - Versioning. - Change-logs/audit trails. - Metadata attachments - Relationships. - Trusted Repository ([TRAC][51]  ) conformance.
+ - Versioning. 
+ - Change-logs/audit trails. 
+ - Metadata attachments 
+ - Relationships. 
+ - Trusted Repository ([TRAC][51]  ) conformance.
+
 ## Digital Object Storage Systems ##
 
- - The file system.    - Actually, many different implementations and not enough standards. - Content Management Systems    - [Fedora][52]     - [DSpace][53]     - [Alfresco][54]   (embedded by Adobe)   - Anything with an OAI-PMH interface (see next section). - Similar to [Open Service Interface Definitions][55]  ?
-Standards for Document Repositories - [The JISC Digital Repository Programme as part of its work is exploring the interaction between repositories and other systems.][56]   - [DSpace API Outline][57]   - Multiple, so need a repository definition layer that defines:    - Read method (HTTP hopefully).   - Write method (HTTP too, on WebDAV etc, but we may need property definitions for different services).   - Authentication system. Write, and probably reads need authentication with the repo. - WebDAV plus standard metadata partner file ('''name'''.metadata.xml) would be fine for uploads. - IDEA: Local wrapper allowing WebDAV access to selected local files/directories would be a nice way of allowing Planets access to arbitrary file resources. Even if just read-only access.
+ - The file system.    
+ - Actually, many different implementations and not enough standards. 
+ - Content Management Systems    
+ - [Fedora][52]     
+ - [DSpace][53]     
+ - [Alfresco][54]   (embedded by Adobe)   
+ - Anything with an OAI-PMH interface (see next section). 
+ - Similar to [Open Service Interface Definitions][55]  ?
+Standards for Document Repositories 
+ - [The JISC Digital Repository Programme as part of its work is exploring the interaction between repositories and other systems.][56]  
+ - [DSpace API Outline][57]   
+ - Multiple, so need a repository definition layer that defines:    
+ - Read method (HTTP hopefully).   
+ - Write method (HTTP too, on WebDAV etc, but we may need property definitions for different services).   
+ - Authentication system. Write, and probably reads need authentication with the repo. 
+ - WebDAV plus standard metadata partner file ('''name'''.metadata.xml) would be fine for uploads. 
+ - IDEA: Local wrapper allowing WebDAV access to selected local files/directories would be a nice way of allowing Planets access to arbitrary file resources. Even if just read-only access.
+
 # Content Access Protocols #
 
 ## Content Access Prototols ##
 
 The pipes that make the sources work.
 [OAI-PMH][58]  See [this overview][59]  .
- - [Attaching DC, RFC 1807 or MARC metadata][60]   - [A Java Harvester][61]  . - [A big list of repositories][62]  . - [http://arxiv.org/help/oa/index][63]   - [Summary of ResearchArchive at Victoria University of Wellington][64]   - [XML Schemas and Support for Multiple Record Formats in OAI-PMH][65]  
-AtomPub - [AtomServer][66]  , [AtomServer article][67]  , APL - [Apache Abdera][68]   APL - [Atomojo server & client][69]   NBSD - [atom-multipart][70]   - [Offical Atom link relationships][71]  .
-[Fedora][72]   - Supports a range of APIs, some Fedora-specific, and OAI-PMH too. - Stores and moves in [FOXML][73]  
+ - [Attaching DC, RFC 1807 or MARC metadata][60]   
+ - [A Java Harvester][61]  . 
+ - [A big list of repositories][62]  . 
+ - [http://arxiv.org/help/oa/index][63]   
+ - [Summary of ResearchArchive at Victoria University of Wellington][64]   
+ - [XML Schemas and Support for Multiple Record Formats in OAI-PMH][65]  
+AtomPub 
+ - [AtomServer][66]  , [AtomServer article][67]  , APL 
+ - [Apache Abdera][68]   APL 
+ - [Atomojo server & client][69]   NBSD 
+ - [atom-multipart][70]   
+ - [Offical Atom link relationships][71]  .
+ - [Fedora][72]   
+ - Supports a range of APIs, some Fedora-specific, and OAI-PMH too. - Stores and moves in [FOXML][73]  
+
 ## Others ##
 
  - DB access, Amazon S3, DSpace, WebDav, CalDav, JCR, Atom, etc. - [Content Management Interoperability Services][74]   - [Google Data APIs (like Atom)][75]   - [Windows Live Data API][76]  
