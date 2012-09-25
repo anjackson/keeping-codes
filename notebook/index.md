@@ -314,10 +314,10 @@ Software for pulling the bits off a disk. Note that [forensicswiki.org][118]   
 
 ## Drive Emulation ##
 
- - [CDemu, a CD/DVD drive emulator for Linux][128]   
- - [Mount raw CD-ROM image][129]   
- - this has some good info. 
- - [DAEMON Tools for Windows][130]  
+ - [CDemu, a CD/DVD drive emulator for Linux][128]
+ - [Mount raw CD-ROM image][129]
+ - this has some good info.
+ - [DAEMON Tools for Windows][130]
 
 ## Converting between image formats ##
 
