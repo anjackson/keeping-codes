@@ -9,75 +9,134 @@ Most of this notebook deals with the latter issue, i.e. with how to preserve the
 The other sections of this notebook generally assume that there will be some digital objects storage system that can be relied upon to hold the bytes safely over time. Indeed, I believe it is sensible to deal with the bit-storage and access problems separately, in the sense that any access solutions should be designed to work independently of the chosen bit-store solution.
 I used to think that the bit-storage problem was [essentially solved][3]  , but I have since realised that fighting bit-rot is not as easy as I originally thought.
 ...tbc...
+
 ## Keeping Bits Safe ##
 
- - Refreshing - Replication - [MAID][4]   - etc... - [Long-term performance analysis of Intel Mainstream SSDs][5]  
+ - Refreshing
+ - Replication 
+ - [MAID][4]   
+ - etc... - [Long-term performance analysis of Intel Mainstream SSDs][5]
+
 # Digital Object Formats #
 
 See also this related effort: [Wikibook: Choosing The Right File Format][6] . [http://www.dptp.org/course/][7] 
 
 ## File Format Registries ##
 
- - Format registries to include:    - A file extension registry?   - [File Free File Command][8]        - [JMimeMagic][9]   can help here.   - [MIME Types][10]     - [PRONOM][11]     - [Global Digital Format Registry][12]     - [Apple Uniform Type Identifiers][13]     - [http://www.digitalpreservation.gov/formats/intro/format_eval_rel.shtml][14] 
-   - 
+ - Format registries to include:
+ - A file extension registry?
+ - [File Free File Command][8]
+ - [JMimeMagic][9]   can help here.
+ - [MIME Types][10]
+ - [PRONOM][11]
+ - [Global Digital Format Registry][12]
+ - [Apple Uniform Type Identifiers][13]
+ - [http://www.digitalpreservation.gov/formats/intro/format_eval_rel.shtml][14]
 
 ## Documents ##
 
- - Open Office v. Office Open XML - [Compound Document Format][15]   - HTML
+ - Open Office v. Office Open XML 
+ - [Compound Document Format][15]   
+ - HTML
+
 ## Databases ##
 
 Preservation-Format Approach.
- - [DANS M-XML][16]   - SIARD, [Providing Authentic Long-term Archival Access to Complex Relational Data][17]  
+ - [DANS M-XML][16]  
+  - SIARD, [Providing Authentic Long-term Archival Access to Complex Relational Data][17]  
+
 ## Images ##
 
- - [JPEG][18]   - [JPEG 2000][19]  
+ - [JPEG][18]   
+ - [JPEG 2000][19]  
+
 # Digital Object Properties #
 
 ## Significant Properties ##
 
 See [JISC: The Significant Properties of Digital Objects][20]  
 Issues with this concept are legion.
+
 # Property Extraction Methods #
 
 Magic numbersMagic numbers is the name for the standard UNIX mechanism used to identify file types. This approach is not limited to UNIX, but is usually considered a UNIX related practice that has since spread to many other platforms. The mechanism is based on a database that maps byte strings and positions to file types. Common examples are GIF, JPEG and TIFF, that all contain reliable markers, at least for identifying the general file format. Minor version identification (i.e., format characterization rather than format identification) often requires a more sophisticated approach, e.g. parsing of header structures. On a UNIX system, the magic number mechanism can be accessed using the file command, e.g.:
+
 `kb005264:~/Code/Graphics andersjohansen$ file logo.png`
 `logo.png: PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced`
+
 Advantages are fast performance and reliable identification for many file formats. Limitations include that often minor version variations can’t be determined (i.e., less than reliable characterization), that the method does not allow for formats that lack reliable identification strings (such as text files), and that it uncritically accepts the evidence (e.g., if a text file contains the magic number for a GIF file, the file command will identify it as a GIF file, regardless of other evidence).
+
 # Property Extraction Tools #
 
 [DROID][21]  DROID identifies files using the magic numbers approach.
- - Refers to [PRONOM][22]  , e.g. ''info:pronom/fmt/100'' is HTML 4.01. - Required manual proxy configuration via text-file-hacking. - Use ProxySelector and other magic? - [DROID 5][23]  
-[JHOVE][24]  JHOVE is an extensible, Java-based tool developed for the JSTOR/Harvard Object Validation Environment ([http://www.jstor.org/][25]  ) aimed at validating digital objects. It builds on a magic number approach and adds much richer parsing functionality in order to extract more information and more thoroughly assess validity.
- - Apparently tends to fail awkwardly when the network latency is high. - Also uses it's own system of type identifiers. - Adds attributes/metadata? - Validates?
+ - Refers to [PRONOM][22]  , e.g. ''info:pronom/fmt/100'' is HTML 4.01. 
+ - Required manual proxy configuration via text-file-hacking. 
+ - Use ProxySelector and other magic? 
+ - [DROID 5][23]  
+ - [JHOVE][24]  JHOVE is an extensible, Java-based tool developed for the JSTOR/Harvard Object Validation Environment ([http://www.jstor.org/][25]  ) aimed at validating digital objects. It builds on a magic number approach and adds much richer parsing functionality in order to extract more information and more thoroughly assess validity.
+ - Apparently tends to fail awkwardly when the network latency is high. - Also uses it's own system of type identifiers.- Adds attributes/metadata? - Validates?
+
 InfernoInferno is a Java-based tool for rule inference and application of such sets of rules. It is currently heavily biased towards charcterization. It was developed at the Danish Royal Library as a proof-of-concept for using rule inference as an unifying approach to characterization, both directly to perform characterization tasks, and indirectly to integrate results from various existing characterization tools in an optimal way.
-Inferno has been successfully applied to file and text string characterization by text file encoding (Latin 1, UTF-8, UTF-16LE and UTF-16BE), file type (text file encoding, JPEG and PNG) and language used in text file (Danish, Swedish, English and Norwegian).
- - Implementation not available yet. - Is this done using one of the available [rule engines][26]  ?
+
+Inferno has been successfully applied to file and text string characterization by text file encoding (Latin 1, UTF-8, 
+UTF-16LE and UTF-16BE), file type (text file encoding, JPEG and PNG) and language used in text file (Danish, Swedish, English and Norwegian).
+
+ - Implementation not available yet. 
+ - Is this done using one of the available [rule engines][26]  ?
+
 ## Other Tools ##
 
- - See [PRONOM links][27]   - [NLNZ Metadata Extraction Tool][28]  , [http://meta-extractor.sourceforge.net/][29]  . - [FITS][30]   and links therein... - Use pdffonts and other code from pdf-utils ([xpdf][31]   or [Poppler][32]  ) to extract information, like font dependencies.
+ - See [PRONOM links][27]   
+ - [NLNZ Metadata Extraction Tool][28]  , [http://meta-extractor.sourceforge.net/][29]  . 
+ - [FITS][30]   and links therein... 
+ - Use pdffonts and other code from pdf-utils ([xpdf][31]   or [Poppler][32]  ) to extract information, like font dependencies.
+
 # Preservation Strategies #
 
 In many cases, a mixture.
+
 ## Migration ##
 
 Authenticity issues.
+
 ## Emulation ##
 
 Complexity, Russion dolls.
+
 ## Living Archive ##
 
 e.g. The Web.
 Limited coverage.
+
 ## Normalised Archive ##
 
 Limited coverage and controlled input.
 See [Quality Control Methods][33]  .
+
 # Migration Tools & Pathways #
 
 ## Migrations ##
 
- - Migrations with Image Magick:    - Use [-list][34]   and -version etc to auto-build service info and pathways. - Migrating wiki pages, via HTML, or HTML to Wiki.    - [http://diberri.dyndns.org/wikipedia/html2wiki/][35]     - [http://www.aaronsw.com/2002/html2text/][36]     - [http://deplate.sourceforge.net/][37]     - [http://wiki.docbook.org/topic/Html2DocBook][38]     - [http://wiki.docbook.org/topic/ConvertOtherFormatsToDocBook][39]   - Convert fonts between formats:    - [http://www.ics.uci.edu/~chenli/pdf-font-types/index.html][40]     - [http://fondu.sourceforge.net/][41]     - Fun With Encodings Awaits. - Migrating wiki pages, via HTML, or HTML to Wiki.    - [http://diberri.dyndns.org/wikipedia/html2wiki/][42]     - [http://www.aaronsw.com/2002/html2text/][43]   - Migrating to XML, [MIXED][44]      - Mostly databases, like SIARD.   - See also [this news article][45]  
-Could also merge in the [CRiB service][46]  .
+ - Migrations with Image Magick:    
+ - Use [-list][34]   and -version etc to auto-build service info and pathways. 
+ - Migrating wiki pages, via HTML, or HTML to Wiki.    
+ - [http://diberri.dyndns.org/wikipedia/html2wiki/][35]     
+ - [http://www.aaronsw.com/2002/html2text/][36]     
+ - [http://deplate.sourceforge.net/][37]     
+ - [http://wiki.docbook.org/topic/Html2DocBook][38]     
+ - [http://wiki.docbook.org/topic/ConvertOtherFormatsToDocBook][39]   
+ - Convert fonts between formats:    
+ - [http://www.ics.uci.edu/~chenli/pdf-font-types/index.html][40]     
+ - [http://fondu.sourceforge.net/][41]     
+ - Fun With Encodings Awaits. 
+ - Migrating wiki pages, via HTML, or HTML to Wiki.    
+ - [http://diberri.dyndns.org/wikipedia/html2wiki/][42]     
+ - [http://www.aaronsw.com/2002/html2text/][43]   
+ - Migrating to XML, [MIXED][44]      
+ - Mostly databases, like SIARD.   
+ - See also [this news article][45]  
+ - Could also merge in the [CRiB service][46]  .
+
 # Quality Control Methods #
 
  - Create a .NET service to [strip macros from OpenXML][47]  . - Use a [HTML Tidy profile][48]   and implements as a [JTidy][49]   service.
