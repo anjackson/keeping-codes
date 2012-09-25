@@ -1,0 +1,236 @@
+<h1 id="digital-preservation-notebook">Digital Preservation Notebook</h1>
+<p>This notebook is a place to record useful tidbits of information about digital preservation. The <a href="http://en.wikipedia.org/wiki/Digital_preservation">Wikipedia page on Digital Preservation</a>   provides quite a good overview of the field, but this notebook intends to dig a little deeper. Roughly speaking, the technical side of digital preservation can be broken down into two parts: - Preserving the bytes. - Preserving access to the digital objects those bytes describe. Most of this notebook deals with the latter issue, i.e. with how to preserve the meaning of digital objects so that they remain accessible over time. Of course, all of that work is based on the assumption that we can keep the actual binary data safe from bit-rot, and so the <a href="http://anjackson.net/digital_preservation_notebook/bit_preservation">first section</a>   will look at that issue. # Bit Preservation #</p>
+<p>The other sections of this notebook generally assume that there will be some digital objects storage system that can be relied upon to hold the bytes safely over time. Indeed, I believe it is sensible to deal with the bit-storage and access problems separately, in the sense that any access solutions should be designed to work independently of the chosen bit-store solution. I used to think that the bit-storage problem was <a href="http://anjackson.net/2008/06/27/science_digital_preservation">essentially solved</a>  , but I have since realised that fighting bit-rot is not as easy as I originally thought. ...tbc...</p>
+<h2 id="keeping-bits-safe">Keeping Bits Safe</h2>
+<ul>
+<li>Refreshing</li>
+<li>Replication</li>
+<li><a href="http://en.wikipedia.org/wiki/Massive_array_of_idle_disks">MAID</a>  </li>
+<li>etc... - <a href="http://www.pcper.com/article.php?aid=669">Long-term performance analysis of Intel Mainstream SSDs</a></li>
+</ul>
+<h1 id="digital-object-formats">Digital Object Formats</h1>
+<p>See also this related effort: <a href="http://en.wikibooks.org/wiki/Choosing_The_Right_File_Format">Wikibook: Choosing The Right File Format</a> . <a href="http://www.dptp.org/course/">http://www.dptp.org/course/</a></p>
+<h2 id="file-format-registries">File Format Registries</h2>
+<ul>
+<li>Format registries to include:</li>
+<li>A file extension registry?</li>
+<li><a href="http://www.darwinsys.com/file/">File Free File Command</a></li>
+<li><a href="http://sourceforge.net/projects/jmimemagic/">JMimeMagic</a>   can help here.</li>
+<li><a href="http://www.iana.org/assignments/media-types/">MIME Types</a></li>
+<li><a href="http://www.nationalarchives.gov.uk/pronom/">PRONOM</a></li>
+<li><a href="http://hul.harvard.edu/gdfr/">Global Digital Format Registry</a></li>
+<li><a href="http://developer.apple.com/documentation/Carbon/Conceptual/understanding_utis/utilist/chapter_4_section_1.html#//apple_ref/doc/uid/TP40001319-CH205-CHDIJFGJ">Apple Uniform Type Identifiers</a></li>
+<li><a href="http://www.digitalpreservation.gov/formats/intro/format_eval_rel.shtml">http://www.digitalpreservation.gov/formats/intro/format_eval_rel.shtml</a></li>
+</ul>
+<h2 id="documents">Documents</h2>
+<ul>
+<li>Open Office v. Office Open XML</li>
+<li><a href="http://www.w3.org/TR/WICD/">Compound Document Format</a>  </li>
+<li>HTML</li>
+</ul>
+<h2 id="databases">Databases</h2>
+<p>Preservation-Format Approach. - <a href="http://mixed.dans.knaw.nl/node/114">DANS M-XML</a>   - SIARD, <a href="http://arxiv.org/abs/cs/0408054">Providing Authentic Long-term Archival Access to Complex Relational Data</a>  </p>
+<h2 id="images">Images</h2>
+<ul>
+<li><a href="http://delicious.com/beardedstoat/jpeg">JPEG</a>  </li>
+<li><a href="http://delicious.com/beardedstoat/jpeg2000">JPEG 2000</a>  </li>
+</ul>
+<h1 id="digital-object-properties">Digital Object Properties</h1>
+<h2 id="significant-properties">Significant Properties</h2>
+<p>See <a href="http://www.jisc.ac.uk/whatwedo/programmes/preservation/2008sigprops">JISC: The Significant Properties of Digital Objects</a>   Issues with this concept are legion.</p>
+<h1 id="property-extraction-methods">Property Extraction Methods</h1>
+<p>Magic numbersMagic numbers is the name for the standard UNIX mechanism used to identify file types. This approach is not limited to UNIX, but is usually considered a UNIX related practice that has since spread to many other platforms. The mechanism is based on a database that maps byte strings and positions to file types. Common examples are GIF, JPEG and TIFF, that all contain reliable markers, at least for identifying the general file format. Minor version identification (i.e., format characterization rather than format identification) often requires a more sophisticated approach, e.g. parsing of header structures. On a UNIX system, the magic number mechanism can be accessed using the file command, e.g.:</p>
+<p><code>kb005264:~/Code/Graphics andersjohansen$ file logo.png</code> <code>logo.png: PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced</code></p>
+<p>Advantages are fast performance and reliable identification for many file formats. Limitations include that often minor version variations can’t be determined (i.e., less than reliable characterization), that the method does not allow for formats that lack reliable identification strings (such as text files), and that it uncritically accepts the evidence (e.g., if a text file contains the magic number for a GIF file, the file command will identify it as a GIF file, regardless of other evidence).</p>
+<h1 id="property-extraction-tools">Property Extraction Tools</h1>
+<p><a href="http://droid.sourceforge.net/">DROID</a>  DROID identifies files using the magic numbers approach. - Refers to <a href="http://www.nationalarchives.gov.uk/pronom/">PRONOM</a>  , e.g. ''info:pronom/fmt/100'' is HTML 4.01. - Required manual proxy configuration via text-file-hacking. - Use ProxySelector and other magic? - <a href="http://droid5.yourwiki.net/wiki/DROID_5.0">DROID 5</a>   - <a href="http://hul.harvard.edu/jhove/">JHOVE</a>  JHOVE is an extensible, Java-based tool developed for the JSTOR/Harvard Object Validation Environment (<a href="http://www.jstor.org/">http://www.jstor.org/</a>  ) aimed at validating digital objects. It builds on a magic number approach and adds much richer parsing functionality in order to extract more information and more thoroughly assess validity. - Apparently tends to fail awkwardly when the network latency is high. - Also uses it's own system of type identifiers.- Adds attributes/metadata? - Validates?</p>
+<p>InfernoInferno is a Java-based tool for rule inference and application of such sets of rules. It is currently heavily biased towards charcterization. It was developed at the Danish Royal Library as a proof-of-concept for using rule inference as an unifying approach to characterization, both directly to perform characterization tasks, and indirectly to integrate results from various existing characterization tools in an optimal way.</p>
+<p>Inferno has been successfully applied to file and text string characterization by text file encoding (Latin 1, UTF-8, UTF-16LE and UTF-16BE), file type (text file encoding, JPEG and PNG) and language used in text file (Danish, Swedish, English and Norwegian).</p>
+<ul>
+<li>Implementation not available yet.</li>
+<li>Is this done using one of the available <a href="http://java-source.net/open-source/rule-engines">rule engines</a>  ?</li>
+</ul>
+<h2 id="other-tools">Other Tools</h2>
+<ul>
+<li>See <a href="http://www.nationalarchives.gov.uk/aboutapps/PRONOM/tools.htm">PRONOM links</a>  </li>
+<li><a href="http://www.natlib.govt.nz/about-us/current-initiatives/past-initiatives/metadata-extraction-tool">NLNZ Metadata Extraction Tool</a>  , <a href="http://meta-extractor.sourceforge.net/">http://meta-extractor.sourceforge.net/</a>  .</li>
+<li><a href="http://code.google.com/p/fits/">FITS</a>   and links therein...</li>
+<li>Use pdffonts and other code from pdf-utils (<a href="http://www.foolabs.com/xpdf/">xpdf</a>   or <a href="http://poppler.freedesktop.org/">Poppler</a>  ) to extract information, like font dependencies.</li>
+</ul>
+<h1 id="preservation-strategies">Preservation Strategies</h1>
+<p>In many cases, a mixture.</p>
+<h2 id="migration">Migration</h2>
+<p>Authenticity issues.</p>
+<h2 id="emulation">Emulation</h2>
+<p>Complexity, Russion dolls.</p>
+<h2 id="living-archive">Living Archive</h2>
+<p>e.g. The Web. Limited coverage.</p>
+<h2 id="normalised-archive">Normalised Archive</h2>
+<p>Limited coverage and controlled input. See <a href="http://anjackson.net/digital_preservation_notebook/preservation_strategies/quality_control_methods">Quality Control Methods</a>  .</p>
+<h1 id="migration-tools-pathways">Migration Tools &amp; Pathways</h1>
+<h2 id="migrations">Migrations</h2>
+<ul>
+<li>Migrations with Image Magick:<br /></li>
+<li>Use <a href="http://www.imagemagick.org/script/command-line-options.php#list">-list</a>   and -version etc to auto-build service info and pathways.</li>
+<li>Migrating wiki pages, via HTML, or HTML to Wiki.<br /></li>
+<li><a href="http://diberri.dyndns.org/wikipedia/html2wiki/">http://diberri.dyndns.org/wikipedia/html2wiki/</a>  <br /></li>
+<li><a href="http://www.aaronsw.com/2002/html2text/">http://www.aaronsw.com/2002/html2text/</a>  <br /></li>
+<li><a href="http://deplate.sourceforge.net/">http://deplate.sourceforge.net/</a>  <br /></li>
+<li><a href="http://wiki.docbook.org/topic/Html2DocBook">http://wiki.docbook.org/topic/Html2DocBook</a>  <br /></li>
+<li><a href="http://wiki.docbook.org/topic/ConvertOtherFormatsToDocBook">http://wiki.docbook.org/topic/ConvertOtherFormatsToDocBook</a>  </li>
+<li>Convert fonts between formats:<br /></li>
+<li><a href="http://www.ics.uci.edu/%7Echenli/pdf-font-types/index.html">http://www.ics.uci.edu/~chenli/pdf-font-types/index.html</a>  <br /></li>
+<li><a href="http://fondu.sourceforge.net/">http://fondu.sourceforge.net/</a>  <br /></li>
+<li>Fun With Encodings Awaits.</li>
+<li>Migrating wiki pages, via HTML, or HTML to Wiki.<br /></li>
+<li><a href="http://diberri.dyndns.org/wikipedia/html2wiki/">http://diberri.dyndns.org/wikipedia/html2wiki/</a>  <br /></li>
+<li><a href="http://www.aaronsw.com/2002/html2text/">http://www.aaronsw.com/2002/html2text/</a>  </li>
+<li>Migrating to XML, <a href="http://mixed.dans.knaw.nl/">MIXED</a>  <br /></li>
+<li>Mostly databases, like SIARD.<br /></li>
+<li>See also <a href="http://lonewolflibrarian.wordpress.com/2009/06/17/digital-preservation-by-immediate-conversion-to-xml-06-17-09/">this news article</a>  </li>
+<li>Could also merge in the <a href="http://crib.dsi.uminho.pt/">CRiB service</a>  .</li>
+</ul>
+<h1 id="quality-control-methods">Quality Control Methods</h1>
+<ul>
+<li>Create a .NET service to <a href="http://openxmldeveloper.org/articles/1868.aspx">strip macros from OpenXML</a>  .</li>
+<li>Use a <a href="http://tidy.sourceforge.net/docs/quickref.html">HTML Tidy profile</a>   and implements as a <a href="http://jtidy.sourceforge.net/">JTidy</a>   service.</li>
+</ul>
+<h1 id="quality-assurance">Quality Assurance</h1>
+<p>This is the hard part. e.g the comparator that compares two sets of measured properties and evaluates the difference.</p>
+<h1 id="digital-object-storage">Digital Object Storage</h1>
+<p>Here, we will not worry about the system that <a href="http://anjackson.net/digital_preservation_notebook/bit_preservation">keeps the bits safe</a>  , but start with the assumption that we have some reliable digital object repository that supports one or more protocols, allowing items to be read and written. - [BuildingScalableInfrastructures]</p>
+<h1 id="repository-systems">Repository Systems</h1>
+<p>Ideally, we want repositories of digital objects, with features like: - Versioning. - Change-logs/audit trails. - Metadata attachments - Relationships. - Trusted Repository (<a href="http://www.crl.edu/content.asp?l1=13">TRAC</a>  ) conformance.</p>
+<h2 id="digital-object-storage-systems">Digital Object Storage Systems</h2>
+<ul>
+<li>The file system.<br /></li>
+<li>Actually, many different implementations and not enough standards.</li>
+<li>Content Management Systems<br /></li>
+<li><a href="http://www.fedora-commons.org/documentation/3.0b1/userdocs/digitalobjects/objectModel.html">Fedora</a>  <br /></li>
+<li><a href="http://www.dspace.org/">DSpace</a>  <br /></li>
+<li><a href="http://www.alfresco.com/">Alfresco</a>   (embedded by Adobe)<br /></li>
+<li>Anything with an OAI-PMH interface (see next section).</li>
+<li>Similar to <a href="http://en.wikipedia.org/wiki/Open_Service_Interface_Definitions">Open Service Interface Definitions</a>  ? Standards for Document Repositories</li>
+<li><a href="http://www.ukoln.ac.uk/repositories/digirep/index/Deposit_API">The JISC Digital Repository Programme as part of its work is exploring the interaction between repositories and other systems.</a>  </li>
+<li><a href="http://www.dlib.org/dlib/january03/smith/01smith.html">DSpace API Outline</a>  </li>
+<li>Multiple, so need a repository definition layer that defines:<br /></li>
+<li>Read method (HTTP hopefully).<br /></li>
+<li>Write method (HTTP too, on WebDAV etc, but we may need property definitions for different services).<br /></li>
+<li>Authentication system. Write, and probably reads need authentication with the repo.</li>
+<li>WebDAV plus standard metadata partner file ('''name'''.metadata.xml) would be fine for uploads.</li>
+<li>IDEA: Local wrapper allowing WebDAV access to selected local files/directories would be a nice way of allowing Planets access to arbitrary file resources. Even if just read-only access.</li>
+</ul>
+<h1 id="content-access-protocols">Content Access Protocols</h1>
+<h2 id="content-access-prototols">Content Access Prototols</h2>
+<p>The pipes that make the sources work. <a href="http://www.openarchives.org/OAI/openarchivesprotocol.html">OAI-PMH</a>  See <a href="http://xml.coverpages.org/oams.html">this overview</a>  . - <a href="http://www.openarchives.org/OAI/1.0/openarchivesprotocol.htm#appendix%201">Attaching DC, RFC 1807 or MARC metadata</a>   - <a href="http://www.oclc.org/research/software/oai/harvester2.htm">A Java Harvester</a>  . - <a href="http://gita.grainger.uiuc.edu/registry/">A big list of repositories</a>  . - <a href="http://arxiv.org/help/oa/index">http://arxiv.org/help/oa/index</a>   - <a href="http://gita.grainger.uiuc.edu/registry/details.asp?id=2208">Summary of ResearchArchive at Victoria University of Wellington</a>   - <a href="http://www.oaforum.org/tutorial/english/page5.htm">XML Schemas and Support for Multiple Record Formats in OAI-PMH</a>   AtomPub - <a href="http://atomserver.codehaus.org/index.html">AtomServer</a>  , <a href="http://www.infoq.com/articles/atomserver">AtomServer article</a>  , APL - <a href="http://incubator.apache.org/abdera/">Apache Abdera</a>   APL - <a href="http://code.google.com/p/atomojo/">Atomojo server &amp; client</a>   NBSD - <a href="http://www.tbray.org/ongoing/When/200x/2008/07/07/Atom">atom-multipart</a>   - <a href="http://www.iana.org/assignments/link-relations.html">Offical Atom link relationships</a>  . - <a href="http://www.fedora.info/documentation/">Fedora</a>   - Supports a range of APIs, some Fedora-specific, and OAI-PMH too. - Stores and moves in <a href="http://www.fedora.info/download/2.2.1/userdocs/digitalobjects/introFOXML.html">FOXML</a>  </p>
+<h2 id="others">Others</h2>
+<ul>
+<li>DB access, Amazon S3, DSpace, WebDav, CalDav, JCR, Atom, etc. - <a href="http://en.wikipedia.org/wiki/Content_Management_Interoperability_Services">Content Management Interoperability Services</a>   - <a href="http://code.google.com/apis/gdata/">Google Data APIs (like Atom)</a>   - <a href="https://dev.live.com/livedata/sdk/Default.aspx">Windows Live Data API</a>   List, from <a href="http://discerning.com/topics/standards/resource_management.txt">http://discerning.com/topics/standards/resource_management.txt</a>  </li>
+<li>list(resource_path, query_expr, accept_mime_type) these kinds of formats</li>
+<li>HXDLG http://hdlg.sourceforge.net/ xmlns=http://www.hdlg.info/XML/filesystem</li>
+<li>manifest.xml xmlns=http://openoffice.org/2001/manifest</li>
+<li>atom:feed &quot;application/rss+xml revision=http://purl.org/rss/1.0/&quot;</li>
+<li>RMP (builtin) - Web Collections http://www.w3.org/TR/NOTE-XMLsubmit</li>
+<li>OAI-PMH xmlns=&quot;http://www.openarchives.org/OAI/2.0/static-repository&quot;</li>
+<li>TODO: RDDL http://www.rddl.org/rddl2 (explain what namespaces mean) and http://www.w3.org/2001/tag/doc/nsDocuments/</li>
+<li><p>simply lists all metadata objects for all immediate children, in a XML response wrapper</p>
+<p>  <collection xmlns="http://gupe.org/rmp" path="some/resource_path">     <collection name="fred" ...>       <atom:entry>...</atom:entry>     </collection>     <data name="fred/xml">     </data>   </collection></p></li>
+</ul>
+<h1 id="metadata-standards">Metadata Standards</h1>
+<ul>
+<li><a href="http://dublincore.org/">Dublin Core</a>  <br /></li>
+<li>Note finding that <a href="http://libtechissues.blogspot.com/2006/12/digital-preservation-using-oai-pmh-as.html">dc.identifier is not an unambiguous identifier for that which should be preserved, as it may point to a derived representation</a>  .</li>
+<li><a href="http://www.loc.gov/marc/">MARC</a>  </li>
+<li>Bibliographic, authority and related metadata.</li>
+<li><a href="http://www.loc.gov/standards/mets/">METS</a>  </li>
+<li>a container/wrapper?<br /></li>
+<li><a href="http://www.loc.gov/standards/mets/METSOverview.v2.html">METS - Structural</a>  </li>
+<li><a href="http://www.loc.gov/standards/mods/">MODS</a>  </li>
+<li>Metadata Object Description Schema (relations?)<br /></li>
+<li><a href="http://www.loc.gov/standards/mods/">MODS - Descriptive</a>  </li>
+<li><a href="http://rfc.net/rfc1807.html">RFC 1807</a>  </li>
+<li>Bibliographic metadata.</li>
+<li><a href="http://libraries.mit.edu/guides/subjects/metadata/standards/onix.html">ONIX</a>  </li>
+<li>ONline Information eXchange</li>
+<li><a href="http://libraries.mit.edu/guides/subjects/metadata/standards.html">MIT Selected Metadata Standards</a>   and notes therein contain lots of information. There are clearly metadata standards for different classes of data and metadata.</li>
+<li><a href="http://www.loc.gov/standards/mix/">Z39.87 Data dictionary - Technical Metadata for Digital Still Images (MIX)</a>  </li>
+<li><a href="http://www.jeita.or.jp/">EXIF - Images</a>  </li>
+<li><a href="http://www.iptc.org/IPTC4XMP/">IPTC/XMP - Images</a>  </li>
+<li><a href="http://www.niso.org/standards/resources/Z39_87_trial_use.pdf">MIX - Images</a>  </li>
+<li><a href="http://www.openarchives.org/">Open Archives Initiative</a>  </li>
+<li><a href="http://www.utah.edu/cpbmetadata/">PBCore - Video/Audio</a>  </li>
+<li><a href="http://www.smpte-ra.org/mdd">SMPTE - Video/Audio</a>  </li>
+</ul>
+<p>PREMIS - <a href="http://www.loc.gov/standards/premis/">PREMIS</a>   - <a href="http://www.loc.gov/standards/premis/premis-mets.html">Using PREMIS with METS</a>   - <a href="http://www.loc.gov/standards/premis/tools.html">PREMIS Tools</a>   CrosswalkingMigrations that convert between metadata formats, mapping elements of one into the other. - <a href="http://www.l3s.de/%7Esiberski/bibtex2rdf/">bibtex2rdf</a>  .</p>
+<h2 id="references">References</h2>
+<ul>
+<li>This book is quite good: <a href="http://www.amazon.co.uk/gp/product/1843343010?ie=UTF8">Metadata for Digital Resources: Implementation, Systems Design and Interoperability</a>  </li>
+<li><a href="http://stephesblog.blogs.com/my_weblog/2008/04/a-standards-pri.html">A Standards Primer - Understanding Technology Standardization Efforts</a>  .</li>
+</ul>
+<h1 id="digital-preservation-projects">Digital Preservation Projects</h1>
+<h2 id="digital-preservation">Digital Preservation</h2>
+<ul>
+<li><a href="http://www.planets-project.eu/">Planets</a>  </li>
+<li><a href="http://www.nla.gov.au/padi/">PADI - Preserving Access to Digital Information</a>   lots of useful, deep information.</li>
+<li><a href="http://www.nla.gov.au/padi/topics/18.html">PADI - Digital preservation strategies</a>  </li>
+<li><a href="http://metadata.net/panic/">PANIC - Preservation webservices Architecture for Newmedia and Interactive Collections</a>  </li>
+<li><p><a href="http://dataportability.org/">Data Portability</a>  , <a href="http://wiki.dataportability.org/display/dpmain/For+Developers">Data Portability, for Developers</a>   ## Software Archives ##</p></li>
+<li>Web Browsers<br /></li>
+<li><a href="http://browser.netscape.com/releases">Netscape 4.7 - 9.0</a>  <br /></li>
+<li><p><a href="http://sillydog.org/narchive/full123.php">Netscape 3.0 - 3.04</a>  </p></li>
+</ul>
+<h1 id="the-digital-preservation-community">The Digital Preservation Community</h1>
+<ul>
+<li>Organisations<br /></li>
+<li><a href="http://www.dpconline.org/">DPC</a>  , etc etc...<br /></li>
+<li>Steering Factors, EU, Digital Britain,</li>
+<li>Conferences<br /></li>
+<li><a href="http://www.jcdl.org/">Joint Conference on Digital Libraries</a>  <br /></li>
+<li><a href="http://rdd.sub.uni-goettingen.de/conferences/ipres/ipres-en.html">International Conference on Digital Preservation</a>  <br /></li>
+<li><a href="http://www.cdlib.org/iPres/">iPres 2009</a>  <br /></li>
+<li><a href="http://www.ecdlconference.eu/">European Conference on Digital Libraries</a>  </li>
+<li>Journals<br /></li>
+<li><a href="http://www.ijdc.net/">International Journal of Digital Curation</a>  <br /></li>
+<li><a href="http://journal.code4lib.org/">Code4Lib</a>  <br /></li>
+<li><a href="http://www.dljournal.org/">International Journal on Digital Libraries</a>  </li>
+<li>People:<br /></li>
+<li><a href="http://public.lanl.gov/herbertv/papers/">Herbert Van de Sompel - Papers</a>  </li>
+</ul>
+<h1 id="physical-media">Physical Media</h1>
+<p>Notes on different physical media for storing digital data. # Disk Image Tools #</p>
+<p>All disks are block devices... blah... Volumes, partitions, file systems, ??? # Imaging Tools #</p>
+<p>Software for pulling the bits off a disk. Note that <a href="http://www.forensicswiki.org/">forensicswiki.org</a> has some useful info on this.</p>
+<ul>
+<li><a href="http://www.forensicswiki.org/wiki/Category:Disk_Imaging">Disk Imaging@forensicswiki.org</a>  </li>
+<li><a href="http://air-imager.sourceforge.net/">AIR - Automated Image and Restore</a>  </li>
+<li><a href="http://linux.die.net/man/1/dskdump">dskdump</a>  </li>
+<li><a href="http://www.forensicswiki.org/wiki/Ddrescue">ddrescue@forensicswiki.org</a>  </li>
+<li><a href="http://www.forensicswiki.org/wiki/Dcfldd">dcfldd@forensicswiki.org</a>  </li>
+<li><a href="http://sourceforge.net/projects/rdd/">rdd</a>, 'robust with respect to read errors'.</li>
+<li><a href="http://sourceforge.net/projects/acetoneiso2/">AcetoneISO</a>  </li>
+<li><a href="http://www.holmes.nl/NFIlabs/Snorkel/">Snorkel</a>, which is Java, and interesting, but closed-source and by-arrangement.</li>
+<li><a href="http://www.pyflag.net/">PyFlag</a> includes disk forensics</li>
+</ul>
+<h2 id="drive-emulation">Drive Emulation</h2>
+<ul>
+<li><a href="http://cdemu.sourceforge.net/">CDemu, a CD/DVD drive emulator for Linux</a></li>
+<li><a href="http://superuser.com/questions/27895/mount-raw-cd-rom-image">Mount raw CD-ROM image</a></li>
+<li>this has some good info.</li>
+<li><a href="http://www.daemon-tools.cc/">DAEMON Tools for Windows</a></li>
+</ul>
+<h2 id="converting-between-image-formats">Converting between image formats</h2>
+<ul>
+<li><a href="http://qgqlochekone.blogspot.com/2008/04/iso-linux-debian-venenux-tools.html">A list of tools for linux</a></li>
+<li><a href="http://sourceforge.net/projects/ccd2iso">CloneCD image to ISO image file converter</a></li>
+</ul>
+<h1 id="file-system-support">File System Support</h1>
+<p>How to interpret the bits of a disk image and turn it into a set of files. e.g. NTFS, FAT, ADFS, ISO, etc.</p>
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Comparison_of_file_systems">Comparison of file systems</a></li>
+<li><a href="http://www.forensicswiki.org/wiki/File_Systems">File Systems@forensicswiki.org</a></li>
+<li><a href="http://www.seasip.demon.co.uk/Unix/LibDsk/">LIBDSK</a> is a library for accessing discs and disc image files.</li>
+<li><a href="http://mdfs.net/Docs/Comp/Disk/Format/ADFS">ADFS</a></li>
+<li><a href="http://www.adsb.co.uk/bbc/linux/">Reading DFS and ADFS floppy disks under Linux</a></li>
+<li><a href="http://www.boddie.org.uk/david/Projects/Python/FUSE">FUSE ADFS</a></li>
+<li><a href="http://howto.wikia.com/wiki/Howto_configure_the_Linux_kernel/fs">Linux kernel file system support</a></li>
+</ul>
