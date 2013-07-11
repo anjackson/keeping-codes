@@ -1,4 +1,7 @@
-BBC Case Study
+---
+title:  BBC Case Study
+layout: default
+---
 
 Accessing BBC Floppy Disks Via Migration, Emulation & Guesswork
 
