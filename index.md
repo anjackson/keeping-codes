@@ -5,6 +5,9 @@ layout: default
 
 This is a collection of notes on digital preservation.
 
+* [[Communicating With The Future.html]]
+* [BBC Case Study.html]
+
 COPIED TO SIMPLENOTE:
 
 Keeping Codes
