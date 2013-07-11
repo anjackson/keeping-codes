@@ -5,8 +5,8 @@ layout: default
 
 This is a collection of notes on digital preservation.
 
-* [[Communicating With The Future.html]]
-* [BBC Case Study.html]
+* [Communicating With The Future](Communicating With The Future.html)
+* [BBC Case Study](BBC Case Study.html)
 
 COPIED TO SIMPLENOTE:
 
