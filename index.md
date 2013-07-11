@@ -1,5 +1,7 @@
-Digital Preservation Notebook
-=============================
+---
+title:  Digital Preservation Notebook
+layout: default
+---
 
 This is a collection of notes on digital preservation.
 
