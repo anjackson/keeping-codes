@@ -5,8 +5,12 @@ layout: default
 
 This is a collection of notes on digital preservation.
 
+Inclusive definition of digital preservation 
+Ensuring reuse
+
 * Fundamentals
-    * [Communicating With The Future](fundamentals/Communicating With The Future.html)
+    * [Communicating With The Future](fundamentals/Communicating with the Future.html)
+    * [What's So Special About Digital Preservation?](fundamentals/What is So Special About Digital Preservation.html)
 * Practice
     * [Sustainable Access for the UK Web Archive](practice/UKWA Sustainable Access.html)
     * [Characterising Software and Dependencies](practice/Characterising Software and Dependencies.html)
@@ -16,27 +20,17 @@ This is a collection of notes on digital preservation.
     * [Archiving Wikipedia During the SOPA Blackout](case-studies/Wikipedia SOPA.html)
 
 
-Planning - top down worse than stakeholder engagement. CI versus an initio. Separate choices - strategy versus implementation. 
-Significant properties - content properties not relevant. Dependency analysis and critical characterisation role. For content, in future, eye of stakeholder means users should be able to express format preference.
-- SOPA Blackout Wikipedia Homepage
-Format analysis - cf versions don't matter, features do.
-Modelling - oais is clumsy, arbitrary boundary, not user centered
-RI - best stuff done outside of the iPres community
-Trust models omitted - trust is social
-Threat models uncertain?
-Pull in requirements and issues, AIT stuff.
-Pull in Monitrix, BDT, IMAQA, WAT Mining
+* Planning - top down worse than stakeholder engagement. CI versus an initio. Separate choices - strategy versus implementation. 
+* Significant properties - content properties not relevant. Dependency analysis and critical characterisation role. For content, in future, eye of stakeholder means users should be able to express format preference.
+* Format analysis - cf versions don't matter, features do.
+* Modelling - oais is clumsy, arbitrary boundary, not user centered
+* RI - best stuff done outside of the iPres community. Largely due to lack of resources, rather than goodwill or skills.
+* Trust models omitted - trust is social.
+* Threat models uncertain?
+* Pull in requirements and issues, AIT stuff.
+* Pull in Monitrix, BDT, IMAQA, WAT Mining.
 
 
-Keeping Codes
-=============
-
-Inclusive definition of digital preservation 
-Ensuring reuse
-
-It's not the digital that's the problem
-Directly.
-It just makes new machines easy
 
 
 On Preservation Strategies
