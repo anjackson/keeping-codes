@@ -15,8 +15,31 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Notes on Digital Preservation</h1>
-        <p>Rough notes and theories.</p>
+        <h1><a href"{{ site.baseurl }}">Keeping Codes</a></h1>
+        <p>Rough notes on digital preservation.</p>
+
+<p>
+{% capture url_parts %} {{ page.url | remove: "/index.html" | replace:'/'," " }}{% endcapture %}
+{% capture num_parts %}{{ url_parts | number_of_words }}{% endcapture %}
+{% assign previous="/opendata" %}
+<ul class="breadcrumb">
+ {% if num_parts == "0" or num_parts == "-1" %}
+  <li><a href="{{ site.baseurl }}/">home</a> &nbsp; </li>
+ {% else %}
+  <li><a href="{{ site.baseurl }}/">home</a></li>
+
+  {% for unused in site.pages limit:num_parts %}
+   {% capture first_word %}{{ url_parts | truncatewords:1 | remove:"..."}}{% endcapture %}
+   {% capture previous %}{{ previous }}/{{ first_word }}{% endcapture %}
+
+   <li><span class="divider">&#187;</span> <a href="{{previous}}">{{ first_word }}</a></li>
+
+   {% capture url_parts %}{{ url_parts | remove_first:first_word }}{% endcapture %}
+  {% endfor %}
+ {% endif %}
+</ul>
+</p>
+        
 
         <p class="view"><a href="https://github.com/anjackson/dp-notes">View the Project on GitHub <small>anjackson/dp-notes</small></a></p>
 
