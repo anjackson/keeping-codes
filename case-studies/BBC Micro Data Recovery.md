@@ -1,5 +1,5 @@
 ---
-title:  BBC Case Study
+title:  BBC Micro Data Recovery via CF Card
 layout: default
 ---
 
