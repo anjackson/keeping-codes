@@ -9,7 +9,7 @@ Inclusive definition of digital preservation
 Ensuring reuse
 
 * Fundamentals
-    * [Communicating With The Future](fundamentals/Communicating with the Future.html)
+    * [Communicating With The Future](fundamentals/Communicating With The Future.html)
     * [What's So Special About Digital Preservation?](fundamentals/What is Special About Digital Preservation.html)
 * Practice
     * [Sustainable Access for the UK Web Archive](practice/UKWA Sustainable Access.html)
@@ -31,6 +31,10 @@ Ensuring reuse
 * Pull in requirements and issues, AIT stuff.
 * Pull in Monitrix, BDT, IMAQA, WAT Mining.
 
+
+
+No date, Prismatic Error
+http://www.dailymail.co.uk/news/article-107412/The-Queen-Mother-dies.html
 
 
 
