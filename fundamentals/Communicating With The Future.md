@@ -1,5 +1,4 @@
 ---
-published: true
 title: Communicating with the Future
 layout: default
 ---
