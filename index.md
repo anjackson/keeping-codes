@@ -11,6 +11,8 @@ Ensuring reuse
 * Fundamentals
     * [Communicating With The Future](fundamentals/Communicating With The Future.html)
     * [What's So Special About Digital Preservation?](fundamentals/What is Special About Digital Preservation.html)
+    * [The Digital Object Dichotomy](fundamentals/The Digital Object Dichotomy.html)
+    * [Significant Properties And Authentic Transformations](fundamentals/Significant Properties And Authentic Transformations.html)
 * Practice
     * [Sustainable Access for the UK Web Archive](practice/UKWA Sustainable Access.html)
     * [Characterising Software and Dependencies](practice/Characterising Software and Dependencies.html)
