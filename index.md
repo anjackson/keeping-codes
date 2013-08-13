@@ -56,7 +56,7 @@ Persistant state
 
 - The First Preservation Action: Save As...
 - Map to Shannon
--- Coding theorem as Zeroth Law of Digital Preservation
+    - Coding theorem as Zeroth Law of Digital Preservation
 
 On Systems
 ----------
@@ -85,8 +85,8 @@ That all digital objects are processes, and that the artefact is an analogue rel
 That the difficulties in preserving access to digital media arise primarily because the access the item is mediated, not because they are digital. The same can be said of needing a speaker of an obscure language to understand a book. You can either keep the language alive (emulation), or translate the book (migration).
 
 That RI is of two kinds:
-1. Performance RI, that is the information required to reconstruct a particular interpretation of a digital artefact, i.e. to regenerate a signal to be interpreted by an actor outside the system. e.g. rendering a PDF.
-2. Perception/Understanding/ RI, that is any futher information required to support the actor in understanding the preserved signal.
+# Performance RI, that is the information required to reconstruct a particular interpretation of a digital artefact, i.e. to regenerate a signal to be interpreted by an actor outside the system. e.g. rendering a PDF.
+# Perception/Understanding/ RI, that is any futher information required to support the actor in understanding the preserved signal.
 
 That actor-RI is subjective. It's consqeuences aare tjhat is should be layered rather that designed up-front, and turns into educational resources if you wait long enough
 
@@ -106,9 +106,9 @@ There is an issue about scope, and relation to other data stores, but I think yo
 On Format
 ---------
 
--Herd Immunity
--- Format obsolescence as disease 
--- We are the immune system 
+- Herd Immunity
+    - Format obsolescence as disease 
+    - We are the immune system 
 - The First Preservation Strategy: Format...
 - Data And Metadata, interpretation difference.
 - eBook wars, like early years of DRM music etc.
@@ -140,8 +140,8 @@ Insignificant properties
 ------------------------
 
 - Significant Property Schemes 
--- Sig prop breakdown
--- Compression Is Not A Significant Property
+    - Sig prop breakdown
+    - Compression Is Not A Significant Property
 
 Well, this cuts to the heart of the matter that I've had so much trouble trying to express. Well, here goes...
 
