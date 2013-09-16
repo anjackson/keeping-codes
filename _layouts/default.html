@@ -24,7 +24,7 @@
 
   <body>
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-inverse">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -32,11 +32,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="{{ site.baseurl }}/">Keeping Codes</a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="{{ site.baseurl }}">Keeping Codes</a></li>
+            <li class="active"><a href="{{ site.baseurl }}/">Home</a></li>
             <li><a href="https://github.com/anjackson/dp-notes">GitHub</a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -44,23 +44,31 @@
     </div>
 
     <div class="container">
+      <div class="row row-offcanvas row-offcanvas-right">
+        <div class="col-xs-12 col-sm-4 sidebar-offcanvas" id="sidebar" role="navigation">
+          <div id="toc" class="well well-sm sidebar-nav">
+          </div><!--/.well -->
+        </div>
 
-      <div class="starter-template">
+        <div class="col-xs-12 col-sm-8">
+        <div class="starter-template">
         <h1>{{ page.title }}</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
         {{ content }}        
-        <hr/>
-        <p>
-          <a href="https://github.com/anjackson/dp-notes/blob/gh-pages/{{ page.path }}">Edit this page on GitHub.</a>
-        </p>
+        <button type="button" class="btn btn-default" id="edit_button">
+          <a href="https://github.com/anjackson/dp-notes/blob/gh-pages/{{ page.path }}" 
+            title="Edit this page on GitHub.">
+          <span class="glyphicon glyphicon-pencil"></span>
+          </a>
+        </button>
       </div>
 
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/anjackson">anjackson</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+        </div>
 
     </div><!-- /.container -->
+
+    <div class="container" id="footer">
+          <p>This project is maintained by <a href="https://github.com/anjackson">anjackson</a>.</p>
+    </div>
 
 
     <!-- Bootstrap core JavaScript
@@ -68,5 +76,10 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="{{ site.baseurl }}/assets/js/jquery.js"></script>
     <script src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>
+    <!-- Set up the Table of Contents -->
+    <script src="{{ site.baseurl }}/assets/js/jquery.toc.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+      $('#toc').toc();
+    </script>
   </body>
 </html>
