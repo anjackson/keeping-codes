@@ -1,9 +1,13 @@
-.main {
-  padding: 40px 15px;
+#main, #sidebar {
+  padding: 20px 10px 40px 10px;
 }
 
 .navbar {
        -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;
+}
+
+#toc {
+    margin-top: 1em;
 }
 
 @media (min-width: 768px) { 
@@ -46,8 +50,5 @@
 }
 
 #footer {
-  margin-top: 2em;
-  height: 60px;
-  background-color: #f5f5f5;
-  padding-top: 1.5em;
+  margin: 2em 0;
 }
