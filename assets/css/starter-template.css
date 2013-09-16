@@ -1,13 +1,7 @@
-#main, #sidebar {
-  padding: 20px 10px 40px 10px;
-}
+body { padding-bottom: 70px; }
 
 .navbar {
        -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;
-}
-
-#toc {
-    margin-top: 1em;
 }
 
 @media (min-width: 768px) { 
