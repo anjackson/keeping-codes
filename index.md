@@ -38,7 +38,9 @@ Ensuring reuse
 No date, Prismatic Error
 http://www.dailymail.co.uk/news/article-107412/The-Queen-Mother-dies.html
 
-
+Data Mining Methodology
+The emphasis on big data and statistical analysis in cultural and social contexts makes me uneasy. There is no 'noise' in humanities data sets. There are only silenced voices.
+The direct adoption of big data/statistical methods makes me uneasy. There is no 'noise' in humanities data. There are only silenced voices.
 
 On Preservation Strategies
 --------------------------

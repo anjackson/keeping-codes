@@ -40,6 +40,8 @@ encoding, colourspace Performance Resource dependencies, fonts, network,
 * http://www.planets-project.eu/private/pages/wiki/index.php/List\_of\_Digital\_Object\_Types\_and\_their\_Associated\_Properties
 * http://www.significantproperties.org.uk/
 
+http://www.nytimes.com/2002/08/29/technology/what-s-next-a-universal-tool-to-rescue-old-files-from-obsolescence.html?scp=18&sq=%22digital+archiving%22&st=nyt
+
 ....
 
 The Testbed’s ‘Intellectual Properties’ are proving diffficult to
@@ -60,6 +62,8 @@ http://www.ijdc.net/index.php/ijdc/article/view/110
 InSPECT Reports
 
 http://www.significantproperties.org.uk/
+
+http://www.significantproperties.org.uk/inspect-framework.html
 
 et al
 

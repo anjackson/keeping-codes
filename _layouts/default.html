@@ -1,47 +1,64 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="{{ site.baseurl }}/assets/ico/favicon.png">
+
     <title>{{ page.title }}</title>
 
-    <link rel="stylesheet" href="{{ site.baseurl }}/stylesheets/styles.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- Bootstrap core CSS -->
+    <link href="{{ site.baseurl }}/assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="{{ site.baseurl }}/assets/js/html5shiv.js"></script>
+      <script src="{{ site.baseurl }}/assets/js/respond.min.js"></script>
     <![endif]-->
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
-        <h1><a href="{{ site.baseurl }}">Keeping Codes</a></h1>
-        <p>Rough notes on digital preservation.</p>
 
-        <p class="view"><a href="https://github.com/anjackson/dp-notes">View the Project on GitHub <small>anjackson/dp-notes</small></a></p>
-
-<!--
-        <ul>
-          <li><a href="https://github.com/anjackson/zombse/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/anjackson/zombse/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/anjackson/zombse">View On <strong>GitHub</strong></a></li>
-        </ul>
--->
-      </header>
-      <section>
-        <h1>{{ page.title }}</h1>
-	{{ content }}
-        <hr/>
-        <p>
-          <a href="https://github.com/anjackson/dp-notes/blob/gh-pages/{{ page.path }}">Edit this page on GitHub.</a>
-        </p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/anjackson">anjackson</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
+
+    <div class="container">
+
+      <div class="starter-template">
+        <h1>{{ page.title }}</h1>
+        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+        {{ content }}        
+      </div>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{{ site.baseurl }}/assets/js/jquery.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>
   </body>
 </html>
