@@ -33,6 +33,11 @@ Ensuring reuse
 * Pull in requirements and issues, AIT stuff.
 * Pull in Monitrix, BDT, IMAQA, WAT Mining.
 
+Sources
+* http://anjackson.net/book/export/html/1836
+* http://sourceforge.net/p/xcltools/code/HEAD/tree/
+* http://wiki.opf-labs.org/display/SP/Capturing+Properties
+* https://intranet.bl.uk:8443/confluence/display/DT/Representation+Information+Capture+Project
 
 
 No date, Prismatic Error
