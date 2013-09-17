@@ -44,15 +44,15 @@
     <div class="container">
       <div class="row row-offcanvas row-offcanvas-right">
         <div class="col-xs-12 col-sm-4 sidebar-offcanvas" id="sidebar" role="navigation">
-<div class="panel panel-default" id="toc_panel">
-  <div class="panel-heading">
-    <h3 class="panel-title">Contents</h3>
-  </div>
-  <div class="panel-body">
-  <div id="toc">
-  </div>
-  </div>
-</div>          
+  <div class="panel panel-default" id="toc_panel">
+    <div class="panel-heading">
+      <h3 class="panel-title"><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></h3>
+    </div>
+    <div class="panel-body">
+    <div id="toc">
+    </div>
+    </div>
+  </div>          
         </div>
 
         <div class="col-xs-12 col-sm-8">
@@ -64,8 +64,8 @@
           </button>
         </a>
  
-        <div id="main">
         <h1>{{ page.title }}</h1>
+        <div id="main">
         {{ content }}
         </div>
 

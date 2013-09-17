@@ -4,7 +4,7 @@ layout: default
 categories: [fundamentals]
 ---
 
-### 1. Introduction {.sectionHead}
+### 1. Introduction
 
 Abstract problem. Equiv to normalisation to preservation format. If
 concrete, superset problem and encoding problem too. Huge amount of
@@ -165,7 +165,7 @@ mode of operation, and we will return to this issue later.
 
 [Could use a neat word for this mode of operation.]
 
-### 2 The Problems with Properties {.sectionHead}
+### 2 The Problems with Properties
 
 The distinction between the ‘affective’ properties of Hedstrom and the
 Testbed’s ‘intellectual’ properties reveals a widespread conceptual
@@ -396,7 +396,7 @@ PDF standard is a statement of Sig Prop of PDF.
 
 Note that ’font size’ is an almost useless property.
 
-### 3 Redefining Properties {.sectionHead}
+### 3 Redefining Properties
 
 In general, it is also suggested that we change methodology. As no
 ’super types’just different representations, this suggests we look at
@@ -761,7 +761,7 @@ A language for statements about the performance.
 
 A way of capturing dependencies.
 
-### 4 Quality Assurance Methods {.sectionHead}
+### 4 Quality Assurance Methods
 
 #### 4.1 Acceptance Testing {.subsectionHead}
 
@@ -786,7 +786,7 @@ Manual verified corpora are useful, e.g. isotar, jhove.
 What does in mean when no tool can be trusted, because we can’t manually
 inspect everything? e.g. xcl corpus.
 
-### 5 Other Material {.sectionHead}
+### 5 Other Material
 
 Assuming we can store them... Challenge of preserving access
 
