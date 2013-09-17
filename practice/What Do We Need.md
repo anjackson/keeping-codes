@@ -45,3 +45,11 @@ So, instead we can help preserve what they did. They started doing that anyway. 
 The latter is where the real added value might lie, linking it up, making it discoverable. How do we ensure anyone else who spots that port can find this story? How do we link these things.
 
 This is just like authors and authority files. The purpose of which is not to stamp out ambiguity but to manage it. To collect aliases, and pick a preferred name, so that these stories can be brought together.
+
+Extended MIME Types
+-------------------
+
+http://wiki.whatwg.org/wiki/Video_type_parameters
+codecs
+e.g. Quicktime VR example file = [ video/quicktime; codecs="cvid, pano" ]
+
