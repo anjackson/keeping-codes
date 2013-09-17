@@ -12,7 +12,7 @@ All pages including unpublished
 {% for page in site.pages %}
 {% for pc in page.categories %}
 {% if pc == cat %}
-<li><a href="{{ page.url }}">{{ page.title }}</a></li>
+<li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
 {% endif %}   <!-- cat-match-p -->
 {% endfor %}  <!-- page-category -->
 {% endfor %} <!-- page -->

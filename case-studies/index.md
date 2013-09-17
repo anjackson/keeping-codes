@@ -8,7 +8,7 @@ layout: default
 {% if page.publish == true %}
 {% for pc in page.categories %}
 {% if pc == 'case-studies' %}
-<li><a href="{{ page.url }}">{{ page.title }}</a></li>
+<li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
 {% endif %}   <!-- cat-match-p -->
 {% endfor %}  <!-- page-category -->
 {% endif %}   <!-- publish-p -->
