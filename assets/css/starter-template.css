@@ -37,8 +37,7 @@ body { padding-bottom: 70px; }
 }
 
 #toc .toc-active {
-    background: #ffffff;
-    box-shadow: inset -5px 0px 10px -5px #f5f5f5;
+    background: #eee;
 }
 
 #edit_button {

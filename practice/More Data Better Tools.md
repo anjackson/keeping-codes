@@ -1,6 +1,7 @@
 ---
 title: More Data, Better Tools
 layout: default
+categories: [practice]
 ---
 
 We use Web Archive data to drive tool development.

@@ -1,6 +1,7 @@
 ---
 title: Characterising PDFs
 layout: default
+categories: [case-studies]
 ---
 
 Note Sumatra PDF, no support for Thumbs or Fast View. Other things missing?

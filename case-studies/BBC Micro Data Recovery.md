@@ -1,6 +1,8 @@
 ---
 title:  BBC Micro Data Recovery via CF Card
 layout: default
+categories: [case-studies]
+publish: true
 ---
 
 Accessing BBC Floppy Disks Via Migration, Emulation & Guesswork

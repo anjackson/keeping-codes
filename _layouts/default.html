@@ -65,12 +65,11 @@
         </button>
 
         <div id="main">
-
         <h1>{{ page.title }}</h1>
-        {{ content }}       
-        <div id="footer"> 
+        {{ content }}
         </div>
 
+        <div id="footer"> 
         </div>
 
       </div>
@@ -105,7 +104,7 @@
     <!-- Set up the Table of Contents -->
     <script src="{{ site.baseurl }}/assets/js/jquery.toc.min.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" charset="utf-8">
-      $('#toc').toc($("#main"));
+      $('#toc').toc( { 'container': '#main' } );
     </script>
   </body>
 </html>

@@ -1,6 +1,7 @@
 ---
 title: What's So Special About Digital Preservation?
 layout: default
+categories: [fundamentals]
 ---
 
 It's not the digital that's the problem

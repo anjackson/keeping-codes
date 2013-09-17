@@ -1,2 +1,3 @@
 markdown: rdiscount
 baseurl: /dp-notes
+category-list: [fundamentals,practice,case-studies]

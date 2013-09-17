@@ -1,6 +1,7 @@
 ---
 title: Characterising Access
 layout: default
+categories: [practice]
 ---
 
 There is dependency analysis: Strender etc.

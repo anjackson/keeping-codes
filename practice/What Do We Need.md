@@ -1,3 +1,9 @@
+---
+title: The Registry We Need
+layout: default
+categories: [practice]
+---
+
 What Do We Need
 
 To go through
@@ -15,10 +21,16 @@ Could it really replace the expertise of those five (or so) people? Or should it
 --
 Is the answer really in building registries? Or is it better to run more XFR STNs and help document and preserve what they do?
 --
+http://www.openplanetsfoundation.org/blogs/2013-09-13-registries-we-need
+--
 
 Could some research project, with some model knocked up to cover a vast problem space by some young researcher with very little experience actually doing digital preservation, ever, in any way, be expected to be sufficient expressive to cover this stuff?
 
 Could any ontology or taxonomy ever be sophisticated enough to capture this process in a re-usable way? Even if that is possible, is the investment required to make it so even vagualy feasible?
+
+---
+
+And even if we could afford it, could we do it when we strip the heart out of it.
 
 ---
 

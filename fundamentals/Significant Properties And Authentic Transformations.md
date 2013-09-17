@@ -1,6 +1,7 @@
 ---
 title:  Significant Properties And Authentic Transformations
 layout: default
+categories: [fundamentals]
 ---
 
 ### 1. Introduction {.sectionHead}
@@ -27,6 +28,12 @@ superset approach as expressed in plain English and thus ambiguous and
 poor coverage. Tending to be couched in the language of the performance.
 Enforced extraction of properties for later comparison and evaluation.
 Cite code4lib.
+---
+title: Significant Properties & Authentic Transformations
+layout: default
+categories: [fundamentals]
+---
+
 
 Plato mixes format choice and implementation aspects into one compromise
 process.

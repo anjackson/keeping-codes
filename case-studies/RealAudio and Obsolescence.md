@@ -1,6 +1,7 @@
 ---
 title: RealAudio and Obsolescence
 layout: default
+categories: [case-studies]
 ---
 
 http://web.archive.org/web/19961101195522/http://netra.creative-labs.co.uk/
