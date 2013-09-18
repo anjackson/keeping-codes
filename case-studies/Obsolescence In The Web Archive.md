@@ -6,7 +6,7 @@ categories: [case-studies]
 
 Looking for known 'difficult' formats, and breaking it down.
 
-Investigate formats
+Investigate formats that have been identified as 'difficult' elsewhere. Are they present, what amount, and what can be done?
 
 * Spectrum tape images.
 * Difficult formats from NLA: http://www.nla.gov.au/content/preservation-intent-selective-web-harvesting
