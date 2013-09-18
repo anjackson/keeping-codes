@@ -1,0 +1,51 @@
+digraph bbc_l1 {
+ graph [fontsize=9 fontname="Verdana" 
+ compound=true rankdir=TB splines=true];
+ node [shape=box fontsize=9 fontname="Verdana" style="rounded"];
+ edge [fontsize=9 fontname="Verdana"];
+
+ subgraph cluster_bbc {
+    edge[constraint=true];
+    label="BBC Master";
+     rank="same"; 
+     fd [label="Floppy Disk"];
+     backup [label="Create Floppy Disk Image\nLOAD \"BACKUP\"; RUN"]
+     disk_images [label="Floppy Disk Image\n(on ADFS)"]
+     cf_ide [label="CompactFlash\n(via IDE)"]
+     fd -> backup;
+     backup -> disk_images;
+     disk_images -> cf_ide;
+ }
+
+ ide_usb[label="Physical transfer",shape=oval]
+
+ // Overall linkage:
+ // Invisible edge used to align the boxes:
+// fd -> cf_usb;// [constraint=true, style=invis];
+ //ide_usb -> cf_usb [constraint=false];
+ edge[constraint=false];
+ cf_ide -> ide_usb;
+ ide_usb -> cf_usb;
+
+
+ // None-aligning edge linking BBC output to the rest:
+ //cf_ide -> ide_usb ;
+ //ide_usb -> cf_usb [lhead=cluster_pc];
+ //cf_ide -> ide_usb [constraint=false];//[ltail=cluster_bbc, lhead=cluster_transfer];// [label="Transfer CF Card"];
+
+ subgraph cluster_pc {
+    edge[constraint=true];
+    label="Modern PC";
+     rank="same"; 
+     cf_usb [label="CompactFlash\n(via USB)"];
+     cf_img [label="Copy as ADFS Disk Image\nCFBACKUP h C:\\CF.DAT"];
+     disk_images_adfs [label="ADFS Disk Image\n(containing Floppy Disk Image)"];
+     adfs_explorer [label="ADFS Explorer 2.0.0"]
+     disk_images_pc [label="Disk Image\n(on Windows FS)"];     
+     disk_image_inter [label="Disk Image\nInterlacer"];     
+     idisk_images_pc [label="Interleaved Disk Image\n(on Windows FS)"];     
+     emul [label="BeebEm\nEmulator"];
+     cf_usb -> cf_img -> disk_images_adfs -> adfs_explorer -> disk_images_pc-> disk_image_inter -> idisk_images_pc -> emul;
+ }
+
+}

@@ -1,7 +1,7 @@
 digraph bbc_l1 {
  graph [fontsize=9 fontname="Verdana" 
  compound=true rankdir=LR splines=true];
- node [shape=box fontsize=9 fontname="Verdana"];
+ node [shape=box fontsize=9 fontname="Verdana" style="rounded"];
  edge [fontsize=9 fontname="Verdana"];
 
  subgraph cluster_bbc {
@@ -12,30 +12,28 @@ digraph bbc_l1 {
      cf_ide [label="CF (IDE)"]
      fd -> cf_ide;
  }
-
- subgraph cluster_transfer {
-    style=dashed
-    label="Physical Transfer"
-    ide_usb [label="CF"]
- }
+ 
+ ide_usb [label="Physical Transfer",shape=oval]
 
  // Overall linkage:
  // Invisible edge used to align the boxes:
  fd -> ide_usb [style=invis];
  ide_usb -> cf_usb
- // None-aligning edge linking BBC output to the rest:
  edge[constraint=false];
+
+ // None-aligning edge linking BBC output to the rest:
  //cf_ide -> ide_usb ;
  //ide_usb -> cf_usb [lhead=cluster_pc];
  cf_ide -> ide_usb;//[ltail=cluster_bbc, lhead=cluster_transfer];// [label="Transfer CF Card"];
+
 
  subgraph cluster_pc {
     edge[constraint=false];
     label="Modern PC";
      rank="same"; 
      cf_usb [label="CF (USB)"]
-     hd [label="Hard Disk"]
-     cf_usb -> hd;
+     fdi [label="Floppy\nDisk Image"]
+     cf_usb -> fdi;
  }
 
 }
