@@ -1,0 +1,17 @@
+digraph bbc_l1 {
+ graph [fontsize=9 fontname="Verdana" 
+ compound=true rankdir=LR splines=true];
+ node [shape=box fontsize=9 fontname="Verdana" style="rounded"];
+ edge [fontsize=9 fontname="Verdana"];
+
+ subgraph cluster_pc {
+    label="Modern PC";
+     rank="same"; 
+     fd [label="Floppy Disk\n(USB)"]
+     kryo [label="Kryoflux\n(or similar)"]
+     fdi [label="Floppy\nDisk Image\n(on Windows FS)"]
+     emul [label="BBC Emulator"]
+     fd -> kryo -> fdi -> emul;
+ }
+
+}

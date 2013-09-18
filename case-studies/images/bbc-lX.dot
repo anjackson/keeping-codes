@@ -44,7 +44,7 @@ digraph bbc_l1 {
      disk_images_pc [label="Disk Image\n(on Windows FS)"];     
      disk_image_inter [label="Disk Image\nInterlacer"];     
      idisk_images_pc [label="Interleaved Disk Image\n(on Windows FS)"];     
-     emul [label="BeebEm\nEmulator"];
+     emul [label="BBC Emulator"];
      cf_usb -> cf_img -> disk_images_adfs -> adfs_explorer -> disk_images_pc-> disk_image_inter -> idisk_images_pc -> emul;
  }
 
