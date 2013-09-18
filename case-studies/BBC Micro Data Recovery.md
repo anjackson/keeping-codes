@@ -14,7 +14,7 @@ Hardware
 
 {% include figure.html src="images/bbc-master/15092009064-master.jpg" alt="BBC Master, with floppy drive and screen." %}
 
-We already had a special [BBC Master][1] that had been fitted [this with clever CompactFlash drive kit][1], which we had purchased for experimentation purposes earlier on. This device allows a relatively modern media type to be accessed on the BBC as if it were an IDE a hard disk. 
+We already had a special [BBC Master][1] that had been fitted [this with clever CompactFlash drive kit][1], which we had purchased for experimentation purposes earlier on. This [device][13] allows a relatively modern media type to be accessed on the BBC as if it were an IDE a hard disk. 
 
 {% include figure.html src="images/bbc-master/15092009066-idekit.jpg" alt="The nifty 1MHz IDE kit, mounted inside the BBC Master." %}
 
@@ -43,7 +43,7 @@ After more racking of brains and a lot of trail and error, we could finally run 
 
 {% include figure.html src="images/bbc-master/13102009111.jpg" alt="Screenshot: ADFS BACKUP 1.23" %}
 
-This was indicative of the terse prompts that many pieces of software supplied, and working out the right answers required a lot of experimentation. Even then, we could not get this ADFS BACKUP program to work as we expected, and we ended up transferring over the 1.20 version of BACKUP we had found on the web. It's not clear what the problem was (perhaps ADFS BACKUP does not support DFS disks?), but we had more luck with version 1.20.
+This was indicative of the terse prompts that many pieces of software supplied, and working out the right answers required [a lot of experimentation][14]. Even then, we could not get this ADFS BACKUP program to work as we expected, and we ended up transferring over the 1.20 version of BACKUP we had found on the web. It's not clear what the problem was (perhaps ADFS BACKUP does not support DFS disks?), but we had more luck with version 1.20.
 
 {% include figure.html src="images/bbc-master/12112009143.jpg" alt="Screenshot: BACKUP PROGRAM 1.20 - Press any key..." %}
 
@@ -123,3 +123,5 @@ It is the slow death of a thousand ambiguities, rather than an sudden, jarring e
 [10]: BBCUtils/src/uk/bl/dpt/bbc/DiskImageInterlacer.java.html
 [11]: http://www.kryoflux.com/
 [12]: http://www.archiveteam.org/index.php?title=Rescuing_Floppy_Disks
+[13]: images/bbc-master/
+[14]: images/bbc-master/#toc1
