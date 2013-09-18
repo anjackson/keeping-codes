@@ -14,7 +14,7 @@ Hardware
 
 We already had a special BBC Master that had been fitted [this with clever CompactFlash drive kit][1], which we had purchased for experimentation purposes earlier on. This device allows a relatively modern media type to be accessed on the BBC as if it were an IDE a hard disk. Once data has been written to the flash drive, it can be can be physicallyu transferred to a modern PC and accessed via a standard CompactFlash reader. This provided a complete chain of hardware, making the transfer possible, at least in principle. The software side turned our to be far more complex.
 
-![BBC Workflow - Level 1](images/bbc-l1.svg)
+{% include figure.html src="images/bbc-l1.svg" alt="BBC Workflow - Level 1" %}
 
 Migration
 ---------
