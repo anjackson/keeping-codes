@@ -83,12 +83,16 @@ Did something go wrong along this long chain of migration? Or was the condition 
 
 Elite appeared to run perfectly on the BBC itself, but the cloned disk image failed consistently. Our 'ground truth' image had failed. We were stuck.
 
+{% include figure.html src="images/bbc-master/beebem3-elite-fail.png" alt="Screenshot: Elite failure." %}
+
 Guesswork
 ---------
 
 Some months later, after once more searching and looking for possible alternatives for recovery, I found [these][5] [hints][6] that disk images are sometimes interleaved, on 20 bytes boundaries. i.e. when accessed from an emulator, disk images will not work as expected if the data from one side of the disk is not sliced up and interspersed between the data from the other side.
 
 Guessing that this might be the issue, I wrote [a small Java program that would re-interleave the data (mistakenly calling it 'interlace' rather than 'interleave')][10]. The guess paid off, and Elite booted at last.
+
+{% include figure.html src="images/bbc-master/beebem3-elite-win.png" alt="Screenshot: Elite success!" %}
 
 Finally, we could open up the disk we had been given in the emulator. It appeared to be a ViewStore data file, but we did not have any of that software, so we could not make full use of the data. However, we passed the disk image back to the contributor and they appeared to be happy with our efforts.
 
