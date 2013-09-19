@@ -85,6 +85,7 @@ Elite appeared to run perfectly on the BBC itself, but the cloned disk image fai
 
 {% include figure.html src="images/bbc-master/beebem3-elite-fail.png" alt="Screenshot: Elite failure." %}
 
+
 Guesswork
 ---------
 
@@ -95,6 +96,7 @@ Guessing that this might be the issue, I wrote [a small Java program that would 
 {% include figure.html src="images/bbc-master/beebem3-elite-win.png" alt="Screenshot: Elite success!" %}
 
 Finally, we could open up the disk we had been given in the emulator. It appeared to be a ViewStore data file, but we did not have any of that software, so we could not make full use of the data. However, we passed the disk image back to the contributor and they appeared to be happy with our efforts.
+
 
 Summary
 -------
