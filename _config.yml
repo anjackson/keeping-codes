@@ -1,4 +1,4 @@
 markdown: rdiscount
-baseurl: /dp-notes
+baseurl: /keeping-codes
 all-category-list: [fundamentals,practice,case-studies]
 category-list: [case-studies]
