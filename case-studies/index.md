@@ -1,5 +1,5 @@
 ---
-title:  Fundamentals
+title:  Case-studies
 layout: default
 ---
 

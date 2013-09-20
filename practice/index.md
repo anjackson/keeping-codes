@@ -1,5 +1,5 @@
 ---
-title:  Fundamentals
+title:  Practice
 layout: default
 ---
 
