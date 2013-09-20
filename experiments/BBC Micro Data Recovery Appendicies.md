@@ -3,6 +3,23 @@ title:  BBC Micro Data Recovery - Appendicies
 layout: default
 ---
 
+In common with most computers of this period, the computer starts up at the BASIC interpreter command line. Unlike most computers of the age, it also has another set of commands that allow lower level access and direct file manipulation (as opposed to the application-oriented BASIC). These are called star commands, as the are all invoked from BASIC by using the asterix '*' prefix. Very, very rougly speaking, BASIC is to Star commands as Windows is to the DOS prompt. Also, unlike other systems, the OS and other built-in software is held on ROM chips, so cannot be damaged or modified by the user.
+
+Two operating systems are included on the ROMS of our main BBC Master, the older DFS and the newer ADFS. You can switch between them, and this is necessary as DFS discs can only be accessed directly from DFS, and the same for ADFS. If you try to access a disc from the wrong OS, then you'll get at least a disc error, and the machine may even hang and require rebooting.
+
+Note also that the physical drives have different identities in the different operating systems. In DFS, the floppy drive is drive 0, and the CF drive is drive 4 but cannot be accessed
+
+    *DISC
+    *DRIVE 0
+    *.
+
+Will list the contents of the DFS floppy  in the drive.
+Under ADFS, the CF drive is the 0 drive, and the floppy drive is drive 4.
+
+    *ADFS
+    *DIR 0:
+    *.
+
 Notes from the owner
 --------------------
 

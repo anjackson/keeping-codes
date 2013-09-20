@@ -47,3 +47,12 @@ Can get away with it by limiting document capabilities? And the Software?
 Turing complete formal languages cannot be fully validated (only syntax)
 
 Migration of languages cannot be validated.
+
+Obsolescence
+------------
+Given that is has proven possible to access the data, some might argue that the floppy disks and the data on them are not obsolete. I would say that this long, brittle chains of migration and extensive guesswork are exactly what obsolescence looks like. 
+
+Even though a more efficient way to access the disks themselves is now available, the problem shifts understanding how to use the disks and the software, and how to access the data within.
+
+It is the slow death of a thousand ambiguities, rather than an sudden, jarring expiration. Obsolescence is approached, rather than attained, with the costs of access rising every step of the way.
+

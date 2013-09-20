@@ -3,9 +3,6 @@ title:  Inbox & Ideas
 layout: default
 ---
 
-All pages including unpublished
--------------------------------
-
 {% for cat in site.all-category-list %}
 ### {{ cat | capitalize }}
 <ul>

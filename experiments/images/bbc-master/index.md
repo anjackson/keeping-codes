@@ -37,8 +37,8 @@ img-screens:
 Hardware
 --------
 {% for image in page.img-hardware %}
-<a href="{{ site.baseurl }}/case-studies/images/bbc-master/{{ image }}" style="float: left;">
-  <img src="{{ site.baseurl }}/case-studies/images/bbc-master/{{ image }}" style="width:200px;"/>
+<a href="{{ image }}" style="float: left;">
+  <img src="{{ image }}" style="width:200px;"/>
 </a>
 {% endfor %}
 
@@ -47,8 +47,8 @@ Hardware
 Screenshots
 -----------
 {% for image in page.img-screens %}
-<a href="{{ site.baseurl }}/case-studies/images/bbc-master/{{ image }}" style="float: left;">
-  <img src="{{ site.baseurl }}/case-studies/images/bbc-master/{{ image }}" style="width:200px;"/>
+<a href="{{ image }}" style="float: left;">
+  <img src="{{ image }}" style="width:200px;"/>
 </a>
 {% endfor %}
 
