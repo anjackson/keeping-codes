@@ -1,7 +1,7 @@
 ---
 title: Understanding Tools & Formats Via Bitwise Analysis
 layout: default
-categories: [case-studies]
+categories: [experiments]
 publish: true
 ---
 

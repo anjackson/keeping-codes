@@ -1,7 +1,7 @@
 ---
 title:  BBC Micro Data Recovery
 layout: default
-categories: [case-studies]
+categories: [experiments]
 publish: true
 ---
 
