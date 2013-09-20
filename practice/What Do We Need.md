@@ -46,6 +46,8 @@ The latter is where the real added value might lie, linking it up, making it dis
 
 This is just like authors and authority files. The purpose of which is not to stamp out ambiguity but to manage it. To collect aliases, and pick a preferred name, so that these stories can be brought together.
 
+Who is actually doing digital preservation? And who of those is actually using or generating RepInfo as part of their job?
+
 Extended MIME Types
 -------------------
 

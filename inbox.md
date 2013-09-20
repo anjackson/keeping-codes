@@ -6,7 +6,7 @@ layout: default
 All pages including unpublished
 -------------------------------
 
-{% for cat in site.category-list %}
+{% for cat in site.all-category-list %}
 ### {{ cat | capitalize }}
 <ul>
 {% for page in site.pages %}

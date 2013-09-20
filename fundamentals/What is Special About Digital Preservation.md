@@ -12,3 +12,6 @@ OR
 
 Software is the only thing that distinguishes 'digital preservation' from any other discrete, symbolic communcation system (from Morse Code to the written word).
 
+
+Something about computing and green and brown field development. 
+Moving into cities built on cities.
