@@ -5,20 +5,15 @@ layout: default
 
 {% for cat in site.all-category-list %}
 ### {{ cat | capitalize }}
-<ul>
-{% for page in site.pages %}
-{% for pc in page.categories %}
-{% if pc == cat %}
-<li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
-{% endif %}   <!-- cat-match-p -->
-{% endfor %}  <!-- page-category -->
-{% endfor %} <!-- page -->
-</ul>
+{% include pageList.html cat=cat unpublished=true %}
 {% endfor %}  <!-- cat -->
 
 Inbox
 -----
 
+
+* Bitwiser II: ignored v redundant via MC.
+* Ref from Bitwiser: Good practice and Quirks Mode
 * Planning - top down worse than stakeholder engagement. CI versus an initio. Separate choices - strategy versus implementation. 
 * Significant properties - content properties not relevant. Dependency analysis and critical characterisation role. For content, in future, eye of stakeholder means users should be able to express format preference.
 * Format analysis - cf versions don't matter, features do.

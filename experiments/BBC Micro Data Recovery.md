@@ -2,10 +2,11 @@
 title:  BBC Micro Data Recovery
 layout: default
 categories: [experiments]
+tags: [complete]
 publish: true
 ---
 
-In 2007, we were given a set of fifteen 5¼' floppy disks from a BBC Master, and asked if we could recover the data and make it usable. We were told that the disks were expected to contain a catalogue of local historical materia, collected as part of an oral history project involving schools in and around Melbourne (Australia). That project started in 1982, building up to the creation of a larger, combined database compiled in 1985-87, and built using Acornsoft ViewStore (you can find a scan of the manuals for ViewStore [in this list][3])
+In 2007, we were given a set of fifteen 5¼' floppy disks from a BBC Master, and asked if we could recover the data and make it usable. We were told that the disks were expected to contain a catalogue of local historical material, collected as part of an oral history project involving schools in and around Melbourne (Australia). That project started in 1982, building up to the creation of a larger, combined database compiled in 1985-87, and built using Acornsoft ViewStore (you can find a scan of the manuals for ViewStore [in this list][3])
 
 Eventually, in 2009, we had the time and the opportunity to spend time working how to access this data, and this document covers what we learned as we did so.
 
@@ -31,7 +32,7 @@ Clearly, we wanted to minimise how hard we worked the disks we'd been given, and
 
 Eventually, after a lot of internet searches and reading around, we discovered a BBC BASIC program called [BACKUP][4] has already been written for this purpose. In fact, a appeared that version was supplied on the CF disk supplied with the IDE kit, and it was an even more recent version (1.23) that the latest version available on the web (1.20).
 
-Even them, it wasn't clear how to actually get things working. The BBC Micro was one of the first machine I learned on, and I continued to use it's descendents (the Archimedies, the A3000 and the Risc PC) all the way into my early twenties (in the late 1990's). Many traces of the old DFS and AFDS operating systems can be found in the later machines, and so combining my aging memory with some more judicious Googling I was able to start to start exploring the contents of the disks, and running some of the software. 
+Even them, it wasn't clear how to actually get things working. The BBC Micro was one of the first machine I learned on, and I continued to use it's descendants (the Archimedes, the A3000 and the Risc PC) all the way into my early twenties (in the late 1990's). Many traces of the old DFS and AFDS operating systems can be found in the later machines, and so combining my ageing memory with some more judicious Googling I was able to start to start exploring the contents of the disks, and running some of the software. 
 
 While working out how basic file system commands worked, it also became clear that our BBC Master came equipped with at least to operating system ROMs, i.e. that both DFS and ADFS were present in this machine. After more racking of brains and a lot of trail and error, we could finally run the backup process:
 
@@ -67,9 +68,9 @@ Unfortunately, Windows does not recognise the ADFS disk format and so every time
 
     C:\> CFBACKUP h C:\CF.DAT
 
-...and a binary image of the CompactFlash disk in drive H: has been cloned into the file C:\CF.DAT, and we've managed not to overwrite the contents of any other devices (which can happen if you get the syntax wrong, although moreso for CFRESTORE which we needed to use when transfering files to the BBC).
+...and a binary image of the CompactFlash disk in drive H: has been cloned into the file C:\CF.DAT, and we've managed not to overwrite the contents of any other devices (which can happen if you get the syntax wrong, although more so for CFRESTORE which we needed to use when transferring files to the BBC).
 
-That raw disk image is still little use on it's own, and must be read using [ADFSExplorer][7] (which as of version 2.0.0 was rather buggy - disk image updates don't really work, full extraction and image rebuild was needed to add files to the images - but 2.2.0 is now available so hopefully these issues are resolbed). This last layer allowed us to pull the floppy disk image files out of the ADFS file system and onto the native Windows NTFS.
+That raw disk image is still little use on it's own, and must be read using [ADFSExplorer][7] (which as of version 2.0.0 was rather buggy - disk image updates don't really work, full extraction and image rebuild was needed to add files to the images - but 2.2.0 is now available so hopefully these issues are resolved). This last layer allowed us to pull the floppy disk image files out of the ADFS file system and onto the native Windows NTFS.
 
 Finally, we had the disk image on the PC, and we could hook it up to a suitable emulator (like [BeebEm][8] or [B-EM][9]) and explore the contents.
 
@@ -79,7 +80,7 @@ Emulation
 
 But it didn't work. Basic disk operations seemed to work, and the file listings looked okay, but when booting the disks, the system kept failing mysteriously. Did something go wrong along the long chain of migration? Or was the condition of the disk itself the problem? 
 
-Fortunately, we had [a few other disks][18] we were willing to use for experimentation, including an offical [Elite][19] floppy disk (which, as it's so well known, can act as 'ground truth' against which our experiences could be benchmarked). Elite appeared to run perfectly on the BBC itself, but the cloned disk image failed consistently. Our 'ground truth' image had ruled out floppy disk failure, but we had no idea which of the other parts of the long chain to access had failed.
+Fortunately, we had [a few other disks][18] we were willing to use for experimentation, including an official [Elite][19] floppy disk (which, as it's so well known, can act as 'ground truth' against which our experiences could be benchmarked). Elite appeared to run perfectly on the BBC itself, but the cloned disk image failed consistently. Our 'ground truth' image had ruled out floppy disk failure, but we had no idea which of the other parts of the long chain to access had failed.
 
 {% include figure.html src="images/bbc-master/beebem3-elite-fail.png" alt="Screenshot: Elite failure." %}
 
@@ -109,7 +110,7 @@ Indeed, since this project was carried out, much superior approaches have become
 
 {% include figure.html src="images/kryoflux.svg" alt="Kryoflux Workflow" %}
 
-Of course, having the original hardware around can be very helpful, especially when it's not clear that and emulation is behaving correctly, but PC-based disk imaging means that it's no longer an absolutely necessity. We've not experimented with Kryoflux, but presumably the accompianing software also knowns to interleave the disk images (and if not, let's hope Google leads people here).
+Of course, having the original hardware around can be very helpful, especially when it's not clear that and emulation is behaving correctly, but PC-based disk imaging means that it's no longer an absolutely necessity. We've not experimented with Kryoflux, but presumably the accompanying software also knowns to interleave the disk images (and if not, let's hope Google leads people here).
 
 [1]: http://acorn.chriswhy.co.uk/Computers/Master128.html
 [2]: http://www.retroclinic.com/acorn/kitide1mhz/kitide1mhz.htm

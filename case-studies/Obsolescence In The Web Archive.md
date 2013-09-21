@@ -2,6 +2,7 @@
 title: Obsolescence in the Web Archive
 layout: default
 categories: [case-studies]
+tags: [outline]
 ---
 
 Looking for known 'difficult' formats, and breaking it down.

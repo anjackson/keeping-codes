@@ -2,6 +2,7 @@
 title: The Registry We Need
 layout: default
 categories: [practice]
+tags: [stub]
 ---
 
 What Do We Need

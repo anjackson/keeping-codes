@@ -2,6 +2,7 @@
 title:  Never Alone
 layout: default
 categories: [fundamentals]
+tags: [stub]
 ---
 
 Synopsis: On how the identified 'digital preservation community' is not alone, and indeed that concerns about longevity of information are held very widely, and have shaped what we have now.

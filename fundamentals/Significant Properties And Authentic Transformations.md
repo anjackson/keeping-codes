@@ -2,6 +2,7 @@
 title:  Significant Properties And Authentic Transformations
 layout: default
 categories: [fundamentals]
+tags: [outline]
 ---
 
 ### 1. Introduction

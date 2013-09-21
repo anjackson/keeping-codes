@@ -2,6 +2,7 @@
 title: What's So Special About Digital Preservation?
 layout: default
 categories: [fundamentals]
+tags: [stub]
 ---
 
 It's not the digital that's the problem

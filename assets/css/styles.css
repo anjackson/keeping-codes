@@ -48,6 +48,18 @@ body { padding-bottom: 70px; }
     float: right;
 }
 
+.badge-complete {
+  background-color: #5cb85c;
+}
+
+.badge-draft {
+  background-color: #f0ad4e;
+}
+
+.badge-outline {
+  background-color: #428bca;
+}
+
 #footer-navbar {
   margin: 0;
 }

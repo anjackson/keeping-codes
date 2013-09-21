@@ -2,6 +2,7 @@
 title: Characterising Access
 layout: default
 categories: [practice]
+tags: [stub]
 ---
 
 There is dependency analysis: Strender etc.
