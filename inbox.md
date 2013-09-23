@@ -4,7 +4,8 @@ layout: default
 ---
 
 {% for cat in site.all-category-list %}
-### {{ cat | capitalize }}
+{{ cat | capitalize }}
+----------------------
 {% include pageList.html cat=cat unpublished=true %}
 {% endfor %}  <!-- cat -->
 
