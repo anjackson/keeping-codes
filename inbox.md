@@ -12,8 +12,7 @@ layout: default
 Inbox
 -----
 
-* Ben, XFRSTN, AQuA, SPRUCE, etc.
-
+* Using web archvies to preserve your project.
 * Bitwiser II: ignored v redundant via MC.
 * Ref from Bitwiser: Good practice and Quirks Mode
 * Planning - top down worse than stakeholder engagement. CI versus an initio. Separate choices - strategy versus implementation. 
