@@ -48,6 +48,10 @@ body { padding-bottom: 70px; }
     float: right;
 }
 
+.badge-final {
+  background-color: black;
+}
+
 .badge-complete {
   background-color: #5cb85c;
 }

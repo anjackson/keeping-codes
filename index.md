@@ -8,7 +8,7 @@ Introduction
 
 This is a collection of notes on digital preservation, defined the broadest sense: anything that enables or ensures re-use of digital resources. The aim is to collect my unpublished notes from various digital preservation projects and get them online, even though they may be rough drafts, and then develop them in the open. The hope is that anyone who is interested in this kind of work can find it earlier and more easily.
 
-However, this also means the site will be something of a mish-mash of content at varying stages of completion. Hopefully, any confusion can be minimized by tagging the content appropriately (e.g. 'stub', 'outline', 'draft', 'complete'). If all goes well, later on, it should be possible to start tying individual entries into longer, more coherent threads.
+However, this also means the site will be something of a mish-mash of content at varying stages of completion. Hopefully, any confusion can be minimized by tagging the content appropriately (e.g. <span class="badge badge-stub">stub</span>, <span class="badge badge-outline">outline</span>, <span class="badge badge-draft">draft</span>, <span class="badge badge-complete">complete</span>). If all goes well, later on, it should be possible to start tying individual entries into longer, more coherent threads. Having said that, I doubt anything here will ever be tagged as <span class="badge badge-final">final</span>.
 
 If you have any questions or comments, you are more than welcome to contact me via [this form][1], or use [the appropriate GitHub issue tracker][2].
 

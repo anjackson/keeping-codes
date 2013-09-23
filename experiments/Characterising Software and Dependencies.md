@@ -1,8 +1,9 @@
 ---
-title: Characterising Access
+title: Characterising Software & Dependencies
 layout: default
-categories: [practice]
+categories: [experiments]
 tags: [stub]
+published: true
 ---
 
 There is dependency analysis: Strender etc.

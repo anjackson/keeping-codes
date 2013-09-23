@@ -1,8 +1,9 @@
 ---
 title: More Data, Better Tools
 layout: default
-categories: [practice]
+categories: [experiments]
 tags: [stub]
+published: true
 ---
 
 We use Web Archive data to drive tool development.

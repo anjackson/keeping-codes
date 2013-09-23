@@ -1,9 +1,9 @@
 ---
 title: Developing a Robust Migration Workflow for Preserving and Curating Hand-held Media
 layout: default
-categories: [case-studies]
+categories: [practice]
 tags: [draft]
-publish: false
+publish: true
 ---
 
 The full story of this piece of work can be found here: 
