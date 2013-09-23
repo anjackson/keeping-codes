@@ -9,18 +9,14 @@ publish: true
 We use Web Archive data to drive tool development.
 
 
+n.b. the 'long tail' of file extensions in the JISC data set is a foul and hideous mess.
+http://192.168.1.151:8984/solr/#/jisc/schema-browser?field=content_type_ext
+Need to strip %xx from extensions, e.g. .php%3ffrom=1170
+Seems #fragments are not being caught/stripped?
+Also '@', '=', '$' among the 'unlikely to be valid extension characters' posse
 
-N.B. JISC: generator: 1,515,845
-1,730,222
-2,519,052
-1,389,879
-Now up to (on one core) 2,519,198
-ACTUALLY 12,749,373
-
-4,894,079 -> 318,824,400
-
-http://192.168.45.10:8983/solr/aadda-discovery
-http://192.168.1.152:8983/solr/jisc
+In the 'null' set:
+http://192.168.1.151:8984/solr/#/jisc/query?q=content_type_ext:%22.wps%22
 
 
 Mining for Signatures

@@ -49,6 +49,14 @@ This is just like authors and authority files. The purpose of which is not to st
 
 Who is actually doing digital preservation? And who of those is actually using or generating RepInfo as part of their job?
 
+Software
+--------
+
+#JHOVE "approaching the end of its life": sourceforge.net/p/jhove/bugs/5… Makes me wonder about long-term implications for its user community?
+https://twitter.com/bitsgalore/status/382085810796781568
+
+OpenWayback
+
 Extended MIME Types
 -------------------
 
