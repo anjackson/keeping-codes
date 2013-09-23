@@ -3,7 +3,7 @@ title: Characterising Software & Dependencies
 layout: default
 categories: [experiments]
 tags: [stub]
-published: true
+publish: true
 ---
 
 There is dependency analysis: Strender etc.

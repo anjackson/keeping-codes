@@ -6,9 +6,12 @@ tags: [draft]
 publish: true
 ---
 
-The full story of this piece of work can be found here: 
+The full story of this piece of work, which was originally presented by the primary author at iPres 2010, can be found here: [Developing a Robust Migration Workflow for Preserving and Curating Hand-held Media](http://arxiv.org/abs/1309.4932).
 
-Here, I summarise the work and extract some of the technical information so that it can be found more easily.
+To complement that original publication, I thought it would be a good idea to pull out some of the technical reference parts of the paper and make them easier to find. Currently, this is just a direct copy of the more technical section of that paper, but I'll hone it down over time.
+
+
+----
 
 
 Migration Strategy

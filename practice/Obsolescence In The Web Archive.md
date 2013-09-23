@@ -1,9 +1,9 @@
 ---
 title: Obsolescence in the Web Archive
 layout: default
-categories: [case-studies]
-tags: [outline]
-published: true
+categories: [practice]
+tags: [stub]
+publish: true
 ---
 
 Looking for known 'difficult' formats, and breaking it down.

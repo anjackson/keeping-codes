@@ -1,9 +1,9 @@
 ---
-title: More Data, Better Tools
+title: Using Web Archives To Improve Preservation Tools
 layout: default
 categories: [experiments]
 tags: [stub]
-published: true
+publish: true
 ---
 
 We use Web Archive data to drive tool development.
