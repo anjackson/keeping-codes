@@ -1,5 +1,6 @@
 <ul>
-{% for page in site.pages | sort:"name" %}
+{% assign sorted_pages = ( site.pages | sort:"name" ) %}
+{% for page in sorted_pages %}
 {% for pc in page.categories %}
 {% if pc == include.cat %}
 {% if include.unpublished == true or page.publish == true %}
