@@ -9,6 +9,11 @@ layout: default
 {% include pageList.html cat=cat unpublished=true %}
 {% endfor %}  <!-- cat -->
 
+Outline
+-------
+
+* 
+
 Inbox
 -----
 
@@ -22,10 +27,6 @@ Inbox
 * Fundamentals
     * Simplification pressure? e.g. Markdown or even Wikipedia? REST over SOAP. HTML over PDF? Others?
 
-
-* Hard disk quality risks - Losing half the array - CDROM of health data
-* c.f. Advice for public sector TNA?
-
 ### Sources
 
 * Pull in requirements and issues, AIT stuff.
@@ -34,16 +35,6 @@ Inbox
 * http://sourceforge.net/p/xcltools/code/HEAD/tree/
 * http://wiki.opf-labs.org/display/SP/Capturing+Properties
 * https://intranet.bl.uk:8443/confluence/display/DT/Representation+Information+Capture+Project
-
-
-Obsolescence
-------------
-Given that is has proven possible to access the data, some might argue that the floppy disks and the data on them are not obsolete. I would say that this long, brittle chains of migration and extensive guesswork are exactly what obsolescence looks like. 
-
-Even though a more efficient way to access the disks themselves is now available, the problem shifts understanding how to use the disks and the software, and how to access the data within.
-
-It is the slow death of a thousand ambiguities, rather than an sudden, jarring expiration. Obsolescence is approached, rather than attained, with the costs of access rising every step of the way.
-
 
 
 Data Mining Methodology
