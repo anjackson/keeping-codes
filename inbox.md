@@ -3,16 +3,18 @@ title:  Inbox & Ideas
 layout: default
 ---
 
+All Pages
+---------
 {% for cat in site.all-category-list %}
-{{ cat | capitalize }}
-----------------------
+### {{ cat | capitalize }}
 {% include pageList.html cat=cat unpublished=true %}
 {% endfor %}  <!-- cat -->
 
-Outline
--------
+Outlines
+--------
 
-* [[Communicating With The Future]]
+* [Communicating With The Future](fundamentals/Communicating With The Future.html)
+* ...
 
 Inbox
 -----
