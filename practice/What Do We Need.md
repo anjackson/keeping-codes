@@ -49,6 +49,13 @@ This is just like authors and authority files. The purpose of which is not to st
 
 Who is actually doing digital preservation? And who of those is actually using or generating RepInfo as part of their job?
 
+---
+ 
+http://unsustainableideas.wordpress.com/2012/07/03/solve-file-format-problem/#respond
+There is an issue about scope, and relation to other data stores, but I think you've jumped ahead too quickly. The problem is clearly stated: Make is possible to get the data out and re-use it. The solution will be whatever it takes to do that. Therefore, documentation, software and specification are liable to be in scope, but everything else will be driven by necessity. For me, the main attraction of this approach is that it will concentrate on whatever it takes to make it work, i.e. collect the data then model it flexibly. Not 
+
+---
+
 Software
 --------
 
@@ -63,4 +70,8 @@ Extended MIME Types
 http://wiki.whatwg.org/wiki/Video_type_parameters
 codecs
 e.g. Quicktime VR example file = [ video/quicktime; codecs="cvid, pano" ]
+
+---
+
+Poor mans technology watch
 

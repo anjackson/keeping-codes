@@ -5,6 +5,40 @@ categories: [fundamentals]
 tags: [outline]
 ---
 
+Insignificant properties
+------------------------
+
+- Significant Property Schemes 
+    - Sig prop breakdown
+    - Compression Is Not A Significant Property
+
+Well, this cuts to the heart of the matter that I've had so much trouble trying to express. Well, here goes...
+
+So, the premise is that we shall judge the reproduction of some performance, whether emulated of via migration, by using some formal scheme to capture and compare the 'significant properties' of the two performances. I have three issues with this. Firstly, I'm not sure we should be the people who get to decide what is 'significant'. Secondly, I believe this approach is both extremely difficult (as Euan points out) and unnecessary - i.e, that when we do want to evaluate a reproduction we don't need to create a special new 'preservation language' to make it work. However, I'll leave those for another time, because my third problem goes much deeper.
+
+I'll start to pick this apart using a really simple example - ASCII. To render ASCII, we must implement a process: if the byte value is 0x61, plot a glyph that look like 'a' and move to the next spot. Capturing the contextual information this depends on, the mapping table and the glyphs, is not sufficient to reproduce this. The rendering is fundamentally a process, a projection, a computation, not static information. The process can be written down, but this is just migrating it to another language, and if you use prose will need to be re-implemented in order to interpret and make use of it.  We always end up implementing or porting software - the documentation of the rendering is just helping us get it right.
+
+Unfortunately, in general, the properties of a rendering process cannot be captured by a simple document compose of prose and declarative data. The only unambiguous language one can use to describe any process a performance may contain is a Turing complete language. Any Turing complete language will suffice, but any language less powerful than that (e.g. the kind of simple declarative data structures we often prefer, or something like boolean logic) will not be able to capture everything we may want to preserve. Thus, if preserving general processes means we are required to preserve one or more Turing-complete formal languages, we are preserving software, by definition. 
+
+Having said that, we could choose to preserve only data in formats that a simpler, e.g. regular languages.
+
+
+I believe there are absolutely no cases where this can be truly avoided. You're just flattening to a simpler process (e.g. ASCII) and moving the rest of the interpretation out to the user.
+
+The fundamental problem with a system based on significant property schemes is that, in general, most digital object data does not specify properties in a way that maps cleanly to the performance, and indeed could never do so. In the general case, a performance is fundamentally a process, a sequence of states, and the bitstream you load just starts you off in the right place. When you try to capture the properties of performances, you must be able to cope with the fact that the performance may be generated from the data, rather than being 'merely presenting' the data. The necessity to be able to describe any possible performance means that our 'significant property' language must be powerful enough to explain what the generated performance may be. The only formal languages that are capable of capturing any possible performance are those that are Turing complete, i.e. programming languages. Therefore, the only *general* way to capture the 'significant properties' of any possible format we may come across is as software. In the baldest terms, PDF is only  unambiguously defined by it's reference implementation, Adobe Reader.
+
+
+What we can choose to do, however, is to select some common formats that we believe will act as sufficient substitutes and invest more in supporting those. For example, if Excel becomes problematic, users may prefer to have plain text CSV of the data rather than nothing at all, or having to manually dig around in an emulator. Practically, this means that where we are sure there is value in it, we will support formats that allow us to get that data to our users directly. But to cover the general cases, where we are not yet sure of the value, the best we can do is preserve the software associated with the data, so that some future user can dig out the value. Ideally, if we capture the source code and associated documentation around that software, we increase the chances of this working. 
+
+ 
+Firstly, I have an issue around who defines what the 'essence' is. I'm not convinced it should be us. As the purpose of a format is to persist a performance, the only safe assumption is that all of those properties are significant. Anything else is predijucing the future, which is fine, as long as your use case is clear, but if we have the chance I would like to put that choice in the hands of our readers and users as soon as possible. But that just a problem with the 'significant' part. I also have issues with the 'properties' part.
+
+One part of the problem with properties is that, when it can work, it has tended to lead to a kind of catch 22. We want to used significant properties to evaluate a migration from one format to another, and this has been taken to mean that we must define some kind of significant property scheme that can be used to capture some or all of the properties of both formats. However, as I argued above, each such property scheme is nothing more than yet another format. i.e. we are judging a migration from format A to format B, but expressing the transformation in terms of a special 'preservation format C'. In some cases, this can be made to work. The problem, however, is the amount of work it involves. It means having one 'super-set' format that is capable of expressing all the potentially 'significant' properties of all the formats you might want to migrate between. This is an immense amount of work, and a keeping such a system up to date would be a huge burden on the preservation community.  Worst of all, even when this approach can me made to work, it is not necessary to create a special preservation 'super format' to do it - there are other ways to judge a migration. I'll leave describing them to some future post, because even that is not the real problem.
+
+Catch 22
+
+---
+
 ### 1. Introduction
 
 Abstract problem. Equiv to normalisation to preservation format. If
@@ -77,7 +111,7 @@ et al
 
 Author and/or User testing is key to managing lossy QA.
 
-#### 1.1 Digital Object Properties {.subsectionHead}
+#### 1.1 Digital Object Properties
 
 http://www.webarchive.org.uk/wayback/archive/20050410120000/http://www.leeds.ac.uk/cedars/guideto/dpstrategies/dpstrategies.html
 
@@ -151,7 +185,7 @@ NOTE that Archivematica’s Sig Char are actually encoding properties, as
 they would be the same for large numbers of items - they do not capture
 the ’uniqueness’ of the performance that a given file promises.
 
-#### 1.2 Evaluation via Comparing Properties {.subsectionHead}
+#### 1.2 Evaluation via Comparing Properties
 
 This notion of intellectual properties also implies a particular mode of
 investigation. The Testbed design has assumed that we wish to take some
@@ -220,7 +254,7 @@ stored in a digital object of that ‘type’. A particular digital object
 holds values for the information properties, and thus defines a
 particular performance.
 
-#### 2.1 Characterising Performances {.subsectionHead}
+#### 2.1 Characterising Performances
 
 During a performance, we can attempt to capture aspects of the
 experience by measuring properties derived from the rendered form,
@@ -258,7 +292,7 @@ Parse, ...)
 
 1.  (Persist: Encode, Store.)
 
-#### 2.2 The Trancendence Fallacy {.subsectionHead}
+#### 2.2 The Trancendence Fallacy
 
 We have posed ourselves the problem of defining a set of performance
 properties that can fully describes the intellectual content of the
@@ -347,7 +381,7 @@ reference.
 Automated language analysis, e.g. Ugaritic, and what is required to make
 this work.
 
-#### 2.3 The Nature Of Characterisation {.subsectionHead}
+#### 2.3 The Nature Of Characterisation
 
 This idea is central to understanding how XCL and other characterisation
 tools work. When we extract the values of properties, we are actually
@@ -407,7 +441,7 @@ mode.
 Beyond that, how can we proceed? Most appropriate approach depends on
 circumstances.
 
-#### 3.1 Define ’Essential’ Formats {.subsectionHead}
+#### 3.1 Define ’Essential’ Formats
 
 We can keep the notion, and work hard to define the essence, describe a
 performace, but this is equivalent to choosing or creating a format.
@@ -476,7 +510,7 @@ Why is the parse required. Explore why memory dumps are unreliable.
 Serialisation helps isolate from artifacts (ie format is the sig props
 of performance, again)
 
-#### 3.2 Focus On Information Content {.subsectionHead}
+#### 3.2 Focus On Information Content
 
 We can discard the notion of ‘intellectual properties’ as concrete,
 measurable entities, and instead treat them as conceptual ‘tags’ that
@@ -501,7 +535,7 @@ the sum of the two formats.
 Any more than a painting can be separated from its medium... well, less
 so, but still.
 
-##### 3.2.1 Evaluating Migration Pathways {.subsubsectionHead}
+##### 3.2.1 Evaluating Migration Pathways
 
 Therefore, Logical Information Superset is the migration that makes
 sense. Migration across forms of representation is the tricky
@@ -522,7 +556,7 @@ MIME types). Useful.
 Verified Authentic Migrations tools seen to deal with the potential
 authentic pathways.
 
-#### 3.3 Focus On Critial Properties {.subsectionHead}
+#### 3.3 Focus On Critial Properties
 
 We can limit scope, and specify a subset of preformance that are of
 particular interest, and manage translation between representations.
@@ -542,7 +576,7 @@ We would also like the language of these properties to be reasonably
 formal and consistent, so that the algorithmically predicted properties
 can be held alongside manually measured values.
 
-##### 3.3.1 Evaluating Performances {.subsubsectionHead}
+##### 3.3.1 Evaluating Performances
 
 Useful subset of properties that are common/translatable.
 
@@ -594,7 +628,7 @@ What about comparing objects in the same ColourSpace? this is a middle
 road, constructing a proxy for the performance and comparing the objects
 in that artificial setting.
 
-##### 3.3.2 Subjectivity Versus Objectivity {.subsubsectionHead}
+##### 3.3.2 Subjectivity Versus Objectivity
 
 Properties of comparison are different, but can sometimes be constructed
 from properties of instances.
@@ -663,7 +697,7 @@ with the automatic work.
 Subjective questions are a very bad idea. Subjective answers are just
 fine.
 
-##### 3.3.3 Managing Ambiguity {.subsubsectionHead}
+##### 3.3.3 Managing Ambiguity
 
 Some ambiguity is okay, but how to capture that? How to join with the
 Information Properties.
@@ -698,7 +732,7 @@ stack.
 properties that belong to the ’image’ property type, not a digital
 object type?
 
-#### 3.4 Promises, Statements & Tests {.subsectionHead}
+#### 3.4 Promises, Statements & Tests
 
 I have a simple question. I have a text. I want to preserve its
 paragraphs. I try migrations to different file formats with different
@@ -764,7 +798,7 @@ A way of capturing dependencies.
 
 ### 4 Quality Assurance Methods
 
-#### 4.1 Acceptance Testing {.subsectionHead}
+#### 4.1 Acceptance Testing
 
 Preservation Planning : ’Transparency must be maintained’, logic like IF
 ’myfile’ has ’alphaChannelInUse’ then output format must
@@ -778,7 +812,7 @@ can be computationally determined, i.e. a statement on the comparison of
 two images. Property ’extractAlphaChannel’ may be comparable, but
 clumsy. Must extract to super-set.
 
-#### 4.2 Corpora {.subsectionHead}
+#### 4.2 Corpora
 
 What, then, do Corpora mean? Have to be careful in the Migration case.
 

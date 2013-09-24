@@ -8,6 +8,7 @@ publish: true
 
 We use Web Archive data to drive tool development.
 
+So, according to our experiments, there are at least two thousand distinct formats in our historical web archive, and at least three thousand if you distinguish between all formats (e.g. HTML) and their specific versions and character sets (e.g. UTF-8). It’s worth pointing out that we don’t really know exactly how precise our identification tools are, and also that a small proportion remains unidentified. Therefore, we don’t yet know exactly how many formats there are. However, the contents of the archives are dominated by HTML, web image formats, PDF, Office documents and so on, and in the ‘tail’ of the distribution, thousands of formats accounts for a very small fraction of the content (not sure exactly, certainly less than 1%). Nevertheless, just because a format is rare, we cannot necessarily assume it is of little value, and I wonder if that is where the real preservation challenge for web archives lies. The ‘big’ formats look after themselves, and require little effort to preserve over moderate timescales. But in the tail of the format distribution, formats are less likely to survive without our intervention, and so we need to be able to work out where to invest our efforts.
 
 n.b. the 'long tail' of file extensions in the JISC data set is a foul and hideous mess.
 http://192.168.1.151:8984/solr/#/jisc/schema-browser?field=content_type_ext
@@ -17,6 +18,9 @@ Also '@', '=', '$' among the 'unlikely to be valid extension characters' posse
 
 In the 'null' set:
 http://192.168.1.151:8984/solr/#/jisc/query?q=content_type_ext:%22.wps%22
+
+As of 15:11 on 24 Sept 2013: 295,991,273
+16:16 295991273
 
 
 Mining for Signatures
