@@ -9,5 +9,10 @@ The field of digital preservation has been described as communication with the f
 
 Already a theory of communication, which underlies many of the technologies our current digital preservation mechanisms depend on.
 
+Set the scene, describe source coding theorem, and describe our 'channels'. Refer to Zeroth Law page.
+
+Threats, Threat models not defined, see Making Plans.
+
+Trust models omitted - trust is social. see also http://en.wikipedia.org/wiki/Source_criticism
 
 

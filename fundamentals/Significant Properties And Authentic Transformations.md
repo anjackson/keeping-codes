@@ -5,6 +5,12 @@ categories: [fundamentals]
 tags: [outline]
 ---
 
+* Significant properties - content properties not relevant. Dependency analysis and critical characterisation role. For content, in future, eye of stakeholder means users should be able to express format preference.
+
+No date, Prismatic Error
+http://www.dailymail.co.uk/news/article-107412/The-Queen-Mother-dies.html
+
+
 Insignificant properties
 ------------------------
 

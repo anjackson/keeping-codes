@@ -12,40 +12,29 @@ layout: default
 Inbox
 -----
 
-- Broadcast to narrowcast - no longer a property of the medium.
-* Using web archvies to preserve your project.
-* Bitwiser II: ignored v redundant via MC.
-* Ref from Bitwiser: Good practice and Quirks Mode
+* Practice
+    * Using web archvies to preserve your project.
+    * Ref from Bitwiser: Good practice and Quirks Mode
+    * Lessons Learned from the Planets Testbed
+    * OAIS is clumsy, arbitrary boundary, not user centered.
+* Experiments
+    * Bitwiser II: ignored v redundant via MC.
+* Fundamentals
+    * Simplification pressure? e.g. Markdown or even Wikipedia? REST over SOAP. HTML over PDF? Others?
 
-* Planning - top down worse than stakeholder engagement. CI versus an initio. Separate choices - strategy versus implementation. 
-- Preservation Planning - Baysian versus frequentist... First principles/ab initio or Empirical modelling.
-- Simplification pressure? e.g. Markdown or even Wikipedia? REST over SOAP. HTML over PDF? Others?
-* Significant properties - content properties not relevant. Dependency analysis and critical characterisation role. For content, in future, eye of stakeholder means users should be able to express format preference.
-* Format analysis - cf versions don't matter, features do.
-* Modelling - oais is clumsy, arbitrary boundary, not user centered
-* RI - best stuff done outside of the iPres community. Largely due to lack of resources, rather than goodwill or skills.
-* Trust models omitted - trust is social.
-* Trust http://en.wikipedia.org/wiki/Source_criticism
-* Threat models uncertain?
+
+* Hard disk quality risks - Losing half the array - CDROM of health data
+* c.f. Advice for public sector TNA?
+
+### Sources
+
 * Pull in requirements and issues, AIT stuff.
 * Pull in Monitrix, BDT, IMAQA, WAT Mining.
-
-Hard disk quality risks
-Losing half the array 
-CDROM of health data
-Advice for public sector TNA?
-
-Papers Testbed future 
-
-Sources
 * http://anjackson.net/book/export/html/1836
 * http://sourceforge.net/p/xcltools/code/HEAD/tree/
 * http://wiki.opf-labs.org/display/SP/Capturing+Properties
 * https://intranet.bl.uk:8443/confluence/display/DT/Representation+Information+Capture+Project
 
-
-No date, Prismatic Error
-http://www.dailymail.co.uk/news/article-107412/The-Queen-Mother-dies.html
 
 Obsolescence
 ------------
