@@ -1,5 +1,5 @@
 ---
-title:  Inbox & Ideas
+title:  Inbox
 layout: default
 ---
 
@@ -28,6 +28,7 @@ Inbox
     * Bitwiser II: ignored v redundant via MC.
 * Fundamentals
     * Simplification pressure? e.g. Markdown or even Wikipedia? REST over SOAP. HTML over PDF? Others?
+
 
 ### Sources
 
