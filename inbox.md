@@ -12,7 +12,7 @@ layout: default
 Outline
 -------
 
-* 
+* [[Communicating With The Future]]
 
 Inbox
 -----
