@@ -9,7 +9,10 @@ The field of digital preservation has been described as communication with the f
 
 Already a theory of communication, which underlies many of the technologies our current digital preservation mechanisms depend on.
 
-Set the scene, describe source coding theorem, and describe our 'channels'. Refer to Zeroth Law page.
+Link to [the Zeroth Law of Digital Preservation](The Zeroth Law of Digital Preservation.html).
+
+
+TO MOVE:
 
 Threats, Threat models not defined, see Making Plans.
 

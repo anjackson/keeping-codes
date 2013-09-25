@@ -22,6 +22,8 @@ http://192.168.1.151:8984/solr/#/jisc/query?q=content_type_ext:%22.wps%22
 As of 15:11 on 24 Sept 2013: 295,991,273
 16:16 295991273
 
+Also c.f. [Testing Software Tools of Potential Interest for Digital Preservation Activities at the National Library of Australia](http://www.openplanetsfoundation.org/system/files/Digital%20Preservation%20Project%20Report%20-%20Testing%20Software%20Tools.pdf)
+
 
 Mining for Signatures
 ---------------------

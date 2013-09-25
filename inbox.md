@@ -27,6 +27,7 @@ Inbox
 * Experiments
     * Bitwiser II: ignored v redundant via MC.
 * Fundamentals
+    * The Perfect Digital Preservation Experiment
     * Simplification pressure? e.g. Markdown or even Wikipedia? REST over SOAP. HTML over PDF? Others?
 
 
