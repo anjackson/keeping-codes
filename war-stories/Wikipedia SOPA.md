@@ -1,6 +1,6 @@
 ---
 title: Archiving Wikipedia During the SOPA Blackout
 layout: default
-categories: [case-studies]
+categories: [war stories]
 tags: [stub]
 ---

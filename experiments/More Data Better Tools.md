@@ -81,4 +81,9 @@ Case for the others is less clear, partially due to gaps in the record. Really n
 
 Could also experiment with profiling location of edits to determine if changes are at top or bottom of the page.
 
- 
+Future work
+-----------
+
+Do this with NIST
+
+http://www.nsrl.nist.gov/nsrl-faqs.html#faq19

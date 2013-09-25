@@ -64,8 +64,11 @@ https://twitter.com/bitsgalore/status/382085810796781568
 
 OpenWayback
 
-Extended MIME Types
--------------------
+Talking About Formats
+---------------------
+Note problem of limited PRONOM format language expressivity. .format.is versus expressions via mime type eg charset, encoding, codecs, versions
+
+### Extended MIME Types
 
 http://wiki.whatwg.org/wiki/Video_type_parameters
 codecs

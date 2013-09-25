@@ -1,7 +1,7 @@
 ---
 title: Characterising PDFs
 layout: default
-categories: [case-studies]
+categories: [war stories]
 tags: [stub]
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: What to Preserve - The Migration Line
+title: What to Preserve?
 layout: default
 categories: [fundamentals]
 tags: [stub]
@@ -81,6 +81,8 @@ A particular performance, the possible performances, the performances precisely.
 
 Far end is full author environment stuff?
 
+http://first-website.web.cern.ch/objectives/document-and-share-line-mode-browser-experience
+
 
 How to Decide?
 --------------
@@ -106,7 +108,5 @@ Given that is has proven possible to access the data, some might argue that the 
 Even though a more efficient way to access the disks themselves is now available, the problem shifts understanding how to use the disks and the software, and how to access the data within.
 
 It is the slow death of a thousand ambiguities, rather than an sudden, jarring expiration. Obsolescence is approached, rather than attained, with the costs of access rising every step of the way.
-
-
 
 LINK TO [Making planas](Making Plans.html)

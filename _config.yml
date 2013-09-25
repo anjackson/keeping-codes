@@ -1,4 +1,4 @@
 markdown: rdiscount
 baseurl: /keeping-codes
-all-category-list: [fundamentals,practice,experiments,war stories,case-studies]
+all-category-list: [fundamentals,practice,experiments,war stories]
 category-list: [practice,experiments]
