@@ -80,3 +80,33 @@ Spectrum, web archiving somewhere in the middle. Partial functionality, partiall
 A particular performance, the possible performances, the performances precisely.
 
 Far end is full author environment stuff?
+
+
+How to Decide?
+--------------
+
+Lots of choices, but before leaping to conclusions, we need to consider who will decide.
+
+LINK TO [A perfect digital preservation experiment](A Perfect Digital Preservation Experiment.html)
+
+Which should reveal the critical role of users etc.
+
+LINK TO [Credible Threats](Credible Threats.html)
+
+We can imagine many risks, but following Rosenthal, we use the concept of 'threats' to underling the importance of knowing the likelyhood. Risks formally defined as likely hood combined with severity of outcome, but language helps avoid confusion over common usage.
+
+* Format analysis - cf versions don't matter, features do.
+* Hard disk quality risks - Losing half the array - CDROM of health data
+* c.f. Advice for public sector TNA?
+
+### Obsolescence
+
+Given that is has proven possible to access the data, some might argue that the floppy disks and the data on them are not obsolete. I would say that this long, brittle chains of migration and extensive guesswork are exactly what obsolescence looks like. 
+
+Even though a more efficient way to access the disks themselves is now available, the problem shifts understanding how to use the disks and the software, and how to access the data within.
+
+It is the slow death of a thousand ambiguities, rather than an sudden, jarring expiration. Obsolescence is approached, rather than attained, with the costs of access rising every step of the way.
+
+
+
+LINK TO [Making planas](Making Plans.html)

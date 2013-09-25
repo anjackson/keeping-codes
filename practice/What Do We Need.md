@@ -75,3 +75,4 @@ e.g. Quicktime VR example file = [ video/quicktime; codecs="cvid, pano" ]
 
 Poor mans technology watch
 
+* RI - best stuff done outside of the iPres community. Largely due to lack of resources, rather than goodwill or skills.

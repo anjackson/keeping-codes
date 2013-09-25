@@ -30,6 +30,21 @@ Inbox
     * The Perfect Digital Preservation Experiment
     * Simplification pressure? e.g. Markdown or even Wikipedia? REST over SOAP. HTML over PDF? Others?
 
+- Format Herd Immunity
+    - Format obsolescence as disease 
+    - We are the immune system 
+- Data And Metadata, interpretation difference.
+- eBook wars, like early years of DRM music etc.
+- files versus filesystems. Latter obsolete first, former at risk due to persistent ram plus walled gardens.
+-  Is ISO Enough? Open standards etc.
+- http://www.endangeredlanguages.com/lang/3049
+* Characterising Codes
+* Significant properties - content properties not the priority.
+   * Dependency analysis and critical characterisation role
+   * For content, in future, eye of stakeholder means users should be able to express format preference.
+
+
+
 
 ### Sources
 
