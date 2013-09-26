@@ -23,6 +23,9 @@ Then point out that that the other part of the theoretical underpinnings is that
 
 So, the critical thing is the Turing machine, and practically, this means software is at the heart of it. 
 
+Expression, manifestation, inflation, reification, actualisation, act.
+No word in any glossary for this, the run-time representation of the digital object.
+
 ---
 LINK TO von Neumann Machines
 ----
