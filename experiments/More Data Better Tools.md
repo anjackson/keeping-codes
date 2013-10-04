@@ -33,6 +33,7 @@ Mining for Signatures
 ---------------------
 Starting with unidentified formats: http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type%3A%22application/octet-stream%22, we can script a series of queries for different extensions that attempt to build plausible signatures for each, based on the FFB. 
 
+http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type%3A%22application/octet-stream%22
 application/octet-stream: 146,541
 null: 351,779 almost all OLE2 with a few ZIP.
 
@@ -48,8 +49,37 @@ Starting at 'application/octet-stream' the most common unknown extension was .s5
 * [s5 Header Format](http://software.frodo.looijaard.name/psiconv/formats/Header_Section.html#Header Section)
 
 
+
+An old 3D format.
+http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type_ext%3A%22.mus%22&f[1]=content_ffb%3A%2252454d20%22
+
+
+### Binary Shingling
+
+Along the same lines, experimenting with shingling the hex-encoded first few (32) bytes. We space separate and hex-encode the first 32 bytes of every resource. We pass that to Solr, which treats each hex-encoded byte as a single token. Solr then 'shingles' the tokens, from four to eight overlapping character sequences corresponding to all combinations of byte sequence between four and eight bytes long within the 32 bytes.
+
+The total header size of 32 bytes, and the minimum and maximum shingle lengths of four and eight bytes, have been chosen in an attempt to reduce weak potential signatures (e.g. short byte sequences that might match too often by chance) with the significant storate requirement that arises due to indexing all possible shingles. For smaller collections, it would be possible to extend this technique to much longer shingles throughout whole length of the file.
+
+Initial results from small corpus.
+- Long sequences of asterisks notable indicative of .js!
+- HTML/PDF signatures bear strong relation to manual ones, but generally spot more possible 'signals'.
+- Not terribly useful as a Facet, due to presenting all shorter matching facets even when longer facets (that encapsulate the smaller ones) exist. May be possible to do some fancy facet filtering to make this more powerful.
+- Certainly, the field results could be mined and if the offset is know, shingles concatenated into longer ones as appropriate.
+
+### Indexing/Similarity Note:
+
+We are interested in identifying the work, not making a substitutable work available. Crypto hashes are one way of doing this, but less precise hashing methods and signals can be combined to be just as specific, while also telling us something about the content, but while never giving the content away. Encrypted in plain sight.
+
+
+### Keyword spotting
+
+Pull keywords out of source code formats? Just using the full-text index PLUS extensions.
+FUTURE consider token frequencies including punctuation.
+
 Parse Error Analysis
 ====================
+
+http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type%3A%22null%22
 
 http://192.168.1.206:8990/solr/#/jisc/schema-browser?field=parse_error
 

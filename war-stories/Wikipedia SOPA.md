@@ -8,3 +8,4 @@ tags: [stub]
 The SOPA homepage problem boils down to the browser refusing to allow a cross-domain XHR.
 
 But the full story is, well, icky.
+
