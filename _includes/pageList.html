@@ -1,14 +1,8 @@
-iTESTi
 <ul>
-iTESTib
 {% for page in site.pages | sort:"title" %}
-iTESTid
 {% for pc in page.categories %}
-iTESTie
 {% if pc == include.cat %}
-iTESTif
 {% if include.unpublished == true or page.publish == true %}
-iTESTig
 <li>
     <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
     {% for tag in page.tags %}
