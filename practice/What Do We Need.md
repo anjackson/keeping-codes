@@ -16,15 +16,15 @@ and other stories
 
 And do consider what we truly need from our registries. What is achievable? What is helpful?
 
---
+
 Now, go through and read it one more time, and think about how such a registry could actually have helped. What would it need to include?
---
+
 Could it really replace the expertise of those five (or so) people? Or should its purpose be to capture and link what they have achieved?
---
+
 Is the answer really in building registries? Or is it better to run more XFR STNs and help document and preserve what they do?
---
+
 http://www.openplanetsfoundation.org/blogs/2013-09-13-registries-we-need
---
+
 
 Could some research project, with some model knocked up to cover a vast problem space by some young researcher with very little experience actually doing digital preservation, ever, in any way, be expected to be sufficient expressive to cover this stuff?
 
@@ -60,8 +60,8 @@ There is an issue about scope, and relation to other data stores, but I think yo
 Software
 --------
 
-#JHOVE "approaching the end of its life": sourceforge.net/p/jhove/bugs/5… Makes me wonder about long-term implications for its user community?
-https://twitter.com/bitsgalore/status/382085810796781568
+> JHOVE "approaching the end of its life": sourceforge.net/p/jhove/bugs/5… Makes me wonder about long-term implications for its user community?
+> https://twitter.com/bitsgalore/status/382085810796781568
 
 OpenWayback
 
