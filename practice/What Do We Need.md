@@ -79,3 +79,21 @@ e.g. Quicktime VR example file = [ video/quicktime; codecs="cvid, pano" ]
 Poor mans technology watch
 
 * RI - best stuff done outside of the iPres community. Largely due to lack of resources, rather than goodwill or skills.
+
+That Endangerment Survey
+------------------------
+
+Accidentally submitted for form early.
+Didn't understand the language about 'the factor'.
+'Information become inaccessible.'
+Features versus formats.
+Accompanying documentation did not make the 'factor' thing clear.
+
+Formats and business needs thing
+--------------------------------
+
+* DROID need to know broken doc, not ???, similar with pdf and html etc.
+    * https://twitter.com/britpunk80/status/387919425799606272
+
+
+

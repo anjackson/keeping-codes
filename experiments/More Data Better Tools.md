@@ -29,12 +29,23 @@ As of 15:11 on 24 Sept 2013: 295,991,273
 Also c.f. [Testing Software Tools of Potential Interest for Digital Preservation Activities at the National Library of Australia](http://www.openplanetsfoundation.org/system/files/Digital%20Preservation%20Project%20Report%20-%20Testing%20Software%20Tools.pdf)
 
 
+http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type_ext%3A%22.ico%22
+
+http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type_ext%3A%22.sib%22
+http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_ffb%3A%220f534942%22
+http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type_ext%3A%22.mus%22&f[1]=content_ffb%3A%2252454d20%22
+
+
+Language:
+http://www.webarchive.org.uk/aadda-discovery/browse?f[0]=links_public_suffixes%3A%22fr%22&f[1]=content_language%3A%22fr%22
+
 Mining for Signatures
 ---------------------
 Starting with unidentified formats: http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type%3A%22application/octet-stream%22, we can script a series of queries for different extensions that attempt to build plausible signatures for each, based on the FFB. 
 
 http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type%3A%22application/octet-stream%22
 application/octet-stream: 146,541
+http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type%3A%22null%22
 null: 351,779 almost all OLE2 with a few ZIP.
 
 11109 .s5, with P%000010 or L%000010 as FFB
@@ -52,6 +63,36 @@ Starting at 'application/octet-stream' the most common unknown extension was .s5
 
 An old 3D format.
 http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type_ext%3A%22.mus%22&f[1]=content_ffb%3A%2252454d20%22
+
+
+
+Psion s5
+http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type%3A%22application/octet-stream%22&f[1]=content_type_ext%3A%22.s5%22
+
+Psion MC/HC/Series 3 data files.
+ftp://ftp.cs.tu-berlin.de/pub/palmtops/psion/src.doc.ic-mirror/Unsorted/mcfile.txt
+http://www.sat.dundee.ac.uk/~arb/psion/
+
+DBF
+www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type%3A%22application/octet-stream%22&f[1]=content_type_ext%3A%22.dbf%22
+
+dBASE
+http://www.dbase.com/Knowledgebase/INT/db7_file_fmt.htm
+earlier versions
+http://www.clicketyclick.dk/databases/xbase/format/dbf.html#DBF_STRUCT
+http://www.clicketyclick.dk/databases/xbase/format/dbf.html#DBF_STRUCT
+
+IPIX
+http://en.wikipedia.org/wiki/IPIX
+http://www.ipix.com/support/downloads.cfm
+www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type%3A%22application/octet-stream%22&f[1]=content_type_ext%3A%22.ipx%22
+
+AXD
+www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type%3A%22application/octet-stream%22&f[1]=content_type_ext%3A%22.axd%22
+
+NWC
+www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type%3A%22application/octet-stream%22&f[1]=content_type_ext%3A%22.nwc%22
+
 
 
 ### Binary Shingling
