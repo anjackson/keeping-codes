@@ -109,11 +109,16 @@ How to Decide?
 > http://boingboing.net/2009/09/08/how-we-decide-mind-b.html
 
 
+Appraisal, Value, Importance, etc.
+http://www.dancohen.org/2010/05/17/digital-ephemera-and-the-calculus-of-importance/
+
 Lots of choices, but before leaping to conclusions, we need to consider who will decide.
+
 
 LINK TO [A perfect digital preservation experiment](A Perfect Digital Preservation Experiment.html)
 
 Which should reveal the critical role of users etc.
+
 
 LINK TO [Credible Threats](Credible Threats.html)
 
