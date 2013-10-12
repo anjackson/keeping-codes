@@ -1,10 +1,16 @@
 iTESTi
 <ul>
+iTESTib
 {% assign sorted_pages = site.pages | sort:"title" %}
+iTESTic
 {% for page in sorted_pages %}
+iTESTid
 {% for pc in page.categories %}
+iTESTie
 {% if pc == include.cat %}
+iTESTif
 {% if include.unpublished == true or page.publish == true %}
+iTESTig
 <li>
     <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
     {% for tag in page.tags %}
