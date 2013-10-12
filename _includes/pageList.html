@@ -1,9 +1,7 @@
 iTESTi
 <ul>
 iTESTib
-{% assign sorted_pages = site.pages | sort:"title" %}
-iTESTic
-{% for page in sorted_pages %}
+{% for page in site.pages | sort:"title" %}
 iTESTid
 {% for pc in page.categories %}
 iTESTie
