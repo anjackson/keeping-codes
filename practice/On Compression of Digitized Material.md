@@ -5,6 +5,9 @@ categories: [practice]
 tags: [stub]
 ---
 
+Adsorb that thread: https://groups.google.com/d/topic/digital-curation/8KoY5t1Su3A/discussion
+
+
 Tiff/Zip
 
 Additional confusion, due to range of options, e.g. TIFF ZIP compression option, which is entirely separate from the notion of putting TIFs in a ZIP file.

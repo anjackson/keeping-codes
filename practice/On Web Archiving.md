@@ -6,8 +6,8 @@ tags: [stub]
 publish: false
 ---
 
-Note on Web Archiving
----------------------
+Notes on Web Archiving
+----------------------
 
 * Introduction and basic processes.
     * Somewhat disconnected from process/user-simulation.
@@ -17,6 +17,9 @@ Note on Web Archiving
     * Policy and process, would be good to compare pre/post LD and annotation model.
 * Copying Websites
     * Some technical detail on server/translation/client archiving (c.f. process preservation.)
+    * Somewhat disconnected, again.
+* Hidden Web
+    * The continuum of sophistication of user simulation is not explicit.
     * Somewhat disconnected, again.
 * Access and Finding Aids
     * i.e. Discovery
@@ -35,3 +38,4 @@ Ideas
 * Does not make it clear that the crawler is future user simulation.
 * Separation of long and short term preservation is somewhat artificial - the current re-writing etc. is a preservation action. Lots happening already.
 * A focus on annotation may help continuity of across the scales of selective to domain harvesting.
+* No Memento, either as migration technology or more importantly, global, integrated discovery.
