@@ -90,6 +90,8 @@ Didn't understand the language about 'the factor'.
 Features versus formats.
 Accompanying documentation did not make the 'factor' thing clear.
 
+Fundamentally, the things we can identify clearly as formats, and so much of the content of PRONOM, is inherently reasonably stable. Selection/collection bias. The really 'at risk' stuff is rarer, or more rarefied, and is not even in the list.
+
 The Tools We Need
 =================
 
