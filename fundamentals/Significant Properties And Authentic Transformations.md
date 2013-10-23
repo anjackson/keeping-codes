@@ -10,6 +10,10 @@ tags: [outline]
 No date, Prismatic Error
 http://www.dailymail.co.uk/news/article-107412/The-Queen-Mother-dies.html
 
+So, I think this is a long-winded way of saying that the Intellectual Object, essence, etc. does not exist, which dovetails with that other paper recently about digital object identity.
+
+'Nothing is the same as something else': significant properties and notions of identity and originality
+
 
 Insignificant properties
 ------------------------

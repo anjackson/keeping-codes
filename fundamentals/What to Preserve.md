@@ -50,6 +50,9 @@ IMPORTANT: Identifiers and distinguishing 'this version created the item' from '
 
 Then the choice is the spectrum of attempting to preserve the performance precisely, and therefore avoiding the interpretation side. OR attempting to preserve 'the information', and judging that we can judge whether a new performance achieves this.
 
+What is a document etc:
+http://people.ischool.berkeley.edu/~buckland/whatdoc.html
+http://inkdroid.org/journal/2013/10/15/suzanne-briet-on-ada-lovelace-day/
 
 ### Continuity and Archaeology
 
@@ -98,6 +101,10 @@ How to Decide?
 --------------
 
 Lots of choices, but before leaping to conclusions, we need to consider who will decide.
+
+1. easy issue reporting for those that want to. 
+2. building access channels together with research groups.
+3. anonymous monitoring of usage to determine preferences.
 
 
 LINK TO [A perfect digital preservation experiment](A Perfect Digital Preservation Experiment.html)
