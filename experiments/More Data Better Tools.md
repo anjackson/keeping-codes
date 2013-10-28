@@ -60,6 +60,9 @@ Starting at 'application/octet-stream' the most common unknown extension was .s5
 * [s5 Header Format](http://software.frodo.looijaard.name/psiconv/formats/Header_Section.html#Header Section)
 
 
+Firefox uses application/x-extension-EXT
+
+
 
 An old 3D format.
 http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type_ext%3A%22.mus%22&f[1]=content_ffb%3A%2252454d20%22
@@ -92,6 +95,29 @@ www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type%3A%22application
 
 NWC
 www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type%3A%22application/octet-stream%22&f[1]=content_type_ext%3A%22.nwc%22
+
+
+http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type_full%3A%22application/zip%22
+
+ArcFS, Spark, etc.
+
+    vim /usr/share/file/magic/archive
+> # Acorn archive formats (Disaster prone simpleton, m91dps@ecs.ox.ac.uk)
+> # I can't create either SPARK or ArcFS archives so I have not tested this stuff
+> # [GRR:  the original entries collide with ARC, above; replaced with combined
+> #  version (not tested)]
+> #0  byte    0x1a    RISC OS archive (spark format)
+> 0 string    \032archive RISC OS archive (ArcFS format)
+> 0       string          Archive\000     RISC OS archive (ArcFS format)
+
+Spark, most match 0x1a(82|88|FF).
+
+Followed by:
+> # All these were taken from idarc, many could not be verified. Unfortunately,
+> # there were many low-quality sigs, i.e. easy to trigger false positives.
+
+http://www.bttr-software.de/freesoft/arc2.htm#idarc
+
 
 
 
