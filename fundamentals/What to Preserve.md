@@ -114,6 +114,11 @@ Which should reveal the critical role of users etc.
 
 LINK TO [Credible Threats](Credible Threats.html)
 
+Threats, Threat models not defined, see Making Plans.
+
+Trust models omitted - trust is social. see also http://en.wikipedia.org/wiki/Source_criticism
+
+
 We can imagine many risks, but following Rosenthal, we use the concept of 'threats' to underling the importance of knowing the likelyhood. Risks formally defined as likely hood combined with severity of outcome, but language helps avoid confusion over common usage.
 
 * Format analysis - cf versions don't matter, features do.

@@ -5,17 +5,12 @@ categories: [fundamentals]
 tags: [outline]
 ---
 
-The field of digital preservation has been described as communication with the future. Rather, it is the process of attempting to ensure that future communication can occur. However, treatement so far has neglected to use the well-established mathematical theory of communication/information science. These fields of research form the basis of digital computing and communications, and provide a theoretical foundation upon which any theory of digital preservation must abut.
+This series of short posts explores the consequences of a single assertion: that information science and communication theory for the fundamental basis of digital preservation. 
 
-Already a theory of communication, which underlies many of the technologies our current digital preservation mechanisms depend on.
+A number of authors have noted that digital preservation involves ensuring we can communicate with the future [TBA], and have explored preservation issues from that perspective. But this is more than just an illuminating point of view, and the current literature has neglected to address the relationship between digital preservation and the well-established field of communication theory. Indeed, any 'theory of digital preservation' must be consistent with established principles of information science.
 
-Link to [the Zeroth Law of Digital Preservation](The Zeroth Law of Digital Preservation.html).
+By treating communication theory as our starting point, we can trace out the beginnings of such a theory. On the way, we can explore the relationship between digital and analogue signals, and the ways in which the limits of computability place limits on what we can knowingly preserve. We can outline the relationship between signals and noise, and from there start to see the relationships between compressibility, artificial intelligence, and representation information. We will examine some of the ways in which current digital preservation practices and built on algorithms and processes that have their roots in information science an on a continuum of engineering practices, extending from the shortest to the longest time scales.
 
+To begin this journey, we must start by defining [the Zeroth Law of Digital Preservation](The Zeroth Law of Digital Preservation.html).
 
-TO MOVE:
-
-Threats, Threat models not defined, see Making Plans.
-
-Trust models omitted - trust is social. see also http://en.wikipedia.org/wiki/Source_criticism
-
-
+ 
