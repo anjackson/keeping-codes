@@ -7,10 +7,12 @@ body { padding-bottom: 70px; }
 }
 
 @media (min-width: 768px) { 
+  /*
   #toc_panel {
     position: fixed;
     width: 350px;
   }
+  */
 }
 
 #toc ul {
