@@ -12,6 +12,11 @@ This is a brief experiment aiming to find traces of the initial development of p
 
 Most of the early hits for 'emulation' brings up results for terminal emulation, or in some cases, things like Floating Point Unit (FPU) emulation. However, some evidence of platform emulation also appears:
 
+* 1995:
+    * [Linux m68k mailing list November 1995](http://web.archive.org/web/19961115080005/http://aire.ncl.ac.uk/Atari/Mailing-Lists/Linux-m68k-phil-List.199511/Index.html)
+        * Start of a thread on [TOS emulation](http://web.archive.org/web/19961207051052/http://aire.ncl.ac.uk/Atari/Mailing-Lists/Linux-m68k-phil-List.199511/Pine.SCO.3.91.951116175927.7045C-100000@corona.omicron.se.text)
+    * [Linux m68k mailing list December 1995](http://web.archive.org/web/19961115075940/http://aire.ncl.ac.uk/Atari/Mailing-Lists/Linux-m68k-phil-List.199512/Index.html)
+        * Start of a thread on [Using the Executor Mac Emulator from ARDI](http://web.archive.org/web/19961207022933/http://aire.ncl.ac.uk/Atari/Mailing-Lists/Linux-m68k-phil-List.199512/m0tQMPM-00024kC@border.ocunix.on.ca.text)
 * 1996:
     * [Mention of a Spectrum emulator called xzx](http://web.archive.org/web/19961206054641/http://aire.ncl.ac.uk:80/Atari/Mailing-Lists/Linux-m68k-phil-List.199607/31ED7278.44B8@hidro1.ist.utl.pt.text)
     * [AmigaOS emulation](http://web.archive.org/web/19961205232744/http://aire.ncl.ac.uk:80/Atari/Mailing-Lists/Linux-m68k-phil-List.199610/925.6877T790T2528@skylink.it.text) on Linux, probably.
@@ -26,6 +31,6 @@ Most of the early hits for 'emulation' brings up results for terminal emulation,
 
 ## Summary ##
 
-There is clear evidence of the development and distribution of emulators in 1996 on the UK web. Some of the Spectrum emulators seem quite well established by this time, so it seems likely that we would have to track back a few more years to get to their initial releases.
+There is clear evidence of the development and distribution of emulators in 1995 on the UK web. Some of the Spectrum emulators seem quite well established by 1996, so it seems likely that we would have to track back a couple more years to get to their initial releases.
 
 To do so, we would have to reach into the time before the web went mainstream (our web archive holds very little content prior to 1996). Full-text search of Usenet or BBS archives, or of the [Internet Archive Software Collection](https://archive.org/details/software) would probably be required.
