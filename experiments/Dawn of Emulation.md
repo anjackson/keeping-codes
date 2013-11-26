@@ -10,11 +10,13 @@ This is a brief experiment aiming to find traces of the initial development of p
 
 ## Traces ##
 
-Most of the early hits for 'emulation' brings up results for terminal emulation. However, some evidence of platform emulation also appears:
+Most of the early hits for 'emulation' brings up results for terminal emulation, or in some cases, things like Floating Point Unit (FPU) emulation. However, some evidence of platform emulation also appears:
 
 * 1996:
     * [Mention of a Spectrum emulator called xzx](http://web.archive.org/web/19961206054641/http://aire.ncl.ac.uk:80/Atari/Mailing-Lists/Linux-m68k-phil-List.199607/31ED7278.44B8@hidro1.ist.utl.pt.text)
     * [AmigaOS emulation](http://web.archive.org/web/19961205232744/http://aire.ncl.ac.uk:80/Atari/Mailing-Lists/Linux-m68k-phil-List.199610/925.6877T790T2528@skylink.it.text) on Linux, probably.
+        * [Parent page, for mailing list navigation](http://web.archive.org/web/19961115075527/http://aire.ncl.ac.uk:80/Atari/Mailing-Lists/Linux-m68k-phil-List.199610/Index.html)
+        * Manually [tracking back](http://web.archive.org/web/19961115075916/http://aire.ncl.ac.uk/Atari/Mailing-Lists/Linux-m68k-phil-List.199601/Index.html), we find [early mention of the Unusable Amiga Emulator (UAE)](http://web.archive.org/web/19961207003444/http://aire.ncl.ac.uk/Atari/Mailing-Lists/Linux-m68k-phil-List.199601/Pine.SOL.3.91.960129083440.7606A-100000@g220-3.text)
     * [A reference to a sadly missing CLASSIC COMPUTER PAGE](http://web.archive.org/web/19961229050917/http://www.zenn.demon.co.uk:80/)
 * 1997:
     * [Reference to a Java Spectrum emulator](http://web.archive.org/web/19970412175540/http://www.wildcard.demon.co.uk:80/dev/java.html) that points to [Jasper](http://web.archive.org/web/19980210232053/http://www.spectrum.lovely.net/).
