@@ -34,3 +34,5 @@ Most of the early hits for 'emulation' brings up results for terminal emulation,
 There is clear evidence of the development and distribution of emulators in 1995 on the UK web. Some of the Spectrum emulators seem quite well established by 1996, so it seems likely that we would have to track back a couple more years to get to their initial releases.
 
 To do so, we would have to reach into the time before the web went mainstream (our web archive holds very little content prior to 1996). Full-text search of Usenet or BBS archives, or of the [Internet Archive Software Collection](https://archive.org/details/software) would probably be required.
+
+UPDATE: Indeed, just noticed [this](https://twitter.com/axfelix/status/405409739439214592), which lead me to this [1995 Spectrum emulator release](http://cd.textfiles.com/230/EMULATOR/SINCLAIR/SPECTRUM/), and [a lot of other old stuff](http://cd.textfiles.com/230/EMULATOR/LISTE.TXT)
