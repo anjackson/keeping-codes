@@ -6,7 +6,7 @@ tags: [outline]
 publish: true
 ---
 
-This is a brief experiment aiming to find traces of the initial development of platform emulation systems, via our current full-text search index of the historical UK web.
+This is a brief experiment aiming to find traces of the initial development of platform emulation systems, via our current full-text search index of the historical UK web. [This Twitter conversation](https://twitter.com/archivetype/status/405409619691847680) was the initial spark.
 
 ## Traces ##
 
