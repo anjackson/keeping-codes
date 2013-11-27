@@ -34,7 +34,10 @@ This is not a problem. Our decisions, what we choose to preserve, and why, have 
 
 But, we should be aware that this is a value judgement. We should be wary of taking the technically easier option, without evaluating the damage it may do to the value of the items. Most importantly, the process of judgement itself cannot be made without reference to the needs and values of the community we are preserving these things for.
 
+There is no 'essence', beyond all context. Every normalisation pathway, every significant property scheme, contains its own assumptions about where the value lies. This cannot be defined in isolation from use, and we can only plan sensible if we can find ways of engaging with or understanding user needs, and likely future needs.
+
 
 ## Conclusions ##
 
 Scientific, but not a science. Evidence-based policy making. Stakeholder engagement. Closer to politics than physics.
+
