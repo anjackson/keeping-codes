@@ -32,6 +32,9 @@ H3 + PhantomJS realtime (or near realtime) with the right Cookies.
 
 ### Army of Ghosts ###
 
+![WARC Writing Proxy](https://raw.github.com/anjackson/keeping-codes/gh-pages/practice/images/crawler-writer-proxy.jpeg)
+
+
 H3 or other browsers or manual users.
 
 Load-balancing proxy, warcprox/LAP, local or shared deduplication,
