@@ -12,7 +12,7 @@ publish: true
 
 ## Current Architecture ##
 
-![Asynchronous Rendering](https://raw.github.com/anjackson/keeping-codes/gh-pages/practice/images/crawler-async.jpeg)
+![Asynchronous Rendering](https://raw.github.com/anjackson/keeping-codes/gh-pages/practice/images/crawler-async.svg)
 
 H3 + PhantomJS via RabbitMQ 
 
