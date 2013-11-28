@@ -6,21 +6,27 @@ tags: [outline]
 publish: true
 ---
 
+## Introduction ##
 
-TEMP: 
 
-Current state
+
+## Current Architecture ##
+
+[Asynchronous Rendering](https://raw.github.com/wiki/anjackson/keeping-codes/practice/images/crawler-async.jpeg)
 
 H3 + PhantomJS via RabbitMQ 
 
+https://github.com/ukwa/bl-heritrix-modules
 
 https://github.com/openplanets/wap/tree/master/WebTools
 
-Next step
+
+## Synchronous Rendering ##
 
 H3 + PhantomJS realtime (or near realtime) with the right Cookies.
 
-Next generation:  Army of Ghosts
+
+## Army of Ghosts ##
 
 H3 or other browsers or manual users.
 
