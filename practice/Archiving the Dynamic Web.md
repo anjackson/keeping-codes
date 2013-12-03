@@ -54,10 +54,9 @@ The other problem we mentioned above was that of the doubly-downloaded, inconsis
 
 ![WARC Writing Proxy](https://raw.github.com/anjackson/keeping-codes/gh-pages/practice/images/crawler-writer-proxy.jpeg)
 
-In this scheme, we still use Heritrix3 (essentially as a crawl frontier queue management engine), but the WARC writing (including de-duplication) is all handled via a dedicated proxy (such as [warcprox](https://github.com/nlevitt/warcprox) or [LAP](https://github.com/INA-DLWeb/LiveArchivingProxy)). This architecture is much easier to scale out, e.g. using [SQUID as a load balancer](http://wiki.squid-cache.org/Features/LoadBalance#CARP_:_Cache_Array_Routing_Protocol). 
+In this scheme, we still use Heritrix3 (essentially as a crawl frontier queue management engine), but the WARC writing (including de-duplication) is all handled via a dedicated proxy (such as [warcprox](https://github.com/internetarchive/warcprox) or [LAP](https://github.com/INA-DLWeb/LiveArchivingProxy)). This architecture is much easier to scale out, e.g. using [SQUID as a load balancer](http://wiki.squid-cache.org/Features/LoadBalance#CARP_:_Cache_Array_Routing_Protocol). 
 
 It also allows us to use a single WARC backend for a wide range of manual or automated archiving processes, and keeps all of the deduplication logic close to the writers and out of the crawlers. (TBA More about how this opens up scaling out on both sides, i.e. army of ghosts)
-
 
 ## Quality Assurance ##
 

@@ -6,12 +6,12 @@ tags: [stub]
 publish: false
 ---
 
-Planning
-- top down worse than stakeholder engagement. 
-- CI versus an initio. 
-- Separate choices - strategy versus implementation. See also performance and implementation.
-- Baysian versus frequentist... First principles/ab initio or Empirical modelling.
+* top down worse than stakeholder engagement. 
+* CI versus an initio. 
+* Separate choices - strategy versus implementation. See also performance and implementation.
+* Baysian versus frequentist... First principles/ab initio or Empirical modelling.
 
+['Oh, you wanted us to preserve that?!' Statements of Preservation Intent for the National Library of Australia's Digital Collections](http://www.dlib.org/dlib/january13/webb/01webb.html)
 
 Critically, two separate/complicit choices, the 'strategy', i.e. the format mapping and the values embodied by it, and the 'implementation', i.e. the benchmarking/timings/etc. There is some give and take, I know.
 

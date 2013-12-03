@@ -5,6 +5,11 @@ categories: [fundamentals]
 tags: [outline]
 ---
 
+"Digital Preservation is access, in the future." - David Brunton
+
+https://twitter.com/nlagovau/status/407324307182714880
+
+
 This series of short posts explores the consequences of a single assertion: that information science and communication theory form the fundamental basis of digital preservation. 
 
 A number of authors have noted that digital preservation involves ensuring we can communicate with the future [TBA], and have explored preservation issues from that perspective. But this is more than just an illuminating point of view, and the current literature has neglected to address the relationship between digital preservation and the well-established field of communication theory. Indeed, any 'theory of digital preservation' must be consistent with established principles of information science.

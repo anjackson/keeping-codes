@@ -8,6 +8,10 @@ publish: false
 
 Underline assumptions, Keeping Codes, formats as malleable, etc.
 
+The bitstream:  "...the bitstream is a powerful abstraction layer..."
+
+http://blogs.loc.gov/digitalpreservation/2013/12/bitcurators-open-source-approach-an-interview-with-cal-lee/
+
 The Migration Line
 ------------------
 
@@ -59,6 +63,10 @@ http://inkdroid.org/journal/2013/10/15/suzanne-briet-on-ada-lovelace-day/
 Another spectrum, from continuous, sustainable access to leave it and dig it up later.
 
 Example, ideally, we just keep the stuff and allow researchers to dig it up.
+
+Permanent Access
+Digital Continuity
+...
 
 ### Use and Usability
 

@@ -6,7 +6,34 @@ categories: [practice]
 tags: [stub]
 ---
 
+All you adorable file format hang wringing people should be aware of this mouse that is an elephant in the distance. 
+
+https://twitter.com/textfiles/status/406868504701587456
+
 [Hammer and Tongs](https://events.ccc.de/congress/2013/wiki/Projects:Hammer_and_Tongs)
+
+
+Dark_Star
+someone (meaning someone with mad MediaWiki skillz  should probably think a bit about templates that can be used to describe file formats. Something like blocks, hexdump-like tables, containers (like for PNG/IFF/RIFF chunks), standards for "word" vs. "uint16" vs. "be_uint16" etc. etc. etc.
+20:31
+SketchCow
+Yes.
+20:31
+nitro2k01
+Yup. I may have opinions on this.
+
+Dark_Star
+yeah I imagine that would be bad. isn't there some kind of description language that can be used to describe file formats in a structured way and have that parsed into diagrams automatically?
+something like LaTeX for file formats
+20:41
+chronomex
+that is a very old problem
+it is a holy grail
+20:42
+Dark_Star
+one could even use that to build a generic converter for those file formats 
+
+
 
 
 BinX, c. 2002?, which seems long gone, [Binary XML](http://www.smos.esa.int/BinaryXML/) continued up to 2005.
