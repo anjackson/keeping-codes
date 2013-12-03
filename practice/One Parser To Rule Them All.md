@@ -1,6 +1,6 @@
 ---
 title: One Parser To Rule Them All
-subtitle: and in it's syntax bind them.
+subtitle: and in the syntax bind them.
 layout: default
 categories: [practice]
 tags: [stub]
@@ -73,3 +73,13 @@ It works for programming languages. Backhas-Nur, etc etc.
 As long as one accepts that it may not be sufficient, seens as part of the picture, but with dedicated parsers used for validation/complex cases, and only applied to some formal subset.
 
 If all of this effort had been more coherent, it might have worked.
+
+JAXB, Jackson
+
+https://twitter.com/rafeco/status/407580620609818624
+It’s easy to make fun of XML, but it was a massive improvement over predecessors like this:
+http://www.washingtonpost.com/blogs/wonkblog/wp/2013/10/23/the-health-care-laws-most-important-number-834/
+
+Look at Thrift, etc. Compare against them and make advantages clear.
+
+Focus on maintainability and adoption as well as elegance.
