@@ -12,6 +12,9 @@ The bitstream:  "...the bitstream is a powerful abstraction layer..."
 
 http://blogs.loc.gov/digitalpreservation/2013/12/bitcurators-open-source-approach-an-interview-with-cal-lee/
 
+Use, only then are we known:
+http://theodi.org/blog/five-stages-of-data-grief
+
 The Migration Line
 ------------------
 
