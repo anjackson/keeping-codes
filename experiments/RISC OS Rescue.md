@@ -79,6 +79,11 @@ rescued:    15020 MB,  errsize:       0 B,  current rate:        0 B/s
 Finished                   
 
 
+
+dd if=/dev/zero of=null512.bin bs=512 count=1
+
+ cat ~/Library/Application\ Support/RPCEmu/null512.bin Disk\ Recovery/imagefile2 > ~/Library/Application\ Support/RPCEmu/hd4.hdf
+
 [16 bit IDE interface for Acorn Computers Resources][1], [Simtec 16-bit IDE interface for Acorn Archimedes][4]
 
 [RPCEmu][8]
@@ -94,6 +99,19 @@ Finished
 
 [Re: [Rpcemu] Using RiscPC IDE diskimage as hd4.hdf - LBA issue][11]
 
+[Using IDE image in RPCEmu][13] mentioning 512 nulls - TO LEAVE COMMENT ONCE WRITTEN.
+[Accessing Large ADFS Hard Drive Images][14]
+[RiscPC 600 image mount it under emulator?][15]
+- [Re: RiscPC 600 image mount it under emulator?][16]
+[512 byte Master Boot Record (MBR)][17]
+
+!Boot problem http://www.wrocc.org.uk/howto/article.php?id=bootlog
+
+> RISC OS was then shut down and the emulator closed to save the ‘CMOS RAM’ settings, then the emulator was re-run. This time, “EmuFS” was shown as the system started. When the boot finished there was a backdrop on the pinboard, so !Boot must have run. However, the screen was still at 640 × 480. To change this, Steve double-clicked on !Boot to start Configure, went to the Screen section, chose ‘Acorn AKF65’ and set ‘256 Colours’, and ‘800 × 600’. However, when Set was clicked there was an error: “EmuFS must be given a filename”.
+>
+>Steve suggested (having found the problem when he had first installed RPCemu) that this was ‘probably’ due to an error during booting preventing the sequence from completing correctly. This problem isn’t restricted to RPCemu, and can be seen on all hardware and all versions of RISC OS when things go wrong. In order to track it down, he installed Martin Avison’s Reporter and configured it to log every step of the boot sequence (as described in this howto article).
+From http://www.wrocc.org.uk/meetings/report.php?year=2009&month=6
+
 [1]: http://www.simtec.co.uk/products/AUIDE16/resources.html
 [2]: https://www.allegro.cc/forums/thread/608825
 [3]: https://www.riscosopen.org/forum/forums/10/topics/1029
@@ -106,4 +124,10 @@ Finished
 [10]: http://www.riscos.com/support/users/starcomms/index.htm
 [11]: http://www.mail-archive.com/rpcemu@riscos.info/msg00735.html
 [12]: http://www.mail-archive.com/rpcemu@riscos.info/msg00736.html
+[13]: https://www.riscosopen.org/forum/forums/10/topics/2032
+[14]: https://groups.google.com/d/topic/comp.sys.acorn.misc/Od6u0h6Wymc/discussion
+[15]: https://groups.google.com/d/topic/comp.sys.acorn.hardware/HqddzRhEtKM/discussion
+[16]: https://groups.google.com/d/msg/comp.sys.acorn.hardware/HqddzRhEtKM/5L3zGXmy2qEJ
+[17]: https://groups.google.com/d/msg/alt.os.linux/s2eQ4T85k1s/HVRcMg-W6woJ
+
 

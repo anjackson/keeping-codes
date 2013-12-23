@@ -119,6 +119,11 @@ Followed by:
 http://www.bttr-software.de/freesoft/arc2.htm#idarc
 
 
+SPSS
+http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type%3A%22application/octet-stream%22&f[1]=content_type_served%3A%22application/spss%22
+
+MatLab
+http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type%3A%22application/octet-stream%22&f[1]=content_type_served%3A%22application/matlab%22
 
 
 ### Binary Shingling

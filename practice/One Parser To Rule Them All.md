@@ -34,7 +34,9 @@ Dark_Star
 one could even use that to build a generic converter for those file formats 
 
 
+https://www.diigo.com/user/anjacks0n/unparsing
 
+DERRIC, others, go through first.
 
 BinX, c. 2002?, which seems long gone, [Binary XML](http://www.smos.esa.int/BinaryXML/) continued up to 2005.
 
