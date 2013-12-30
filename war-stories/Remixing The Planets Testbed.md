@@ -1,5 +1,9 @@
-Rebuilding the Planets Testbed
-
+---
+title: Remixing the Planets Testbed
+layout: default
+categories: [war stories]
+tags: [stub]
+---
 
 
 Which tests, when, 
