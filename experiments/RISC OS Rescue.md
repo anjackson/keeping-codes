@@ -79,6 +79,14 @@ rescued:    15020 MB,  errsize:       0 B,  current rate:        0 B/s
 Finished                   
 
 
+$ python /Users/andy/Documents/RISCOS/lba_fix.py
+Moving the 0x01 LBA flag...
+Pre-write LBA offset 01
+Post-write LBA offset 00
+Pre-write safe offset 00
+Post-write safe offset 01
+
+
 
 dd if=/dev/zero of=null512.bin bs=512 count=1
 

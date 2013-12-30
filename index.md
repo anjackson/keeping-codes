@@ -3,6 +3,10 @@ title:  Keeping Codes
 layout: default
 ---
 
+> "Digital Preservation is access... in the future."
+>
+> <small>David Brunton (via [Ed Summers](https://twitter.com/edsu)' [The Web as a Preservation Medium](http://inkdroid.org/journal/2013/11/26/the-web-as-a-preservation-medium/))</small>
+
 Introduction
 ------------
 

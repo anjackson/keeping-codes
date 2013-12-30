@@ -6,21 +6,41 @@ tags: [outline]
 permalink: communicating-with-the-future.html
 ---
 
-"Digital Preservation is access, in the future." - David Brunton
+A number of authors have noted that digital preservation involves ensuring we can communicate with the future [TBA], and have explored preservation issues from that perspective. 
 
-https://twitter.com/nlagovau/status/407324307182714880
+> "Digital traces as intentional and unintentional communication"
+> "Digital curation as communication mediation"
+>
+> <small> Cal Lee, [Digital Curation as Communication Mediation](http://www.ils.unc.edu/callee/p507-lee.pdf)</small>
 
 
-This series of short posts explores the consequences of a single assertion: that information science and communication theory form the fundamental basis of digital preservation. 
+> "A layered communication model"
+>
+> <small>[Digital preservation as communication with the future](http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=5201104)</small>
 
-A number of authors have noted that digital preservation involves ensuring we can communicate with the future [TBA], and have explored preservation issues from that perspective. But this is more than just an illuminating point of view, and the current literature has neglected to address the relationship between digital preservation and the well-established field of communication theory. Indeed, any 'theory of digital preservation' must be consistent with established principles of information science.
+
+> "The proof that the preservation environment preserves authenticity and integrity while performing the communication constitutes a theory of digital preservation."
+> "The definition of standard rules, standard micro-services, standard operations, and standard persistent state information provided by iRODS can lead to a theory of digital preservation."
+> <small>[Towards a Theory of Digital Preservation](http://www.ijdc.net/index.php/ijdc/article/viewFile/63/42)</small>
+
+
+> "...the preservation problem becomes in many respects similar to a communication problem between two agents and its recursive character is eliminated..."
+> <small>[Some Preliminary Ideas Towards a Theory of Digital Preservation](http://www.ics.forth.gr/isl/publications/paperlink/DLF107.pdf) - seems to aim to 'solve the problem', rather than model the world.</small>
+
+> "Here I want to go a step further and suggest that the preservation of digital objects is logically inseparable from the act of their creation — the lag between creation and preservation collapses completely, since a digital object may only ever be said to be preserved if it is accessible, and each individual access creates the object anew. One can, in a very literal sense, never access the "same" electronic file twice, since each and every access constitutes a distinct instance of the file that will be addressed and stored in a unique location in computer memory."
+> <small>[Matthew Kirschenbaum](https://twitter.com/mkirschenbaum), [The .txtual Condition](http://www.digitalhumanities.org/dhq/vol/7/1/000151/000151.html)</small>
+
+This series argues that this is much more than simply illuminating point of view, asserting that information science and communication theory form the fundamental basis of digital preservation. The aim here is to explore the consequences of that assertion. In contrast to much of the material in these approaches, I'm going to steer away from interpretation and abstract modelling, and instead attempt to focus on describing real examples, engineering practices, and established theories.
 
 By treating communication theory as our starting point, we can trace out the beginnings of such a theory. On the way, we can explore the relationship between digital and analogue signals, and the ways in which the limits of computability place limits on what we can knowingly preserve. We can outline the relationship between signals and noise, and from there start to see the relationships between compressibility, artificial intelligence, and representation information. We will examine some of the ways in which current digital preservation practices and built on algorithms and processes that have their roots in information science and on a continuum of engineering practices, extending from the shortest to the longest time scales.
 
+The relationship between digital preservation and the well-established field of communication theory.'theory of digital preservation' must be consistent with established principles of information science.
+
 To begin this journey, we must start by defining [the Zeroth Law of Digital Preservation](The Zeroth Law of Digital Preservation.html).
 
-The Zeroth Law of Digital Preservation
---------------------------------------
+
+The Zeroth Law
+--------------
 
 In the field of [thermodynamics][1], there was a law so obvious, so taken for granted, that no-one even realised it could be considered a law. The notion of thermal equilibrium - roughly speaking, the notion that a 'temperature' could be defined at all - was so fundamental that it simply assumed without question. Later, if became clear that the first, second and third laws of thermodynamics were not strictly consistent unless this axiom was added. The primacy of this assumption was recognised formally by calling it the [zeroth law of thermodynamics][2].
 
@@ -38,7 +58,7 @@ But this applies to everything - even the 'discrete' form applies as much to tex
 
 
 What's So Special About Digital Preservation?
----
+---------------------------------------------
 
 It's not the digital that's the problem
 Directly.
@@ -61,18 +81,20 @@ So, the critical thing is the Turing machine, and practically, this means softwa
 Expression, manifestation, inflation, reification, actualisation, act.
 No word in any glossary for this, the run-time representation of the digital object.
 
----
-LINK TO von Neumann Machines
-----
+
+Von Neumann Machines
+--------------------
+
 The important of the von Neumann architecture. The separate of data and code underpinning the entire concept of data that can be separated and made portable etc.
 
 Also, this is archetypical of the engineering decisions that underly the technologies we are attempting to preserve. That understanding the technology is one part, but understanding use, adoption, is critical to understanding preservation.
 
 But separable code and data is only the beginning. The buildings of our software machines have already discovered that raw machine code and binary data and not necessarily the best way of maintaining access, even to their own systems. To understand that, we need to dip into another part of information theory - formal languages.
 
---- 
-LINK TO Code as Communication
----
+
+Code as Communication
+---------------------
+
 Describe the interpretation v. representation problem again. It is possible to do absolutely anything with a computer using only machine code, but it has not proved a easily interpretable construct. Cray and his toggle switches. The engineers sought a middle ground, a language precise enough to be turned into machine code, but approachable enough that the meaning of the program might be understood. i.e. there is a communication story here, with the source code communicating a slightly different set of things, with some room for error. 
 
 Define the formal languages, describe the Chomsky heirarchy briefly, to refer back to in a subsequent section.
@@ -95,8 +117,10 @@ In truth, every so-called digital object is a process, not state. The illusion o
 Bytes in flight. etc.
 
 
-The First Preservation Action: Save As...
------------------------------------------
+A more technically focused approach to digital preservation is described by Thibodeau in [10]. This work identifies three layers of meaning for a digital object: every digital object is a physical object, a logical object or a conceptual object.
+
+Save As...
+----------
 
 The early computers had little or no permanence. 
 Tape, pushing memory to disk.
@@ -109,6 +133,9 @@ File bitstream resource-content
 They are the first step to presrvation
 Persistant state
 
+The First Preservation Action, 
+
+A model which does not include such basic operations as 'saving' and 'loading' cannot be sophisitcated enough to describe what ahppens.
 
 LINK TO [Codes](codes.html) ??? (Chomsky) 
 No, not yet.
