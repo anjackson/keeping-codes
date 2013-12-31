@@ -1,4 +1,7 @@
+pygments:    true
+relative_permalinks: true
 markdown: rdiscount
 baseurl: /keeping-codes
+
 all-category-list: [fundamentals,practice,experiments,war stories]
 category-list: [practice,experiments]

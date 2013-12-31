@@ -5,20 +5,26 @@ categories: [war stories]
 tags: [stub]
 ---
 
+ALSO
+Preservation plans, no evaluation step.
+Model (plan breifly, interspersed by notifications) not amenable to using watch to evaluate plans.
+Links to RCT for preservation strategies.
+
+--
 
 Which tests, when, 
 
 Breakdown:
 
 * Designing experiments
-** GUI for complex workflows
+    * GUI for complex workflows
 
 * Running experiments
-** All services hosted centrally
+    * All services hosted centrally
 
 * Analysing results
-** Manual and automated analysis
-** Aggregation and data mining
+    * Manual and automated analysis
+    * Aggregation and data mining
 
 * Sharing all of the above
 

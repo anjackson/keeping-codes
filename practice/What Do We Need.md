@@ -51,9 +51,89 @@ This is just like authors and authority files. The purpose of which is not to st
 Who is actually doing digital preservation? And who of those is actually using or generating RepInfo as part of their job?
 
 ---
+I like this scenario, but I think we need to dig a little deeper and if you'll forgive me I'll play Devil's Advocate to do so.
+
+You mention a format I'd never heard of ('Inset PIX'), so I go to Google and get straight to this excellent detailed summary (http://netghost.narod.ru/gff/graphics/summary/inset.htm) - job done, right? Does that mean that, as long as the web, plus Google, is everything we need? 
+
+The scenario you outline seems to be a process that a person would go through, rather than anything automated, so why do we need a data model? What is the advantage of putting all this effort into normalising the data if everyone just wants to read the Wikipedia page?
+---
  
 http://unsustainableideas.wordpress.com/2012/07/03/solve-file-format-problem/#respond
 There is an issue about scope, and relation to other data stores, but I think you've jumped ahead too quickly. The problem is clearly stated: Make is possible to get the data out and re-use it. The solution will be whatever it takes to do that. Therefore, documentation, software and specification are liable to be in scope, but everything else will be driven by necessity. For me, the main attraction of this approach is that it will concentrate on whatever it takes to make it work, i.e. collect the data then model it flexibly. Not 
+
+Mismatch risk. 
+Separate RI, Implementations, Specifications, Properties etc.
+Format as a superset of multiple definitions
+BySpec.
+AsImplemented
+IdentifiedByMIME
+IdentifiedByExt
+IdentifiedByMagic?
+
+Wikipedia integration?
+http://en.wikipedia.org/wiki/Wikipedia:WikiProject_Computing
+Task force? Or
+http://en.wikipedia.org/wiki/Wikipedia:WikiProject_Software
+
+http://en.wikipedia.org/wiki/Wikipedia:Neutral_point_of_view
+http://en.wikipedia.org/wiki/Wikipedia:Verifiability
+http://en.wikipedia.org/wiki/Wikipedia:No_original_research
+http://en.wikipedia.org/wiki/Wikipedia:Notability
+
+We will want to cover long tail. I'm concerned that we'll only get the main ones in.
+
+Rather, I think a simple system that brings the sources together is the right thing for now, while we work on NPVO, V. This will involve to OR. N will have to be judged in collaboration, as will the steps necessary to turn this info into a Source.  Really, a route into PRONOM is the way here. Trust processes again.
+
+http://en.wikipedia.org/wiki/Template:Infobox_file_format
+
+http://www.mediawiki.org/wiki/Manual:Parameters_to_Special:Export
+http://en.wikipedia.org/wiki/Special:Export/Portable_Document_Format
+http://www.bbc.co.uk/nature/life/Southern_right_whale
+http://dbpedia.org/page/Tagged_Image_File_Format
+http://en.wikipedia.org/wiki/TIFF
+http://www.nationalarchives.gov.uk/pronom/fmt/353.xml
+http://en.wikipedia.org/wiki/Wikipedia:Creating_a_bot
+
+http://en.wikibooks.org/wiki/Choosing_The_Right_File_Format
+http://en.wikiversity.org/wiki/Digital_Libraries/File_formats,_transformation,_migration
+
+In part, I think it's because we're not quite sure what we need. But frankly, I think we're going to have to start trying to collect the data in order to work that out.
+
+I think a bigger barrier is the lack of a coherent social structure to ensure the longevity of the information, and the associated uncertainty over where to put our effort. I think many of us are willing to contribute information, but we need a forum where the information can be rapidly 
+ overall information flow is critical, in that the contributors must have some assurance that their contirbutions will matter, will persist. e.g. end up in PRONOM.
+
+
+The primary value we have added appears to come from the DROID tool using the identification information in PRONOM to spot different versions of specified formats. Once that is done, most users I have observed go from there, onto Google, and generally end up on Wikipedia.
+
+Maybe that's not such a bad thing. 
+
+Info
+
+It needs to support the kinds of information we need to exchange: about file formats; about software applications and technical environments, and how they relate to file formats; and institutional preferences/policy about file formats and technical environments.
+http://www.openplanetsfoundation.org/blogs/2011-07-21-registry-guidelines-answers
+
+Suggested initial information to cover: 
+• Signatures for identifying formats using tools like DROID and Fido. 
+• Information on which software can read which formats 
+• Information on the dependencies of that software (‘technical environment’) 
+• Significant properties/characteristics of files in a particular format? 
+• Which tools can successfully identify a format 
+• Which tools can successfully validate a format 
+• Documentation or specifications of formats 
+Is it also desirable to publish ‘policy’ information as well as the above ‘factual’ information? 
+By policy information, we mean the choices of an individual organization for questions such 
+as: 
+• Preferred identification tool 
+• Preferred characterisation tool per format 
+• Policies around conversion of certain formats into other formats for preservation or 
+access and the preferred tools to carry out such conversions 
+Representation information registry providers do not need to publish all of this information – 
+any subset of it can still be valuable.
+http://www.openplanetsfoundation.org/system/files/Guidelines_for_representation_information_publishing V0.1.pdf
+
+http://www.digitalpreservation.gov/formats/fdd/fdd000022.shtml
+
+
 
 ---
 
@@ -136,14 +216,62 @@ e.g.
 * image/jpeg; v=1.01; xmp.creatorTool=adobe-photoshop-10.0;
 * image/jpeg; v=1.01; xmp.creatorTool=adobe-photoshop-10.0; env=technical-environment-21
 
-Validation: Fast-Fail versus Lint
+## Talking about formats
+Maybe we should concentrate on managing suitably unambiguous identifiers for different formats, and just contribute to Wikipedia to make sure those identifiers are embedded alongside more descriptive details and explanations. With so many registries so poorly filled, we must either start explicitly allocating resources to help fill them (instead of designing new ones), or face the fact that we need the help of the wider community and pitch in with Wikipedia. Who better to review and build trust in those pages than us? And where better to place that information in order to ensure it will be maintained for the foreseeable future and is likely to be archived in perpetuity?
 
-Office Dependency Analysis, lost:
+My preferred proposal is that we design new data fields for Wikipedia, and create a QA process that looks at all the format records and checks if these fields e
+
+Will the necessity of 'no primary research' kill it? Or are we just documenting what is held elsewhere?
+
+### GRAMMAR 
+
+In part, this problem arises because there is no specification to any grammar by which these symbols (identifiers) that PRONOM mints may be combined. Due to the way the word format is commonly used, one usually ends up with a simple grammar along the lines of "(resource) . hasFormat . PUID:fmt/44".
+ 
+Unfortunately, we often need a way of saying that a resource appears to conform to one or more specifications. For example, PRONOM also contains character coding identifiers, e.g. chr/1 for Unicode UTF-8. How are we supposed to combine these identifiers to state things like 'this document is UTF-8 that conforms to the XML 1.0 standard'? The MIME type scheme handles this kind of combination much more elegantly, e.g. 'text/xml; charset="utf-8"', but neither really captures the fact that UTF-8 is also a format in it's own right.
+
+cTrue. Maybe we need .nearlyConformsTo. or .parseableAs. as well?
+
+----
+Archiving Reference Implementations and Standards...
+http://digitalcuration.blogspot.com/2008/03/legacy-document-formats.html
+PRONOM Update Form:
+http://www.nationalarchives.gov.uk/contact/contactform.asp?id=13
+
+<Format> .createdBy. <Application> .conformsTo. <Spec>
+Where <Application> is made up of particular <Software> in a particular <Environment>.
+
+ <resource> .conformsTo. <PDF-1.4> .accordingTo. <JHOVE2>
+ <resource> .conformsTo. <PDF-A> .accordingTo. <XXX>
+ <PDF-A> .isSpecialisationOf. <PDF-1.4>
+ <resource> .createdBy. <AdobeReader>
+ <resource> .hasExtension. "pdf"
+
+ 
+
+Underlying this is my own dissatisfaction with the opacity of PUIDs. Why do we have to put up with using fmt/xx when what we we want to say is fmt/PDF/1.4? I realise that this arises because of the concern that any information encoded in the identifier may turn out to be wrong, but what on earth does it mean to mint a permanent identifier for a record when every single aspect of that record is permitted to change? If we don't know which fields uniquely define a format, how do we know when a new one comes along?
+
+Using a PRONOM ID, as they stand, allows you to make assertions like This-File . Has-Format . PUID:fmt/44. 
+
+Similarly, whether internal or external signatures are authoritative or ambiguous depends heavily on context, and it is not clear whether it is even sensible to try and make permanent identifiers for such things.
+
+c.f. HTML data versus behaviour definition argument
+http://lists.w3.org/Archives/Public/public-html/2008Nov/0248.html
+http://lists.w3.org/Archives/Public/public-html/2007Nov/0444.html
+http://en.wikipedia.org/wiki/WHATWG
+
+See also MIME Type Problem and difference from our needs (descriptive, no behaviours)
+http://annevankesteren.nl/2006/11/text-xml
+http://tools.ietf.org/html/draft-murata-kohn-lilley-xml-03#page-7
+text/xml is deprecated, is this a mismatch, or are we wrong? All combinatory schemes have this problem? Or does it only arise because it gives XML etc two declarations and it is not clear which is authoritative? PRoblem is, we still need to know how to respond to identifiers, so using identifiers brings us to the same problem? What about ZIP/ODF style combinations?
+
+## Validation: Fast-Fail versus Lint
+
+###Office Dependency Analysis, lost:
 http://www.openplanetsfoundation.org/blogs/2012-02-01-dependency-discovery-tool-office-files-code-published
 http://www.openplanetsfoundation.org/comment/242#comment-242
 
 
-JHOVE wishlist
+### JHOVE wishlist
 http://fileformats.wordpress.com/2013/02/01/future-jhove/
 There are some parts of the PDF/A profile that Jhove do not check. A fact that worry some of our customers. For example “The data within content streams, and therefore the use of operators and the glyph descriptions of embedded fonts.” are not checked.
 
