@@ -13,19 +13,24 @@ A number of authors have noted that digital preservation involves ensuring we ca
 >
 > <small> Cal Lee, [Digital Curation as Communication Mediation](http://www.ils.unc.edu/callee/p507-lee.pdf)</small>
 
+----
 
 > "A layered communication model"
 >
 > <small>[Digital preservation as communication with the future](http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=5201104)</small>
 
+----
 
 > "The proof that the preservation environment preserves authenticity and integrity while performing the communication constitutes a theory of digital preservation."
 > "The definition of standard rules, standard micro-services, standard operations, and standard persistent state information provided by iRODS can lead to a theory of digital preservation."
 > <small>[Towards a Theory of Digital Preservation](http://www.ijdc.net/index.php/ijdc/article/viewFile/63/42)</small>
 
+----
 
 > "...the preservation problem becomes in many respects similar to a communication problem between two agents and its recursive character is eliminated..."
 > <small>[Some Preliminary Ideas Towards a Theory of Digital Preservation](http://www.ics.forth.gr/isl/publications/paperlink/DLF107.pdf) - seems to aim to 'solve the problem', rather than model the world.</small>
+
+----
 
 > "Here I want to go a step further and suggest that the preservation of digital objects is logically inseparable from the act of their creation — the lag between creation and preservation collapses completely, since a digital object may only ever be said to be preserved if it is accessible, and each individual access creates the object anew. One can, in a very literal sense, never access the "same" electronic file twice, since each and every access constitutes a distinct instance of the file that will be addressed and stored in a unique location in computer memory."
 > <small>[Matthew Kirschenbaum](https://twitter.com/mkirschenbaum), [The .txtual Condition](http://www.digitalhumanities.org/dhq/vol/7/1/000151/000151.html)</small>
