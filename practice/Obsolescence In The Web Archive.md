@@ -21,6 +21,7 @@ Investigate formats that have been identified as 'difficult' elsewhere. Are they
 Linux:
 * http://s-macke.github.io/jor1k/
 
+Interjection: http://www.webarchive.org.uk/interject/
 
 Spectrum
 --------

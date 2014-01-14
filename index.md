@@ -7,6 +7,17 @@ layout: default
 >
 > <small>David Brunton (via [Ed Summers](https://twitter.com/edsu)' [The Web as a Preservation Medium](http://inkdroid.org/journal/2013/11/26/the-web-as-a-preservation-medium/))</small>
 
+---
+
+> "Digital preservation combines policies, strategies and actions that ensure access to digital content over time."
+> <small>[ALCTS - Definitions of Digital Preservation](http://www.ala.org/alcts/resources/preserv/defdigpres0408)</small>
+
+---
+
+> "...the series of managed activities necessary to ensure continued access to digital materials for as long as necessary."
+> <small>[Digital Preservation Handbook > Introduction > Definitions and Concepts](http://www.dpconline.org/advice/preservationhandbook/introduction/definitions-and-concepts)</small>
+
+
 Introduction
 ------------
 

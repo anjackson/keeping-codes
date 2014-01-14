@@ -32,8 +32,12 @@ Rotherberg vernacular extraction example, cut-paste from emulator, is a migratio
 
  digital preservation for years. The most common 'preservation action' is porting. Calling it 'source code migration' underplays its importance.
 
+http://drj11.wordpress.com/2013/09/01/on-compiling-34-year-old-c-code/
+
+
 Backwards compatible, new versions run old stuff. Breaks in this, e.g. deprecation, are the issue.
 REF that high-change-freq. chart from last years iPres.
+
 
 ref The First Preservation Strategy: Format...
 
@@ -60,6 +64,11 @@ Then the choice is the spectrum of attempting to preserve the performance precis
 What is a document etc:
 http://people.ischool.berkeley.edu/~buckland/whatdoc.html
 http://inkdroid.org/journal/2013/10/15/suzanne-briet-on-ada-lovelace-day/
+
+
+http://www.theatlantic.com/health/archive/2013/02/our-comprehensive-living-archive-of-apples/273538/
+
+Possible a War Story: http://gigaom.com/2014/01/14/the-search-for-the-lost-cray-supercomputer-os/
 
 ### Continuity and Archaeology
 

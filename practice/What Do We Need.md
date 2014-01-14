@@ -92,6 +92,8 @@ Accompanying documentation did not make the 'factor' thing clear.
 
 Fundamentally, the things we can identify clearly as formats, and so much of the content of PRONOM, is inherently reasonably stable. Selection/collection bias. The really 'at risk' stuff is rarer, or more rarefied, and is not even in the list.
 
+See also [File Format Action Plans](http://blogs.loc.gov/digitalpreservation/2014/01/file-format-action-plans-in-theory-and-practice/).
+
 The Tools We Need
 =================
 
