@@ -13,7 +13,7 @@ Investigate formats that have been identified as 'difficult' elsewhere. Are they
 * Spectrum tape images.
 * Difficult formats from NLA: http://www.nla.gov.au/content/preservation-intent-selective-web-harvesting
     * RealMedia (and it's many variations, identification issues)
-    * VRML (logical superset option)
+    * VRML (logical superset option, identification gap, version issues)
     * Shockwave / .dcr
     * Quicktime VR (identification challenge)
 * The .pcd from Kodak image CDs to TIF or JPG via ImageMagick.
@@ -22,6 +22,24 @@ Linux:
 * http://s-macke.github.io/jor1k/
 
 Interjection: http://www.webarchive.org.uk/interject/
+
+Start here: http://www.dlib.org/dlib/january05/rosenthal/01rosenthal.html
+
+[Deploying webp](http://www.igvita.com/2013/05/01/deploying-webp-via-accept-content-negotiation/) is similar, but still server-driven.
+
+But add concept of agent-driven negociation. Turns out interjection is already in the spec.
+
+* [RFC 2616: 300 Multiple Choices](https://tools.ietf.org/html/rfc2616#section-10.3.1) for redirect-based interaction.
+* Fleshed out in [RFC 2295: 8.3 Alternates](http://tools.ietf.org/html/rfc2295#section-8.3)
+    * [RFC 2295: 5.3 Source quality](http://tools.ietf.org/html/rfc2295#section-5.3)
+    * Has explicit modes for "server chose this alternative" and "here's a list of alternatives" (200 TCN: choice, 300 TCN: list)
+    * Even a rich and extensible 'feature' negotiation system, which links nicely to my concerns of features being more important than format version.
+    * If Accepted formats are not available, use this with response code 406 Not Available
+
+* See also [Mozilla Developer Network: Content negotiation](https://developer.mozilla.org/en-US/docs/Content_negotiation?redirect=no)
+
+* See too ['Reactive' content negotiation: Empirical evidence that its status should be reconsidered in HTTPbis](http://www.ltg.ed.ac.uk/~ht/reactive_conneg.html)
+> it calls "proactive negotiation" (formerly "server-driven negotiation"), but it intensifies its description of these from "disadvantages" to "serious disadvantages".
 
 Spectrum
 --------

@@ -15,6 +15,9 @@ Thus, without flags, very compressed files become impossible to distinguish. The
 
 Information volume fixed.
 
+Proving format complexity of equivalent signals. If the 'signal' is the same, then entropy measures indicate which formats depend on the most RI. i.e. format complexity is measurable.
+
+
 Errors and redundancy.
 
 There is presumably a parallel to the previous case about adding redundant information and the amount you need on a given noisy channel.
@@ -30,3 +33,5 @@ Look at uni-gram and di-gram entropy, as the latter should be more revealing due
 
 Is this a separate point, or is analysing transformations via entropy critical?
 
+
+NOTE Turing/AI/Chinese Room: What happens if conversation time-scale is slowed. What happens if the conversation goes on so long that the world changes around it.

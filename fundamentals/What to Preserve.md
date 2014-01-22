@@ -154,4 +154,11 @@ Even though a more efficient way to access the disks themselves is now available
 
 It is the slow death of a thousand ambiguities, rather than an sudden, jarring expiration. Obsolescence is approached, rather than attained, with the costs of access rising every step of the way.
 
+Death of a Feature: https://groups.google.com/a/chromium.org/forum/#%21topic/blink-dev/_tHSX0IYXhQ
+
+Real value/risk is still there:
+- CAD
+- That story about audio masters for Mac plugins
+- Keynote
+
 LINK TO [Making plans](Making Plans.html)
