@@ -3,6 +3,7 @@ title: DigiPresNews
 layout: default
 categories: [practice]
 tags: [outline]
+publish: true
 ---
 
 Initially, I set the [@digipresnews][1] account so that it [use a socially aggregated news service to generate tweets of interest][2]. This worked well for a while, but mid-2012 the tweets became more and more irrelevant, and then dried up altogether.
