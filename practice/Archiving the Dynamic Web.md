@@ -74,7 +74,12 @@ Would be good to package the screenshots into WARCs into some standard form. Wou
 
 http://docs.oracle.com/javafx/2/api/javafx/scene/web/WebEngine.html#getDocument()
 
-Other problems
+## The Elastic Crawler ##
+
+To spec.
+
+
+## Other problems ##
 
 http://www.dlib.org/dlib/november13/kelly/11kelly.html
 

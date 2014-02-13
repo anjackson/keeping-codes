@@ -138,6 +138,8 @@ Threats, Threat models not defined, see Making Plans.
 
 Trust models omitted - trust is social. see also http://en.wikipedia.org/wiki/Source_criticism
 
+[People, records and power: what archives can learn from WikiLeaks](http://www.tandfonline.com/doi/full/10.1080/01576895.2013.779926#.UvueIkJ_vCx)
+
 https://twitter.com/petemay/status/406397838529007616
 
 We can imagine many risks, but following Rosenthal, we use the concept of 'threats' to underling the importance of knowing the likelyhood. Risks formally defined as likely hood combined with severity of outcome, but language helps avoid confusion over common usage.

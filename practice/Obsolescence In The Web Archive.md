@@ -8,6 +8,8 @@ publish: true
 
 Looking for known 'difficult' formats, and breaking it down.
 
+Of course, programming languages are often more highly version dependant (Python 3, Perl 6). But also difficult to spot, and not really the kind of thing where we'd transform on access.
+
 Investigate formats that have been identified as 'difficult' elsewhere. Are they present, what amount, and what can be done?
 
 * Spectrum tape images.
@@ -17,6 +19,8 @@ Investigate formats that have been identified as 'difficult' elsewhere. Are they
     * Shockwave / .dcr
     * Quicktime VR (identification challenge)
 * The .pcd from Kodak image CDs to TIF or JPG via ImageMagick.
+
+See also http://rhizome.org/editorial/2014/feb/10/authenticity-access-digital-preservation-geocities/
 
 Linux:
 * http://s-macke.github.io/jor1k/
@@ -95,6 +99,34 @@ http://www.xj3d.org/tutorials/basic_applet.html
 
 
 http://www.web3d.org/wiki/index.php/Player_support_for_X3D_components
+
+http://www.subdude-site.com/WebPages_Local/RefInfo/Computer/Linux/LinuxGuidesByBlaze/apps3Dtools/3D_viewers-converters/3D_vrml1_and_vrml2_notes.htm
+
+DROID distinguishes 1/97 (fmt/93 and fmt/94), but does not identify x3d.
+Tika only knows VRML extension (not even that?!), but can be taught all.
+
+VRML1 to VRML97
+* http://www.cs.princeton.edu/~min/meshconv/
+
+VRML97 to X3D
+* http://www.x3dom.org/?page_id=532 etc. /Applications/Instant\ Player.app/Contents/MacOS/aopt --help
+    * /Applications/Instant\ Player.app/Contents/MacOS/aopt -i penguin4.wrl -x penguin5-aopt.x3d
+    * Works but proprietary and no commercial use allowed.
+* meshlabserver.exe -i <wrl file> -o <x3d file> (no colour, just the mesh, it seems)
+* Blender, c.f. http://auxmem.com/2012/01/24/convert-3ds-files-to-obj-with-blender/ script created and works.
+* http://ovrt.nist.gov/v2_x3d.html 
+
+X3D to HTML
+* X3DOM looks like a fairly simple wrap. http://www.x3dom.org/
+* See http://x3dom.org/x3dom/example/blenderExport/horse-inline.html for an example of pulling in the X3D via URL
+
+
+Uh-oh, VRML can haz hyperlinks, of course, so https://twitter.com/archivetype/status/429004845102944256
+
+So, maybe tweak so they are subtypes of text/plain and allow the text to be indexed?
+Nah, it's only c. 10,000 so pull them out and look for links via WWWAnchor/Anchor.
+- http://www.sv.vt.edu/classes/vrml/NCSA_VRML_Tutorial/examples/ThreeSpheresURL.wrl.txt
+- http://graphcomp.com/info/specs/sgi/vrml/spec/part1/nodesRef.html#Anchor
 
 Shockwave
 ---------
@@ -212,4 +244,95 @@ Music XML .mxl (or full type including schema)
 May be possible to search PDF/JPGs by Generator, e.g.
 *Finale*
 etc.
+
+
+WMF
+---
+http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type_full%3A%22application/x-msmetafile%22
+
+9911 ish.
+
+https://code.google.com/p/wmf2svg/
+
+http://wvware.sourceforge.net/libwmf.html
+
+https://en.wikipedia.org/wiki/Windows_Metafile
+
+By Volume
+---------
+text/html (256325571) 
+image/jpeg (14535000) 
+image/gif (12793957) 
+application/xhtml+xml (5558036) 
+application/pdf (1587549) 
+text/html\ (1064468) 
+text/plain (871652) 
+application/xml (438235) 
+null (351819) 
+image/png (331226) 
+application/x-shockwave-flash (310464) 
+text/htm (198320) 
+application/octet-stream (146581) 
+audio/x-pn-realaudio (146551) 
+text-html (103136) 
+application/rss+xml (88736) 
+Mime-Type (70472) 
+application/zip (67022) 
+audio/mpeg (52611) 
+application/x-dosexec (45544) 
+application/x-gzip (41907) 
+image/vnd.microsoft.icon (37987) 
+text/xml (36627) 
+application/rtf (34915) 
+text/html charset=windows-1251 (32285) 
+Office Supplies (29056) 
+audio/midi (28669) 
+application/postscript (27871) 
+image/x-ms-bmp (27328) 
+video/x-ms-wmv (23883) 
+text/javascript (22523) 
+text/xhtml (20133) 
+application/x-msdownload (19115) 
+text/html, charset=iso-8859-1 (18717) 
+application/rdf+xml (17717) 
+audio/x-ms-wax (16725) 
+audio/x-wav (15722) 
+application/x-javascript (13106) 
+message/rfc822 (12054) 
+image/x-xbitmap (10902) 
+text/css (10839) 
+audio/x-ms-wma (10349) 
+application/x-msmetafile (9921) 
+terxt/html (9365) 
+application/java-vm (9325) 
+application/atom+xml (8910) 
+application/x-tex (8909) 
+text/html charset=iso-8859-1 (8533) 
+video/mpeg (8530) 
+model/vrml (8489)
+
+Quite a lot of MIDI
+http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type%3A%22audio/midi%22
+1996 example, Flip Player ok but QuickTime and VLC not.
+Same for most recent example.
+VLC can be modified to support it https://wiki.videolan.org/Midi
+Server-side would be a lot easier.
+
+https://github.com/beschulz/wav2png
+
+
+Buggy Tika: 
+http://web.archive.org/web/20020916061744/http://www.agentblonde.fsnet.co.uk:80/sounds/razorsedgev.wax
+
+SO. wax not marked as isSpecializationOf in Tika sig file, so identification fails and text/plain wins.
+
+coda
+----
+
+Realistic examples, high-value but high-risk.
+
+http://arstechnica.com/apple/2011/07/does-apple-still-care-about-creative-pros/ Legacy file support.
+c.f. audio master tool plugins.
+
+"webring" when did new sites stop happening?
 
