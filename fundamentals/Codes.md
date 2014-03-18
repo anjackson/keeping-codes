@@ -19,5 +19,19 @@ Perhaps the difference here is whether we are trying to document all possible 's
 
 Format specs must be implemented to come alive, and it is the processes that implement the specs that are definitive.
 
+
+And in the background of all this, we have the weakest format model. Format, as defined by a set of internal or external features that can be used to group related files. e.g. All files ending in .PDF, or starting with %%PDF1.4, etc. Such identifiers are neither permanent nor unique, and yet, association by extension is precisely how software identifies the 
+
+
+Perhaps we can live with an ambigious concept of format. Perhaps it's more important to work out how to create the right environment to encourage the generation of more trustworthy data. First, we need to decide what data we really need, and understand the validation processes that will help us ensure we can trust it. Then we can choose the right registry. And then we can work out encourgement.
+
+
+Trends, social, obsolescense, etc.
+
+Floppies are crazy; CD is crazy but kind of standardized; DVD is one format always
+https://twitter.com/archivetype/status/378176040696545280
+
+
+
 LINK TO [What to Preserve](What to Preserve.html)
 

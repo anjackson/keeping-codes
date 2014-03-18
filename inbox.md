@@ -196,3 +196,373 @@ The zip file format is used for data compression and archiving. Within the repo 
     * Masters on CD-ROM for 10 years 
     * JPEG derivatives on spinning disk for web site 
     * Are the masters still the same? 
+
+
+
+## Blog Ideas ##
+- Compression Is Not A Significant Property
+- Defining Format
+- Preservation Planning - Baysian versus frequentist... First principles/ab initio or Empirical modelling.
+- eBook wars, like early years of DRM music etc.
+- files versus filesystems. Latter obsolete first, former at risk due to persistent ram plus walled gardens.
+- Simplification pressure? e.g. Markdown or even Wikipedia? REST over SOAP. HTML over PDF? Others?
+* Is ISO Enough? Open standards etc.
+* Stack Overflow for Digital Curation
+* Trust http://en.wikipedia.org/wiki/Source_criticism
+* The Performance Spectrum, just the one.
+** http://notepad.benfinoradin.info/2012/08/28/take-a-picture/
+
+http://www.endangeredlanguages.com/lang/3049
+
+Writing:
+programming versus car mechanic
+http://www.codinghorror.com/blog/2012/05/please-dont-learn-to-code.html
+http://www.codinghorror.com/blog/2012/05/so-you-want-to-be-a-programmer.html
+programming versus writing, not all of us need to be novelists.
+
+
+TODO BLOG: Paying for Open Source ('pro', license, support, pooled)
+TODO BLOG: Preserving processes, software and test suites.
+
+Time travel
+- Passive history is needed too.
+
+Knowing first is impossible
+"Need to be very *very* clear about what is to be preserved before developing tools"
+https://twitter.com/mopennock/status/375271606085378048
+
+QA costs and variation
+"QA for emulation can be at an environment rather than object level so potentially cheaper"
+https://twitter.com/euanc/status/375272042511491072
+
+Letters to my son
+- Plans for digital preservation
+- Scaleability from the low side, to contrast with BL scale later.
+- A business opportunity?
+- Costs manageable via scale?
+
+My fathers story
+- Learning to geek
+
+Career planning computer
+- And jobs that didn't exist.
+
+Vendors, communities and trust
+-The enthusilasts will be the ones who save us, who are right no biolding the towers flog tepees gain information that thefuure will need to reconstruct t IRS past.
+- Also, many institutions hands are tied by the law or he fear of it. The enthusiatst carry on, generally safe from prosecution while non commercial. 
+- So how do we trust them? How do we build this expertise into our systems
+- Earlier
+- A comment by a sceneor manager made me realise that, as things are now, vendor onsolcsnce is a real risk. The only route to establishing a access system relies on extren vendrs. 
+- I took it for granted that an institution like the bl would maintain the people it needs to undrstans it's own content. Surely no memory institution could expect to function without the people and code that embody the undrstansibg? We could not function without staff that understand paper, why should digital be different?
+- Economics, skills, etc
+- But also, contractual approach 
+- or at least the wider comm
+
+Sig props and format
+- Ce nest par un object numerique
+- Our designated communities are already choosing which properties are significant, and expressing that through their choice of format. Our first task, therefore, is to listen.
+- Then encourage, protect, refine, converge, champion, etc
+
+Fundamentals of DP
+- The Zeroth Preservation Action: Save As...
+- Significant Property Schemes 
+- Data And Metadata
+- The Stack
+- Migrations And Emulations
+- Choosing the performances: wikipedia black out case study
+- Halting problem and the space of all future models equals the no superset problem
+
+Neither Significance Nor Properties
+- Significant Properties and the DOPWG
+- See http://www.planets-project.eu/private/pages/wiki/index.php/User:Andrewj/To_Do/Properties
+
+Beating Bit-Rot
+- Bit Bucket Options: Evaluate existing platforms
+- Alignment of non arcival and archival content: What stored where? Who accesses it?
+
+Atlas of Digital Damages
+- Big migration matrix plot w no of tools
+- Gap Analysis v services spine chart
+- Identity tool fails
+Start with format corpus
+- Parse sig files too.
+- Build a map.
+- Create an analysis/map-maker application folder?
+- Import foreg into it, setting up sync with PRONOM.
+- Aim to make the Atlas instead of sync to Drupal.
+
+Registry Game?
+- Social pressures plus...
+- reward, competitions, achievements, progress tracking, challenges...
+- Look at stack overflow and steal...
+- Badges:
+- {Format [Master} Minter]
+- Tweaker (lots of small changes)
+- Perfectionist (retweaking)
+- Grammartron
+- Regex Ninja or Magic Ninja
+- Reviewer? Mentor? Teacher?
+- Shotgun! Whoever is always there first, reviewing.
+- Uploader, Test Data Provider
+- Firestarter, first of an edit flurry
+- Schema Schemer
+- Addict. Most visits.
+- Public timeline of achievement 
+- Ranking etc
+
+The Rosetta Corpus/Time Capsule
+The Bootstraps
+-Enough to parse other docs, rather than every possible format.
+-Includes multiple codes as well as specifications.
+-ASCII, then more...
+-Documents and images, types, multiple formats.
+
+Use error-correction codes to patch up bit-level errors?
+- http://en.wikipedia.org/wiki/Forward_error_correction
+Parity Alternatives
+-Format+Size+hash+ECC+brute-force is sufficient?
+-Shannon Entropy helps?
+
+
+----
+
+
+Wikipedia's echo chamber
+Deletionists
+Self reinforcing etc.
+
+http://gty.im/149366163
+
+https://intranet.bl.uk:8443/confluence/pages/viewpage.action?pageId=139630062
+
+PMRs:
+What worked well?
+What hasn't worked well?
+
+2012, the year DP jumped the shark
+Rothenberg arguing dp should outline its society by design - long now
+Rosenthal's straw man
+HTML as rothenbergs types
+Still apparently arguing Migration v Emulation, more straw men
+Unproven strategies taught?
+Hopelessly overambitious levels of preservation, most folks need reasons to get off the bottom rung.
+
+Designing a RCT for DP
+- imagine what a auitable RCT would look like
+- reverse engineer closest approximation
+- argue that TB (and actually pt) are cargo cult science post hoc rationalisation of the first bit only. e.g. modelled on paper, not true process, maps one experiment to one decision,which is unrealistic, as a theory is usually supported by multiple experiments.
+- Pt non random sampling as danger
+- Strategy, action and then implementation to be chosen separately?
+- Current framework evaluates whether the action was implemented well, rather than whether it succeeds in it's aim of preserving digital material. The critical issues, of whether the significant properties you chose are truly significant, are poorly addressed.
+- The most important decisions - what strategies shall we consider and why? what significant properties will we use and why? - are not actually documented explicitly.
+- This is not a case of theory, but of values, as the basic 'theory' is known (not speculation to be tested). Which PA should be lead by rich understanding of the choices and evaluation should focus on distinguishing those choices rather than their implementation.
+- http://en.wikipedia.org/wiki/Design_of_experiments, http://en.wikipedia.org/wiki/Multivariate_testing, RCTs, A/B testing, 
+Go back and check Delos paper
+See also trial registries http://blogs.worldbank.org/impactevaluations/what-can-we-learn-from-medicine-three-mistakes-to-avoid-when-designing-a-trial-registry-guest-post-b
+
+
+Every data point is a thought, a mind, etc
+Those future users who will, with tears in there eyes, click Save As...
+Publishers memory to truly a national memory. Our people's memory
+Archives of emotion
+Preserve the Mona Lisa by duplication? Delete the original?
+
+Paper on ldwa
+- oais as rep model not digital preservation
+- Js  stuff
+- Storage scaling 
+- Characterisation as core problem
+- Silly restrictions
+- User feedback to judge SIG prop
+- Reindexing as bau, hence cluster but any performing chechsumming store could piggyback 
+- Linear implied discovery model of oais as painfully wrong
+- Catalogue data as derivative data plus annotations
+Loop of evaluation at dip stage to PACT preservation actions
+Actually linked to stakeholders rather than lone decision maker
+Cost rise over time plateau's at 'complete reverse engineering'? Or infinite because of what you are forced to guess
+Instead of guessing what they'll need, collect evidence to validate the approach.
+Web archive to keep thumbnails, screenshots, Dom trees? Render traces?
+
+### On Format Languages ###
+http://www.nationalarchives.gov.uk/PRONOM/Format/proFormatSearch.aspx?status=detailReport&id=1160&strPageToDisplay=summary
+I understand the desire to focus PRONOM development on creating signatures, and I realise that keeping the references up to date would be a lot of work. However, I worry that signatures alone are not enough, because without the references, I don't think it's clear what is actually being identified. Without reference to any version of the ISO spec., or indeed MS Office, what does it mean to identify a file as 'Open Office XML' fmt/412? That kind of fine-grained identification is critically important if you wish to really understand the preservation issues around OOXML, because on the strict form has transparent semantics and can be considered preservation friendly. The transitional form is full of opaque semantics like 'render this paragraph like Word95 does'.
+
+Except, actually, right now, it doesn't matter, because as far as I know there is no generally available software that implements OOXML Strict (I think only the latest Office betas do so). So right now, the ambiguity in the PRONOM definition is harmless, and getting into the details is pretty much a waste of time. If you just need to ID files right now, it works just fine.
+
+http://www.zdnet.com/office-to-finally-fully-support-odf-open-xml-and-pdf-formats-7000002696/
+
+Except, except, when the new versions arrive, and the various formats start to get supported to varying degrees, and the standard keep moving and 
+
+Also, it's worth noting that the Open Digital Formats Registry idea is quite close to the Registry Ecosystem idea outline here (http://www.openplanetsfoundation.org/blogs/2011-02-15-file-format-registry-report-released). I used to be quite skeptical about this idea, but I've come around to it (http://www.openplanetsfoundation.org/blogs/2012-07-06-biodiversity-and-registry-ecosystem).
+
+----
+
+BLOG: Vendor Obsolescence, IE6, SilverLight, Flash?
+http://blog.colbyrabideau.com/post/8317497197/i-dont-know-how-to-ie6
+http://arstechnica.com/microsoft/news/2010/11/silverlight-html5-and-microsofts-opaque-development-strategy.ars
+http://www.guardian.co.uk/technology/2011/jun/14/microsoft-windows-8-developers
+http://www.zdnet.com/blog/microsoft/microsoft-needs-to-tell-windows-8-developers-now-about-jupiter-and-silverlight/9608
+http://www.theregister.co.uk/2011/06/06/windows_tablets_without_silverlight_dot_net/
+
+
+--- 
+
+BLOG: Re-inventing the wheel (to be changed)
+Issue about CITE paper, W3C Fragment effort, and issue about whether the fragment can reference the entity rather than the resource.
+
+http://www.ariadne.ac.uk/issue67/blackwell-hackneyBlackwell/
+http://www.w3.org/2008/WebVideo/Fragments/
+
+In particular, if we wish the fragment identifiers to be insulated from some details., i.e. fractions used be CITE rather than pixels, we need to get that in the standard? It does % for spatial dimensions, so is that okay? is that precise enough? What if we want to point at something really small? How many SigFig.
+
+
+---
+Cargo Cult Standards
+
+p.s. and if I anyone starts writing yet another standalone identifier, provenance or metadata standard from scratch, I will come around to your house, take away your computer, and replace it with a Chrome tablet so you always have to GOOGLE IT FIRST. :-)
+
+Every time you start writing a new standalone metadata standard from scratch, God kills a kitten. Please make it stop.
+
+---
+BLOG: IT's not that cheap or easy - BBC Archive/Shutdown issue
+http://www.wired.co.uk/news/archive/2011-02/11/bbc-torrent-archive-websites
+http://www.webcitation.org/60lBTX2oN
+
+---
+BLOG: Cargo Cult Standards
+BLOG: SCAPE and OPF
+BLOG: Deconstructing the Planets Testbed
+BLOG: Building Trust
+BLOG: Format data model - what is permanent? Why opaque IDs.
+BLOG: The long-tail of formats
+BLOG: Identifying Microsoft formats. Why DROID and File fail. JHOVE2 it. Use those os and office installers or images to make test corpus?
+BLOG/PAPER: Compression & Entropy
+
+Full decomposition of Identification and RI?
+
+RI - IDs - (identify) - TestFiles - (create) - Software - (implements) - RI
+RI - (validate) - Testfiles
+
+So, Fido etc manage identifiers, and link to RI about formats.
+Identifiers also come with test documents, which describe the SW that created them.
+RI has unique IDs and links to information about SW.
+RI includes specifications that Validators validate objects against.
+
+---
+
+I'm not sure it's reasonable to expect what is appropriate for the Internet Archive's web archive to be appropriate elsewhere. For example, when accessing the content, the archive's visitors are expected to come to the Wayback Machine armed with the URL of the site they want. They look up the URL, choose the date, and download the items they want, and the interpretation of the content is left entirely to them. Very little metadata is required for discovery, and the IA only need to support access at the protocol level (HTTP has been pretty stable so far).
+
+I think the web archive is quite exceptional in this regard and that, in order to be enable their users to discover and use their collections effectively, most other institutions will have to understand how to interpret their content. For example, to support full-text search, some sort of transformation to plain text is required. One must choose therefore choose whether to make this text version an archival artefact (which assumes it could never be improved), or whether to support the software required to re-parse the original items in order to be able to generate new indexes in the future. Similarly, 
+
+---
+
+Misc. Blog Ideas
+ - Format features for standards. Eg mime type embed. 
+ - Why open? Other issues than code.
+ - Comms not content.
+ - OPF: How to join in... (also collect stuff from SF TRAC wiki)
+ -    - [https://sourceforge.net/apps/trac/planets-suite/][1]  
+ - OPF: Reponse to Planets Testbed Review
+ -    - In reponse to [http://e-records.chrisprom.com/?p=1183][2]  
+ - OPF:  The need for a roadmap.
+ -    - [http://gamearchitect.net/Articles/SoftwareIsHard.html][3] 
+   - [http://www.codinghorror.com/blog/2006/04/best-practices-and-puffer-fish.html][4] 
+   - [http://www.jisc.ac.uk/events/2010/07/jif10/virtualgoodybag/understandingsustainability.aspx][5] 
+ - OPF: Blog on other systems and similarities:[][6] 
+ -    - [http://www.naa.gov.au/records-management/secure-and-store/e-preservation/at-naa/software.aspx][7] 
+   - Each has a plug-in architecture, each has a new GUI, need to share....
+   - [http://inkdroid.org/journal/2010/08/24/notes-on-retooling-libraries/][8] 
+
+ - Blog idea: THE ROBOT[][9] 
+ -    - [http://www.youtube.com/my_videos][10] 
+   - [http://www.youtube.com/watch?v=3L44R9FJ-9U][11] 
+ - On The Naming Of Things
+ - On Preserving Conversations
+ -    - Blog on HTTP v. HTML
+   - Connect to DSHR blog. [http://blog.dshr.org/2010/06/jcdl-2010-keynote.html][12]  
+
+  - Software Engineering versus Computer Sciece. CS4SC? Comp-to-Data arc.
+http://www.delicious.com/beardedstoat/cs4sc
+
+OPF Ideas
+
+Idea: Double-check and publicise:
+ - Write on iPres BOF etc session. Merrit, JHOVE, etc.
+ - The Open Planets Foundation at iPres: Exploring Planets and Beyond
+ - http://www.openplanetsfoundation.org/node/31
+
+
+OPF Education Links
+ - Move our training resources page to OPF
+ - http://blogs.ecs.soton.ac.uk/keepit/2010/08/23/keepit-course-3-game-playing-characterisation-transmission-metadata-and-provenance/
+ - http://blogs.ecs.soton.ac.uk/keepit/2010/08/23/keepit-course-3-introducing-preservation-workflow-and-format-risks/
+ - http://blogs.ecs.soton.ac.uk/keepit/2010/08/23/keepit-course-3-significant-characteristics/
+ - [http://blogs.ecs.soton.ac.uk/keepit/2010/08/23/keepit-course-3-describing-significant-characteristics-and-recording-provenance/][13] 
+ - [http://digital-scholarship.org/dcpb/dcpb.htm][14]  Digital Curation and Preservation Bibliography
+ - Collect the blog preservation link conversation: [http://lists.ala.org/wws/arc/digipres/2010-08/msg00007.html][15]  
+
+
+OPF Potential Special Interest Groups
+ - Web archiving
+ - Removable media
+ - Personal archiving
+ - Designed to last - Thinking long term when writing software.
+
+OPF: Working with other groups
+ - Work with National Digital Stewardship Alliance [http://www.digitalpreservation.gov/ndsa/][16] 
+ - [][17] sustaining software effort. [http://www.software.ac.uk/SustainingSoftware.html][18]  
+ - Join w3c (7,800 EUR per year!) and make it better. See also http://lists.w3.org/Archives/Public/public-html/
+
+
+
+Idea: Communications etc
+http://www.guardian.co.uk/commentisfree/2010/aug/09/tony-judt-words-all-we-have-tribute/print
+Problem mistaking lack of understanding to lack of clarity/content. Pairwise effects critical.
+
+http://blog.martinh.net/2010/08/intrinsic-motivation-from-magic.html
+
+http://paper.li/digipresnews
+
+http://www.w3.org/2002/09/wbs/1/rdf-2010/results
+
+http://www.digitalpreservation.gov/news/2010/20100809news_article_partners_meeting10.html
+
+http://www.digitalpreservation.gov/news/2010/20100809news_article_GW_presentation.html
+
+http://www.newswiretoday.com/news/75238/
+
+http://stereosubversion.com/commentary/bin-the-black-circle-08-09-2010/
+
+http://www.digitalpreservation.gov/news/2010/20100726news_article_archive-it.html
+
+[http://www.culturegrid.org.uk/][19] 
+
+Planets Techies Mailing List
+[https://sourceforge.net/mail/admin/list_subscribers.php?group_id=265364&group_list_id=68391&func=display][20] 
+
+
+
+
+
+  [1]: https://sourceforge.net/apps/trac/planets-suite/
+  [2]: http://e-records.chrisprom.com/?p=1183
+  [3]: http://gamearchitect.net/Articles/SoftwareIsHard.html
+  [4]: http://www.codinghorror.com/blog/2006/04/best-practices-and-puffer-fish.html
+  [5]: http://www.jisc.ac.uk/events/2010/07/jif10/virtualgoodybag/understandingsustainability.aspx
+  [6]: http://www.codinghorror.com/blog/2006/04/best-practices-and-puffer-fish.html
+  [7]: http://www.naa.gov.au/records-management/secure-and-store/e-preservation/at-naa/software.aspx
+  [8]: http://inkdroid.org/journal/2010/08/24/notes-on-retooling-libraries/
+  [9]: http://www.naa.gov.au/records-management/secure-and-store/e-preservation/at-naa/software.aspx
+  [10]: http://www.youtube.com/my_videos
+  [11]: http://www.youtube.com/watch?v=3L44R9FJ-9U
+  [12]: http://blog.dshr.org/2010/06/jcdl-2010-keynote.html
+  [13]: http://blogs.ecs.soton.ac.uk/keepit/2010/08/23/keepit-course-3-describing-significant-characteristics-and-recording-provenance/
+  [14]: http://digital-scholarship.org/dcpb/dcpb.htm
+  [15]: http://lists.ala.org/wws/arc/digipres/2010-08/msg00007.html
+  [16]: http://www.digitalpreservation.gov/ndsa/
+  [17]: http://www.digitalpreservation.gov/ndsa/
+  [18]: http://www.software.ac.uk/SustainingSoftware.html
+  [19]: http://www.culturegrid.org.uk/
+  [20]: https://sourceforge.net/mail/admin/list_subscribers.php?group_id=265364&amp;group_list_id=68391&amp;func=display
+
+

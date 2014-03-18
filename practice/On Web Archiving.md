@@ -6,6 +6,26 @@ tags: [stub]
 publish: false
 ---
 
+Spectrum:
+- Retrival
+- Search
+- Exploration and visualisation
+- Datasets
+    - http://adamcrymble.blogspot.co.uk/2013/08/can-we-reconstruct-text-from-wordcloud.html
+- Remote analysis of datasets
+- Local analysis
+
+Web Science: Why the adoption worked? How to stabilise against legal threat, death by trolling etc.
+Web observatory: Looking to join up work on studying the web.
+
+
+What is a [web] observatory?
+http://www.w3.org/community/webobservatory/2012/04/20/initial-discussions-at-www2012/
+Strawman product spec.
+http://www.w3.org/community/webobservatory/2012/11/15/specification-strawman-for-november-16th-f2f-meeting-boston/
+
+
+
 Content and Conversations: The Evolution of Web Archiving
 ---------------------------------------------------------
 
