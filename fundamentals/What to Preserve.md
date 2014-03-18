@@ -32,8 +32,12 @@ Rotherberg vernacular extraction example, cut-paste from emulator, is a migratio
 
  digital preservation for years. The most common 'preservation action' is porting. Calling it 'source code migration' underplays its importance.
 
+http://drj11.wordpress.com/2013/09/01/on-compiling-34-year-old-c-code/
+
+
 Backwards compatible, new versions run old stuff. Breaks in this, e.g. deprecation, are the issue.
 REF that high-change-freq. chart from last years iPres.
+
 
 ref The First Preservation Strategy: Format...
 
@@ -67,6 +71,11 @@ Then the choice is the spectrum of attempting to preserve the performance precis
 What is a document etc:
 http://people.ischool.berkeley.edu/~buckland/whatdoc.html
 http://inkdroid.org/journal/2013/10/15/suzanne-briet-on-ada-lovelace-day/
+
+
+http://www.theatlantic.com/health/archive/2013/02/our-comprehensive-living-archive-of-apples/273538/
+
+Possible a War Story: http://gigaom.com/2014/01/14/the-search-for-the-lost-cray-supercomputer-os/
 
 ### Continuity and Archaeology
 
@@ -136,6 +145,8 @@ Threats, Threat models not defined, see Making Plans.
 
 Trust models omitted - trust is social. see also http://en.wikipedia.org/wiki/Source_criticism
 
+[People, records and power: what archives can learn from WikiLeaks](http://www.tandfonline.com/doi/full/10.1080/01576895.2013.779926#.UvueIkJ_vCx)
+
 https://twitter.com/petemay/status/406397838529007616
 
 We can imagine many risks, but following Rosenthal, we use the concept of 'threats' to underling the importance of knowing the likelyhood. Risks formally defined as likely hood combined with severity of outcome, but language helps avoid confusion over common usage.
@@ -151,5 +162,12 @@ Given that is has proven possible to access the data, some might argue that the 
 Even though a more efficient way to access the disks themselves is now available, the problem shifts understanding how to use the disks and the software, and how to access the data within.
 
 It is the slow death of a thousand ambiguities, rather than an sudden, jarring expiration. Obsolescence is approached, rather than attained, with the costs of access rising every step of the way.
+
+Death of a Feature: https://groups.google.com/a/chromium.org/forum/#%21topic/blink-dev/_tHSX0IYXhQ
+
+Real value/risk is still there:
+- CAD
+- That story about audio masters for Mac plugins
+- Keynote
 
 LINK TO [Making plans](Making Plans.html)

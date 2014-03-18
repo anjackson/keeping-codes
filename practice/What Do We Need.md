@@ -155,6 +155,12 @@ http://wiki.whatwg.org/wiki/Video_type_parameters
 codecs
 e.g. Quicktime VR example file = [ video/quicktime; codecs="cvid, pano" ]
 
+version field already in use, e.g. Firefox Java plugins.
+
+file extension based types already in use, e.g. Firefox: application/x-extension-EXT
+
+We can add application/x-pronom-fmt-99, say.
+
 ---
 
 Poor mans technology watch
@@ -171,6 +177,8 @@ Features versus formats.
 Accompanying documentation did not make the 'factor' thing clear.
 
 Fundamentally, the things we can identify clearly as formats, and so much of the content of PRONOM, is inherently reasonably stable. Selection/collection bias. The really 'at risk' stuff is rarer, or more rarefied, and is not even in the list.
+
+See also [File Format Action Plans](http://blogs.loc.gov/digitalpreservation/2014/01/file-format-action-plans-in-theory-and-practice/).
 
 The Tools We Need
 =================
