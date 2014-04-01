@@ -83,4 +83,61 @@ To spec.
 
 http://www.dlib.org/dlib/november13/kelly/11kelly.html
 
+## Components ##
+
+* Crawl Metadata, User Agent etc.
+* Seeds (text file)
+* DecideRules
+* FrontierPreparer
+* QuotaEnforcer
+* Canonicalisation
+* uriUniqFilter
+* IP/Robots.txt info validity/timeout.
+* Fetchers
+* Extractors
+* PeristLog
+* FetchHistory
+* Sheets
+* Our custom stuff, IP sheets etc.
+* WARC Writers, disk space monitoring, etc.
+
+Heritrix3 queues, per host.
+This enforces delay?
+Queue rotation behaviour?
+
+Coping with millions of queues?
+
+* [Kafka can't](http://mail-archives.apache.org/mod_mbox/kafka-users/201310.mbox/%3CCA+Vbu7zMRWuLiVLzC+iAdX+XJUb3xdZHaunxGJzNsC9QwrtYSg@mail.gmail.com%3E)
+* [RabbitMQ can](http://lists.rabbitmq.com/pipermail/rabbitmq-discuss/2009-February/003042.html)
+* [Kestrel?](https://github.com/twitter/kestrel) which is used with Twitter Storm.
+
+But do we need millions of queues? Do they only exist as a means of helping enforce the crawl rate?
+
+[When taking a snapshot Heritrix renames crawl.log](https://webarchive.jira.com/wiki/display/Heritrix/When+taking+a+snapshot+Heritrix+renames+crawl.log)
+
+[Frontier queue budgets](https://webarchive.jira.com/wiki/display/Heritrix/Frontier+queue+budgets)
+[BdbFrontier](https://webarchive.jira.com/wiki/display/Heritrix/BdbFrontier)
+
+SQUID + CARP (Cache Array Routing Protocol) and N * LAP/warcprox
+OR
+CrawlBolts keep track of proxies via ZK and route on host hash.
+IF
+This is really necessary? Alternative is simply to store duplicate info in Cassandra.
+In principle, the Archiving Proxies could do much of this:
+- Crawl-delay
+- Retries?
+Probably too complex. Perhaps better to have separate CASSANDRA table like:
+- ( ((hash), SURT, UUID), WARC-Record-Type, WARC, Offset )
+- Use this to decide duplicates, store or write re-visit, etc.
+
+URIs table used for crawl/frontier:
+- ( ((host), SURT, crawl_time), URI, hash?)
+
+
+http://commoncrawl.org/common-crawl-move-to-nutch/
+A WARC writer added to Nutch: 
+https://github.com/Aloisius/nutch/commit/3ef169ad5402cee35346f566c85c237b5d128495
+versus
+https://github.com/commoncrawl/commoncrawl-crawler
+
 

@@ -22,6 +22,10 @@ Investigate formats that have been identified as 'difficult' elsewhere. Are they
 
 See also http://rhizome.org/editorial/2014/feb/10/authenticity-access-digital-preservation-geocities/
 
+There is a story: 
+> "Adoption of XHTML on the web was essentially zero, except for those who were starting from XML to begin with."
+> <small>http://www.slideshare.net/cavlec/the-sad-saga-of-xhtml-or-what-happens-when-markup-geeks-get-arrogant</small>
+
 Linux:
 * http://s-macke.github.io/jor1k/
 
@@ -114,12 +118,19 @@ VRML97 to X3D
     * Works but proprietary and no commercial use allowed.
 * meshlabserver.exe -i <wrl file> -o <x3d file> (no colour, just the mesh, it seems)
 * Blender, c.f. http://auxmem.com/2012/01/24/convert-3ds-files-to-obj-with-blender/ script created and works.
-* http://ovrt.nist.gov/v2_x3d.html 
+* http://ovrt.nist.gov/v2_x3d.html seems to work and is simpler to integrate.
 
 X3D to HTML
 * X3DOM looks like a fairly simple wrap. http://www.x3dom.org/
 * See http://x3dom.org/x3dom/example/blenderExport/horse-inline.html for an example of pulling in the X3D via URL
 
+X3D to PNG
+* http://castle-engine.sourceforge.net/view3dscene.php#section_screenshot
+    * view3dscene my_model.wrl --screenshot 0 output.png
+* http://www.niallmoody.com/heilan/
+* http://libx3d.sourceforge.net/ 
+
+Blender can't load VRML1, view3dscence can't convert, apparently (at least from CLI?)
 
 Uh-oh, VRML can haz hyperlinks, of course, so https://twitter.com/archivetype/status/429004845102944256
 
@@ -221,6 +232,7 @@ xmpDM:audioChannelType: Stereo
 xmpDM:audioCompressor: MP3
 xmpDM:audioSampleRate: 48000
 
+c.f. http://siarchives.si.edu/blog/importance-original
 
 eBooks
 ------

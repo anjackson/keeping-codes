@@ -85,6 +85,9 @@ Scaling issues: File size,
 Aggressive random-access-file opening:
 https://github.com/openplanets/droid/commit/2c9f9b1a86e3fd219ecc8b8ed4cde0b81cfe2057
 
+If you want to really optimise this thing, it should be possible to do all this (including checksum calculation) while only streaming over the whole input stream once. I've been trying to do that in our web archive indexer (which also incorporates the Nanite tool) with some success, but gracefully handling large files is not proving easy when some tools (e.g. DROID, PDFBox Preflight) tend to assume that you have a random access file and can flip to the end of the bitstream and back easily.
+
+
 
 War Stories - Inbox
 -------------------
@@ -104,6 +107,9 @@ As a matter of process we virus-scan every bitstream prior to storage. We very s
 ### JHOVE restating the obvious
 MSBooks JHOVE property dump. >> documents in many cases.
 
+### Stories of loss 
+My first data loss, grandfather disks etc.
+http://sethclifford.me/2013/12/11/data-loss-and-noble-truths/
 
 DP Myths
 --------

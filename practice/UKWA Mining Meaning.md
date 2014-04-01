@@ -12,3 +12,5 @@ RCT?
 
 [A Distinction worth Exploring: “Archives” and “Digital Historical Representations”](http://www.archivesnext.com/?p=3645)
 
+Statistics and issues
+* https://news.ycombinator.com/item?id=7287665

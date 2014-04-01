@@ -172,6 +172,8 @@ Dealing with Value
 - Never Alone (social aspect)
 
 
+http://www.avpreserve.com/blog/the-100-year-lie-and-the-lay-of-the-shelf/
+
 [1]: https://en.wikipedia.org/wiki/Book:Thermodynamics
 [2]: https://en.wikipedia.org/wiki/Zeroth_law_of_thermodynamics
 [3]: https://en.wikipedia.org/wiki/Claude_Shannon

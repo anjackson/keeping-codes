@@ -6,9 +6,16 @@ tags: [draft]
 publish: true
 ---
 
+Introduction
+------------
+
 The full story of this piece of work, which was originally presented by the primary author at iPres 2010, can be found here: [Developing a Robust Migration Workflow for Preserving and Curating Hand-held Media](http://arxiv.org/abs/1309.4932).
 
 To complement that original publication, I thought it would be a good idea to pull out some of the technical reference parts of the paper and make them easier to find. Currently, this is just a direct copy of the more technical section of that paper, but I'll hone it down over time.
+
+### Other Resources
+
+* [Getting Public Radio’s Legacy Off Ageing Rewritable CDs: An Interview with WNYC’s John Passmore](http://blogs.loc.gov/digitalpreservation/2014/02/getting-public-radios-legacy-off-ageing-rewritable-cds-an-interview-with-wnycs-john-passmore/)
 
 
 ----
