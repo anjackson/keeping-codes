@@ -32,6 +32,8 @@ Floppies are crazy; CD is crazy but kind of standardized; DVD is one format alwa
 https://twitter.com/archivetype/status/378176040696545280
 
 
+On modelling?
+[Theory of generalized markup, 2014](http://wendellpiez.com/eatyourvegetables/?p=209)
 
 LINK TO [What to Preserve](What to Preserve.html)
 
