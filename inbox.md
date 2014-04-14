@@ -285,6 +285,8 @@ Neither Significance Nor Properties
 Beating Bit-Rot
 - Bit Bucket Options: Evaluate existing platforms
 - Alignment of non arcival and archival content: What stored where? Who accesses it?
+- Pick apart http://queue.acm.org/detail.cfm?id=1866298
+"No feasible experiment could validate them. They are projections based on models of how components of the system such as disks and software behave. "
 
 Atlas of Digital Damages
 - Big migration matrix plot w no of tools
