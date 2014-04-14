@@ -285,6 +285,9 @@ Neither Significance Nor Properties
 Beating Bit-Rot
 - Bit Bucket Options: Evaluate existing platforms
 - Alignment of non arcival and archival content: What stored where? Who accesses it?
+- Problems with Petabyte-for-a-century and the half-life model.
+- https://code.facebook.com/posts/229861827208629/scaling-the-facebook-data-warehouse-to-300-pb/
+- http://www.openplanetsfoundation.org/blogs/2011-01-12-format-obsolescence-and-sustainable-access
 - Pick apart http://queue.acm.org/detail.cfm?id=1866298
 "No feasible experiment could validate them. They are projections based on models of how components of the system such as disks and software behave. "
 
