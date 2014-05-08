@@ -19,12 +19,39 @@ Investigate formats that have been identified as 'difficult' elsewhere. Are they
     * Shockwave / .dcr
     * Quicktime VR (identification challenge)
 * The .pcd from Kodak image CDs to TIF or JPG via ImageMagick.
+* Formats from [Creating Preservation-Ready Web Resources](http://www.dlib.org/dlib/january08/smith/01smith.html)
+    * [model/gsm](mimeExamples/hangingLamp.gsm), Geometric description language, e.g. Graphisoft's ArchiCAD (actual MIME type is model/vnd.gdl) FFB:WW%11%00, and just 8 57571900 in LDWA.
+    * [x-world/x-vrml](mimeExamples/nistlogo.wrl), Virtual reality modeling, e.g. Alteros 3D
+    * [application/dicom](mimeExamples/US.28312.dicm), Medical imaging, e.g. MIR CTN software
+    * [image/xif](mimeExamples/dragonFly.xif), Scanning and OCR, e.g. Pagis
+    * [image/tiff](mimeExamples/features.tif), High quality images, e.g. Pagemaker; Photoshop
+    * [application/fdf](mimeExamples/travel.fdf), PDF forms data exchange (extension = "fdf"), e.g. Adobe Reader' Excel; Oracle
+    * [application/pdf](mimeExamples/travel.pdf), Print-quality documents, e.g. Adobe Reader, Foxit
 
 See also http://rhizome.org/editorial/2014/feb/10/authenticity-access-digital-preservation-geocities/
+
+Note that AADDA has *1* distinct XIF: http://www.webarchive.org.uk/interject/inspect/http://web.archive.org/web/20030807223708/http://www.wburrows.org.uk:80/IMechE%20OU.xif
+AADDA has no DICOM, LDWA has one: http://192.168.1.204:8990/solr/ldwa/select?q=content_type_ext%3A%22dicm%22&wt=json&indent=true and amusingly it is the example from the paper!
+
+
+Side note on format dynamics, e.g. PS v PDF and turing completeness makes consistent implementation verifiable in principle?
+
+> "Parsimonious Preservation – (another) different approach to digital information management"
+> http://www.thegreatbear.net/audio-transfer/parsimonious-preservation-approaches-information-management/#comment-12540
+
+> "If you work in digital preservation then the term ‘significant properties’ will no doubt be familiar to you. The concept has been viewed as a hindrance due to being shrouded by foggy terminology, as well as a distinct impossibility because of the diversity of digital objects in the world which, like their analogue counterparts, cannot be universally generalised or reduced to a series of measurable characteristics."
+>
+> http://www.thegreatbear.net/audio-transfer/significant-properties-technical-challenges-digital-preservation/
+
+
+> "Determining the significant properties of a digital object has been touted as a means to ensure a digital object’s authenticity over time (Heslop, Davis, & Wilson, 2002). The appraisal process should include a consideration of a digital object’s essential attributes (Webb, 2003, p. 72), because they are indelibly linked to the asset’s value (Blue Ribbon Task Force, 2010, p. 21) and meaning over time (Heslop et al., 2002, p. 14). Notably, an understanding of the core features of a digital asset may aid media managers to choose an appropriate metadata schema (Hedstrom, Lee, Olson, & Lampe, 2006). - See more at: http://www.tameyourassets.com/what-are-significant-properties/#sthash.1NONPa8x.dpuf"
+>
+> http://www.tameyourassets.com/what-are-significant-properties/
 
 There is a story: 
 > "Adoption of XHTML on the web was essentially zero, except for those who were starting from XML to begin with."
 > <small>http://www.slideshare.net/cavlec/the-sad-saga-of-xhtml-or-what-happens-when-markup-geeks-get-arrogant</small>
+
 
 Linux:
 * http://s-macke.github.io/jor1k/
@@ -208,6 +235,7 @@ FFB .RMF (8077), rtsp (6178)
 For these, it seems ffmpeg can convert, so on the fly access is possible.
 
     $ ffmpeg -i roar.rm -f wav test.wav
+    $ cat in | ffmpeg -i - -f wav > out
 
 
 Kodak Photo CD

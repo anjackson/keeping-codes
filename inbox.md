@@ -54,6 +54,9 @@ Inbox
    * For content, in future, eye of stakeholder means users should be able to express format preference.
 
 
+> "The need therefore is for some form of lossy compression at the semantic level."
+> http://blog.dshr.org/2014/05/on-economics-of-throwing-stuff-away.html
+
 ### Sources
 
 * Pull in requirements and issues, AIT stuff.
@@ -277,6 +280,7 @@ Fundamentals of DP
 - Migrations And Emulations
 - Choosing the performances: wikipedia black out case study
 - Halting problem and the space of all future models equals the no superset problem
+- CAP Theorem and consequences : http://queue.acm.org/detail.cfm?id=2610533 etc.
 
 Neither Significance Nor Properties
 - Significant Properties and the DOPWG
@@ -394,6 +398,15 @@ Cost rise over time plateau's at 'complete reverse engineering'? Or infinite bec
 Instead of guessing what they'll need, collect evidence to validate the approach.
 Web archive to keep thumbnails, screenshots, Dom trees? Render traces?
 
+### The Fourth Age Of Cataloguing ###
+0. Books on shelves. locations in head.
+1. Card catalogue of physical items
+2. Online card catalogue OPAC of physical items
+3. Online catalogue of digitised physical items
+4. Online catalogue of born digital material.
+
+We have been here before... [Google Directory No Longer](http://www.seroundtable.com/google-directory-gone-13731.html)
+
 ### On Format Languages ###
 http://www.nationalarchives.gov.uk/PRONOM/Format/proFormatSearch.aspx?status=detailReport&id=1160&strPageToDisplay=summary
 I understand the desire to focus PRONOM development on creating signatures, and I realise that keeping the references up to date would be a lot of work. However, I worry that signatures alone are not enough, because without the references, I don't think it's clear what is actually being identified. Without reference to any version of the ISO spec., or indeed MS Office, what does it mean to identify a file as 'Open Office XML' fmt/412? That kind of fine-grained identification is critically important if you wish to really understand the preservation issues around OOXML, because on the strict form has transparent semantics and can be considered preservation friendly. The transitional form is full of opaque semantics like 'render this paragraph like Word95 does'.
@@ -464,6 +477,10 @@ RI includes specifications that Validators validate objects against.
 I'm not sure it's reasonable to expect what is appropriate for the Internet Archive's web archive to be appropriate elsewhere. For example, when accessing the content, the archive's visitors are expected to come to the Wayback Machine armed with the URL of the site they want. They look up the URL, choose the date, and download the items they want, and the interpretation of the content is left entirely to them. Very little metadata is required for discovery, and the IA only need to support access at the protocol level (HTTP has been pretty stable so far).
 
 I think the web archive is quite exceptional in this regard and that, in order to be enable their users to discover and use their collections effectively, most other institutions will have to understand how to interpret their content. For example, to support full-text search, some sort of transformation to plain text is required. One must choose therefore choose whether to make this text version an archival artefact (which assumes it could never be improved), or whether to support the software required to re-parse the original items in order to be able to generate new indexes in the future. Similarly, 
+
+NOTE: DHT+Range Queries?
+
+https://github.com/tomp2p/TomP2P/blob/master/examples/src/main/java/net/tomp2p/examples/ExampleDST.java
 
 ---
 

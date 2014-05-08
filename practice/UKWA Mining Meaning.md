@@ -17,6 +17,35 @@ Statistics and issues
 * [Biblio bizarre: who publishes in Google Books](http://sappingattention.blogspot.co.uk/2014/04/biblio-bizarre-who-publishes-in-google.html)
 * [the meaning of statistics and digital humanities](http://lab.softwarestudies.com/2012/11/the-meaning-of-statistics-and-digital.html)
 
+[Operationalizing and the Natural Sciences](http://www.scottbot.net/HIAL/?p=40224)
+https://en.wikipedia.org/wiki/Intersubjective_verifiability
+
+[Lessons from science part the third: why we do what we do](http://cradledincaricature.com/2014/03/12/lessons-from-science-part-the-third-why-we-do-what-we-do/)
+
+[Digital history and the death of quant](http://britishlibrary.typepad.co.uk/digital-scholarship/2014/04/digital-history-and-the-death-of-quant.html)
+
+>
+>
+> Humanistic thinking does not proceed by experiments that yield results; it is a matter of mental experiences, provoked by works of art and history, that expand the range of one’s understanding and sympathy.
+> 
+> This is why the best humanistic scholarship is creative, more akin to poetry and fiction than to chemistry or physics: it draws not just on a body of knowledge, though knowledge is indispensable, but on a scholar’s imagination and sense of reality.
+>
+> http://www.newrepublic.com/article/117428/limits-digital-humanities-adam-kirsch
+>
+
+> http://text-patterns.thenewatlantis.com/2014/05/my-response-to-adam-kirsch.html
+
+> http://www.matthewjockers.net/2014/05/07/so-what/
+
+> 
+> [What Is "Digital Humanities," and Why Are They Saying Such Terrible Things about It?](http://mkirschenbaum.files.wordpress.com/2014/04/dhterriblethingskirschenbaum.pdf)
+
+When making statements about the world, experimental evidence is how you raise mere consensus to something approaching truth.
+
+when I doubt there's any consensus on the "Humanities".
+
+Almost as much fun as all that malarky about defining "Digital Humanities".
+Somehow with the implication that if you can't define it you shouldn't be taken seriously.
 
 Curation's second death
 =======================

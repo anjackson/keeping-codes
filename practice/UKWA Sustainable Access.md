@@ -52,3 +52,8 @@ Messy, interpretation issues.
 ### Improving crawlers
 
 Rendering for dependencies,
+
+
+See also
+
+[Good practice in preservation webharvests, David Pearson (NLA), Peter McKinney (NLNZ), Prepared for the Preservation Working Group of IIPC](https://docs.google.com/document/d/1UPQ4uIfaUA20nYxtwmTkx15iNRYVY4FOJBZS1Fg0RCk)

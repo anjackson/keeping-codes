@@ -171,6 +171,10 @@ Dealing with Value
 - Making Plans
 - Never Alone (social aspect)
 
+Broken bits
+- [Pixel Dust: Illusions of Innovation in Scholarly Publishing by Johanna Drucker](http://lareviewofbooks.org/essay/pixel-dust-illusions-innovation-scholarly-publishing/) features a number of points that are, at best, ill-defined.
+- [File Format Actions Plans](http://blogs.loc.gov/digitalpreservation/2014/01/file-format-action-plans-in-theory-and-practice/) and paying for just-in-case preservation actions (what are the costs).
+
 
 http://www.avpreserve.com/blog/the-100-year-lie-and-the-lay-of-the-shelf/
 
