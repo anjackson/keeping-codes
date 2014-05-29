@@ -156,6 +156,17 @@ http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type%3A%22null
 http://192.168.1.206:8990/solr/#/jisc/schema-browser?field=parse_error
 
 
+Encryption:
+
+PDF:
+- http://192.168.1.182:8989/solr/jisc3/select?q=parse_error%3A%22org.apache.pdfbox.exceptions.CryptographyException%3A+Error%3A+The+supplied+password+does+not+match+either+the+owner+or+user+password+in+the+document.%22&wt=json&indent=true
+
+Office:
+- http://192.168.1.182:8989/solr/jisc3/select?q=parse_error%3A%22org.apache.poi.EncryptedDocumentException%3A+Cannot+process+encrypted+word+file%22&wt=json&indent=true
+- http://192.168.1.182:8989/solr/jisc3/select?q=parse_error%3A%22org.apache.poi.EncryptedDocumentException%3A+Default+password+is+invalid+for+docId%2FsaltData%2FsaltHash%22&wt=json&indent=true
+- http://192.168.1.182:8989/solr/jisc3/select?q=parse_error%3A%22org.apache.poi.hslf.exceptions.EncryptedPowerPointFileException%3A+The+CurrentUserAtom+specifies+that+the+document+is+encrypted%22&wt=json&indent=true
+- http://192.168.1.182:8989/solr/jisc3/select?q=parse_error%3A%22org.apache.poi.hslf.exceptions.EncryptedPowerPointFileException%3A+Encrypted+PowerPoint+files+are+not+supported%22&wt=json&indent=true
+
 Fuzzy Hash Analysis
 ===================
 

@@ -57,3 +57,82 @@ Rendering for dependencies,
 See also
 
 [Good practice in preservation webharvests, David Pearson (NLA), Peter McKinney (NLNZ), Prepared for the Preservation Working Group of IIPC](https://docs.google.com/document/d/1UPQ4uIfaUA20nYxtwmTkx15iNRYVY4FOJBZS1Fg0RCk)
+
+
+Outline of talk for IIPC GA 2014
+================================
+
+WebARTist is very similar.
+
+Pages in.
+Pages in archive but not 'intentional' (in seed list).
+Pages not archived but known.
+
+Using anchor text to infer content of unarchived documents.
+
+
+
+Preservation Stuff
+------------------
+
+Knowledge bases
+(manually constructed)
+- Historical environments over time, drawl from partners.
+- Risks for web archives. From NLA 2009. Likelyhood? Severity? Mitigation.
+    - Add to Wikipedia? Maybe not due to the tags etc.
+    - Bibliography, could be a Zotero group, say.
+    - c.f. The Web Archive Bibliography. Expansive overview of the field.
+    - Three bibliographies and a database?
+    - This would be a good hackathon thing, to push this forward.
+- Environment submission
+- OldApps are friendly, so we should follow up.
+
+
+Jun 5,
+Jul 17,
+
+...
+
+Difficult Formats
+- VRML1
+- MP4
+
+Future Standards:
+* Screenshotting the domain crawl. PLUS on-ready DOM.
+* Roger's cool fragment screenshots.
+* Video stuff?
+
+SCAPE:
+* Nanite
+* DRMLint to Flint, as more general that just DRM, but focussed on dependencies.
+    * Embedded/linked JavaScript, missing fonts in PDF, etc.
+* Pageylyzer, for visual and/or structural comparisons of web pages: http://openplanets.github.io/pagelyzer/
+* ToMaR
+* DRMLint/Flint - assess files against a format policy (i.e. checking for javascript, missing fonts etc. in PDFs)
+* xcorrsound, pagelyzer, jpylyzer, and a few Apache Tika improvements.
+* Interject
+* They are at DL2014 in London.
+
+There might be an interest in ToMaR (http://openplanets.github.io/ToMaR/). This is a tool which wraps command line tools for easier execution on a Hadoop cluster.
+Sven has put together a demo which uses it to run FITS over a WARC file and import into the SCAPE C3PO profiling tool (http://peshkira.github.io/c3po/). See Sven’s blog post: http://openplanetsfoundation.org/blogs/2013-12-16-web-archive-fits-characterisation-using-tomar
+(I don’t know if Sven will be there?!)
+
+Alan Akbik (TUB) has continued his work on Text Mining/Information Extraction (I think the tool used to be called KrakeN, but as I understand it, this work has moved on since then. There’s an online information extraction system available: http://lucene.textmining.tu-berlin.de/ and a blog post about it here:
+http://www.openplanetsfoundation.org/blogs/2014-04-03-web-scale-data-mining-digital-preservation
+
+SCAPE (jointly with APARSEN) have also got a workshop at the DL conference (http://www.dl2014.org/) where there will be a panel discussion followed by a number of demos related to the tools and services SCAPE have produced. Still awaiting confirmation on the date SCAPE will be there (the proposed date is the 8th, but this may change), but the conference is 8-12th Sept in London.
+
+Joachim has suggested Barbara Sierman may also be at the IIPC conference (for whatever working group she’s involved in) and was (allegedly) planning to mention SCAPE. We have some SCAPE flyers around specific tools; hopefully Barbara will be taking some of those with her too.
+
+Other than the things that Peter has mentioned I don’t have much to add.  DRMLint will be changing names to Flint soon, to reflect how it can also assess files against a format policy (i.e. checking for javascript, missing fonts etc in PDFS).  I am working on Geospatial files and will add them in to Flint eventually, reusing the infrastructure.  We are aiming to publish up to date source and have a web demonstrator of it up soon (on http://scape.opf-labs.org) (and maybe a blog post)
+
+It’s testing validity of GML and NTF files.  They’re just format modules in a forked DRMLint so they should slot into Flint fairly well (or in a separate repo, pulling in bits from FLInt).
+
+http://sourceforge.net/projects/officeddt/ could 
+
+
+OpenWayback
+===========
+
+How contributions model should work.
+

@@ -6,19 +6,18 @@ tags: [stub]
 publish: true
 ---
 
-Looking for known 'difficult' formats, and breaking it down.
+Introduction
+------------
 
-Of course, programming languages are often more highly version dependant (Python 3, Perl 6). But also difficult to spot, and not really the kind of thing where we'd transform on access.
+The goal is to looking for 'difficult' formats, formats that might be considered obsolete, and to dig deeper into what that means by examining some real examples. In particular, I want to understand how the affects the UK Web Archive -  are these formats present, how many are they, and what can be done?
 
-Investigate formats that have been identified as 'difficult' elsewhere. Are they present, what amount, and what can be done?
+Start here: http://www.dlib.org/dlib/january05/rosenthal/01rosenthal.html
 
-* Spectrum tape images.
 * Difficult formats from NLA: http://www.nla.gov.au/content/preservation-intent-selective-web-harvesting
     * RealMedia (and it's many variations, identification issues)
     * VRML (logical superset option, identification gap, version issues)
     * Shockwave / .dcr
     * Quicktime VR (identification challenge)
-* The .pcd from Kodak image CDs to TIF or JPG via ImageMagick.
 * Formats from [Creating Preservation-Ready Web Resources](http://www.dlib.org/dlib/january08/smith/01smith.html)
     * [model/gsm](mimeExamples/hangingLamp.gsm), Geometric description language, e.g. Graphisoft's ArchiCAD (actual MIME type is model/vnd.gdl) FFB:WW%11%00, and just 8 57571900 in LDWA.
     * [x-world/x-vrml](mimeExamples/nistlogo.wrl), Virtual reality modeling, e.g. Alteros 3D
@@ -27,57 +26,17 @@ Investigate formats that have been identified as 'difficult' elsewhere. Are they
     * [image/tiff](mimeExamples/features.tif), High quality images, e.g. Pagemaker; Photoshop
     * [application/fdf](mimeExamples/travel.fdf), PDF forms data exchange (extension = "fdf"), e.g. Adobe Reader' Excel; Oracle
     * [application/pdf](mimeExamples/travel.pdf), Print-quality documents, e.g. Adobe Reader, Foxit
-
-See also http://rhizome.org/editorial/2014/feb/10/authenticity-access-digital-preservation-geocities/
+* Spectrum tape images.
+* The .pcd from Kodak image CDs to TIF or JPG via ImageMagick.
 
 Note that AADDA has *1* distinct XIF: http://www.webarchive.org.uk/interject/inspect/http://web.archive.org/web/20030807223708/http://www.wburrows.org.uk:80/IMechE%20OU.xif
 AADDA has no DICOM, LDWA has one: http://192.168.1.204:8990/solr/ldwa/select?q=content_type_ext%3A%22dicm%22&wt=json&indent=true and amusingly it is the example from the paper!
 
 
-Side note on format dynamics, e.g. PS v PDF and turing completeness makes consistent implementation verifiable in principle?
+Formats Found
+-------------
 
-> "Parsimonious Preservation – (another) different approach to digital information management"
-> http://www.thegreatbear.net/audio-transfer/parsimonious-preservation-approaches-information-management/#comment-12540
-
-> "If you work in digital preservation then the term ‘significant properties’ will no doubt be familiar to you. The concept has been viewed as a hindrance due to being shrouded by foggy terminology, as well as a distinct impossibility because of the diversity of digital objects in the world which, like their analogue counterparts, cannot be universally generalised or reduced to a series of measurable characteristics."
->
-> http://www.thegreatbear.net/audio-transfer/significant-properties-technical-challenges-digital-preservation/
-
-
-> "Determining the significant properties of a digital object has been touted as a means to ensure a digital object’s authenticity over time (Heslop, Davis, & Wilson, 2002). The appraisal process should include a consideration of a digital object’s essential attributes (Webb, 2003, p. 72), because they are indelibly linked to the asset’s value (Blue Ribbon Task Force, 2010, p. 21) and meaning over time (Heslop et al., 2002, p. 14). Notably, an understanding of the core features of a digital asset may aid media managers to choose an appropriate metadata schema (Hedstrom, Lee, Olson, & Lampe, 2006). - See more at: http://www.tameyourassets.com/what-are-significant-properties/#sthash.1NONPa8x.dpuf"
->
-> http://www.tameyourassets.com/what-are-significant-properties/
-
-There is a story: 
-> "Adoption of XHTML on the web was essentially zero, except for those who were starting from XML to begin with."
-> <small>http://www.slideshare.net/cavlec/the-sad-saga-of-xhtml-or-what-happens-when-markup-geeks-get-arrogant</small>
-
-
-Linux:
-* http://s-macke.github.io/jor1k/
-
-Interjection: http://www.webarchive.org.uk/interject/
-
-Start here: http://www.dlib.org/dlib/january05/rosenthal/01rosenthal.html
-
-[Deploying webp](http://www.igvita.com/2013/05/01/deploying-webp-via-accept-content-negotiation/) is similar, but still server-driven.
-
-But add concept of agent-driven negociation. Turns out interjection is already in the spec.
-
-* [RFC 2616: 300 Multiple Choices](https://tools.ietf.org/html/rfc2616#section-10.3.1) for redirect-based interaction.
-* Fleshed out in [RFC 2295: 8.3 Alternates](http://tools.ietf.org/html/rfc2295#section-8.3)
-    * [RFC 2295: 5.3 Source quality](http://tools.ietf.org/html/rfc2295#section-5.3)
-    * Has explicit modes for "server chose this alternative" and "here's a list of alternatives" (200 TCN: choice, 300 TCN: list)
-    * Even a rich and extensible 'feature' negotiation system, which links nicely to my concerns of features being more important than format version.
-    * If Accepted formats are not available, use this with response code 406 Not Available
-
-* See also [Mozilla Developer Network: Content negotiation](https://developer.mozilla.org/en-US/docs/Content_negotiation?redirect=no)
-
-* See too ['Reactive' content negotiation: Empirical evidence that its status should be reconsidered in HTTPbis](http://www.ltg.ed.ac.uk/~ht/reactive_conneg.html)
-> it calls "proactive negotiation" (formerly "server-driven negotiation"), but it intensifies its description of these from "disadvantages" to "serious disadvantages".
-
-Spectrum
---------
+### Spectrum ###
 
 TODO Embed JSMESS, as playback mechanism.
 http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type_ext%3A%22.tap%22&f[1]=content_ffb%3A%2213000000%22
@@ -91,9 +50,8 @@ http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type_ext%3A%22
 http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type_ext%3A%22.tap%22 = 142 TAP
 
 
-VRML
-----
-(vrml/wrl)
+### VRML (.wrl) ###
+
 
 TODO Also implement VRML support, combining migration (vrml to x3d, meshlabserver or XSLT based) and emulation (or rather x3d to html+JavaScript)
 http://cic.nist.gov/vrml/nistlogo_x3dom.html
@@ -166,9 +124,8 @@ Nah, it's only c. 10,000 so pull them out and look for links via WWWAnchor/Ancho
 - http://www.sv.vt.edu/classes/vrml/NCSA_VRML_Tutorial/examples/ThreeSpheresURL.wrl.txt
 - http://graphcomp.com/info/specs/sgi/vrml/spec/part1/nodesRef.html#Anchor
 
-Shockwave
----------
-Shockwave (.dcr)
+
+### Shockwave (.dcr) ###
 
 http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type_ext%3A%22.dcr%22 = 7235 .dcr
 
@@ -190,8 +147,8 @@ https://help.ubuntu.com/community/Shockwave
 
 Note confusion with DCR
 
-Quicktime VR
-------------
+
+### Quicktime VR (.mov) ###
 
 http://fileformats.archiveteam.org/wiki/QuickTime#Quicktime_VR
 
@@ -208,9 +165,8 @@ May be possible to extract and re-export
     * http://web.archive.org/web/20120324184958/http://www.clickheredesign.com.au/cubicconverter/
 * http://www.ptgui.com/
 
-RealAudio & RealMedia
----------------------
-(ram/rm/ra)
+
+### RealAudio & RealMedia (.ra .ram .rm) ###
 
 http://web.archive.org/web/19961101195522/http://netra.creative-labs.co.uk/
 
@@ -238,8 +194,7 @@ For these, it seems ffmpeg can convert, so on the fly access is possible.
     $ cat in | ffmpeg -i - -f wav > out
 
 
-Kodak Photo CD
----------------
+### Kodak Photo CD ###
 
 Not many, if any.
 
@@ -262,16 +217,16 @@ xmpDM:audioSampleRate: 48000
 
 c.f. http://siarchives.si.edu/blog/importance-original
 
-eBooks
-------
+
+### eBooks ###
 One (!) .epub, but given the date range...
 http://www.acrobat-services.co.uk/drupa2008%20(9-8at14H35).epub
 
 
 
 
-Music Files
------------
+### Music Files ###
+
 .sib
 http://web.archive.org/web/20010608070251/http://www.andys-music.co.uk/sibhtml/firstcontact.htm
 
@@ -286,8 +241,8 @@ May be possible to search PDF/JPGs by Generator, e.g.
 etc.
 
 
-WMF
----
+### WMF ###
+
 http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type_full%3A%22application/x-msmetafile%22
 
 9911 ish.
@@ -298,7 +253,7 @@ http://wvware.sourceforge.net/libwmf.html
 
 https://en.wikipedia.org/wiki/Windows_Metafile
 
-By Volume
+Formats By Volume
 ---------
 text/html (256325571) 
 image/jpeg (14535000) 
@@ -366,8 +321,8 @@ http://web.archive.org/web/20020916061744/http://www.agentblonde.fsnet.co.uk:80/
 
 SO. wax not marked as isSpecializationOf in Tika sig file, so identification fails and text/plain wins.
 
-coda
-----
+Notes
+-----
 
 Realistic examples, high-value but high-risk.
 
@@ -375,4 +330,53 @@ http://arstechnica.com/apple/2011/07/does-apple-still-care-about-creative-pros/ 
 c.f. audio master tool plugins.
 
 "webring" when did new sites stop happening?
+
+Programming languages are often more highly version dependant (Python 3, Perl 6). But also difficult to spot, and not really the kind of thing where we'd transform on access.
+
+
+See also http://rhizome.org/editorial/2014/feb/10/authenticity-access-digital-preservation-geocities/
+
+Side note on format dynamics, e.g. PS v PDF and turing completeness makes consistent implementation verifiable in principle?
+
+> "Parsimonious Preservation – (another) different approach to digital information management"
+> http://www.thegreatbear.net/audio-transfer/parsimonious-preservation-approaches-information-management/#comment-12540
+
+> "If you work in digital preservation then the term ‘significant properties’ will no doubt be familiar to you. The concept has been viewed as a hindrance due to being shrouded by foggy terminology, as well as a distinct impossibility because of the diversity of digital objects in the world which, like their analogue counterparts, cannot be universally generalised or reduced to a series of measurable characteristics."
+>
+> http://www.thegreatbear.net/audio-transfer/significant-properties-technical-challenges-digital-preservation/
+
+
+> "Determining the significant properties of a digital object has been touted as a means to ensure a digital object’s authenticity over time (Heslop, Davis, & Wilson, 2002). The appraisal process should include a consideration of a digital object’s essential attributes (Webb, 2003, p. 72), because they are indelibly linked to the asset’s value (Blue Ribbon Task Force, 2010, p. 21) and meaning over time (Heslop et al., 2002, p. 14). Notably, an understanding of the core features of a digital asset may aid media managers to choose an appropriate metadata schema (Hedstrom, Lee, Olson, & Lampe, 2006). - See more at: http://www.tameyourassets.com/what-are-significant-properties/#sthash.1NONPa8x.dpuf"
+>
+> http://www.tameyourassets.com/what-are-significant-properties/
+
+There is a story: 
+> "Adoption of XHTML on the web was essentially zero, except for those who were starting from XML to begin with."
+> <small>http://www.slideshare.net/cavlec/the-sad-saga-of-xhtml-or-what-happens-when-markup-geeks-get-arrogant</small>
+
+
+Linux:
+* http://s-macke.github.io/jor1k/
+
+
+Interjection 
+------------
+http://www.webarchive.org.uk/interject/
+
+
+[Deploying webp](http://www.igvita.com/2013/05/01/deploying-webp-via-accept-content-negotiation/) is similar, but still server-driven.
+
+But add concept of agent-driven negociation. Turns out interjection is already in the spec.
+
+* [RFC 2616: 300 Multiple Choices](https://tools.ietf.org/html/rfc2616#section-10.3.1) for redirect-based interaction.
+* Fleshed out in [RFC 2295: 8.3 Alternates](http://tools.ietf.org/html/rfc2295#section-8.3)
+    * [RFC 2295: 5.3 Source quality](http://tools.ietf.org/html/rfc2295#section-5.3)
+    * Has explicit modes for "server chose this alternative" and "here's a list of alternatives" (200 TCN: choice, 300 TCN: list)
+    * Even a rich and extensible 'feature' negotiation system, which links nicely to my concerns of features being more important than format version.
+    * If Accepted formats are not available, use this with response code 406 Not Available
+
+* See also [Mozilla Developer Network: Content negotiation](https://developer.mozilla.org/en-US/docs/Content_negotiation?redirect=no)
+
+* See too ['Reactive' content negotiation: Empirical evidence that its status should be reconsidered in HTTPbis](http://www.ltg.ed.ac.uk/~ht/reactive_conneg.html)
+> it calls "proactive negotiation" (formerly "server-driven negotiation"), but it intensifies its description of these from "disadvantages" to "serious disadvantages".
 

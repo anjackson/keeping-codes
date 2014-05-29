@@ -54,6 +54,9 @@ Curation's second death
 
 Curation has died before, on the web. Story of DMOZ and Google (and indeed Yahoo).
 
+* [https://wiki.digitalmethods.net/Dmi/DemiseDirectory](The Demise of the Directory: Web librarian work removed in Google)
+* [see also](http://blogoscoped.com/archive/2006-04-21-n63.html)
+
 Spam problem.
 
 But how do we know the algorithm is enough. Need humans to ensure value is reflected, and to try and address any gaps.

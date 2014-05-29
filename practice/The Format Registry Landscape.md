@@ -47,6 +47,13 @@ IANA, WikiData
 https://www.mediawiki.org/wiki/Wikidata_Toolkit
 
 
+So, my broadest definition of a file format does like this:
+
+    A format is a protocol designed to allow the persistence and transmission of the run-time state of computer software.
+
+
+Notes on the NZNL presentation
+-------------------------------
 
 Points:
 
@@ -56,10 +63,10 @@ If this is about automation? Then be clear that you are making software - and th
 
 No-one knows what they need from a DPTR, it seems.
 
-Collection Managment:
+Collection Management:
 - "Critical to day to day business." NZNL.
 - "Want to understand the objects at a deep level."
-- "It's not some wierd PDF, it's just a collection item."
+- "It's not some weird PDF, it's just a collection item."
 - Thing about barriers. If they can't GitHub, are they happy to crack open a hex editor? What do you mean by a deep level?
 - Is this a broad audience or a very technical audience.
 - "Industrial Management & Preservation" - scale implies automation?
@@ -71,7 +78,7 @@ Goals:
 
 - Characterisation
 - Risk analysis
-- Preservation Action, pathways etc. (Also interested in providing these to users, see /interject/).
+- Preservation Action, pathways etc. (Also interested in providing these to users, c.f. /interject/).
 
 Actually about tool support.
 
@@ -106,7 +113,7 @@ How to resolve conflicts, with a worked example, e.g. the TIF-tiff, how would th
 
 I prefer: pool under identifiers, expose the differences, change the data sources. Again, that part is NOT an API and NOT automatic.
 
-There are many different 'unix' registries. I assume you mean file versions? Note that Debian, OS X etc. all vary slightly. It's a world of pain. Either we totally fix that one, or we just link.
+There are many different 'unix' registries. I assume you mean file versions? Note that Debian, OS X etc. Magdirs all vary slightly. It's a world of pain. Either we totally fix that one, or we just link.
 
 - ID/RI separation
 - PRONOM Conflict Resolution
@@ -189,8 +196,8 @@ Test formats:
 - JP2 - jpylyzer profile validation workflow.
 - HTML, especially the current HTML5/w3c/WHATWG situation. http://fileformats.archiveteam.org/wiki/HTML#Specs
 
-Two specs, no soec.
-Once spec, interpreted differently.
+Two specs, no spec.
+One spec, interpreted differently.
 Two specs, identical interpretations of different structures.
 Error handling
 
@@ -201,7 +208,7 @@ Source http://www.dpconline.org/newsroom/latest-news/1141-future-of-technical-re
 PDF/A-3 Risks...
 http://blogs.loc.gov/digitalpreservation/2014/02/new-ndsa-report-the-benefits-and-risks-of-the-pdfa-3-file-format-for-archival-institutions/
 
-Completely unaware of http://gator1355.hostgator.com/~iipc/pwg/risks.php
+Completely unaware of http://gator1355.hostgator.com/~iipc/pwg/risks.php, but that's going public soon.
 
 http://www.keep-totem.co.uk/ is basically empty.
 

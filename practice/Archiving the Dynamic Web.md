@@ -140,4 +140,25 @@ https://github.com/Aloisius/nutch/commit/3ef169ad5402cee35346f566c85c237b5d12849
 versus
 https://github.com/commoncrawl/commoncrawl-crawler
 
+See also [StormScraper](https://github.com/tjake/stormscraper), and [associated slides](http://www.slideshare.net/tjake/storm-and-cassandra#), e.g. [this topology overview](http://www.slideshare.net/tjake/storm-and-cassandra/30).
+
+Not clear complex features like queue rotation are strictly required. May make more sense to start with something simpler. In fact, it probably makes sense to think a bit more radically about the whole thing, and investigate the possibility of switching over to true 'continuous crawling'.
+
+So, aspects are that e.g. using Storm or similar makes long-running processes easier. Also the need to 'crawl right now' needs to sit alongside the 'has not been crawled since X and is due' and the 'big crawl' more easily.
+
+Balance between the queues and the state (e.g. Cassandra/HBase is less clear now).
+
+* IN: system, high-priority and low-priority queues of URLs.
+* SPOUT: Watch the queues, in priority order, occasionally skipping down to avoid total queue backlog.
+* DISTRIBUTE: URLs grouped on Host.
+* BOLT: Pause based on crawl delay (STATE NEEDED)
+    * URL comes in.
+    * Look up last known Crawl-Delay and last known crawl timestamp.
+    * Wait until time has passed before emitting.
+* BOLT: Download resource (embedded browser OR old-style GET):
+    * BOLT: Record success in State.
+    * BOLT: Append to WARC (if old-style).
+    * BOLT: Extract links:
+        * BOLT: Check links against State, and DecideRules, and Enqueue if crawl is due.
+            * BOLT: Record link discovery in State.
 
