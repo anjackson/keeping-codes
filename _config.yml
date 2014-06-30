@@ -1,6 +1,6 @@
-pygments:    true
+highlighter: pygments
 relative_permalinks: true
-markdown: rdiscount
+markdown: kramdown
 baseurl: /keeping-codes
 
 all-category-list: [fundamentals,practice,experiments,war stories]

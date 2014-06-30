@@ -11,47 +11,22 @@ Introduction
 
 The goal is to looking for 'difficult' formats, formats that might be considered obsolete, and to dig deeper into what that means by examining some real examples. In particular, I want to understand how the affects the UK Web Archive -  are these formats present, how many are they, and what can be done?
 
-Start here: http://www.dlib.org/dlib/january05/rosenthal/01rosenthal.html
+Despite format obsolescences role as the long-standing bogeyman of digital preservation, modern examples of obsolescence seem few and far between, and the phenomenon itself seems poorly understood. TBA DSHR call, and current responses. TBA links to issues about what formats mean and what obsolescece means and whether it really occurs at all.
 
-* Difficult formats from NLA: http://www.nla.gov.au/content/preservation-intent-selective-web-harvesting
-    * RealMedia (and it's many variations, identification issues)
-    * VRML (logical superset option, identification gap, version issues)
-    * Shockwave / .dcr
-    * Quicktime VR (identification challenge)
-* Formats from [Creating Preservation-Ready Web Resources](http://www.dlib.org/dlib/january08/smith/01smith.html)
-    * [model/gsm](mimeExamples/hangingLamp.gsm), Geometric description language, e.g. Graphisoft's ArchiCAD (actual MIME type is model/vnd.gdl) FFB:WW%11%00, and just 8 57571900 in LDWA.
-    * [x-world/x-vrml](mimeExamples/nistlogo.wrl), Virtual reality modeling, e.g. Alteros 3D
-    * [application/dicom](mimeExamples/US.28312.dicm), Medical imaging, e.g. MIR CTN software
-    * [image/xif](mimeExamples/dragonFly.xif), Scanning and OCR, e.g. Pagis
-    * [image/tiff](mimeExamples/features.tif), High quality images, e.g. Pagemaker; Photoshop
-    * [application/fdf](mimeExamples/travel.fdf), PDF forms data exchange (extension = "fdf"), e.g. Adobe Reader' Excel; Oracle
-    * [application/pdf](mimeExamples/travel.pdf), Print-quality documents, e.g. Adobe Reader, Foxit
-* Spectrum tape images.
-* The .pcd from Kodak image CDs to TIF or JPG via ImageMagick.
+However, some have produced reports on formats that have presented challenges for access. The NLA has produced a summary of access concerns from their web archive [here](http://www.nla.gov.au/content/preservation-intent-selective-web-harvesting). The paper [Creating Preservation-Ready Web Resources (Smith08)][Smith08] also contains some examples of formats that rely on a range of access mechanisms (browser support, plugins, application software, etc.).
 
-Note that AADDA has *1* distinct XIF: http://www.webarchive.org.uk/interject/inspect/http://web.archive.org/web/20030807223708/http://www.wburrows.org.uk:80/IMechE%20OU.xif
-AADDA has no DICOM, LDWA has one: http://192.168.1.204:8990/solr/ldwa/select?q=content_type_ext%3A%22dicm%22&wt=json&indent=true and amusingly it is the example from the paper!
+Here, I look at those formats, and also at others I've uncovered while exploring the UK Web Archive historical holdings, and attempt to document the access issues around each. 
 
 
 Formats Found
 -------------
 
-### Spectrum ###
-
-TODO Embed JSMESS, as playback mechanism.
-http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type_ext%3A%22.tap%22&f[1]=content_ffb%3A%2213000000%22
-bugfever.tap works in fuse.
-http://jsmess.textfiles.com/
-http://web.archive.org/web/19991001051504/http%3A%2F%2Fwkweb1.cableinet.co.uk%3A80%2Fmalkc%2FWheelie.tap
-Also
-http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type_ext%3A%22.sna%22 = 89 SNA
-http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type_ext%3A%22.tzx%22 = 817 TZX
-http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type_ext%3A%22.z80%22 = 134 Z80
-http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type_ext%3A%22.tap%22 = 142 TAP
-
 
 ### VRML (.wrl) ###
+Found in NLA, enquote?
+VRML (logical superset option, identification gap, version issues)
 
+ * [x-world/x-vrml](mimeExamples/nistlogo.wrl), Virtual reality modeling, e.g. Alteros 3D
 
 TODO Also implement VRML support, combining migration (vrml to x3d, meshlabserver or XSLT based) and emulation (or rather x3d to html+JavaScript)
 http://cic.nist.gov/vrml/nistlogo_x3dom.html
@@ -95,9 +70,11 @@ DROID distinguishes 1/97 (fmt/93 and fmt/94), but does not identify x3d.
 Tika only knows VRML extension (not even that?!), but can be taught all.
 
 VRML1 to VRML97
+
 * http://www.cs.princeton.edu/~min/meshconv/
 
 VRML97 to X3D
+
 * http://www.x3dom.org/?page_id=532 etc. /Applications/Instant\ Player.app/Contents/MacOS/aopt --help
     * /Applications/Instant\ Player.app/Contents/MacOS/aopt -i penguin4.wrl -x penguin5-aopt.x3d
     * Works but proprietary and no commercial use allowed.
@@ -106,10 +83,12 @@ VRML97 to X3D
 * http://ovrt.nist.gov/v2_x3d.html seems to work and is simpler to integrate.
 
 X3D to HTML
+
 * X3DOM looks like a fairly simple wrap. http://www.x3dom.org/
 * See http://x3dom.org/x3dom/example/blenderExport/horse-inline.html for an example of pulling in the X3D via URL
 
 X3D to PNG
+
 * http://castle-engine.sourceforge.net/view3dscene.php#section_screenshot
     * view3dscene my_model.wrl --screenshot 0 output.png
 * http://www.niallmoody.com/heilan/
@@ -121,8 +100,38 @@ Uh-oh, VRML can haz hyperlinks, of course, so https://twitter.com/archivetype/st
 
 So, maybe tweak so they are subtypes of text/plain and allow the text to be indexed?
 Nah, it's only c. 10,000 so pull them out and look for links via WWWAnchor/Anchor.
+
 - http://www.sv.vt.edu/classes/vrml/NCSA_VRML_Tutorial/examples/ThreeSpheresURL.wrl.txt
 - http://graphcomp.com/info/specs/sgi/vrml/spec/part1/nodesRef.html#Anchor
+
+
+### RealAudio & RealMedia (.ra .ram .rm) ###
+Found in NLA, enquote?
+RealMedia (and it's many variations, identification issues)
+
+* http://web.archive.org/web/19961101195522/http://netra.creative-labs.co.uk/
+* http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type_ext%3A%22.ra%22
+
+And RealAudio (early versions) and RealMedia (later versions)
+FFB = .ra%FD for early versions.
+1801 .ra http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type_ext%3A%22.ra%22
+audio/x-pn-realaudio; version=2.0 (1204)
+application/vnd.rn-realmedia (268)
+audio/x-pn-realaudio; version=1.0 (139)
+124 .ra with audio/x-pn-realaudio; version=1.0
+130 .ra with audio/x-pn-realaudio but no payload.
+FFB .ra%FD (1343) .RMF (268) pnm: (39) rtsp (12)
+
+For .rm: 
+application/vnd.rn-realmedia (8094) Apply application/vnd.rn-realmedia filter
+audio/x-pn-realaudio (6109)
+FFB .RMF (8077), rtsp (6178)
+
+
+For these, it seems ffmpeg can convert, so on the fly access is possible.
+
+    $ ffmpeg -i roar.rm -f wav test.wav
+    $ cat in | ffmpeg -i - -f wav > out
 
 
 ### Shockwave (.dcr) ###
@@ -150,6 +159,8 @@ Note confusion with DCR
 
 ### Quicktime VR (.mov) ###
 
+Quicktime VR (identification challenge)
+
 http://fileformats.archiveteam.org/wiki/QuickTime#Quicktime_VR
 
 http://192.168.1.206:8990/solr/jisc/select?q=content_type_ext%3A%22.mov%22&wt=xml&indent=true&fl=url&facet=true&facet.field=content_type&facet.mincount=1 = ONLY 8641 .MOV
@@ -157,6 +168,7 @@ http://192.168.1.206:8990/solr/jisc/select?q=content_type_ext%3A%22.mov%22&wt=xm
 Really not clear what this could be migrated into.
 
 May be possible to extract and re-export
+
 * http://wiki.panotools.org/QTVR
 * https://groups.google.com/forum/#!topic/ptgui/MNOSwDXmdVQ
     * "if you only  own the QTVR  file  than  you have to transform it back to an equirectangular panorama I use for it on Mac the legendary  Cubic Converter"
@@ -166,35 +178,48 @@ May be possible to extract and re-export
 * http://www.ptgui.com/
 
 
-### RealAudio & RealMedia (.ra .ram .rm) ###
+### Geometric description language (.gsm) ###
+Formats from [Creating Preservation-Ready Web Resources](http://www.dlib.org/dlib/january08/smith/01smith.html)
+[model/gsm](mimeExamples/hangingLamp.gsm), Geometric description language, e.g. Graphisoft's ArchiCAD (actual MIME type is model/vnd.gdl) FFB:WW%11%00, and just 8 57571900 in LDWA.
 
-http://web.archive.org/web/19961101195522/http://netra.creative-labs.co.uk/
+### DICOM Medical Imaging (.dicm) ###
+[application/dicom](mimeExamples/US.28312.dicm), Medical imaging, e.g. MIR CTN software
 
-http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type_ext%3A%22.ra%22
+### TIFF (.tif) ###
 
-And RealAudio (early versions) and RealMedia (later versions)
-FFB = .ra%FD for early versions.
-1801 .ra http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type_ext%3A%22.ra%22
-audio/x-pn-realaudio; version=2.0 (1204)
-application/vnd.rn-realmedia (268)
-audio/x-pn-realaudio; version=1.0 (139)
-124 .ra with audio/x-pn-realaudio; version=1.0
-130 .ra with audio/x-pn-realaudio but no payload.
-FFB .ra%FD (1343) .RMF (268) pnm: (39) rtsp (12)
+[image/tiff](mimeExamples/features.tif), High quality images, e.g. Pagemaker; Photoshop
 
-For .rm: 
-application/vnd.rn-realmedia (8094) Apply application/vnd.rn-realmedia filter
-audio/x-pn-realaudio (6109)
-FFB .RMF (8077), rtsp (6178)
+### XIF (.xif) ###
+
+[image/xif](mimeExamples/dragonFly.xif), Scanning and OCR, e.g. Pagis
+
+Note that AADDA has *1* distinct XIF: http://www.webarchive.org.uk/interject/inspect/http://web.archive.org/web/20030807223708/http://www.wburrows.org.uk:80/IMechE%20OU.xif
+AADDA has no DICOM, LDWA has one: http://192.168.1.204:8990/solr/ldwa/select?q=content_type_ext%3A%22dicm%22&wt=json&indent=true and amusingly it is the example from the paper!
+
+### PDF & FDF ###
+From [Smith08].
+
+ * [application/fdf](mimeExamples/travel.fdf), PDF forms data exchange (extension = "fdf"), e.g. Adobe Reader' Excel; Oracle
+ * [application/pdf](mimeExamples/travel.pdf), Print-quality documents, e.g. Adobe Reader, Foxit
 
 
-For these, it seems ffmpeg can convert, so on the fly access is possible.
+### Spectrum Snapshots & Tapes (.sna, .z80, .tap, .txz) ###
 
-    $ ffmpeg -i roar.rm -f wav test.wav
-    $ cat in | ffmpeg -i - -f wav > out
+TODO Embed JSMESS, as playback mechanism.
+http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type_ext%3A%22.tap%22&f[1]=content_ffb%3A%2213000000%22
+bugfever.tap works in fuse.
+http://jsmess.textfiles.com/
+http://web.archive.org/web/19991001051504/http%3A%2F%2Fwkweb1.cableinet.co.uk%3A80%2Fmalkc%2FWheelie.tap
+Also
+http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type_ext%3A%22.sna%22 = 89 SNA
+http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type_ext%3A%22.tzx%22 = 817 TZX
+http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type_ext%3A%22.z80%22 = 134 Z80
+http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type_ext%3A%22.tap%22 = 142 TAP
 
 
 ### Kodak Photo CD ###
+
+* The .pcd from Kodak image CDs to TIF or JPG via ImageMagick.
 
 Not many, if any.
 
@@ -224,8 +249,7 @@ http://www.acrobat-services.co.uk/drupa2008%20(9-8at14H35).epub
 
 
 
-
-### Music Files ###
+### Sheet Music (.sib, .mus) ###
 
 .sib
 http://web.archive.org/web/20010608070251/http://www.andys-music.co.uk/sibhtml/firstcontact.htm
@@ -252,6 +276,67 @@ https://code.google.com/p/wmf2svg/
 http://wvware.sourceforge.net/libwmf.html
 
 https://en.wikipedia.org/wiki/Windows_Metafile
+
+### WordPerfect ###
+
+http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type:%22application/vnd.wordperfect%22
+
+### WordStar ###
+DROID has extension sigs (wsd ws wsw) - none in UKWA as far as I can tell.
+http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type_ext:%22.wsd%22
+
+### MSWord pre 1995 ###
+Difficult to identify...
+
+These are only identified by Tika, but may be down to file extension.
+http://www.webarchive.org.uk/interject/inspect/http://web.archive.org/web/19961029183743/http://tornado.badc.rl.ac.uk:80/data/aase/document/readme.doc
+http://www.webarchive.org.uk/interject/inspect/http://web.archive.org/web/19961029183904/http://tornado.badc.rl.ac.uk:80/data/aase2/document/contact.doc
+
+DROID spots only this V6 one?
+http://www.webarchive.org.uk/interject/inspect/http://web.archive.org/web/19961101023442/http://zeus.codex.co.uk:80/sem-demo/semwebpl.doc
+
+Hm, first two may be text, this looks more likely:
+
+http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type_ext%3A%22.doc%22&f[1]=content_ffb%3A%22fe370023%22
+Based in part on example from 
+http://fileformats.archiveteam.org/wiki/DOC
+http://msxnet.org/word2rtf/formats/ffh-dosword5#16.1
+
+Based on that, e.g. 0x31be0000
+http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_ffb%3A%2231be0000%22
+
+Similarly for v 6.0: 6031* not many, just one, but appears to be malformed HTML?
+"all full-saved Word documents begin with 0x6031, 0x000, 0xAB00"
+http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_ffb%3A6031*
+
+A range of FFB popular combos that remains unclassified. eg. %FE7%00# and related that may be early Word documents.
+File says they are MSOffice, but they upset Tika rather badly.
+Droid says: application/msword; version=5.0
+
+### Kodak K25 Images ###
+
+### FMPro Database ###
+
+### AppleWorks, including MacWrite? ###
+Extension .cwk
+http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type_ext:%22.cwk%22
+The file extension of AppleWorks and ClarisWorks documents is .cwk, and .cws for template
+See 
+
+* http://en.wikipedia.org/wiki/AppleWorks
+* http://www.macworld.com/article/1166370/open_old_docs.html
+* http://www.wirelust.com/2013/01/17/parsing-appleworks-and-clarisworks-file-formats/
+* https://github.com/teacurran/appleworks-parser/
+* http://wiki.wirelust.com/x/index.php/AppleWorks_/_ClarisWorks#Document_Header
+* http://www.macworld.com/article/1139286/convertappleworkstoiwork.html
+* http://www.macworld.com/article/1139468/moreonolderfileconversion.html
+
+Mostly: %04%81}%00 (103) - on example clearly states ClarisWorks 4.0
+But others with AppleWorks headers %06%07%AC%00 (5)
+
+### DAW to MusicXML ###
+
+https://twitter.com/anjacks0n/status/479153866794336256
 
 Formats By Volume
 ---------
@@ -356,11 +441,17 @@ There is a story:
 
 
 Linux:
+
 * http://s-macke.github.io/jor1k/
 
 
 Interjection 
 ------------
+
+Start here: [Transparent Format Migration of Preserved Web Content](http://www.dlib.org/dlib/january05/rosenthal/01rosenthal.html)
+
+Contrast with [Studies on the scalability of web preservation](http://purl.pt/24107/1/iPres2013_PDF/Studies%20on%20the%20scalability%20of%20web%20preservation.pdf) - which seems to do everything at index time and proposed rebuilding the WARCs.
+
 http://www.webarchive.org.uk/interject/
 
 
@@ -380,3 +471,5 @@ But add concept of agent-driven negociation. Turns out interjection is already i
 * See too ['Reactive' content negotiation: Empirical evidence that its status should be reconsidered in HTTPbis](http://www.ltg.ed.ac.uk/~ht/reactive_conneg.html)
 > it calls "proactive negotiation" (formerly "server-driven negotiation"), but it intensifies its description of these from "disadvantages" to "serious disadvantages".
 
+
+[Smith08]: http://www.dlib.org/dlib/january08/smith/01smith.html

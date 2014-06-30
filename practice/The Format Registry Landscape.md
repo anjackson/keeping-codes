@@ -51,6 +51,13 @@ So, my broadest definition of a file format does like this:
 
     A format is a protocol designed to allow the persistence and transmission of the run-time state of computer software.
 
+The only definition of format I've been able to come up with that seems to cover every example I can think of is this one:
+
+    A format is a protocol that permits the state of computer software to be persisted and transmitted.
+
+
+
+http://www.avpreserve.com/avpsresources/papers-and-presentations/ cloud vendor summary
 
 Notes on the NZNL presentation
 -------------------------------

@@ -15,6 +15,12 @@ http://blogs.loc.gov/digitalpreservation/2013/12/bitcurators-open-source-approac
 Use, only then are we known:
 http://theodi.org/blog/five-stages-of-data-grief
 
+Also, Rothenburg, Bearman, 
+UVC http://iwaw.europarchive.org/05/papers/iwaw05-hoeven.pdf
+KEEP VM http://www.keep-project.eu/downloads/training/09kvm.pdf
+etc.
+XCL has basically the same flaw.
+
 The Migration Line
 ------------------
 

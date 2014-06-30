@@ -32,6 +32,10 @@ Floppies are crazy; CD is crazy but kind of standardized; DVD is one format alwa
 https://twitter.com/archivetype/status/378176040696545280
 
 
+Ah, it seems I misinterpreted 'specification' to mean some kind of documentation or definition independent of the specific software/user that reads or writes the bitstreams. But, of course, something somewhere 'specifies' the content of a bitstream, but I don't tend to think of that as 'a specification' because it can be so weak/ambiguous. But you are right, a poor specification is still a specification.
+Not sure I agree, because read and write can disagree, and it can hardly be said to be specified then. i.e. specification is a definition that is used to ensure read and write behave consistently, which is not necessary.
+http://qanda.digipres.org/38/what-is-a-file-format
+
 On modelling?
 [Theory of generalized markup, 2014](http://wendellpiez.com/eatyourvegetables/?p=209)
 
