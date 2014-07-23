@@ -4,4 +4,3 @@ markdown: kramdown
 baseurl: /keeping-codes
 
 all-category-list: [fundamentals,practice,experiments,war stories]
-category-list: [practice,experiments]
