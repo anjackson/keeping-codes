@@ -1,0 +1,21 @@
+{
+  "responseHeader":{
+    "status":0,
+    "QTime":43,
+    "params":{
+      "facet":"true",
+      "facet.mincount":"1",
+      "indent":"true",
+      "q":"crawl_years:1995",
+      "facet.field":"parse_error",
+      "wt":"json",
+      "rows":"0"}},
+  "response":{"numFound":1714,"start":0,"maxScore":15.232099,"docs":[]
+  },
+  "facet_counts":{
+    "facet_queries":{},
+    "facet_fields":{
+      "parse_error":[
+        "java.io.IOException: Invalid header signature; read 0x0010000000060409, expected 0xE11AB1A1E011CFD0 - Your file appears not to be a valid OLE2 document",1]},
+    "facet_dates":{},
+    "facet_ranges":{}}}
