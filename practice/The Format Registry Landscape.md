@@ -13,6 +13,12 @@ Introduction
 What problem are we solving? Linking bitstreams to software.
 
 
+http://en.wikipedia.org/wiki/Dead_Media_Project
+
+
+So, so many...
+
+
 The Registries
 --------------
 
@@ -58,6 +64,7 @@ The only definition of format I've been able to come up with that seems to cover
 
 
 http://www.avpreserve.com/avpsresources/papers-and-presentations/ cloud vendor summary
+
 
 Notes on the NZNL presentation
 -------------------------------

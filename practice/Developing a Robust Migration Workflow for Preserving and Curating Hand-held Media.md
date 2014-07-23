@@ -15,6 +15,7 @@ To complement that original publication, I thought it would be a good idea to pu
 
 ### Other Resources
 
+* [An Introduction to Optical Media Preservation](http://journal.code4lib.org/articles/9581)
 * [Getting Public Radio’s Legacy Off Ageing Rewritable CDs: An Interview with WNYC’s John Passmore](http://blogs.loc.gov/digitalpreservation/2014/02/getting-public-radios-legacy-off-ageing-rewritable-cds-an-interview-with-wnycs-john-passmore/)
 
 

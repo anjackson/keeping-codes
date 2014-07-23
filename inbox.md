@@ -66,6 +66,15 @@ Inbox
 * http://wiki.opf-labs.org/display/SP/Capturing+Properties
 * https://intranet.bl.uk:8443/confluence/display/DT/Representation+Information+Capture+Project
 
+A Safer Shell
+-------------
+
+Idea of forking a GitBash distribution (or similar) that is configured by default to be as safe as possible.
+
+* [CmdUtils](http://www.maddogsw.com/cmdutils/) recycle command installed.
+* rm aliased to interactive mode.
+* Can the same be done for cp and mv when overwrites are about to happen?
+
 
 Data Mining Methodology
 -----------------------
@@ -209,8 +218,31 @@ The zip file format is used for data compression and archiving. Within the repo 
 
 
 ## Blog Ideas ##
+- Beyond OAIS
+    - why OAIS is a straight-jacket and limits the care digital media needs.
+- Digital Preservation Software's Usability Problem
+    - Based on https://twitter.com/benfinoradin/status/490166741855506432
+- What's wrong with PRONOM
+    - Lack of parent-child relationships: http://www.openplanetsfoundation.org/blogs/2011-08-28-fmt-78910
+    - Close ties to DROID
+    - Vague definition of format. OOXML Strict/Transitional? Creating software version or version or intended software version. No link to SW. Most records nearly empty, so it's just the signature and a couple of strings.
+    - Poor community sourcing tools.
+    - No separation of signatures and identifiers.
+    - Opaque management decisions.
+    - Too many false negatives:
+      - Partially validates content
+      - Truncated JP2s or PDFs.
+    - lowerPriorityThan is hard to tune with weak signatures. Global priority is easier and simpler.
+    - No text/plain heuristic.
+    - Encourages use of a insufficiently expressive format language.
+- Unpopular opinions about format registries
+    - The 'magic numbers' do not belong in there. (Magic is not just Magic, and is contextual)
+    - Linked Data brings little to the table. (also a magic-composition problem (see above))
+    - The contents of PRONOM do not belong in there. (you just gave yourself a data synchronisation problem)
+- OR Focus on what I'm doing instead. Data mining approach, comparing engines, and auto-sig etc.
 - Compression Is Not A Significant Property
 - Defining Format
+    - c.f. That Q&A item.
 - Preservation Planning - Baysian versus frequentist... First principles/ab initio or Empirical modelling.
 - eBook wars, like early years of DRM music etc.
 - files versus filesystems. Latter obsolete first, former at risk due to persistent ram plus walled gardens.

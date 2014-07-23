@@ -36,6 +36,8 @@ But, we should be aware that this is a value judgement. We should be wary of tak
 
 There is no 'essence', beyond all context. Every normalisation pathway, every significant property scheme, contains its own assumptions about where the value lies. This cannot be defined in isolation from use, and we can only plan sensible if we can find ways of engaging with or understanding user needs, and likely future needs.
 
+SO ISSUE BECOMES TYRANNY OF THE MAJORITY, and supporting miniority interests. It becomes political. The information that people maintain interest in will have the most scrutiny and be moved forward. But the niche, the minority, the minor and the overlooked may get left behind.
+
 
 ## Conclusions ##
 

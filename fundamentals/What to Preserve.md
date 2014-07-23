@@ -21,6 +21,10 @@ KEEP VM http://www.keep-project.eu/downloads/training/09kvm.pdf
 etc.
 XCL has basically the same flaw.
 
+
+
+
+
 The Migration Line
 ------------------
 

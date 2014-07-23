@@ -18,6 +18,18 @@ However, some have produced reports on formats that have presented challenges fo
 Here, I look at those formats, and also at others I've uncovered while exploring the UK Web Archive historical holdings, and attempt to document the access issues around each. 
 
 
+---
+
+So, I'm flattered that my Formats Over Time paper is mentioned in the File Format Action Plan part of the agenda, and I would also like to see more of that kind of information being made available. Therefore, my idea of an File Format Action Plan would include quite a lot of context as well as the proposed action(s). e.g.
+
+    Set the context, e.g. how the particular format sits with respect to the overall format profile of the collection.
+    Describe the problem, i.e. the nature and severity of the obsolescence including how you know it is causing problems with access.
+    Description of the action options considered.
+    Description of how the possible options have been evaluated, and how you will know the access problems have been resolved.
+    Chosen action and details of it's implementation.
+
+However, it's worth noting that 
+
 Formats Found
 -------------
 
@@ -338,6 +350,9 @@ But others with AppleWorks headers %06%07%AC%00 (5)
 
 https://twitter.com/anjacks0n/status/479153866794336256
 
+### DOCX ###
+* https://twitter.com/euanc/status/482526239140626433
+
 Formats By Volume
 ---------
 text/html (256325571) 
@@ -391,12 +406,17 @@ text/html charset=iso-8859-1 (8533)
 video/mpeg (8530) 
 model/vrml (8489)
 
+### MIDI ###
+
 Quite a lot of MIDI
 http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type%3A%22audio/midi%22
 1996 example, Flip Player ok but QuickTime and VLC not.
 Same for most recent example.
 VLC can be modified to support it https://wiki.videolan.org/Midi
 Server-side would be a lot easier.
+[Apparently poor chrome support for MIDI](https://twitter.com/benfinoradin/status/482715603254669313)
+[so, jsmidi](https://twitter.com/benfinoradin/status/482715686331224064)
+hence [](https://github.com/mudcube/MIDI.js)
 
 https://github.com/beschulz/wav2png
 
@@ -405,6 +425,11 @@ Buggy Tika:
 http://web.archive.org/web/20020916061744/http://www.agentblonde.fsnet.co.uk:80/sounds/razorsedgev.wax
 
 SO. wax not marked as isSpecializationOf in Tika sig file, so identification fails and text/plain wins.
+
+Serif PagePlus
+--------------
+files? Pre-X3. OLE2-based
+https://twitter.com/beet_keeper/status/484536304265216001
 
 Notes
 -----

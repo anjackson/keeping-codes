@@ -126,7 +126,7 @@ MatLab
 http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type%3A%22application/octet-stream%22&f[1]=content_type_served%3A%22application/matlab%22
 
 
-### Binary Shingling
+### Binary NGram Shingling
 
 Along the same lines, experimenting with shingling the hex-encoded first few (32) bytes. We space separate and hex-encode the first 32 bytes of every resource. We pass that to Solr, which treats each hex-encoded byte as a single token. Solr then 'shingles' the tokens, from four to eight overlapping character sequences corresponding to all combinations of byte sequence between four and eight bytes long within the 32 bytes.
 
@@ -137,6 +137,14 @@ Initial results from small corpus.
 - HTML/PDF signatures bear strong relation to manual ones, but generally spot more possible 'signals'.
 - Not terribly useful as a Facet, due to presenting all shorter matching facets even when longer facets (that encapsulate the smaller ones) exist. May be possible to do some fancy facet filtering to make this more powerful.
 - Certainly, the field results could be mined and if the offset is know, shingles concatenated into longer ones as appropriate.
+
+See also:
+* http://www.forensicswiki.org/wiki/File_Format_Identification
+* [](http://web.archive.org/web/20051124132220/http://www.itoc.usma.edu/workshop/2005/Papers/Follow%20ups/FilePrintPresentation-final.pdf)
+* [A New Approach to Content-based File Type Detection (2008)](http://arxiv.org/ftp/arxiv/papers/1002/1002.3174.pdf)
+* [Predicting the types of file fragments (2008)](http://www.dfrws.org/2008/proceedings/p14-calhoun.pdf)
+* [Fast File-type Identification (2010)](http://www.alphaminers.net/thesis/International%20Conference/IAKLHSMH_2010.pdf)
+* [Fast Content-Based File Type Identification (2011)](http://link.springer.com/chapter/10.1007/978-3-642-24212-0_5)
 
 ### Indexing/Similarity Note:
 
