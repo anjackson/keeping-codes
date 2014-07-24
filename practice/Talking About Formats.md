@@ -2,7 +2,7 @@
 title: Talking About Formats
 layout: default
 categories: [practice]
-tags: [stub]
+tags: [outline]
 publish: true
 permalink: /practice/talking-about-formats.html
 ---
@@ -38,6 +38,7 @@ could be taken to mean either of:
 
 In the context of the above discussion, we know that DROID cannot distinguish the distinct TIFF versions, so we know that the latter ('OR') is the case. However, it is easy to imagine cases where 'AND' might be useful. For example, a GeoTIFF is also a TIFF, and a DOCX is also a ZIP, and many file formats can also be interpreted as plain text. 
 
+Clumsiness [FMT 7,8,9,10](http://www.openplanetsfoundation.org/blogs/2011-08-28-fmt-78910)
 
 ### Has Format? ###
 
@@ -51,17 +52,52 @@ Similarly, certain bitstreams can carefully constructed to be interpreted as mul
 This is not to say that .hasFormat. is necessarily bad - it may work well enough and it certainly covers the majority of cases. But if we stick to that notation, we will need to accept that it is an approximation and there will be some cases we simply can't capture.
 
 
-### Beyond The Bitstream ###
+### Non-formats ###
 
-[Should there be a Pronom ID for unidentifiable/unidentified?](http://qanda.digipres.org/181/should-there-be-pronom-id-for-unidentifiable-unidentified)
+There are also a number of other situations and classes of digital resource that we can come across during identification, and it is reasonable to ask whether a suitable format language should cover these. See for example this recent posting to the digital preservation Q&A site: [Should there be a PRONOM ID for unidentifiable/unidentified?](http://qanda.digipres.org/181/should-there-be-pronom-id-for-unidentifiable-unidentified)
+
+As I stated in my answer to that question, there are a number of states beyond just 'unidentified' that it may be worth minting identifiers for, so we can talk about them. They include:
+
+* Folders
+* Empty files
+* [Soft/symbolic links](http://en.wikipedia.org/wiki/Symbolic_link) 
+* [Hard links](http://en.wikipedia.org/wiki/Hard_link)
+* Various classes of [block device](http://en.wikipedia.org/wiki/Device_file)
+
+The other answers to that question make it clear that the solution employed by PRONOM and DROID is to add a separate field for each case of interest. The PUIDs are only to be applied to bitstreams of non-zero length, while additional data fields are used to record whether something is a folder, or to record the length of the bitstream.
+
+This is, of course, a perfectly reasonable approach. However, if we could design a format language that subsumes these additional fields into a single consistent explicit form, it will make it easier to communicate and preserve that information. 
+
+### Talking About Tools ###
+
+...
+
+It would also make it easier to compare the results of identification from different tools.
 
 ### Scaling Up ###
 
 Note problem of limited PRONOM format language expressivity. .format.is versus expressions via mime type eg charset, encoding, codecs, versions
 
+Combinations. PRONOM has chr/1 identifiers, e.g. [UTF-8 is chr/1](http://apps.nationalarchives.gov.uk/pronom/chr/1)
 
-Extended MIME Types
--------------------
+Formats not yet in PRONOM.
+
+A Extensible Format Identification Scheme
+-----------------------------------------
+
+To embed PRONOM in a language, but without cloning it, etc.
+
+### Resolving The TIFF Troubles ###
+
+Subclasses a.k.a Conformance Heirarchy.
+
+### The MIME Info Specification ###
+
+http://www.freedesktop.org/wiki/Specifications/shared-mime-info-spec/
+
+http://standards.freedesktop.org/shared-mime-info-spec/shared-mime-info-spec-latest.html#subclassing
+
+### Extended MIME Types ###
 
 http://wiki.whatwg.org/wiki/Video_type_parameters
 codecs
@@ -73,16 +109,36 @@ file extension based types already in use, e.g. Firefox: application/x-extension
 
 We can add application/x-pronom-fmt-99, say.
 
-### Combining MIME with PRONOM
+### Building on PRONOM ###
+
+### Hierarchy & Ambiguity ###
+
+Above in the tree is AND, below is OR.
+
+### Formats With No PUID ###
+
+That formats can be identified by EXT or new Version without significant risk in the medium term, so we can talk about new (or newly discovered) formats without waiting for PRONOM to mint an ID before we can say anything.
+
+### Dialects ###
+
+c.f. CSV
+
+### Declaring & Comparing Tools ###
 
 
-### Hierarchy & Ambiguity
+Talking About Software
+----------------------
 
+We also want to formats that depend on software
 
-### Talking about Software
+http://apps.nationalarchives.gov.uk/PRONOM/Software/proSoftwareSearch.aspx?status=listReport
 
+http://apps.nationalarchives.gov.uk/PRONOM/Vendor/proVendorSearch.aspx?status=listReport
 
-Conclusions
------------
+Issues
+------
 
 [What is a file format?](http://qanda.digipres.org/38/what-is-a-file-format)
+
+
+Not necessarily preservation language, but a lingua franca for the medium term. However, given results change, etc.
