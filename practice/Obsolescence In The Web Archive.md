@@ -479,7 +479,6 @@ Contrast with [Studies on the scalability of web preservation](http://purl.pt/24
 
 http://www.webarchive.org.uk/interject/
 
-
 [Deploying webp](http://www.igvita.com/2013/05/01/deploying-webp-via-accept-content-negotiation/) is similar, but still server-driven.
 
 But add concept of agent-driven negociation. Turns out interjection is already in the spec.

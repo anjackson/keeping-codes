@@ -1,9 +1,9 @@
 ---
 title: How much of the UK's HTML is valid?
 layout: default
-categories: [practice]
+categories: [practice, blog]
 tags: [outline]
-publish: false
+publish: true
 permalink: /practice/how-much-uk-html-is-valid.html
 ---
 
