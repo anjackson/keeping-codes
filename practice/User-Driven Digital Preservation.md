@@ -4,7 +4,7 @@ layout: default
 categories: [practice, blog]
 tags: [outline]
 publish: false
-permalink: /practice/user-driven-digital-preservation.html
+permalink: user-driven-digital-preservation.html
 ---
 
 First published at
