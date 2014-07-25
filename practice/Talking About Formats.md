@@ -12,9 +12,9 @@ In digital preservation, at the most basic level, we need to be able to associat
 Talking In PRONOM
 -----------------
 
-There are a few different formal frameworks for talking about formats, but the most well-known and well-respected one specifically aimed at digital preservation is PRONOM. But the interesting thing about PRONOM is that it is, in a sense, only half the language we need. We do get an explicit enumeration of 'nouns', but the 'grammar' that controls how those nouns should be applied is not explicitly defined.
+There are a few different formal frameworks for talking about formats, but the most well-known and well-respected one intended for digital preservation is PRONOM. But the interesting thing about PRONOM is that it is, in a sense, only half the language we need. We do get an explicit enumeration of 'nouns', i.e. format definitions, but the 'grammar' that controls how those nouns should be applied is not explicitly defined.
 
-At first, this looks straight-forward. When running the DROID command-line tool, the result of the identification is reported as in the 'Format' column. Similarly, in PREMIS, PRONOM format identifiers (PUIDs) are used to declare the &lt;premis:format> for a given bitstream. In summary, we might say our 'grammar' is simply:
+At first, however, this looks straight-forward. When running the DROID command-line tool, the result of the identification is reported as in the 'Format' column. Similarly, in PREMIS, PRONOM format identifiers (PUIDs) are used to declare the &lt;premis:format> for a given bitstream. In summary, if we might say our 'grammar' is simply:
 
     <bitstream> .hasFormat. <PUID>
 
@@ -38,12 +38,11 @@ could be taken to mean either of:
 
 In the context of the above discussion, we know that DROID cannot distinguish the distinct TIFF versions, so we know that the latter ('OR') is the case. However, it is easy to imagine cases where 'AND' might be useful. For example, a GeoTIFF is also a TIFF, and a DOCX is also a ZIP, and many file formats can also be interpreted as plain text. 
 
-Clumsiness [FMT 7,8,9,10](http://www.openplanetsfoundation.org/blogs/2011-08-28-fmt-78910)
+This way of handling similar formats often caused a lot of confusion, and so in the case of TIFF, the decision was taken to create a new generic TIFF PUID, and to deprecate the separate identifiers. However, the deprecation of PUIDs that have already been applied to many thousands of digital objects also [caused some consternation](http://www.openplanetsfoundation.org/blogs/2011-08-28-fmt-78910) [^1].
 
 ### Has Format? ###
 
-However, there is another issue with using multiple results in this way. The implication of the .hasFormat. relationship is that this is a statement of an attribute of the bitstream. But while DROID is uncertain, the bitstream itself can definitely only be encoded in one version. If it's using TIFF 6 features, it is not a TIFF 3,
-therefore the assertion that the bitstream .hasFormat. TIFF 3 is simply wrong. But if it is only using TIFF 3 features, then it can reasonably be said to be TIFF 3 AND 4 AND 5 AND 6, because each successive TIFF format was a superset of the previous version.
+However, there is another issue with using multiple results in this way. The implication of the .hasFormat. relationship is that this is a statement of an attribute of the bitstream. But while DROID is uncertain, the bitstream itself can definitely only be encoded in one version. If it's using TIFF 6 features, it is not a TIFF 3, therefore the assertion that the bitstream .hasFormat. TIFF 3 is simply wrong. But if it is only using TIFF 3 features, then it can reasonably be said to be TIFF 3 AND 4 AND 5 AND 6, because each successive TIFF format was a superset of the previous version.
 
 (NOTE I'm ignoring proprietary/odd tags right now, maybe add them in later).
 
@@ -68,11 +67,11 @@ The other answers to that question make it clear that the solution employed by P
 
 This is, of course, a perfectly reasonable approach. However, if we could design a format language that subsumes these additional fields into a single consistent explicit form, it will make it easier to communicate and preserve that information. 
 
-### Talking About Tools ###
+### Comparing & Describing Tools ###
 
-...
+There are a range of tools that preform format identification, and it is very useful to be able to compare the results from different tools in order to work out how best to exploit or combine them. However, as only DROID uses PUIDs, see need a more general language in order to enable us to directly compare the results of different tools.
 
-It would also make it easier to compare the results of identification from different tools.
+Similarly, we would like to be able to document which tools can read or write different formats. A richer format language would make it easier to describe tools and processes and make them discoverable.
 
 ### Scaling Up ###
 
@@ -87,9 +86,13 @@ A Extensible Format Identification Scheme
 
 To embed PRONOM in a language, but without cloning it, etc.
 
+Not necessarily preservation language, but a lingua franca for the medium term. However, given results change, etc.
+
+https://github.com/openplanets/scape-toolspecs
+
 ### Resolving The TIFF Troubles ###
 
-Subclasses a.k.a Conformance Heirarchy.
+Subclasses a.k.a Conformance Heirarchy. no need to deprecate
 
 ### The MIME Info Specification ###
 
@@ -123,11 +126,11 @@ That formats can be identified by EXT or new Version without significant risk in
 
 c.f. CSV
 
-### Declaring & Comparing Tools ###
+### Describing & Comparing Tools ###
 
+This
 
-Talking About Software
-----------------------
+### Associating Software With Formats ###
 
 We also want to formats that depend on software
 
@@ -135,10 +138,11 @@ http://apps.nationalarchives.gov.uk/PRONOM/Software/proSoftwareSearch.aspx?statu
 
 http://apps.nationalarchives.gov.uk/PRONOM/Vendor/proVendorSearch.aspx?status=listReport
 
+
 Issues
 ------
 
 [What is a file format?](http://qanda.digipres.org/38/what-is-a-file-format)
 
 
-Not necessarily preservation language, but a lingua franca for the medium term. However, given results change, etc.
+[^1]: Some of the people involved in the discussions around this issue refer to it light-heartedly as "the TIFF tiff".
