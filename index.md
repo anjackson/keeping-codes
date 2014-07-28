@@ -19,7 +19,6 @@ layout: default
 > <small>[Digital Preservation Handbook > Introduction > Definitions and Concepts](http://www.dpconline.org/advice/preservationhandbook/introduction/definitions-and-concepts)</small>
 
 
-
 Introduction
 ------------
 

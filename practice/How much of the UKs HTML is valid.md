@@ -7,7 +7,7 @@ publish: true
 permalink: /practice/how-much-uk-html-is-valid.html
 ---
 
-First published at http://britishlibrary.typepad.co.uk/webarchive/2014/07/how-much-of-the-uk-html-is-valid.html
+First published at <http://britishlibrary.typepad.co.uk/webarchive/2014/07/how-much-of-the-uk-html-is-valid.html>
 
 ---
 
