@@ -41,7 +41,7 @@ could be taken to mean either of:
 
 In the context of the above discussion, we know that DROID cannot distinguish the distinct TIFF versions, so we might assume that the latter ('OR') is the case. However, it is easy to imagine cases where 'AND' might be useful. For example, a GeoTIFF is also a TIFF, and a DOCX is also a ZIP, and many file formats can also be interpreted as plain text.  Unless we extend the grammar, we cannot distinguish between these two cases.
 
-This way of handling similar formats caused a lot of confusion, and so in in [2010 (see release 51)](http://www.nationalarchives.gov.uk/aboutapps/pronom/release-notes.xml) the decision was taken to create a new generic [TIFF PUID](http://apps.nationalarchives.gov.uk/pronom/fmt/353), and to deprecate the separate identifiers so that DROID would return only the new PUID. However, the deprecation of PUIDs that have already been applied to many thousands of digital objects also [caused some consternation ](http://www.openplanetsfoundation.org/blogs/2011-08-28-fmt-78910) [^1].
+This way of handling similar formats caused a lot of confusion, and so in in [2010 (see release 51)](http://www.nationalarchives.gov.uk/aboutapps/pronom/release-notes.xml) the decision was taken to create a new generic [TIFF PUID](http://apps.nationalarchives.gov.uk/pronom/fmt/353), and to deprecate the separate identifiers so that DROID would return only the new PUID. However, the deprecation of PUIDs that have already been applied to many thousands of digital objects also [caused some consternation ](http://www.openplanetsfoundation.org/blogs/2011-08-28-fmt-78910).
 
 ### Has Format? ###
 
@@ -99,38 +99,38 @@ A Extensible Format Identification Scheme
 
 A number of the issues outlined above have been raised previously, along with proposals for possible solutions. They have generally taken the form of entirely new format registry designs and implementations, built by independent groups and then presented to the wider digital preservation community.  None, so far, have succeeded.
 
-The reasons for this are not clear, but I would propose that one important omission has been the failure to adequately investigate who the actual users are. Critically, it has not been clear who will be spending their time filling these registries
+The reasons for this are not clear, but I would propose that one important omission has been the failure to adequately investigate who the actual users are. Critically, it has not been clear who will be spending their time filling these registries, and it is almost impossible to design an acceptable user experience in the absence of users.
 
+The problem of where to get the data from has also led to another issue. Many new format registries start be copying in the contents of PRONOM, but without dealing with the fact that this will always be a mere point-in-time snapshot. The burden of data maintenance and synchronisation is rarely even acknowledged, never mind addressed.
 
-Based on the issues identified above,  embed PRONOM in a language, but without cloning it, etc.
+More recent attempts have focussed on using a linked data approach to combine data sources. This is certainly a potentially powerful approach, but it does not make the issue to data maintenance go away entirely. The freedom to combine arbitrary schemas is also the freedom to make an almighty mess. Some shared practices are procedures are required in order to ensure the data remained interoperable between the various data sources.
 
-Not necessarily preservation language, but a lingua franca for the medium term. However, given results change, etc.
+Here, we take a simpler, less ambitions approach. Our goal is not to create the perfect extensible permanent identifier system, but rather to combine existing format systems together in order to create a kind of format *lingua franca* for the short to medium term. Crucially, the design embeds PRONOM as-is, inside a broader format language, and does not attempt to replace or supersede it. As PRONOM evolves, the precise linkage between the languages may shift, but the overall integration will remain useful and understandable.
 
-https://github.com/openplanets/scape-toolspecs
 
 ### Resolving The TIFF Troubles ###
 
-Subclasses a.k.a Conformance Heirarchy. no need to deprecate
+In the reaction to the decision to deprecate the version-based TIFF identifiers[^1], one [concrete proposal for resolving the issue](http://www.openplanetsfoundation.org/blogs/2011-08-28-fmt-78910) was to add a *parent-child* relationship to PRONOM. The new TIFF identifier could act as a *super-class*, with each of the versioned identifiers being a *sub-class*. The original meaning of those identifiers would remain clear, and identification tools could report their finding at whatever level of granularity was appropriate.
 
-### The MIME Info Specification ###
+This idea is common to a number of format identification schemes. In the context of Apple Uniform Type Identifiers, this is referred to as [the conformance hierarchy](https://developer.apple.com/library/ios/documentation/FileManagement/Conceptual/understanding_utis/understand_utis_conc/understand_utis_conc.html#//apple_ref/doc/uid/TP40001319-CH202-BCGJGJGA). On the Linux desktop it is referred to as [subclassing](http://standards.freedesktop.org/shared-mime-info-spec/shared-mime-info-spec-latest.html#subclassing), which generalises the format class relationships already implied by the MIME type system.
 
-http://www.freedesktop.org/wiki/Specifications/shared-mime-info-spec/
-
-http://standards.freedesktop.org/shared-mime-info-spec/shared-mime-info-spec-latest.html#subclassing
+This generalisation is formalised and standardised by the [MIME Info Specification](http://standards.freedesktop.org/shared-mime-info-spec/shared-mime-info-spec-latest.html), managed by the [freedesktop.org interoperability project](http://www.freedesktop.org/wiki/Specifications/shared-mime-info-spec/). As well as being used by most Linux distribution vendors, the MIME Info specification also forms the basis of the [Apache Tika binary format identification engine](http://tika.apache.org/1.5/parser_guide.html#Add_your_MIME-Type)[^2].
 
 ### Extended MIME Types ###
 
-http://wiki.whatwg.org/wiki/Video_type_parameters
-codecs
-e.g. Quicktime VR example file = [ video/quicktime; codecs="cvid, pano" ]
+The core idea, therefore, is quite simple. Lets take the MIME type model, as defined in the MIME Info specification, and use the MIME type systems build in extension points to link the [IANA MIME types](http://www.iana.org/assignments/media-types/media-types.xhtml) to the PRONOM definitions. This is actually fairly straightforward, because MIME types define a very powerful extension mechanism in the form of [MIME type parameters](http://en.wikipedia.org/wiki/Internet_media_type#Naming).
+
+Indeed, there are already a number of common MIME type extensions that are use to cover cases of interest, and in those cases, we are simply formalising conventions that are already in place. For example, here is already a mature specification for describing [video codecs](http://wiki.whatwg.org/wiki/Video_type_parameters), e.g. a Quicktime VR file can be described as:
+
+
+    [ video/quicktime; codecs="cvid, pano" ]
+
 
 version field already in use, e.g. Firefox Java plugins.
 
-file extension based types already in use, e.g. Firefox: application/x-extension-EXT
+### Building on PRONOM ###
 
 We can add application/x-pronom-fmt-99, say.
-
-### Building on PRONOM ###
 
 ### Hierarchy & Ambiguity ###
 
@@ -140,6 +140,9 @@ Above in the tree is AND, below is OR.
 
 That formats can be identified by EXT or new Version without significant risk in the medium term, so we can talk about new (or newly discovered) formats without waiting for PRONOM to mint an ID before we can say anything.
 
+file extension based types already in use, e.g. Firefox: application/x-extension-EXT
+
+
 ### Dialects ###
 
 c.f. CSV
@@ -147,6 +150,9 @@ c.f. CSV
 ### Describing & Comparing Tools ###
 
 This
+
+https://github.com/openplanets/scape-toolspecs
+
 
 ### Associating Software With Formats ###
 
@@ -165,6 +171,8 @@ Issues
 ------
 
 This is not to say that using `.hasFormat.` is necessarily a bad idea -- it certainly covers the majority of cases and so may be good enough. But if we stick to that notation, we will need to accept that it is an approximation and there will be some cases we simply can't capture.
+
+Not necessarily preservation language, but given results change, etc.
 
 
 [What is a file format?](http://qanda.digipres.org/38/what-is-a-file-format)
@@ -185,3 +193,4 @@ Footnotes
 ---------
 
 [^1]: Some of the people involved in the discussions around this issue refer to it light-heartedly as "the TIFF tiff".
+[^2]: It is also compatible with [the XML format used by Fido](https://raw.githubusercontent.com/openplanets/fido/master/fido/conf/formats-v77.xml), and could be used instead of Fido's custom schema.
