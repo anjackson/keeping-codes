@@ -19,6 +19,7 @@ layout: default
 > <small>[Digital Preservation Handbook > Introduction > Definitions and Concepts](http://www.dpconline.org/advice/preservationhandbook/introduction/definitions-and-concepts)</small>
 
 
+
 Introduction
 ------------
 
@@ -36,15 +37,6 @@ Practise
 Experiments
 ---------
 {% include pageList.html cat="experiments" %}
-
-
-License
--------
-
-<span style="float:right; padding: 0.1em 0.5em;">
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_GB"><img alt="Creative Commons Licence" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a>
-</span>
-<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Keeping Codes</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://anjackson.github.io/keeping-codes/" property="cc:attributionName" rel="cc:attributionURL">Andrew N. Jackson</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_GB">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
 
 [1]: http://anjackson.net/contact
 [2]: https://github.com/anjackson/keeping-codes/issues

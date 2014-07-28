@@ -4,3 +4,9 @@ markdown: kramdown
 baseurl: /keeping-codes
 
 all-category-list: [fundamentals,practice,experiments,war stories]
+
+gems:
+- jekyll-mentions
+- jemoji
+- jekyll-redirect-from
+- jekyll-sitemap
