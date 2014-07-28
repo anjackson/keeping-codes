@@ -61,6 +61,19 @@
         <div class="col-xs-12 col-sm-4 sidebar-offcanvas" id="sidebar" role="navigation">
 {% capture toc %}{% include _toc.md %}{% endcapture %}
 {{ toc | markdownify | split:"<!-- CUT -->" | first }}
+
+          <p>
+            <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Keeping Codes</span>
+            <br/>
+            by <a xmlns:cc="http://creativecommons.org/ns#" href="http://anjackson.net/" property="cc:attributionName" rel="cc:attributionURL">Andrew N. Jackson</a>.
+            <div>
+              <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_GB"><img alt="Creative Commons Licence" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a>
+            </div>
+          </p>
+          <p>
+            <a href="https://github.com/anjackson/keeping-codes/"/>Maintained on GitHub</a>.
+          </p>
+
         </div>
 
         <div class="col-xs-12 col-sm-8">
@@ -70,16 +83,6 @@
         {{ content }}
 
         <div id="footer"> 
-          <hr/>
-          <p>
-            <div style="float: right;">
-              <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_GB"><img alt="Creative Commons Licence" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a>
-            </div>
-            <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Keeping Codes</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://anjackson.github.io/keeping-codes/" property="cc:attributionName" rel="cc:attributionURL">Andrew N. Jackson</a> is licensed under a <br/><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_GB">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
-          </p>
-          <p>
-            <a href="https://github.com/anjackson/keeping-codes"/>Maintained on GitHub</a>, by @anjackson.
-          </p>
           <hr/>
           <h2>Comments</h2>
           <p>
