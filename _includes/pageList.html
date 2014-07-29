@@ -1,6 +1,6 @@
 <ul>
-{% assign sorted_pages = ( site.pages | sort: 'url' ) %}
-2
+{% assign sorted_pages = ( site.pages | sort ) %}
+3
 {% for page in sorted_pages %}
 {% for pc in page.categories %}
 {% if pc == include.cat %}
