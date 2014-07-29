@@ -1,6 +1,6 @@
 <ul>
-{% assign sorted_pages = site.pages | sort: 'title', 'first' %}
-4
+{% assign sorted_pages = site.pages | sort:"name" %}
+5
 {% for page in sorted_pages %}
     {{ page.title }}
 {% for pc in page.categories %}

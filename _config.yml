@@ -6,6 +6,9 @@ baseurl: /keeping-codes
 all-category-list: [fundamentals,practice,experiments,war stories]
 active-category-list: [practice,experiments]
 
+safe: true
+lsi: false
+
 gems:
 - jekyll-mentions
 - jemoji
