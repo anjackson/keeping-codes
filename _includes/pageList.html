@@ -1,7 +1,7 @@
 <ul>
-{% assign sorted_pages = site.pages %}
-jam
-{% for page in sorted_pages | sort: "title" %}
+{% assign sorted_pages = ( site.pages | sort: 'url' ) %}
+2
+{% for page in sorted_pages %}
 {% for pc in page.categories %}
 {% if pc == include.cat %}
 {% if include.unpublished == true or page.publish == true %}
