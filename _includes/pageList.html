@@ -17,5 +17,8 @@
 </ul>
 
 <pre>
-{{ site.pages[1] | jsonify }}
+{% assign sorted_pages = site.pages | sort:"title" %}
+{% for page in sorted_pages %}
+{{ page.title }}
+{% endfor %} <!-- page -->
 </pre>
