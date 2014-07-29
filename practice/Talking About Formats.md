@@ -258,9 +258,7 @@ Building on the *Formats Over Time* work mentioned earlier, this approach of com
 Limitations
 -----------
 
-The extended MIME types provide a convenient, extensible and scalable way of defining formats, and the addition of a format hierarchy helps to reduce the complexity of the grammar we need to describe the format of bitstreams.  Furthermore, by shifting from assertions of the form `.hasFormat.` to assertions of the form `.conformsTo.`, we can accurately describe a wider range of formats in a coherent grammar, even polyglots.  
-
-That said, `.hasFormat.` certainly covers the majority of cases, and so may be good enough in many cases, as long as we accept that it is an approximation and there will be some cases we simply can't capture. Certainly, in practice, we are likely to have to work with both forms of assertion for the foreseeable future.
+The extended MIME types provide a convenient, extensible and scalable way of defining formats, and the addition of a format hierarchy helps to reduce the complexity of the grammar we need to describe the format of bitstreams.  Furthermore, by shifting from`.hasFormat.` assertions to `.conformsTo.`, we can accurately describe a wider range of formats in a coherent grammar, even including polyglots[^6].
 
 As stated earlier, extended MIME types do not come with guarantee of permanence, and so may not be considered suitable for archival purposes. However, it is not clear whether this argument will stand up to scrutiny. Firstly, identification tools will always lag behind the latest format developments, and we are likely to wish to continuously developer the degree of finesse with which we describe the formats of bitstreams and the features they depend upon. Active preservation of varied collections is going to involve running occasional re-identification processes and updating out metadata, so updating our identifiers will not be unusual. Of course, steps should be taken to ensure that any previous identifiers are not inappropriately re-used or have their meanings changed, but backwards-compatible changes (like adding new format subclasses) should not cause any issues.
 
@@ -281,3 +279,4 @@ Footnotes
 [^3]: Some of the people involved in the discussions around this issue refer to it light-heartedly as "the TIFF tiff".
 [^4]: It is also compatible with [the XML format used by Fido](https://raw.githubusercontent.com/openplanets/fido/master/fido/conf/formats-v77.xml), and could be used instead of Fido's custom schema.
 [^5]: Note that [this extension mechanism is deprecated](http://tools.ietf.org/html/rfc6648), and a future iteration of this work should switch to [the x. extension mechanism](http://en.wikipedia.org/wiki/Internet_media_type#Unregistered_x._tree) or [a vendor tree](http://en.wikipedia.org/wiki/Internet_media_type#Vendor_tree).
+[^6]: That said, `.hasFormat.` certainly covers the majority of cases, and so may be good enough in many cases, as long as we accept that it is an approximation and there will be some cases we simply can't capture. Certainly, in practice, we are likely to have to work with both forms of assertion for the foreseeable future.
