@@ -10,8 +10,10 @@ permalink: "defining-format.html"
 Introduction
 ------------
 
-
+The idea of 
 [What is a file format?](http://qanda.digipres.org/38/what-is-a-file-format)
+
+.conformsTo.
 
 ### Mixed Format Files ###
 

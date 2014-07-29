@@ -211,6 +211,23 @@ Like the `version` parameter described above, the developers of Firefox have alr
 Again, we can exploit this existing convention by formalising it and mapping them in as aliases.
 
 
+### From Format To Conformance ###
+
+The hierarchy of formats also suggests a way to resolve the problems with the `.hasFormat.` assertion. If we replace `.hasFormat.` with `.conformsTo.`, we end up with a format language that captures complex cases much more robustly. For example, if we have a TIFF 6 bitstream, we might say:
+
+    <bitstream> .conformsTo. [ image/tiff; version="6" ]
+
+but for a TIFF 5 bitstream, we could reflect the forward compatibility of the format by asserting conformance across the full range of formats:
+
+    <bitstream> .conformsTo. [ image/tiff; version="5" ]
+    <bitstream> .conformsTo. [ image/tiff; version="6" ]
+
+Even polyglots could be addressed in this fashion, as the HTML and JPEG example mentioned earlier could be described as follows:
+
+    <bitstream> .conformsTo. [ image/jpeg ]
+    <bitstream> .conformsTo. [ text/html ]
+
+
 ### Describing Tools ###
 
 As well as being able to describe the formats of bitstreams, this approach can also be used to describe tools that act upon formats (indeed, this approach was partially refined during my involvement in [the SCAPE project](http://www.scape-project.eu/), where [tool specifications](https://github.com/openplanets/scape-toolspecs) are used to describe the available preservation actions). 
@@ -241,9 +258,9 @@ Building on the *Formats Over Time* work mentioned earlier, this approach of com
 Limitations
 -----------
 
-The extended MIME types provide a convenient, extensible and scalable way of defining formats, and the addition of a format hierarchy helps to reduce the complexity of the grammar we need to describe the format of bitstreams. 
+The extended MIME types provide a convenient, extensible and scalable way of defining formats, and the addition of a format hierarchy helps to reduce the complexity of the grammar we need to describe the format of bitstreams.  Furthermore, by shifting from assertions of the form `.hasFormat.` to assertions of the form `.conformsTo.`, we can accurately describe a wider range of formats in a coherent grammar, even polyglots.  
 
-However, we have only partially address the issues around the format grammar, as we have still not moved beyond the `.hasFormat.` relationship.  This certainly covers the majority of cases, and so may be good enough. But if we stick to that notation, we will need to accept that it is an approximation and there will be some cases we simply can't capture (like polyglots).
+That said, `.hasFormat.` certainly covers the majority of cases, and so may be good enough in many cases, as long as we accept that it is an approximation and there will be some cases we simply can't capture. Certainly, in practice, we are likely to have to work with both forms of assertion for the foreseeable future.
 
 As stated earlier, extended MIME types do not come with guarantee of permanence, and so may not be considered suitable for archival purposes. However, it is not clear whether this argument will stand up to scrutiny. Firstly, identification tools will always lag behind the latest format developments, and we are likely to wish to continuously developer the degree of finesse with which we describe the formats of bitstreams and the features they depend upon. Active preservation of varied collections is going to involve running occasional re-identification processes and updating out metadata, so updating our identifiers will not be unusual. Of course, steps should be taken to ensure that any previous identifiers are not inappropriately re-used or have their meanings changed, but backwards-compatible changes (like adding new format subclasses) should not cause any issues.
 
