@@ -1,8 +1,6 @@
 <ul>
 {% assign sorted_pages = site.pages | sort:"name" %}
-5
 {% for page in sorted_pages %}
-    {{ page.title }}
 {% for pc in page.categories %}
 {% if pc == include.cat %}
 {% if include.unpublished == true or page.publish == true %}
