@@ -2,7 +2,7 @@
 title: User-Driven Digital Preservation
 layout: default
 categories: [practice, blog]
-tags: [outline]
+tags: [complete]
 publish: false
 permalink: user-driven-digital-preservation.html
 ---

@@ -2,9 +2,9 @@
 title: How much of the UK's HTML is valid?
 layout: default
 categories: [practice, blog]
-tags: [outline]
+tags: [complete]
 publish: true
-permalink: /practice/how-much-uk-html-is-valid.html
+permalink: "how-much-uk-html-is-valid.html"
 ---
 
 First published at <http://britishlibrary.typepad.co.uk/webarchive/2014/07/how-much-of-the-uk-html-is-valid.html>

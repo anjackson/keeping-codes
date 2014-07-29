@@ -1,5 +1,5 @@
 <ul>
-{% for page in site.pages | sort:"title" %}
+{% for page in site.pages | sort:"path" %}
 {% for pc in page.categories %}
 {% if pc == include.cat %}
 {% if include.unpublished == true or page.publish == true %}

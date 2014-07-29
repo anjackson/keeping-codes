@@ -1,7 +1,6 @@
 ---
 title:  Keeping Codes
 layout: default
-
 ---
 
 > "Digital Preservation is access... in the future."
