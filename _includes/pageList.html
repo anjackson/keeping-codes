@@ -15,10 +15,3 @@
 {% endfor %}  <!-- page-category -->
 {% endfor %} <!-- page -->
 </ul>
-
-<pre>
-{% assign sorted_pages = site.pages | sort:"name" %}
-{% for page in sorted_pages %}
-{{ page.title }}
-{% endfor %} <!-- page -->
-</pre>
