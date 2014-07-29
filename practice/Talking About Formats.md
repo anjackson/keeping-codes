@@ -2,7 +2,7 @@
 title: Talking About Formats
 layout: default
 categories: [practice]
-tags: [outline]
+tags: [draft]
 publish: true
 permalink: "talking-about-formats.html"
 ---
@@ -55,13 +55,13 @@ For example, if a bitstream uses TIFF 6 features, it is not a TIFF 3, therefore 
 In short, the `.hasFormat.` grammar cannot distinguish between DROID's uncertainty and format compatibility, and so it's interpretation is ambiguous.
 
 
-#### Polyglots ####
+#### Interpreting Polyglots ####
 
 The notion of format compatibility can be stretched even further by trying to describe [polyglots](http://en.wikipedia.org/wiki/Polyglot_%28computing%29): bitstreams that are simultaneously interpretable as *two or more* distinct formats. Polyglots are most commonly designed to be interpreted as more than one programming language, but the concept has also been extended to binary data formats (sometimes referred to as "binary polyglots").
 
 Examples include [this HTML file](http://lcamtuf.coredump.cx/squirrel/), which transcludes a copy of itself when rendered, at which point it is interpreted as a JPEG image (see [this discussion for more information](http://stackoverflow.com/questions/11587119/is-this-a-web-page-or-an-image)), and [this collection of carefully constructed polyglots](https://code.google.com/p/corkami/wiki/mix). The latter collection includes three files that are valid Windows, Linux and OS X binaries respectively, but where each of those binary executables is also a working PDF document, a Java Jar file (zip + class + manifest), and a HTML + JavaScript file. 
 
-Clearly, the assertion of format is a statement about how a bitstream *might* be interpreted, rather than an objective assertion about the nature of the bitstream itself -- `.hasFormat.` is not enough.
+Clearly, the assertion of format is a statement about how a bitstream *might* be interpreted, rather than an objective assertion about the nature of the bitstream itself -- the concept of `.hasFormat.` is not enough.
 
 ### Non-format Identifiers ###
 
@@ -107,20 +107,20 @@ A Extensible Format Identification Scheme
 
 Most, if not all of the issues outlined above have been raised previously, and a there have been a number of proposals for possible solutions. However, these solutions have generally taken the form of entirely new format registry designs and/or implementations, built by independent groups and then presented to the wider digital preservation community.  None, so far, have succeeded.
 
-The reasons for this are not clear, but I would propose that one important omission has been the failure to adequately investigate who the actual users are[^3]. Critically, it has not been clear who will be spending their time filling these registries, and who will be using that information, and if these are always the same people doing both the reading and the writing, or if this resource is intended to help inform and educate an audience of 'less technical' users. It is surely nigh-on impossible to design an acceptable user experience in the absence of users, or to build a crowd-sourcing system without getting to know the crowd.
+The reasons for this are not clear, but I would propose that one important omission has been the failure to adequately investigate who the actual users are[^1]. Critically, it has not been clear who will be spending their time filling these registries, and who will be using that information, and if these are always the same people doing both the reading and the writing, or if this resource is intended to help inform and educate an audience of 'less technical' users. It is surely nigh-on impossible to design an acceptable user experience in the absence of users, or to build a crowd-sourcing system without getting to know the crowd.
 
 The problem of where to get the data from has also led to another issue. Many new format registries start be copying in or partially duplicating the contents of PRONOM, but without dealing with the fact that this will always be a mere point-in-time snapshot. The burden of data maintenance and synchronisation is rarely even acknowledged, never mind adequately addressed, and is utterly critical to the long-term sustainability of the system.
 
 More recent attempts have focussed on using a linked data framework to combine data sources. This is certainly a potentially powerful approach, but it does not make the issue to data maintenance go away entirely. The freedom to combine arbitrary schemas is also the freedom to make an almighty mess. Some shared practices and procedures will be required in order to ensure the data remained interoperable between the various data sources, and that the semantics of those assertions remain clear and do not fall into contradiction.
 
-Here, we take a simpler, less ambitions approach. Our goal is not to create the perfect extensible permanent identifier system, but rather to combine existing format systems together in order to create a kind of format *lingua franca* for the short to medium term[^4]. Crucially, the design embeds PRONOM as-is, inside a broader format language, and does not attempt to replace, clone or supersede it. As PRONOM evolves, the precise linkage between the languages may shift, but the overall integration will remain useful and understandable.
+Here, we take a simpler, less ambitions approach. Our goal is not to create the perfect extensible permanent identifier system, but rather to combine existing format systems together in order to create a kind of format *lingua franca* for the short to medium term[^2]. Crucially, the design embeds PRONOM as-is, inside a broader format language, and does not attempt to replace, clone or supersede it. As PRONOM evolves, the precise linkage between the languages may shift, but the overall integration will remain useful and understandable.
 
 
 ### Resolving The TIFF Troubles ###
 
-Among the reactions to the decision to deprecate the version-based TIFF identifiers[^1], one [concrete proposal for resolving the issue](http://www.openplanetsfoundation.org/blogs/2011-08-28-fmt-78910) was to add a *parent-child* relationship to PRONOM. The new TIFF identifier could act as a *super-class*, with each of the versioned identifiers being a *sub-class*. The original meaning of those identifiers would remain clear, and identification tools could report their finding at whatever level of granularity was appropriate.
+Among the reactions to the decision to deprecate the version-based TIFF identifiers[^3], one [concrete proposal for resolving the issue](http://www.openplanetsfoundation.org/blogs/2011-08-28-fmt-78910) was to add a *parent-child* relationship to PRONOM. The new TIFF identifier could act as a *super-class*, with each of the versioned identifiers being a *sub-class*. The original meaning of those identifiers would remain clear, and identification tools could report their finding at whatever level of granularity was appropriate.
 
-This idea is common to a number of format identification schemes. In the context of Apple Uniform Type Identifiers, this is referred to as [the conformance hierarchy](https://developer.apple.com/library/ios/documentation/FileManagement/Conceptual/understanding_utis/understand_utis_conc/understand_utis_conc.html#//apple_ref/doc/uid/TP40001319-CH202-BCGJGJGA). On the Linux desktop it is referred to as [subclassing](http://standards.freedesktop.org/shared-mime-info-spec/shared-mime-info-spec-latest.html#subclassing), which generalises the format class relationships already implied by the MIME type system. This generalisation is formalised and standardised by the [MIME Info Specification](http://standards.freedesktop.org/shared-mime-info-spec/shared-mime-info-spec-latest.html), managed by the [freedesktop.org interoperability project](http://www.freedesktop.org/wiki/Specifications/shared-mime-info-spec/). As well as being used by most Linux distribution vendors, the MIME Info specification also forms the basis of the [Apache Tika binary format identification engine](http://tika.apache.org/1.5/parser_guide.html#Add_your_MIME-Type)[^2].
+This idea is common to a number of format identification schemes. In the context of Apple Uniform Type Identifiers, this is referred to as [the conformance hierarchy](https://developer.apple.com/library/ios/documentation/FileManagement/Conceptual/understanding_utis/understand_utis_conc/understand_utis_conc.html#//apple_ref/doc/uid/TP40001319-CH202-BCGJGJGA). On the Linux desktop it is referred to as [subclassing](http://standards.freedesktop.org/shared-mime-info-spec/shared-mime-info-spec-latest.html#subclassing), which generalises the format class relationships already implied by the MIME type system. This generalisation is formalised and standardised by the [MIME Info Specification](http://standards.freedesktop.org/shared-mime-info-spec/shared-mime-info-spec-latest.html), managed by the [freedesktop.org interoperability project](http://www.freedesktop.org/wiki/Specifications/shared-mime-info-spec/). As well as being used by most Linux distribution vendors, the MIME Info specification also forms the basis of the [Apache Tika binary format identification engine](http://tika.apache.org/1.5/parser_guide.html#Add_your_MIME-Type)[^4].
 
 
 ### Extended MIME Types ###
@@ -211,58 +211,56 @@ Like the `version` parameter described above, the developers of Firefox have alr
 Again, we can exploit this existing convention by formalising it and mapping them in as aliases.
 
 
-### Describing & Comparing Tools ###
+### Describing Tools ###
 
-This
+As well as being able to describe the formats of bitstreams, this approach can also be used to describe tools that act upon formats (indeed, this approach was partially refined during my involvement in [the SCAPE project](http://www.scape-project.eu/), where [tool specifications](https://github.com/openplanets/scape-toolspecs) are used to describe the available preservation actions). 
 
-https://github.com/openplanets/scape-toolspecs
+Rather than being forced to enumerate compatible format versions using PUIDs, the conformance hierarchy in the MIME Info approach allows tools to be defined as compatible with whole format families. This makes discovery of potential tools more robust, and the tool metadata required less maintenance over time. When evaluation options, it is more convenient to have a  chance of a false positive (tools that can't yet cope with a new format feature) than to have false negatives (a tool you never even find out about because the tool metadata hasn't been updated).  Of course, the same basic language could also be used to describe particular members of a format family that are known to cause issues (that is, it is more convenient to say 'all versions of PDF except 1.7' than to have to enumerate the versions  that are known to be supported).
 
+An additional potential advantage of adopting a MIME types to describe tools and processes is that they are the native format description language of the web. Wherever a HTTP request uses a standard MIME types, it could instead employ extended MIME types. For example, in a RESTful microservice architecture, it would be trivial to develop web service that employ [content negotiation](http://www.w3.org/Protocols/rfc2616/rfc2616-sec12.html) to allow clients and servers to distinguish between different versions of a format. By creating microservices that work at the same level of granularity as PRONOM (or finer!), we allow carefully-designed preservation operations to run over standard web tools and protocols.
+
+
+### Comparing Tools ###
+
+Finally, as indicated early, as many tools support MIME types, mapping experimental results into that form makes it much easier to compare the results of different [identification tools](http://coptr.digipres.org/Category:File_Format_Identification). As well as [DROID](http://coptr.digipres.org/DROID_(Digital_Record_Object_Identification)), [Apache Tika](http://coptr.digipres.org/Apache_Tika), [file](http://coptr.digipres.org/Fine_Free_File_Command), and [FITS](http://coptr.digipres.org/FITS_(File_Information_Tool_Set)) all have options to provide MIME types as output. 
+
+Even in the absence of 'ground truth' data, running multiple identification tools over the same corpus and combining the results has proven to be a powerful way to compare tools and reveal their relative strengths, limitations, and provides a drive to resolve any inconsistencies.  In particular, the [Formats Over Time](http://www.webarchive.org.uk/ukwa/visualisation/ukwa.ds.2/fmt) work, based on the multi-tool format profile of 1996-2010 UK historical web archive, has proven very useful and will form the basis of future work.
 
 Current Implementation
 ----------------------
 
-Link to Nanite
+As the previous section implies, this extended MIME type scheme is not an abstract plan, but has already been implemented and is currently in use at the UK Web Archive. Apache Tika forms the basis of the approach, as it has [an easy mechanism for adding new signatures](http://tika.apache.org/1.5/parser_guide.html#Add_your_MIME-Type), can can cope with a mixture of [fine-grained](https://github.com/ukwa/webarchive-discovery/blob/warc-discovery-2.0.0/warc-indexer/src/main/resources/org/apache/tika/mime/custom-mimetypes.xml#L100) and [coarse-grained](https://github.com/ukwa/webarchive-discovery/blob/warc-discovery-2.0.0/warc-indexer/src/main/resources/org/apache/tika/mime/custom-mimetypes.xml#L135) format definitions.
 
-[DROID to MIME type mapping](https://github.com/openplanets/nanite/blob/master/nanite-core/src/main/java/uk/bl/wa/nanite/droid/DroidDetector.java#L380)
+In order to bring in the DROID results, and as part of the SCAPE project, a second component was developed, called [Nanite](https://github.com/openplanets/nanite). This is simply a minor reworking of the core of the DROID identification engine, with all of the databases and frameworks stripped away, and adding support for operating on streams of input data rather than just files. This makes it easier to embed in other projects, and allows it to operate at scale as a Map-Reduce task on the Hadoop platform.
 
-Issues
-------
+As Tika already defines a [suitable interface for format identification tools](http://tika.apache.org/1.5/api/org/apache/tika/detect/Detector.html), Nanite simply wraps DROID so that it conforms to that API. Under the hood, once the DROID core has determined the PUIDs, the results are processed by a [DROID to MIME type mapping](https://github.com/openplanets/nanite/blob/master/nanite-core/src/main/java/uk/bl/wa/nanite/droid/DroidDetector.java#L380) that operates as described above, and the resulting extended MIME type then forms the final result. 
 
-This is not to say that using `.hasFormat.` is necessarily a bad idea -- it certainly covers the majority of cases and so may be good enough. But if we stick to that notation, we will need to accept that it is an approximation and there will be some cases we simply can't capture.
-
-Not necessarily preservation language, but given results change, etc.
+Building on the *Formats Over Time* work mentioned earlier, this approach of combining multiple identification results has been built into the (UK Web Archive full-text indexing system](https://github.com/ukwa/webarchive-discovery). We have successfully run this process over billions of distinct resources, and are investigating ways of exposing this information to digital format researchers via our search interface.
 
 
-[What is a file format?](http://qanda.digipres.org/38/what-is-a-file-format)
+Limitations
+-----------
 
-### Mixed Format Files ###
+The extended MIME types provide a convenient, extensible and scalable way of defining formats, and the addition of a format hierarchy helps to reduce the complexity of the grammar we need to describe the format of bitstreams. 
 
-Despite their rather extreme nature, polyglots are not the most difficult to describe formats we might try to encompass with out format language.
-HTML with JavaScript, etc.
+However, we have only partially address the issues around the format grammar, as we have still not moved beyond the `.hasFormat.` relationship.  This certainly covers the majority of cases, and so may be good enough. But if we stick to that notation, we will need to accept that it is an approximation and there will be some cases we simply can't capture (like polyglots).
 
-Link to software feature dependency.
+As stated earlier, extended MIME types do not come with guarantee of permanence, and so may not be considered suitable for archival purposes. However, it is not clear whether this argument will stand up to scrutiny. Firstly, identification tools will always lag behind the latest format developments, and we are likely to wish to continuously developer the degree of finesse with which we describe the formats of bitstreams and the features they depend upon. Active preservation of varied collections is going to involve running occasional re-identification processes and updating out metadata, so updating our identifiers will not be unusual. Of course, steps should be taken to ensure that any previous identifiers are not inappropriately re-used or have their meanings changed, but backwards-compatible changes (like adding new format subclasses) should not cause any issues.
 
-### Associating Software With Formats ###
+Even where that is not the case, it is hoped that by using a practical and useful *lingua franca* for formats over the medium term, we would be able to efficiently explore the issues around developing a more permanent solution. This process could be driving by the data and our evolving needs, rather than abstracted reasoning about formats, and any future registry would be all the richer for it.
 
-We also want to formats that depend on software
-
-PRONOM also contains [a list of software](http://apps.nationalarchives.gov.uk/PRONOM/Software/proSoftwareSearch.aspx?status=listReport) and [associated vendors](http://apps.nationalarchives.gov.uk/PRONOM/Vendor/proVendorSearch.aspx?status=listReport), but mapped in at the format level rather than the instance
-
-### Dialects ###
-
-c.f. CSV
+These issues reflect an underlying problem with this whole discussion -- we do not yet share a clear and concrete definition of what we mean by format. Combining different tools provides one way to explore those issues, as it brings disagreements about format definitions to the surface. However, to build interoperable systems, we are going to have to push for a shared model of [what we mean by format](defining-format.html).
 
 
 <!--
-(NOTE I'm ignoring proprietary/odd tags right now, maybe add them in later).
+    TODO: Add link to Interject once posted.
 -->
-
 
 Footnotes
 ---------
 
-[^1]: Some of the people involved in the discussions around this issue refer to it light-heartedly as "the TIFF tiff".
-[^2]: It is also compatible with [the XML format used by Fido](https://raw.githubusercontent.com/openplanets/fido/master/fido/conf/formats-v77.xml), and could be used instead of Fido's custom schema.
-[^3]: Note that I mean actual, named human people you can go and talk to. You can't get feedback from an conceptual user class.
-[^4]: Where by 'medium term' I mean the next decade or two.
+[^1]: Note that I mean actual, named humans you can talk to. You can't get feedback from an conceptual user class.
+[^2]: Where by 'medium term' I mean the next decade or two.
+[^3]: Some of the people involved in the discussions around this issue refer to it light-heartedly as "the TIFF tiff".
+[^4]: It is also compatible with [the XML format used by Fido](https://raw.githubusercontent.com/openplanets/fido/master/fido/conf/formats-v77.xml), and could be used instead of Fido's custom schema.
 [^5]: Note that [this extension mechanism is deprecated](http://tools.ietf.org/html/rfc6648), and a future iteration of this work should switch to [the x. extension mechanism](http://en.wikipedia.org/wiki/Internet_media_type#Unregistered_x._tree) or [a vendor tree](http://en.wikipedia.org/wiki/Internet_media_type#Vendor_tree).
