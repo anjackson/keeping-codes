@@ -1,5 +1,5 @@
 <ul>
-{% for page in site.pages | sort: 'path', 'name' %}
+{% for page in site.pages | map:to_liquid | sort: 'path' %}
 {% for pc in page.categories %}
 {% if pc == include.cat %}
 {% if include.unpublished == true or page.publish == true %}
