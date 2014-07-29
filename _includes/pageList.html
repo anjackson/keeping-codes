@@ -17,7 +17,7 @@
 </ul>
 
 <pre>
-{% assign sorted_pages = site.pages | sort:"title" %}
+{% assign sorted_pages = site.pages | sort:"name" %}
 {% for page in sorted_pages %}
 {{ page.title }}
 {% endfor %} <!-- page -->
