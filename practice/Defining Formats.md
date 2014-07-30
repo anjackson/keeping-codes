@@ -13,7 +13,22 @@ Introduction
 The idea of 
 [What is a file format?](http://qanda.digipres.org/38/what-is-a-file-format)
 
+protocols
+
+- Extensions
+- First Bytes
+- Content Type
+
+
+That format survey, 20 years etc.
+
 .conformsTo.
+
+Distinctions,
+
+- created by (`xmp:CreatorTool` from the [Extensible Metadata Platform (XMP) Schema](http://www.exiv2.org/tags-xmp-xmp.html), and also the `xmpMM:History` `softwareAgent` from the [XMP Media Management Schema](http://www.exiv2.org/tags-xmp-xmpMM.html))
+- created for - formatted for target software
+- created according to - formatted for a common specification
 
 ### Mixed Format Files ###
 
