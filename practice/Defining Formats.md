@@ -36,38 +36,27 @@ Prior to OS X, the Macintosh operating system used [Creator Codes](http://en.wik
 Out of the context of individual operating systems, perhaps the most widely used and well known format protocol is the MIME type system used by [email](http://en.wikipedia.org/wiki/MIME) and then [HTTP](http://www.w3.org/Protocols/rfc2616/rfc2616.html) (e.g. [the `Content-Type` header](http://www.w3.org/Protocols/rfc1341/4_Content-Type.html)) as the more generalised [Internet Media Types](http://en.wikipedia.org/wiki/Internet_media_type). In this case, the [IANA](http://www.iana.org/) maintain [a registry of media types](http://www.iana.org/assignments/media-types/media-types.xhtml), and coordinate the standardisation of new identifiers. The specification also includes a number of extension points for formats that do not require full standardisation. These identifiers are then used by various clients and servers to declare the type of content, and also to support more sophisticated operations like [content negotiation](http://www.w3.org/Protocols/rfc2616/rfc2616-sec12.html).
 
 
-### Magic ###
+### Magic Numbers ###
 
 All these protocols necessarily rely on external factors for the persistence of these identifiers. File extensions (and any similar format information) are held as metadata on the filesystem, and for HTTP the `Content-Type` is in it's own header. This means this information can be lost or changed, accidentally or deliberately. User's might remove or change file extensions, or a server might be mis-configured to sent the wrong headers.
 
-To cope with this eventuality, there is an extremely common and long-standing convention for software to embed some kind of signature in the bytestreams it creates, so that it can recognise it's own data even when the contextual information has been lost. This is often done by using a special sequence of bytes at the start of the file, chosen so as to be unlikely to be used for anything else[^3].
-
-Something Else
---------------
-
-### Exploiting Magic ###
-
-Similarly, even where there is not a formalised header, there is often some kind of distinctive structure as a consequence of the fundamental structure and needs of the software that operates on those bytestreams, and so it is usually possible to invent an appropriate *signature* for identifying any bytestream format. 
-
-Bytestream identification tools like DROID aggregate and exploit these so called *'magic numbers'* in order to make intelligent guesses about what software a bytestream requires. By combining external information (like file extensions) with  internal signatures like these, identification tools can reliably identify large numbers of formats.
+To cope with this eventuality, there is an extremely common and long-standing convention for software to embed some kind of signature in the bytestreams it creates, so that it can recognise it's own data even when the contextual information has been lost. This is often done by using a special sequence of bytes at the start of the file, chosen so as to be unlikely to be used for anything else[^3].  This kind of special flags for identifying binary sequences have [a long history](http://en.wikipedia.org/wiki/Magic_number_(programming)#Magic_number_origin), and are commonly known as *"magic numbers"*.
 
 
+GOAL, to unify format spec.s with load/save.
 
-These conventions reflect the internal protocol in effect 
+* Expansion of load/save as a sub-protocol.
+    - These conventions reflect the internal protocol in effect 
+* Overview of the components of the protocol.
+    - Linking bytestreams with the software that understands them, and vice versa (magic).
+* How formats grow (structure and expansion)
+* How formats have been shaped by wider environment:
+    - device independence
+    - Single Software, Single Platform
+    - Multiple Software, Single Platform
+    - Multiple Software, Multiple Platforms
+    - Designing For The Future
 
-Linking bytestreams with the software that understands them, and vice versa (magic).
-
-
-- Single Software, Single Platform
-- Multiple Software, Single Platform
-- Multiple Software, Multiple Platforms
-- Designing For The Future
-
-device independence
-
-Information models.
-Conventions can be broken.
-Software read and write are always different.
 
 - Formal Specification
 - Standardisation
@@ -77,39 +66,25 @@ But these are exactly how formats evolve in order to ensure preservation.
 That format survey, 20 years because these are the mature formats
 
 
+Breaking Protocol
+-----------------
+
+If we define formats in terms of their idealised form, as outlined in their specification with information models etc. we underestimate the complexity.
+
+Crucially, Conventions can be broken.
+
+Software read and write are always different.
+
 Coping with being software, each one a coiled spring, 
 
-.conformsTo.
 
-Coping with failed conventions:
+### Coping with failed conventions ###
 
-Distinctions,
+.conformsTo. versus distinctions like
 
 - created by (`xmp:CreatorTool` from the [Extensible Metadata Platform (XMP) Schema](http://www.exiv2.org/tags-xmp-xmp.html), and also the `xmpMM:History` `softwareAgent` from the [XMP Media Management Schema](http://www.exiv2.org/tags-xmp-xmpMM.html))
 - created for - formatted for target software
-- created according to - formatted for a common specification
-
-
-### Mixed Format Files ###
-
-Despite their rather extreme nature, polyglots are not the most difficult to describe formats we might try to encompass with out format language.
-HTML with JavaScript, etc.
-
-Link to software feature dependency.
-
-
-### Associating Software With Formats ###
-
-We also want to formats that depend on software
-
-PRONOM also contains [a list of software](http://apps.nationalarchives.gov.uk/PRONOM/Software/proSoftwareSearch.aspx?status=listReport) and [associated vendors](http://apps.nationalarchives.gov.uk/PRONOM/Vendor/proVendorSearch.aspx?status=listReport), but mapped in at the format level rather than the instance
-
-
-### Combining extensions with first bytes ###
-
-... that thing.
-
-http://www.webarchive.org.uk/aadda-discovery/formats?sort_by=solr_document&sort_order=ASC&f[0]=content_type_ext%3A%22.ppp%22&f[1]=content_ffb%3A%22d0cf11e0%22
+- created according to - formatted for a common specification 
 
 
 ### Dialects ###
@@ -119,6 +94,41 @@ c.f. CSV, TIFF proprietary tags.
 
 Are we really going to capture the history of a format. Look what's involved.
 [MP3: The Meaning of a Format](http://www.dukeupress.edu/MP3/)
+
+
+
+Identifying Formats
+-------------------
+
+
+### Associating Software With Formats ###
+
+We also want to formats that depend on software
+
+PRONOM also contains [a list of software](http://apps.nationalarchives.gov.uk/PRONOM/Software/proSoftwareSearch.aspx?status=listReport) and [associated vendors](http://apps.nationalarchives.gov.uk/PRONOM/Vendor/proVendorSearch.aspx?status=listReport), but mapped in at the format level rather than the instance
+
+
+### Exploiting Magic ###
+
+Similarly, even where there is not a formalised header, there is often some kind of distinctive structure as a consequence of the fundamental structure and needs of the software that operates on those bytestreams, and so it is usually possible to invent an appropriate *signature* for identifying any bytestream format. 
+
+Bytestream identification tools like DROID aggregate and exploit these so called *'magic numbers'* in order to make intelligent guesses about what software a bytestream requires. By combining external information (like file extensions) with  internal signatures like these, identification tools can reliably identify large numbers of formats.
+
+#### Combining extensions with first bytes ####
+
+... that thing.
+
+http://www.webarchive.org.uk/aadda-discovery/formats?sort_by=solr_document&sort_order=ASC&f[0]=content_type_ext%3A%22.ppp%22&f[1]=content_ffb%3A%22d0cf11e0%22
+
+
+## Mixed Format Files ##
+
+Despite their rather extreme nature, polyglots are not the most difficult to describe formats we might try to encompass with out format language.
+HTML with JavaScript, etc.
+
+Link to software feature dependency.
+
+
 
 [^1]: You think 'format' is bad. 'Digital object' is much, much worse, but we'll come to that later.
 [^2]: I should really try to add some kind of historical context here. When were file extensions first used, and so on.
