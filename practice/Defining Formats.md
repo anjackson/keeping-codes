@@ -7,6 +7,12 @@ publish: true
 permalink: "defining-format.html"
 ---
 
+> __GOAL__
+>
+> The aim of this document is to unify the various meanings of format, from high-level specification down to data transmission protocols like LOAD and SAVE (see e.g. [ZX Spectrum tape format](http://www.zxshed.co.uk/sinclairfaq/index.php5?title=TAP_format)).
+> 
+
+
 Introduction
 ------------
 
@@ -24,9 +30,15 @@ This definition starts with the 'why', with what formats are used for, rather th
 Protocols
 ---------
 
-Data structures and the software that can read or write them are closely intertwined, and at a fundamental level, software defines the form and nature of those data structures in a way no mere documentation can ever match. But the full protocols that enable the use of those data structures are more reliant on the wider software and hardware environment. These operating systems and networks want to make the data useful, but do not wish to impose any kind of limits on what formats are supported. Therefore, they all provide ways of creating identifiers that act as links between the data and the software that understands it. This allows the system to manage the links without understanding the details.
+Data structures and the software that can read or write them are closely intertwined, and at a fundamental level, software defines the form and nature of those data structures in a way no mere documentation can ever match. But the full protocols that enable the use of those data structures are more reliant on the wider software and hardware environment. 
+
+### Early Formats ###
+
+Use ZX Spectrum tape format as an example, minimal variations of interpretation, payload very close to the hardware.
 
 ### Format Identifiers ###
+
+Modern operating systems and networks want to support the use of a wide range of data and software, and do not wish to impose any kind of limits on what formats are supported. Therefore, they all provide ways of creating identifiers that act as links between the data and the software that understands it. This allows the system to manage the links without understanding the details.
 
 The most common convention for linking format and software is the filename extension. It is endemic to modern computing[^2], and all major operating systems contain some kind of local registry that allows software applications to inform the operating system (and so the user) about the formats it supports. This simple protocol means that when as a user creates a new digital resource, the software they are using is able to save their work to disk in a way that ensure that file can be re-opened at a later date.
 <!-- (lots of underlying stuff there about filesystems, persistence, etc.) -->
@@ -42,8 +54,6 @@ All these protocols necessarily rely on external factors for the persistence of 
 
 To cope with this eventuality, there is an extremely common and long-standing convention for software to embed some kind of signature in the bytestreams it creates, so that it can recognise it's own data even when the contextual information has been lost. This is often done by using a special sequence of bytes at the start of the file, chosen so as to be unlikely to be used for anything else[^3].  This kind of special flags for identifying binary sequences have [a long history](http://en.wikipedia.org/wiki/Magic_number_(programming)#Magic_number_origin), and are commonly known as *"magic numbers"*.
 
-
-GOAL, to unify format spec.s with load/save.
 
 * Expansion of load/save as a sub-protocol.
     - These conventions reflect the internal protocol in effect 
@@ -96,16 +106,12 @@ Are we really going to capture the history of a format. Look what's involved.
 [MP3: The Meaning of a Format](http://www.dukeupress.edu/MP3/)
 
 
+What Digital Preservation Needs
+-------------------------------
 
-Identifying Formats
--------------------
+The fundamental goal is software dependency analysis. We need to know what software we need to access the file, but we may only have the bytestream and some metadata to go on.
 
-
-### Associating Software With Formats ###
-
-We also want to formats that depend on software
-
-PRONOM also contains [a list of software](http://apps.nationalarchives.gov.uk/PRONOM/Software/proSoftwareSearch.aspx?status=listReport) and [associated vendors](http://apps.nationalarchives.gov.uk/PRONOM/Vendor/proVendorSearch.aspx?status=listReport), but mapped in at the format level rather than the instance
+Identifying Formats is one tactic for understanding software dependencies, but it is just the means, and not really an end in itself.
 
 
 ### Exploiting Magic ###
@@ -120,6 +126,13 @@ Bytestream identification tools like DROID aggregate and exploit these so called
 
 http://www.webarchive.org.uk/aadda-discovery/formats?sort_by=solr_document&sort_order=ASC&f[0]=content_type_ext%3A%22.ppp%22&f[1]=content_ffb%3A%22d0cf11e0%22
 
+### Associating Software With Formats ###
+
+We also want to formats that depend on software
+
+PRONOM also contains [a list of software](http://apps.nationalarchives.gov.uk/PRONOM/Software/proSoftwareSearch.aspx?status=listReport) and [associated vendors](http://apps.nationalarchives.gov.uk/PRONOM/Vendor/proVendorSearch.aspx?status=listReport), but mapped in at the format level rather than the instance
+
+
 
 ## Mixed Format Files ##
 
@@ -127,6 +140,7 @@ Despite their rather extreme nature, polyglots are not the most difficult to des
 HTML with JavaScript, etc.
 
 Link to software feature dependency.
+
 
 
 
