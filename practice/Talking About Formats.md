@@ -202,16 +202,18 @@ This flexibility also allows us to consider minting other classes of format iden
 
 While the file extension is not generally considered a 'preservation worthy' identifier, it is immensely useful the short term. Almost every common operating system relies on file extensions to maintain the association between files and the software that acts upon them, and indeed in the context of personal digital archiving it should usually be considered the most authoritative source of information about the intended interpretation of a given file. 
 
-Of course, some formats do have the same extension, and when they appear together the convention of using extension to associate bitstreams with software starts to break down.  However, most extensions are distinct (in the sense that they can be used to associate a family of format versions with the set of software that may be able to interpret them), and because collisions are rare, there is little incentive on operating system vendors to move to a more sophisticated convention. Therefore, it is useful to be able to integrate these useful and common identifiers with the wider set, so that we can talk about this formats while we await the creation of more permanent identifiers.
+Of course, some formats do have the same extension, and when they appear together the convention of using extension to associate bitstreams with software [starts to break down](https://twitter.com/mistydemeo/status/494229353262108673).  However, most extensions are distinct (in the sense that they can be used to associate a family of format versions with the set of software that may be able to interpret them), and because collisions are rare, there is little incentive on operating system vendors to move to a more sophisticated convention. Therefore, it is useful to be able to integrate these useful and common identifiers with the wider set, so that we can talk about this formats while we await the creation of more permanent identifiers.
 
-Like the `version` parameter described above, the developers of Firefox have already considered this possibility, and can support identifiers of the form:
+Like the `version` parameter described above, the developers of Firefox have already considered this possibility, and provide some support for identifiers of the form `application/x-extension-{EXTENSION}`. 
 
-    [ application/x-extension-{EXT} ]
+For example, the identifier:
 
-Again, we can exploit this existing convention by formalising it and mapping them in as aliases.
+    [ application/x-extension-ppp ]
+
+can be used as a temporary identifier for [Serif PagePlus](http://fileformats.archiveteam.org/wiki/Serif_PagePlus), in the absence of more formal format definitions. As and when those definitions are made, the extension-based identifiers can be mapped in as aliases.
 
 
-### From Format To Conformance ###
+### From hasFormat To Conformance ###
 
 The hierarchy of formats also suggests a way to resolve the problems with the `.hasFormat.` assertion. If we replace `.hasFormat.` with `.conformsTo.`, we end up with a format language that captures complex cases much more robustly. For example, if we have a TIFF 6 bitstream, we might say:
 
@@ -279,4 +281,4 @@ Footnotes
 [^3]: Some of the people involved in the discussions around this issue refer to it light-heartedly as "the TIFF tiff".
 [^4]: It is also compatible with [the XML format used by Fido](https://raw.githubusercontent.com/openplanets/fido/master/fido/conf/formats-v77.xml), and could be used instead of Fido's custom schema.
 [^5]: Note that [this extension mechanism is deprecated](http://tools.ietf.org/html/rfc6648), and a future iteration of this work should switch to [the x. extension mechanism](http://en.wikipedia.org/wiki/Internet_media_type#Unregistered_x._tree) or [a vendor tree](http://en.wikipedia.org/wiki/Internet_media_type#Vendor_tree).
-[^6]: That said, `.hasFormat.` certainly covers the majority of cases, and so may be good enough in many cases, as long as we accept that it is an approximation and there will be some cases we simply can't capture. Certainly, in practice, we are likely to have to work with both forms of assertion for the foreseeable future.
+[^6]: That said, `.hasFormat.` certainly covers the majority of cases and so may be good enough, as long as we accept that it is an approximation and there will be some cases we simply can't capture. Certainly, in practice, we are likely to have to work with both forms of assertion for the foreseeable future.

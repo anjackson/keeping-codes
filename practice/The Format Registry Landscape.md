@@ -53,14 +53,6 @@ IANA, WikiData
 https://www.mediawiki.org/wiki/Wikidata_Toolkit
 
 
-So, my broadest definition of a file format does like this:
-
-    A format is a protocol designed to allow the persistence and transmission of the run-time state of computer software.
-
-The only definition of format I've been able to come up with that seems to cover every example I can think of is this one:
-
-    A format is a protocol that permits the state of computer software to be persisted and transmitted.
-
 
 
 http://www.avpreserve.com/avpsresources/papers-and-presentations/ cloud vendor summary
@@ -234,5 +226,3 @@ Tensions
 
 Format model does not appear to separate syntax from semantics, i.e. aspects/features are both an encoding and an interpretation. Not sure this is drawn out.
 
-Are we really going to capture the history of a format. Look what's involved.
-[MP3: The Meaning of a Format](http://www.dukeupress.edu/MP3/)
