@@ -168,6 +168,8 @@ Illustrative Asides:
 
 Dealing with Value
 - Not A Science
+- Realistic Risks
+   - http://activehistory.ca/2014/07/where-have-all-the-censuses-gone-a-problem-with-digital-data/ etc.
 - Making Plans
 - Never Alone (social aspect)
 

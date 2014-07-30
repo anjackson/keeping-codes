@@ -6,6 +6,8 @@ tags: [stub]
 publish: false
 ---
 
+
+
 * top down worse than stakeholder engagement. 
 * CI versus an initio. 
 * Separate choices - strategy versus implementation. See also performance and implementation.
