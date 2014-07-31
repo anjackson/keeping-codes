@@ -38,10 +38,7 @@ Here is a summary of the results, showing how many of the PDF/A-1b test files JH
 
 ![JHOVE FAILs the Isartor test](pdfa/pie-of-fail.png)
 
-That 99.5% failure rate means JHOVE only managed to detect one invalid PDF/A-1b file from this set of 204 invalid files.
-
-
-
+That 99.5% failure rate means JHOVE only managed to detect one invalid PDF/A-1b file from this set of 204 invalid files. The full, raw JHOVE results are available [below](#appendix).
 
 Conclusion
 ----------
@@ -52,8 +49,6 @@ Maybe try [Apache Preflight](https://pdfbox.apache.org/cookbook/pdfavalidation.h
 
 Appendix
 --------
-
-The links to the results.
 
 |----+----|
 | Link to full results | JHOVE Status |
