@@ -18,17 +18,44 @@ Introduction
 
 The idea of a digital data format is recognised as a crucial component in our effort to ensure we can preserve access to digital resources over time. Therefore, given it's central role in digital preservation, it is perhaps surprising that we do not share a consistent and complete definition of what format actually means[^1]. This lack of consensus is reflected in the answers this question on the [DP Q&A](http://qanda.digipres.org/) site from 2014: [What is a file format?](http://qanda.digipres.org/38/what-is-a-file-format)
 
-At the time of writing, the answers to that question include or link to nine definitions of format. The more formal definitions tend to focus on format rather literally, as the structure of the bitstream, but some of the others make no mention of internal structure at all. Instead, the other definitions tend to define format as a method or convention. My contention is that, despite the dominance of the *format-as-structure* view, the *format-as-convention* approach is the key to bringing all these definitions together into a coherent whole. 
+At the time of writing, the answers to that question include or link to twelve definitions of format, which can be broadly grouped as follows:
 
-If we consider formats to serve as social conventions, or more precisely, as communication protocols, we can build a base definition that covers all cases:
+1. *format-as-structure*
+    * ["A set of syntactic and semantic rules for mapping between an information model and a serialized bit stream."](http://qanda.digipres.org/38/what-is-a-file-format?show=123#a123) [from JHOVE2]
+    * ["The internal structure and encoding of a digital object, which allows it to be processed, or to be rendered in human-accessible form."](http://qanda.digipres.org/38/what-is-a-file-format?show=123#a123) [from PRONOM]
+    * ["File formats encode information into a form which can only be processed and rendered comprehensible by very specific combinations of hardware and software."](http://qanda.digipres.org/38/what-is-a-file-format?show=103#a103)
+    * ["The organization of data within digital objects, usually designed to facilitate the storage, retrieval, processing, presentation and/or transmission of the data by software"](http://qanda.digipres.org/38/what-is-a-file-format?show=123#a123) [from [INTERPARES](http://www.interpares.org/ip2/display_file.cfm?doc=ip2_glossary.pdf&%E2%81%9ECFID=1791938&CFTOKEN=29367639)]
+    * ["Packages of information that can be stored as data files or sent via network as data streams (aka bitstreams, byte streams)."](http://qanda.digipres.org/38/what-is-a-file-format?show=123#a123) [from [LoC](http://www.digitalpreservation.gov/formats/intro/format_eval_rel.shtml)]
+    * ["A byte-serialized encoding of an information model."](http://web.archive.org/web/20110721203408/http://www.gdfr.info/docs/Ontology-v1-2003-03-10.pdf) [from the GDFR Ontology]
+2. *format-as-structural-convention*
+    * ["A file format is a method of storing digital information in a computer file, allowing its later use by computer systems or people."](http://qanda.digipres.org/38/what-is-a-file-format?show=94#a94) [from PRONOM]
+    * ["Set of structural conventions that define a wrapper, formatted data, and embedded metadata, and that can be followed to represent images, audiovisual waveforms, texts, etc., in a digital object. The wrapper component on its own is often colloquially called a file format."](http://qanda.digipres.org/38/what-is-a-file-format?show=123#a123) [from FADGI, who make a break down digital resources as wrapper, bitstream, and metadata, and prefer to call only the former the format.]
+3. *format-as-software-behaviour*
+    * ["'saved as' file format [versus] 'open as' file format"](http://qanda.digipres.org/38/what-is-a-file-format?show=44#a44)
+4. *format-as-identifer*
+    * ["From my experience, the many people distinguish formats based on extensions. This means that people will distinguish a TSV from a CSV, but not an Excel ODS from an OpenOffice ODS or a PDF 1.3 from a PDF/A3."](http://qanda.digipres.org/38/what-is-a-file-format?show=44#a44)
+    * ["Whatever The National Archive's DROID tool identifies?"](http://qanda.digipres.org/38/what-is-a-file-format)
+5. *format-as-chaos* (as broken conventions)
+    * ["I would suggest that there is no good answer to this question, as much as we all would like there to be one. A "file format" can be defined by many things and can have a range of purposes."](http://qanda.digipres.org/38/what-is-a-file-format?show=104#a104)
+
+The first two groups contain quite formal definitions, and tend to focus on format quite literally, as the structure of the bitstream. Those in the second group also emphasis the fact that these structures reflect social conventions around the use of data. The fifth group also focuses on the nature of formats as social conventions, if in rather despairing tones. However, it is not immediately clear how to square them with the other two groups, focusing on software and identifiers.
+
+Fortunately, it is possible to bring all of these definitions together in a form  [that is agnostic towards the preservation strategy](http://qanda.digipres.org/38/what-is-a-file-format?show=65#c65), and the perspective of *format-as-convention* is the key.
+
+
+Format As Protocol
+------------------
+
+If we consider formats to serve as social conventions, or more precisely, as communication protocols, we can propose a definition of the form:
 
 > A format is a protocol designed to allow the persistence and transmission of the run-time state of computer software.
 
-This definition starts with the 'why', with what formats are used for, rather than the 'what' because the 'what' depends on the context. But by considering how to achieve the 'why' in different contexts, the other other definitions of format can be brought into the fold. This definition also indicates the nature of that context -- it's all about the software. 
+This definition starts with the 'why', i.e. with the purpose of formats, rather than the 'what', because the 'what' depends on the context. But by considering how to achieve the 'why' in different contexts, the other definitions of format can be brought into the fold. This definition also indicates the nature of that context -- it's all about the software. 
 
 
-Protocols
+
 ---------
+
 
 Data structures and the software that can read or write them are closely intertwined, and at a fundamental level, software defines the form and nature of those data structures in a way no mere documentation can ever match. But the full protocols that enable the use of those data structures are more reliant on the wider software and hardware environment. 
 
@@ -47,12 +74,11 @@ Prior to OS X, the Macintosh operating system used [Creator Codes](http://en.wik
 
 Out of the context of individual operating systems, perhaps the most widely used and well known format protocol is the MIME type system used by [email](http://en.wikipedia.org/wiki/MIME) and then [HTTP](http://www.w3.org/Protocols/rfc2616/rfc2616.html) (e.g. [the `Content-Type` header](http://www.w3.org/Protocols/rfc1341/4_Content-Type.html)) as the more generalised [Internet Media Types](http://en.wikipedia.org/wiki/Internet_media_type). In this case, the [IANA](http://www.iana.org/) maintain [a registry of media types](http://www.iana.org/assignments/media-types/media-types.xhtml), and coordinate the standardisation of new identifiers. The specification also includes a number of extension points for formats that do not require full standardisation. These identifiers are then used by various clients and servers to declare the type of content, and also to support more sophisticated operations like [content negotiation](http://www.w3.org/Protocols/rfc2616/rfc2616-sec12.html).
 
-
 ### Magic Numbers ###
 
 All these protocols necessarily rely on external factors for the persistence of these identifiers. File extensions (and any similar format information) are held as metadata on the filesystem, and for HTTP the `Content-Type` is in it's own header. This means this information can be lost or changed, accidentally or deliberately. User's might remove or change file extensions, or a server might be mis-configured to sent the wrong headers.
 
-To cope with this eventuality, there is an extremely common and long-standing convention for software to embed some kind of signature in the bytestreams it creates, so that it can recognise it's own data even when the contextual information has been lost. This is often done by using a special sequence of bytes at the start of the file, chosen so as to be unlikely to be used for anything else[^3].  This kind of special flags for identifying binary sequences have [a long history](http://en.wikipedia.org/wiki/Magic_number_(programming)#Magic_number_origin), and are commonly known as *"magic numbers"*.
+To cope with this eventuality, there is an extremely common and long-standing convention for software to embed some kind of signature in the bytestreams it creates, so that it can recognise it's own data even when the contextual information has been lost. This is often done by using a special sequence of bytes at the start of the file, chosen so as to be unlikely to be used for anything else[^3].  This kind of special flags for identifying binary sequences are a kind of [in-band signalling](http://en.wikipedia.org/wiki/In-band_signaling), have [a long history](http://en.wikipedia.org/wiki/Magic_number_(programming)#Magic_number_origin), and are commonly known as *"magic numbers"*.
 
 
 * Expansion of load/save as a sub-protocol.
@@ -76,8 +102,8 @@ But these are exactly how formats evolve in order to ensure preservation.
 That format survey, 20 years because these are the mature formats
 
 
-Breaking Protocol
------------------
+Postel's Daemon
+---------------
 
 If we define formats in terms of their idealised form, as outlined in their specification with information models etc. we underestimate the complexity.
 
@@ -113,6 +139,7 @@ The fundamental goal is software dependency analysis. We need to know what softw
 
 Identifying Formats is one tactic for understanding software dependencies, but it is just the means, and not really an end in itself.
 
+Postel's Law should probably get a nod at some point.
 
 ### Exploiting Magic ###
 
