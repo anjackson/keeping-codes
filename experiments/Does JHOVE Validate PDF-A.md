@@ -10,17 +10,41 @@ publish: true
 Introduction
 ------------
 
-JHOVE's [PDF-hul page](http://jhove.sourceforge.net/pdf-hul.html#coverage) claims it is capable of validating PDF/A files. Later on in that document, it admits a lesser claim:
+JHOVE's [PDF-hul page](http://jhove.sourceforge.net/pdf-hul.html#coverage) claims it is capable of validating PDF/A files (*emphasis mine*):
+
+> **The PDF-hul module recognizes and validates the following public profiles:**
+>
+> - PDF version 1.0-1.6
+> - PDF/X-1, PDF/X-1a, PDF/X-2, and PDF/X-3
+> - Linearized PDF
+> - Tagged PDF
+> - **PDF/A (ISO/DIS 19005-1)** 
+
+It is not clear which of the two possible levels of formal compliance this refers to (PDF/A-1a or PDF/A-1b). Later on in that document, the authors enumerate the relatively small number of features that are tested:
+
+> - No encryption dictionary
+> - No Encrypt or Info entries in trailer
+> - Document catalog dictionary specifies RFC1766 language
+> - Document catalog dictionary has no AA or OCProperties
+> - Form fields do not have AA actions
+> - No Launch, Sound, Movie, ResetForm, ImportData, or JavaScript actions
+> - Fonts have recognized encoding
+> - Uncalibrated color spaces have OutputIntent specified
+> - Page objects do not have Movie, Sound, or FileAttachment
+> - Non-text annotations have Contents key
+> - Unfiltered metadata stream 
+
+before making a more measured statement of the scope of the validation:
 
 > Note that the PDF module does not parse the contents on streams, so it cannot determine conformance to PDF/A to the degree required by the ISO standard.
 
-So, I thought it might be interesting to test how well JHOVE validated PDF/A documents. Sadly, we do not yet have a full compliance testing corpus for PDF, but [there is one for non-compliance with PDF/A-1b](http://www.pdfa.org/2011/08/download-isartor-test-suite/).
+So, I thought it might be interesting to test how well JHOVE validated PDF/A documents. Sadly, we do not yet have a full compliance-test corpus for PDF, but there is one for non-compliance with PDF/A-1b: [the Isartor Test Suite](http://www.pdfa.org/2011/08/download-isartor-test-suite/).
 
-The Isartor test suite is an excellent resource, and exactly the kind of thing we could use more of in digital preservation. It is composed of a set of PDF files, each of which carefully and systematically violates the PDF/A-1b standard.
+The Isartor Test Suite is an excellent resource, and exactly the kind of thing we could use more of in digital preservation. It contains a set of PDF files where each one carefully violates a particular aspect of the PDF/A-1b standard. Each PDF is also self-documenting, in that the text and embedded metadata describe what part of the PDF/A-1b specification is being violated.
 
-[PDF/A-1b](http://www.digitalpreservation.gov/formats/fdd/fdd000252.shtml) is the lowest level of PDF/A compliance, and the test suite only covers failure cases rather than passes. This makes things somewhat easier on the tools, as they only have to avoid false-positive validations at the minimal level of compliance, but it is still a very useful baseline test.
+Note that [PDF/A-1b](http://www.digitalpreservation.gov/formats/fdd/fdd000252.shtml) is the lowest level of PDF/A compliance, and the test suite only covers the failure cases. This makes things somewhat easier on the tools, as they only have to avoid *false-positive* validations at the *minimal level of compliance*. However, it is still a very useful baseline test.
 
-If JHOVE can validate PDF/A-1b, then every PDF in that test suite should fail JHOVE validation.
+So, if JHOVE can validate PDF/A files, it must be able to validate PDF/A-1b files, and therefore every PDF file in the test suite should be found to be invalid.
 
 Method
 ------
@@ -38,7 +62,9 @@ Here is a summary of the results, showing how many of the PDF/A-1b test files JH
 
 ![JHOVE FAILs the Isartor test](pdfa/pie-of-fail.png)
 
-That 99.5% failure rate means JHOVE only managed to detect one invalid PDF/A-1b file from this set of 204 invalid files. The full, raw JHOVE results are available [below](#appendix).
+JHOVE only managed to detect one invalid PDF/A-1b file from this set of 204 invalid files. 
+
+The full, raw JHOVE results are available [below](#appendix).
 
 Conclusion
 ----------
@@ -49,6 +75,8 @@ Maybe try [Apache Preflight](https://pdfbox.apache.org/cookbook/pdfavalidation.h
 
 Appendix
 --------
+
+Here, each filename is linked to the JHOVE output, and is shown alongside the overall validation result from JHOVE. If you want to get an idea of what aspect of PDF/A-1b each file is exercising, you can go and look at the text in the JHOVE output, or [examine the original folder structure of the test suite](./pdfa/isartor-flat-testsuite/original-names.txt) as this reflects the structure of the specification.
 
 |----+----|
 | Link to full results | JHOVE Status |
