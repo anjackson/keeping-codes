@@ -36,13 +36,23 @@ It is not clear which of the two possible levels of formal compliance this refer
 
 before making a more measured statement of the scope of the validation:
 
-> Note that the PDF module does not parse the contents on streams, so it cannot determine conformance to PDF/A to the degree required by the ISO standard.
+> Note that the PDF module does not parse the contents of streams, so it cannot determine conformance to PDF/A to the degree required by the ISO standard.
 
-So, I thought it might be interesting to test how well JHOVE validated PDF/A documents. Sadly, we do not yet have a full compliance-test corpus for PDF, but there is one for non-compliance with PDF/A-1b: [the Isartor Test Suite](http://www.pdfa.org/2011/08/download-isartor-test-suite/).
+This seems like a significant limitation. The [primary author of JHOVE](https://twitter.com/GaryM03062) goes further:
+
+> "The PDF/A profile test is particularly shaky; the requirements are very complicated, and checking them as an afterthought to a module checking PDF conformity doesn't work very well."
+> <small>[JHOVE usage notes](http://www.garymcgath.com/jhovenote.html)</small>
+
+Those of us who have spent a significant amount time using or hacking on JHOVE have similar opinions about it's shortcomings ([e.g.](http://fileformats.wordpress.com/2013/02/01/future-jhove/#comment-3292)). However, it's not clear that the wider community understands this, and it still [gets](https://twitter.com/putt1ck/status/494799471604404224) [occasional](http://stackoverflow.com/a/11391783) [recommendations](http://tex.stackexchange.com/q/79947) as a PDF/A validation tool.
+
+
+### The Value Of Test Suites ###
+
+Ideally, to resolve this issue, we would be able to test how well JHOVE validates PDF/A documents by running it over a suitable test suite. Sadly, we do not yet have a compliance-testing corpus that covers the entire PDF/A standard, but there is one for *non*-compliance with the PDF/A*-1b* part of the specification: [the Isartor Test Suite](http://www.pdfa.org/2011/08/download-isartor-test-suite/).
 
 The Isartor Test Suite is an excellent resource, and exactly the kind of thing we could use more of in digital preservation. It contains a set of PDF files where each one carefully violates a particular aspect of the PDF/A-1b standard. Each PDF is also self-documenting, in that the text and embedded metadata describe what part of the PDF/A-1b specification is being violated.
 
-Note that [PDF/A-1b](http://www.digitalpreservation.gov/formats/fdd/fdd000252.shtml) is the lowest level of PDF/A compliance, and the test suite only covers the failure cases. This makes things somewhat easier on the tools, as they only have to avoid *false-positive* validations at the *minimal level of compliance*. However, it is still a very useful baseline test.
+Note that [PDF/A-1b](http://www.digitalpreservation.gov/formats/fdd/fdd000252.shtml) is the lowest level of PDF/A compliance, and the test suite only enumerates the individual failure cases. This makes things somewhat easier on the tools, as they only have to avoid *false-positive* validations at the *minimum* level of compliance. However, it is still a very useful baseline test.
 
 So, if JHOVE can validate PDF/A files, it must be able to validate PDF/A-1b files, and therefore every PDF file in the test suite should be found to be invalid.
 
@@ -58,7 +68,7 @@ I used JHOVE 1.11[^1], installed on my Mac via Homebrew. I made scripts to [run 
 Results
 -------
 
-Here is a summary of the results, showing how many of the PDF/A-1b test files JHOVE correctly determined to be invalid:
+Here is a summary of the results[^2], showing how many of the PDF/A-1b test files JHOVE correctly determined to be invalid:
 
 ![JHOVE FAILs the Isartor test](pdfa/pie-of-fail.png)
 
@@ -287,9 +297,10 @@ Here, each filename is linked to the JHOVE output, and is shown alongside the ov
 | [isartor-6-9-t02-fail-b.pdf](./pdfa/isartor-flat-testsuite/isartor-6-9-t02-fail-b.pdf.jhove-1.11.txt) | Status: Well-Formed and valid |
 
 
-
 Footnotes
 ---------
 
 [^1]: I initially ran the analysis using 1.10, for which the results are the same.
+[^2]: I realise this is a rather sarcastic pie chart, but I need a way to drive the magnitude of this discrepancy home to the broader community of users, and to try to ensure they remember it. No offence is intended.
+
 
