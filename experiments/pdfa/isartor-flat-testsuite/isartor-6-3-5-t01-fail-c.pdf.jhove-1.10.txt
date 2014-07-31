@@ -1,0 +1,69 @@
+Jhove (Rel. 1.9, 2013-06-10)
+ Date: 2014-07-31 16:42:30 BST
+ RepresentationInformation: isartor-flat-testsuite/isartor-6-3-5-t01-fail-c.pdf
+  ReportingModule: PDF-hul, Rel. 1.7 (2012-08-12)
+  LastModified: 2008-05-27 21:08:06 BST
+  Size: 19443
+  Format: PDF
+  Version: 1.4
+  Status: Well-Formed and valid
+  SignatureMatches:
+   PDF-hul
+  MIMEtype: application/pdf
+  Profile: ISO PDF/A-1, Level B
+  PDFMetadata: 
+   Objects: 19
+   FreeObjects: 2
+   IncrementalUpdates: 0
+   DocumentCatalog: 
+    PageLayout: SinglePage
+    PageMode: UseOutlines
+    Outlines: 
+     Item: 
+      Title: PDF/A test suite: isartor-6-3-5-t01-fail-c
+      Children: 
+       Item: 
+        Title: clause 6-3-5
+       Item: 
+        Title: topic 01
+       Item: 
+        Title: instance c
+       Item: 
+        Title: expected result: fail
+       Item: 
+        Title: expected message: Embedded Type 1 font program does not define all font glyphs.
+   ID: 0xa60560664e5b43ef388c9462ab0c8471, 0x52fa0a765d1260c2b552bd420ad31362
+   Filters: 
+    FilterPipeline: FlateDecode
+   Fonts: 
+    Type1: 
+     Font: 
+      BaseFont: LUFLYP+ArialMT
+      FontSubset: true
+      FirstChar: 32
+      LastChar: 160
+      FontDescriptor: 
+       FontName: LUFLYP+ArialMT
+       Flags: Nonsymbolic
+       FontBBox: -222, -250, 1006, 922
+       FontFile: true
+      Encoding: WinAnsiEncoding
+   XMP: <x:xmpmeta xmlns:x="adobe:ns:meta/">
+ <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="" xmlns:pdfaid="http://www.aiim.org/pdfa/ns/id/">
+   <pdfaid:part>1</pdfaid:part>
+   <pdfaid:conformance>B</pdfaid:conformance>
+  </rdf:Description>
+  <rdf:Description rdf:about="" xmlns:pdf="http://ns.adobe.com/pdf/1.3/">
+   <pdf:Producer>3-Heights(TM) PDF Producer 1.7.0.7 (http://www.pdf-tools.com)</pdf:Producer>
+  </rdf:Description>
+  <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/">
+   <xmp:CreatorTool>3-Heights(TM) PDF Creator 1.7.0.7 (http://www.pdf-tools.com)</xmp:CreatorTool>
+   <xmp:CreateDate>2008-04-04T08:20:45+00:00</xmp:CreateDate>
+   <xmp:ModifyDate>2008-04-04T08:20:45+00:00</xmp:ModifyDate>
+  </rdf:Description>
+ </rdf:RDF>
+</x:xmpmeta>
+   Pages: 
+    Page: 
+     Sequence: 1

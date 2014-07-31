@@ -21,24 +21,24 @@ The idea of a digital data format is recognised as a crucial component in our ef
 At the time of writing, the answers to that question include or link to twelve definitions of format, which can be broadly grouped as follows:
 
 1. *format-as-structure*
-    * ["A set of syntactic and semantic rules for mapping between an information model and a serialized bit stream."](http://qanda.digipres.org/38/what-is-a-file-format?show=123#a123) [from JHOVE2]
-    * ["The internal structure and encoding of a digital object, which allows it to be processed, or to be rendered in human-accessible form."](http://qanda.digipres.org/38/what-is-a-file-format?show=123#a123) [from PRONOM]
-    * ["File formats encode information into a form which can only be processed and rendered comprehensible by very specific combinations of hardware and software."](http://qanda.digipres.org/38/what-is-a-file-format?show=103#a103)
-    * ["The organization of data within digital objects, usually designed to facilitate the storage, retrieval, processing, presentation and/or transmission of the data by software"](http://qanda.digipres.org/38/what-is-a-file-format?show=123#a123) [from [INTERPARES](http://www.interpares.org/ip2/display_file.cfm?doc=ip2_glossary.pdf&%E2%81%9ECFID=1791938&CFTOKEN=29367639)]
-    * ["Packages of information that can be stored as data files or sent via network as data streams (aka bitstreams, byte streams)."](http://qanda.digipres.org/38/what-is-a-file-format?show=123#a123) [from [LoC](http://www.digitalpreservation.gov/formats/intro/format_eval_rel.shtml)]
-    * ["A byte-serialized encoding of an information model."](http://web.archive.org/web/20110721203408/http://www.gdfr.info/docs/Ontology-v1-2003-03-10.pdf) [from the GDFR Ontology]
+    * "A set of syntactic and semantic rules for mapping between an information model and a serialized bit stream." From JHOVE2, via [this answer](http://qanda.digipres.org/38/what-is-a-file-format?show=123#a123)
+    * "The internal structure and encoding of a digital object, which allows it to be processed, or to be rendered in human-accessible form." from PRONOM, via [this answer](http://qanda.digipres.org/38/what-is-a-file-format?show=123#a123)
+    * "File formats encode information into a form which can only be processed and rendered comprehensible by very specific combinations of hardware and software." from [this answer](http://qanda.digipres.org/38/what-is-a-file-format?show=103#a103)
+    * "The organization of data within digital objects, usually designed to facilitate the storage, retrieval, processing, presentation and/or transmission of the data by software" from [INTERPARES](http://www.interpares.org/ip2/display_file.cfm?doc=ip2_glossary.pdf&%E2%81%9ECFID=1791938&CFTOKEN=29367639), via [this answer](http://qanda.digipres.org/38/what-is-a-file-format?show=123#a123)
+    * "Packages of information that can be stored as data files or sent via network as data streams (aka bitstreams, byte streams)." from [LoC](http://www.digitalpreservation.gov/formats/intro/format_eval_rel.shtml), via [this answer](http://qanda.digipres.org/38/what-is-a-file-format?show=123#a123) 
+    * "A byte-serialized encoding of an information model." from [the GDFR Ontology](http://web.archive.org/web/20110721203408/http://www.gdfr.info/docs/Ontology-v1-2003-03-10.pdf)
 2. *format-as-structural-convention*
-    * ["A file format is a method of storing digital information in a computer file, allowing its later use by computer systems or people."](http://qanda.digipres.org/38/what-is-a-file-format?show=94#a94) [from PRONOM]
-    * ["Set of structural conventions that define a wrapper, formatted data, and embedded metadata, and that can be followed to represent images, audiovisual waveforms, texts, etc., in a digital object. The wrapper component on its own is often colloquially called a file format."](http://qanda.digipres.org/38/what-is-a-file-format?show=123#a123) [from FADGI, who make a break down digital resources as wrapper, bitstream, and metadata, and prefer to call only the former the format.]
-3. *format-as-software-behaviour*
-    * ["'saved as' file format [versus] 'open as' file format"](http://qanda.digipres.org/38/what-is-a-file-format?show=44#a44)
-4. *format-as-identifer*
-    * ["From my experience, the many people distinguish formats based on extensions. This means that people will distinguish a TSV from a CSV, but not an Excel ODS from an OpenOffice ODS or a PDF 1.3 from a PDF/A3."](http://qanda.digipres.org/38/what-is-a-file-format?show=44#a44)
-    * ["Whatever The National Archive's DROID tool identifies?"](http://qanda.digipres.org/38/what-is-a-file-format)
-5. *format-as-chaos* (as broken conventions)
-    * ["I would suggest that there is no good answer to this question, as much as we all would like there to be one. A "file format" can be defined by many things and can have a range of purposes."](http://qanda.digipres.org/38/what-is-a-file-format?show=104#a104)
+    * "A file format is a method of storing digital information in a computer file, allowing its later use by computer systems or people." from PRONOM, via [this answer](http://qanda.digipres.org/38/what-is-a-file-format?show=94#a94)
+    * "Set of structural conventions that define a wrapper, formatted data, and embedded metadata, and that can be followed to represent images, audiovisual waveforms, texts, etc., in a digital object. The wrapper component on its own is often colloquially called a file format." from FADGI, via [this answer](http://qanda.digipres.org/38/what-is-a-file-format?show=123#a123)
+3. *format-as-chaos* (or rather *format-as-broken-conventions*)
+    * "I would suggest that there is no good answer to this question, as much as we all would like there to be one. A "file format" can be defined by many things and can have a range of purposes." from [this answer](http://qanda.digipres.org/38/what-is-a-file-format?show=104#a104)
+4. *format-as-software-behaviour*
+    * "'saved as' file format [versus] 'open as' file format" from [this answer](http://qanda.digipres.org/38/what-is-a-file-format?show=44#a44)
+5. *format-as-identifer*
+    * "From my experience, the many people distinguish formats based on extensions. This means that people will distinguish a TSV from a CSV, but not an Excel ODS from an OpenOffice ODS or a PDF 1.3 from a PDF/A3." from [this answer](http://qanda.digipres.org/38/what-is-a-file-format?show=44#a44)
+    * "Whatever The National Archive's DROID tool identifies?" from [the original question](http://qanda.digipres.org/38/what-is-a-file-format)
 
-The first two groups contain quite formal definitions, and tend to focus on format quite literally, as the structure of the bitstream. Those in the second group also emphasis the fact that these structures reflect social conventions around the use of data. The fifth group also focuses on the nature of formats as social conventions, if in rather despairing tones. However, it is not immediately clear how to square them with the other two groups, focusing on software and identifiers.
+The first two groups contain quite formal definitions, and tend to focus on format quite literally, as the structure of the bitstream. Those in the second group also emphasis the fact that these structures reflect social conventions around the use of data. The third group also focuses on the nature of formats as social conventions, if in rather despairing tones. However, it is not immediately clear how to square them with the last two groups, focusing on software and identifiers.
 
 Fortunately, it is possible to bring all of these definitions together in a form  [that is agnostic towards the preservation strategy](http://qanda.digipres.org/38/what-is-a-file-format?show=65#c65), and the perspective of *format-as-convention* is the key.
 
@@ -54,10 +54,6 @@ This definition starts with the 'why', i.e. with the purpose of formats, rather 
 
 
 
----------
-
-
-Data structures and the software that can read or write them are closely intertwined, and at a fundamental level, software defines the form and nature of those data structures in a way no mere documentation can ever match. But the full protocols that enable the use of those data structures are more reliant on the wider software and hardware environment. 
 
 ### Early Formats ###
 
@@ -102,12 +98,14 @@ But these are exactly how formats evolve in order to ensure preservation.
 That format survey, 20 years because these are the mature formats
 
 
+[from FADGI, who make a break down digital resources as wrapper, bitstream, and metadata, and prefer to call only the former the format.]
+
 Postel's Daemon
 ---------------
 
 If we define formats in terms of their idealised form, as outlined in their specification with information models etc. we underestimate the complexity.
 
-Crucially, Conventions can be broken.
+Crucially, Conventions can be broken. http://www.robweir.com/blog/2009/05/update-on-odf-spreadsheet-interoperability.html
 
 Software read and write are always different.
 
@@ -128,12 +126,17 @@ Coping with being software, each one a coiled spring,
 c.f. CSV, TIFF proprietary tags.
 
 
+
+Surveying Digital Resources
+---------------------------
+
+
+Data structures and the software that can read or write them are closely intertwined, and at a fundamental level, software defines the form and nature of those data structures in a way no mere documentation can ever match. But the full protocols that enable the use of those data structures are more reliant on the wider software and hardware environment. 
+
 Are we really going to capture the history of a format. Look what's involved.
 [MP3: The Meaning of a Format](http://www.dukeupress.edu/MP3/)
 
-
-What Digital Preservation Needs
--------------------------------
+### Dependency Analysis ###
 
 The fundamental goal is software dependency analysis. We need to know what software we need to access the file, but we may only have the bytestream and some metadata to go on.
 

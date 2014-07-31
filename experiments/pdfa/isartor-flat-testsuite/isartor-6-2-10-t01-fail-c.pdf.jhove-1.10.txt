@@ -1,0 +1,62 @@
+Jhove (Rel. 1.9, 2013-06-10)
+ Date: 2014-07-31 16:41:37 BST
+ RepresentationInformation: isartor-flat-testsuite/isartor-6-2-10-t01-fail-c.pdf
+  ReportingModule: PDF-hul, Rel. 1.7 (2012-08-12)
+  LastModified: 2008-03-26 13:59:35 GMT
+  Size: 5843
+  Format: PDF
+  Version: 1.4
+  Status: Well-Formed and valid
+  SignatureMatches:
+   PDF-hul
+  MIMEtype: application/pdf
+  Profile: ISO PDF/A-1, Level B
+  PDFMetadata: 
+   Objects: 17
+   FreeObjects: 2
+   IncrementalUpdates: 0
+   DocumentCatalog: 
+    PageLayout: SinglePage
+    PageMode: UseOutlines
+    Outlines: 
+     Item: 
+      Title: PDF/A test suite: isartor-6-2-10-t01-fail-c
+      Children: 
+       Item: 
+        Title: clause 6-2-10
+       Item: 
+        Title: topic 01
+       Item: 
+        Title: instance c
+       Item: 
+        Title: expected result: fail
+       Item: 
+        Title: expected message: Operators not defined in PDF Reference used on annotation/form field appearance stream.
+   ID: 0x467cec39af34afb1671fe0ec249ef620, 0x2bf8c847af83d0b4095b92fb98d828ff
+   Filters: 
+    FilterPipeline: FlateDecode
+   XMP: <x:xmpmeta xmlns:x="adobe:ns:meta/">
+ <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="" xmlns:pdfaid="http://www.aiim.org/pdfa/ns/id/">
+   <pdfaid:part>1</pdfaid:part>
+   <pdfaid:conformance>B</pdfaid:conformance>
+  </rdf:Description>
+  <rdf:Description rdf:about="" xmlns:pdf="http://ns.adobe.com/pdf/1.3/">
+   <pdf:Producer>3-Heights(TM) PDF Producer 1.7.0.5 (http://www.pdf-tools.com)</pdf:Producer>
+  </rdf:Description>
+  <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/">
+   <xmp:CreatorTool>3-Heights(TM) PDF Creator 1.7.0.5 (http://www.pdf-tools.com)</xmp:CreatorTool>
+   <xmp:CreateDate>2008-02-28T12:42:36+00:00</xmp:CreateDate>
+   <xmp:ModifyDate>2008-02-28T12:42:36+00:00</xmp:ModifyDate>
+  </rdf:Description>
+ </rdf:RDF>
+</x:xmpmeta>
+   Pages: 
+    Page: 
+     Sequence: 1
+     Annotations: 
+      Annotation: 
+       Subtype: Circle
+       Rect: 10, 10, 210, 210
+       Flags: Print
+       AppearanceDictionary: true

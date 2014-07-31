@@ -1,0 +1,15 @@
+Jhove (Rel. 1.9, 2013-06-10)
+ Date: 2014-07-31 16:41:17 BST
+ RepresentationInformation: isartor-flat-testsuite/isartor-6-1-2-t01-fail-a.pdf
+  ReportingModule: PDF-hul, Rel. 1.7 (2012-08-12)
+  LastModified: 2008-03-26 13:59:27 GMT
+  Size: 2536
+  Format: PDF
+  Status: Not well-formed
+  SignatureMatches:
+   PDF-hul
+  ErrorMessage: Invalid cross-reference table
+   Offset: 2096
+  ErrorMessage: No document catalog dictionary
+   Offset: 0
+  MIMEtype: application/pdf

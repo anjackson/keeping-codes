@@ -1,0 +1,80 @@
+Jhove (Rel. 1.9, 2013-06-10)
+ Date: 2014-07-31 16:42:27 BST
+ RepresentationInformation: isartor-flat-testsuite/isartor-6-3-4-t01-fail-g.pdf
+  ReportingModule: PDF-hul, Rel. 1.7 (2012-08-12)
+  LastModified: 2008-03-26 13:59:01 GMT
+  Size: 7784
+  Format: PDF
+  Version: 1.4
+  Status: Well-Formed and valid
+  SignatureMatches:
+   PDF-hul
+  MIMEtype: application/pdf
+  Profile: ISO PDF/A-1, Level B
+  PDFMetadata: 
+   Objects: 30
+   FreeObjects: 1
+   IncrementalUpdates: 0
+   DocumentCatalog: 
+    PageLayout: SinglePage
+    PageMode: UseOutlines
+    Outlines: 
+     Item: 
+      Title: PDF/A test suite: isartor-6-3-4-t01-fail-g
+      Destination: 1
+      Children: 
+       Item: 
+        Title: clause 6-3-4 Embedded font programs
+        Destination: 1
+       Item: 
+        Title: topic 01 
+        Destination: 1
+       Item: 
+        Title: instance g 
+        Destination: 1
+       Item: 
+        Title: expected result: fail
+        Destination: 1
+       Item: 
+        Title: expected message: font 'Helvetica' for Type 3 font glyph not embedded
+        Destination: 1
+   Info: 
+    Producer: PDFlib Personalization Server 7.0.2 (Win32)
+    CreationDate: Fri Nov 02 18:03:26 GMT 2007
+    ModDate: Fri Nov 02 18:03:26 GMT 2007
+   ID: 0xaeada5381d07a4135992917862fb181c, 0xaeada5381d07a4135992917862fb181c
+   Filters: 
+    FilterPipeline: FlateDecode
+   Fonts: 
+    Type3: 
+     Font: 
+      Name: HelveticaCloneT3.winansi
+      FirstChar: 65
+      LastChar: 65
+      FontBBox: 0, 0, 0, 0
+      EncodingDictionary: 
+       Differences: true
+      Resources: true
+   XMP: <x:xmpmeta xmlns:x="adobe:ns:meta/">
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description about="" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/">
+                                                                                      
+        <xmpMM:DocumentID>uuid:B8065E04-D3A9-5543-59B7-0FC00EC5EEBE</xmpMM:DocumentID>
+      </rdf:Description>
+      <rdf:Description about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/">
+        <xmp:ModifyDate>2007-11-02T19:03:26+01:00</xmp:ModifyDate>
+        <xmp:MetadataDate>2007-11-02T19:03:26+01:00</xmp:MetadataDate>
+        <xmp:CreateDate>2007-11-02T19:03:26+01:00</xmp:CreateDate>
+      </rdf:Description>
+      <rdf:Description about="" xmlns:pdfaid="http://www.aiim.org/pdfa/ns/id/">
+        <pdfaid:part>1</pdfaid:part>
+        <pdfaid:conformance>B</pdfaid:conformance>
+      </rdf:Description>
+      <rdf:Description about="" xmlns:pdf="http://ns.adobe.com/pdf/1.3/">
+        <pdf:Producer>PDFlib Personalization Server 7.0.2 (Win32)</pdf:Producer>
+      </rdf:Description>
+    </rdf:RDF>
+  </x:xmpmeta>
+   Pages: 
+    Page: 
+     Sequence: 1

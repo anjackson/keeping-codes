@@ -1,0 +1,84 @@
+Jhove (Rel. 1.9, 2013-06-10)
+ Date: 2014-07-31 16:42:53 BST
+ RepresentationInformation: isartor-flat-testsuite/isartor-6-5-2-t02-fail-c.pdf
+  ReportingModule: PDF-hul, Rel. 1.7 (2012-08-12)
+  LastModified: 2008-07-15 12:57:05 BST
+  Size: 86380
+  Format: PDF
+  Version: 1.4
+  Status: Well-Formed and valid
+  SignatureMatches:
+   PDF-hul
+  MIMEtype: application/pdf
+  PDFMetadata: 
+   Objects: 27
+   FreeObjects: 1
+   IncrementalUpdates: 0
+   DocumentCatalog: 
+    PageLayout: SinglePage
+    PageMode: UseOutlines
+    Outlines: 
+     Item: 
+      Title: PDF/A test suite: isartor-6-5-2-t02-fail-c
+      Destination: 1
+      Children: 
+       Item: 
+        Title: clause 6-5-2 Annotation Types
+        Destination: 1
+       Item: 
+        Title: topic 02
+        Destination: 1
+       Item: 
+        Title: instance c
+        Destination: 1
+       Item: 
+        Title: expected result: fail
+        Destination: 1
+       Item: 
+        Title: expected message: Prohibited annotation type 'Sound'
+        Destination: 1
+   Info: 
+    Creator: callas software gmbh, PDFEngine V. 2.0.001
+    Producer: Acrobat Distiller 8.1.0 (Macintosh)
+    CreationDate: Tue Oct 30 21:08:19 GMT 2007
+    ModDate: Tue Oct 30 23:30:30 GMT 2007
+   ID: 0x331bc89f34902dab6c56fcc5e6501ddb, 0x35e8418e5b61db697809808b34ad26bc
+   Filters: 
+    FilterPipeline: FlateDecode
+   XMP: <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Public XMP Toolkit Core 4.0">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""
+            xmlns:xap="http://ns.adobe.com/xap/1.0/">
+         <xap:ModifyDate>2007-10-31T00:30:30+01:00</xap:ModifyDate>
+         <xap:CreateDate>2007-10-30T22:08:19+01:00</xap:CreateDate>
+         <xap:MetadataDate>2007-10-31T00:30:30+01:00</xap:MetadataDate>
+         <xap:CreatorTool>callas software gmbh, PDFEngine V. 2.0.001</xap:CreatorTool>
+      </rdf:Description>
+   
+      <rdf:Description rdf:about=""
+            xmlns:pdf="http://ns.adobe.com/pdf/1.3/">
+         <pdf:Producer>Acrobat Distiller 8.1.0 (Macintosh)</pdf:Producer>
+      </rdf:Description>
+      <rdf:Description rdf:about=""
+            xmlns:xapMM="http://ns.adobe.com/xap/1.0/mm/">
+         <xapMM:DocumentID>uuid:32e69d02-d28f-0142-b071-dfa8e6679476</xapMM:DocumentID>
+      </rdf:Description>
+      <rdf:Description rdf:about=""
+            xmlns:pdfaid="http://www.aiim.org/pdfa/ns/id/">
+         <pdfaid:part>1</pdfaid:part>
+         <pdfaid:conformance>B</pdfaid:conformance>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+   Pages: 
+    Page: 
+     Sequence: 1
+     Annotations: 
+      Annotation: 
+       Subtype: Sound
+       Contents: Sound Clip (74 KB)
+       Rect: 258, 573, 278, 588
+       Name: f76147e8-f707-644a-892a-9d933c8684c1
+       LastModified: D:20071030220813+01'00'
+       Flags: Print, NoZoom, NoRotate
+       AppearanceDictionary: true
