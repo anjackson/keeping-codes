@@ -48,7 +48,7 @@ Those of us who have spent a significant amount time using or hacking on JHOVE h
 
 ### The Value Of Test Suites ###
 
-Ideally, to resolve this issue, we would be able to test how well JHOVE validates PDF/A documents by running it over a suitable test suite. Sadly, we do not yet have a compliance-testing corpus that covers the entire PDF/A standard, but there is one for *non*-compliance with the PDF/A*-1b* part of the specification: [the Isartor Test Suite](http://www.pdfa.org/2011/08/download-isartor-test-suite/).
+Ideally, to resolve this issue, we would be able to test how well JHOVE validates PDF/A documents by running it over a suitable test suite. While we do not [yet](http://www.preforma-project.eu/call-description.html) have a compliance-testing corpus that covers the entire PDF/A standard, there is one for *non*-compliance with the PDF/A*-1b* part of the specification: [the Isartor Test Suite](http://www.pdfa.org/2011/08/download-isartor-test-suite/).
 
 The Isartor Test Suite is an excellent resource, and exactly the kind of thing we could use more of in digital preservation. It contains a set of PDF files where each one carefully violates a particular aspect of the PDF/A-1b standard. Each PDF is also self-documenting, in that the text and embedded metadata describe what part of the PDF/A-1b specification is being violated.
 
