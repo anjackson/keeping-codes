@@ -1,0 +1,75 @@
+Jhove (Rel. 1.11, 2013-09-29)
+ Date: 2014-07-31 18:07:05 BST
+ RepresentationInformation: isartor-flat-testsuite/isartor-6-7-2-t02-fail-b.pdf
+  ReportingModule: PDF-hul, Rel. 1.7 (2012-08-12)
+  LastModified: 2008-03-26 13:59:54 GMT
+  Size: 3598
+  Format: PDF
+  Version: 1.4
+  Status: Well-Formed and valid
+  SignatureMatches:
+   PDF-hul
+  MIMEtype: application/pdf
+  Profile: ISO PDF/A-1, Level B
+  PDFMetadata: 
+   Objects: 20
+   FreeObjects: 1
+   IncrementalUpdates: 0
+   DocumentCatalog: 
+    PageLayout: SinglePage
+    PageMode: UseOutlines
+    Outlines: 
+     Item: 
+      Title: PDF/A test suite: isartor-6-7-2-t02-fail-b
+      Destination: 1
+      Children: 
+       Item: 
+        Title: clause 6-7-2 Properties
+        Destination: 1
+       Item: 
+        Title: topic 02 
+        Destination: 1
+       Item: 
+        Title: instance b 
+        Destination: 1
+       Item: 
+        Title: expected result: fail
+        Destination: 1
+       Item: 
+        Title: expected message: unknown property 'xmp:Title' in predefined schema
+        Destination: 1
+   Info: 
+    Producer: PDFlib Personalization Server 7.0.2p4 (Win32)
+    CreationDate: Thu Dec 27 12:47:30 GMT 2007
+    ModDate: Thu Dec 27 12:47:30 GMT 2007
+   ID: 0x53f0b85abc3f05560c797b5b0954ce7f, 0x53f0b85abc3f05560c797b5b0954ce7f
+   Filters: 
+    FilterPipeline: FlateDecode
+   XMP: <x:xmpmeta xmlns:x="adobe:ns:meta/">
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about="" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/">
+                                                                                      
+        <xmpMM:DocumentID>uuid:B2B71546-FA1E-53AC-BAD7-82B1AC454A59</xmpMM:DocumentID>
+      </rdf:Description>
+      <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/">
+        <xmp:ModifyDate>2007-12-27T13:47:30+01:00</xmp:ModifyDate>
+        <xmp:MetadataDate>2007-12-27T13:47:30+01:00</xmp:MetadataDate>
+        <xmp:Title>
+          <rdf:Alt>
+            <rdf:li xml:lang="x-default">Invalid XMP Title property (should be dc:Title)</rdf:li>
+          </rdf:Alt>
+        </xmp:Title>
+        <xmp:CreateDate>2007-12-27T13:47:30+01:00</xmp:CreateDate>
+      </rdf:Description>
+      <rdf:Description rdf:about="" xmlns:pdfaid="http://www.aiim.org/pdfa/ns/id/">
+        <pdfaid:part>1</pdfaid:part>
+        <pdfaid:conformance>B</pdfaid:conformance>
+      </rdf:Description>
+      <rdf:Description rdf:about="" xmlns:pdf="http://ns.adobe.com/pdf/1.3/">
+        <pdf:Producer>PDFlib Personalization Server 7.0.2p4 (Win32)</pdf:Producer>
+      </rdf:Description>
+    </rdf:RDF>
+  </x:xmpmeta>
+   Pages: 
+    Page: 
+     Sequence: 1

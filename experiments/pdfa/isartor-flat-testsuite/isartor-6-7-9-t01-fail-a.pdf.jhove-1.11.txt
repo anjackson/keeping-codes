@@ -1,0 +1,50 @@
+Jhove (Rel. 1.11, 2013-09-29)
+ Date: 2014-07-31 18:07:26 BST
+ RepresentationInformation: isartor-flat-testsuite/isartor-6-7-9-t01-fail-a.pdf
+  ReportingModule: PDF-hul, Rel. 1.7 (2012-08-12)
+  LastModified: 2008-03-26 13:59:55 GMT
+  Size: 3380
+  Format: PDF
+  Version: 1.4
+  Status: Well-Formed and valid
+  SignatureMatches:
+   PDF-hul
+  MIMEtype: application/pdf
+  Profile: ISO PDF/A-1, Level B
+  PDFMetadata: 
+   Objects: 20
+   FreeObjects: 1
+   IncrementalUpdates: 0
+   DocumentCatalog: 
+    PageLayout: SinglePage
+    PageMode: UseOutlines
+    Outlines: 
+     Item: 
+      Title: PDF/A test suite: isartor-6-7-9-t01-fail-a
+      Destination: 1
+      Children: 
+       Item: 
+        Title: clause 6-7-9 Validation
+        Destination: 1
+       Item: 
+        Title: topic 01 
+        Destination: 1
+       Item: 
+        Title: instance a 
+        Destination: 1
+       Item: 
+        Title: expected result: fail
+        Destination: 1
+       Item: 
+        Title: expected message: malformed XMP document metadata
+        Destination: 1
+   Info: 
+    Producer: PDFlib Personalization Server 7.0.2 (Win32)
+    CreationDate: Fri Nov 02 16:24:38 GMT 2007
+    ModDate: Fri Nov 02 16:24:38 GMT 2007
+   ID: 0xf6838a000341845138dcd1eea8f5b933, 0xf6838a000341845138dcd1eea8f5b933
+   Filters: 
+    FilterPipeline: FlateDecode
+   Pages: 
+    Page: 
+     Sequence: 1

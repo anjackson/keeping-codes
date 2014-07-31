@@ -1,0 +1,56 @@
+Jhove (Rel. 1.11, 2013-09-29)
+ Date: 2014-07-31 18:05:08 BST
+ RepresentationInformation: isartor-flat-testsuite/isartor-6-2-8-t02-fail-b.pdf
+  ReportingModule: PDF-hul, Rel. 1.7 (2012-08-12)
+  LastModified: 2008-05-27 21:08:06 BST
+  Size: 5892
+  Format: PDF
+  Version: 1.4
+  Status: Well-Formed and valid
+  SignatureMatches:
+   PDF-hul
+  MIMEtype: application/pdf
+  Profile: ISO PDF/A-1, Level B
+  PDFMetadata: 
+   Objects: 17
+   FreeObjects: 2
+   IncrementalUpdates: 0
+   DocumentCatalog: 
+    PageLayout: SinglePage
+    PageMode: UseOutlines
+    Outlines: 
+     Item: 
+      Title: PDF/A test suite: isartor-6-2-8-t02-fail-b
+      Children: 
+       Item: 
+        Title: clause 6-2-8
+       Item: 
+        Title: topic 02
+       Item: 
+        Title: instance b
+       Item: 
+        Title: expected result: fail
+       Item: 
+        Title: expected message: Transfer curve (TR2 function) other than Default used.
+   ID: 0xe7e578c0068281a867d3801bcba5b878, 0x3e58a0038a80812b56f2055addc2e1ec
+   Filters: 
+    FilterPipeline: FlateDecode
+   XMP: <x:xmpmeta xmlns:x="adobe:ns:meta/">
+ <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="" xmlns:pdfaid="http://www.aiim.org/pdfa/ns/id/">
+   <pdfaid:part>1</pdfaid:part>
+   <pdfaid:conformance>B</pdfaid:conformance>
+  </rdf:Description>
+  <rdf:Description rdf:about="" xmlns:pdf="http://ns.adobe.com/pdf/1.3/">
+   <pdf:Producer>3-Heights(TM) PDF Producer 1.7.0.7 (http://www.pdf-tools.com)</pdf:Producer>
+  </rdf:Description>
+  <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/">
+   <xmp:CreatorTool>3-Heights(TM) PDF Creator 1.7.0.7 (http://www.pdf-tools.com)</xmp:CreatorTool>
+   <xmp:CreateDate>2008-04-04T08:18:28+00:00</xmp:CreateDate>
+   <xmp:ModifyDate>2008-04-04T08:18:28+00:00</xmp:ModifyDate>
+  </rdf:Description>
+ </rdf:RDF>
+</x:xmpmeta>
+   Pages: 
+    Page: 
+     Sequence: 1

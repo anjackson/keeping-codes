@@ -1,0 +1,49 @@
+Jhove (Rel. 1.11, 2013-09-29)
+ Date: 2014-07-31 18:07:07 BST
+ RepresentationInformation: isartor-flat-testsuite/isartor-6-7-2-t03-fail-a.pdf
+  ReportingModule: PDF-hul, Rel. 1.7 (2012-08-12)
+  LastModified: 2008-07-15 12:57:06 BST
+  Size: 2701
+  Format: PDF
+  Version: 1.4
+  Status: Well-Formed and valid
+  SignatureMatches:
+   PDF-hul
+  MIMEtype: application/pdf
+  PDFMetadata: 
+   Objects: 20
+   FreeObjects: 1
+   IncrementalUpdates: 0
+   DocumentCatalog: 
+    PageLayout: SinglePage
+    PageMode: UseOutlines
+    Outlines: 
+     Item: 
+      Title: PDF/A test suite: isartor-6-7-2-t03-fail-a
+      Destination: 1
+      Children: 
+       Item: 
+        Title: clause 6-7-2 Properties
+        Destination: 1
+       Item: 
+        Title: topic 03 
+        Destination: 1
+       Item: 
+        Title: instance a 
+        Destination: 1
+       Item: 
+        Title: expected result: fail
+        Destination: 1
+       Item: 
+        Title: expected message: metadata dictionary uses stream filter
+        Destination: 1
+   Info: 
+    Producer: PDFlib Personalization Server 7.0.3p3 (Win32)
+    CreationDate: Tue May 27 21:24:15 BST 2008
+    ModDate: Tue May 27 21:24:15 BST 2008
+   ID: 0xae116b91e243e007bd76d4719409edca, 0xae116b91e243e007bd76d4719409edca
+   Filters: 
+    FilterPipeline: FlateDecode
+   Pages: 
+    Page: 
+     Sequence: 1

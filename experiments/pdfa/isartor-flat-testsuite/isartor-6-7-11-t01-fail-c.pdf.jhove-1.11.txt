@@ -1,0 +1,70 @@
+Jhove (Rel. 1.11, 2013-09-29)
+ Date: 2014-07-31 18:07:02 BST
+ RepresentationInformation: isartor-flat-testsuite/isartor-6-7-11-t01-fail-c.pdf
+  ReportingModule: PDF-hul, Rel. 1.7 (2012-08-12)
+  LastModified: 2008-03-26 13:59:49 GMT
+  Size: 3416
+  Format: PDF
+  Version: 1.4
+  Status: Well-Formed and valid
+  SignatureMatches:
+   PDF-hul
+  MIMEtype: application/pdf
+  Profile: ISO PDF/A-1, Level B
+  PDFMetadata: 
+   Objects: 20
+   FreeObjects: 1
+   IncrementalUpdates: 0
+   DocumentCatalog: 
+    PageLayout: SinglePage
+    PageMode: UseOutlines
+    Outlines: 
+     Item: 
+      Title: PDF/A test suite: isartor-6-7-11-t01-fail-c
+      Destination: 1
+      Children: 
+       Item: 
+        Title: clause 6-7-11 Version and conformance level identification
+        Destination: 1
+       Item: 
+        Title: topic 01 
+        Destination: 1
+       Item: 
+        Title: instance c 
+        Destination: 1
+       Item: 
+        Title: expected result: fail
+        Destination: 1
+       Item: 
+        Title: expected message: invalid PDF/A conformance level
+        Destination: 1
+   Info: 
+    Producer: PDFlib Personalization Server 7.0.2 (Win32)
+    CreationDate: Fri Nov 02 21:51:15 GMT 2007
+    ModDate: Fri Nov 02 21:51:15 GMT 2007
+   ID: 0xe6764b034b9de8d006e2b4a118e9c368, 0xe6764b034b9de8d006e2b4a118e9c368
+   Filters: 
+    FilterPipeline: FlateDecode
+   XMP: <x:xmpmeta xmlns:x="adobe:ns:meta/">
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description about="" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/">
+                                                                                      
+        <xmpMM:DocumentID>uuid:7453980D-3B31-69FB-DDF8-AD76C1A89932</xmpMM:DocumentID>
+      </rdf:Description>
+      <rdf:Description about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/">
+        <xmp:ModifyDate>2007-11-02T22:51:15+01:00</xmp:ModifyDate>
+        <xmp:MetadataDate>2007-11-02T22:51:15+01:00</xmp:MetadataDate>
+        <xmp:CreateDate>2007-11-02T22:51:15+01:00</xmp:CreateDate>
+      </rdf:Description>
+      <rdf:Description about="" xmlns:pdfaid="http://www.aiim.org/pdfa/ns/id/">
+        <pdfaid:part>1</pdfaid:part>
+        <pdfaid:conformance>C</pdfaid:conformance>
+      </rdf:Description>
+      <rdf:Description about="" xmlns:pdf="http://ns.adobe.com/pdf/1.3/">
+        <pdf:Producer>PDFlib Personalization Server 7.0.2 (Win32)</pdf:Producer>
+      </rdf:Description>
+    </rdf:RDF>
+  </x:xmpmeta>
+   Pages: 
+    Page: 
+     Sequence: 1

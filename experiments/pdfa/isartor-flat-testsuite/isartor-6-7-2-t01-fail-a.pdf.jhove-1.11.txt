@@ -1,0 +1,48 @@
+Jhove (Rel. 1.11, 2013-09-29)
+ Date: 2014-07-31 18:07:03 BST
+ RepresentationInformation: isartor-flat-testsuite/isartor-6-7-2-t01-fail-a.pdf
+  ReportingModule: PDF-hul, Rel. 1.7 (2012-08-12)
+  LastModified: 2008-04-01 13:53:05 BST
+  Size: 2021
+  Format: PDF
+  Version: 1.4
+  Status: Well-Formed and valid
+  SignatureMatches:
+   PDF-hul
+  MIMEtype: application/pdf
+  PDFMetadata: 
+   Objects: 18
+   FreeObjects: 1
+   IncrementalUpdates: 0
+   DocumentCatalog: 
+    PageLayout: SinglePage
+    PageMode: UseOutlines
+    Outlines: 
+     Item: 
+      Title: PDF/A test suite: isartor-6-7-2-t01-fail-a
+      Destination: 1
+      Children: 
+       Item: 
+        Title: clause 6-7-2 Properties
+        Destination: 1
+       Item: 
+        Title: topic 01 
+        Destination: 1
+       Item: 
+        Title: instance a 
+        Destination: 1
+       Item: 
+        Title: expected result: fail
+        Destination: 1
+       Item: 
+        Title: expected message: Metadata key missing in catalog
+        Destination: 1
+   Info: 
+    Producer: PDFlib Personalization Server 7.0.2 (Win32)
+    CreationDate: Fri Nov 02 14:14:01 GMT 2007
+   ID: 0x5071d234c9d3c193aae75a2563f281a2, 0x5071d234c9d3c193aae75a2563f281a2
+   Filters: 
+    FilterPipeline: FlateDecode
+   Pages: 
+    Page: 
+     Sequence: 1
