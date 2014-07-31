@@ -1,3 +1,5 @@
+---
+---
 pdfa/isartor-flat-testsuite/isartor-6-1-2-t01-fail-a.pdf.jhove-1.11.txt:  Status: Not well-formed
 pdfa/isartor-flat-testsuite/isartor-6-1-2-t02-fail-a.pdf.jhove-1.11.txt:  Status: Well-Formed and valid
 pdfa/isartor-flat-testsuite/isartor-6-1-3-t01-fail-a.pdf.jhove-1.11.txt:  Status: Well-Formed and valid
