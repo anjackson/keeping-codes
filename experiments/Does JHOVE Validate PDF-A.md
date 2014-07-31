@@ -62,7 +62,7 @@ Here is a summary of the results, showing how many of the PDF/A-1b test files JH
 
 ![JHOVE FAILs the Isartor test](pdfa/pie-of-fail.png)
 
-JHOVE only managed to detect one invalid PDF/A-1b file from this set of 204 invalid files. 
+JHOVE only managed to detect one invalid PDF/A-1b file from this set of 204 invalid files. It's not really clear what JHOVE is testing, as even thing like the [presence of encrypted data](./pdfa/isartor-flat-testsuite/isartor-6-1-3-t02-fail-a.pdf.jhove-1.11.txt) are not being picked up.
 
 The full, raw JHOVE results are available [below](#appendix).
 
