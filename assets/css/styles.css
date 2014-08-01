@@ -50,6 +50,21 @@ body { padding-bottom: 70px; }
     float: right;
 }
 
+#main table {
+  margin: 1em auto;
+  border: 1px solid #eee;
+  border-collapse: collapsed;
+}
+
+#main table thead {
+  background-color: #eee;
+}
+
+#main table td, #main table th {
+  padding: 2px 4px;
+  border: 1px solid #aaa;
+}
+
 .badge-final {
   background-color: black;
 }
