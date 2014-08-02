@@ -47,6 +47,28 @@ when I doubt there's any consensus on the "Humanities".
 Almost as much fun as all that malarky about defining "Digital Humanities".
 Somehow with the implication that if you can't define it you shouldn't be taken seriously.
 
+Twisted Timelines
+=================
+
+Looking up phrases.
+
+Captcha
+-------
+
+ * http://web.archive.org/web/20030110182448/http://news.bbc.co.uk:80/1/hi/technology/2635855.stm
+ * http://web.archive.org/web/20030123152944/http://www.computing.co.uk:80/News/1137729 (earliest publication date)
+ * http://web.archive.org/web/20030208002757/http://www.chrisjames.co.uk:80/cj/contents/pages/cat_techie.php
+ * http://web.archive.org/web/20021229115410/http://www.theregister.co.uk/content/6/28694.html
+
+Also
+
+ * [Chillax](http://web.archive.org/web/19991002215401/http://members.tripod.co.uk:80/Chimwemwe/)
+ * information superhighway
+ * web 2.0
+ * cyberspace
+ * world wide web
+ * the web
+
 Curation's second death
 =======================
 

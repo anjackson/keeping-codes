@@ -100,9 +100,16 @@ https://github.com/openplanets/droid/commit/2c9f9b1a86e3fd219ecc8b8ed4cde0b81cfe
 If you want to really optimise this thing, it should be possible to do all this (including checksum calculation) while only streaming over the whole input stream once. I've been trying to do that in our web archive indexer (which also incorporates the Nanite tool) with some success, but gracefully handling large files is not proving easy when some tools (e.g. DROID, PDFBox Preflight) tend to assume that you have a random access file and can flip to the end of the bitstream and back easily.
 
 
+Iteration
+---------
+
+* http://rkroundtable.org/2014/06/30/contexts-connections-access-the-glorious-possibilities-of-getting-it-all-wrong/
+* http://blog.codinghorror.com/quantity-always-trumps-quality/
+
 
 War Stories - Inbox
 -------------------
+
 
 ### Identification Problems and Text Formats
 

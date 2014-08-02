@@ -162,3 +162,8 @@ Balance between the queues and the state (e.g. Cassandra/HBase is less clear now
         * BOLT: Check links against State, and DecideRules, and Enqueue if crawl is due.
             * BOLT: Record link discovery in State.
 
+
+See also
+
+* [AJAX/JavaScript Enabled Parsing with Apache Nutch and Selenium](http://soryy.com/blog/2014/ajax-javascript-enabled-parsing-apache-nutch-selenium/)
+    * https://github.com/momer/nutch-selenium-grid-plugin
