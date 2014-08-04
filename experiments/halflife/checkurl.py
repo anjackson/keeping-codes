@@ -33,7 +33,7 @@ def checkUrl(url):
             return (903, "NOROUTE")
         elif str(e) == "[Errno 51] Network is unreachable":
             return (903, "NETWORK-UNREACHABLE")
-        elif str(e) == "[Errno 61] Connection refused":
+        elif str(e) == "[Errno 61] Connection refused" or str(e) == "[Errno 111] Connection refused":
             return (903, "CONNECTION-REFUSED" )
         elif str(e) == "[Errno 54] Connection reset by peer":
             return (903, "CONNECTION-RESET" )
