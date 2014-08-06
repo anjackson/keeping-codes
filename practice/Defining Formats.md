@@ -176,5 +176,4 @@ Link to software feature dependency.
 
 [^1]: You think 'format' is bad. 'Digital object' is much, much worse, but we'll come to that later.
 [^2]: I should really try to add some kind of historical context here. When were file extensions first used, and so on.
-[^3]: As for file extensions, is no central authority for allocating these identifiers, but as they are generally at least four characters long, collisions have been rare so far. Having said that, it is perhaps unsurprising that the length of these byte sequences has grown over time[^4].
-[^4]: [citation needed!] -- I should probably use the PRONOM data to verify that!
+[^3]: As for file extensions, is no central authority for allocating these identifiers, but as they are generally at least four characters long, collisions have been rare so far. Having said that, it is perhaps unsurprising that the length of these byte sequences has grown over time ([citation needed!] -- I should probably use the PRONOM data to verify that!)
