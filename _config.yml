@@ -1,5 +1,5 @@
 highlighter: pygments
-relative_permalinks: false
+relative_permalinks: true
 markdown: kramdown
 baseurl: /keeping-codes
 
