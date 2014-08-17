@@ -3,7 +3,7 @@ title:  Comparing Image Files
 layout: default
 category: Images
 tags: [outline]
-publish: true
+publish: false
 ---
 
 So, you're performing image conversions, say [TIFF-to-JPEG2000][1]. For large collections (e.g. [JP2K@Wellcome][9]), this is a computationally intensive and long-winded process. How do you check if it all went okay?

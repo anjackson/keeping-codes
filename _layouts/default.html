@@ -65,9 +65,17 @@
 
         <div class="col-xs-12 col-sm-8 col-md-8">
 
+        {% for tag in page.tags %}
+          <span class="badge badge-{{ tag }} pull-right">{{ tag }}</span>
+        {% endfor %}
+
         <h1>{{ page.title }}{% if page.subtitle %}<br/><small>{{ page.subtitle }}</small>{% endif %}</h1>
         <div id="main">
         {{ content }}
+
+        {% for cat in page.categories %}
+          <a href="{{ site.baseurl }}/#{{ cat }}"><span class="badge badge-info pull-right">{{ cat }}</span></a>
+        {% endfor %}
 
         <div id="footer"> 
           <hr/>

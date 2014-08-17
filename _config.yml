@@ -12,7 +12,6 @@ lsi: false
 gems:
 - jekyll-mentions
 - jemoji
-- jekyll-redirect-from
 - jekyll-sitemap
 
 defaults:
