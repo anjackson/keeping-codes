@@ -1,9 +1,11 @@
 ---
 title: Archiving the Dynamic Web
 layout: default
-categories: [practice]
+category: Web Archives
 tags: [draft]
 publish: true
+permalink: /practice/archiving-the-dynamic-web.html
+redirect_from: "/practice/Archiving%20the%20Dynamic%20Web.html"
 ---
 
 ## Introduction ##

@@ -4,4 +4,4 @@ layout: default
 
 ---
 
-{% include pageList.html cat='practice' %}
+{% include collectionList.html filter="/practice/" %}

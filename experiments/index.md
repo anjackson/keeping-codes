@@ -4,7 +4,7 @@ layout: default
 ---
 
 ## Reports
-{% include pageList.html cat='experiments' %}
+{% include collectionList.html filter="/experiments/" %}
 
 ## IPython Notebooks
 

@@ -1,7 +1,7 @@
 ---
 title: What Do We Need
 layout: default
-categories: [practice]
+category: Requirments
 tags: [stub]
 ---
 

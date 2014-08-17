@@ -1,7 +1,7 @@
 ---
 title: Web Archiving In The JavaScript Age
 layout: default
-categories: [practice, blog]
+categories: ["Web Archives", blog]
 tags: [complete]
 publish: false
 permalink: web-archiving-in-the-javascript-age.html

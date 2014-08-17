@@ -1,13 +1,10 @@
 highlighter: pygments
-relative_permalinks: true
+relative_permalinks: false
 markdown: kramdown
 baseurl: /keeping-codes
 
 all-category-list: [fundamentals,practice,experiments,war stories]
 active-category-list: [practice,experiments]
-
-collections:
-- practice
 
 safe: true
 lsi: false
@@ -17,3 +14,10 @@ gems:
 - jemoji
 - jekyll-redirect-from
 - jekyll-sitemap
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"

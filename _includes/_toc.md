@@ -15,4 +15,3 @@
 <!-- CUT -->
 
 {{ page.content }}
-

@@ -1,7 +1,7 @@
 ---
 title: Defining Format
 layout: default
-categories: [practice]
+category: "Format"
 tags: [stub]
 publish: true
 permalink: "defining-format.html"

@@ -1,7 +1,7 @@
 ---
 title: UKWA Sustainable Access Plan
 layout: default
-categories: [practice]
+category: Web Archives
 tags: [stub]
 ---
 

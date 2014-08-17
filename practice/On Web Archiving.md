@@ -1,7 +1,7 @@
 ---
 title:  On Web Archiving
 layout: default
-categories: [practice]
+category: Web Archives
 tags: [stub]
 publish: false
 ---

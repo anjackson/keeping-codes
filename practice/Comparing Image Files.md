@@ -1,7 +1,7 @@
 ---
 title:  Comparing Image Files
 layout: default
-categories: [practice]
+category: Images
 tags: [outline]
 publish: true
 ---

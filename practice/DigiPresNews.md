@@ -1,7 +1,7 @@
 ---
 title: DigiPresNews
 layout: default
-categories: [practice]
+categories: Digital Preservation For All
 tags: [outline]
 publish: true
 ---

@@ -1,7 +1,7 @@
 ---
 title: Obsolescence in the Web Archive
 layout: default
-categories: [practice]
+category: Web Archives
 tags: [stub]
 publish: true
 ---

@@ -28,13 +28,13 @@ However, this also means the site will be something of a mish-mash of content at
 If you have any questions or comments, you are more than welcome to contact me via [this form][1], or use [the appropriate GitHub issue tracker][2].
 
 Practise
----------
-{% include pageList.html cat="practice" %}
+--------
 
+{% include collectionList.html filter="/practice/" %}
 
 Experiments
 ---------
-{% include pageList.html cat="experiments" %}
+{% include collectionList.html filter="/experiments/" %}
 
 [1]: http://anjackson.net/contact
 [2]: https://github.com/anjackson/keeping-codes/issues

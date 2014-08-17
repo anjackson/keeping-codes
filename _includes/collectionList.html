@@ -1,0 +1,44 @@
+
+{% capture site_categories %}{% for page in site.pages %}{% if page.url contains include.filter %}{% if include.unpublished == true or page.publish == true %}{% if page.category %}{{ page.category }}~{% endif %}{% for pc in page.categories %}{{ pc }}~{% endfor %}{% endif %}{% endif %}{% endfor %}{% endcapture %}
+{% assign category_list_dups = site_categories | split:'~' | sort %}
+
+{% capture site_categories_sorted %}{% for cat in category_list_dups %}{%if cat != prev %}{{ cat }}{% unless forloop.last %}~{% endunless %}{%assign prev = cat %}{% endif %}{% endfor %}{% endcapture %}
+{% assign category_list = site_categories_sorted | split:'~' | sort %}
+
+<ul>
+{% for cat in category_list %}
+<li>{{ cat }}
+<ul>
+{% assign sorted_pages = site.pages | sort:"name" %}
+{% for page in sorted_pages %}
+{% if page.url contains include.filter %}
+{% if page.category == cat or page.categories contains cat %}
+{% if include.unpublished == true or page.publish == true %}
+<li>
+    <a href="{{ site.baseurl }}{{ page.url }}" {% if page.publish != true %} style="color: gray;"{% endif %}>{{ page.title }}</a>
+    {% for tag in page.tags %}
+    <span class="badge badge-{{ tag }}">{{ tag }}</span>
+    {% endfor %}
+</li>
+{% endif %}   <!-- published-p -->
+{% endif %}   <!-- matching-category -->
+{% endif %}   <!-- url filter -->
+{% endfor %} <!-- page -->
+</ul>
+</li>
+{% endfor %}
+{% for page in sorted_pages %}
+{% if page.url contains include.filter %}
+{% if page.category == empty and page.categories == empty %}
+{% if include.unpublished == true or page.publish == true %}
+<li>
+    <a href="{{ site.baseurl }}{{ page.url }}" {% if page.publish != true %} style="color: gray;"{% endif %}>{{ page.title }}</a>
+    {% for tag in page.tags %}
+    <span class="badge badge-{{ tag }}">{{ tag }}</span>
+    {% endfor %}
+</li>
+{% endif %}   <!-- published-p -->
+{% endif %}   <!-- matching-category -->
+{% endif %}   <!-- url filter -->
+{% endfor %} <!-- page -->
+</ul>

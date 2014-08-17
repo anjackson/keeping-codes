@@ -5,10 +5,19 @@ layout: default
 
 All Pages
 ---------
-{% for cat in site.all-category-list %}
-### {{ cat | capitalize }}
-{% include pageList.html cat=cat unpublished=true %}
-{% endfor %}  <!-- cat -->
+
+### Practice
+{% include collectionList.html filter="/practice/" unpublished=true %}
+
+### Experiments
+{% include collectionList.html filter="/experiments/" unpublished=true %}
+
+### Fundamentals
+{% include collectionList.html filter="/fundamentals/" unpublished=true %}
+
+### War Stories
+{% include collectionList.html filter="/war%20stories/" unpublished=true %}
+
 
 Outlines
 --------

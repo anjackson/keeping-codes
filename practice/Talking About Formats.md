@@ -1,7 +1,7 @@
 ---
 title: Talking About Formats
 layout: default
-categories: [practice]
+category: "Format"
 tags: [draft]
 publish: true
 permalink: "talking-about-formats.html"

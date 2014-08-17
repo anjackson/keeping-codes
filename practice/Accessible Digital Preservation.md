@@ -1,7 +1,7 @@
 ---
 title: Accessible Digital Preservation
 layout: default
-categories: [practice]
+category: Digital Preservation For All
 tags: [stub]
 publish: false
 ---
