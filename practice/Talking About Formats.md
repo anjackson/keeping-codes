@@ -276,7 +276,7 @@ These issues reflect an underlying problem with this whole discussion -- we do n
 Footnotes
 ---------
 
-[^1]: If you think Polyglots are weird, take a look at [Quines](http://en.wikipedia.org/wiki/Quine_%28computing%29), like this [PDF Quine that is also an ISO disk image that, when opened, contains a copy of itself](http://blogs.perl.org/users/peter_martini/2014/08/the-chimera-quine-or-the-iso-pdf.html)!
+[^1]: If you think Polyglots are weird, take a look at [Quines](http://en.wikipedia.org/wiki/Quine_%28computing%29), like this [Perl script](http://blogs.perl.org/users/peter_martini/2014/08/the-chimera-quine-or-the-iso-pdf.html) that [prints itself into a PDF which is also an ISO that contains that PDF](https://twitter.com/petercmartini/status/496510002933559296)!
 [^2]: Note that I mean actual, named humans you can talk to. You can't get feedback from an conceptual user class.
 [^3]: Where by 'medium term' I mean the next decade or two.
 [^4]: Some of the people involved in the discussions around this issue refer to it light-heartedly as "the TIFF tiff".
