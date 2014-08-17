@@ -4,8 +4,8 @@ layout: default
 category: Web Archives
 tags: [draft]
 publish: true
-permalink: /practice/archiving-the-dynamic-web.html
-redirect_from: "/practice/Archiving%20the%20Dynamic%20Web.html"
+permalink: /keeping-codes/practice/archiving-the-dynamic-web.html
+redirect_from: "/keeping-codes/practice/Archiving%20the%20Dynamic%20Web.html"
 ---
 
 ## Introduction ##
