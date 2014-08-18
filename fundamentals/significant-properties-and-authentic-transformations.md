@@ -1,7 +1,6 @@
 ---
 title:  Significant Properties And Authentic Transformations
 layout: default
-categories: [fundamentals]
 status: outline
 ---
 

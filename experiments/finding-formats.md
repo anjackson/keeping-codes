@@ -1,7 +1,7 @@
 ---
 title: Finding Formats
 layout: default
-categories: [experiments]
+category: Meta
 status: stub
 publish: false
 ---

@@ -1,7 +1,7 @@
 ---
 title: Communicating with the Future
 layout: default
-categories: [fundamentals]
+category: Communicating with the Future
 status: outline
 permalink: communicating-with-the-future.html
 ---

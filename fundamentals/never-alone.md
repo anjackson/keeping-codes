@@ -1,7 +1,6 @@
 ---
 title:  Never Alone
 layout: default
-categories: [fundamentals]
 status: stub
 ---
 

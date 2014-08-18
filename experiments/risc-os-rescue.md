@@ -1,7 +1,7 @@
 ---
 title:  RISC OS Rescue
 layout: default
-categories: [experiments]
+category: On Systems
 status: stub
 publish: false
 ---

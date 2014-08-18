@@ -1,7 +1,7 @@
 ---
 title: Using Web Archives To Improve Preservation Tools
 layout: default
-categories: [experiments]
+category: On Tools
 status: stub
 publish: true
 ---

@@ -2,7 +2,7 @@
 title: One Parser To Rule Them All
 subtitle: and in the syntax bind them.
 layout: default
-categories: [practice]
+category: What We Need
 status: stub
 ---
 

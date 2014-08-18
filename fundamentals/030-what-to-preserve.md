@@ -1,7 +1,7 @@
 ---
 title: What to Preserve?
 layout: default
-categories: [fundamentals]
+category: Communicating with the Future
 status: stub
 publish: false
 ---

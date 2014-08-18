@@ -4,7 +4,7 @@ layout: default
 category: Web Archives
 status: draft
 publish: true
-permalink: /practice/archiving-the-dynamic-web.html
+permalink: archiving-the-dynamic-web.html
 ---
 
 ## Introduction ##

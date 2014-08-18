@@ -1,7 +1,7 @@
 ---
 title: Accessible Digital Preservation
 layout: default
-category: Digital Preservation For All
+category: What We Need
 status: stub
 publish: false
 ---

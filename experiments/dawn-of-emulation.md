@@ -1,7 +1,7 @@
 ---
 title: Dawn of Emulation
 layout: default
-categories: [experiments]
+category: Meta
 status: outline
 publish: true
 ---

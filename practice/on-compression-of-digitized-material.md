@@ -1,7 +1,7 @@
 ---
 title: On Compression of Digitized Material
 layout: default
-categories: [practice]
+category:
 status: stub
 ---
 

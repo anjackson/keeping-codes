@@ -1,7 +1,6 @@
 ---
 title: Dissecting Domesday
 layout: default
-categories: [war stories]
 status: stub
 ---
 

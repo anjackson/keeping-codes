@@ -1,7 +1,7 @@
 ---
 title: Making Plans
 layout: default
-categories: [fundamentals]
+category: Communicating with the Future
 status: stub
 publish: false
 ---

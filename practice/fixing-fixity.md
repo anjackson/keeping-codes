@@ -1,7 +1,7 @@
 ---
 title: Fixing Fixity
 layout: default
-categories: Tool Requirements
+categories: What We Need
 status: complete
 publish: true
 ---

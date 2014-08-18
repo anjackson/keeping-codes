@@ -1,6 +1,7 @@
 ---
 title: BBC Master Images
 layout: default
+category: On Systems
 img-hardware:
   - 12112009139-disks.jpg
   - 15092009064-master.jpg

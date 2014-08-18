@@ -1,7 +1,7 @@
 ---
 title: Entropy, Compression and Representation Information
 layout: default
-categories: [fundamentals]
+category: Derivations
 status: outline
 ---
 

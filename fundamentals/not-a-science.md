@@ -1,7 +1,6 @@
 ---
 title: Not a Science
 layout: default
-categories: [fundamentals]
 status: stub
 publish: false
 ---

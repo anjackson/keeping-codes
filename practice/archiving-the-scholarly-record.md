@@ -1,7 +1,7 @@
 ---
 title: Archiving the Scholarly Record
 layout: default
-category: Ideas
+category:
 status: draft
 publish: false
 ---

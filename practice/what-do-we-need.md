@@ -1,7 +1,7 @@
 ---
 title: What Do We Need
 layout: default
-category: Requirments
+category: What We Need
 status: stub
 ---
 

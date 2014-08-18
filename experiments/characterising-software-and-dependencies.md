@@ -1,7 +1,7 @@
 ---
 title: Characterising Software & Dependencies
 layout: default
-categories: [experiments]
+category: On Tools
 status: stub
 publish: true
 ---

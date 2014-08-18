@@ -2,7 +2,7 @@
 title:  Reconstruction
 subtitle: Memory and personal history
 layout: default
-categories: [experiments]
+category: Meta
 status: stub
 publish: false
 ---

@@ -1,7 +1,7 @@
 ---
 title:  Comparing Image Files
 layout: default
-category: Images
+category: Migration
 status: outline
 publish: false
 ---

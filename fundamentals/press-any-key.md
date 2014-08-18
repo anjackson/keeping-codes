@@ -1,7 +1,6 @@
 ---
 title:  Press Any Key
 layout: default
-categories: [fundamentals]
 status: stub
 ---
 

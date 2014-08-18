@@ -2,7 +2,7 @@
 title: What Do We Need? (part 2)
 subtitle: Characterisation & Validation
 layout: default
-category: Tool Requirments
+category: What We Need
 status: stub
 publish: true
 ---

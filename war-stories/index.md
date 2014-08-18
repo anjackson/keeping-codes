@@ -3,4 +3,4 @@ title:  War stories
 layout: default
 ---
 
-{% include pageList.html cat='war stories' %}
+{% include collectionList.html filter="/war-stories/" %}

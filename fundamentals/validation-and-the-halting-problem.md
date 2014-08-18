@@ -1,7 +1,7 @@
 ---
 title: Validation and the Halting Problem
 layout: default
-categories: [fundamentals]
+category: Derivations
 status: outline
 ---
 
