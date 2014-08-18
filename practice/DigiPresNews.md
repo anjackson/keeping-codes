@@ -2,7 +2,7 @@
 title: DigiPresNews
 layout: default
 categories: Digital Preservation For All
-tags: [complete]
+status: complete
 publish: true
 ---
 

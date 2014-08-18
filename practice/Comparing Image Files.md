@@ -2,7 +2,7 @@
 title:  Comparing Image Files
 layout: default
 category: Images
-tags: [outline]
+status: outline
 publish: false
 ---
 

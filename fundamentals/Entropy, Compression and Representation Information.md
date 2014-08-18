@@ -2,7 +2,7 @@
 title: Entropy, Compression and Representation Information
 layout: default
 categories: [fundamentals]
-tags: [outline]
+status: outline
 ---
 
 We see compression makes files smaller but increases their entropy.

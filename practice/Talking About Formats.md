@@ -2,7 +2,7 @@
 title: Talking About Formats
 layout: default
 category: "Format"
-tags: [draft]
+status: draft
 publish: true
 permalink: "talking-about-formats.html"
 ---

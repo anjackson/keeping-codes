@@ -3,7 +3,7 @@ title: The Format Registry Landscape
 subtitle: The roles they play, and opportunities they provide.
 layout: default
 category: Format
-tags: [stub]
+status: stub
 publish: false
 ---
 

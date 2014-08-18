@@ -2,7 +2,7 @@
 title:  What Are We Editing?
 layout: default
 categories: [fundamentals]
-tags: [stub]
+status: stub
 published: false
 ---
 

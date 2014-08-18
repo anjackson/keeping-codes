@@ -2,7 +2,7 @@
 title: Codes
 layout: default
 categories: [fundamentals]
-tags: [stub]
+status: stub
 publish: false
 ---
 

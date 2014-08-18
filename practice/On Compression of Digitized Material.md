@@ -2,7 +2,7 @@
 title: On Compression of Digitized Material
 layout: default
 categories: [practice]
-tags: [stub]
+status: stub
 ---
 
 Adsorb that thread: https://groups.google.com/d/topic/digital-curation/8KoY5t1Su3A/discussion

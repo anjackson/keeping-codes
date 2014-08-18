@@ -2,7 +2,7 @@
 title: Accessible Digital Preservation
 layout: default
 category: Digital Preservation For All
-tags: [stub]
+status: stub
 publish: false
 ---
 

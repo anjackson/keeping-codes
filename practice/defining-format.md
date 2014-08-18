@@ -2,7 +2,7 @@
 title: Defining Format
 layout: default
 category: "Format"
-tags: [stub]
+status: stub
 publish: true
 permalink: "defining-format.html"
 ---

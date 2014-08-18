@@ -3,7 +3,7 @@ title: One Parser To Rule Them All
 subtitle: and in the syntax bind them.
 layout: default
 categories: [practice]
-tags: [stub]
+status: stub
 ---
 
 All you adorable file format hang wringing people should be aware of this mouse that is an elephant in the distance. 

@@ -2,7 +2,7 @@
 title:  RISC OS Rescue
 layout: default
 categories: [experiments]
-tags: [stub]
+status: stub
 publish: false
 ---
 

@@ -16,9 +16,7 @@
 {% if include.unpublished == true or page.publish == true %}
 <li>
     <a href="{{ site.baseurl }}{{ page.url }}" {% if page.publish != true %} style="color: gray;"{% endif %}>{{ page.title }}</a>
-    {% for tag in page.tags %}
-    <span class="badge badge-{{ tag }}">{{ tag }}</span>
-    {% endfor %}
+    <span class="badge badge-{{ page.status }}">{{ page.status }}</span>
 </li>
 {% endif %}   <!-- published-p -->
 {% endif %}   <!-- matching-category -->
@@ -26,16 +24,15 @@
 {% endfor %} <!-- page -->
 </ul>
 </li>
-{% endfor %}
+{% endfor %} <!-- categories -->
 {% for page in sorted_pages %}
 {% if page.url contains include.filter %}
-{% if page.category == empty and page.categories == empty %}
+{% if page.categories.size > 0 or page.category %}
+{% else %}
 {% if include.unpublished == true or page.publish == true %}
 <li>
     <a href="{{ site.baseurl }}{{ page.url }}" {% if page.publish != true %} style="color: gray;"{% endif %}>{{ page.title }}</a>
-    {% for tag in page.tags %}
-    <span class="badge badge-{{ tag }}">{{ tag }}</span>
-    {% endfor %}
+    <span class="badge badge-{{ page.status }}">{{ page.status }}</span>
 </li>
 {% endif %}   <!-- published-p -->
 {% endif %}   <!-- matching-category -->

@@ -2,7 +2,7 @@
 title: Remixing the Planets Testbed
 layout: default
 categories: [war stories]
-tags: [stub]
+status: stub
 ---
 
 ALSO

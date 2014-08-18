@@ -2,7 +2,7 @@
 title: Developing a Robust Migration Workflow for Preserving and Curating Hand-held Media
 layout: default
 categories: Migration
-tags: [draft]
+status: draft
 publish: true
 ---
 

@@ -2,7 +2,7 @@
 title:  Cantor, Countability and the Limits of Significant Properties Schemes
 layout: default
 categories: [fundamentals]
-tags: [stub]
+status: stub
 public: false
 permalink: cantor-countability-and-sig-props.html
 ---

@@ -3,7 +3,7 @@ title:  Reconstruction
 subtitle: Memory and personal history
 layout: default
 categories: [experiments]
-tags: [stub]
+status: stub
 publish: false
 ---
 

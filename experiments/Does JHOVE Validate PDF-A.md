@@ -2,7 +2,7 @@
 title: Does JHOVE Validate PDF/A Files?
 layout: default
 categories: [experiments]
-tags: [draft]
+status: draft
 permalink: "does-jhove-validate-pdfa-files.html"
 publish: true
 ---

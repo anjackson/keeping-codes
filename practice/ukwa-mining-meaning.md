@@ -2,8 +2,8 @@
 title: UKWA Mining Meaning
 subtitle: Methodologies for meaningful data mining of web archives.
 layout: default
-category: Web Archive
-tags: [stub]
+categories: Web Archives
+status: stub
 ---
 
 Biases and correctives.

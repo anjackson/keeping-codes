@@ -12,17 +12,15 @@ All Pages
 ### Experiments
 {% include collectionList.html filter="/experiments/" unpublished=true %}
 
-### Fundamentals
-{% include collectionList.html filter="/fundamentals/" unpublished=true %}
-
 ### War Stories
 {% include collectionList.html filter="/war%20stories/" unpublished=true %}
 
+### Fundamentals
+{% include collectionList.html filter="/fundamentals/" unpublished=true %}
 
-Outlines
---------
+#### Potential Outline
 
-* [Communicating With The Future](fundamentals/Communicating With The Future.html)
+* [Communicating With The Future](Communicating With The Future.html)
 * [The Zeroth Law of Digital Preservation](The Zeroth Law of Digital Preservation.html)
 * [What's so special about digital preservation?](What is Special About Digital Preservation.html)
 * von Neumann Machines
@@ -34,6 +32,10 @@ Outlines
 * [Credible Threats](Credible Threats.html)
 * [Making Plans](Making Plans.html)
 * [How to preserve](How to Preserve.html)
+
+### All Pages
+{% include collectionList.html filter="/" unpublished=true %}
+
 
 Inbox
 -----

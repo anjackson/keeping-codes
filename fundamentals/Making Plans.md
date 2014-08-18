@@ -2,7 +2,7 @@
 title: Making Plans
 layout: default
 categories: [fundamentals]
-tags: [stub]
+status: stub
 publish: false
 ---
 

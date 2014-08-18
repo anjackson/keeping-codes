@@ -2,7 +2,7 @@
 title:  BBC Micro Data Recovery
 layout: default
 categories: [experiments]
-tags: [complete]
+status: complete
 publish: true
 ---
 

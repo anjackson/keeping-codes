@@ -2,7 +2,7 @@
 title:  Press Any Key
 layout: default
 categories: [fundamentals]
-tags: [stub]
+status: stub
 ---
 
 Press Any Key: The Long Version

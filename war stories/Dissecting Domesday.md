@@ -2,7 +2,7 @@
 title: Dissecting Domesday
 layout: default
 categories: [war stories]
-tags: [stub]
+status: stub
 ---
 
 The idea of bringing together the authoritative sources and weighing the risks.

@@ -2,7 +2,7 @@
 title: Archiving the Dynamic Web
 layout: default
 category: Web Archives
-tags: [draft]
+status: draft
 publish: true
 permalink: /practice/archiving-the-dynamic-web.html
 ---

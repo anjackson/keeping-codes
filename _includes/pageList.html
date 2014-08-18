@@ -6,9 +6,7 @@
 {% if include.unpublished == true or page.publish == true %}
 <li>
     <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
-    {% for tag in page.tags %}
-    <span class="badge badge-{{ tag }}">{{ tag }}</span>
-    {% endfor %}
+    <span class="badge badge-{{ page.status }}">{{ page.status }}</span>
 </li>
 {% endif %}   <!-- published-p -->
 {% endif %}   <!-- cat-match-p -->

@@ -2,7 +2,7 @@
 title: Obsolescence in the Web Archive
 layout: default
 category: Web Archives
-tags: [stub]
+status: stub
 publish: true
 ---
 

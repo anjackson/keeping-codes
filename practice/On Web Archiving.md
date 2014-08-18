@@ -2,7 +2,7 @@
 title:  On Web Archiving
 layout: default
 category: Web Archives
-tags: [stub]
+status: stub
 publish: false
 ---
 

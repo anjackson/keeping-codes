@@ -2,7 +2,7 @@
 title: Not a Science
 layout: default
 categories: [fundamentals]
-tags: [stub]
+status: stub
 publish: false
 ---
 

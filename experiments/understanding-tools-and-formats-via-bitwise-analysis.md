@@ -2,7 +2,7 @@
 title: Understanding Tools & Formats Via Bitwise Analysis
 layout: default
 categories: [experiments]
-tags: [complete]
+status: complete
 publish: true
 ---
 

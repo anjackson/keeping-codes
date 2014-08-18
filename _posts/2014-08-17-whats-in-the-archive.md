@@ -1,16 +1,10 @@
 ---
-title: Understanding Our Archives
+title: What's in the archive?
 layout: default
-categories: ["Web Archives", blog]
+categories: ["Web Archives"]
 tags: [complete]
 publish: true
 ---
-
-What do we have
-===============
-
-Understanding Our Archives
---------------------------
 
 How much of the HTML is our archives is valid HTML? This question came up on the IIPC Members mailing list recently, and despite it's apparently simplicity, this turns to be a rather difficult question to answer. 
 

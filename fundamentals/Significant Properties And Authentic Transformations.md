@@ -2,7 +2,7 @@
 title:  Significant Properties And Authentic Transformations
 layout: default
 categories: [fundamentals]
-tags: [outline]
+status: outline
 ---
 
 * Significant properties - content properties not relevant. Dependency analysis and critical characterisation role. For content, in future, eye of stakeholder means users should be able to express format preference.

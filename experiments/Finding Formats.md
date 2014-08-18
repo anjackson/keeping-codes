@@ -2,7 +2,7 @@
 title: Finding Formats
 layout: default
 categories: [experiments]
-tags: [stub]
+status: stub
 publish: false
 ---
 

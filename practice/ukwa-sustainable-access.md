@@ -2,7 +2,7 @@
 title: UKWA Sustainable Access Plan
 layout: default
 category: Web Archives
-tags: [stub]
+status: stub
 ---
 
 > The themes of the 2014 TPDL/JCDL combined conference will follow the theme of ‘preserving the past - finding the future’. Digital collections face two major challenges: organising and conserving material across time, and enabling users to discover the material they need in increasingly large collections. In terms of ‘preserving the past’, example issues include the demands of digitisation of physical materials, the digital preservation of material so it remains acessible, and the systematic classification and indexation of large collections across social and technological change.

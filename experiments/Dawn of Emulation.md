@@ -2,7 +2,7 @@
 title: Dawn of Emulation
 layout: default
 categories: [experiments]
-tags: [outline]
+status: outline
 publish: true
 ---
 

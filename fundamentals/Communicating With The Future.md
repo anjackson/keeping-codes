@@ -2,7 +2,7 @@
 title: Communicating with the Future
 layout: default
 categories: [fundamentals]
-tags: [outline]
+status: outline
 permalink: communicating-with-the-future.html
 ---
 
@@ -159,6 +159,7 @@ So, this section lays basic theoretical groundwork, and touch upon all the main 
 Follow-on sections break this down:
 - Codes, i.e. Chomsky heirarchy and its applications.
 - Siginificant Properties paradox and resolution (possibly part of the above).
+- Siginificant Properties and [Common Carrier](https://en.wikipedia.org/wiki/Common_carrier) status.
 - Validation and the Halting Problem.
 - Entropy, Compression and RI
 

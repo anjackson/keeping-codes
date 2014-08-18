@@ -2,7 +2,7 @@
 title: What Do We Need
 layout: default
 category: Requirments
-tags: [stub]
+status: stub
 ---
 
 The Registries We Need

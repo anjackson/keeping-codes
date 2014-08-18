@@ -2,7 +2,7 @@
 title: What to Preserve?
 layout: default
 categories: [fundamentals]
-tags: [stub]
+status: stub
 publish: false
 ---
 

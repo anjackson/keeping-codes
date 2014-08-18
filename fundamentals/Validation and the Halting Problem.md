@@ -2,7 +2,7 @@
 title: Validation and the Halting Problem
 layout: default
 categories: [fundamentals]
-tags: [outline]
+status: outline
 ---
 
 Validation and the Halting Problem

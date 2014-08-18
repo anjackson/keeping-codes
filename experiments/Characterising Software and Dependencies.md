@@ -2,7 +2,7 @@
 title: Characterising Software & Dependencies
 layout: default
 categories: [experiments]
-tags: [stub]
+status: stub
 publish: true
 ---
 

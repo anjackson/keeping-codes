@@ -2,7 +2,7 @@
 title: Characterising PDFs
 layout: default
 categories: [war stories]
-tags: [stub]
+status: stub
 ---
 
 Note Sumatra PDF, no support for Thumbs or Fast View. Other things missing?
