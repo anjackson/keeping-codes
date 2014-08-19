@@ -21,7 +21,12 @@ KEEP VM http://www.keep-project.eu/downloads/training/09kvm.pdf
 etc.
 XCL has basically the same flaw.
 
+Time travel - Passive history is needed too.
 
+Preserve the Mona Lisa by duplication? Delete the original?
+
+* The Performance Spectrum, just the one.
+** http://notepad.benfinoradin.info/2012/08/28/take-a-picture/
 
 
 

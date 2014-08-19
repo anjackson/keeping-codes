@@ -22,3 +22,5 @@ http://www.library.cornell.edu/iris/tutorial/dpm/oldmedia/obsolescence1.html
 - The solution to every DP problem is a new project from scratch. This time we'll get it right! (from-scratch solutions)
 - The basic problem is solved.
 - RI needs and processes they support ... 
+- BLOG: IT's not that cheap or easy - BBC Archive/Shutdown issue <http://www.wired.co.uk/news/archive/2011-02/11/bbc-torrent-archive-websites> <http://www.webcitation.org/60lBTX2oN>
+* Trust http://en.wikipedia.org/wiki/Source_criticism

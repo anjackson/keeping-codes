@@ -12,6 +12,16 @@ A while ago...
 > JHOVE "approaching the end of its life": sourceforge.net/p/jhove/bugs/5… Makes me wonder about long-term implications for its user community?
 > https://twitter.com/bitsgalore/status/382085810796781568
 
+- Digital Preservation Software's Usability Problem
+    - Based on https://twitter.com/benfinoradin/status/490166741855506432
+
+ - OPF: Blog on other systems and similarities:
+   - [http://www.naa.gov.au/records-management/secure-and-store/e-preservation/at-naa/software.aspx][7] 
+   - Each has a plug-in architecture, each has a new GUI, need to share....
+   - [http://inkdroid.org/journal/2010/08/24/notes-on-retooling-libraries/][8] 
+
+
+
 More recently:
 
 My first though was to see if an organisation like OPF would take on stewardship of the code, but a pithy tweet from dericed reminded me that there are some serious problems with our characterisation tools.
@@ -109,6 +119,17 @@ Strict Conformance Hierarchy would make this clear.
 Related: [My quest to learn the Dvorak keyboard layout, the grand finale](http://arstechnica.com/gadgets/2014/04/my-quest-to-learn-the-dvorak-keyboard-layout-the-grand-finale/)
 
 Related: [Misunderstanding Metadata](http://erikpiil.com/2014/07/08/misunderstanding-meta/)
+
+
+Full decomposition of Identification and RI?
+
+RI - IDs - (identify) - TestFiles - (create) - Software - (implements) - RI
+RI - (validate) - Testfiles
+
+So, Fido etc manage identifiers, and link to RI about formats.
+Identifiers also come with test documents, which describe the SW that created them.
+RI has unique IDs and links to information about SW.
+RI includes specifications that Validators validate objects against.
 
 
 Funding Open Source Tools

@@ -1,0 +1,1 @@
+{% for page in site.pages %}{% if page.path contains include.page %}<a href="{{ site.baseurl}}{{ page.url }}">{{ page.title }}</a>{% endif %}{% endfor %}

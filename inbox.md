@@ -28,6 +28,8 @@ layout: default
 ## TODO
 
 * Space-time plots for digital preservation as communications. 
+* [IDCC15 Call For Papers](http://www.dcc.ac.uk/events/idcc15/call-papers), due 13th October 2014.
+* [RESAW Call For Papers](http://resaw.eu/events/international-conference-aarhus-june-2015/), due 8th December 2014.
 
 ### Ideas for Longwrites
 

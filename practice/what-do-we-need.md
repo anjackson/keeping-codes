@@ -8,6 +8,25 @@ status: stub
 The Registries We Need
 ======================
 
+- What's wrong with PRONOM
+    - Lack of parent-child relationships: http://www.openplanetsfoundation.org/blogs/2011-08-28-fmt-78910
+    - Close ties to DROID
+    - Vague definition of format. OOXML Strict/Transitional? Creating software version or version or intended software version. No link to SW. Most records nearly empty, so it's just the signature and a couple of strings.
+    - Poor community sourcing tools.
+    - No separation of signatures and identifiers.
+    - Opaque management decisions.
+    - Too many false negatives:
+      - Partially validates content
+      - Truncated JP2s or PDFs.
+    - lowerPriorityThan is hard to tune with weak signatures. Global priority is easier and simpler.
+    - No text/plain heuristic.
+    - Encourages use of a insufficiently expressive format language.
+- Unpopular opinions about format registries
+    - The 'magic numbers' do not belong in there. (Magic is not just Magic, and is contextual)
+    - Linked Data brings little to the table. (also a magic-composition problem (see above))
+    - The contents of PRONOM do not belong in there. (you just gave yourself a data synchronisation problem)
+- OR Focus on what I'm doing instead. Data mining approach, comparing engines, and auto-sig etc.
+
 To go through
 
 http://notepad.benfinoradin.info/2013/09/12/it-takes-a-village-to-save-a-hard-drive/
