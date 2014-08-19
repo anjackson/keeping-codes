@@ -146,6 +146,19 @@ Lots of choices, but before leaping to conclusions, we need to consider who will
 
 LINK TO [A perfect digital preservation experiment](A Perfect Digital Preservation Experiment.html)
 
+Designing a RCT for DP
+- imagine what a auitable RCT would look like
+- reverse engineer closest approximation
+- argue that TB (and actually pt) are cargo cult science post hoc rationalisation of the first bit only. e.g. modelled on paper, not true process, maps one experiment to one decision,which is unrealistic, as a theory is usually supported by multiple experiments.
+- Pt non random sampling as danger
+- Strategy, action and then implementation to be chosen separately?
+- Current framework evaluates whether the action was implemented well, rather than whether it succeeds in it's aim of preserving digital material. The critical issues, of whether the significant properties you chose are truly significant, are poorly addressed.
+- The most important decisions - what strategies shall we consider and why? what significant properties will we use and why? - are not actually documented explicitly.
+- This is not a case of theory, but of values, as the basic 'theory' is known (not speculation to be tested). Which PA should be lead by rich understanding of the choices and evaluation should focus on distinguishing those choices rather than their implementation.
+- http://en.wikipedia.org/wiki/Design_of_experiments, http://en.wikipedia.org/wiki/Multivariate_testing, RCTs, A/B testing, 
+Go back and check Delos paper
+See also trial registries http://blogs.worldbank.org/impactevaluations/what-can-we-learn-from-medicine-three-mistakes-to-avoid-when-designing-a-trial-registry-guest-post-b
+
 Which should reveal the critical role of users etc.
 
 

@@ -179,6 +179,18 @@ Broken bits
 - [File Format Actions Plans](http://blogs.loc.gov/digitalpreservation/2014/01/file-format-action-plans-in-theory-and-practice/) and paying for just-in-case preservation actions (what are the costs).
 
 
+Fundamentals of DP
+- The Zeroth Preservation Action: Save As...
+- Significant Property Schemes 
+- Data And Metadata
+- The Stack
+- Migrations And Emulations
+- Choosing the performances: wikipedia black out case study
+- Halting problem and the space of all future models equals the no superset problem
+- CAP Theorem and consequences : http://queue.acm.org/detail.cfm?id=2610533 etc.
+
+
+
 http://www.avpreserve.com/blog/the-100-year-lie-and-the-lay-of-the-shelf/
 
 [1]: https://en.wikipedia.org/wiki/Book:Thermodynamics

@@ -3,8 +3,7 @@ title: Defining Format
 layout: default
 category: "Format"
 status: stub
-publish: true
-permalink: "defining-format.html"
+publish: false
 ---
 
 > __GOAL__

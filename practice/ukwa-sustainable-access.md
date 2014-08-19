@@ -3,6 +3,7 @@ title: UKWA Sustainable Access Plan
 layout: default
 category: Web Archives
 status: stub
+tags: ["Requirements for Tools"]
 ---
 
 > The themes of the 2014 TPDL/JCDL combined conference will follow the theme of ‘preserving the past - finding the future’. Digital collections face two major challenges: organising and conserving material across time, and enabling users to discover the material they need in increasingly large collections. In terms of ‘preserving the past’, example issues include the demands of digitisation of physical materials, the digital preservation of material so it remains acessible, and the systematic classification and indexation of large collections across social and technological change.
@@ -135,4 +136,24 @@ OpenWayback
 ===========
 
 How contributions model should work.
+
+
+Paper on LDWA
+=============
+- oais as rep model not digital preservation
+- Js  stuff
+- Storage scaling 
+- Characterisation as core problem
+- Silly restrictions
+- User feedback to judge SIG prop
+- Reindexing as bau, hence cluster but any performing chechsumming store could piggyback 
+- Linear implied discovery model of oais as painfully wrong
+- Catalogue data as derivative data plus annotations
+Loop of evaluation at dip stage to PACT preservation actions
+Actually linked to stakeholders rather than lone decision maker
+Cost rise over time plateau's at 'complete reverse engineering'? Or infinite because of what you are forced to guess
+Instead of guessing what they'll need, collect evidence to validate the approach.
+Web archive to keep thumbnails, screenshots, Dom trees? Render traces?
+
+
 

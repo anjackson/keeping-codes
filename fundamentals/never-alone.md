@@ -12,6 +12,11 @@ About how other groups fight the same battle under different banners (against lo
 
 About the remaining problems, and the role memory organizations can play by given permanence to the efforts of others.
 
+ - Work with [National Digital Stewardship Alliance](http://www.digitalpreservation.gov/ndsa/)
+ - [sustaining software effort.](http://www.software.ac.uk/SustainingSoftware.html)  
+ - Join w3c (7,800 EUR per year!) and make it better. See also <http://lists.w3.org/Archives/Public/public-html/>
+
+
 
 * [Capptivate: a site capturing apps before they disappear forever][1]
 

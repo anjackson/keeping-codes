@@ -4,6 +4,7 @@ layout: default
 categories: What We Need
 status: complete
 publish: true
+tags: ["Requirements for Tools"]
 ---
 
 The [recent release][1] of a new checksumming tool, [Fixity][2], reminds me of some of the issues I faced a few years ago when trying to work out ways of pushing the checksumming process further up the ingest chain. 

@@ -16,6 +16,23 @@ http://discovery.ucl.ac.uk/1318039/
 
 http://blogs.loc.gov/digitalpreservation/2012/10/the-is-of-the-digital-object-and-the-is-of-the-artifact/
 
+Neither Significance Nor Properties
+- Significant Properties and the DOPWG
+- See http://www.planets-project.eu/private/pages/wiki/index.php/User:Andrewj/To_Do/Properties
+
+Sig props and format
+- Ce nest par un object numerique
+- Our designated communities are already choosing which properties are significant, and expressing that through their choice of format. Our first task, therefore, is to listen.
+- Then encourage, protect, refine, converge, champion, etc
+
+* Significant properties - content properties not the priority.
+   * Dependency analysis and critical characterisation role
+   * For content, in future, eye of stakeholder means users should be able to express format preference.
+
+> "The need therefore is for some form of lossy compression at the semantic level."
+> <http://blog.dshr.org/2014/05/on-economics-of-throwing-stuff-away.html>
+
+
 Insignificant properties
 ------------------------
 

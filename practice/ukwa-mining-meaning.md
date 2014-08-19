@@ -94,3 +94,18 @@ And so, where this consensus might apply to you, this allows search engines to a
 As an aside, I suspect that this is why Google (among others) are so keen on authentic identities on the web. By trying to keep the social networks free of the false accounts that are the usual tool of spammers or trolls, they are attempting to prevent the arms race that has dogged them this far.
 
  is that the authentic opinions of individuals building things on the web will 
+
+
+Data Mining Methodology
+-----------------------
+The emphasis on big data and statistical analysis in cultural and social contexts makes me uneasy. There is no 'noise' in humanities data sets. There are only silenced voices.
+The direct adoption of big data/statistical methods makes me uneasy. There is no 'noise' in humanities data. There are only silenced voices.
+
+Other: false positive scaling problem http://mobile.theverge.com/2012/10/28/3567048/carnegie-mellon-video-surveillance-action-recognition
+
+- Every data point is a thought, a mind, etc
+- Those future users who will, with tears in there eyes, click Save As...
+- Publishers memory to truly a national memory. Our people's memory
+- Archives of emotion
+
+
