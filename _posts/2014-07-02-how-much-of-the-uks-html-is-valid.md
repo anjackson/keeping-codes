@@ -1,9 +1,8 @@
 ---
 title: How much of the UK's HTML is valid?
 layout: default
-categories: ["Web Archives", blog]
+categories: ["Web Archives"]
 tags: [complete]
-publish: true
 ---
 
 First published at <http://britishlibrary.typepad.co.uk/webarchive/2014/07/how-much-of-the-uk-html-is-valid.html>
