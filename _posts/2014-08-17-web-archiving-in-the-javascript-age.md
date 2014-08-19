@@ -4,7 +4,6 @@ layout: default
 categories: ["Web Archives", blog]
 tags: [complete]
 publish: false
-permalink: web-archiving-in-the-javascript-age.html
 ---
 
 First published at 
@@ -17,7 +16,7 @@ In particular, he discusses one of the central challenges of the Age Of JavaScri
 
 To give you an idea of the problem, the following graph shows how the usage of the &lt;script> tag has varied over time:
 
-![The percentage of archived pages that use the &lt;script> tag, over time.](images/script-tag-over-time-sml.png)
+![The percentage of archived pages that use the &lt;script> tag, over time.]({{ site.baseurl }}/images/script-tag-over-time-sml.png)
 
 In 1995, almost no pages used the &lt;script> tag, but fifteen years later, over 95% of web pages require JavaScript. This has been a massive sea-change in the nature of the world wide web, and web archives have had to react to it or face irrelevance.
 
@@ -25,7 +24,7 @@ For example, for the Internet Archive's [Archive-It Service](https://archive-it.
 
 We use a similar system during out crawls, including domain crawls. However, rendering web pages takes time and resources, so we don't render every single URL of the billions in each domain crawl. Instead, we render all host home-pages, and we render the 'catalogued' URLs that our curators have indicated are of particular interest. The architecture is similar to that used by Umbra, based around our own [page rendering service](https://github.com/ukwa/django-phantomjs).
 
-We've been doing this since the first domain crawl in 2013, and so this seems to one area where the web archives are ahead of Google and their attempts to [understand web pages better](http://googlewebmastercentral.blogspot.co.uk/2014/05/understanding-web-pages-better.html). 
+We've been doing this since the first domain crawl in 2013, and so this seems to be one area where the web archives are ahead of Google and their attempts to [understand web pages better](http://googlewebmastercentral.blogspot.co.uk/2014/05/understanding-web-pages-better.html). 
 
 Furthermore, given we are having to render the pages anyway, we have used this as an opportunity to take screenshots of the original web pages during the crawl, and to add those screenshots to the archival store (we'll cover more of the details on that in a later blog post). This means we are in a much better position to evaluate any future preservation actions we might require to reconstruct the rendering process, and we expect these historical screenshots to be of great interest to the researchers of the future.
 

@@ -1,5 +1,6 @@
 highlighter: pygments
 relative_permalinks: true
+permalink: /blog/:year/:month/:day/:title
 markdown: kramdown
 baseurl: /keeping-codes
 

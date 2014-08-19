@@ -18,8 +18,14 @@ All Pages
 ### Fundamentals
 {% include collectionList.html filter="/fundamentals/" unpublished=true %}
 
-### All Pages
-{% include collectionList.html filter="/" unpublished=true %}
+
+Blog Posts
+----------
+<ul>
+{% for post in site.posts %}
+<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>: <small><strong>{{ post.date | date: "%B %e, %Y" }}</strong> . {{ post.category }}</small></li>
+{% endfor %} 
+</ul>
 
 
 Inbox

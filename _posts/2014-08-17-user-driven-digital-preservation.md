@@ -4,7 +4,6 @@ layout: default
 categories: ["Web Archives", blog]
 tags: [complete]
 publish: false
-permalink: user-driven-digital-preservation.html
 ---
 
 First published at

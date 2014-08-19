@@ -4,7 +4,6 @@ layout: default
 categories: ["Web Archives", blog]
 tags: [complete]
 publish: true
-permalink: "how-much-uk-html-is-valid.html"
 ---
 
 First published at <http://britishlibrary.typepad.co.uk/webarchive/2014/07/how-much-of-the-uk-html-is-valid.html>
@@ -15,7 +14,8 @@ How much of the HTML in the UK web archive is valid HTML? Despite its
 apparent simplicity, this turns to be a rather difficult question to
 answer.
 
-**What is valid HTML anyway?**\
+## What is valid HTML anyway?
+
 What do we mean by valid?
 
 Certainly, the [W3C](http://www.w3.org/) works to create appropriate
@@ -48,7 +48,8 @@ out validation at scale. Based on this understanding of the costs and
 benefits, we do not routinely run validation processes over our web
 archives.
 
-**What can we look for?**\
+## What can we look for?
+
 However, we do process our archives in order to index the text from the
 resources. As each format stores text differently, we have to perform
 different processes to extract the text from HTML versus, say, a PDF or
@@ -75,13 +76,14 @@ HTML page, and so those documents that Tika identifies as HTML, but
 DROID does not, forms a reasonable estimate of the lower-bound of the
 percentage of invalid HTML in the collection.
 
-**Results**\
+## Results
+
 Based on two thirds of our 1996-2010 collection (a randomly-selected
 subset containing 1.7 billion of about 2.5 billion resources hosted from
 \*.uk), we've determined the DROID 'misses' as a percentage of the Tika
 'hits' for HTML, year by year, here:
 
-[![Droid-vs-tikka02](./images/6a00d8341c464853ef01a73de4b4eb970d-pi "Droid-vs-tikka02")](./images/6a00d8341c464853ef01a73de4b4eb970d-pi)
+[![Droid-vs-tikka02]({{ site.baseurl}}/images/6a00d8341c464853ef01a73de4b4eb970d-500wi "Droid-vs-tikka02")]({{ site.baseurl}}/images/6a00d8341c464853ef01a73de4b4eb970d-500wi)
 
 From there one can see that pre-2000, at least ten percent of the
 archived HTML is *so* malformed that it's difficult to *even identify it
@@ -91,8 +93,9 @@ data only contains a few hundred resources). Post-2000 the fraction of
 'misses' has dropped significantly and as of 2010 appears to be around
 1%.
 
-**What next?\
-**While it is certainly good news that we can reliably identify 99% of
+## What next?
+
+While it is certainly good news that we can reliably identify 99% of
 the HTML on the contemporary web, neither Tika nor DROID perform proper
 validation, and the larger question goes unanswered. While 1% of the
 current web is certainly invalid, we know from experience that the
