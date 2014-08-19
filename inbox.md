@@ -23,7 +23,7 @@ Blog Posts
 ----------
 <ul>
 {% for post in site.posts %}
-<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>: <small><strong>{{ post.date | date: "%B %e, %Y" }}</strong> . {{ post.category }}</small></li>
+<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>: <small><strong>{{ post.date | date: "%B %e, %Y" }}</strong> . {{ post.category }} </small><span class="badge badge-{{ post.status }}">{{ post.status }}</span></li>
 {% endfor %} 
 </ul>
 

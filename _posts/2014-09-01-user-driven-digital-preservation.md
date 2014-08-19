@@ -1,7 +1,8 @@
 ---
 title: User-Driven Digital Preservation
-categories: ["Web Archives"]
-tags: [complete]
+category: Practice
+tags: ["Web Archives"]
+status: complete
 ---
 
 First published at

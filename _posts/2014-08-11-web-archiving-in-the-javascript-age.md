@@ -1,8 +1,9 @@
 ---
 title: Web Archiving In The JavaScript Age
 layout: default
-categories: ["Web Archives", blog]
-tags: [complete]
+category: Practice
+tags: ["Web Archives"]
+status: complete
 ---
 
 First published at <http://britishlibrary.typepad.co.uk/webarchive/2014/08/web-archiving-in-the-javascript-age.html>
