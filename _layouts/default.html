@@ -71,9 +71,6 @@
         <div id="main">
         {{ content }}
 
-        {% for cat in page.categories %}
-          <a href="{{ site.baseurl }}/#{{ cat }}"><span class="badge badge-info pull-right">{{ cat }}</span></a>
-        {% endfor %}
         <a href="{{ site.baseurl }}/#{{ page.category }}"><span class="badge badge-info pull-right">{{ page.category }}</span></a>
 
         <div id="footer"> 
