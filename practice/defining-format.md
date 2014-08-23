@@ -170,6 +170,13 @@ HTML with JavaScript, etc.
 
 Link to software feature dependency.
 
+## NOTES
+
+Bitstream, software association first.
+Bitstream ensemble can depend on minutiae, so we can't get it right from the start. But we can split the tree as we need.
+
+The bit streams we see depend only on the creation process. 
+We can keep 'how does Y cope' separate.
 
 
 

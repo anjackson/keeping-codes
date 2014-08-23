@@ -159,10 +159,49 @@ Balance between the queues and the state (e.g. Cassandra/HBase is less clear now
 * BOLT: Download resource (embedded browser OR old-style GET):
     * BOLT: Record success in State.
     * BOLT: Append to WARC (if old-style).
+        * Can't do that as involves serialising the whole response.
     * BOLT: Extract links:
         * BOLT: Check links against State, and DecideRules, and Enqueue if crawl is due.
             * BOLT: Record link discovery in State.
 
+
+As most of the process is serial and required, little benefit in large numbers of bolts for the sake of it. However, it makes sense to use separate bolts for processes with different I/O dependencies, so these can be tuned independently. e.g. coupling with HBase etc.
+
+* IN
+    * RabbitMQ:
+        * system action queue (highest priority for processing)
+        * high-priority URL queue
+        * standard-priority URL queues by host
+        * Initially filled with seeds by a separate process.
+    * HBase or Cassandra:
+        * ('State'/'State DB')
+        * Contains the URL crawl history.
+* SPOUT: 
+    * Watch the queues, in priority order, occasionally skipping down to avoid total queue backlog.
+    * So, spout is doing the quotas and queue rotation.
+    * Also a command queue that can pause things etc.
+    * ACTIONS:
+        * Start
+        * Pause
+        * Shutdown
+        * Enqueue(url,priority)
+        * PauseHost(host)
+    * BOLT: Crawl URL
+        * DISTRIBUTE: URLs grouped on Host. +isSeed
+        * Look up last known Crawl-Delay and last known crawl timestamp for Host.
+        * Wait until time has passed before emitting.
+        * Download resource (embedded browser OR old-style):
+        * IF old-style: append Records to WARC file.
+        * Extract links.
+        * BOLT: Update Crawl History
+            * DISTRIBUTE: Random
+            * Record outcome in State DB.
+            * If successful, includes WARC+offset ID.
+        * BOLT: Enqueue(url, priority)
+            * DISTRIBUTE: Random
+            * Check links against State, and DecideRules, and Enqueue if crawl is due.
+            * Record link discovery + decision in State.
+        * ACK now that we've finished all processing.
 
 See also
 

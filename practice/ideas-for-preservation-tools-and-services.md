@@ -2,11 +2,20 @@
 title: Ideas For Preservation Tools & Services
 ---
 
+Digipres service outline
+- cloud characterisation/forensics
+- tool tests and tracking
+- training resources - online courses in particular 
+- preservation FS
+- überconverter 
+- Gatherer - suck format/software association data out of operating systems and publish it.
 
 UberConverter
 -------------
 
 <http://docs.deis.io/en/latest/>
+
+
 
 A Safer Shell
 -------------

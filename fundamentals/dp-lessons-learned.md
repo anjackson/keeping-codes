@@ -1,6 +1,31 @@
 ---
-title: DP Myths
+title: Digital Preservatioz`n Lessons Learned
 ---
+
+Potential memory institution role as habitat, as ecosystem support that helps open RI flourish and helps it to be sustained.
+
+We can't preserve it unless the licence permit us to do so.
+
+We cannot do this alone, but we do not have to. 
+
+Work together, some working with vendors to open up old stuff.
+
+Discovery, ensuring existing tools are known and exploited as appropriate. Minimise reinvention of the wheel.
+
+Open source fundamentally changed digital preservation.
+
+Impossible problems (due to secrets and licences, the latter being the worst as it may mean that even if reverse engineering is done, we can't use it, and it's hard to know you've done it right) are replaced with merely difficult problems (can you get this piece of sw to build, or run, it know someone who can?). 
+
+HTML, jpeg, gif, Png, jp2, ...
+
+PDF, DOC/X, etc. very capable open source implementations, but some gaps.
+
+Pages etc.
+
+ODF, eBooks battlegrounds of closed and open standards.
+
+
+
 
 - The AIP Is Finished (OAIS interpretation issue)
 - Significant Property Schemes Will Save Us (Sig Prop interp issue)

@@ -25,13 +25,40 @@ layout: default
 </ul>
 
 
-## TODO
+## Ideas
 
 * Space-time plots for digital preservation as communications. 
-* [IDCC15 Call For Papers](http://www.dcc.ac.uk/events/idcc15/call-papers), due 13th October 2014.
-* [RESAW Call For Papers](http://resaw.eu/events/international-conference-aarhus-june-2015/), due 8th December 2014.
+* [IDCC15 Call For Papers](http://www.dcc.ac.uk/events/idcc15/call-papers)
+    * Due 13th October 2014.
+    * 10 pages (Research or Practice Papers) or one-page abstract (5 min presentation) Data Papers.
+    * Themes:
+        * A decade of data curation -- Papers should reflect on the developments that have taken place in the area of digital curation over the past ten years, and the implications these have for the future; reflections and synthesis of what has happened are welcome but all should aim to draw on this to identify future and current perspectives and action:
+			* Whatever happened to...?
+			* What were the lasting trends and passing phases?
+			* What lessons have we learned?
+			* What are the major advances that have been made?
+			* What are the next big challenges we need to tackle?
+        * Curation Infrastructure -- Papers should describe institutional, consortia, national or international infrastructure supporting digital curation and research data management:
+            * Tools, systems and services that are in development
+			* Evaluations of existing tools
+			* Proposals for new approaches to large-scale service delivery
+			* Cutting edge research and exploration into new curation methods
+		* Working with challenging data -- Papers should discuss work with particularly challenging or specialist forms of data:
+    		* Data on a large scale – big data or large collections of long tail data
+    		* Complex data, models and formats
+    		* Disciplinary data
+    * Ideas:
+    	* Lessons Learned From Ten Years Of Digital Preservation -- essentially a DP Myths papers, but reframing as lessons learned as an attempt to gain more traction. Also includes "Whatever happend to Significant Properties". Challenges around representing minorities (mobile phone economics etc.), mid-value niches (Pages), not obsolescence itself, 
+* [Web Archives as scholarly Sources: Issues, Practices and Perspectives -- Call For Papers](http://resaw.eu/events/international-conference-aarhus-june-2015/)
+    * Due 8th December 2014.
+    * 1,500 words (short) or 2,500 words (long).
+    * Themes:
+        * research methods for studying the archived web
+        * the evolution of language on the web
+        * the history(ies) of the web
+        * the changing structure of the web
 
-### Ideas for Longwrites
+### Longwrites
 
 * Practice
     * Ref from Bitwiser: Good practice and Quirks Mode
