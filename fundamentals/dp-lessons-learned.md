@@ -1,5 +1,5 @@
 ---
-title: Digital Preservatioz`n Lessons Learned
+title: Digital Preservation Lessons Learned 
 ---
 
 Potential memory institution role as habitat, as ecosystem support that helps open RI flourish and helps it to be sustained.
