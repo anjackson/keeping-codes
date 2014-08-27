@@ -60,7 +60,7 @@ We also added support for [VRML1 and VRML97](http://en.wikipedia.org/wiki/VRML),
 
 ### The Future Of Interject
 
-Each format we decide to support adds an additional development and maintenance burden, and so it is not clear how sustainable this approach will be in the long term if we work alone. This is one of the reasons why [Interject is open source](https://github.com/ukwa/interject), and we would be very happy to receive ideas or contributions from other individuals and organisations. 
+Each format we decide to support adds an additional development and maintenance burden, and so it is not clear how sustainable this approach will be in the long term if we work alone. This is one of the reasons why [Interject is open source](https://github.com/ukwa/interject), and we would be very happy to receive [ideas](http://www.webarchive.org.uk/ukwa/info/contact) or [contributions](https://github.com/ukwa/interject/pulls) from other individuals and organisations. 
 
 ### Letting Users Lead The Way
 
