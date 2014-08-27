@@ -47,6 +47,19 @@ when I doubt there's any consensus on the "Humanities".
 Almost as much fun as all that malarky about defining "Digital Humanities".
 Somehow with the implication that if you can't define it you shouldn't be taken seriously.
 
+Outline
+=======
+
+* Two-fold challenges:
+    * Indexing large collections
+    * Suitable for analytics
+* Indexing strategies:
+    * Indexing into HDFS
+    * Handling deduplication.
+ * Preservation Features
+    * Format and risk scanning included.
+ * c.f. Sustainable Access writing.
+
 Twisted Timelines
 =================
 

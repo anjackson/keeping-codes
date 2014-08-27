@@ -4,10 +4,9 @@ title: Blog Ideas
 
 ## One Liners
 
-<https://intranet.bl.uk:8443/confluence/pages/viewpage.action?pageId=139630062>
-
 - CDX Dataset
 - Finish off half-life 1000 once Solr is fixed. Then BLOG.
+- [Domain crawl graphs](https://intranet.bl.uk:8443/confluence/pages/viewpage.action?pageId=139630062)
 - CC License adoption
 - Don't &lt;blink> -- obsolete elements from the web archives
     - Plus &lt;marquee>  ... ?

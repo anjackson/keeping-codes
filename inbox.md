@@ -73,6 +73,7 @@ layout: default
         * Mining Meaning 
             * Making sense of 2 billion fragments of UK web history. Issues of interpretation and context etc.
 
+
 ### Longwrites
 
 * Practice
@@ -88,10 +89,10 @@ layout: default
 * Sources: W3ACT, Monitrix, The crawl, OpenWayback?
 * Pull in requirements and issues, AIT stuff.
 * Pull in Monitrix, BDT, IMAQA, WAT Mining.
-* <http://anjackson.net/book/export/html/1836>
-* <http://sourceforge.net/p/xcltools/code/HEAD/tree/>
-* <http://wiki.opf-labs.org/display/SP/Capturing+Properties>
-* <https://intranet.bl.uk:8443/confluence/display/DT/Representation+Information+Capture+Project>
+* [anjackson.net book](http://anjackson.net/book/export/html/1836)
+* [xcltools HEAD](http://sourceforge.net/p/xcltools/code/HEAD/tree/)
+* [Capturing Properties](http://wiki.opf-labs.org/display/SP/Capturing+Properties)
+* [INTRANET: Capturing Properties](https://intranet.bl.uk:8443/confluence/display/DT/Representation+Information+Capture+Project)
 
 
 

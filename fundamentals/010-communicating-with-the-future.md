@@ -51,15 +51,15 @@ In the field of [thermodynamics][1], there was a law so obvious, so taken for gr
 
 I believe that the field of digital preservation has followed a similar path, and that the mathematical theory of communication that began with [Claude Shannon's][3] [seminal work from the 1948][4] is so fundamental to every single digital preservation system and concept we have been using. In short, that Shannon's [noisy-channel coding theorem][5] should be considered our Zeroth Law.
 
+Set the scene, describe source coding theorem, and describe our 'channels'... 
+
 ![Shannon's communication model](images/Shannon_communication_system.svg)
 
-An information source that produces a message
-A transmitter that operates on the message to create a signal which can be sent through a channel
-A channel, which is the medium over which the signal, carrying the information that composes the message, is sent
-A receiver, which transforms the signal back into the message intended for delivery
-A destination, which can be a person or a machine, for whom or which the message is intended
-
-Set the scene, describe source coding theorem, and describe our 'channels'. 
+* An information source that produces a message
+* A transmitter that operates on the message to create a signal which can be sent through a channel
+* A channel, which is the medium over which the signal, carrying the information that composes the message, is sent
+* A receiver, which transforms the signal back into the message intended for delivery
+* A destination, which can be a person or a machine, for whom or which the message is intended
 
 ...
 

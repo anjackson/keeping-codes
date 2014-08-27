@@ -160,5 +160,9 @@ Cost rise over time plateau's at 'complete reverse engineering'? Or infinite bec
 Instead of guessing what they'll need, collect evidence to validate the approach.
 Web archive to keep thumbnails, screenshots, Dom trees? Render traces?
 
-
+Services - can we make these services sustainable:
+- Bookmarks
+- Curation of the web
+- Annotations
+- Page change notifications, a la https://visualping.io/ https://monitorbook.com/
 
