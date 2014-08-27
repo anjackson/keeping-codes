@@ -6,7 +6,7 @@ tags: ["Web Archives"]
 status: complete
 ---
 
-First published at <http://britishlibrary.typepad.co.uk/webarchive/2014/08/web-archiving-in-the-javascript-age.html>
+First published [on the UK Web Archive blog](http://britishlibrary.typepad.co.uk/webarchive/2014/08/web-archiving-in-the-javascript-age.html).
 
 ---
 
