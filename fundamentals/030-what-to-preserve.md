@@ -198,4 +198,32 @@ Real value/risk is still there:
 - That story about audio masters for Mac plugins
 - Keynote
 
+Vendor/Consumer relationship
+
+http://www.avpreserve.com/blog/preservation-fragments-1/
+
+### Vendor Obsolescence ###
+
+IE6, SilverLight, Flash?
+
+* <http://blog.colbyrabideau.com/post/8317497197/i-dont-know-how-to-ie6>
+* <http://arstechnica.com/microsoft/news/2010/11/silverlight-html5-and-microsofts-opaque-development-strategy.ars>
+* <http://www.guardian.co.uk/technology/2011/jun/14/microsoft-windows-8-developers>
+* <http://www.zdnet.com/blog/microsoft/microsoft-needs-to-tell-windows-8-developers-now-about-jupiter-and-silverlight/9608>
+* <http://www.theregister.co.uk/2011/06/06/windows_tablets_without_silverlight_dot_net/>
+
+Vendors, communities and trust
+
+-The enthusilasts will be the ones who save us, who are right no biolding the towers flog tepees gain information that thefuure will need to reconstruct t IRS past.
+- Also, many institutions hands are tied by the law or he fear of it. The enthusiatst carry on, generally safe from prosecution while non commercial. 
+- So how do we trust them? How do we build this expertise into our systems
+- Earlier
+- A comment by a sceneor manager made me realise that, as things are now, vendor onsolcsnce is a real risk. The only route to establishing a access system relies on extren vendrs. 
+- I took it for granted that an institution like the bl would maintain the people it needs to undrstans it's own content. Surely no memory institution could expect to function without the people and code that embody the undrstansibg? We could not function without staff that understand paper, why should digital be different?
+- Economics, skills, etc
+- But also, contractual approach 
+- or at least the wider comm
+
+
+
 LINK TO [Making plans](Making Plans.html)
