@@ -62,6 +62,9 @@ Outline
     * Format and risk scanning included.
  * c.f. Sustainable Access writing.
 
+Future work, timeline reconstruction. Missing 3xx, 4xx, 5xx, DNS FAIL, transient crawler errors, etc.
+
+
 Twisted Timelines
 =================
 
