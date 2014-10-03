@@ -1,6 +1,5 @@
 #!/usr/bin/perl
 
-use File::Find;
 use File::Slurp;
 use Digest::SHA qw(sha256_hex);
 
