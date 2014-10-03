@@ -1,0 +1,151 @@
+time find perl -type f | parallel --no-notice -j 64 md5sum
+time find perl -type f -exec md5sum {} \;
+
+(time find ../format-corpus/* -type f -exec cat {} > /dev/null \; ) &> fc-catnull.txt
+
+ (time find ../format-corpus/* -type f -exec md5sum {} \; ) &> fc-md5sum.txt
+
+ (time find ../format-corpus/* -type f | parallel --no-notice -j 16 md5sum ) &> fc-md5sum-parallel-16.txt
+
+
+
+(time find ../format-corpus/* -type f -print0 | xargs -0 -P24 md5sum ) &> fc-md5sum-xargs-24.txt
+
+
+(time find ../format-corpus/* -type f -print0 | xargs -0 -P1 sha256sum ) &> fc-sha256-xargs-1.txt
+
+
+(time find ../format-corpus/* -type f -exec wc -c {} \;) &> fc-wcc.txt
+(time find ../format-corpus/* -type f -exec ls -l {} \;) &> fc-lsl.txt
+(time find ../format-corpus/* -type f -exec ls -n {} \;) &> fc-lsn.txt
+(time find ../format-corpus/* -type f -exec stat -f "%z" {} \;) &> fc-statz.txt
+
+
+ time sudo dtruss -fcLo openssl dgst -md5 ~/Downloads/ubuntu-12.10-desktop-amd64.iso &> temp.log
+
+
+https://gist.github.com/anjackson/cc831f0d2245799f7a45
+
+http://www.avpreserve.com/wp-content/uploads/2014/10/ChecksumComparisons_102014.pdf
+
+http://stackoverflow.com/questions/2722943/is-calculating-an-md5-hash-less-cpu-intensive-than-sha-1-or-sha-2
+http://atodorov.org/blog/2013/02/05/performance-test-md5-sha1-sha256-sha512/
+
+
+opf:perl andy$ time perl sha256-asfile.pl ~/Downloads/ubuntu-12.10-desktop-amd64.iso 
+256a2cc652ec86ff366907fd7b878e577b631cc6c6533368c615913296069d80 /Users/andy/Downloads/ubuntu-12.10-desktop-amd64.iso
+
+real	0m8.825s
+user	0m8.102s
+sys	0m0.479s
+opf:perl andy$ time perl sha256-slurp.pl ~/Downloads/ubuntu-12.10-desktop-amd64.iso 
+256a2cc652ec86ff366907fd7b878e577b631cc6c6533368c615913296069d80 /Users/andy/Downloads/ubuntu-12.10-desktop-amd64.iso
+
+real	0m20.203s
+user	0m13.245s
+sys	0m3.424s
+
+
+
+
+ 
+ opf:perl andy$ time dd if=md5-asfile.pl of=/dev/null
+0+1 records in
+0+1 records out
+223 bytes transferred in 0.000027 secs (8277255 bytes/sec)
+
+real	0m0.006s 
+user	0m0.002s
+sys	0m0.005s
+opf:perl andy$ time dd if=~/Downloads/ubuntu-1 of=/dev/null
+ubuntu-12.10-desktop-amd64.iso      ubuntu-12.10-desktop-i386.iso       ubuntu-13.10-desktop-amd64+mac.iso  ubuntu-13.10-desktop-amd64.iso      
+opf:perl andy$ time dd if=~/Downloads/ubuntu-13 of=/dev/null
+ubuntu-13.10-desktop-amd64+mac.iso  ubuntu-13.10-desktop-amd64.iso      
+opf:perl andy$ time dd if=~/Downloads/ubuntu-13.10-desktop-amd64.iso of=/dev/null
+1808384+0 records in
+1808384+0 records out
+925892608 bytes transferred in 8.980067 secs (103105312 bytes/sec)
+
+real	0m8.987s
+user	0m0.609s
+sys	0m3.068s
+opf:perl andy$ time dd if=~/Downloads/ubuntu-13.10-desktop-amd64.iso of=/dev/null
+1808384+0 records in
+1808384+0 records out
+925892608 bytes transferred in 2.920321 secs (317051657 bytes/sec)
+
+real	0m2.927s
+user	0m0.613s
+sys	0m2.300s
+opf:perl andy$ time dd if=~/Downloads/ubuntu-12.10-desktop-amd64.iso of=/dev/null
+1562624+0 records in
+1562624+0 records out
+800063488 bytes transferred in 2.311625 secs (346104358 bytes/sec)
+
+real	0m2.318s
+user	0m0.403s
+sys	0m1.907s
+opf:perl andy$ time sha256sum ~/Downloads/ubuntu-12.10-desk
+ubuntu-12.10-desktop-amd64.iso  ubuntu-12.10-desktop-i386.iso   
+opf:perl andy$ time sha256sum ~/Downloads/ubuntu-12.10-desktop-i386.iso 
+d91eee1b74fb81f4235fdaed21e7566bbe8965ec6b7206a122f2025365621ad6  /Users/andy/Downloads/ubuntu-12.10-desktop-i386.iso
+
+real	0m10.015s
+user	0m8.179s
+sys	0m0.360s
+opf:perl andy$ time sha256sum ~/Downloads/ubuntu-12.10-desktop-i386.iso 
+d91eee1b74fb81f4235fdaed21e7566bbe8965ec6b7206a122f2025365621ad6  /Users/andy/Downloads/ubuntu-12.10-desktop-i386.iso
+
+real	0m8.628s
+user	0m7.922s
+sys	0m0.215s
+
+
+
+
+
+opf:perl andy$ time dd if=~/Downloads/ubuntu-13.10-desktop-amd64.iso of=/dev/null
+1808384+0 records in
+1808384+0 records out
+925892608 bytes transferred in 2.670768 secs (346676537 bytes/sec)
+
+real	0m2.679s
+user	0m0.490s
+sys	0m2.155s
+
+opf:perl andy$ purge
+Unable to purge disk buffers: Operation not permitted
+
+opf:perl andy$ sudo purge
+Password:
+opf:perl andy$ time dd if=~/Downloads/ubuntu-13.10-desktop-amd64.iso of=/dev/null
+1808384+0 records in
+1808384+0 records out
+925892608 bytes transferred in 18.264685 secs (50693051 bytes/sec)
+
+( 50 693 051 (bytes / second) = 50.693051 MBps )
+
+real	0m18.509s
+user	0m0.652s
+sys	0m3.200s
+opf:perl andy$ time dd if=~/Downloads/ubuntu-13.10-desktop-amd64.iso of=/dev/null
+1808384+0 records in
+1808384+0 records out
+925892608 bytes transferred in 2.696681 secs (343345246 bytes/sec)
+
+real	0m2.703s
+user	0m0.465s
+sys	0m2.186s
+
+opf:perl andy$ time dd if=~/Downloads/ubuntu-13.10-desktop-amd64+mac.iso of=/dev/null
+1804288+0 records in
+1804288+0 records out
+923795456 bytes transferred in 9.608491 secs (96143657 bytes/sec)
+
+real	0m9.616s
+user	0m0.556s
+sys	0m2.787s
+
+
+
+
