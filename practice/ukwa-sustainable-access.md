@@ -11,6 +11,7 @@ tags: ["Requirements for Tools"]
 > In contrast, when ‘finding the future’, sophisticated discovery tools, effective library policies, support for linked data, and supporting the user’s interpretaton and analysis of content are examples of the key challenges that face the communities of DL practitioners and researchers.
 > 
 > The conference welcomes internationally leading insights into both research problems and practical complexities. Contributions from digital humanities, digital preservation, hypertext and information retrieval researchers are as much a vital part of the digital library community’s interests as core DL research, and submissions on these and other related topics are strongly encouraged.
+>
 > <small>[Digital Libraries 2014 - Call for papers](http://dl2014.org/cfp.html)</small>
 
 Introduction

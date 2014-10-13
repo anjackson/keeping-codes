@@ -2,8 +2,39 @@
 title: Blog Ideas
 ---
 
-## One Liners
 
+## The Tyrrany Of Normalisation
+
+> Selective normalization for formats at risk, eg by file format, can be triggered as part of ingest
+> https://twitter.com/mickylindlar/status/519321431457271809
+
+What is the likely hood that ingest time is the time that we understand the risks, and have the right tools?
+
+## When Standardisation Hurts Preservation
+https://twitter.com/pdfkungfoo/status/512349950382854146
+
+My concern is interoperability and preservation. I don't get to choose which implementations people use.
+
+Seem like ISO PDF is to Adobe PDF as W3C HTML is to WHATWG HTML.
+https://twitter.com/anjacks0n/status/512357162652155904
+Aside from the fact that ISO paywalls their standards instead of making them freely available.
+although for ISO 32000-1/PDF-1.7 Adobe made the spec available. Not sure if they'll do the same for the next version
+
+## The first data loss
+Story of the Pro Artisan? image I lost.
+Grandfather disks
+hideousness, but still.
+
+## Ideas, briefly:
+- Functional Programming Brain Hurt
+    - Feels like when I'm solving hand puzzles, or some cryptic crossword clues. I can feel my way to the right answer, but I frankly don't quite understand it until afterwards.
+- Maps as metaphors for languages and models.
+- flindex
+    - Flat Index
+- I have mixed feelings about "The perfect is the enemy of the good." It's true, but I've seen it used to justify very sloppy work.…when the real problem has been that the 'perfected' proposal is simply disconnected from reality, or an excuse not to talk to users, or 
+- Trust & Provenance
+   - Not from Who. http://en.wikipedia.org/wiki/Argument_from_authority
+   - Where Trust Comes From.
 - CDX Dataset
 - Finish off half-life 1000 once Solr is fixed. Then BLOG.
 - [Domain crawl graphs](https://intranet.bl.uk:8443/confluence/pages/viewpage.action?pageId=139630062)

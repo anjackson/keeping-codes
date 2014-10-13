@@ -11,6 +11,9 @@ publish: false
 > The aim of this document is to unify the various meanings of format, from high-level specification down to data transmission protocols like LOAD and SAVE (see e.g. [ZX Spectrum tape format](http://www.zxshed.co.uk/sinclairfaq/index.php5?title=TAP_format)).
 > 
 
+> "This is all getting quite ontological. Is there an ultimate truth of formats?"
+> https://twitter.com/digitalfay/status/519280317421461504
+
 
 Introduction
 ------------
@@ -178,6 +181,8 @@ Bitstream ensemble can depend on minutiae, so we can't get it right from the sta
 The bit streams we see depend only on the creation process. 
 We can keep 'how does Y cope' separate.
 
+Links to significant properties and format equivalence.
+Crucially the right metrics for migration cannot be defined ahead of time, because they depend on the target format.
 
 
 [^1]: You think 'format' is bad. 'Digital object' is much, much worse, but we'll come to that later.

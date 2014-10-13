@@ -61,9 +61,41 @@ http://www.avpreserve.com/avpsresources/papers-and-presentations/ cloud vendor s
 Notes on the NZNL presentation
 -------------------------------
 
+The process of designing a format registry is more valuable than the result.
+
+OK, new theory: Designing new format registries is popular because trying to do so teaches you a lot about the formats you try to include……but the process you go through, and the things you learn, are actually more valuable than the resulting registry itself……but you've both come so far together… …It's hard to let go…
+
+BTW, that theory arises because that's what happened to me. I tried to design a new format registry, but it didn't help move things forward……it helped me understand the problem, but it also made me realise that we need to learn how to solve the problem together. For that to work……you need a platform where the model itself is malleable, but where structure can be imposed as consensus arises. DBpedia is the proof.
+
+You ontology _also_ tells me what I _cannot_ say.
+
+
+What do we need? What are the real questions that the system needs to answer? What are the processes that need support? Is a registry the right answer?
+
+- Password-protected files.
+- Missing dependencies.
+- Unusual format variations (e.g. TIFF with private/non-standard tags).
+
+
+Questions:
+- If this is so important, why aren't people doing it anyway?
+- Or are people doing it anyway? Have you talked to them? What do they need?
+
+- What's wrong with FF?
+
+- Who will fill your registry?
+- Who will use you registry?
+- Can you point to named individuals in these user groups?
+- If not, how can you design a software solution without users to consult? This is WATERFALL.
+
+Suggestions:
+- Decouple aggregation and adding/editing. Create a new data soruce with your new model, and including it as one of the sources (which can perhaps overrule other sources) in the aggregated 'dashboard'.
+- Membership to pay for APIs and services, not a paywall to the information.
+- Accept that the model will change, that we will make mistakes, that identifiers will change.
+
 Points:
 
-The format model will be 'wrong' - it will need to change, by consensus.
+The format model will be 'wrong' - it will need to change, by consensus, over time. Stop trying to get it 'perfect' before even getting started.
 
 If this is about automation? Then be clear that you are making software - and the registry is a means to that end.
 
@@ -101,9 +133,9 @@ Changing the day-to-day workflow of tens of people worldwide? Hundreds? This is 
 Please share case studies and user stories, and please form a user group of people who would self-identify as the users in your user stories.
 
 Waterfall danger.
-It's not iterative or agile if the user stories are fixed and were developed behind closed doors.
+It's not iterative or agile if the user stories are fixed and were developed behind closed doors, away from the users.
 
-Where does trust come from. I'd rather that you did not say 'Will provide trustworthy data' because that's too vague. For some, it seems, trust is primarily about provenance. Your model, that Community peer review will lead to more trustworthy data, is much stronger.
+Where does trust come from? I'd rather that you did not say 'Will provide trustworthy data' because that's too vague. For some, it seems, trust is primarily about provenance. Your model, that Community peer review will lead to more trustworthy data, is much stronger.
 
 Much of this is linking existing information and commenting on it, but much is new research. Who will be doing this?
 
@@ -146,7 +178,7 @@ Collection mining for software and formats.
 
 Recommendation: Push the identification process out of scope, including most of PRONOM. PRONOM is basically an identification stack, with very little additional information about the formats.
 
-Magic is contextual. Do we record what we think the X it.
+Identification 'magic' is contextual. Do we record what we think the X it.
 
 TRiD and JHOVE lone developers. JHOVE maintenance is not R&D, it's just maintenance. Deprecation of adaptors between JHOVE 1 and 2 should not have happened? So make one. What's stopping you or us? Also for tool developers? How, and who?
 
@@ -167,9 +199,9 @@ Alternative forms:
 - A journal.
 - A dashboard.
 
-CC-BY or DEAD.
+CC-BY or DEAD TO ME.
 
-Membership-based model proposed.
+Membership-based model proposed. Because paywalls are great for preservation. API as paid-for service would be better.
 
 e.g. https://tools.ietf.org/html/rfc3236#section-8
 Accept: application/xhtml+xml;
@@ -216,7 +248,7 @@ http://blogs.loc.gov/digitalpreservation/2014/02/new-ndsa-report-the-benefits-an
 
 Completely unaware of http://gator1355.hostgator.com/~iipc/pwg/risks.php, but that's going public soon.
 
-http://www.keep-totem.co.uk/ is basically empty.
+http://www.keep-totem.co.uk/ is basically empty AFAICT.
 
 
 Tensions
@@ -224,5 +256,5 @@ Tensions
 - Technical or broad user base.
 - If it's so obviously a win, why isn't it happening already. Why aren't you working in the open so you can be found?
 
-Format model does not appear to separate syntax from semantics, i.e. aspects/features are both an encoding and an interpretation. Not sure this is drawn out.
+Format model does not appear to separate syntax from semantics/interpretation, i.e. aspects/features are both an encoding and an interpretation. Not sure this is drawn out.
 

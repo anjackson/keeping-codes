@@ -47,6 +47,11 @@ sys	0m3.424s
 
 
 
+(time find /Users/andy/Documents/workspace/format-corpus \( ! -regex '.*/\..*' \) -type f -exec md5sum {} \;) &> fc-md5sum-regex.log
+
+
+
+
 
  
  opf:perl andy$ time dd if=md5-asfile.pl of=/dev/null

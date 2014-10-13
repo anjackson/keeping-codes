@@ -28,10 +28,19 @@ Sig props and format
 * Significant properties - content properties not the priority.
    * Dependency analysis and critical characterisation role
    * For content, in future, eye of stakeholder means users should be able to express format preference.
+   * Crucially the right metrics for migration cannot be defined ahead of time, because they depend on the target format.
+
 
 > "The need therefore is for some form of lossy compression at the semantic level."
 > <http://blog.dshr.org/2014/05/on-economics-of-throwing-stuff-away.html>
 
+
+> "But surely there are 'content types', right? Right?"
+> https://twitter.com/dp_pig/status/519284742508646400
+
+> On Archivematica's properties/normalisation model.
+> "I suspect that will only ever work in limited contexts. Format+software vs content relationships are too complex"
+> https://twitter.com/euanc/status/519288770924134400
 
 Insignificant properties
 ------------------------
@@ -91,6 +100,7 @@ superset approach as expressed in plain English and thus ambiguous and
 poor coverage. Tending to be couched in the language of the performance.
 Enforced extraction of properties for later comparison and evaluation.
 Cite code4lib.
+
 ---
 title: Significant Properties & Authentic Transformations
 layout: default

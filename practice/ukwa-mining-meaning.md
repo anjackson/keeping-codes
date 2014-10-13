@@ -8,7 +8,7 @@ status: stub
 
 * Send this to Helen when it's somewhere decent.
 
-Biases and correctives.
+Biases and correctives. Normalisation strategies, c.f. Google Books, etc.
 
 RCT?
 
@@ -87,6 +87,11 @@ Also
  * world wide web
  * the web
 
+
+ As Natalia Cecire mentions, when critiquing the masculine DH metaphors of “building” and “mining” and digging,”
+
+    “the field might look very different if dominant metaphors for ‘doing’ digital humanities research included weaving, cooking, knitting, and raising or nurturing.”
+
 Curation's second death
 =======================
 
@@ -96,6 +101,7 @@ Curation has died before, on the web. Story of DMOZ and Google (and indeed Yahoo
 
 * [https://wiki.digitalmethods.net/Dmi/DemiseDirectory](The Demise of the Directory: Web librarian work removed in Google)
 * [see also](http://blogoscoped.com/archive/2006-04-21-n63.html)
+* [Yahoo killing off Yahoo after 20 years of hierarchical organization](http://arstechnica.com/information-technology/2014/09/yahoo-killing-off-yahoo-after-20-years-of-hierarchical-organization/)
 
 Spam problem.
 
