@@ -65,6 +65,12 @@ body { padding-bottom: 70px; }
   border: 1px solid #aaa;
 }
 
+#main img {
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+}
+
 .badge-final {
   background-color: black;
 }
