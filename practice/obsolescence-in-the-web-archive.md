@@ -439,6 +439,8 @@ Realistic examples, high-value but high-risk.
 http://arstechnica.com/apple/2011/07/does-apple-still-care-about-creative-pros/ Legacy file support.
 c.f. audio master tool plugins.
 
+See also https://twitter.com/nonwrestler/status/524868838966308864
+
 "webring" when did new sites stop happening?
 
 Programming languages are often more highly version dependant (Python 3, Perl 6). But also difficult to spot, and not really the kind of thing where we'd transform on access.
