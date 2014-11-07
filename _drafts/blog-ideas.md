@@ -2,6 +2,17 @@
 title: Blog Ideas
 ---
 
+http://blogs.loc.gov/digitalpreservation/2014/10/gossiping-about-digital-preservation/
+All types of Forward error correction
+http://en.wikipedia.org/wiki/Inherent_vice_%28library_and_archival_science%29
+Exherent Vice too.
+
+Although there would be some minor duplication between the two, the volume of data involved would be tiny. Anyway, having two independent but overlapping collections helps build trust in both, because you can compare them to see if they are consistent (and therefore more likely to be complete, accurate, etc.).
+
+On open metadata as (c) hack
+- https://sandbox.htrc.illinois.edu/HTRC-UI-Portal2/Features
+- http://tedunderwood.com/2014/06/03/a-window-on-the-twentieth-century-may-be-about-to-open/
+
 ## Ideas, briefly:
 - Functional Programming Brain Hurt
     - Feels like when I'm solving hand puzzles, or some cryptic crossword clues. I can feel my way to the right answer, but I frankly don't quite understand it until afterwards.
@@ -9,7 +20,6 @@ title: Blog Ideas
 - flindex: Flat Index
 - I have mixed feelings about "The perfect is the enemy of the good." It's true, but I've seen it used to justify very sloppy work.…when the real problem has been that the 'perfected' proposal is simply disconnected from reality, or an excuse not to talk to users, or 
 - CDX Dataset
-- Finish off half-life 1000 once Solr is fixed. Then BLOG.
 - [Domain crawl graphs](https://intranet.bl.uk:8443/confluence/pages/viewpage.action?pageId=139630062)
 - CC License adoption
 - Don't &lt;blink> -- obsolete elements from the web archives

@@ -8,6 +8,9 @@ status: stub
 
 * Send this to Helen when it's somewhere decent.
 
+* [Tuesday 4 November – Interrogating the archived UK web: Historians and Social Scientists Research Experiences](http://ihrdighist.blogs.sas.ac.uk/2014/10/28/tuesday-4-november-interrogating-the-archived-uk-web-historians-and-social-scientists-research-experiences/)
+* [Interrogating the Archived UK Web – postscript](http://ihrdighist.blogs.sas.ac.uk/2014/11/06/interrogating-the-archived-uk-web-postscript/)
+
 Biases and correctives. Normalisation strategies, c.f. Google Books, etc.
 
 RCT?
@@ -86,6 +89,10 @@ Also
  * cyberspace
  * world wide web
  * the web
+ * chav (Peak Chav c. 2005)
+ * al queda
+ * guest book, hit counter?
+ * etc...
 
 
  As Natalia Cecire mentions, when critiquing the masculine DH metaphors of “building” and “mining” and digging,”
