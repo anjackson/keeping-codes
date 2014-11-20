@@ -10,6 +10,9 @@ status: stub
 
 * [Tuesday 4 November – Interrogating the archived UK web: Historians and Social Scientists Research Experiences](http://ihrdighist.blogs.sas.ac.uk/2014/10/28/tuesday-4-november-interrogating-the-archived-uk-web-historians-and-social-scientists-research-experiences/)
 * [Interrogating the Archived UK Web – postscript](http://ihrdighist.blogs.sas.ac.uk/2014/11/06/interrogating-the-archived-uk-web-postscript/)
+* [Big Data, Small Data and Meaning](http://archiveshub.ac.uk/blog/2014/11/big-data-small-data-and-meaning/)
+* [Big Data, Small Data and Meaning](http://historyonics.blogspot.co.uk/2014/11/big-data-small-data-and-meaning_9.html)
+* [Big Data for Dead People: Digital Readings and the Conundrums of Positivism](http://historyonics.blogspot.co.uk/2013/12/big-data-for-dead-people-digital.html)
 
 Biases and correctives. Normalisation strategies, c.f. Google Books, etc.
 

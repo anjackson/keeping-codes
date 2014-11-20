@@ -472,6 +472,10 @@ Linux:
 * http://s-macke.github.io/jor1k/
 
 
+> Do I know any blender folks? I have a blender 2.4 "game", and I need some help porting it to newer versions. I can pay.
+> https://twitter.com/adamwwolf/status/532172039302680576
+
+
 Interjection 
 ------------
 

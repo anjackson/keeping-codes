@@ -10,6 +10,7 @@ It should be possible to make a JavaScript page that downloads a JPG, like:
 
 * http://stackoverflow.com/questions/20035615/using-raw-image-data-from-ajax-request-for-data-uri
 * https://github.com/jseidelin/exif-js/blob/master/example/index.html
+* http://code.flickr.net/2012/06/01/parsing-exif-client-side-using-javascript-2/
 
 Then modify the bits, and pass them through this:
 

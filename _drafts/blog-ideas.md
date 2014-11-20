@@ -2,6 +2,15 @@
 title: Blog Ideas
 ---
 
+Quelle Surprise, Quelled Surprise
+- You may not be surprised simply because you've already considered it. Would you have also said the same if the exact opposite had been found. There must be a name for this kind of bias. 
+http://en.wikipedia.org/wiki/Hindsight_bias
+- You may not be surprised because this does simply confirm a widely-held belief. Congratuations, you have elevated a hunch to something approximating objective truth!
+- Picking out individual stories are representative required evidence that they are representative. (this buts both ways, distant-to-close too)
+http://en.wikipedia.org/wiki/Confirmation_bias
+- Discovery of otherwise undiscovered sources is hard to measure.
+
+
 http://blogs.loc.gov/digitalpreservation/2014/10/gossiping-about-digital-preservation/
 All types of Forward error correction
 http://en.wikipedia.org/wiki/Inherent_vice_%28library_and_archival_science%29
