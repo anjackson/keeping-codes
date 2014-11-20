@@ -2,7 +2,7 @@
 title: Collecting Data To Improve Tools
 category: Practice
 tags: ["Web Archives"]
-status: stub
+status: complete
 ---
 
 Like many other institutions, we are heavily dependent on a number of open source tools. We couldn't function without them, and so we like to find ways to give back to those communities. We don't have a lot of spare time or development capacity to contribute, but recently we have found another way to provide useful feedback.
