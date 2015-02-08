@@ -4,6 +4,8 @@ layout: default
 status: outline
 ---
 
+* [Lots of progress for Debian's reproducible builds](http://lwn.net/Articles/630074/)
+
 * Significant properties - content properties not relevant. Dependency analysis and critical characterisation role. For content, in future, eye of stakeholder means users should be able to express format preference.
 
 No date, Prismatic Error

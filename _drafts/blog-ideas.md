@@ -9,7 +9,20 @@ http://en.wikipedia.org/wiki/Hindsight_bias
 - Picking out individual stories are representative required evidence that they are representative. (this buts both ways, distant-to-close too)
 http://en.wikipedia.org/wiki/Confirmation_bias
 - Discovery of otherwise undiscovered sources is hard to measure.
+- [Reading creationism in the web archive](http://peterwebster.me/2014/11/18/reading-creationism-in-the-web-archive/)
 
+Digital Preservation & Sustainable Software
+[The State of JavaScript in 2015](http://www.breck-mckye.com/blog/2014/12/the-state-of-javascript-in-2015/)
+
+https://twitter.com/textfiles/status/558736094066642944
+That's kind of the point. Outsourcing the tech further disempowers the 'web archiving gang'. If organisations…
+only invest in hand-wringers, that's all they'll be able to do. The situation is bad enough already, as you say.
+No-one is blaming IA for this & of course channeling funds to support IA is far better than doing nothing at all.
+
+UKWA we do capture contemporary renderings during the crawl, and other contextual data. The hope is that…
+…this will help those who *do* take on sw/access preservation to be confident they are doing it right…
+… But I'm not sure it'll be us that's 
+My point being it depends on the shape ones collection. A web archive is mostly full of content intended to…be shared across platforms.
 
 http://blogs.loc.gov/digitalpreservation/2014/10/gossiping-about-digital-preservation/
 All types of Forward error correction
@@ -22,7 +35,27 @@ On open metadata as (c) hack
 - https://sandbox.htrc.illinois.edu/HTRC-UI-Portal2/Features
 - http://tedunderwood.com/2014/06/03/a-window-on-the-twentieth-century-may-be-about-to-open/
 
+How much have we saved?
+- [DSHR: Talk at Fall CNI](http://blog.dshr.org/2014/12/talk-at-fall-cni.html)
+- [DSHR: Talk "Costs: Why Do We Care?"](http://blog.dshr.org/2014/11/talk-costs-why-do-we-care.html)
+- ["NARA estimates that only about 2 percent of all Federal records are permanent."](http://www.afm.ars.usda.gov/ppweb/pdf/251-08M.pdf)
+- ["Only a small proportion of the records---often no mare than two to five percent---has sufficient value for administrative, legal, or research purposes to warrant permanent retention as archives."](http://www.unesco.org/webworld/ramp/html/r8906e/r8906e04.htm)
+- ["Since the files were very voluminous, a sampling was made of them that saved only 3 percent of the total."](http://www.archives.gov/research/alic/reference/archives-resources/appraisal-informational-values.html)
+
+
+Distributed Web Archives
+- P2P Memento/Wayback§
+- [Wouldn’t it be fun to build your own Google?](http://radar.oreilly.com/2014/12/wouldnt-it-be-fun-to-build-your-own-google.html)
+- http://tomp2p.net/
+- Cassandra
+
 ## Ideas, briefly:
+- JP2 et al http://xooyoozoo.github.io/yolo-octo-bugfixes/#mascot&jp2=m&bpg=m
+    - https://github.com/ross-spencer/rs-misc-scripts/blob/master/jp2-10-1-compression-artifacts.pdf
+    - http://kakadusoftware.com/wp-content/uploads/2014/06/Usage_Examples.txt
+    - http://wellcomelibrary.org/content/documents/22082/JPEG2000-preservation-format
+    - http://www.digitizationguidelines.gov/still-image/documents/Martin.pdf
+    - http://www.digitizationguidelines.gov/still-image/documents/JP2LossyCompression.pdf
 - Functional Programming Brain Hurt
     - Feels like when I'm solving hand puzzles, or some cryptic crossword clues. I can feel my way to the right answer, but I frankly don't quite understand it until afterwards.
 - Maps as metaphors for languages and models.

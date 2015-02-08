@@ -122,6 +122,12 @@ dd if=/dev/zero of=null512.bin bs=512 count=1
 >Steve suggested (having found the problem when he had first installed RPCemu) that this was ‘probably’ due to an error during booting preventing the sequence from completing correctly. This problem isn’t restricted to RPCemu, and can be seen on all hardware and all versions of RISC OS when things go wrong. In order to track it down, he installed Martin Avison’s Reporter and configured it to log every step of the boot sequence (as described in this howto article).
 From http://www.wrocc.org.uk/meetings/report.php?year=2009&month=6
 
+Got disc geometry from !Zap via http://ftp.netbsd.org/pub/NetBSD/arch/arm32/riscos/docs/prep.RISCOS
+
+http://www.4corn.co.uk/articles/sparkplug/
+
+VirtualRPC guessing disc shape: 512 * 63 * 16 * 2xxxx == 15GB
+
 [1]: http://www.simtec.co.uk/products/AUIDE16/resources.html
 [2]: https://www.allegro.cc/forums/thread/608825
 [3]: https://www.riscosopen.org/forum/forums/10/topics/1029

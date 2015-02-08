@@ -175,11 +175,13 @@ Illustrative Asides:
 - What Are We Editing
 
 Dealing with Value
+- Authenticity: http://pro.europeana.eu/pro-blog/-/blogs/the-yellow-milkmaid-syndrome-paintings-with-identity-problems
 - Not A Science
 - Realistic Risks
    - http://activehistory.ca/2014/07/where-have-all-the-censuses-gone-a-problem-with-digital-data/ etc.
 - Making Plans
 - Never Alone (social aspect)
+
 
 Broken bits
 - [Pixel Dust: Illusions of Innovation in Scholarly Publishing by Johanna Drucker](http://lareviewofbooks.org/essay/pixel-dust-illusions-innovation-scholarly-publishing/) features a number of points that are, at best, ill-defined.

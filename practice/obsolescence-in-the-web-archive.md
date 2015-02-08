@@ -81,6 +81,11 @@ http://www.subdude-site.com/WebPages_Local/RefInfo/Computer/Linux/LinuxGuidesByB
 DROID distinguishes 1/97 (fmt/93 and fmt/94), but does not identify x3d.
 Tika only knows VRML extension (not even that?!), but can be taught all.
 
+VRML via JavaScript:
+http://threejs.org/examples/webgl_loader_vrml.html
+https://github.com/mrdoob/three.js/blob/2d59713328c421c3edfc3feda1b116af13140b94/examples/js/loaders/VRMLLoader.js#L61
+
+
 VRML1 to VRML97
 
 * http://www.cs.princeton.edu/~min/meshconv/

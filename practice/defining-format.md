@@ -15,6 +15,13 @@ publish: false
 > https://twitter.com/digitalfay/status/519280317421461504
 
 
+To Read
+* <http://www.nybooks.com/blogs/nyrblog/2014/oct/21/escape-microsoft-word/>
+* <https://themanual.org/read/issues/4/paul-ford/article>
+* <http://www.digitalmeetsculture.net/article/focal-internationals-basic-guide-to-wrappers-files-and-formats/>
+
+Format research notes, note that format version may refer to source/target s.w. rather than actual format version.
+
 Introduction
 ------------
 
