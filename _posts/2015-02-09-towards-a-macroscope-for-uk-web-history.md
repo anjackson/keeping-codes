@@ -27,7 +27,7 @@ However, if the knowledge of the URL is lost, how can we help researchers find w
 
 ![Whoogle?]({{ site.baseurl }}/images/whoogle.png)
 
-The obvious answer was to try and create something like a Google search - a full-text 'historical' search engine. However, in order to ensure the development of such a system was relevant to our users, we decided to work directly with academic researchers who are interested in the modern web.  First, this was funded by JISC, through the [Analytical Access to the Domain Dark Archive][4] project, which was later followed up by the AHRC-funded [Big UK Domain Data for the Arts and Humanities][2] project.
+The obvious answer was to try and create something like a Google search - a full-text 'historical' search engine. However, in order to ensure the development of such a system was relevant to our users, we decided to work closely with academic researchers who are interested in the modern web.  First, this was funded by JISC, through the [Analytical Access to the Domain Dark Archive][4] project, which was later followed up by the current AHRC-funded [Big UK Domain Data for the Arts and Humanities][2] project.
 
 The process of building a historical search engine has been a very challenging two main reasons. Firstly, the scale means we are at the limits of what many search technologies can support, and it has taken us a long time to learn how to effectively index billions of resources given the skills and hardware we have available. Even now, as you'll see, our search response times are fairly slow (at least compared to something like a Google search) and, more problematically, the search service can be a little flaky under load. Which you may also soon see!
 
@@ -52,7 +52,7 @@ This approach neatly unifies the notion of 'distant reading' of texts with the m
 
 ## The Demonstration ##
 
-I'm interesting in techonology evolution and adoption, so one of the searches I've done before is for [CAPTCHA](http://www.webarchive.org.uk/shine/search?page=1&invert=&facet.fields=public_suffix&invert=&invert=&invert=&invert=&addFacet=&action=search&query=captcha&tab=results&sort=crawl_date&order=asc&mode=). Unlike current search engines, the default is to show you the very earliest records first. Here, the first crawled page is [this BBC News article - Computer pioneer aids spam fight](http://web.archive.org/web/20030110182448/http://news.bbc.co.uk:80/1/hi/technology/2635855.stm), crawled just two days after it was published. However, if we go back and look at the next hit, we see this [Computing article](http://web.archive.org/web/20030123152944/http://www.computing.co.uk:80/News/1137729) which was actually published in December 2002. This illustrates how the dynamics of the crawler tend to favour popular sites, and so appear to skew the timeline of events. Something we will need to learn to correct for.
+One of my research interests is around techonology evolution and adoption, so one of the searches I've done before is for [CAPTCHA](http://www.webarchive.org.uk/shine/search?page=1&invert=&facet.fields=public_suffix&invert=&invert=&invert=&invert=&addFacet=&action=search&query=captcha&tab=results&sort=crawl_date&order=asc&mode=). Unlike current search engines, the default is to show you the very earliest records first. Here, the first crawled page is [this BBC News article - Computer pioneer aids spam fight](http://web.archive.org/web/20030110182448/http://news.bbc.co.uk:80/1/hi/technology/2635855.stm), crawled just two days after it was published. However, if we go back and look at the next hit, we see this [Computing article](http://web.archive.org/web/20030123152944/http://www.computing.co.uk:80/News/1137729) which was actually published in December 2002. This illustrates how the dynamics of the crawler tend to favour popular sites, and so appear to skew the timeline of events. Something we will need to learn to correct for.
 
 ### Faceted Search ###
 
@@ -60,7 +60,7 @@ We can refine a bit more, [just looking at 2003](http://www.webarchive.org.uk/sh
 
 ### Corpus Building ###
 
-This illustrates the typical workflow followed by the researchers we collaborated with. Crucially, rather than relying on complex relevance ranking algorithms, we provide as many different facets and search options as we can, to help our historians 'slice and dice' the dataset in order to find sub-sets of the documents relevant to their particular interest. We also allow logged in users to save their queries, and to create corpora based on those queries which can then be fine-tuned, weeding out the irrelevant hits. These corpora can be annotated and further queries can be restricted to those subsets alone.
+This illustrates the typical workflow followed by the researchers we collaborated with. Crucially, rather than relying on complex relevance ranking algorithms, we provide as many different facets and search options as we can, to help our historians 'slice and dice' the dataset in order to find sub-sets of the documents relevant to their particular interest. Users can also save their queries, and to create corpora based on those queries which can then be fine-tuned, weeding out the irrelevant hits. These corpora can be annotated and further queries can be restricted to those subsets alone.
 
 This is an important and indeed fairly traditional mode of engagement, ending in the 'close reading' of individual pages. However, it soon became clear that the researchers also need to understand something of the overall trends and biases of their corpora and of the wider context the corpora were drawn from. 
 
@@ -88,11 +88,13 @@ Searching for [Genome](http://www.webarchive.org.uk/shine/graph?query=genome&yea
 
 In this way, by providing samples and links back to full search results, we make it much easier for a researcher's assumptions about the data to be tested. It also helps make unexpected biases and flaws in the dataset much more apparent.
 
-## Future Work
+## The Future
 
-There are two main fronts to this work, going ahead. The first is scale and sustainability - our collection is growing very rapidly, and it is not yet clear whether this level of sophistication can be maintained over time. It's very important for us to be able to prove that this is valuable to researchers, in order to justify future development as a core part of what the web archive does, and so we'd be interesting in hearing about any research that can benefit from our historical search engine.
+There are two main challenges to this work, going ahead. The first is scale and sustainability - our collection is growing very rapidly, and it is not yet clear whether the level of sophistication I've demonstrated today can be maintained over time. 
 
-The bigger challenge, again, is to provide the features and usability that make this a compelling and powerful interface. Our partnership with historians has been fruitful, but their feedback also made it clear that significant modifications are requried to improve the quality of the search results and the utility of the system. We have lots of ideas about how to do this, and we look forward to working with the broader research community in order to help make this happen.
+The second challenge is to provide the features and usability that make this a compelling, powerful and useful service. Our partnership with historians has been fruitful, but their feedback also made it clear that significant modifications are requried to improve the quality of the search results and the utility of the system. 
+
+It is therefore very important for us to be able to show that this is valuable to researchers, in order to justify future development as a core part of what the web archive does, and so we'd be very interested in hearing about any research that can benefit from our historical search engine.
 
 Thank you.
 
@@ -104,7 +106,8 @@ See also [terrorism OR terrorist, iraq](http://www.webarchive.org.uk/shine/graph
 
 ["john major","tony blair","michael howard","gordon brown","david cameron"](http://www.webarchive.org.uk/shine/graph?query=%22john+major%22%2C%22tony+blair%22%2C%22michael+howard%22%2C%22gordon+brown%22%2C%22david+cameron%22&year_start=1996&year_end=2010&action=update)
 
-
+NOTES:
+* Links to 'self' should perhaps be classified differently?
 
 [1]: http://cacm.acm.org/magazines/2011/3/105316-plug-and-play-macroscopes/fulltext
 [2]: http://buddah.projects.history.ac.uk/
