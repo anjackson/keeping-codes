@@ -66,7 +66,7 @@ This is an important and indeed fairly traditional mode of engagement, ending in
 
 ### Visualising Trends ###
 
-Within the faceted search, you can start to get a feel for this by [searching for everything](http://www.webarchive.org.uk/shine/search?page=1&facet.fields=public_suffix&invert=&invert=&invert=&invert=&action=search&query=*:*&sort=content_type_norm&order=asc). ... discuss one only ...
+Within the faceted search, you can start to get a feel for this by [searching for everything](http://www.webarchive.org.uk/shine/search?page=1&facet.fields=public_suffix&invert=&invert=&invert=&invert=&action=search&query=*:*&sort=content_type_norm&order=asc). You can quickly get an idea of the overall composition of the archive in terms of formats, domain names, links and years.
 
 To make this kind of information more accessible, we have also added a visualisation interface for exploring overall trends within the dataset, broadly following the model of the Google Books NGram. This 'distant reading' mode gives our results a proper time-axis, like [this one for 'big data'](http://www.webarchive.org.uk/shine/graph?query=%22big+data%22&year_start=1996&year_end=2010&action=update). 
 
