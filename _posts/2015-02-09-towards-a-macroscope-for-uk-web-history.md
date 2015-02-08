@@ -13,13 +13,13 @@ I work at the British Library as technical lead for the [UK Web Archive][5], whe
 
 ![The UK Web, in 1996.]({{ site.baseurl }}/images/1996-graph.png)
 
-All together, our archives contain over six billion resources, as over 100TB of compressed data, which means we have one big problem.
+All together, our archives contain over six billion resources, over 100TB of compressed data, which means we have one big problem.
 
 ## The Problem
 
-![Haystack Looming]({{ site.baseurl }}/images/7810750516_a44ed68b68_k.jpg)
+[![Haystack Looming - © Neil Howard CC-BY-NC]({{ site.baseurl }}/images/7810750516_a44ed68b68_k.jpg)](https://flic.kr/p/cUd91m)
 
-If our readers and researchers already know the URLs they are interested in, then it's relatively easy to support that mode of discovery, and pretty much all web archives support it. Apart from anything else, this is needed in order to be able to view web-based resources as the rendering process requires it.
+If our readers and researchers already know the URLs they are interested in, then it's relatively easy to support. URL-based lookup of resources is necessary to enable us to 'replay' web pages, and so this is a feature of all web archives.
 
 However, if the knowledge of the URL is lost, how can we help researchers find what they need?
 
@@ -27,27 +27,28 @@ However, if the knowledge of the URL is lost, how can we help researchers find w
 
 ![Whoogle?]({{ site.baseurl }}/images/whoogle.png)
 
-Well, one solution might be something like a Google search, so we started by trying to develop a full-text search solution. However, in order to ensure the development of such a system was relevant to our users, we decided to work directly with academic researchers who are interested in the modern web.  First, this was funded by JISC, through the [Analytical Access to the Domain Dark Archive][4] project, which was later followed up by the AHRC-funded [Big UK Domain Data for the Arts and Humanities][2] project.
+The obvious answer was to try and create something like a Google search - a full-text 'historical' search engine. However, in order to ensure the development of such a system was relevant to our users, we decided to work directly with academic researchers who are interested in the modern web.  First, this was funded by JISC, through the [Analytical Access to the Domain Dark Archive][4] project, which was later followed up by the AHRC-funded [Big UK Domain Data for the Arts and Humanities][2] project.
 
-This is been a very challenging process for two main reasons. Firstly, the scale means we are at the limits of what many search technologies can support, and it has taken us a long time to learn how to effectively index billions of resources given the skills and hardware we have available. Even now, as you'll see, our search response times are fairly slow (at least compared to something like a Google search) and, more problematically, the search service can be a little flaky under load. Which you may also soon see!
+The process of building a historical search engine has been a very challenging two main reasons. Firstly, the scale means we are at the limits of what many search technologies can support, and it has taken us a long time to learn how to effectively index billions of resources given the skills and hardware we have available. Even now, as you'll see, our search response times are fairly slow (at least compared to something like a Google search) and, more problematically, the search service can be a little flaky under load. Which you may also soon see!
 
-However, the bigger problem was the different between the usual expectations for search and discovery that are baked into the tools, versus the needs of our researchers. For example, what is the goal of a Google search? Well, the goal is to find the URL you want at the top of the list.  Just get me to the documents I need, as quickly as possible. That basic model of information retrieval is baked deep in the
+However, the bigger problem was the difference between the usual expectations for search and discovery that are baked into the tools, versus the actual needs of our researchers. 
+
+For example, what is the goal of a Google search? Well, the goal is to find the URL you want at the top of the list.  Just get me to the documents I need, as quickly as possible. That basic model of information retrieval is baked deep into the available features of search tools, like relevance ranking. 
 
 But this is not what our researchers want.
 
-The historians we consulted are generally not just looking for 
+The historians we consulted are generally not just looking for a few specific documents about a specific topic. They look to the web to see a refraction of wider society, and of the communities, groups and voices within them. Even when focussed on a relatively small subset of the whole, they still need to understand the position of that subset within the wider context of the whole dataset.
 
 
 ## The Macroscope ##
 
-In 2011, Katy Börner advocated the implementation of “[plug-and-play macroscopes][1]”, where 
+In 2011, Katy Börner advocated the implementation of “[plug-and-play macroscopes][1]”, and the idea seems to have struck something of a chord within the digital humanities. In particular,the way Tim Hitchcock presented the Macroscope at a recent presentation called [Big Data, Small Data and Meaning][3], here at the British Library Labs, has influenced how we frame our approach to this problem.
 
 > “Macroscopes provide a 'vision of the whole,' helping us 'synthesize' the related elements and detect patterns, trends, and outliers while granting access to myriad details.” 
 > <small>"[Plug-and-Play Macroscopes][1]" - Katy Börner (2011).</small>
 
 This approach neatly unifies the notion of 'distant reading' of texts with the more traditional 'close reading' approach, by encouraging individual items to be discovered via (or contra to) the prevailing trends, while also attempting to embed and present those individual resources in their broader context.
 
-[Big Data, Small Data and Meaning][3] by Tim Hitchcock
 
 ## The Demonstration ##
 
@@ -69,21 +70,23 @@ Within the faceted search, you can start to get a feel for this by [searching fo
 
 To make this kind of information more accessible, we have also added a visualisation interface for exploring overall trends within the dataset, broadly following the model of the Google Books NGram. This 'distant reading' mode gives our results a proper time-axis, like [this one for 'big data'](http://www.webarchive.org.uk/shine/graph?query=%22big+data%22&year_start=1996&year_end=2010&action=update). 
 
-[iPhone,UNIX](http://www.webarchive.org.uk/shine/graph?query=UNIX%2CiPhone&year_start=1996&year_end=2010&action=update)
+This graph is a fairly typical shape for many buzzwords within the UK web. A search for [iPhone,UNIX](http://www.webarchive.org.uk/shine/graph?query=iPhone&year_start=1996&year_end=2010&action=update) quickly illustrates the rapid growth in importance of Apple devices, and by adding a simple search term ([iPhone,UNIX](http://www.webarchive.org.uk/shine/graph?query=UNIX%2CiPhone&year_start=1996&year_end=2010&action=update)), we can quickly contrast that with a much older but less fashionable technology.
 
-Although the user interface is rather underdeveloped right now, if you know the right incantations, any of the search fields known to the system can be used in the trends interface. For example [ac.uk versus co.uk over time](http://www.webarchive.org.uk/shine/graph?query=public_suffix%3Aac.uk%2Cpublic_suffix%3Aco.uk&year_start=1996&year_end=2010&action=update)
+Furthermore, if you know the right incantations, any of the search fields known to the system can be used in the trends interface. For example, you can construct a search that compares the percentage of resources on [ac.uk versus co.uk over time](http://www.webarchive.org.uk/shine/graph?query=public_suffix%3Aac.uk%2Cpublic_suffix%3Aco.uk&year_start=1996&year_end=2010&action=update). This illustrates a crucial trend in the national web, the presence of which must be taken into account when interpreting trends relating to commercial or academic hosts.
 
 ### Understanding Trends ###
 
-Interesting and useful though this may be, it is still a rather poor Macroscope. The composition of voices underneath these trends remains unclear. For example, if you look at the [iPhone](http://www.webarchive.org.uk/shine/graph?query=iPhone&year_start=1996&year_end=2010&action=update) curve, and switch to a logarithmic scale (by clicking the vertical axis label), you see a strange dip ahead of the growth curve. What's going on under here?
+Interesting and useful though this may be, it is still a rather poor Macroscope. The composition of voices underneath these trends remains unclear. 
 
-Well, to help bridge the gap between the trend and the underlying data, with a click on a data point, the system will go away and fetch a fairly large but random sample of the 'hits' that contribute to that point on the curve. This provides a very fast and natural way to evaluate the trends and understand what's going on underneath them.  In this example, I learned that in the late nineties there was a Internet Phone called the iPhone, and that this was still in some use as the iPhone hype began.
+For example, if you look at the [iPhone](http://www.webarchive.org.uk/shine/graph?query=iPhone&year_start=1996&year_end=2010&action=update) curve, and switch to a logarithmic scale (by clicking the vertical axis label), you see a strange dip ahead of the growth curve. What's going on?
 
-[Genome](http://www.webarchive.org.uk/shine/graph?query=genome&year_start=1996&year_end=2010&action=update)
+Well, by clicking on a data point, the system attemps to bridge the gap between the trend and the underlying data by fetching a fairly large (but random sample) of the 'hits' that contribute to that point on the curve. This provides a very fast and natural way to evaluate the trends and understand what's going on underneath them.  In this example, I learned that in the late nineties there was a Internet Phone called the iPhone, and that this was still in some use as the iPhone hype began.
 
 Similarly, if you search for somethink like [terrorism OR terrorist](http://www.webarchive.org.uk/shine/graph?query=terrorism+OR+terrorist&year_start=1996&year_end=2010&action=update), you can see peaks associated with major events, and start to dig into them. The same goes for periodic events, like ["General Election"](http://www.webarchive.org.uk/shine/graph?query=%22General+Election%22&year_start=1996&year_end=2010&action=update). 
 
-So, by providing samples and links back to full search results, we make it much easier for a researcher's assumptions about the data to be tested, and make unexpected biases and flaws in the dataset much more apparent.
+Searching for [Genome](http://www.webarchive.org.uk/shine/graph?query=genome&year_start=1996&year_end=2010&action=update) provides another interesting example. At first, I expected this peak to be related to news about the human genome sequencing project, but by digging into it, we can see that the truth is more complicated than that. A significant fraction of these hist appear to come from the Sanger Institute itself, but more associated with the development of the institute's website rather than a specific experimental milestone.
+
+In this way, by providing samples and links back to full search results, we make it much easier for a researcher's assumptions about the data to be tested. It also helps make unexpected biases and flaws in the dataset much more apparent.
 
 ## Future Work
 
@@ -108,3 +111,5 @@ See also [terrorism OR terrorist, iraq](http://www.webarchive.org.uk/shine/graph
 [3]: http://historyonics.blogspot.co.uk/2014/11/big-data-small-data-and-meaning_9.html
 [4]: http://domaindarkarchive.blogspot.co.uk/
 [5]: http://www.webarchive.org.uk/
+
+
