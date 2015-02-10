@@ -2,7 +2,7 @@
 title: Towards a Macroscope for UK Web History
 category: Presentation
 tags: ["Web Archiving"]
-status: stub
+status: complete
 ---
 
 _This is the rough script of the demonstration I will be giving at IDCC15. I may skip some sections during the demo in order to keep things short, but I'll leave those details in here._
