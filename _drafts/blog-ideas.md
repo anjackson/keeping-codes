@@ -14,6 +14,11 @@ http://en.wikipedia.org/wiki/Confirmation_bias
 Digital Preservation & Sustainable Software
 [The State of JavaScript in 2015](http://www.breck-mckye.com/blog/2014/12/the-state-of-javascript-in-2015/)
 
+DESTROY
+https://bitbucket.org/andrealanci/topicmapping
+http://journals.aps.org/prx/pdf/10.1103/PhysRevX.5.011007
+Sampling skew is nuts. 
+
 https://twitter.com/textfiles/status/558736094066642944
 That's kind of the point. Outsourcing the tech further disempowers the 'web archiving gang'. If organisations…
 only invest in hand-wringers, that's all they'll be able to do. The situation is bad enough already, as you say.

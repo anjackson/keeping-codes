@@ -5,7 +5,7 @@ tags: ["Web Archiving"]
 status: complete
 ---
 
-_This is the rough script of the demonstration I will be giving at IDCC15. I may skip some sections during the demo in order to keep things short, but I'll leave those details in here._
+_This is the rough script of the demonstration I gave at [IDCC15][6], with a few extra notes and details._
 
 ## The UK Web Archive ##
 
@@ -17,7 +17,9 @@ All together, our archives contain over six billion resources, over 100TB of com
 
 ## The Problem
 
-[![Haystack Looming - © Neil Howard CC-BY-NC]({{ site.baseurl }}/images/7810750516_a44ed68b68_k.jpg)](https://flic.kr/p/cUd91m)
+> [![Haystack Looming - © Neil Howard CC-BY-NC]({{ site.baseurl }}/images/7810750516_a44ed68b68_k.jpg)](https://flic.kr/p/cUd91m)
+>
+> [© Neil Howard &emdash; CC-BY-NC](https://flic.kr/p/cUd91m)
 
 If our readers and researchers already know the URLs they are interested in, then it's relatively easy to support. URL-based lookup of resources is necessary to enable us to 'replay' web pages, and so this is a feature of all web archives.
 
@@ -70,21 +72,51 @@ Within the faceted search, you can start to get a feel for this by [searching fo
 
 To make this kind of information more accessible, we have also added a visualisation interface for exploring overall trends within the dataset, broadly following the model of the Google Books NGram. This 'distant reading' mode gives our results a proper time-axis, like [this one for 'big data'](http://www.webarchive.org.uk/shine/graph?query=%22big+data%22&year_start=1996&year_end=2010&action=update). 
 
-This graph is a fairly typical shape for many buzzwords within the UK web. A search for [iPhone](http://www.webarchive.org.uk/shine/graph?query=iPhone&year_start=1996&year_end=2010&action=update) quickly illustrates the rapid growth in importance of Apple devices, and by adding another search term ([iPhone,UNIX](http://www.webarchive.org.uk/shine/graph?query=UNIX%2CiPhone&year_start=1996&year_end=2010&action=update)), we can quickly contrast that with a much older but less fashionable technology.
+!['big data', 1996-2010]({{ site.baseurl }}/images/macroscope-2015-02/big-data.png)
 
-Furthermore, if you know the right incantations, any of the search fields known to the system can be used in the trends interface. For example, you can construct a search that compares the percentage of resources on [ac.uk versus co.uk over time](http://www.webarchive.org.uk/shine/graph?query=public_suffix%3Aac.uk%2Cpublic_suffix%3Aco.uk&year_start=1996&year_end=2010&action=update). This illustrates a crucial trend in the national web, the presence of which must be taken into account when interpreting trends relating to commercial or academic hosts.
+This graph is a fairly typical shape for many buzzwords within the UK web. A search for [iPhone](http://www.webarchive.org.uk/shine/graph?query=iPhone&year_start=1996&year_end=2010&action=update) quickly illustrates the rapid growth in importance of Apple device.
+
+!['iPhone', 1996-2010]({{ site.baseurl }}/images/macroscope-2015-02/iPhone.png)
+
+Then, by adding another search term ([iPhone,UNIX](http://www.webarchive.org.uk/shine/graph?query=UNIX%2CiPhone&year_start=1996&year_end=2010&action=update)), we can quickly contrast that with a much older but less fashionable technology.
+
+!['iPhone versus UNIX', 1996-2010]({{ site.baseurl }}/images/macroscope-2015-02/iPhone-v-UNIX.png)
+
+Furthermore, if you know the right incantations, any of the search fields known to the system can be used in the trends interface. For example, you can construct a search that compares the percentage of resources on [ac.uk versus co.uk over time](http://www.webarchive.org.uk/shine/graph?query=public_suffix%3Aac.uk%2Cpublic_suffix%3Aco.uk&year_start=1996&year_end=2010&action=update). 
+
+!['ac.uk versus co.uk', 1996-2010]({{ site.baseurl }}/images/macroscope-2015-02/acuk-v-couk.png)
+
+So, while in absolute terms, both ac.uk and co.uk have grown significantly since 1996, the rate of growth of co.uk far outstrips that of ac.uk. This illustrates the kinds of overall trends that can appear in a large-scale web crawl, the presence of which must be taken into account when interpreting trends relating to commercial or academic hosts.
 
 ### Understanding Trends ###
 
 Interesting and useful though this may be, it is still a rather poor Macroscope. Specifically, the composition of voices underneath these trends remains unclear. 
 
-For example, if you look at the [iPhone](http://www.webarchive.org.uk/shine/graph?query=iPhone&year_start=1996&year_end=2010&action=update) curve, and switch to a logarithmic scale (by clicking the vertical axis label), you see a strange dip ahead of the growth curve. What's going on?
+For example, if you look at the [iPhone](http://www.webarchive.org.uk/shine/graph?query=iPhone&year_start=1996&year_end=2010&action=update) curve, and switch to a logarithmic scale (by clicking the vertical axis label), you see a strange dip ahead of the growth curve. 
 
-Well, by clicking on a data point, the system attemps to bridge the gap between the trend and the underlying data by fetching a fairly large randomly-selected sample of the 'hits' that contribute to that point on the curve. This provides a very fast and natural way to evaluate the trends and understand what's going on underneath them.  In this example, I learned that in the late nineties there was a Internet Phone called the iPhone, and that this was still in some use as the iPhone hype began.
+!['iPhone', 1996-2010 (logarithmic)]({{ site.baseurl }}/images/macroscope-2015-02/iPhone-1997.png)
 
-Similarly, if you search for something like [terrorism OR terrorist](http://www.webarchive.org.uk/shine/graph?query=terrorism+OR+terrorist&year_start=1996&year_end=2010&action=update), you can see peaks associated with major events, and start to dig into them. The same goes for periodic events, like ["General Election"](http://www.webarchive.org.uk/shine/graph?query=%22General+Election%22&year_start=1996&year_end=2010&action=update). 
+What's going on?
+
+Well, by clicking on a data point, the system attemps to bridge the gap between the trend and the underlying data by fetching a fairly large randomly-selected sample of the 'hits' that contribute to that point on the curve. This provides a very fast and natural way to evaluate the trends and understand what's going on underneath them.  
+
+!['iPhone', 1996-2010 (logarithmic, plus sample)]({{ site.baseurl }}/images/macroscope-2015-02/iPhone-1997-hover.png)
+
+From this I was able to learn that in the late nineties there was a Internet Phone called the IPhone, and that this was still in some use as the iPhone hype began.
+
+Similarly, if you search for something like [terrorism OR terrorist](http://www.webarchive.org.uk/shine/graph?query=terrorism+OR+terrorist&year_start=1996&year_end=2010&action=update), you can see peaks associated with major events, and start to dig into them. 
+
+!['terrorism OR terrorist', 1996-2010]({{ site.baseurl }}/images/macroscope-2015-02/terrorism.png)
+
+In particular, this curve shows that the occurance of the words terrorism or terrorist not only peaked during 2001, but that the fraction of the web that discusses terrorism has been greater ever since.
+
+The same approach can be used to study periodic events, e.g. ["General Election"](http://www.webarchive.org.uk/shine/graph?query=%22General+Election%22&year_start=1996&year_end=2010&action=update). 
+
+!['general election', 1996-2010]({{ site.baseurl }}/images/macroscope-2015-02/general-election.png)
 
 Searching for [Genome](http://www.webarchive.org.uk/shine/graph?query=genome&year_start=1996&year_end=2010&action=update) provides another interesting example. At first, I expected this peak to be related to news about the human genome sequencing project, but by digging into it, we can see that the truth is more complicated than that. A significant fraction of these hist appear to come from the Sanger Institute itself, but more associated with the development of the institute's website rather than a specific experimental milestone.
+
+!['genome', 1996-2010]({{ site.baseurl }}/images/macroscope-2015-02/genome-peak.png)
 
 In this way, by providing samples and links back to full search results, we make it much easier for a researcher's assumptions about the data to be tested. It also helps make unexpected biases and flaws in the dataset much more apparent.
 
@@ -113,6 +145,7 @@ Other interesting searches:
 [3]: http://historyonics.blogspot.co.uk/2014/11/big-data-small-data-and-meaning_9.html
 [4]: http://domaindarkarchive.blogspot.co.uk/
 [5]: http://www.webarchive.org.uk/
+[6]: http://www.dcc.ac.uk/events/idcc15/programme-presentations
 
 [^1]: Even now, as you'll see, our search response times are fairly slow (at least compared to something like a Google search) and, more problematically, the search service can be a little flaky under load. Which you may also soon see!
 [^2]: In particular,the way Tim Hitchcock presented the Macroscope at a recent presentation called [Big Data, Small Data and Meaning][3], here at the British Library Labs, has influenced how we frame our approach to this problem.
