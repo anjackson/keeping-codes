@@ -19,6 +19,29 @@ https://bitbucket.org/andrealanci/topicmapping
 http://journals.aps.org/prx/pdf/10.1103/PhysRevX.5.011007
 Sampling skew is nuts. 
 
+BitTorrent Is Not An Archive
+http://academictorrents.com/browse.php?cat=6&page=4
+http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0010071
+
+Single Point of Repair
+- DOI controversy
+- The web as a million points of failure.
+- Interdependence.
+- Bittorrent as a distributed but coordinated system
+- But its just a protocol (see biotorrents etc. Academic Torrents).
+- Needs the social pact.
+- Multiple Points Of Repair
+
+Digital Dark Age
+- History, forgotten mistakes.
+- Vendor dependency.
+
+Forgiveness & Permission
+- A number of creators of MS-DOS programs have contacted me about having running versions of their works at @internetarchive. Contact me.
+-- https://twitter.com/textfiles/status/564819608386150400
+- Just to be clear - the creators of MS-DOS programs have contacted me to add their programs to the ranks. Contact me if you want to add yours
+-- https://twitter.com/textfiles/status/564820681226199040
+
 https://twitter.com/textfiles/status/558736094066642944
 That's kind of the point. Outsourcing the tech further disempowers the 'web archiving gang'. If organisations…
 only invest in hand-wringers, that's all they'll be able to do. The situation is bad enough already, as you say.

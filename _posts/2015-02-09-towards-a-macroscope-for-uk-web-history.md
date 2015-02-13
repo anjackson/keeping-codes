@@ -19,7 +19,7 @@ All together, our archives contain over six billion resources, over 100TB of com
 
 > [![Haystack Looming - © Neil Howard CC-BY-NC]({{ site.baseurl }}/images/7810750516_a44ed68b68_k.jpg)](https://flic.kr/p/cUd91m)
 >
-> [© Neil Howard &emdash; CC-BY-NC](https://flic.kr/p/cUd91m)
+> [© Neil Howard &mdash; CC-BY-NC](https://flic.kr/p/cUd91m)
 
 If our readers and researchers already know the URLs they are interested in, then it's relatively easy to support. URL-based lookup of resources is necessary to enable us to 'replay' web pages, and so this is a feature of all web archives.
 
