@@ -38,6 +38,7 @@ Formats Found
 * [RealAudio & RealMedia](real.html)
 * [Shockwave](shockwave.html)
 * [Quicktime VR](quicktime-vr.html)
+* IPIX [walkthrough](ipix/walkthrough.html)
 * [Geometric description language](gsm.html)[^1]
 * [DICOM Medical Imaging](dicom.html)[^1]
 * [TIFF & XIF](tiffs.html)[^1]
