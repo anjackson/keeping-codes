@@ -23,11 +23,11 @@ Here, I look at those formats, and also at others I've uncovered while exploring
 
 So, I'm flattered that my Formats Over Time paper is mentioned in the File Format Action Plan part of the agenda, and I would also like to see more of that kind of information being made available. Therefore, my idea of an File Format Action Plan would include quite a lot of context as well as the proposed action(s). e.g.
 
-    Set the context, e.g. how the particular format sits with respect to the overall format profile of the collection.
-    Describe the problem, i.e. the nature and severity of the obsolescence including how you know it is causing problems with access.
-    Description of the action options considered.
-    Description of how the possible options have been evaluated, and how you will know the access problems have been resolved.
-    Chosen action and details of it's implementation.
+* Set the context, e.g. how the particular format sits with respect to the overall format profile of the collection.
+* Describe the problem, i.e. the nature and severity of the obsolescence including how you know it is causing problems with access.
+* Description of the action options considered.
+* Description of how the possible options have been evaluated, and how you will know the access problems have been resolved.
+* Chosen action and details of it's implementation.
 
 However, it's worth noting that 
 
@@ -43,8 +43,19 @@ Formats Found
 * [TIFF & XIF](tiffs.html)[^1]
 * [PDF & FDF](pdfs.html)[^1]
 * [Spectrum Snapshots & Tapes](spectrum.html)
-* [Other minor formats](misc.html)
-
+* [Others](misc.html)
+* [AppleWorks](appleworks.html)
+* [Container Formats](containers.html)
+* [eBooks](ebooks.html)
+* [Lotus 1-2-3](lotus-1-2-3.html)
+* [MIDI](midi.html)
+* [MS Word](ms-word.html)
+* [Quattro Pro](quattro-pro.html)
+* [Serif PagePlus](serif-pageplus.html)
+* [Sheet music](sheet-music.html)
+* [Windows MetaFile](wmf.html)
+* [Lotus 1-2-3](wordperfect.html)
+* [WordStar](wordstar.html)
 
 Notes
 -----
@@ -89,6 +100,32 @@ Linux:
 
 > Do I know any blender folks? I have a blender 2.4 "game", and I need some help porting it to newer versions. I can pay.
 > https://twitter.com/adamwwolf/status/532172039302680576
+
+
+Interjection 
+------------
+
+Start here: [Transparent Format Migration of Preserved Web Content](http://www.dlib.org/dlib/january05/rosenthal/01rosenthal.html)
+
+Contrast with [Studies on the scalability of web preservation](http://purl.pt/24107/1/iPres2013_PDF/Studies%20on%20the%20scalability%20of%20web%20preservation.pdf) - which seems to do everything at index time and proposed rebuilding the WARCs.
+
+http://www.webarchive.org.uk/interject/
+
+[Deploying webp](http://www.igvita.com/2013/05/01/deploying-webp-via-accept-content-negotiation/) is similar, but still server-driven.
+
+But add concept of agent-driven negociation. Turns out interjection is already in the spec.
+
+* [RFC 2616: 300 Multiple Choices](https://tools.ietf.org/html/rfc2616#section-10.3.1) for redirect-based interaction.
+* Fleshed out in [RFC 2295: 8.3 Alternates](http://tools.ietf.org/html/rfc2295#section-8.3)
+    * [RFC 2295: 5.3 Source quality](http://tools.ietf.org/html/rfc2295#section-5.3)
+    * Has explicit modes for "server chose this alternative" and "here's a list of alternatives" (200 TCN: choice, 300 TCN: list)
+    * Even a rich and extensible 'feature' negotiation system, which links nicely to my concerns of features being more important than format version.
+    * If Accepted formats are not available, use this with response code 406 Not Available
+
+* See also [Mozilla Developer Network: Content negotiation](https://developer.mozilla.org/en-US/docs/Content_negotiation?redirect=no)
+
+* See too ['Reactive' content negotiation: Empirical evidence that its status should be reconsidered in HTTPbis](http://www.ltg.ed.ac.uk/~ht/reactive_conneg.html)
+> it calls "proactive negotiation" (formerly "server-driven negotiation"), but it intensifies its description of these from "disadvantages" to "serious disadvantages".
 
 Formats By Volume
 ---------
@@ -143,31 +180,6 @@ text/html charset=iso-8859-1 (8533)
 video/mpeg (8530) 
 model/vrml (8489)
 
-
-Interjection 
-------------
-
-Start here: [Transparent Format Migration of Preserved Web Content](http://www.dlib.org/dlib/january05/rosenthal/01rosenthal.html)
-
-Contrast with [Studies on the scalability of web preservation](http://purl.pt/24107/1/iPres2013_PDF/Studies%20on%20the%20scalability%20of%20web%20preservation.pdf) - which seems to do everything at index time and proposed rebuilding the WARCs.
-
-http://www.webarchive.org.uk/interject/
-
-[Deploying webp](http://www.igvita.com/2013/05/01/deploying-webp-via-accept-content-negotiation/) is similar, but still server-driven.
-
-But add concept of agent-driven negociation. Turns out interjection is already in the spec.
-
-* [RFC 2616: 300 Multiple Choices](https://tools.ietf.org/html/rfc2616#section-10.3.1) for redirect-based interaction.
-* Fleshed out in [RFC 2295: 8.3 Alternates](http://tools.ietf.org/html/rfc2295#section-8.3)
-    * [RFC 2295: 5.3 Source quality](http://tools.ietf.org/html/rfc2295#section-5.3)
-    * Has explicit modes for "server chose this alternative" and "here's a list of alternatives" (200 TCN: choice, 300 TCN: list)
-    * Even a rich and extensible 'feature' negotiation system, which links nicely to my concerns of features being more important than format version.
-    * If Accepted formats are not available, use this with response code 406 Not Available
-
-* See also [Mozilla Developer Network: Content negotiation](https://developer.mozilla.org/en-US/docs/Content_negotiation?redirect=no)
-
-* See too ['Reactive' content negotiation: Empirical evidence that its status should be reconsidered in HTTPbis](http://www.ltg.ed.ac.uk/~ht/reactive_conneg.html)
-> it calls "proactive negotiation" (formerly "server-driven negotiation"), but it intensifies its description of these from "disadvantages" to "serious disadvantages".
 
 
 [Smith08]: http://www.dlib.org/dlib/january08/smith/01smith.html

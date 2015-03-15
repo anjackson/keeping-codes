@@ -16,7 +16,8 @@ About the remaining problems, and the role memory organizations can play by give
  - [sustaining software effort.](http://www.software.ac.uk/SustainingSoftware.html)  
  - Join w3c (7,800 EUR per year!) and make it better. See also <http://lists.w3.org/Archives/Public/public-html/>
 
-
+* [Software, It’s a Thing](https://medium.com/@mkirschenbaum/software-its-a-thing-a550448d0ed3) refs big news articles last year.
+* http://www.warhol.org/uploadedFiles/Warhol_Site/Warhol/Content/The_Museum/Press_room/documents/The_Warhol_Amiga_Project_Release_4-24-14.pdf
 
 * [Capptivate: a site capturing apps before they disappear forever][1]
 
