@@ -2,7 +2,7 @@
 title: Spectrum Snapshots & Tapes
 subtitle: .sna, .z80, .tap, .txz
 layout: default
-category: Web Archives
+category: Formats
 status: stub
 publish: true
 ---

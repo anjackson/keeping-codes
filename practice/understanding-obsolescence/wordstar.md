@@ -2,7 +2,7 @@
 title: WordStar
 subtitle: .wsd .wsw
 layout: default
-category: Web Archives
+category: Formats
 status: stub
 publish: true
 ---

@@ -2,7 +2,7 @@
 title: VRML
 subtitle: .wrl
 layout: default
-category: Web Archives
+category: Formats
 status: stub
 publish: true
 ---

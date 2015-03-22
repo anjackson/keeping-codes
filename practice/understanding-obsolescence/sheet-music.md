@@ -2,7 +2,7 @@
 title: Sheet Music
 subtitle: .sib .mus
 layout: default
-category: Web Archives
+category: Formats
 status: stub
 publish: true
 ---

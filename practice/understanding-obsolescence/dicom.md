@@ -2,7 +2,7 @@
 title: DICOM Medical Imaging
 subtitle: .dicm
 layout: default
-category: Web Archives
+category: Formats
 status: stub
 publish: true
 ---

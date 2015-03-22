@@ -7,6 +7,7 @@
 
 <ul>
 {% for cat in category_list %}
+{% if cat != "Formats" %}
 <li>{{ cat }}
 <ul>
 {% assign sorted_pages = site.pages | sort:"name" %}
@@ -24,6 +25,7 @@
 {% endfor %} <!-- page -->
 </ul>
 </li>
+{% endif %}   <!-- cat filter -->
 {% endfor %} <!-- categories -->
 {% for page in sorted_pages %}
 {% if page.url contains include.filter %}

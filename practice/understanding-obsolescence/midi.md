@@ -2,7 +2,7 @@
 title: MIDI
 subtitle: .mid
 layout: default
-category: Web Archives
+category: Formats
 status: stub
 publish: true
 ---

@@ -126,6 +126,85 @@ MatLab
 http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type%3A%22application/octet-stream%22&f[1]=content_type_served%3A%22application/matlab%22
 
 
+VQF/TWIN
+http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type%3A%22application/octet-stream%22&f[1]=content_ffb%3A%225457494e%22
+
+MVR
+http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type%3A%22application/octet-stream%22&f[1]=content_type_ext%3A%22.mvr%22
+%00%00%00%00 (498)
+sb%CC%01 (1)
+
+http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type%3A%22application/octet-stream%22&f[1]=content_ffb%3A%227362cc01%22
+
+SNP
+http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type%3A%22application/octet-stream%22&f[1]=content_type_ext%3A%22.snp%22
+
+SPK
+http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type%3A%22application/octet-stream%22&f[1]=content_type_ext%3A%22.spk%22
+MESSY
+%1A%FF!! (81)
+%1A%82!C (46)
+%1A%82!S (25)
+Arch (24)
+
+PGC
+http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type%3A%22application/octet-stream%22&f[1]=content_type_ext%3A%22.pgc%22
+PG%01%FF (283)
+PG%01%82 (35)
+PG%01%88 (20)
+PG%01%8E (18)
+PG%01%86 (15)
+...LOTS...
+
+SIB
+http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type%3A%22application/octet-stream%22&f[1]=content_type_ext%3A%22.sib%22
+%0FSIB (586)
+
+INC
+http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type%3A%22application/octet-stream%22&f[1]=content_type_ext%3A%22.inc%22
+MESS
+
+RPM
+http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type%3A%22application/octet-stream%22&f[1]=content_type_ext%3A%22.rpm%22
+
+.58
+http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type%3A%22application/octet-stream%22&f[1]=content_type_ext%3A%22.58%22
+weird
+
+.uk
+http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type%3A%22application/octet-stream%22&f[1]=content_type_ext%3A%22.uk%22
+wierd
+
+.shp
+http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type%3A%22application/octet-stream%22&f[1]=content_type_ext%3A%22.shp%22
+Pretty clean
+
+.wve
+http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type%3A%22application/octet-stream%22&f[1]=content_type_ext%3A%22.wve%22
+clean
+ALaw
+
+.t64
+http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type%3A%22application/octet-stream%22&f[1]=content_type_ext%3A%22.t64%22
+nearly clean
+
+.isl
+http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type%3A%22application/octet-stream%22&f[1]=content_type_ext%3A%22.isl%22
+clean
+
+Containers
+* [OLE2](http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_ffb%3A%22d0cf11e0%22)
+* [RIFF](http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type%3A%22application/octet-stream%22&f[1]=content_ffb%3A%2252494646%22)
+    * [CDR](http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type%3A%22application/octet-stream%22&f[1]=content_type_ext%3A%22.cdr%22)
+
+NULLS
+http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type%3A%22application/octet-stream%22&f[1]=content_ffb%3A%2200000000%22
+.mvr (498)
+.gsv (195)
+.sav (190)
+.ob1 (38)
+... LOTS ...
+
 ### Binary NGram Shingling
 
 Along the same lines, experimenting with shingling the hex-encoded first few (32) bytes. We space separate and hex-encode the first 32 bytes of every resource. We pass that to Solr, which treats each hex-encoded byte as a single token. Solr then 'shingles' the tokens, from four to eight overlapping character sequences corresponding to all combinations of byte sequence between four and eight bytes long within the 32 bytes.

@@ -2,7 +2,7 @@
 title: Quicktime VR
 subtitle: .mov
 layout: default
-category: Web Archives
+category: Formats
 status: stub
 publish: true
 ---

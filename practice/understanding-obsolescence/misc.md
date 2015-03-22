@@ -2,7 +2,7 @@
 title: Other minor formats
 subtitle: Miscellaneous
 layout: default
-category: Web Archives
+category: Formats
 status: stub
 publish: true
 ---

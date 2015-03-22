@@ -2,7 +2,7 @@
 title: Quattro Pro
 subtitle: .wq1
 layout: default
-category: Web Archives
+category: Formats
 status: stub
 publish: true
 ---

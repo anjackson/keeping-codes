@@ -2,7 +2,7 @@
 title: RealAudio & RealMedia
 subtitle: .ra .ram .rm
 layout: default
-category: Web Archives
+category: Formats
 status: stub
 publish: true
 ---

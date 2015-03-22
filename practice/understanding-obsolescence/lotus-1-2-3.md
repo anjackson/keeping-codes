@@ -2,7 +2,7 @@
 title: Lotus 1-2-3
 subtitle: .wk1
 layout: default
-category: Web Archives
+category: Formats
 status: stub
 publish: true
 ---

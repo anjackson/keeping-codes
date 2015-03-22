@@ -2,7 +2,7 @@
 title: TIFF & XIF
 subtitle: .tif .xif
 layout: default
-category: Web Archives
+category: Formats
 status: stub
 publish: true
 ---

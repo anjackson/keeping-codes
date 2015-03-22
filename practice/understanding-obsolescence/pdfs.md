@@ -2,7 +2,7 @@
 title: PDF & FDF
 subtitle: .pdf .fdf
 layout: default
-category: Web Archives
+category: Formats
 status: stub
 publish: true
 ---

@@ -2,7 +2,7 @@
 title: Serif PagePlus
 subtitle: .ppp
 layout: default
-category: Web Archives
+category: Formats
 status: stub
 publish: true
 ---

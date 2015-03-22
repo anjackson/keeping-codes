@@ -2,7 +2,7 @@
 title: Windows MetaFile
 subtitle: .wmf
 layout: default
-category: Web Archives
+category: Formats
 status: stub
 publish: true
 ---

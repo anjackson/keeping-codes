@@ -2,7 +2,7 @@
 title: Shockwave
 subtitle: .dcr
 layout: default
-category: Web Archives
+category: Formats
 status: stub
 publish: true
 ---
@@ -26,3 +26,4 @@ http://askubuntu.com/questions/48140/compatible-version-of-adobe-shockwave-playe
 https://help.ubuntu.com/community/Shockwave
 
 Note confusion with DCR
+* http://fileinfo.com/extension/dcr

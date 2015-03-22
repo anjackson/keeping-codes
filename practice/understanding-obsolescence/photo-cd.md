@@ -2,7 +2,7 @@
 title: Kodak Photo CD
 subtitle: .pcd
 layout: default
-category: Web Archives
+category: Formats
 status: stub
 publish: true
 ---
