@@ -35,6 +35,11 @@ A range of FFB popular combos that remains unclassified. eg. %FE7%00# and relate
 File says they are MSOffice, but they upset Tika rather badly.
 Droid says: application/msword; version=5.0
 
+* [Reading Word for Mac 5 documents?](https://twitter.com/mistydemeo/status/588002626123341824)
+    * [LibreOffice import filter for legacy Mac file-formats - smile and say "mwaw"!](http://fridrich.blogspot.co.uk/2013/06/libreoffice-import-filter-for-legacy.html)
+* [Block Word format version error](https://twitter.com/mistydemeo/status/588003829565693953)
+    * [Opening a file is blocked by your registry policy setting or File Block settings in Word](https://support.microsoft.com/en-us/kb/922849)
+
 ### DOCX ###
 * https://twitter.com/euanc/status/482526239140626433
 
