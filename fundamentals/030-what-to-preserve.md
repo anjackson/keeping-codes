@@ -172,6 +172,10 @@ LINK TO [Credible Threats](Credible Threats.html)
 Threats, Threat models not defined, see Making Plans.
 
 Trust models omitted - trust is social. see also http://en.wikipedia.org/wiki/Source_criticism
+* http://www.niemanlab.org/2013/01/is-it-real-witness-builds-an-app-to-verify-user-submitted-content/
+* https://guardianproject.info/informa/
+* http://blog.witness.org/2013/02/citizen-video-for-journalists-verification/
+* http://www.signable.co.uk/legal
 
 [People, records and power: what archives can learn from WikiLeaks](http://www.tandfonline.com/doi/full/10.1080/01576895.2013.779926#.UvueIkJ_vCx)
 
