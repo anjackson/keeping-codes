@@ -35,6 +35,14 @@ A number of authors have noted that digital preservation involves ensuring we ca
 > "Here I want to go a step further and suggest that the preservation of digital objects is logically inseparable from the act of their creation — the lag between creation and preservation collapses completely, since a digital object may only ever be said to be preserved if it is accessible, and each individual access creates the object anew. One can, in a very literal sense, never access the "same" electronic file twice, since each and every access constitutes a distinct instance of the file that will be addressed and stored in a unique location in computer memory."
 > <small>[Matthew Kirschenbaum](https://twitter.com/mkirschenbaum), [The .txtual Condition](http://www.digitalhumanities.org/dhq/vol/7/1/000151/000151.html)</small>
 
+
+A whole thesis on digital preservation as communication and no mention of Shannon.
+* http://academiccommons.columbia.edu/catalog/ac:185846
+
+
+* https://confluence.ucop.edu/display/Curation/Foundations
+
+
 This series argues that this is much more than simply illuminating point of view, asserting that information science and communication theory form the fundamental basis of digital preservation. The aim here is to explore the consequences of that assertion. In contrast to much of the material in these approaches, I'm going to steer away from interpretation and abstract modelling, and instead attempt to focus on describing real examples, engineering practices, and established theories.
 
 By treating communication theory as our starting point, we can trace out the beginnings of such a theory. On the way, we can explore the relationship between digital and analogue signals, and the ways in which the limits of computability place limits on what we can knowingly preserve. We can outline the relationship between signals and noise, and from there start to see the relationships between compressibility, artificial intelligence, and representation information. We will examine some of the ways in which current digital preservation practices and built on algorithms and processes that have their roots in information science and on a continuum of engineering practices, extending from the shortest to the longest time scales.
