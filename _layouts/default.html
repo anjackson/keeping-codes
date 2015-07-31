@@ -57,8 +57,8 @@
     </div>
 
     <div class="container">
-      <div class="row row-offcanvas row-offcanvas-right">
-        <div class="col-xs-12 col-sm-4 col-md-4 sidebar-offcanvas" id="sidebar" role="navigation">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-4" id="sidebar" role="navigation">
 {% capture toc %}{% include _toc.md %}{% endcapture %}
 {{ toc | markdownify | split:"<!-- CUT -->" | first }}
         </div>

@@ -6,6 +6,16 @@ categories: Web Archives
 status: stub
 ---
 
+# Strands
+
+* Breadth of user needs.  ‘I know exactly what I want’ is not representative of most of our users. They generally start with one question and then it shifts and changes under them as they get used to the nature of the archive and the search capabilities.
+* A new mode Information Retrieval. Our users are not only looking for specific documents, so the usual framing of IR ‘information needs’ does not fit here.
+* User-led search configuration. Related to the previous point. Empowerment an choice over black-boxes.
+* Danger of assumptions over data, use of random sample to fight against it.
+* Danger of https://en.wikipedia.org/wiki/Hindsight_bias ?
+
+http://historyonics.blogspot.fr/2014/11/big-data-small-data-and-meaning_9.html
+
 # Abstract 
 
 At the UK Web Archive, we have been working with historians of modern history or order to understand how best to help them explore and exploit the JISC UK Web Domain Dataset (1996-2013). This large collection, some 57TB of compressed ARC and WARC files containing about four billion resources, presents a major challenge to our standard discovery mechanisms. This is further complicated by the fact that our researchers need to learn how to approach the data just as much as we need to learn how best to expose the data to them.

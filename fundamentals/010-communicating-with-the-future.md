@@ -3,7 +3,6 @@ title: Communicating with the Future
 layout: default
 category: Communicating with the Future
 status: outline
-permalink: communicating-with-the-future.html
 ---
 
 A number of authors have noted that digital preservation involves ensuring we can communicate with the future [TBA], and have explored preservation issues from that perspective. 
