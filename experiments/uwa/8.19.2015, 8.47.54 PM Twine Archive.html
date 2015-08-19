@@ -1,0 +1,184 @@
+<tw-storydata name="Understanding Web Archiving" startnode="6" creator="Twine" creator-version="2.0.8" ifid="3F08D6C6-4B11-419C-BAE2-FDA19CBED39D" format="Harlowe" options=""><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.autobui {
+	display: block;
+	margin: 0.5em;
+	padding: 0.5em 1em;
+	border: 1px dotted gray;
+	background: #eee;
+}
+
+.site {
+  background: aliceblue;
+  display: block;
+  font-family: sans-serif;
+  padding: 1.5em;
+}
+
+tw-passage > * {
+	/*display: inline-block;*/
+}
+
+tw-expression {
+/*	display: inline;*/
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+</script><tw-passagedata pid="1" name="Actions" tags="" position="625,500">&lt;h3&gt;Welcome to the WARC-9000&lt;/h3&gt;
+(if: (history:) contains &quot;Actions&quot;)[(either: &quot;Good work.&quot;,&quot;Keep it up.&quot;,&quot;Good to see you again.&quot;,&quot;Oh, it&#x27;s you.&quot;,&quot;Back so soon?&quot;,&quot;I want to help you.&quot;,&quot;Everything is going extremely well.&quot;,&quot;I am completely operational, and all my circuits are functioning perfectly.&quot;)
+
+What do you want to do next?
+](else:)[
+*Instead of your usual home page, the browser brings up some kind of web archiving user interface. The system presents you with three options.*
+
+How can I help you?
+]
+
+* [[Crawl]]
+* [[Replay]]
+* [[Preserve|Preserve2]]
+
+</tw-passagedata><tw-passagedata pid="2" name="Crawl" tags="" position="475,500">&lt;h3&gt;Crawl&lt;/h3&gt;
+The screen fills with text, describing [[what it means to crawl a web page, and the tools you can use to do it|Understanding Crawling]].
+
+(if: (history:) contains &quot;Crawl&quot;)[You notice that the WARC-9000 is now displaying information about the crawling process at the bottom of the browser window. It says:
+&lt;span class=&quot;autobui&quot;&gt;**So far, you have crawled (print: $ctot) resource(s).**
+(link:&quot;Start Crawling&quot;)[(set: $mode to &quot;crawl&quot;)(goto:&quot;Homepage&quot;)]&lt;/span&gt;
+[[Do something else|Actions]]
+]</tw-passagedata><tw-passagedata pid="3" name="Index" tags="" position="800,375">&lt;h3&gt;Generate CDX&lt;/h3&gt;
+(if: $ctot is 0)[You have not crawled anything yet!](else:)[
+Indexing (print: $ctot) resources...{(live:2s)[ DONE.
+&lt;br/&gt;
+&lt;br/&gt;
+[[Back|Replay]]
+(stop:)]}
+(set: $itot to $ctot)
+]</tw-passagedata><tw-passagedata pid="4" name="Replay" tags="" position="775,525">&lt;h3&gt;Replay&lt;/h3&gt;
+(if: $ctot is 0)[You&#x27;ve not crawled anything yet!
+
+[[Now what?|Actions]]](else:)[{
+(if: $itot is not 0)[
+&lt;span class=&quot;autobui&quot;&gt;You have crawled (print: $ctot) resource(s), and (print: $itot) of those have been indexed for replay.
+(link:&quot;Replay Crawled Site&quot;)[(set: $mode to &quot;replay&quot;)(goto:&quot;Homepage&quot;)]&lt;/span&gt;
+](else:)[
+When replaying an archived web site, we need to be able to take the web requests coming from the browser and work our which of the resources we&#x27;ve collected each request corresponds to. This means we need map that takes individual resource URLs and indicates where we should look in the WARC files. This is a type of indexing, where we process each WARC file and generate a content index or &lt;a target=&quot;_blank&quot; href=&quot;http://archive.org/web/researcher/cdx_file_format.php&quot;&gt;CDX file&lt;/a&gt;.
+
+&lt;span class=&quot;autobui&quot;&gt;[[Generate CDX...|Index]]&lt;/span&gt;
+]
+[[Do something else|Actions]]
+}
+]
+</tw-passagedata><tw-passagedata pid="5" name="Homepage" tags="site" position="625,675">(if: $mode is &quot;crawl&quot; or $visited_home_page is true)[
+&lt;span class=&quot;site&quot;&gt;**Welcome to SCCorp!**
+
+From here you can:
+
+* [[Look at something exciting|Static Page]]
+* [[Look at something dynamic|Dynamic Page]]
+* [[Sign our guestbook|Interactive Page]]
+&lt;/span&gt;
+](else:)[
+(display: &quot;Resource Not In Archive&quot;)
+]
+{
+&lt;span class=&quot;autobui&quot;&gt;
+(if: $mode is &quot;replay&quot;)[[[Stop Replaying|Replay]]](else:)[[[Stop Crawling|Crawl]]
+(set: $ctot to $ctot + 1)
+&lt;br/&gt;
+&lt;small&gt;You have crawled (print: $ctot) resource(s) so far.&lt;/small&gt;
+(set: $visited_home_page to true)
+]
+&lt;/span&gt;
+}
+</tw-passagedata><tw-passagedata pid="6" name="Welcome" tags="intro" position="375,300">&lt;h2&gt;Understanding Web Archiving:&lt;br/&gt;&lt;small&gt;An interactive introduction to how web archiving works.&lt;/small&gt;&lt;/h2&gt;We&#x27;ll find out how web content is archived, preserved, and made accessible. Along the way, we&#x27;ll introduce the major concepts and de-mystify the technical jargon.
+
+Interested? Then let&#x27;s [[Get Started...|The Scene]]
+(set: $ctot to 0)
+(set: $itot to 0)</tw-passagedata><tw-passagedata pid="7" name="Static Page" tags="site" position="475,800">(if: $mode is &quot;crawl&quot; or $visited_static_page is true)[
+&lt;span class=&quot;site&quot;&gt;[[Homepage]] &gt; Something Exciting
+
+This is a great page.
+&lt;/span&gt;
+](else:)[
+(display: &quot;Resource Not In Archive&quot;)
+]
+{
+&lt;span class=&quot;autobui&quot;&gt;
+(if: $mode is &quot;replay&quot;)[[[Stop Replaying|Replay]]](else:)[[[Stop Crawling|Crawl]]
+(set: $ctot to $ctot + 1)
+&lt;br/&gt;
+&lt;small&gt;You have crawled (print: $ctot) resource(s) so far.&lt;/small&gt;
+(set: $visited_static_page to true)
+]
+&lt;/span&gt;
+}
+</tw-passagedata><tw-passagedata pid="8" name="Dynamic Page" tags="site" position="625,800">(if: $mode is &quot;crawl&quot; or $visited_dynamic_page is true)[
+&lt;span class=&quot;site&quot;&gt;[[Homepage]] &gt; Something Dynamic
+
+This is a great page.
+&lt;/span&gt;
+](else:)[
+(display: &quot;Resource Not In Archive&quot;)
+]
+{
+&lt;span class=&quot;autobui&quot;&gt;
+(if: $mode is &quot;replay&quot;)[[[Stop Replaying|Replay]]](else:)[[[Stop Crawling|Crawl]]
+(set: $ctot to $ctot + 1)
+&lt;br/&gt;
+&lt;small&gt;You have crawled (print: $ctot) resource(s) so far.&lt;/small&gt;
+(set: $visited_dynamic_page to true)
+]
+&lt;/span&gt;
+}
+</tw-passagedata><tw-passagedata pid="9" name="Interactive Page" tags="site" position="775,800">(if: $mode is &quot;crawl&quot; or $visited_interactive_page is true)[
+&lt;span class=&quot;site&quot;&gt;[[Homepage]] &gt; Guestbook
+
+This is a great page.
+&lt;/span&gt;
+](else:)[
+(display: &quot;Resource Not In Archive&quot;)
+]
+{
+&lt;span class=&quot;autobui&quot;&gt;
+(if: $mode is &quot;replay&quot;)[[[Stop Replaying|Replay]]](else:)[[[Stop Crawling|Crawl]]
+(set: $ctot to $ctot + 1)
+&lt;br/&gt;
+&lt;small&gt;You have crawled (print: $ctot) resource(s) so far.&lt;/small&gt;
+(set: $visited_interactive_page to true)
+]
+&lt;/span&gt;
+}
+</tw-passagedata><tw-passagedata pid="10" name="Resource Not In Archive" tags="" position="925,500">&lt;h3&gt;Resource Not In Archive!&lt;/h3&gt;
+
+Oh dear, it looks like you didn&#x27;t manage to capture this page during the crawl.
+</tw-passagedata><tw-passagedata pid="11" name="Preserve2" tags="" position="700,225">&lt;h3&gt;Preserve&lt;/h3&gt;
+(if: $ctot is 0)[You have not crawled anything yet! 
+
+At least it&#x27;s cheap to store.
+
+[[Now what?|Actions]]](else:)[You have:
+(if: $itot is 0)[
+* (print: $ctot) crawled resource(s) stored in WARC format.
+](else:)[
+* (print: $ctot) crawled resource(s) stored in WARC format.
+* One CDX file built by indexing (print: $itot) resource(s).
+]
+But how will you preserve what you&#x27;ve got?
+
+* [[Know Your Data]]
+* [[Perform Fixity Checks]]
+* [[Scan For Access Risks]]
+
+[[Do something else|Actions]]
+]
+</tw-passagedata><tw-passagedata pid="12" name="Know Your Data" tags="" position="950,325">So what&#x27;s in a WARC?
+
+For more:
+
+* &lt;a target=&quot;_blank&quot; href=&quot;http://fileformats.archiveteam.org/wiki/WARC&quot;&gt;WARC on the file format wiki&lt;/a&gt;
+* &lt;a target=&quot;_blank&quot; href=&quot;http://en.wikipedia.org/wiki/Web_ARChive&quot;&gt;WARC on Wikipedia&lt;/a&gt;</tw-passagedata><tw-passagedata pid="13" name="Perform Fixity Checks" tags="" position="995,198">Are our WARCs still intact? Undamaged by bad luck, bit rot, or poor handling? How would we know?
+
+
+&lt;a target=&quot;_blank&quot; href=&quot;http://en.wikipedia.org/wiki/File_Fixity&quot;&gt;File Fixity on Wikipedia&lt;/a&gt;</tw-passagedata><tw-passagedata pid="14" name="Scan For Access Risks" tags="" position="950,75">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="15" name="Understanding Crawling" tags="" position="350,500">However, your organisation has decided against using an automated crawler. Instead, as you browse the site, your computer will record the conversation between the browser and the web server and built up the archive as you go. This approach means you&#x27;ll get a high-quality archive, but also means you&#x27;ll have to go through the pages of the web site by hand.
+
+[[Crawl]]</tw-passagedata><tw-passagedata pid="16" name="The Scene" tags="intro" position="525,300">You are in a maze of open-plan office cubicles, all alike. Your boss has told you that you are now responsible for archiving your organisation&#x27;s web site. You oozed confidence as you accepted the role. After all, how hard can it be? And anyway, sometimes the best way to learn is through on-the-job experience.
+
+You sit at your desk, turn to the computer, and hunt around the desktop and menus as you try to work out where to start. Eventually, you give up, and [[open up the web browser|Actions]] in order to do some research, after you&#x27;ve checked Facebook, obviously...
+</tw-passagedata></tw-storydata>
+
