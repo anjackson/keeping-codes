@@ -6,6 +6,8 @@ categories: Web Archives
 status: stub
 ---
 
+AH/L009854/1
+
 # Strands
 
 * Breadth of user needs.  ‘I know exactly what I want’ is not representative of most of our users. They generally start with one question and then it shifts and changes under them as they get used to the nature of the archive and the search capabilities.

@@ -4,7 +4,7 @@ layout: default
 category: Derivations
 status: stub
 public: false
-permalink: cantor-countability-and-sig-props.html
+permalink: fundamentals/cantor-countability-and-sig-props.html
 ---
 
 In XXXX G Cantor described countable and uncountable sets.

@@ -4,7 +4,7 @@ layout: default
 category: Web Archives
 status: draft
 publish: true
-permalink: archiving-the-dynamic-web.html
+permalink: practice/archiving-the-dynamic-web.html
 ---
 
 ## Introduction ##
@@ -207,3 +207,19 @@ See also
 
 * [AJAX/JavaScript Enabled Parsing with Apache Nutch and Selenium](http://soryy.com/blog/2014/ajax-javascript-enabled-parsing-apache-nutch-selenium/)
     * https://github.com/momer/nutch-selenium-grid-plugin
+
+Evolving Heritrix
+-----------------
+
+Looking at options for evolving Heritrix. Aside from unexpected (breaking) changes upstream, our main problems appear to be around the use of BDB JE for persistance. We have absolutely massive ```state``` directories, and restarting from checkpoints seems brittle and opaque. Sometimes it goes wrong, and if it does, it's impossible to work out what's going on.
+
+Looking through the code, it seems the BDB state engine is used in three roles. Crawl state (like the frontier, cookie store), crawler caches (like the server cache), and deduplication support. See <https://docs.google.com/spreadsheets/d/1oafpoY5AxBA1OlloKe2bOOYk1FjRvxyXp64YrfOOYlU/edit#gid=0>
+
+There is Kristinn's Lucene-based deduplication engine, and there also appears to be a HBase version inside the H3 codebase. (See [HBasePersistProcessor](https://github.com/internetarchive/heritrix3/blob/7afe03540acd2589738e64be2afeb11d228ae707/contrib/src/main/java/org/archive/modules/recrawl/hbase/HBasePersistProcessor.java) - not clear if this code is in use). 
+
+For the frontier, it would be possible to switch to an off-the-shelve queue, like RabbitMQ or Kafka (e.g. RabbitMQ's [QueueingConsumer](https://www.rabbitmq.com/releases/rabbitmq-java-client/v3.5.4/rabbitmq-java-client-javadoc-3.5.4/com/rabbitmq/client/QueueingConsumer.html)). However, the Frontier is also responsible for implementing the ```crawl-delay```, via per-host queues that are 'snoozed' until the crawl-delay expires (see org.archive.crawler.frontier.WorkQueueFrontier.snoozeQueue(WorkQueue, long, long)). Having millions of distinct queues is not supported by many queue systems (e.g. Kafka), and generally seems to be a rather cumbersome approach.
+
+The Frontier also handles unique-URI filtering which, it turns out, is not handled by a Bloom filter but a full Set implementation, so this may be part of the reason why the state gets so large. As the crawl history we need for deduplication is held in same BDB database as the Frontier, we end up having to maintaining all this state between crawls.
+
+So, it would be desirable to separate the Frontier functionality out into the UniqueUriFiltering (which could be done via a Trie if a Bloom Filter is unacceptable), the queues, and the crawl-delay implementation. This may be possible by extending from WorkQueueFrontier, which implements the snoozing part, and which allows a pluggable unique URI filter. However, because this system ties the queues to the crawl-delays, the underlaying implementation would have to maintain the illusion of a queue per host. This is likely to be workable, but would require testing to make sure, and tuning of the QOS setting (i.e. the number of RabbitMQ messages that are allowed to be 'in flight' i.e. in use but not ACKd).
+
