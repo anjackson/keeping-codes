@@ -10,7 +10,7 @@ We use Web Archive data to drive tool development.
 
 So, according to our experiments, there are at least two thousand distinct formats in our historical web archive, and at least three thousand if you distinguish between all formats (e.g. HTML) and their specific versions and character sets (e.g. UTF-8). It’s worth pointing out that we don’t really know exactly how precise our identification tools are, and also that a small proportion remains unidentified. Therefore, we don’t yet know exactly how many formats there are. However, the contents of the archives are dominated by HTML, web image formats, PDF, Office documents and so on, and in the ‘tail’ of the distribution, thousands of formats accounts for a very small fraction of the content (not sure exactly, certainly less than 1%). Nevertheless, just because a format is rare, we cannot necessarily assume it is of little value, and I wonder if that is where the real preservation challenge for web archives lies. The ‘big’ formats look after themselves, and require little effort to preserve over moderate timescales. But in the tail of the format distribution, formats are less likely to survive without our intervention, and so we need to be able to work out where to invest our efforts.
 
-I ended up passing my snowballAnalyzer and standardAnalyzers as parameters to ShingleFilterWrappers and processing the outputs via a TermVectorMapper.
+"I ended up passing my snowballAnalyzer and standardAnalyzers as parameters to ShingleFilterWrappers and processing the outputs via a TermVectorMapper."
 http://searchhub.org/2009/05/26/accessing-words-around-a-positional-match-in-lucene/
 
 
@@ -67,6 +67,8 @@ Firefox uses application/x-extension-EXT
 An old 3D format.
 http://www.webarchive.org.uk/aadda-discovery/formats?f[0]=content_type_ext%3A%22.mus%22&f[1]=content_ffb%3A%2252454d20%22
 
+MUS Finale
+content_type_ext:"mus" content_ffb:"454e4947"
 
 
 Psion s5
